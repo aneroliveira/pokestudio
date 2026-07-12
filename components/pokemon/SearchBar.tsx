@@ -49,7 +49,7 @@ export function SearchBar({
         </p>
 
         <p className="text-sm text-zinc-500">
-          {pokemon.geracao}
+          {pokemon.regiao}
         </p>
       </div>
     ))}
