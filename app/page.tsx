@@ -9,11 +9,20 @@ import { PokemonHeader } from "@/components/pokemon/PokemonHeader";
 import { SearchBar } from "@/components/pokemon/SearchBar";
 import { EmptyState } from "@/components/pokemon/EmptyState";
 import { useState } from "react";
+import type { Pokemon } from "@/models/pokemon";
+import { PokemonUsage } from "@/components/pokemon/PokemonUsage";
 
 export default function Home() {
   const [pesquisa, setPesquisa] = useState("");
   const resultados = buscarPokemon(pesquisa);
-  const pokemonSelecionado = resultados[0] ?? null;
+
+  const [pokemonSelecionado, setPokemonSelecionado] =
+    useState<Pokemon | null>(null);
+
+  function selecionarPokemon(pokemon: Pokemon) {
+    setPokemonSelecionado(pokemon);
+    setPesquisa(pokemon.nome);
+  }
   return (
     <PageContainer>
       <div className="w-full max-w-3xl space-y-6">
@@ -24,15 +33,24 @@ export default function Home() {
         />
         <SearchBar
           value={pesquisa}
-          onChange={setPesquisa}
+          onChange={(valor) => {
+            setPesquisa(valor);
+            setPokemonSelecionado(null);
+          }}
+          onSelect={selecionarPokemon}
+          resultados={resultados}
+
         />
-        {pokemonSelecionado ? (
+
+        {pesquisa && pokemonSelecionado ? (
           <Card>
             <PokemonHeader pokemon={pokemonSelecionado} />
 
             <div className="mt-6">
               <StarRating value={5} />
             </div>
+
+            <PokemonUsage pokemon={pokemonSelecionado} />
           </Card>
         ) : (
           <EmptyState />
