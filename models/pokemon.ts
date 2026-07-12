@@ -65,4 +65,16 @@ export interface Pokemon {
   resistencias: TipoPokemon[];
 
   melhoresMegas: string[];
+
+  decisoes: DecisaoPokemon[];
+
+  observacoes: string[];
 }
+
+export type StatusDecisao = "sim" | "atencao" | "nao";
+
+export interface DecisaoPokemon {
+  titulo: string;
+  status: StatusDecisao;
+}
+

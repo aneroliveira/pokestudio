@@ -1,4 +1,6 @@
 import type { Pokemon } from "@/models/pokemon";
+import { SectionCard } from "@/components/ui/SectionCard";
+import { InfoRow } from "@/components/ui/InfoRow";
 
 type PokemonHundosProps = {
   pokemon: Pokemon;
@@ -6,44 +8,38 @@ type PokemonHundosProps = {
 
 export function PokemonHundos({ pokemon }: PokemonHundosProps) {
   return (
-    <div className="mt-6">
-      <h2 className="mb-4 text-lg font-semibold">
-        Hundos
-      </h2>
-
+    <SectionCard title="Hundos">
       <div className="space-y-2">
-
         {pokemon.hundos.raidNivel20 && (
-          <div className="flex justify-between">
-            <span>Raid N20</span>
-            <strong>{pokemon.hundos.raidNivel20}</strong>
-          </div>
+          <InfoRow
+            label="Raid N20"
+            value={pokemon.hundos.raidNivel20}
+          />
         )}
 
         {pokemon.hundos.raidNivel25 && (
-          <div className="flex justify-between">
-            <span>Raid Weather</span>
-            <strong>{pokemon.hundos.raidNivel25}</strong>
-          </div>
+          <InfoRow
+            label="Raid N25"
+            value={pokemon.hundos.raidNivel25}
+          />
         )}
 
         <hr className="my-3" />
 
         {pokemon.quaseHundos.iv98 && (
-          <div className="flex justify-between">
-            <span>98%</span>
-            <strong>{pokemon.quaseHundos.iv98}</strong>
-          </div>
+          <InfoRow
+            label="98%"
+            value={pokemon.quaseHundos.iv98}
+          />
         )}
 
         {pokemon.quaseHundos.iv96 && (
-          <div className="flex justify-between">
-            <span>96%</span>
-            <strong>{pokemon.quaseHundos.iv96}</strong>
-          </div>
+          <InfoRow
+            label="96%"
+            value={pokemon.quaseHundos.iv96}
+          />
         )}
-
       </div>
-    </div>
+    </SectionCard>
   );
 }

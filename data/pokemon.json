@@ -4,43 +4,67 @@
     "numero": "#150",
     "nome": "Mewtwo",
     "regiao": "Kanto",
-    "tipos": ["Psíquico"],
+    "tipos": [
+      "Psíquico"
+    ],
     "tier": "S+",
     "descricao": "Atacante Psíquico extremamente forte. Prioridade máxima para investimento.",
-    "imagem": "...",
-
+    "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
     "uso": {
       "raid": true,
       "rocket": true,
       "ginasio": false,
       "pvp": true
     },
-
     "hundos": {
       "raidNivel20": 2387,
       "raidNivel25": 2984
     },
-
     "quaseHundos": {
       "iv98": 2382,
       "iv96": 2378
     },
-
     "fraquezas": [
       "Inseto",
       "Fantasma",
       "Sombrio"
     ],
-
     "resistencias": [
       "Lutador",
       "Psíquico"
     ],
-
     "melhoresMegas": [
       "Mega Tyranitar",
       "Mega Gengar",
       "Mega Houndoom"
-    ]
+    ],
+    "decisoes": [
+      {
+        "titulo": "Vale guardar",
+        "status": "sim"
+      },
+      {
+        "titulo": "Vale maximizar",
+        "status": "sim"
+      },
+      {
+        "titulo": "Vale Buddy",
+        "status": "atencao"
+      },
+      {
+        "titulo": "Vale Elite TM",
+        "status": "sim"
+      },
+      {
+        "titulo": "Transferir",
+        "status": "nao"
+      }
+    ],
+    "observacoes": [
+  "Não purifique a versão Shadow.",
+  "Excelente atacante do tipo Psíquico.",
+  "Invista prioritariamente em exemplares 96%+.",
+  "Retorna em raids com pouca frequência."
+]
   }
 ]

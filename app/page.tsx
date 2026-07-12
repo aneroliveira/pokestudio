@@ -12,6 +12,9 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { StarRating } from "@/components/ui/StarRating";
 import type { Pokemon } from "@/models/pokemon";
 import { buscarPokemon } from "@/services/pokemon";
+import { PokemonDecision } from "@/components/pokemon/PokemonDecision";
+import { PokemonCombat } from "@/components/pokemon/PokemonCombat";
+import { PokemonObservations } from "@/components/pokemon/PokemonObservations";
 
 export default function Home() {
   const [pesquisa, setPesquisa] = useState("");
@@ -47,11 +50,17 @@ export default function Home() {
           <Card>
             <PokemonHeader pokemon={pokemonSelecionado} />
 
+            <PokemonDecision pokemon={pokemonSelecionado} />
+
             <div className="mt-6">
               <StarRating value={5} />
             </div>
 
             <PokemonHundos pokemon={pokemonSelecionado} />
+
+            <PokemonCombat pokemon={pokemonSelecionado} />
+
+            <PokemonObservations pokemon={pokemonSelecionado} />
           </Card>
         ) : (
           <EmptyState />

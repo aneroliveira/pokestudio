@@ -1,5 +1,7 @@
 import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
+import { TypeBadge } from "@/components/ui/TypeBadge";
+import Image from "next/image";
 
 type PokemonHeaderProps = {
   pokemon: Pokemon;
@@ -7,8 +9,8 @@ type PokemonHeaderProps = {
 
 export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
   return (
-    <div className="flex items-start justify-between">
-      <div>
+    <div className="flex items-start justify-between gap-6">
+      <div className="flex-1">
         <p className="text-sm text-zinc-500">
           {pokemon.numero}
         </p>
@@ -17,12 +19,31 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
           {pokemon.nome}
         </h2>
 
-        <p className="mt-2 text-zinc-500">
+        <div className="mt-3 flex flex-wrap gap-2">
+          {pokemon.tipos.map((tipo) => (
+            <TypeBadge
+              key={tipo}
+              label={tipo}
+            />
+          ))}
+        </div>
+
+        <p className="mt-3 text-zinc-500">
           {pokemon.descricao}
         </p>
       </div>
 
-      <PriorityBadge value={pokemon.tier} />
+      <div className="flex shrink-0 flex-col items-center gap-3">
+        <Image
+          src={pokemon.imagem}
+          alt={pokemon.nome}
+          width={120}
+height={120}
+          priority
+        />
+
+        <PriorityBadge value={pokemon.tier} />
+      </div>
     </div>
   );
 }

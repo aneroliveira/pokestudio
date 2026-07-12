@@ -58,3 +58,9 @@ Centralizar informações relevantes sobre qualquer Pokémon em uma única tela,
 ## Pergunta que o PokéStudio responde
 
 > "Acabei de capturar esse Pokémon. O que devo fazer com ele?"
+
+---
+
+### Princípio nº 5
+
+Nenhuma funcionalidade permanece no produto apenas porque parecia uma boa ideia. Ela precisa provar valor durante o uso.
