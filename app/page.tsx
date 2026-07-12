@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/Card";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { StarRating } from "@/components/ui/StarRating";
-import { listarPokemons } from "@/services/pokemon/pokemon.service";
+import { listarPokemons } from "@/services/pokemon";
 import { PokemonHeader } from "@/components/pokemon/PokemonHeader";
 
 export default function Home() {
