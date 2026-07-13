@@ -52,10 +52,6 @@ export default function Home() {
 
             <PokemonDecision pokemon={pokemonSelecionado} />
 
-            <div className="mt-6">
-              <StarRating value={5} />
-            </div>
-
             <PokemonHundos pokemon={pokemonSelecionado} />
 
             <PokemonCombat pokemon={pokemonSelecionado} />

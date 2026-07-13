@@ -2,6 +2,7 @@ import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { TypeBadge } from "@/components/ui/TypeBadge";
 import Image from "next/image";
+import { StarRating } from "@/components/ui/StarRating";
 
 type PokemonHeaderProps = {
   pokemon: Pokemon;
@@ -31,6 +32,9 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
         <p className="mt-3 text-zinc-500">
           {pokemon.descricao}
         </p>
+        <div className="mt-4">
+  <StarRating value={5} />
+</div>
       </div>
 
       <div className="flex shrink-0 flex-col items-center gap-3">
