@@ -4,17 +4,12 @@ import { useState } from "react";
 
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
-import { PokemonHeader } from "@/components/pokemon/PokemonHeader";
-import { PokemonHundos } from "@/components/pokemon/PokemonHundos";
 import { SearchBar } from "@/components/pokemon/SearchBar";
-import { Card } from "@/components/ui/Card";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { StarRating } from "@/components/ui/StarRating";
 import type { Pokemon } from "@/models/pokemon";
 import { buscarPokemon } from "@/services/pokemon";
+import { PokemonCard } from "@/components/pokemon/PokemonCard";
 import { PokemonDecision } from "@/components/pokemon/PokemonDecision";
-import { PokemonCombat } from "@/components/pokemon/PokemonCombat";
-import { PokemonObservations } from "@/components/pokemon/PokemonObservations";
 
 export default function Home() {
   const [pesquisa, setPesquisa] = useState("");
@@ -45,19 +40,10 @@ export default function Home() {
           onSelect={selecionarPokemon}
           resultados={resultados}
         />
-
-        {pesquisa && pokemonSelecionado ? (
-          <Card>
-            <PokemonHeader pokemon={pokemonSelecionado} />
-
-            <PokemonHundos pokemon={pokemonSelecionado} />
-
-            <PokemonDecision pokemon={pokemonSelecionado} />
-
-            <PokemonCombat pokemon={pokemonSelecionado} />
-
-            <PokemonObservations pokemon={pokemonSelecionado} />
-          </Card>
+        {pokemonSelecionado ? (
+          <PokemonCard
+            pokemon={pokemonSelecionado}
+          />
         ) : (
           <EmptyState />
         )}

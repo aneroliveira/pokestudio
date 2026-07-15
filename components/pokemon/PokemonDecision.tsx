@@ -1,18 +1,26 @@
-import type {
-  Pokemon,
-  StatusDecisao,
-} from "@/models/pokemon";
+import type { Pokemon } from "@/models/pokemon";
 import { SectionCard } from "@/components/ui/SectionCard";
 import { RecommendationChip } from "@/components/ui/RecommendationChip";
 
 type PokemonDecisionProps = {
   pokemon: Pokemon;
+  emptyMessage?: string;
 };
-
 
 export function PokemonDecision({
   pokemon,
+  emptyMessage,
 }: PokemonDecisionProps) {
+  if (pokemon.decisoes.length === 0) {
+    return emptyMessage ? (
+      <SectionCard title="">
+        <p className="text-sm text-zinc-500">
+          {emptyMessage}
+        </p>
+      </SectionCard>
+    ) : null;
+  }
+
   return (
     <SectionCard title="">
       <div className="flex flex-wrap gap-3">

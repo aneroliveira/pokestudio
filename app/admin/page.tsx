@@ -3,6 +3,9 @@ import { useState } from "react";
 import { createEmptyPokemon } from "@/utils/createEmptyPokemon";
 import { PokemonForm } from "@/components/admin/PokemonForm";
 import { JsonPreview } from "@/components/admin/JsonPreview";
+import { PokemonPreview } from "@/components/admin/PokemonPreview";
+import { PokemonDecision } from "@/components/pokemon/PokemonDecision";
+import { PreviewPanel } from "@/components/admin/PreviewPanel";
 
 export default function AdminPage() {
     const [pokemon, setPokemon] = useState(
@@ -18,13 +21,15 @@ export default function AdminPage() {
                 Ferramenta interna do PokéStudio.
             </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-8">
+            <div className="mt-8 grid gap-8 lg:grid-cols-2">
                 <PokemonForm
                     pokemon={pokemon}
                     setPokemon={setPokemon}
                 />
 
-                <JsonPreview pokemon={pokemon} />
+                <PreviewPanel
+                    pokemon={pokemon}
+                />
             </div>
         </main>
     );
