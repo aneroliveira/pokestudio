@@ -1,3 +1,7 @@
+// =========================
+// Tipos básicos
+// =========================
+
 export type TierPokemon =
   | "S+"
   | "S"
@@ -26,31 +30,6 @@ export type TipoPokemon =
   | "Aço"
   | "Água";
 
-export interface UsoPokemon {
-  raid: boolean;
-  rocket: boolean;
-  ginasio: boolean;
-  pvp: boolean;
-}
-
-export interface HundosPokemon {
-  pesquisa?: number;
-  raidNivel20?: number;
-  raidNivel25?: number;
-}
-
-export interface QuaseHundosPokemon {
-  iv98?: number;
-  iv96?: number;
-}
-
-export type StatusDecisao = "sim" | "atencao" | "nao";
-
-export interface DecisaoPokemon {
-  titulo: string;
-  status: StatusDecisao;
-}
-
 export type FuncaoPokemon =
   | "Atacante"
   | "Defensor"
@@ -65,16 +44,47 @@ export type ClimaPokemon =
   | "Neve"
   | "Neblina";
 
+export type MelhorParaPokemon =
+  | "Raids"
+  | "PvP"
+  | "Ginásios"
+  | "Rocket";
+
+export type StatusDecisao =
+  | "sim"
+  | "atencao"
+  | "nao";
+
+// =========================
+// Estruturas
+// =========================
+
+export interface HundosPokemon {
+  semClima: number;
+  comClima: number;
+}
+
+export interface QuaseHundosPokemon {
+  iv98?: number;
+  iv96?: number;
+}
+
+export interface DecisaoPokemon {
+  titulo: string;
+  status: StatusDecisao;
+}
+
 export interface EvolucaoPokemon {
   possui: boolean;
   doces?: number;
-  buddyKm?: number;
   requisito?: string;
 }
 
-export interface MegaPokemon {
-  possui: boolean;
-  nome?: string;
+export interface FormaEspecialPokemon {
+  tipo: "Nenhuma" | "Mega" | "Primal";
+  nome: string;
+  valeInvestir: boolean;
+  motivo: string;
 }
 
 export interface ShadowPokemon {
@@ -84,45 +94,45 @@ export interface ShadowPokemon {
 
 export interface BuddyPokemon {
   necessario: boolean;
-  km?: number;
   objetivo?: string;
 }
 
+// =========================
+// Modelo principal
+// =========================
+
 export interface Pokemon {
-  id: number;
+  // Identificação
   numero: string;
   nome: string;
   regiao: string;
-  tipos: TipoPokemon[];
-  tier: TierPokemon;
-  descricao: string;
   imagem: string;
 
-  uso: UsoPokemon;
-
-  hundos: HundosPokemon;
-
-  quaseHundos: QuaseHundosPokemon;
-
-  fraquezas: TipoPokemon[];
-
-  resistencias: TipoPokemon[];
-
-  melhoresMegas: string[];
-
-  decisoes: DecisaoPokemon[];
-
-  observacoes: string[];
-
+  // Classificação
+  tier: TierPokemon;
   funcao: FuncaoPokemon;
-
+  melhorPara: MelhorParaPokemon[];
   climaFavoravel: ClimaPokemon;
 
+  // Combate
+  tipos: TipoPokemon[];
+  fraquezas: TipoPokemon[];
+  resistencias: TipoPokemon[];
+
+  // Investimento
+  formaEspecial: FormaEspecialPokemon;
+  shadow: ShadowPokemon;
+  buddy: BuddyPokemon;
   evolucao: EvolucaoPokemon;
 
-  mega: MegaPokemon;
+  // Estatísticas
+  hundos: HundosPokemon;
+  quaseHundos: QuaseHundosPokemon;
 
-  shadow: ShadowPokemon;
+  // Conhecimento
+  decisoes: DecisaoPokemon[];
+  observacoes: string[];
 
-  buddy: BuddyPokemon;
+  // Sinergias
+  sinergias: string[];
 }

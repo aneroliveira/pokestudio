@@ -1,49 +1,30 @@
-import type { Pokemon } from "@/models/pokemon";
+import { Pokemon } from "@/models/pokemon";
 
 export function createEmptyPokemon(): Pokemon {
   return {
-    id: 0,
+    // Identificação
     numero: "",
     nome: "",
     regiao: "",
-    tipos: [],
-    tier: "C",
-    funcao: "Atacante",
-    descricao: "",
     imagem: "",
+
+    // Classificação
+    tier: "C",
+    funcao: "Versátil",
+    melhorPara: [],
     climaFavoravel: "Ensolarado",
 
-    uso: {
-      raid: false,
-      rocket: false,
-      ginasio: false,
-      pvp: false,
-    },
-
-    hundos: {
-      raidNivel20: 0,
-      raidNivel25: 0,
-    },
-
-    quaseHundos: {
-      iv98: 0,
-      iv96: 0,
-    },
-
-    decisoes: [],
-
+    // Combate
+    tipos: [],
     fraquezas: [],
-
     resistencias: [],
 
-    melhoresMegas: [],
-
-    evolucao: {
-      possui: false,
-    },
-
-    mega: {
-      possui: false,
+    // Investimento
+    formaEspecial: {
+      tipo: "Nenhuma",
+      nome: "",
+      valeInvestir: false,
+      motivo: "",
     },
 
     shadow: {
@@ -53,8 +34,30 @@ export function createEmptyPokemon(): Pokemon {
 
     buddy: {
       necessario: false,
+      objetivo: "",
     },
 
+    evolucao: {
+      possui: false,
+    },
+
+    // Estatísticas
+    hundos: {
+      semClima: 0,
+      comClima: 0,
+    },
+
+    quaseHundos: {
+      iv98: 0,
+      iv96: 0,
+    },
+
+    // Conhecimento
+    decisoes: [],
+
     observacoes: [],
+
+    // Sinergias
+    sinergias: [],
   };
 }

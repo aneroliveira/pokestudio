@@ -1,67 +1,43 @@
 [
   {
-    "id": 0,
-    "numero": "#0",
+    "numero": "",
     "nome": "",
-    "regiao": "Knto",
-    "tipos": [],
-    "tier": "",
-    "funcao": "",
-    "climaFavoravel": "",
-    "descricao": "",
+    "regiao": "",
     "imagem": "",
-    "uso": {
-      "raid": false,
-      "rocket": false,
-      "ginasio": false,
-      "pvp": false
-    },
-    "hundos": {
-      "raidNivel20": 0,
-      "raidNivel25": 0
-    },
-    "quaseHundos": {
-      "iv98": 0,
-      "iv96": 0
-    },
+    "tier": "C",
+    "funcao": "Versátil",
+    "melhorPara": [],
+    "climaFavoravel": "Ensolarado",
+    "tipos": [],
     "fraquezas": [],
     "resistencias": [],
-    "melhoresMegas": [],
-    "evolucao": {
-      "possui": false
+    "formaEspecial": {
+      "tipo": "Nenhuma",
+      "nome": "",
+      "valeInvestir": false,
+      "motivo": ""
     },
-    "mega": {
-      "possui": false
-    },
-    "decisoes": [
-      {
-        "titulo": "Vale guardar",
-        "status": "sim"
-      },
-      {
-        "titulo": "Vale maximizar",
-        "status": "sim"
-      },
-      {
-        "titulo": "Vale Buddy",
-        "status": "atencao"
-      },
-      {
-        "titulo": "Vale Elite TM",
-        "status": "sim"
-      },
-      {
-        "titulo": "Transferir",
-        "status": "nao"
-      }
-    ],
     "shadow": {
       "possuiShadow": false,
       "recomendadoPurificar": false
     },
     "buddy": {
-      "necessario": false
+      "necessario": false,
+      "objetivo": ""
     },
-    "observacoes": []
+    "evolucao": {
+      "possui": false
+    },
+    "hundos": {
+      "semClima": 0,
+      "comClima": 0
+    },
+    "quaseHundos": {
+      "iv98": 0,
+      "iv96": 0
+    },
+    "decisoes": [],
+    "observacoes": [],
+    "sinergias": []
   }
 ]
