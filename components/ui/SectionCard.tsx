@@ -9,10 +9,11 @@ export function SectionCard({
 }: SectionCardProps) {
   return (
     <section className="mt-6">
-      <h2 className="mb-4 text-lg font-semibold">
-        {title}
-      </h2>
-
+      {title && (
+  <h2 className="mb-4 text-lg font-semibold">
+    {title}
+  </h2>
+)}
       {children}
     </section>
   );

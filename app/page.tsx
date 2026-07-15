@@ -50,9 +50,9 @@ export default function Home() {
           <Card>
             <PokemonHeader pokemon={pokemonSelecionado} />
 
-            <PokemonDecision pokemon={pokemonSelecionado} />
-
             <PokemonHundos pokemon={pokemonSelecionado} />
+
+            <PokemonDecision pokemon={pokemonSelecionado} />
 
             <PokemonCombat pokemon={pokemonSelecionado} />
 

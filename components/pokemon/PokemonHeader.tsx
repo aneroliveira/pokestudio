@@ -29,12 +29,12 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
           ))}
         </div>
 
-        <p className="mt-3 text-zinc-500">
-          {pokemon.descricao}
+        <p className="mt-3 text-sm font-medium text-zinc-700">
+          🗡️ Função: {pokemon.funcao}
         </p>
         <div className="mt-4">
-  <StarRating value={5} />
-</div>
+          <StarRating value={5} />
+        </div>
       </div>
 
       <div className="flex shrink-0 flex-col items-center gap-3">
@@ -42,7 +42,7 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
           src={pokemon.imagem}
           alt={pokemon.nome}
           width={120}
-height={120}
+          height={120}
           priority
         />
 

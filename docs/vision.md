@@ -4,7 +4,7 @@
 
 ## Visão
 
-O PokéStudio nasceu para resolver um problema simples: evitar que o treinador precise abrir diversos sites para decidir se um Pokémon vale investimento.
+O PokéStudio é um assistente de decisão para treinadores de Pokémon GO, projetado para responder às perguntas mais importantes em poucos segundos.
 
 Em poucos segundos, a aplicação deve responder perguntas como:
 

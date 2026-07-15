@@ -3,29 +3,18 @@ import type {
   StatusDecisao,
 } from "@/models/pokemon";
 import { SectionCard } from "@/components/ui/SectionCard";
+import { RecommendationChip } from "@/components/ui/RecommendationChip";
 
 type PokemonDecisionProps = {
   pokemon: Pokemon;
 };
 
-function obterIcone(status: StatusDecisao) {
-  switch (status) {
-    case "sim":
-      return "✅";
-
-    case "atencao":
-      return "⚠️";
-
-    case "nao":
-      return "❌";
-  }
-}
 
 export function PokemonDecision({
   pokemon,
 }: PokemonDecisionProps) {
   return (
-    <SectionCard title="Decisão">
+    <SectionCard title="">
       <div className="flex flex-wrap gap-3">
         {pokemon.decisoes.map((decisao) => {
           const titulo = decisao.titulo
@@ -37,16 +26,11 @@ export function PokemonDecision({
             titulo.slice(1);
 
           return (
-            <div
+            <RecommendationChip
               key={decisao.titulo}
-              className="flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-2"
-            >
-              <span>{obterIcone(decisao.status)}</span>
-
-              <span className="text-sm font-medium">
-                {tituloFormatado}
-              </span>
-            </div>
+              status={decisao.status}
+              label={tituloFormatado}
+            />
           );
         })}
       </div>

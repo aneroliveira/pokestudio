@@ -10,21 +10,28 @@ export function PokemonHundos({ pokemon }: PokemonHundosProps) {
   return (
     <SectionCard title="Hundos">
       <div className="space-y-2">
+        <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+          100%
+        </h3>
         {pokemon.hundos.raidNivel20 && (
           <InfoRow
-            label="Raid N20"
+            label="Sem clima"
             value={pokemon.hundos.raidNivel20}
           />
         )}
 
         {pokemon.hundos.raidNivel25 && (
           <InfoRow
-            label="Raid N25"
+            label="Com clima"
             value={pokemon.hundos.raidNivel25}
           />
         )}
 
         <hr className="my-3" />
+
+        <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-400">
+          Quase Hundos
+        </h3>
 
         {pokemon.quaseHundos.iv98 && (
           <InfoRow

@@ -13,9 +13,9 @@ export function InfoRow({
         {label}
       </span>
 
-      <strong>
-        {value}
-      </strong>
+      <strong className="text-lg font-bold text-zinc-900">
+  {value}
+</strong>
     </div>
   );
 }

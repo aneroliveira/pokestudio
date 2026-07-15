@@ -8,6 +8,8 @@
       "Psíquico"
     ],
     "tier": "S+",
+    "funcao": "Atacante",
+    "climaFavoravel": "Ventando",
     "descricao": "Atacante Psíquico extremamente forte. Prioridade máxima para investimento.",
     "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
     "uso": {
@@ -38,6 +40,13 @@
       "Mega Gengar",
       "Mega Houndoom"
     ],
+    "evolucao": {
+      "possui": false
+    },
+    "mega": {
+      "possui": true,
+      "nome": "Mega Mewtwo Y"
+    },
     "decisoes": [
       {
         "titulo": "Vale guardar",
@@ -60,11 +69,112 @@
         "status": "nao"
       }
     ],
+    "shadow": {
+      "possuiShadow": true,
+      "recomendadoPurificar": false
+    },
+    "buddy": {
+      "necessario": true,
+      "km": 20,
+      "objetivo": "Ganhar doces XL"
+    },
     "observacoes": [
-  "Não purifique a versão Shadow.",
-  "Excelente atacante do tipo Psíquico.",
-  "Invista prioritariamente em exemplares 96%+.",
-  "Retorna em raids com pouca frequência."
-]
+      "Não purifique a versão Shadow.",
+      "Excelente atacante do tipo Psíquico.",
+      "Invista prioritariamente em exemplares 96%+.",
+      "Retorna em raids com pouca frequência."
+    ]
+  },
+  {
+    "id": 384,
+    "numero": "#384",
+    "nome": "Rayquaza",
+    "regiao": "Hoenn",
+    "tipos": [
+      "Dragão",
+      "Voador"
+    ],
+    "tier": "S+",
+    "funcao": "Atacante",
+    "descricao": "Excelente atacante dos tipos Dragão e Voador.",
+    "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png",
+    "climaFavoravel": "Ventando",
+    "uso": {
+      "raid": true,
+      "rocket": true,
+      "ginasio": false,
+      "pvp": true
+    },
+    "hundos": {
+      "raidNivel20": 2191,
+      "raidNivel25": 2739
+    },
+    "quaseHundos": {
+      "iv98": 2187,
+      "iv96": 2182
+    },
+    "fraquezas": [
+  "Dragão",
+  "Fada",
+  "Gelo",
+  "Pedra"
+    ],
+    "resistencias": [
+  "Fogo",
+  "Água",
+  "Lutador",
+  "Inseto",
+  "Planta",
+  "Terra"
+    ],
+    "melhoresMegas": [
+      "Mega Tyranitar",
+      "Mega Gengar",
+      "Mega Houndoom"
+    ],
+    "evolucao": {
+  "possui": false
+},
+    "mega": {
+  "possui": true,
+  "nome": "Mega Rayquaza"
+},
+    "decisoes": [
+  {
+    "titulo": "Vale guardar",
+    "status": "sim"
+  },
+  {
+    "titulo": "Vale maximizar",
+    "status": "sim"
+  },
+  {
+    "titulo": "Vale Buddy",
+    "status": "sim"
+  },
+  {
+    "titulo": "Vale Elite TM",
+    "status": "sim"
+  },
+  {
+    "titulo": "Transferir",
+    "status": "nao"
+  }
+],
+    "shadow": {
+  "possuiShadow": true,
+  "recomendadoPurificar": false
+},
+    "buddy": {
+  "necessario": true,
+  "km": 20,
+  "objetivo": "Ganhar doces XL"
+},
+    "observacoes": [
+      "Não purifique a versão Shadow.",
+      "Excelente atacante do tipo Psíquico.",
+      "Invista prioritariamente em exemplares 96%+.",
+      "Retorna em raids com pouca frequência."
+    ]
   }
 ]
