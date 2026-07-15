@@ -13,17 +13,17 @@ export function PokemonHundos({ pokemon }: PokemonHundosProps) {
         <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-400">
           100%
         </h3>
-        {pokemon.hundos.raidNivel20 && (
+        {pokemon.hundos.semClima && (
           <InfoRow
             label="Sem clima"
-            value={pokemon.hundos.raidNivel20}
+            value={pokemon.hundos.semClima}
           />
         )}
 
-        {pokemon.hundos.raidNivel25 && (
+        {pokemon.hundos.comClima && (
           <InfoRow
             label="Com clima"
-            value={pokemon.hundos.raidNivel25}
+            value={pokemon.hundos.comClima}
           />
         )}
 
