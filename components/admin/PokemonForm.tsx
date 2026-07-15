@@ -7,7 +7,9 @@ import type {
 } from "@/models/pokemon";
 import {
   CLIMAS,
+  FORMAS_ESPECIAIS,
   FUNCOES,
+  MELHOR_PARA,
   REGIOES,
   TIERS,
   TIPOS,
@@ -16,6 +18,7 @@ import { CheckboxField } from "@/components/admin/CheckboxField";
 import { SelectField } from "@/components/admin/SelectField";
 import { TextAreaField } from "@/components/admin/TextAreaField";
 import { TextField } from "@/components/admin/TextField";
+import { FormSection } from "./FormSection";
 
 type PokemonFormProps = {
   pokemon: Pokemon;
@@ -31,17 +34,6 @@ const DECISOES_PADRAO = [
 ] as const;
 
 const STATUS_DECISAO: StatusDecisao[] = ["sim", "atencao", "nao"];
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section className="border-t border-zinc-200 pt-6 first:border-t-0 first:pt-0">
-      <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-500">
-        {title}
-      </h3>
-      <div className="space-y-4">{children}</div>
-    </section>
-  );
-}
 
 function MultiSelectField({
   label,
@@ -99,7 +91,9 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
       return {
         ...current,
         decisoes: existing
-          ? current.decisoes.map((item) => (item.titulo === title ? decisao : item))
+          ? current.decisoes.map((item) =>
+            item.titulo === title ? decisao : item,
+          )
           : [...current.decisoes, decisao],
       };
     });
@@ -110,75 +104,379 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
       <h2 className="mb-6 text-xl font-semibold">Dados do Pokémon</h2>
 
       <div className="space-y-6">
-        <Section title="Identificação">
+        <FormSection title="📌 Identificação">
           <div className="grid gap-4 sm:grid-cols-2">
-            <TextField label="ID" type="number" value={String(pokemon.id)} onChange={(value) => updatePokemon("id", Number(value))} />
-            <TextField label="Número da Pokédex" placeholder="#001" value={pokemon.numero} onChange={(numero) => updatePokemon("numero", numero)} />
-            <TextField label="Nome" value={pokemon.nome} onChange={(nome) => updatePokemon("nome", nome)} />
-            <SelectField label="Região" value={pokemon.regiao} options={REGIOES} onChange={(regiao) => updatePokemon("regiao", regiao)} />
+            <TextField
+              label="Número da Pokédex"
+              placeholder="#001"
+              value={pokemon.numero}
+              onChange={(numero) => updatePokemon("numero", numero)}
+            />
+            <TextField
+              label="Nome"
+              value={pokemon.nome}
+              onChange={(nome) => updatePokemon("nome", nome)}
+            />
+            <SelectField
+              label="Região"
+              value={pokemon.regiao}
+              options={REGIOES}
+              onChange={(regiao) => updatePokemon("regiao", regiao)}
+            />
           </div>
-          <TextField label="URL da imagem" value={pokemon.imagem} onChange={(imagem) => updatePokemon("imagem", imagem)} />
-          <MultiSelectField label="Tipos" options={TIPOS.filter(Boolean)} value={pokemon.tipos} onChange={(tipos) => updatePokemon("tipos", tipos as TipoPokemon[])} />
-        </Section>
+          <TextField
+            label="URL da imagem"
+            value={pokemon.imagem}
+            onChange={(imagem) => updatePokemon("imagem", imagem)}
+          />
+          <MultiSelectField
+            label="Tipos"
+            options={TIPOS.filter(Boolean)}
+            value={pokemon.tipos}
+            onChange={(tipos) => updatePokemon("tipos", tipos as TipoPokemon[])}
+          />
+        </FormSection>
 
-        <Section title="Avaliação">
+        <FormSection title="🏆 Classificação">
           <div className="grid gap-4 sm:grid-cols-3">
-            <SelectField label="Tier" value={pokemon.tier} options={TIERS} onChange={(tier) => updatePokemon("tier", tier as Pokemon["tier"])} />
-            <SelectField label="Função" value={pokemon.funcao} options={FUNCOES} onChange={(funcao) => updatePokemon("funcao", funcao as Pokemon["funcao"])} />
-            <SelectField label="Clima favorável" value={pokemon.climaFavoravel} options={CLIMAS} onChange={(climaFavoravel) => updatePokemon("climaFavoravel", climaFavoravel as Pokemon["climaFavoravel"])} />
+            <SelectField
+              label="Tier"
+              value={pokemon.tier}
+              options={TIERS}
+              onChange={(tier) => updatePokemon("tier", tier as Pokemon["tier"])}
+            />
+            <SelectField
+              label="Função"
+              value={pokemon.funcao}
+              options={FUNCOES}
+              onChange={(funcao) =>
+                updatePokemon("funcao", funcao as Pokemon["funcao"])
+              }
+            />
+            <SelectField
+              label="Clima favorável"
+              value={pokemon.climaFavoravel}
+              options={CLIMAS}
+              onChange={(climaFavoravel) =>
+                updatePokemon(
+                  "climaFavoravel",
+                  climaFavoravel as Pokemon["climaFavoravel"],
+                )
+              }
+            />
+            <MultiSelectField
+              label="Melhor para"
+              options={MELHOR_PARA}
+              value={pokemon.melhorPara}
+              onChange={(melhorPara) =>
+                updatePokemon(
+                  "melhorPara",
+                  melhorPara as Pokemon["melhorPara"],
+                )
+              }
+            />
           </div>
-          <TextAreaField label="Descrição estratégica" value={pokemon.descricao} onChange={(descricao) => updatePokemon("descricao", descricao)} />
-        </Section>
+        </FormSection>
 
-        <Section title="Uso">
-          <div className="grid gap-3 sm:grid-cols-2">
-            {(["raid", "rocket", "ginasio", "pvp"] as const).map((uso) => (
-              <CheckboxField key={uso} label={{ raid: "Útil em Raid", rocket: "Útil contra Rocket", ginasio: "Útil em Ginásio", pvp: "Útil em PvP" }[uso]} checked={pokemon.uso[uso]} onChange={(checked) => setPokemon((current) => ({ ...current, uso: { ...current.uso, [uso]: checked } }))} />
-            ))}
-          </div>
-        </Section>
+        <FormSection title="⭐ Forma Especial">
+          <SelectField
+            label="Tipo"
+            value={pokemon.formaEspecial.tipo}
+            options={FORMAS_ESPECIAIS}
+            onChange={(tipo) =>
+              setPokemon((current) => ({
+                ...current,
+                formaEspecial: {
+                  ...current.formaEspecial,
+                  tipo: tipo as Pokemon["formaEspecial"]["tipo"],
+                },
+              }))
+            }
+          />
 
-        <Section title="Hundos">
+          <TextField
+            label="Nome"
+            value={pokemon.formaEspecial.nome}
+            onChange={(nome) =>
+              setPokemon((current) => ({
+                ...current,
+                formaEspecial: {
+                  ...current.formaEspecial,
+                  nome,
+                },
+              }))
+            }
+          />
+
+          <CheckboxField
+            label="Vale investir"
+            checked={pokemon.formaEspecial.valeInvestir}
+            onChange={(valeInvestir) =>
+              setPokemon((current) => ({
+                ...current,
+                formaEspecial: {
+                  ...current.formaEspecial,
+                  valeInvestir,
+                },
+              }))
+            }
+          />
+
+          <TextAreaField
+            label="Motivo"
+            value={pokemon.formaEspecial.motivo}
+            onChange={(motivo) =>
+              setPokemon((current) => ({
+                ...current,
+                formaEspecial: {
+                  ...current.formaEspecial,
+                  motivo,
+                },
+              }))
+            }
+          />
+        </FormSection>
+
+        <FormSection title="👤 Shadow">
+          <CheckboxField
+            label="Possui versão Shadow"
+            checked={pokemon.shadow.possuiShadow}
+            onChange={(possuiShadow) =>
+              setPokemon((current) => ({
+                ...current,
+                shadow: {
+                  ...current.shadow,
+                  possuiShadow,
+                },
+              }))
+            }
+          />
+
+          {pokemon.shadow.possuiShadow && (
+            <CheckboxField
+              label="Vale purificar"
+              checked={pokemon.shadow.recomendadoPurificar}
+              onChange={(recomendadoPurificar) =>
+                setPokemon((current) => ({
+                  ...current,
+                  shadow: {
+                    ...current.shadow,
+                    recomendadoPurificar,
+                  },
+                }))
+              }
+            />
+          )}
+        </FormSection>
+
+        <FormSection title="🤝 Buddy">
+          <CheckboxField
+            label="Necessário"
+            checked={pokemon.buddy.necessario}
+            onChange={(necessario) =>
+              setPokemon((current) => ({
+                ...current,
+                buddy: {
+                  ...current.buddy,
+                  necessario,
+                },
+              }))
+            }
+          />
+
+          {pokemon.buddy.necessario && (
+            <TextField
+              label="Objetivo"
+              value={pokemon.buddy.objetivo ?? ""}
+              onChange={(objetivo) =>
+                setPokemon((current) => ({
+                  ...current,
+                  buddy: {
+                    ...current.buddy,
+                    objetivo,
+                  },
+                }))
+              }
+            />
+          )}
+        </FormSection>
+
+        <FormSection title="🧬 Evolução">
+          <CheckboxField
+            label="Possui evolução"
+            checked={pokemon.evolucao?.possuiEvolucao ?? false}
+            onChange={(possuiEvolucao) =>
+              setPokemon((current) => ({
+                ...current,
+                evolucao: {
+                  ...current.evolucao,
+                  possuiEvolucao,
+                },
+              }))
+            }
+          />
+
+          <TextField
+            label="Doces"
+            type="number"
+            value={pokemon.evolucao.doces?.toString() ?? ""}
+            onChange={(value) =>
+              setPokemon((current) => ({
+                ...current,
+                evolucao: {
+                  ...current.evolucao,
+                  doces: value === "" ? undefined : Number(value),
+                },
+              }))
+            }
+          />
+
+          <TextField
+            label="Requisito"
+            value={pokemon.evolucao?.requisito ?? ""}
+            onChange={(requisito) =>
+              setPokemon((current) => ({
+                ...current,
+                evolucao: {
+                  ...current.evolucao,
+                  requisito,
+                },
+              }))
+            }
+          />
+        </FormSection>
+
+        <FormSection title="🤝 Sinergias">
+          <TextAreaField
+            label="Sinergias (uma por linha)"
+            value={pokemon.sinergias?.join("\n") ?? ""}
+            onChange={(value) =>
+              updatePokemon(
+                "sinergias",
+                value
+                  .split("\n")
+                  .map((item) => item.trim())
+                  .filter(Boolean),
+              )
+            }
+          />
+        </FormSection>
+
+        <FormSection title="Hundos">
           <div className="grid gap-4 sm:grid-cols-2">
-            <TextField label="Pesquisa (100%)" type="number" value={pokemon.hundos.pesquisa?.toString() ?? ""} onChange={(value) => setPokemon((current) => ({ ...current, hundos: { ...current.hundos, pesquisa: toNumber(value) } }))} />
-            <TextField label="Raid sem clima (N20)" type="number" value={pokemon.hundos.raidNivel20?.toString() ?? ""} onChange={(value) => setPokemon((current) => ({ ...current, hundos: { ...current.hundos, raidNivel20: toNumber(value) } }))} />
-            <TextField label="Raid com clima (N25)" type="number" value={pokemon.hundos.raidNivel25?.toString() ?? ""} onChange={(value) => setPokemon((current) => ({ ...current, hundos: { ...current.hundos, raidNivel25: toNumber(value) } }))} />
-            <TextField label="98%" type="number" value={pokemon.quaseHundos.iv98?.toString() ?? ""} onChange={(value) => setPokemon((current) => ({ ...current, quaseHundos: { ...current.quaseHundos, iv98: toNumber(value) } }))} />
-            <TextField label="96%" type="number" value={pokemon.quaseHundos.iv96?.toString() ?? ""} onChange={(value) => setPokemon((current) => ({ ...current, quaseHundos: { ...current.quaseHundos, iv96: toNumber(value) } }))} />
+            <TextField
+              label="Raid sem clima (N20)"
+              type="number"
+              value={pokemon.hundos.semClima?.toString() ?? ""}
+              onChange={(value) =>
+                setPokemon((current) => ({
+                  ...current,
+                  hundos: {
+                    ...current.hundos,
+                    semClima: value === "" ? 0 : Number(value),
+                  },
+                }))
+              }
+            />
+            <TextField
+              label="Raid com clima (N25)"
+              type="number"
+              value={pokemon.hundos.comClima?.toString() ?? ""}
+              onChange={(value) =>
+                setPokemon((current) => ({
+                  ...current,
+                  hundos: {
+                    ...current.hundos,
+                    comClima: value === "" ? 0 : Number(value),
+                  },
+                }))
+              }
+            />
+            <TextField
+              label="98%"
+              type="number"
+              value={pokemon.quaseHundos.iv98?.toString() ?? ""}
+              onChange={(value) =>
+                setPokemon((current) => ({
+                  ...current,
+                  quaseHundos: {
+                    ...current.quaseHundos,
+                    iv98: toNumber(value),
+                  },
+                }))
+              }
+            />
+            <TextField
+              label="96%"
+              type="number"
+              value={pokemon.quaseHundos.iv96?.toString() ?? ""}
+              onChange={(value) =>
+                setPokemon((current) => ({
+                  ...current,
+                  quaseHundos: {
+                    ...current.quaseHundos,
+                    iv96: toNumber(value),
+                  },
+                }))
+              }
+            />
           </div>
-        </Section>
+        </FormSection>
 
-        <Section title="Combate">
-          <MultiSelectField label="Fraquezas" options={TIPOS.filter(Boolean)} value={pokemon.fraquezas} onChange={(fraquezas) => updatePokemon("fraquezas", fraquezas as TipoPokemon[])} />
-          <MultiSelectField label="Resistências" options={TIPOS.filter(Boolean)} value={pokemon.resistencias} onChange={(resistencias) => updatePokemon("resistencias", resistencias as TipoPokemon[])} />
-          <TextAreaField label="Melhores Megas (uma por linha)" value={pokemon.melhoresMegas.join("\n")} onChange={(value) => updatePokemon("melhoresMegas", value.split("\n").map((item) => item.trim()).filter(Boolean))} />
-        </Section>
+        <FormSection title="⚔️ Combate">
+          <MultiSelectField
+            label="Fraquezas"
+            options={TIPOS.filter(Boolean)}
+            value={pokemon.fraquezas}
+            onChange={(fraquezas) =>
+              updatePokemon("fraquezas", fraquezas as TipoPokemon[])
+            }
+          />
 
-        <Section title="Decisões">
+          <MultiSelectField
+            label="Resistências"
+            options={TIPOS.filter(Boolean)}
+            value={pokemon.resistencias}
+            onChange={(resistencias) =>
+              updatePokemon("resistencias", resistencias as TipoPokemon[])
+            }
+          />
+        </FormSection>
+
+        <FormSection title="Decisões">
           <div className="grid gap-4 sm:grid-cols-2">
             {DECISOES_PADRAO.map((title) => (
-              <SelectField key={title} label={title} value={pokemon.decisoes.find((item) => item.titulo === title)?.status ?? "atencao"} options={STATUS_DECISAO} onChange={(status) => updateDecision(title, status as StatusDecisao)} />
+              <SelectField
+                key={title}
+                label={title}
+                value={
+                  pokemon.decisoes.find((item) => item.titulo === title)?.status ??
+                  "atencao"
+                }
+                options={STATUS_DECISAO}
+                onChange={(status) =>
+                  updateDecision(title, status as StatusDecisao)
+                }
+              />
             ))}
           </div>
-        </Section>
+        </FormSection>
 
-        <Section title="Evolução e Mega">
-          <CheckboxField label="Possui evolução" checked={pokemon.evolucao.possui} onChange={(possui) => setPokemon((current) => ({ ...current, evolucao: { ...current.evolucao, possui } }))} />
-          {pokemon.evolucao.possui && <div className="grid gap-4 sm:grid-cols-3"><TextField label="Doces" type="number" value={pokemon.evolucao.doces?.toString() ?? ""} onChange={(value) => setPokemon((current) => ({ ...current, evolucao: { ...current.evolucao, doces: toNumber(value) } }))} /><TextField label="Buddy (km)" type="number" value={pokemon.evolucao.buddyKm?.toString() ?? ""} onChange={(value) => setPokemon((current) => ({ ...current, evolucao: { ...current.evolucao, buddyKm: toNumber(value) } }))} /><TextField label="Requisito especial" value={pokemon.evolucao.requisito ?? ""} onChange={(requisito) => setPokemon((current) => ({ ...current, evolucao: { ...current.evolucao, requisito } }))} /></div>}
-          <CheckboxField label="Possui Mega Evolução" checked={pokemon.mega.possui} onChange={(possui) => setPokemon((current) => ({ ...current, mega: { ...current.mega, possui } }))} />
-          {pokemon.mega.possui && <TextField label="Nome da Mega" value={pokemon.mega.nome ?? ""} onChange={(nome) => setPokemon((current) => ({ ...current, mega: { ...current.mega, nome } }))} />}
-        </Section>
-
-        <Section title="Shadow e Buddy">
-          <CheckboxField label="Possui versão Shadow" checked={pokemon.shadow.possuiShadow} onChange={(possuiShadow) => setPokemon((current) => ({ ...current, shadow: { ...current.shadow, possuiShadow } }))} />
-          {pokemon.shadow.possuiShadow && <CheckboxField label="Recomendado purificar" checked={pokemon.shadow.recomendadoPurificar} onChange={(recomendadoPurificar) => setPokemon((current) => ({ ...current, shadow: { ...current.shadow, recomendadoPurificar } }))} />}
-          <CheckboxField label="Precisa ser Buddy" checked={pokemon.buddy.necessario} onChange={(necessario) => setPokemon((current) => ({ ...current, buddy: { ...current.buddy, necessario } }))} />
-          {pokemon.buddy.necessario && <div className="grid gap-4 sm:grid-cols-2"><TextField label="Distância (km)" type="number" value={pokemon.buddy.km?.toString() ?? ""} onChange={(value) => setPokemon((current) => ({ ...current, buddy: { ...current.buddy, km: toNumber(value) } }))} /><TextField label="Objetivo" value={pokemon.buddy.objetivo ?? ""} onChange={(objetivo) => setPokemon((current) => ({ ...current, buddy: { ...current.buddy, objetivo } }))} /></div>}
-        </Section>
-
-        <Section title="Observações">
-          <TextAreaField label="Observações (uma por linha)" value={pokemon.observacoes.join("\n")} onChange={(value) => updatePokemon("observacoes", value.split("\n").map((item) => item.trim()).filter(Boolean))} />
-        </Section>
+        <FormSection title="Observações">
+          <TextAreaField
+            label="Observações (uma por linha)"
+            value={pokemon.observacoes.join("\n")}
+            onChange={(value) =>
+              updatePokemon(
+                "observacoes",
+                value
+                  .split("\n")
+                  .map((item) => item.trim())
+                  .filter(Boolean),
+              )
+            }
+          />
+        </FormSection>
       </div>
     </section>
   );

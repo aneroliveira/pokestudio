@@ -38,27 +38,24 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
         <p className="mt-3 text-sm font-medium text-zinc-700">
           🗡️ Função: {pokemon.funcao}
         </p>
-        <div className="mt-4">
-          <StarRating value={5} />
+
+        <div className="flex flex-col items-center gap-3">
+          {pokemon.imagem ? (
+            <Image
+              src={pokemon.imagem}
+              alt={pokemon.nome || "Pokémon"}
+              width={120}
+              height={120}
+            />
+          ) : (
+            <div className="flex h-[120px] w-[120px] items-center justify-center rounded-xl border-2 border-dashed border-zinc-300 bg-zinc-100 text-center text-sm text-zinc-500">
+              Sem imagem
+            </div>
+          )}
+
+          <PriorityBadge value={pokemon.tier} />
         </div>
       </div>
-
-      <div className="flex flex-col items-center gap-3">
-        {pokemon.imagem ? (
-          <Image
-            src={pokemon.imagem}
-            alt={pokemon.nome || "Pokémon"}
-            width={120}
-            height={120}
-          />
-        ) : (
-          <div className="flex h-[120px] w-[120px] items-center justify-center rounded-xl border-2 border-dashed border-zinc-300 bg-zinc-100 text-center text-sm text-zinc-500">
-            Sem imagem
-          </div>
-        )}
-
-        <PriorityBadge value={pokemon.tier} />
-      </div>
     </div>
-  );
+  )
 }

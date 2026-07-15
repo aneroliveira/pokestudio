@@ -75,6 +75,7 @@ export interface DecisaoPokemon {
 }
 
 export interface EvolucaoPokemon {
+  possuiEvolucao: boolean;
   possui: boolean;
   doces?: number;
   requisito?: string;

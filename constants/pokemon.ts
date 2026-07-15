@@ -1,3 +1,7 @@
+// =========================
+// Localização
+// =========================
+
 export const REGIOES = [
   "Kanto",
   "Johto",
@@ -11,27 +15,9 @@ export const REGIOES = [
   "Paldea",
 ] as const;
 
-export const TIPOS = [
-  "",
-  "Normal",
-  "Fogo",
-  "Água",
-  "Planta",
-  "Elétrico",
-  "Gelo",
-  "Lutador",
-  "Veneno",
-  "Terra",
-  "Voador",
-  "Psíquico",
-  "Inseto",
-  "Pedra",
-  "Fantasma",
-  "Dragão",
-  "Sombrio",
-  "Aço",
-  "Fada",
-] as const;
+// =========================
+// Classificação
+// =========================
 
 export const TIERS = [
   "S+",
@@ -48,12 +34,53 @@ export const FUNCOES = [
   "Versátil",
 ] as const;
 
+export const MELHOR_PARA = [
+  "Raids",
+  "Rocket",
+  "Ginásios",
+  "PvP",
+] as const;
+
+export const FORMAS_ESPECIAIS = [
+  "Nenhuma",
+  "Mega",
+  "Primal",
+] as const;
+
+// =========================
+// Combate
+// ========================= 
+
+export const TIPOS = [
+  "Aço",
+  "Água",
+  "Dragão",
+  "Elétrico",
+  "Fada",
+  "Fantasma",
+  "Fogo",
+  "Gelo",
+  "Inseto",
+  "Lutador",
+  "Normal",
+  "Pedra",
+  "Planta",
+  "Psíquico",
+  "Sombrio",
+  "Terra",
+  "Veneno",
+  "Voador",
+] as const;
+
 export const CLIMAS = [
   "Ensolarado",
   "Parcialmente nublado",
   "Nublado",
   "Chuvoso",
-  "Ventando",
   "Neve",
   "Neblina",
+  "Ventando",
 ] as const;
+
+
+
