@@ -103,6 +103,7 @@ export interface BuddyPokemon {
 // =========================
 
 export interface Pokemon {
+  [x: string]: any;
   // Identificação
   numero: string;
   nome: string;

@@ -1,6 +1,5 @@
 [
   {
-    "id": 150,
     "numero": "#150",
     "nome": "Mewtwo",
     "regiao": "Kanto",
@@ -10,17 +9,15 @@
     "tier": "S+",
     "funcao": "Atacante",
     "climaFavoravel": "Ventando",
-    "descricao": "Atacante Psíquico extremamente forte. Prioridade máxima para investimento.",
     "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
-    "uso": {
-      "raid": true,
-      "rocket": true,
-      "ginasio": false,
-      "pvp": true
-    },
+    "melhorPara": [
+      "Raids",
+      "Rocket",
+      "PvP"
+    ],
     "hundos": {
-      "raidNivel20": 2387,
-      "raidNivel25": 2984
+      "semClima": 2387,
+      "comClima": 2984
     },
     "quaseHundos": {
       "iv98": 2382,
@@ -35,7 +32,7 @@
       "Lutador",
       "Psíquico"
     ],
-    "melhoresMegas": [
+    "sinergias": [
       "Mega Tyranitar",
       "Mega Gengar",
       "Mega Houndoom"
@@ -43,9 +40,11 @@
     "evolucao": {
       "possui": false
     },
-    "mega": {
-      "possui": true,
-      "nome": "Mega Mewtwo Y"
+    "formaEspecial": {
+      "tipo": "Mega",
+      "nome": "Mega Mewtwo Y",
+      "valeInvestir": true,
+      "motivo": "."
     },
     "decisoes": [
       {
@@ -75,7 +74,6 @@
     },
     "buddy": {
       "necessario": true,
-      "km": 20,
       "objetivo": "Ganhar doces XL"
     },
     "observacoes": [
@@ -86,7 +84,6 @@
     ]
   },
   {
-    "id": 384,
     "numero": "#384",
     "nome": "Rayquaza",
     "regiao": "Hoenn",
@@ -96,80 +93,79 @@
     ],
     "tier": "S+",
     "funcao": "Atacante",
-    "descricao": "Excelente atacante dos tipos Dragão e Voador.",
     "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png",
     "climaFavoravel": "Ventando",
-    "uso": {
-      "raid": true,
-      "rocket": true,
-      "ginasio": false,
-      "pvp": true
-    },
+    "melhorPara": [
+      "Raids",
+      "Rocket",
+      "PvP"
+    ],
     "hundos": {
-      "raidNivel20": 2191,
-      "raidNivel25": 2739
+      "semClima": 2191,
+      "comClima": 2739
     },
     "quaseHundos": {
       "iv98": 2187,
       "iv96": 2182
     },
     "fraquezas": [
-  "Dragão",
-  "Fada",
-  "Gelo",
-  "Pedra"
+      "Dragão",
+      "Fada",
+      "Gelo",
+      "Pedra"
     ],
     "resistencias": [
-  "Fogo",
-  "Água",
-  "Lutador",
-  "Inseto",
-  "Planta",
-  "Terra"
+      "Fogo",
+      "Água",
+      "Lutador",
+      "Inseto",
+      "Planta",
+      "Terra"
     ],
-    "melhoresMegas": [
+    "sinergias": [
       "Mega Tyranitar",
       "Mega Gengar",
       "Mega Houndoom"
     ],
     "evolucao": {
-  "possui": false
-},
-    "mega": {
-  "possui": true,
-  "nome": "Mega Rayquaza"
-},
+      "possui": false
+    },
+    "formaEspecial": {
+      "tipo": "Mega",
+      "nome": "Mega Rayquaza",
+      "valeInvestir": true,
+      "motivo": "Melhor atacante do tipo Dragão e Voador."
+    },
     "decisoes": [
-  {
-    "titulo": "Vale guardar",
-    "status": "sim"
-  },
-  {
-    "titulo": "Vale maximizar",
-    "status": "sim"
-  },
-  {
-    "titulo": "Vale Buddy",
-    "status": "sim"
-  },
-  {
-    "titulo": "Vale Elite TM",
-    "status": "sim"
-  },
-  {
-    "titulo": "Transferir",
-    "status": "nao"
-  }
-],
+      {
+        "titulo": "Vale guardar",
+        "status": "sim"
+      },
+      {
+        "titulo": "Vale maximizar",
+        "status": "sim"
+      },
+      {
+        "titulo": "Vale Buddy",
+        "status": "sim"
+      },
+      {
+        "titulo": "Vale Elite TM",
+        "status": "sim"
+      },
+      {
+        "titulo": "Transferir",
+        "status": "nao"
+      }
+    ],
     "shadow": {
-  "possuiShadow": true,
-  "recomendadoPurificar": false
-},
+      "possuiShadow": true,
+      "recomendadoPurificar": false
+    },
     "buddy": {
-  "necessario": true,
-  "km": 20,
-  "objetivo": "Ganhar doces XL"
-},
+      "necessario": true,
+      "objetivo": "Ganhar doces XL"
+    },
     "observacoes": [
       "Não purifique a versão Shadow.",
       "Excelente atacante do tipo Psíquico.",

@@ -9,7 +9,7 @@ import { StarRating } from "@/components/ui/StarRating";
 
 type PokemonCardProps = {
   pokemon: Pokemon;
-   preview?: boolean;
+  preview?: boolean;
 };
 
 export function PokemonCard({
@@ -21,13 +21,13 @@ export function PokemonCard({
       <PokemonHeader pokemon={pokemon} />
 
       <PokemonDecision
-  pokemon={pokemon}
-  emptyMessage={
-    preview
-      ? "Nenhuma decisão cadastrada."
-      : undefined
-  }
-/>
+        pokemon={pokemon}
+        emptyMessage={
+          preview
+            ? "Nenhuma decisão cadastrada."
+            : undefined
+        }
+      />
 
       <div className="mt-6">
         <StarRating value={5} />
