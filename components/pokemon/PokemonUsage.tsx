@@ -10,10 +10,10 @@ export function PokemonUsage({ pokemon }: PokemonUsageProps) {
       <h2 className="mb-3 text-lg font-semibold">Uso</h2>
 
       <div className="space-y-2">
-        <p>{pokemon.uso.raid ? "✅ Raid" : "❌ Raid"}</p>
-        <p>{pokemon.uso.rocket ? "✅ Team GO Rocket" : "❌ Team GO Rocket"}</p>
-        <p>{pokemon.uso.ginasio ? "✅ Ginásio" : "⚠️ Ginásio"}</p>
-        <p>{pokemon.uso.pvp ? "✅ PvP" : "❌ PvP"}</p>
+        <p>{pokemon.MelhorParaPokemon.raid ? "✅ Raid" : "❌ Raid"}</p>
+        <p>{pokemon.MelhorParaPokemon.rocket ? "✅ Team GO Rocket" : "❌ Team GO Rocket"}</p>
+        <p>{pokemon.MelhorParaPokemon.ginasio ? "✅ Ginásio" : "⚠️ Ginásio"}</p>
+        <p>{pokemon.MelhorParaPokemon.pvp ? "✅ PvP" : "❌ PvP"}</p>
       </div>
     </div>
   );
