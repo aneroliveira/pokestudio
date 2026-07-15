@@ -39,6 +39,7 @@ export function createEmptyPokemon(): Pokemon {
 
     evolucao: {
       possui: false,
+      possuiEvolucao: false
     },
 
     // Estatísticas
