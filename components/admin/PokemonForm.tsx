@@ -1,4 +1,4 @@
-import type { Dispatch, SetStateAction } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import type {
   DecisaoPokemon,
   Pokemon,
@@ -19,6 +19,8 @@ import { SelectField } from "@/components/admin/SelectField";
 import { TextAreaField } from "@/components/admin/TextAreaField";
 import { TextField } from "@/components/admin/TextField";
 import { FormSection } from "./FormSection";
+import { buscarPokemonNaApi } from "@/services/pokemon/pokeApi";
+import { mapearPokemonBasico } from "@/services/pokemon/pokemonMapper";
 
 type PokemonFormProps = {
   pokemon: Pokemon;
@@ -46,6 +48,7 @@ function MultiSelectField({
   value: readonly string[];
   onChange: (value: string[]) => void;
 }) {
+
   return (
     <fieldset>
       <legend className="mb-2 text-sm font-medium">{label}</legend>
@@ -79,8 +82,33 @@ function toNumber(value: string) {
 }
 
 export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
+  const [loadingPokemon, setLoadingPokemon] = useState(false);
   function updatePokemon<K extends keyof Pokemon>(field: K, value: Pokemon[K]) {
     setPokemon((current) => ({ ...current, [field]: value }));
+  }
+
+  async function buscarPokemon() {
+    if (!pokemon.nome.trim()) return;
+
+    try {
+      setLoadingPokemon(true);
+
+      const data = await buscarPokemonNaApi(pokemon.nome);
+
+      const pokemonMapeado =
+        mapearPokemonBasico(data);
+
+      setPokemon((current) => ({
+        ...current,
+        ...pokemonMapeado,
+      }));
+
+    } catch (error) {
+      console.error(error);
+      alert("Pokémon não encontrado.");
+    } finally {
+      setLoadingPokemon(false);
+    }
   }
 
   function updateDecision(title: string, status: StatusDecisao) {
@@ -116,6 +144,16 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
               label="Nome"
               value={pokemon.nome}
               onChange={(nome) => updatePokemon("nome", nome)}
+              rightElement={
+                <button
+                  type="button"
+                  onClick={buscarPokemon}
+                  disabled={loadingPokemon}
+                  className="rounded-lg bg-indigo-600 px-4 py-2 text-white transition hover:bg-indigo-700 disabled:opacity-50"
+                >
+                  {loadingPokemon ? "..." : "Buscar"}
+                </button>
+              }
             />
             <SelectField
               label="Região"
