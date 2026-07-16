@@ -83,6 +83,8 @@ function toNumber(value: string) {
 
 export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
   const [loadingPokemon, setLoadingPokemon] = useState(false);
+  const dadosImportados =
+    pokemon.numero !== "";
   function updatePokemon<K extends keyof Pokemon>(field: K, value: Pokemon[K]) {
     setPokemon((current) => ({ ...current, [field]: value }));
   }
@@ -132,41 +134,57 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
       <h2 className="mb-6 text-xl font-semibold">Dados do Pokémon</h2>
 
       <div className="space-y-6">
-        <FormSection title="📌 Identificação">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <TextField
-              label="Número da Pokédex"
-              placeholder="#001"
-              value={pokemon.numero}
-              onChange={(numero) => updatePokemon("numero", numero)}
-            />
-            <TextField
-              label="Nome"
-              value={pokemon.nome}
-              onChange={(nome) => updatePokemon("nome", nome)}
-              rightElement={
-                <button
-                  type="button"
-                  onClick={buscarPokemon}
-                  disabled={loadingPokemon}
-                  className="rounded-lg bg-indigo-600 px-4 py-2 text-white transition hover:bg-indigo-700 disabled:opacity-50"
-                >
-                  {loadingPokemon ? "..." : "Buscar"}
-                </button>
-              }
-            />
-            <SelectField
-              label="Região"
-              value={pokemon.regiao}
-              options={REGIOES}
-              onChange={(regiao) => updatePokemon("regiao", regiao)}
-            />
-          </div>
+        <FormSection title="🔍 Importação">
+
           <TextField
-            label="URL da imagem"
-            value={pokemon.imagem}
-            onChange={(imagem) => updatePokemon("imagem", imagem)}
+            label="Nome do Pokémon"
+            value={pokemon.nome}
+            onChange={(nome) =>
+              updatePokemon("nome", nome)
+            }
           />
+
+          <button
+            type="button"
+            onClick={buscarPokemon}
+            disabled={loadingPokemon}
+            className="mt-4 w-full rounded-lg bg-indigo-600 py-2 text-white transition hover:bg-indigo-700 disabled:opacity-50"
+          >
+            {loadingPokemon
+              ? "Importando..."
+              : "Importar PokéAPI"}
+          </button>
+
+           <div className="mt-3 rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
+                🟢 Dados oficiais importados da PokéAPI
+              </div>
+              
+          <FormSection title="📌 Identificação">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <TextField
+                label="Número da Pokédex"
+                placeholder="#001"
+                value={pokemon.numero}
+                readOnly={dadosImportados}
+                onChange={(numero) => updatePokemon("numero", numero)}
+              />
+
+              <SelectField
+                label="Região"
+                value={pokemon.regiao}
+                options={REGIOES}
+                onChange={(regiao) => updatePokemon("regiao", regiao)}
+              />
+            </div>
+            <TextField
+              label="URL da imagem"
+              value={pokemon.imagem}
+              readOnly={dadosImportados}
+              onChange={(imagem) => updatePokemon("imagem", imagem)}
+            />
+
+          </FormSection>
+
           <MultiSelectField
             label="Tipos"
             options={TIPOS.filter(Boolean)}
