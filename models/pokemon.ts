@@ -77,7 +77,6 @@ export interface DecisaoPokemon {
 export interface EvolucaoPokemon {
   possuiEvolucao: boolean;
   possui: boolean;
-  doces?: number;
   requisito?: string;
 }
 
@@ -114,7 +113,7 @@ export interface Pokemon {
   tier: TierPokemon;
   funcao: FuncaoPokemon;
   melhorPara: MelhorParaPokemon[];
-  climaFavoravel: ClimaPokemon;
+  climasFavoraveis: ClimaPokemon[];
 
   // Combate
   tipos: TipoPokemon[];

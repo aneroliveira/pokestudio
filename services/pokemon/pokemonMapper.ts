@@ -1,46 +1,44 @@
 import type {
   Pokemon,
   TipoPokemon,
+  ClimaPokemon,
 } from "@/models/pokemon";
 import { getRegion } from "@/utils/getRegion";
+import { TIPOS_POKEMON } from "@/constants/pokemonTypes";
+import { CLIMA_POR_TIPO } from "@/constants/typeWeather";
 
-const TIPOS: Record<string, TipoPokemon> = {
-  normal: "Normal",
-  fire: "Fogo",
-  water: "Água",
-  grass: "Planta",
-  electric: "Elétrico",
-  ice: "Gelo",
-  fighting: "Lutador",
-  poison: "Veneno",
-  ground: "Terra",
-  flying: "Voador",
-  psychic: "Psíquico",
-  bug: "Inseto",
-  rock: "Pedra",
-  ghost: "Fantasma",
-  dragon: "Dragão",
-  dark: "Sombrio",
-  steel: "Aço",
-  fairy: "Fada",
-};
+export function mapearPokemonBasico(
+  pokemon: any,
+  _especie: any,
+) {
+  const tipos: TipoPokemon[] = pokemon.types.map(
+  (item: any) => TIPOS_POKEMON[item.type.name],
+);
 
-export function mapearPokemonBasico(data: any) {
+const climasFavoraveis = Array.from(
+  new Set(
+    tipos.flatMap((tipo) => {
+      const clima = CLIMA_POR_TIPO[tipo];
+      return clima ? [clima] : [];
+    }),
+  ),
+);
+
   return {
-    numero: `#${String(data.id).padStart(3, "0")}`,
+    numero: `#${String(pokemon.id).padStart(3, "0")}`,
 
     nome:
-      data.name.charAt(0).toUpperCase() +
-      data.name.slice(1),
+      pokemon.name.charAt(0).toUpperCase() +
+      pokemon.name.slice(1),
 
-    regiao: getRegion(data.id),
+    regiao: getRegion(pokemon.id),
 
     imagem:
-      data.sprites.other["official-artwork"]
+      pokemon.sprites.other["official-artwork"]
         .front_default,
 
-    tipos: data.types.map(
-      (item: any) => TIPOS[item.type.name]
-    ),
+    tipos,
+
+    climasFavoraveis,
   } satisfies Partial<Pokemon>;
 }

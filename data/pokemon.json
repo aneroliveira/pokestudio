@@ -8,7 +8,9 @@
     ],
     "tier": "S+",
     "funcao": "Atacante",
-    "climaFavoravel": "Ventando",
+    "climasFavoraveis": [
+  "Ensolarado?"
+],
     "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
     "melhorPara": [
       "Raids",
@@ -94,7 +96,9 @@
     "tier": "S+",
     "funcao": "Atacante",
     "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png",
-    "climaFavoravel": "Ventando",
+    "climasFavoraveis": [
+      "Ensolarado"
+    ],
     "melhorPara": [
       "Raids",
       "Rocket",

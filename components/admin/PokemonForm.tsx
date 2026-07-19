@@ -19,8 +19,7 @@ import { SelectField } from "@/components/admin/SelectField";
 import { TextAreaField } from "@/components/admin/TextAreaField";
 import { TextField } from "@/components/admin/TextField";
 import { FormSection } from "./FormSection";
-import { buscarPokemonNaApi } from "@/services/pokemon/pokeApi";
-import { mapearPokemonBasico } from "@/services/pokemon/pokemonMapper";
+import { importarPokemon } from "@/services/pokemon/importPokemon";
 
 type PokemonFormProps = {
   pokemon: Pokemon;
@@ -95,14 +94,12 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
     try {
       setLoadingPokemon(true);
 
-      const data = await buscarPokemonNaApi(pokemon.nome);
-
-      const pokemonMapeado =
-        mapearPokemonBasico(data);
+      const pokemonImportado =
+        await importarPokemon(pokemon.nome);
 
       setPokemon((current) => ({
         ...current,
-        ...pokemonMapeado,
+        ...pokemonImportado,
       }));
 
     } catch (error) {
@@ -155,10 +152,12 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
               : "Importar PokéAPI"}
           </button>
 
-           <div className="mt-3 rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
-                🟢 Dados oficiais importados da PokéAPI
-              </div>
-              
+          {dadosImportados && (
+            <div className="mt-3 rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
+              🟢 Dados oficiais importados da PokéAPI
+            </div>
+          )}
+
           <FormSection title="📌 Identificação">
             <div className="grid gap-4 sm:grid-cols-2">
               <TextField
@@ -371,22 +370,6 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
               }))
             }
           />
-
-          <TextField
-            label="Doces"
-            type="number"
-            value={pokemon.evolucao.doces?.toString() ?? ""}
-            onChange={(value) =>
-              setPokemon((current) => ({
-                ...current,
-                evolucao: {
-                  ...current.evolucao,
-                  doces: value === "" ? undefined : Number(value),
-                },
-              }))
-            }
-          />
-
           <TextField
             label="Requisito"
             value={pokemon.evolucao?.requisito ?? ""}

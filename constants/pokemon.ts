@@ -77,9 +77,9 @@ export const CLIMAS = [
   "Parcialmente nublado",
   "Nublado",
   "Chuvoso",
+  "Ventando",
   "Neve",
   "Neblina",
-  "Ventando",
 ] as const;
 
 

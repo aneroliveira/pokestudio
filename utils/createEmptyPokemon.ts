@@ -12,7 +12,7 @@ export function createEmptyPokemon(): Pokemon {
     tier: "C",
     funcao: "Versátil",
     melhorPara: [],
-    climaFavoravel: "Ensolarado",
+    climasFavoraveis: [],
 
     // Combate
     tipos: [],
