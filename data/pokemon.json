@@ -9,8 +9,8 @@
     "tier": "S+",
     "funcao": "Atacante",
     "climasFavoraveis": [
-  "Ensolarado?"
-],
+      "Ensolarado?"
+    ],
     "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
     "melhorPara": [
       "Raids",
@@ -40,8 +40,10 @@
       "Mega Houndoom"
     ],
     "evolucao": {
-      "possui": false
+      "anteriores": [],
+      "proximas": []
     },
+    "formas": [],
     "formaEspecial": {
       "tipo": "Mega",
       "nome": "Mega Mewtwo Y",
@@ -132,8 +134,10 @@
       "Mega Houndoom"
     ],
     "evolucao": {
-      "possui": false
+      "anteriores": [],
+      "proximas": []
     },
+    "formas": [],
     "formaEspecial": {
       "tipo": "Mega",
       "nome": "Mega Rayquaza",

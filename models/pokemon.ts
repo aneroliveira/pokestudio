@@ -74,10 +74,13 @@ export interface DecisaoPokemon {
   status: StatusDecisao;
 }
 
+export interface EvolucaoReferencia {
+  nome: string;
+}
+
 export interface EvolucaoPokemon {
-  possuiEvolucao: boolean;
-  possui: boolean;
-  requisito?: string;
+  anteriores: EvolucaoReferencia[];
+  proximas: EvolucaoReferencia[];
 }
 
 export interface FormaEspecialPokemon {
@@ -100,6 +103,20 @@ export interface BuddyPokemon {
 // =========================
 // Modelo principal
 // =========================
+
+export type CategoriaFormaPokemon =
+  | "Normal"
+  | "Regional"
+  | "Mega"
+  | "Gigamax"
+  | "Primal"
+  | "Alternativa";
+
+export interface FormaPokemon {
+  id: string;
+  nome: string;
+  categoria: CategoriaFormaPokemon;
+}
 
 export interface Pokemon {
   [x: string]: any;
@@ -125,6 +142,7 @@ export interface Pokemon {
   shadow: ShadowPokemon;
   buddy: BuddyPokemon;
   evolucao: EvolucaoPokemon;
+  formas: FormaPokemon[];
 
   // Estatísticas
   hundos: HundosPokemon;

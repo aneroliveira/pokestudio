@@ -356,35 +356,6 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
           )}
         </FormSection>
 
-        <FormSection title="🧬 Evolução">
-          <CheckboxField
-            label="Possui evolução"
-            checked={pokemon.evolucao?.possuiEvolucao ?? false}
-            onChange={(possuiEvolucao) =>
-              setPokemon((current) => ({
-                ...current,
-                evolucao: {
-                  ...current.evolucao,
-                  possuiEvolucao,
-                },
-              }))
-            }
-          />
-          <TextField
-            label="Requisito"
-            value={pokemon.evolucao?.requisito ?? ""}
-            onChange={(requisito) =>
-              setPokemon((current) => ({
-                ...current,
-                evolucao: {
-                  ...current.evolucao,
-                  requisito,
-                },
-              }))
-            }
-          />
-        </FormSection>
-
         <FormSection title="🤝 Sinergias">
           <TextAreaField
             label="Sinergias (uma por linha)"
