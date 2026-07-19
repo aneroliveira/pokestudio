@@ -11,24 +11,24 @@ export type TierPokemon =
   | "C";
 
 export type TipoPokemon =
-  | "Inseto"
-  | "Sombrio"
-  | "Dragão"
-  | "Elétrico"
-  | "Fada"
-  | "Lutador"
-  | "Fogo"
-  | "Voador"
-  | "Fantasma"
-  | "Planta"
-  | "Terra"
-  | "Gelo"
+  | "Bug"
+  | "Dark"
+  | "Dragon"
+  | "Electric"
+  | "Fairy"
+  | "Fighting"
+  | "Fire"
+  | "Flying"
+  | "Ghost"
+  | "Grass"
+  | "Ground"
+  | "Ice"
   | "Normal"
-  | "Veneno"
-  | "Psíquico"
-  | "Pedra"
-  | "Aço"
-  | "Água";
+  | "Poison"
+  | "Psychic"
+  | "Rock"
+  | "Steel"
+  | "Water";
 
 export type FuncaoPokemon =
   | "Atacante"
@@ -36,13 +36,13 @@ export type FuncaoPokemon =
   | "Versátil";
 
 export type ClimaPokemon =
-  | "Ensolarado"
-  | "Parcialmente nublado"
-  | "Nublado"
-  | "Chuvoso"
-  | "Ventando"
-  | "Neve"
-  | "Neblina";
+  | "Sunny"
+  | "Partly Cloudy"
+  | "Cloudy"
+  | "Rainy"
+  | "Windy"
+  | "Snow"
+  | "Fog";
 
 export type MelhorParaPokemon =
   | "Raids"
@@ -58,6 +58,13 @@ export type StatusDecisao =
 // =========================
 // Estruturas
 // =========================
+
+export interface NomeTraduzido {
+  ptBR: string;
+  enUS: string;
+}
+
+export type MovimentoGOId = string;
 
 export interface HundosPokemon {
   semClima: number;
@@ -83,16 +90,16 @@ export interface EvolucaoPokemon {
   proximas: EvolucaoReferencia[];
 }
 
-export interface EstadoGOPokemon {
-    tipo: TipoEstadoGOPokemon;
-    valeInvestir: boolean;
-    motivo: string;
-}
-
 export type TipoEstadoGOPokemon =
-    | "Nenhum"
-    | "Shadow"
-    | "Purificado";
+  | "Nenhum"
+  | "Shadow"
+  | "Purificado";
+
+export interface EstadoGOPokemon {
+  tipo: TipoEstadoGOPokemon;
+  valeInvestir: boolean;
+  motivo: string;
+}
 
 export interface ShadowPokemon {
   possuiShadow: boolean;
@@ -102,6 +109,22 @@ export interface ShadowPokemon {
 export interface BuddyPokemon {
   necessario: boolean;
   objetivo?: string;
+}
+
+export type CategoriaMovimentoGO =
+  | "Rapido"
+  | "Carregado";
+
+export interface MovimentoGO {
+  id: MovimentoGOId;
+  nome: NomeTraduzido;
+  tipo: TipoPokemon;
+  categoria: CategoriaMovimentoGO;
+}
+
+export interface MovepoolPokemon {
+  rapidos: MovimentoGOId[];
+  carregados: MovimentoGOId[];
 }
 
 // =========================
@@ -123,8 +146,10 @@ export interface FormaPokemon {
 
 export interface Pokemon {
   [x: string]: any;
+
   // Identificação
   numero: string;
+  nome: NomeTraduzido;
   regiao: string;
   imagem: string;
 
@@ -145,6 +170,7 @@ export interface Pokemon {
   buddy: BuddyPokemon;
   evolucao: EvolucaoPokemon;
   formas: FormaPokemon[];
+  movepool: MovepoolPokemon;
 
   // Estatísticas
   hundos: HundosPokemon;

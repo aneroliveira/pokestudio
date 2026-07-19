@@ -11,7 +11,7 @@ export function buscarPokemon(texto: string): Pokemon[] {
 
   return listarPokemons().filter((pokemon) => {
     return (
-      pokemon.nome.toLowerCase().includes(pesquisa) ||
+      pokemon.nome.ptBR.toLowerCase().includes(pesquisa) ||
       pokemon.numero.replace("#", "").includes(pesquisa)
     );
   });

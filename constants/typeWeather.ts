@@ -1,29 +1,29 @@
 import type { ClimaPokemon, TipoPokemon } from "@/models/pokemon";
 
 export const CLIMA_POR_TIPO: Partial<Record<TipoPokemon, ClimaPokemon>> = {
-    Normal: "Parcialmente nublado",
-    Pedra: "Parcialmente nublado",
+  Normal: "Partly Cloudy",
+  Rock: "Partly Cloudy",
 
-    Fogo: "Ensolarado",
-    Planta: "Ensolarado",
-    Terra: "Ensolarado",
+  Fire: "Sunny",
+  Grass: "Sunny",
+  Ground: "Sunny",
 
-    Água: "Chuvoso",
-    Elétrico: "Chuvoso",
-    Inseto: "Chuvoso",
+  Water: "Rainy",
+  Electric: "Rainy",
+  Bug: "Rainy",
 
-    Gelo: "Neve",
+  Ice: "Snow",
 
-    Dragão: "Ventando",
-    Psíquico: "Ventando",
-    Voador: "Ventando",
+  Dragon: "Windy",
+  Psychic: "Windy",
+  Flying: "Windy",
 
-    Fantasma: "Neblina",
-    Sombrio: "Neblina",
+  Ghost: "Fog",
+  Dark: "Fog",
 
-    Lutador: "Nublado",
-    Fada: "Nublado",
-    Veneno: "Nublado",
+  Fighting: "Cloudy",
+  Fairy: "Cloudy",
+  Poison: "Cloudy",
 
-    Aço: "Neve",
+  Steel: "Snow",
 };

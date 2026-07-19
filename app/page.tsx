@@ -6,7 +6,7 @@ import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
 import { SearchBar } from "@/components/pokemon/SearchBar";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import type { Pokemon } from "@/models/pokemon";
+import type { NomeTraduzido, Pokemon } from "@/models/pokemon";
 import { buscarPokemon } from "@/services/pokemon";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
 import { PokemonDecision } from "@/components/pokemon/PokemonDecision";
@@ -20,7 +20,6 @@ export default function Home() {
 
   function selecionarPokemon(pokemon: Pokemon) {
     setPokemonSelecionado(pokemon);
-    setPesquisa(pokemon.nome);
   }
 
   return (

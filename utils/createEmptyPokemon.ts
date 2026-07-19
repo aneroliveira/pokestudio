@@ -6,6 +6,14 @@ export function createEmptyPokemon(): Pokemon {
     numero: "",
     regiao: "",
     imagem: "",
+    nome: {
+      "ptBR": "",
+      "enUS": ""
+    },
+    "movepool": {
+      "rapidos": [],
+      "carregados": []
+    },
 
     // Classificação
     tier: "C",
@@ -41,6 +49,11 @@ export function createEmptyPokemon(): Pokemon {
     },
 
     formas: [],
+
+    movimentos: {
+      rapidos: [],
+      carregados: [],
+    },
 
     // Estatísticas
     hundos: {

@@ -49,38 +49,35 @@ export const ESTADOS_GO = [
 
 // =========================
 // Combate
-// ========================= 
+// =========================
 
 export const TIPOS = [
-  "Aço",
-  "Água",
-  "Dragão",
-  "Elétrico",
-  "Fada",
-  "Fantasma",
-  "Fogo",
-  "Gelo",
-  "Inseto",
-  "Lutador",
+  "Bug",
+  "Dark",
+  "Dragon",
+  "Electric",
+  "Fairy",
+  "Fighting",
+  "Fire",
+  "Flying",
+  "Ghost",
+  "Grass",
+  "Ground",
+  "Ice",
   "Normal",
-  "Pedra",
-  "Planta",
-  "Psíquico",
-  "Sombrio",
-  "Terra",
-  "Veneno",
-  "Voador",
+  "Poison",
+  "Psychic",
+  "Rock",
+  "Steel",
+  "Water",
 ] as const;
 
 export const CLIMAS = [
-  "Ensolarado",
-  "Parcialmente nublado",
-  "Nublado",
-  "Chuvoso",
-  "Ventando",
-  "Neve",
-  "Neblina",
+  "Sunny",
+  "PartlyCloudy",
+  "Cloudy",
+  "Rainy",
+  "Windy",
+  "Snow",
+  "Fog",
 ] as const;
-
-
-

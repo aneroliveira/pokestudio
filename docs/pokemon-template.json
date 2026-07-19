@@ -28,6 +28,10 @@
     "evolucao": {
       "possui": false
     },
+    "movimentos": {
+      "rapidos": [],
+      "carregados": []
+    },
     "hundos": {
       "semClima": 0,
       "comClima": 0

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "thunder-shock",
+    "nome": "Thunder Shock",
+    "tipo": "Electric",
+    "categoria": "Rapido"
+  },
+  {
+    "id": "volt-switch",
+    "nome": "Volt Switch",
+    "tipo": "Electric",
+    "categoria": "Rapido"
+  },
+  {
+    "id": "wild-charge",
+    "nome": "Wild Charge",
+    "tipo": "Electric",
+    "categoria": "Carregado"
+  },
+  {
+    "id": "thunderbolt",
+    "nome": "Thunderbolt",
+    "tipo": "Electric",
+    "categoria": "Carregado"
+  }
+]

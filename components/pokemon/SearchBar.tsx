@@ -45,7 +45,7 @@ export function SearchBar({
         className="cursor-pointer border-b p-3 transition-colors hover:bg-zinc-50 last:border-b-0"
       >
         <p className="font-medium">
-          {pokemon.numero} • {pokemon.nome}
+          {pokemon.numero} • {pokemon.nome.ptBR}
         </p>
 
         <p className="text-sm text-zinc-500">

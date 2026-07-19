@@ -5,6 +5,14 @@
     "tipos": [
       "Psíquico"
     ],
+    "nome": {
+  "ptBR": "Mewtwo",
+  "enUS": "Mewtwo"
+},
+"movepool": {
+  "rapidos": [],
+  "carregados": []
+},
     "tier": "S+",
     "funcao": "Atacante",
     "climasFavoraveis": [
@@ -86,6 +94,14 @@
     ]
   },
   {
+    "nome": {
+  "ptBR": "Mewtwo",
+  "enUS": "Mewtwo"
+},
+"movepool": {
+  "rapidos": [],
+  "carregados": []
+},
     "numero": "#384",
     "regiao": "Hoenn",
     "tipos": [

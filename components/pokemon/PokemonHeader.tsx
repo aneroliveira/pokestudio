@@ -17,7 +17,7 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
         </p>
 
         <h2 className="text-3xl font-bold">
-          {pokemon.nome || "Pokémon"}
+          {pokemon.nome.ptBR || "Pokémon"}
         </h2>
 
         <div className="mt-3 flex flex-wrap gap-2">
@@ -43,7 +43,7 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
           {pokemon.imagem ? (
             <Image
               src={pokemon.imagem}
-              alt={pokemon.nome || "Pokémon"}
+              alt={pokemon.nome.ptBR|| "Pokémon"}
               width={120}
               height={120}
             />

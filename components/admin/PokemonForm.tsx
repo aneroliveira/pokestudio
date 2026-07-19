@@ -82,6 +82,7 @@ function toNumber(value: string) {
 
 export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
   const [loadingPokemon, setLoadingPokemon] = useState(false);
+  const [pesquisa, setPesquisa] = useState("");
   const dadosImportados =
     pokemon.numero !== "";
   function updatePokemon<K extends keyof Pokemon>(field: K, value: Pokemon[K]) {
@@ -89,19 +90,17 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
   }
 
   async function buscarPokemon() {
-    if (!pokemon.nome.trim()) return;
+    if (!pesquisa.trim()) return;
 
     try {
       setLoadingPokemon(true);
 
-      const pokemonImportado =
-        await importarPokemon(pokemon.nome);
+      const pokemonImportado = await importarPokemon(pesquisa);
 
       setPokemon((current) => ({
         ...current,
         ...pokemonImportado,
       }));
-
     } catch (error) {
       console.error(error);
       alert("Pokémon não encontrado.");
@@ -132,13 +131,10 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
 
       <div className="space-y-6">
         <FormSection title="🔍 Importação">
-
           <TextField
             label="Nome do Pokémon"
-            value={pokemon.nome}
-            onChange={(nome) =>
-              updatePokemon("nome", nome)
-            }
+            value={pesquisa}
+            onChange={setPesquisa}
           />
 
           <button
@@ -251,7 +247,7 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
 
           <CheckboxField
             label="Vale investir"
-          checked={pokemon.estadoGO.valeInvestir}
+            checked={pokemon.estadoGO.valeInvestir}
             onChange={(valeInvestir) =>
               setPokemon((current) => ({
                 ...current,
