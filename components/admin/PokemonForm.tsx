@@ -7,7 +7,7 @@ import type {
 } from "@/models/pokemon";
 import {
   CLIMAS,
-  FORMAS_ESPECIAIS,
+  ESTADOS_GO,
   FUNCOES,
   MELHOR_PARA,
   REGIOES,
@@ -236,28 +236,14 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
         <FormSection title="⭐ Forma Especial">
           <SelectField
             label="Tipo"
-            value={pokemon.formaEspecial.tipo}
-            options={FORMAS_ESPECIAIS}
+            value={pokemon.estadoGO.tipo}
+            options={ESTADOS_GO}
             onChange={(tipo) =>
               setPokemon((current) => ({
                 ...current,
-                formaEspecial: {
-                  ...current.formaEspecial,
-                  tipo: tipo as Pokemon["formaEspecial"]["tipo"],
-                },
-              }))
-            }
-          />
-
-          <TextField
-            label="Nome"
-            value={pokemon.formaEspecial.nome}
-            onChange={(nome) =>
-              setPokemon((current) => ({
-                ...current,
-                formaEspecial: {
-                  ...current.formaEspecial,
-                  nome,
+                estadoGO: {
+                  ...current.estadoGO,
+                  tipo: tipo as Pokemon["estadoGO"]["tipo"],
                 },
               }))
             }
@@ -265,12 +251,12 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
 
           <CheckboxField
             label="Vale investir"
-            checked={pokemon.formaEspecial.valeInvestir}
+          checked={pokemon.estadoGO.valeInvestir}
             onChange={(valeInvestir) =>
               setPokemon((current) => ({
                 ...current,
-                formaEspecial: {
-                  ...current.formaEspecial,
+                estadoGO: {
+                  ...current.estadoGO,
                   valeInvestir,
                 },
               }))
@@ -279,12 +265,12 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
 
           <TextAreaField
             label="Motivo"
-            value={pokemon.formaEspecial.motivo}
+            value={pokemon.estadoGO.motivo}
             onChange={(motivo) =>
               setPokemon((current) => ({
                 ...current,
-                formaEspecial: {
-                  ...current.formaEspecial,
+                estadoGO: {
+                  ...current.estadoGO,
                   motivo,
                 },
               }))

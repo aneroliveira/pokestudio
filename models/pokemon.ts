@@ -83,12 +83,16 @@ export interface EvolucaoPokemon {
   proximas: EvolucaoReferencia[];
 }
 
-export interface FormaEspecialPokemon {
-  tipo: "Nenhuma" | "Mega" | "Primal";
-  nome: string;
-  valeInvestir: boolean;
-  motivo: string;
+export interface EstadoGOPokemon {
+    tipo: TipoEstadoGOPokemon;
+    valeInvestir: boolean;
+    motivo: string;
 }
+
+export type TipoEstadoGOPokemon =
+    | "Nenhum"
+    | "Shadow"
+    | "Purificado";
 
 export interface ShadowPokemon {
   possuiShadow: boolean;
@@ -114,7 +118,6 @@ export type CategoriaFormaPokemon =
 
 export interface FormaPokemon {
   id: string;
-  nome: string;
   categoria: CategoriaFormaPokemon;
 }
 
@@ -122,7 +125,6 @@ export interface Pokemon {
   [x: string]: any;
   // Identificação
   numero: string;
-  nome: string;
   regiao: string;
   imagem: string;
 
@@ -138,7 +140,7 @@ export interface Pokemon {
   resistencias: TipoPokemon[];
 
   // Investimento
-  formaEspecial: FormaEspecialPokemon;
+  estadoGO: EstadoGOPokemon;
   shadow: ShadowPokemon;
   buddy: BuddyPokemon;
   evolucao: EvolucaoPokemon;

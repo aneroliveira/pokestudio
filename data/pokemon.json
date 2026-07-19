@@ -1,7 +1,6 @@
 [
   {
     "numero": "#150",
-    "nome": "Mewtwo",
     "regiao": "Kanto",
     "tipos": [
       "Psíquico"
@@ -44,9 +43,8 @@
       "proximas": []
     },
     "formas": [],
-    "formaEspecial": {
+    "estadoGO": {
       "tipo": "Mega",
-      "nome": "Mega Mewtwo Y",
       "valeInvestir": true,
       "motivo": "."
     },
@@ -89,7 +87,6 @@
   },
   {
     "numero": "#384",
-    "nome": "Rayquaza",
     "regiao": "Hoenn",
     "tipos": [
       "Dragão",
@@ -138,9 +135,8 @@
       "proximas": []
     },
     "formas": [],
-    "formaEspecial": {
+    "estadoGO": {
       "tipo": "Mega",
-      "nome": "Mega Rayquaza",
       "valeInvestir": true,
       "motivo": "Melhor atacante do tipo Dragão e Voador."
     },

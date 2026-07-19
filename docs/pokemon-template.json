@@ -12,9 +12,8 @@
     "fraquezas": [],
     "resistencias": [],
     "formas": [],
-    "formaEspecial": {
-      "tipo": "Nenhuma",
-      "nome": "",
+    "estadoGO": {
+      "tipo": "Nenhum",
       "valeInvestir": false,
       "motivo": ""
     },

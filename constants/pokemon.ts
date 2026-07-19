@@ -41,10 +41,10 @@ export const MELHOR_PARA = [
   "PvP",
 ] as const;
 
-export const FORMAS_ESPECIAIS = [
-  "Nenhuma",
-  "Mega",
-  "Primal",
+export const ESTADOS_GO = [
+  "Nenhum",
+  "Shadow",
+  "Purificado",
 ] as const;
 
 // =========================

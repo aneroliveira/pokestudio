@@ -4,7 +4,6 @@ export function createEmptyPokemon(): Pokemon {
   return {
     // Identificação
     numero: "",
-    nome: "",
     regiao: "",
     imagem: "",
 
@@ -20,9 +19,8 @@ export function createEmptyPokemon(): Pokemon {
     resistencias: [],
 
     // Investimento
-    formaEspecial: {
-      tipo: "Nenhuma",
-      nome: "",
+    estadoGO: {
+      tipo: "Nenhum",
       valeInvestir: false,
       motivo: "",
     },
@@ -42,7 +40,7 @@ export function createEmptyPokemon(): Pokemon {
       proximas: [],
     },
 
-    formas:[],
+    formas: [],
 
     // Estatísticas
     hundos: {
