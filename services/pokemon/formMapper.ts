@@ -76,7 +76,7 @@ export function obterFormasPokemon(
     variedades: unknown[],
 ): FormaPokemon[] {
     return (variedades || []).map((variedade) => {
-        const name = (variedade as { pokemon?: { name?: string } })?.pokemon?.name ?? String((variedade as any)?.name ?? '');
+        const name = (variedade as { pokemon?: { name?: string } })?.pokemon?.name ?? String(((variedade as unknown) as Record<string, unknown>)?.name ?? '');
         const partes = name.split("-");
 
         return {
