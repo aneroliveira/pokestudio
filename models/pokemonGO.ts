@@ -24,8 +24,8 @@ export interface BuddyPokemon {
 }
 
 export interface HundosPokemon {
-  semClima: number;
-  comClima: number;
+  semClima?: number;
+  comClima?: number;
 }
 
 export interface QuaseHundosPokemon {

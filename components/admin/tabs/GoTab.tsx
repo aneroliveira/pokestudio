@@ -166,7 +166,7 @@ export function GoTab({ pokemon, editor }: GoTabProps) {
             onChange={(value) =>
               editor.updateHundos(
                 "semClima",
-                value === "" ? 0 : Number(value),
+                value === "" ? undefined : Number(value),
               )
             }
           />
@@ -177,7 +177,7 @@ export function GoTab({ pokemon, editor }: GoTabProps) {
             onChange={(value) =>
               editor.updateHundos(
                 "comClima",
-                value === "" ? 0 : Number(value),
+                value === "" ? undefined : Number(value),
               )
             }
           />

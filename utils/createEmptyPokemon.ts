@@ -48,12 +48,12 @@ export function createEmptyPokemon(): Pokemon {
           objetivo: "",
         },
         hundos: {
-          semClima: 0,
-          comClima: 0,
+          semClima: undefined,
+          comClima: undefined,
         },
         quaseHundos: {
-          iv98: 0,
-          iv96: 0,
+          iv98: undefined,
+          iv96: undefined,
         },
       },
     },
