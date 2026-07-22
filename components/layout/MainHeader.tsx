@@ -21,7 +21,6 @@ export function MainHeader() {
 
   const items = [
     { href: "/", label: "Home" },
-    { href: "/searchIV", label: "Calculadora" },
     { href: "/admin", label: "Admin" },
   ];
 
