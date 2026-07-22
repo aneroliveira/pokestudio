@@ -204,14 +204,14 @@ export function PokemonForm({ pokemon, setPokemon }: PokemonFormProps) {
                 updatePokemon("funcao", funcao as Pokemon["funcao"])
               }
             />
-            <SelectField
+            <MultiSelectField
               label="Clima favorável"
-              value={pokemon.climaFavoravel}
+              value={pokemon.climasFavoraveis}
               options={CLIMAS}
-              onChange={(climaFavoravel) =>
+              onChange={(climasFavoraveis) =>
                 updatePokemon(
-                  "climaFavoravel",
-                  climaFavoravel as Pokemon["climaFavoravel"],
+                  "climasFavoraveis",
+                  climasFavoraveis as Pokemon["climasFavoraveis"],
                 )
               }
             />

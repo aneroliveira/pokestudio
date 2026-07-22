@@ -10,10 +10,6 @@ export function createEmptyPokemon(): Pokemon {
       "ptBR": "",
       "enUS": ""
     },
-    "movepool": {
-      "rapidos": [],
-      "carregados": []
-    },
 
     // Classificação
     tier: "C",
@@ -50,7 +46,7 @@ export function createEmptyPokemon(): Pokemon {
 
     formas: [],
 
-    movimentos: {
+    movepool: {
       rapidos: [],
       carregados: [],
     },

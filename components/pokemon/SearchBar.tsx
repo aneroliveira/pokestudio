@@ -37,24 +37,24 @@ export function SearchBar({
         Digite o nome ou o número da Pokédex.
       </p>
       {value && resultados.length > 0 && (
-  <div className="mt-4 overflow-hidden rounded-xl border bg-white shadow-sm">
-    {resultados.map((pokemon) => (
-      <div
-        key={pokemon.id}
-        onClick={() => onSelect(pokemon)}
-        className="cursor-pointer border-b p-3 transition-colors hover:bg-zinc-50 last:border-b-0"
-      >
-        <p className="font-medium">
-          {pokemon.numero} • {pokemon.nome.ptBR}
-        </p>
+        <div className="mt-4 overflow-hidden rounded-xl border bg-white shadow-sm">
+          {resultados.map((pokemon) => (
+            <div
+              key={pokemon.numero}
+              onClick={() => onSelect(pokemon)}
+              className="cursor-pointer border-b p-3 transition-colors hover:bg-zinc-50 last:border-b-0"
+            >
+              <p className="font-medium">
+                {pokemon.numero} • {pokemon.nome.ptBR}
+              </p>
 
-        <p className="text-sm text-zinc-500">
-          {pokemon.regiao}
-        </p>
-      </div>
-    ))}
-  </div>
-)}
+              <p className="text-sm text-zinc-500">
+                {pokemon.regiao}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

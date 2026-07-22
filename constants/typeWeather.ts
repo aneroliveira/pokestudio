@@ -1,8 +1,8 @@
 import type { ClimaPokemon, TipoPokemon } from "@/models/pokemon";
 
 export const CLIMA_POR_TIPO: Partial<Record<TipoPokemon, ClimaPokemon>> = {
-  Normal: "Partly Cloudy",
-  Rock: "Partly Cloudy",
+  Normal: "PartlyCloudy",
+  Rock: "PartlyCloudy",
 
   Fire: "Sunny",
   Grass: "Sunny",

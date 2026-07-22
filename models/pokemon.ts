@@ -37,7 +37,7 @@ export type FuncaoPokemon =
 
 export type ClimaPokemon =
   | "Sunny"
-  | "Partly Cloudy"
+  | "PartlyCloudy"
   | "Cloudy"
   | "Rainy"
   | "Windy"
@@ -145,8 +145,7 @@ export interface FormaPokemon {
 }
 
 export interface Pokemon {
-  [x: string]: any;
-
+ 
   // Identificação
   numero: string;
   nome: NomeTraduzido;
