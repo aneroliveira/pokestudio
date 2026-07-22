@@ -32,14 +32,16 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">
-        <div className="w-full">
-          <div className="mx-auto max-w-3xl">
-            {/* Header placed above page titles (site-wide) */}
-            <MainHeader />
-          </div>
-        </div>
+        <MainHeader />
 
-        {children}
+        {/* main content with top padding so sticky header doesn't overlap */}
+        <main className="flex-1 pt-16">
+          <div className="w-full">
+            <div className="mx-auto max-w-3xl px-4">
+              {children}
+            </div>
+          </div>
+        </main>
       </body>
     </html>
   );
