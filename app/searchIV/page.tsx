@@ -168,20 +168,6 @@ export default function SearchIvPage() {
            </div>
         </div>
 
-        <header className="flex items-center justify-between">
-          <nav className="flex items-center gap-4">
-            <Link href="/" className="text-sm font-medium text-black/80 hover:text-black">
-              Home
-            </Link>
-            <Link href="/admin" className="text-sm font-medium text-black/80 hover:text-black">
-              Admin
-            </Link>
-            <Link href="/searchIV" className="text-sm font-semibold text-red-600">
-              Calculadora
-            </Link>
-          </nav>
-        </header>
-
         <div className="rounded-[20px] border border-black/8 bg-white p-4 shadow-[0_8px_24px_rgba(0,0,0,0.06)] mt-3">
           <SearchBar
             value={pesquisa}
