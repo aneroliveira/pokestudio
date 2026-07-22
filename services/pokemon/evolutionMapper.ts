@@ -5,11 +5,19 @@ type EvolChainNode = {
   evolves_to: EvolChainNode[];
 };
 
+function hasChain(obj: unknown): obj is { chain: EvolChainNode } {
+  return typeof obj === 'object' && obj !== null && 'chain' in (obj as object);
+}
+
 export function obterEvolucaoPokemon(
-  cadeiaEvolutiva: { chain: EvolChainNode },
+  cadeiaEvolutiva: unknown,
   nomePokemon: string,
 ): EvolucaoPokemon {
   const linhaEvolutiva: string[] = [];
+
+  const root: EvolChainNode = hasChain(cadeiaEvolutiva)
+    ? (cadeiaEvolutiva as { chain: EvolChainNode }).chain
+    : (cadeiaEvolutiva as EvolChainNode);
 
   function percorrer(no: EvolChainNode) {
     linhaEvolutiva.push(no.species.name);
@@ -19,7 +27,7 @@ export function obterEvolucaoPokemon(
     }
   }
 
-  percorrer(cadeiaEvolutiva.chain);
+  percorrer(root);
 
   const indiceAtual = linhaEvolutiva.findIndex(
     (nome) => nome === nomePokemon,

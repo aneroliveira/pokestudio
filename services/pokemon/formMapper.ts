@@ -73,16 +73,17 @@ function formatarNomeForma(partes: string[]): string {
 }
 
 export function obterFormasPokemon(
-    variedades: Array<{ pokemon: { name: string } }>,
+    variedades: unknown[],
 ): FormaPokemon[] {
-    return variedades.map((variedade) => {
-        const partes = variedade.pokemon.name.split("-");
+    return (variedades || []).map((variedade) => {
+        const name = (variedade as { pokemon?: { name?: string } })?.pokemon?.name ?? String((variedade as any)?.name ?? '');
+        const partes = name.split("-");
 
         return {
-            id: variedade.pokemon.name,
+            id: name,
             nome: formatarNomeForma(partes),
             categoria: obterCategoriaForma(partes),
-        };
+        } as FormaPokemon;
     });
 }
 
