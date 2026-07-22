@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const INDEX_PATH = path.resolve(process.cwd(), 'data', 'pokemonIndex.json');
 const STUDIO_PATH = path.resolve(process.cwd(), 'data', 'studio.json');

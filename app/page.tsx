@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { PageContainer } from "@/components/layout/PageContainer";
@@ -72,6 +73,15 @@ export default function Home() {
           onSelect={selecionarPokemon}
           resultados={resultados}
         />
+
+        <div className="flex justify-start">
+          <Link
+            href="/searchIV"
+            className="text-sm font-medium text-primary underline-offset-4 hover:underline"
+          >
+            Ir para a calculadora de IV / nível →
+          </Link>
+        </div>
 
         {carregando ? (
           <p className="text-center text-sm text-zinc-500">

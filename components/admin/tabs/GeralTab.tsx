@@ -47,7 +47,7 @@ export function GeralTab({ pokemon, editor }: GeralTabProps) {
 
       <TextField
         label="URL da imagem"
-        value={pokemon.oficial.imagem}
+        value={pokemon.oficial.imagem ?? ""}
         readOnly={dadosImportados}
         onChange={(imagem) => editor.updateOficial("imagem", imagem)}
       />

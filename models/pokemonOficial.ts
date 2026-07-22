@@ -40,10 +40,15 @@ export interface PokemonOficial {
   numero: string;
   nome: NomeTraduzido;
   regiao: string;
-  imagem: string;
+  imagem: string | null;
 
   // Combate
   tipos: TipoPokemon[];
+  statsBase?: {
+    attack: number;
+    defense: number;
+    stamina: number;
+  };
 
   // Evolução
   evolucao: EvolucaoPokemon;

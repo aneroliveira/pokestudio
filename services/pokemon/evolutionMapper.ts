@@ -1,12 +1,17 @@
 import type { EvolucaoPokemon } from "@/models/pokemonOficial";
 
+type EvolChainNode = {
+  species: { name: string };
+  evolves_to: EvolChainNode[];
+};
+
 export function obterEvolucaoPokemon(
-  cadeiaEvolutiva: any,
+  cadeiaEvolutiva: { chain: EvolChainNode },
   nomePokemon: string,
 ): EvolucaoPokemon {
   const linhaEvolutiva: string[] = [];
 
-  function percorrer(no: any) {
+  function percorrer(no: EvolChainNode) {
     linhaEvolutiva.push(no.species.name);
 
     for (const evolucao of no.evolves_to) {

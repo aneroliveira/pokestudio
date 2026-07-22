@@ -73,11 +73,10 @@ function formatarNomeForma(partes: string[]): string {
 }
 
 export function obterFormasPokemon(
-    variedades: any[],
+    variedades: Array<{ pokemon: { name: string } }>,
 ): FormaPokemon[] {
-    return variedades.map((variedade: any) => {
-        const partes =
-            variedade.pokemon.name.split("-");
+    return variedades.map((variedade) => {
+        const partes = variedade.pokemon.name.split("-");
 
         return {
             id: variedade.pokemon.name,
