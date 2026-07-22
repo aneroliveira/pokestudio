@@ -1,7 +1,11 @@
 import { Search } from "lucide-react";
+import Image from "next/image";
 
 import { Input } from "@/components/ui/input";
+import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import type { ItemIndicePokemon } from "@/models/indice";
+import type { StudioMap } from "@/services/pokemon/studioStore";
+import { obterImagemPokemon } from "@/utils";
 
 type SearchBarProps = {
   value: string;
@@ -9,6 +13,7 @@ type SearchBarProps = {
   onSelect: (item: ItemIndicePokemon) => void;
   placeholder?: string;
   resultados: ItemIndicePokemon[];
+  studioMap?: StudioMap;
 };
 
 function formatarNome(nomeEn: string) {
@@ -24,6 +29,7 @@ export function SearchBar({
   onSelect,
   placeholder = "Pesquise um Pokémon...",
   resultados,
+  studioMap = {},
 }: SearchBarProps) {
   return (
     <div className="space-y-2">
@@ -43,20 +49,41 @@ export function SearchBar({
       <p className="text-sm text-zinc-500">
         Digite o nome (em inglês) ou o número da Pokédex.
       </p>
+
       {value && resultados.length > 0 && (
         <div className="mt-4 overflow-hidden rounded-xl border bg-white shadow-sm">
-          {resultados.map((item) => (
-            <div
-              key={item.numero}
-              onClick={() => onSelect(item)}
-              className="cursor-pointer border-b p-3 transition-colors hover:bg-zinc-50 last:border-b-0"
-            >
-              <p className="font-medium">
-                {item.numero} • {formatarNome(item.nomeEn)}
-              </p>
-            </div>
-          ))}
+          {resultados.map((item) => {
+            const tier = studioMap[item.numero]?.estrategia.tier;
+
+            return (
+              <div
+                key={item.numero}
+                onClick={() => onSelect(item)}
+                className="flex cursor-pointer items-center gap-3 border-b p-3 transition-colors hover:bg-zinc-50 last:border-b-0"
+              >
+                <Image
+                  src={obterImagemPokemon(item.id)}
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="shrink-0"
+                />
+
+                <p className="flex-1 font-medium">
+                  {item.numero} • {formatarNome(item.nomeEn)}
+                </p>
+
+                {tier && <PriorityBadge value={tier} />}
+              </div>
+            );
+          })}
         </div>
+      )}
+
+      {value && resultados.length === 0 && (
+        <p className="mt-4 text-center text-sm text-zinc-400">
+          Nenhum Pokémon encontrado para &ldquo;{value}&rdquo;.
+        </p>
       )}
     </div>
   );

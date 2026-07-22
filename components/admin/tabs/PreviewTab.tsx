@@ -1,5 +1,5 @@
 import type { Pokemon } from "@/models/pokemon";
-import { PreviewPanel } from "@/components/admin/PreviewPanel";
+import { JsonPreview } from "@/components/admin/JsonPreview";
 import { FormSection } from "@/components/admin/FormSection";
 import { calcularDerivados } from "@/services/pokemon/calcularDerivados";
 import { TIPO_LABEL, CLIMA_LABEL } from "@/constants/typeLabels";
@@ -36,7 +36,8 @@ export function PreviewTab({ pokemon }: PreviewTabProps) {
     <div className="space-y-8">
       <FormSection title="🧮 Derivados (calculado)">
         <p className="text-xs text-zinc-400">
-          Calculado a partir dos tipos. Nunca é persistido.
+          Calculado a partir dos tipos. Nunca é persistido. O card ao vivo
+          está sempre visível ao lado.
         </p>
 
         <div className="space-y-1">
@@ -57,7 +58,7 @@ export function PreviewTab({ pokemon }: PreviewTabProps) {
         </div>
       </FormSection>
 
-      <PreviewPanel pokemon={pokemon} />
+      <JsonPreview pokemon={pokemon} />
     </div>
   );
 }

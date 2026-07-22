@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
 import { SearchBar } from "@/components/pokemon/SearchBar";
+import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import type { Pokemon } from "@/models/pokemon";
 import type { ItemIndicePokemon } from "@/models/indice";
@@ -71,12 +72,11 @@ export default function Home() {
           }}
           onSelect={selecionarPokemon}
           resultados={resultados}
+          studioMap={studioMap}
         />
 
         {carregando ? (
-          <p className="text-center text-sm text-zinc-500">
-            Carregando dados oficiais...
-          </p>
+          <PokemonCardSkeleton />
         ) : pokemonSelecionado ? (
           <PokemonCard pokemon={pokemonSelecionado} />
         ) : (

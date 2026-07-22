@@ -2,12 +2,16 @@ import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { TypeBadge } from "@/components/ui/TypeBadge";
 import Image from "next/image";
+import { calcularDerivados } from "@/services/pokemon/calcularDerivados";
+import { CLIMA_LABEL } from "@/constants/typeLabels";
 
 type PokemonHeaderProps = {
   pokemon: Pokemon;
 };
 
 export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
+  const { climasFavoraveis } = calcularDerivados(pokemon.oficial.tipos);
+
   return (
     <div className="flex items-start justify-between gap-6">
       <div className="flex-1">
@@ -37,6 +41,19 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
         <p className="mt-3 text-sm font-medium text-zinc-700">
           🗡️ Função: {pokemon.studio.estrategia.funcao}
         </p>
+
+        {climasFavoraveis.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {climasFavoraveis.map((clima) => (
+              <span
+                key={clima}
+                className="rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-medium text-sky-700"
+              >
+                ☀️ {CLIMA_LABEL[clima]}
+              </span>
+            ))}
+          </div>
+        )}
 
         <div className="flex flex-col items-center gap-3">
           {pokemon.oficial.imagem ? (
