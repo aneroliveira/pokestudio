@@ -1,36 +1,32 @@
-import type { Pokemon, TipoPokemon } from "@/models/pokemon";
-import { TIPOS } from "@/constants/pokemon";
+import type { Pokemon } from "@/models/pokemon";
 import { TIPO_LABEL } from "@/constants/typeLabels";
-import { MultiSelectField } from "@/components/admin/MultiSelectField";
 import { FormSection } from "@/components/admin/FormSection";
-import type { PokemonEditor } from "@/components/admin/usePokemonEditor";
 
 type OficialTabProps = {
   pokemon: Pokemon;
-  editor: PokemonEditor;
 };
 
-export function OficialTab({ pokemon, editor }: OficialTabProps) {
-  const { evolucao } = pokemon.oficial;
+export function OficialTab({ pokemon }: OficialTabProps) {
+  const { tipos, evolucao } = pokemon.oficial;
 
   return (
     <div className="space-y-6">
       <FormSection title="⚔️ Tipos">
-        <MultiSelectField
-          label="Tipos"
-          options={TIPOS.filter(Boolean)}
-          value={pokemon.oficial.tipos}
-          onChange={(tipos) =>
-            editor.updateOficial("tipos", tipos as TipoPokemon[])
-          }
-        />
-        <p className="text-xs text-zinc-500">
-          {pokemon.oficial.tipos.length > 0
-            ? pokemon.oficial.tipos
-              .map((tipo) => TIPO_LABEL[tipo])
-              .join(" • ")
-            : "Nenhum tipo selecionado."}
-        </p>
+        {tipos.length > 0 ? (
+          <div className="flex flex-wrap gap-2">
+            {tipos.map((tipo) => (
+              <span
+                key={tipo}
+                className="rounded-full bg-zinc-100 px-3 py-1 text-sm"
+              >
+                {TIPO_LABEL[tipo]}
+              </span>
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm text-zinc-500">Nenhum tipo sincronizado.</p>
+        )}
+        <p className="text-xs text-zinc-400">Sincronizado da PokéAPI.</p>
       </FormSection>
 
       <FormSection title="🧬 Evolução">

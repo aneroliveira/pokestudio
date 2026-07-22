@@ -17,7 +17,7 @@ export function buscarPokemon(texto: string): ItemIndicePokemon[] {
 
   return INDICE.filter(
     (item) =>
-      item.nomeEn.toLowerCase().includes(pesquisa) ||
-      item.numero.replace("#", "").includes(pesquisa),
+      item.nomeEn.toLowerCase().startsWith(pesquisa) ||
+      item.numero.replace("#", "").startsWith(pesquisa),
   ).slice(0, 20);
 }

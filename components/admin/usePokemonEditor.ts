@@ -13,29 +13,6 @@ import type {
 export function usePokemonEditor(
   setPokemon: Dispatch<SetStateAction<Pokemon>>,
 ) {
-  function updateOficial<K extends keyof Pokemon["oficial"]>(
-    field: K,
-    value: Pokemon["oficial"][K],
-  ) {
-    setPokemon((c) => ({
-      ...c,
-      oficial: { ...c.oficial, [field]: value },
-    }));
-  }
-
-  function updateNome<K extends keyof Pokemon["oficial"]["nome"]>(
-    field: K,
-    value: Pokemon["oficial"]["nome"][K],
-  ) {
-    setPokemon((c) => ({
-      ...c,
-      oficial: {
-        ...c.oficial,
-        nome: { ...c.oficial.nome, [field]: value },
-      },
-    }));
-  }
-
   function updateEstrategia<
     K extends keyof Pokemon["studio"]["estrategia"],
   >(field: K, value: Pokemon["studio"]["estrategia"][K]) {
@@ -159,8 +136,6 @@ export function usePokemonEditor(
   }
 
   return {
-    updateOficial,
-    updateNome,
     updateEstrategia,
     updateConhecimento,
     updateEstado,

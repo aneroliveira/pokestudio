@@ -8,6 +8,7 @@ type JsonPreviewProps = {
 };
 
 export function JsonPreview({ pokemon }: JsonPreviewProps) {
+  const [aberto, setAberto] = useState(false);
   const [copied, setCopied] = useState(false);
   const json = JSON.stringify(pokemon, null, 2);
 
@@ -18,21 +19,35 @@ export function JsonPreview({ pokemon }: JsonPreviewProps) {
   }
 
   return (
-    <section className="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
-      <div className="mb-6 flex items-center justify-between gap-4">
-        <h2 className="text-xl font-semibold">JSON</h2>
+    <section className="min-w-0 rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
+      <div className="flex flex-wrap items-center justify-between gap-4">
         <button
           type="button"
-          onClick={copyToClipboard}
-          className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700"
+          onClick={() => setAberto((v) => !v)}
+          className="flex items-center gap-2 text-xl font-semibold"
         >
-          {copied ? "Copiado!" : "Copiar para a área de transferência"}
+          JSON
+          <span className="text-sm font-normal text-zinc-500">
+            {aberto ? "▲ ocultar" : "▼ ver JSON"}
+          </span>
         </button>
+
+        {aberto && (
+          <button
+            type="button"
+            onClick={copyToClipboard}
+            className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700"
+          >
+            {copied ? "Copiado!" : "Copiar para a área de transferência"}
+          </button>
+        )}
       </div>
 
-      <pre className="max-h-[calc(100vh-14rem)] overflow-auto rounded bg-zinc-100 p-4 text-sm">
-        {json}
-      </pre>
+      {aberto && (
+        <pre className="mt-6 max-h-[calc(100vh-14rem)] w-full overflow-auto rounded bg-zinc-100 p-4 text-sm">
+          {json}
+        </pre>
+      )}
     </section>
   );
 }

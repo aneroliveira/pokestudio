@@ -64,11 +64,11 @@ export default function AdminPage() {
         )}
       </div>
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_380px]">
-        <div>
+      <div className="mt-8 grid min-w-0 gap-8 lg:grid-cols-[1fr_380px]">
+        <div className="min-w-0">
           <Tabs abas={ABAS} ativa={aba} onChange={setAba} marcadas={marcadas} />
 
-          <section className="mt-6 rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
+          <section className="mt-6 min-w-0 rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
             {aba === "Sincronização" && (
               <SincronizacaoTab
                 pokemon={pokemon}
@@ -77,12 +77,8 @@ export default function AdminPage() {
                 onSalvo={() => marcarBaseline(pokemon.studio)}
               />
             )}
-            {aba === "Geral" && (
-              <GeralTab pokemon={pokemon} editor={editor} />
-            )}
-            {aba === "Oficial" && (
-              <OficialTab pokemon={pokemon} editor={editor} />
-            )}
+            {aba === "Geral" && <GeralTab pokemon={pokemon} />}
+            {aba === "Oficial" && <OficialTab pokemon={pokemon} />}
             {aba === "GO" && <GoTab pokemon={pokemon} editor={editor} />}
             {aba === "Estratégia" && (
               <EstrategiaTab pokemon={pokemon} editor={editor} />
@@ -92,7 +88,7 @@ export default function AdminPage() {
           </section>
         </div>
 
-        <div className="lg:sticky lg:top-8 lg:self-start">
+        <div className="min-w-0 lg:sticky lg:top-8 lg:self-start">
           <p className="mb-3 text-xs font-medium uppercase tracking-wide text-zinc-400">
             Preview ao vivo
           </p>
