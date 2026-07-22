@@ -3,3 +3,4 @@ export * from "./mergePokemon";
 export * from "./calcularDerivados";
 export * from "./studioStore";
 export * from "./statsGO";
+export * from "./searchIv";
