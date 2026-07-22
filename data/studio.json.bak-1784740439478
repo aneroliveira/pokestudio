@@ -1,0 +1,140 @@
+{
+  "#150": {
+    "estrategia": {
+      "tier": "S+",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "Rocket",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim"
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "sim"
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao"
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "sim"
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Não purifique a versão Shadow.",
+        "Excelente atacante do tipo Psíquico.",
+        "Invista prioritariamente em exemplares 96%+.",
+        "Retorna em raids com pouca frequência."
+      ],
+      "sinergias": [
+        "Mega Tyranitar",
+        "Mega Gengar",
+        "Mega Houndoom"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": "."
+      },
+      "shadow": {
+        "possuiShadow": true,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Ganhar doces XL"
+      },
+      "hundos": {
+        "semClima": 2387,
+        "comClima": 2984
+      },
+      "quaseHundos": {
+        "iv98": 2382,
+        "iv96": 2376
+      }
+    }
+  },
+  "#384": {
+    "estrategia": {
+      "tier": "S+",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "Rocket",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim"
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "sim"
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim"
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "sim"
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Não purifique a versão Shadow.",
+        "Excelente atacante do tipo Psíquico.",
+        "Invista prioritariamente em exemplares 96%+.",
+        "Retorna em raids com pouca frequência."
+      ],
+      "sinergias": [
+        "Mega Tyranitar",
+        "Mega Gengar",
+        "Mega Houndoom"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": "Melhor atacante do tipo Dragão e Voador."
+      },
+      "shadow": {
+        "possuiShadow": true,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Ganhar doces XL"
+      },
+      "hundos": {
+        "semClima": 2191,
+        "comClima": 2739
+      },
+      "quaseHundos": {
+        "iv98": 2186,
+        "iv96": 2180
+      }
+    }
+  }
+}

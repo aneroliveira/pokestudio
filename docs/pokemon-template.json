@@ -1,0 +1,47 @@
+[
+  {
+    "numero": "",
+    "nome": "",
+    "regiao": "",
+    "imagem": "",
+    "tier": "C",
+    "funcao": "Versátil",
+    "melhorPara": [],
+    "climaFavoravel": "Ensolarado",
+    "tipos": [],
+    "fraquezas": [],
+    "resistencias": [],
+    "formas": [],
+    "estadoGO": {
+      "tipo": "Nenhum",
+      "valeInvestir": false,
+      "motivo": ""
+    },
+    "shadow": {
+      "possuiShadow": false,
+      "recomendadoPurificar": false
+    },
+    "buddy": {
+      "necessario": false,
+      "objetivo": ""
+    },
+    "evolucao": {
+      "possui": false
+    },
+    "movimentos": {
+      "rapidos": [],
+      "carregados": []
+    },
+    "hundos": {
+      "semClima": 0,
+      "comClima": 0
+    },
+    "quaseHundos": {
+      "iv98": 0,
+      "iv96": 0
+    },
+    "decisoes": [],
+    "observacoes": [],
+    "sinergias": []
+  }
+]

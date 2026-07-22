@@ -1,18 +1,23 @@
-import type { Pokemon } from "@/models/pokemon";
+import indice from "@/data/pokemonIndex.json";
+import type { ItemIndicePokemon } from "@/models/indice";
 
-import { listarPokemons } from ".";
+const INDICE = indice as ItemIndicePokemon[];
 
-export function buscarPokemon(texto: string): Pokemon[] {
+/**
+ * Busca no índice local (todos os Pokémon) por nome (inglês) ou número.
+ * Retorna itens leves do índice; os dados oficiais completos são buscados
+ * sob demanda ao selecionar (ver app/page.tsx).
+ */
+export function buscarPokemon(texto: string): ItemIndicePokemon[] {
   const pesquisa = texto.trim().toLowerCase();
 
   if (!pesquisa) {
     return [];
   }
 
-  return listarPokemons().filter((pokemon) => {
-    return (
-      pokemon.nome.toLowerCase().includes(pesquisa) ||
-      pokemon.numero.replace("#", "").includes(pesquisa)
-    );
-  });
+  return INDICE.filter(
+    (item) =>
+      item.nomeEn.toLowerCase().includes(pesquisa) ||
+      item.numero.replace("#", "").includes(pesquisa),
+  ).slice(0, 20);
 }

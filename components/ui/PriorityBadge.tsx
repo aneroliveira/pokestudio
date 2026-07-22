@@ -7,7 +7,7 @@ type Priority =
   | "C";
 
 type Props = {
-  value: Priority;
+  value?: Priority;
 };
 
 const colors = {
@@ -22,6 +22,14 @@ const colors = {
 export function PriorityBadge({
   value,
 }: Props) {
+  if (!value) {
+    return (
+      <span className="rounded-full bg-zinc-300 px-3 py-1 text-sm font-semibold text-zinc-600">
+        Sem Tier
+      </span>
+    );
+  }
+
   return (
     <span
       className={`${colors[value]} rounded-full px-3 py-1 text-sm font-semibold text-white`}

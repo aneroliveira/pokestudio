@@ -1,68 +1,21 @@
-export type TierPokemon =
-  | "S+"
-  | "S"
-  | "A+"
-  | "A"
-  | "B"
-  | "C";
+import { PokemonOficial } from "./pokemonOficial";
+import { PokemonStudio } from "./pokemonStudio";
 
-export type TipoPokemon =
-  | "Inseto"
-  | "Sombrio"
-  | "Dragão"
-  | "Elétrico"
-  | "Fada"
-  | "Lutador"
-  | "Fogo"
-  | "Voador"
-  | "Fantasma"
-  | "Planta"
-  | "Terra"
-  | "Gelo"
-  | "Normal"
-  | "Veneno"
-  | "Psíquico"
-  | "Pedra"
-  | "Aço"
-  | "Água";
+// =========================
+// Agregador do domínio Pokemon
+// =========================
+// pokemon.ts apenas compõe os domínios e reexporta os tipos auxiliares.
+// As definições vivem nos seus próprios módulos (shared / movimento /
+// pokemonOficial / pokemonGO / pokemonStudio), evitando que este arquivo
+// seja o "centro" de todos os models.
 
-export interface UsoPokemon {
-  raid: boolean;
-  rocket: boolean;
-  ginasio: boolean;
-  pvp: boolean;
-}
-
-export interface HundosPokemon {
-  pesquisa?: number;
-  raidNivel20?: number;
-  raidNivel25?: number;
-}
-
-export interface QuaseHundosPokemon {
-  iv98?: number;
-  iv96?: number;
-}
+export * from "./shared";
+export * from "./movimento";
+export * from "./pokemonOficial";
+export * from "./pokemonGO";
+export * from "./pokemonStudio";
 
 export interface Pokemon {
-  id: number;
-  numero: string;
-  nome: string;
-  regiao: string;
-  tipos: TipoPokemon[];
-  tier: TierPokemon;
-  descricao: string;
-  imagem: string;
-
-  uso: UsoPokemon;
-
-  hundos: HundosPokemon;
-
-  quaseHundos: QuaseHundosPokemon;
-
-  fraquezas: TipoPokemon[];
-
-  resistencias: TipoPokemon[];
-
-  melhoresMegas: string[];
+  oficial: PokemonOficial;
+  studio: PokemonStudio;
 }
