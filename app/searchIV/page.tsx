@@ -82,6 +82,12 @@ export default function SearchIvPage() {
     return IV_100;
   });
 
+  const [ivsTexto, setIvsTexto] = useState<Record<keyof IVsGO, string>>(() => ({
+    attack: String(ivsExatas.attack),
+    defense: String(ivsExatas.defense),
+    stamina: String(ivsExatas.stamina),
+  }));
+
   const [resultado, setResultado] = useState<ReturnType<typeof gerarResultadoSearchIv>>(undefined);
 
   const resultados = buscarPokemon(pesquisa);
@@ -148,12 +154,28 @@ export default function SearchIvPage() {
     setResultado(resultadoCalculado);
   }
 
-  function atualizarIvs(chave: keyof IVsGO, valor: string) {
-    const valorNumerico = Number(valor);
-    setIvsExatas((prev) => ({
-      ...prev,
-      [chave]: Number.isFinite(valorNumerico) ? valorNumerico : 0,
-    }));
+  function digitarIv(chave: keyof IVsGO, valorBruto: string) {
+    const digitos = valorBruto.replace(/\D/g, "").slice(0, 2);
+
+    if (digitos === "") {
+      setIvsTexto((prev) => ({ ...prev, [chave]: "" }));
+      return;
+    }
+
+    // Clampa o valor (e o texto exibido) na hora — não depende de blur.
+    const numero = Math.min(15, Number(digitos));
+    setIvsTexto((prev) => ({ ...prev, [chave]: String(numero) }));
+    setIvsExatas((prev) => ({ ...prev, [chave]: numero }));
+  }
+
+  function finalizarIv(chave: keyof IVsGO) {
+    setIvsTexto((prev) => ({ ...prev, [chave]: String(ivsExatas[chave]) }));
+  }
+
+  function ajustarIv(chave: keyof IVsGO, delta: number) {
+    const novo = Math.min(15, Math.max(0, ivsExatas[chave] + delta));
+    setIvsExatas((prev) => ({ ...prev, [chave]: novo }));
+    setIvsTexto((prev) => ({ ...prev, [chave]: String(novo) }));
   }
 
   return (
@@ -290,6 +312,7 @@ export default function SearchIvPage() {
                     onClick={() => {
                       setModoIv("iv100");
                       setIvsExatas(IV_100);
+                      setIvsTexto({ attack: "15", defense: "15", stamina: "15" });
                     }}
                     className={modoIv === "iv100" ? "bg-red-600 hover:bg-red-700" : "border-black/10 bg-white text-black hover:bg-zinc-50"}
                   >
@@ -307,48 +330,33 @@ export default function SearchIvPage() {
 
                 {modoIv === "exatas" ? (
                   <div className="grid gap-3 rounded-2xl border border-black/10 bg-white p-3 md:grid-cols-3">
-                    <div className="space-y-2">
-                      <label className="text-sm text-zinc-600">Atk IV</label>
-                      <div className="flex items-center justify-between">
-                        <Input
-                          type="number"
-                          min={0}
-                          max={15}
-                          value={ivsExatas.attack}
-                          onChange={(event) => atualizarIvs("attack", event.target.value)}
-                          className="w-24"
-                        />
-                        <GroupedIVBar attack={ivsExatas.attack} defense={0} stamina={0} showValuesLeft={false} />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm text-zinc-600">Def IV</label>
-                      <div className="flex items-center justify-between">
-                        <Input
-                          type="number"
-                          min={0}
-                          max={15}
-                          value={ivsExatas.defense}
-                          onChange={(event) => atualizarIvs("defense", event.target.value)}
-                          className="w-24"
-                        />
-                        <GroupedIVBar attack={0} defense={ivsExatas.defense} stamina={0} showValuesLeft={false} />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm text-zinc-600">Sta IV</label>
-                      <div className="flex items-center justify-between">
-                        <Input
-                          type="number"
-                          min={0}
-                          max={15}
-                          value={ivsExatas.stamina}
-                          onChange={(event) => atualizarIvs("stamina", event.target.value)}
-                          className="w-24"
-                        />
-                        <GroupedIVBar attack={0} defense={0} stamina={ivsExatas.stamina} showValuesLeft={false} />
-                      </div>
-                    </div>
+                    <IvExataInput
+                      campo="attack"
+                      label="Atk IV"
+                      valor={ivsExatas.attack}
+                      texto={ivsTexto.attack}
+                      onDigitar={(valor) => digitarIv("attack", valor)}
+                      onFinalizar={() => finalizarIv("attack")}
+                      onAjustar={(delta) => ajustarIv("attack", delta)}
+                    />
+                    <IvExataInput
+                      campo="defense"
+                      label="Def IV"
+                      valor={ivsExatas.defense}
+                      texto={ivsTexto.defense}
+                      onDigitar={(valor) => digitarIv("defense", valor)}
+                      onFinalizar={() => finalizarIv("defense")}
+                      onAjustar={(delta) => ajustarIv("defense", delta)}
+                    />
+                    <IvExataInput
+                      campo="stamina"
+                      label="Sta IV"
+                      valor={ivsExatas.stamina}
+                      texto={ivsTexto.stamina}
+                      onDigitar={(valor) => digitarIv("stamina", valor)}
+                      onFinalizar={() => finalizarIv("stamina")}
+                      onAjustar={(delta) => ajustarIv("stamina", delta)}
+                    />
                   </div>
                 ) : null}
               </div>
@@ -438,5 +446,72 @@ export default function SearchIvPage() {
         </div>
       </div>
     </PageContainer>
+  );
+}
+
+type IvExataInputProps = {
+  campo: keyof IVsGO;
+  label: string;
+  valor: number;
+  texto: string;
+  onDigitar: (valor: string) => void;
+  onFinalizar: () => void;
+  onAjustar: (delta: number) => void;
+};
+
+function IvExataInput({
+  campo,
+  label,
+  valor,
+  texto,
+  onDigitar,
+  onFinalizar,
+  onAjustar,
+}: IvExataInputProps) {
+  return (
+    <div className="space-y-2">
+      <label className="text-sm text-zinc-600">{label}</label>
+
+      <div className="flex items-center gap-1.5">
+        <Button
+          type="button"
+          variant="outline"
+          size="icon-sm"
+          disabled={valor <= 0}
+          onClick={() => onAjustar(-1)}
+          className="border-black/10 bg-white text-black hover:bg-zinc-50"
+        >
+          −
+        </Button>
+
+        <Input
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          value={texto}
+          onChange={(event) => onDigitar(event.target.value)}
+          onBlur={onFinalizar}
+          className="w-14 text-center"
+        />
+
+        <Button
+          type="button"
+          variant="outline"
+          size="icon-sm"
+          disabled={valor >= 15}
+          onClick={() => onAjustar(1)}
+          className="border-black/10 bg-white text-black hover:bg-zinc-50"
+        >
+          +
+        </Button>
+      </div>
+
+      <GroupedIVBar
+        attack={campo === "attack" ? valor : 0}
+        defense={campo === "defense" ? valor : 0}
+        stamina={campo === "stamina" ? valor : 0}
+        showValuesLeft={false}
+      />
+    </div>
   );
 }
