@@ -11,7 +11,7 @@ export function PokemonDecision({
   pokemon,
   emptyMessage,
 }: PokemonDecisionProps) {
-  if (pokemon.decisoes.length === 0) {
+  if (pokemon.studio.conhecimento.decisoes.length === 0) {
     return emptyMessage ? (
       <SectionCard title="">
         <p className="text-sm text-zinc-500">
@@ -24,7 +24,7 @@ export function PokemonDecision({
   return (
     <SectionCard title="">
       <div className="flex flex-wrap gap-3">
-        {pokemon.decisoes.map((decisao) => {
+        {pokemon.studio.conhecimento.decisoes.map((decisao) => {
           const titulo = decisao.titulo
             .replace("Vale ", "")
             .trim();

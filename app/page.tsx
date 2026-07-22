@@ -1,25 +1,59 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
 import { SearchBar } from "@/components/pokemon/SearchBar";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import type { NomeTraduzido, Pokemon } from "@/models/pokemon";
+import type { Pokemon } from "@/models/pokemon";
+import type { ItemIndicePokemon } from "@/models/indice";
 import { buscarPokemon } from "@/services/pokemon";
+import { importarPokemon } from "@/services/pokemon/importPokemon";
+import { mergePokemon } from "@/services/pokemon/mergePokemon";
+import {
+  carregarStudioMap,
+  type StudioMap,
+} from "@/services/pokemon/studioStore";
+import { createEmptyPokemon } from "@/utils/createEmptyPokemon";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
-import { PokemonDecision } from "@/components/pokemon/PokemonDecision";
 
 export default function Home() {
   const [pesquisa, setPesquisa] = useState("");
   const [pokemonSelecionado, setPokemonSelecionado] =
     useState<Pokemon | null>(null);
+  const [carregando, setCarregando] = useState(false);
+  const [studioMap, setStudioMap] = useState<StudioMap>({});
 
   const resultados = buscarPokemon(pesquisa);
 
-  function selecionarPokemon(pokemon: Pokemon) {
-    setPokemonSelecionado(pokemon);
+  useEffect(() => {
+    carregarStudioMap()
+      .then(setStudioMap)
+      .catch(() => setStudioMap({}));
+  }, []);
+
+  async function selecionarPokemon(item: ItemIndicePokemon) {
+    setPesquisa("");
+    setCarregando(true);
+
+    try {
+      const importado = await importarPokemon(item.nomeEn);
+      const studio =
+        studioMap[item.numero] ?? createEmptyPokemon().studio;
+
+      const base: Pokemon = {
+        oficial: createEmptyPokemon().oficial,
+        studio,
+      };
+
+      setPokemonSelecionado(mergePokemon(base, importado));
+    } catch (error) {
+      console.error(error);
+      alert("Não foi possível carregar o Pokémon.");
+    } finally {
+      setCarregando(false);
+    }
   }
 
   return (
@@ -34,15 +68,17 @@ export default function Home() {
           value={pesquisa}
           onChange={(valor) => {
             setPesquisa(valor);
-            setPokemonSelecionado(null);
           }}
           onSelect={selecionarPokemon}
           resultados={resultados}
         />
-        {pokemonSelecionado ? (
-          <PokemonCard
-            pokemon={pokemonSelecionado}
-          />
+
+        {carregando ? (
+          <p className="text-center text-sm text-zinc-500">
+            Carregando dados oficiais...
+          </p>
+        ) : pokemonSelecionado ? (
+          <PokemonCard pokemon={pokemonSelecionado} />
         ) : (
           <EmptyState />
         )}

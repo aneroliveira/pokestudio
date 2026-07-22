@@ -1,13 +1,16 @@
+import type { TipoPokemon } from "@/models/pokemon";
+import { TIPO_LABEL } from "@/constants/typeLabels";
+
 type TypeBadgeProps = {
-  label: string;
+  tipo: TipoPokemon;
 };
 
 export function TypeBadge({
-  label,
+  tipo,
 }: TypeBadgeProps) {
   return (
     <span className="rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium">
-      {label}
+      {TIPO_LABEL[tipo]}
     </span>
   );
 }

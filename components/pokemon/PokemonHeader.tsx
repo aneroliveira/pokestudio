@@ -2,7 +2,6 @@ import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { TypeBadge } from "@/components/ui/TypeBadge";
 import Image from "next/image";
-import { StarRating } from "@/components/ui/StarRating";
 
 type PokemonHeaderProps = {
   pokemon: Pokemon;
@@ -13,19 +12,19 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
     <div className="flex items-start justify-between gap-6">
       <div className="flex-1">
         <p className="text-sm text-zinc-500">
-          {pokemon.numero || "#000"}
+          {pokemon.oficial.numero || "#000"}
         </p>
 
         <h2 className="text-3xl font-bold">
-          {pokemon.nome.ptBR || "Pokémon"}
+          {pokemon.oficial.nome.ptBR || "Pokémon"}
         </h2>
 
         <div className="mt-3 flex flex-wrap gap-2">
-          {pokemon.tipos.length > 0 ? (
-            pokemon.tipos.map((tipo) => (
+          {pokemon.oficial.tipos.length > 0 ? (
+            pokemon.oficial.tipos.map((tipo) => (
               <TypeBadge
                 key={tipo}
-                label={tipo}
+                tipo={tipo}
               />
             ))
           ) : (
@@ -36,14 +35,14 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
         </div>
 
         <p className="mt-3 text-sm font-medium text-zinc-700">
-          🗡️ Função: {pokemon.funcao}
+          🗡️ Função: {pokemon.studio.estrategia.funcao}
         </p>
 
         <div className="flex flex-col items-center gap-3">
-          {pokemon.imagem ? (
+          {pokemon.oficial.imagem ? (
             <Image
-              src={pokemon.imagem}
-              alt={pokemon.nome.ptBR|| "Pokémon"}
+              src={pokemon.oficial.imagem}
+              alt={pokemon.oficial.nome.ptBR || "Pokémon"}
               width={120}
               height={120}
             />
@@ -53,7 +52,7 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
             </div>
           )}
 
-          <PriorityBadge value={pokemon.tier} />
+          <PriorityBadge value={pokemon.studio.estrategia.tier} />
         </div>
       </div>
     </div>

@@ -13,17 +13,17 @@ export function PokemonHundos({ pokemon }: PokemonHundosProps) {
         <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-400">
           100%
         </h3>
-        {pokemon.hundos.semClima && (
+        {pokemon.studio.go.hundos.semClima && (
           <InfoRow
             label="Sem clima"
-            value={pokemon.hundos.semClima}
+            value={pokemon.studio.go.hundos.semClima}
           />
         )}
 
-        {pokemon.hundos.comClima && (
+        {pokemon.studio.go.hundos.comClima && (
           <InfoRow
             label="Com clima"
-            value={pokemon.hundos.comClima}
+            value={pokemon.studio.go.hundos.comClima}
           />
         )}
 
@@ -33,17 +33,17 @@ export function PokemonHundos({ pokemon }: PokemonHundosProps) {
           Quase Hundos
         </h3>
 
-        {pokemon.quaseHundos.iv98 && (
+        {pokemon.studio.go.quaseHundos.iv98 && (
           <InfoRow
             label="98%"
-            value={pokemon.quaseHundos.iv98}
+            value={pokemon.studio.go.quaseHundos.iv98}
           />
         )}
 
-        {pokemon.quaseHundos.iv96 && (
+        {pokemon.studio.go.quaseHundos.iv96 && (
           <InfoRow
             label="96%"
-            value={pokemon.quaseHundos.iv96}
+            value={pokemon.studio.go.quaseHundos.iv96}
           />
         )}
       </div>

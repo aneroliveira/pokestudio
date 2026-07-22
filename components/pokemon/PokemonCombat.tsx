@@ -1,11 +1,17 @@
 import type { Pokemon } from "@/models/pokemon";
 import { SectionCard } from "@/components/ui/SectionCard";
+import { calcularDerivados } from "@/services/pokemon/calcularDerivados";
+import { TIPO_LABEL } from "@/constants/typeLabels";
 
 type PokemonCombatProps = {
   pokemon: Pokemon;
 };
 
 export function PokemonCombat({ pokemon }: PokemonCombatProps) {
+  const { fraquezas, resistencias } = calcularDerivados(
+    pokemon.oficial.tipos,
+  );
+
   return (
     <SectionCard title="Combate">
 
@@ -16,12 +22,12 @@ export function PokemonCombat({ pokemon }: PokemonCombatProps) {
           </h3>
 
           <div className="flex flex-wrap gap-2">
-            {pokemon.resistencias.map((tipo) => (
+            {resistencias.map((tipo) => (
               <span
                 key={tipo}
                 className="rounded-full bg-green-100 px-3 py-1 text-sm"
               >
-                {tipo}
+                {TIPO_LABEL[tipo]}
               </span>
             ))}
           </div>
@@ -33,12 +39,12 @@ export function PokemonCombat({ pokemon }: PokemonCombatProps) {
           </h3>
 
           <div className="flex flex-wrap gap-2">
-            {pokemon.fraquezas.map((tipo) => (
+            {fraquezas.map((tipo) => (
               <span
                 key={tipo}
                 className="rounded-full bg-red-100 px-3 py-1 text-sm"
               >
-                {tipo}
+                {TIPO_LABEL[tipo]}
               </span>
             ))}
           </div>

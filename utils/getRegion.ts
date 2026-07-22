@@ -2,7 +2,7 @@ import type { Pokemon } from "@/models/pokemon";
 
 export function getRegion(
   id: number,
-): Pokemon["regiao"] {
+): Pokemon["oficial"]["regiao"] {
   if (id <= 151) return "Kanto";
   if (id <= 251) return "Johto";
   if (id <= 386) return "Hoenn";

@@ -1,36 +1,62 @@
 "use client";
 import { useState } from "react";
 import { createEmptyPokemon } from "@/utils/createEmptyPokemon";
-import { PokemonForm } from "@/components/admin/PokemonForm";
-import { JsonPreview } from "@/components/admin/JsonPreview";
-import { PokemonPreview } from "@/components/admin/PokemonPreview";
-import { PokemonDecision } from "@/components/pokemon/PokemonDecision";
-import { PreviewPanel } from "@/components/admin/PreviewPanel";
+import { Tabs } from "@/components/ui/Tabs";
+import { usePokemonEditor } from "@/components/admin/usePokemonEditor";
+import { GeralTab } from "@/components/admin/tabs/GeralTab";
+import { OficialTab } from "@/components/admin/tabs/OficialTab";
+import { FormsTab } from "@/components/admin/tabs/FormsTab";
+import { GoTab } from "@/components/admin/tabs/GoTab";
+import { EstrategiaTab } from "@/components/admin/tabs/EstrategiaTab";
+import { SincronizacaoTab } from "@/components/admin/tabs/SincronizacaoTab";
+import { PreviewTab } from "@/components/admin/tabs/PreviewTab";
+
+const ABAS = [
+  "Geral",
+  "Oficial",
+  "GO",
+  "Estratégia",
+  "Forms",
+  "Sincronização",
+  "Preview",
+] as const;
+
+type Aba = (typeof ABAS)[number];
 
 export default function AdminPage() {
-    const [pokemon, setPokemon] = useState(
-        createEmptyPokemon()
-    );
-    return (
-        <main className="mx-auto max-w-7xl p-8">
-            <h1 className="text-3xl font-bold">
-                Cadastro de Pokémon
-            </h1>
+  const [pokemon, setPokemon] = useState(createEmptyPokemon());
+  const [aba, setAba] = useState<Aba>("Geral");
+  const editor = usePokemonEditor(setPokemon);
 
-            <p className="mt-2 text-zinc-500">
-                Ferramenta interna do PokéStudio
-            </p>
+  return (
+    <main className="mx-auto max-w-5xl p-8">
+      <h1 className="text-3xl font-bold">Workspace de Pokémon</h1>
 
-            <div className="mt-8 grid gap-8 lg:grid-cols-2">
-                <PokemonForm
-                    pokemon={pokemon}
-                    setPokemon={setPokemon}
-                />
+      <p className="mt-2 text-zinc-500">
+        Ferramenta interna do PokéStudio
+      </p>
 
-                <PreviewPanel
-                    pokemon={pokemon}
-                />
-            </div>
-        </main>
-    );
+      <div className="mt-8">
+        <Tabs abas={ABAS} ativa={aba} onChange={setAba} />
+      </div>
+
+      <section className="mt-6 rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
+        {aba === "Geral" && (
+          <GeralTab pokemon={pokemon} editor={editor} />
+        )}
+        {aba === "Oficial" && (
+          <OficialTab pokemon={pokemon} editor={editor} />
+        )}
+        {aba === "GO" && <GoTab pokemon={pokemon} editor={editor} />}
+        {aba === "Estratégia" && (
+          <EstrategiaTab pokemon={pokemon} editor={editor} />
+        )}
+        {aba === "Forms" && <FormsTab pokemon={pokemon} />}
+        {aba === "Sincronização" && (
+          <SincronizacaoTab pokemon={pokemon} setPokemon={setPokemon} />
+        )}
+        {aba === "Preview" && <PreviewTab pokemon={pokemon} />}
+      </section>
+    </main>
+  );
 }

@@ -1,4 +1,4 @@
-import type { EvolucaoPokemon } from "@/models/pokemon";
+import type { EvolucaoPokemon } from "@/models/pokemonOficial";
 
 export function obterEvolucaoPokemon(
   cadeiaEvolutiva: any,

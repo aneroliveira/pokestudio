@@ -13,7 +13,7 @@ export function PokemonObservations({
     <SectionCard title="Observações">
 
       <ul className="list-disc space-y-2 pl-5">
-        {pokemon.observacoes.map((observacao) => (
+        {pokemon.studio.conhecimento.observacoes.map((observacao) => (
           <li key={observacao}>
             {observacao}
           </li>
