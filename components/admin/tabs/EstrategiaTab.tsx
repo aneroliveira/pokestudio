@@ -1,6 +1,7 @@
 import type { Pokemon, StatusDecisao } from "@/models/pokemon";
 import { FUNCOES, MELHOR_PARA, TIERS } from "@/constants/pokemon";
 import { SelectField } from "@/components/admin/SelectField";
+import { TextField } from "@/components/admin/TextField";
 import { TextAreaField } from "@/components/admin/TextAreaField";
 import { MultiSelectField } from "@/components/admin/MultiSelectField";
 import { FormSection } from "@/components/admin/FormSection";
@@ -66,21 +67,37 @@ export function EstrategiaTab({ pokemon, editor }: EstrategiaTabProps) {
 
       <FormSection title="Decisões">
         <div className="grid gap-4 sm:grid-cols-2">
-          {DECISOES_PADRAO.map((title) => (
-            <SelectField
-              key={title}
-              label={title}
-              value={
-                conhecimento.decisoes.find(
-                  (item) => item.titulo === title,
-                )?.status ?? "atencao"
-              }
-              options={STATUS_DECISAO}
-              onChange={(status) =>
-                editor.updateDecision(title, status as StatusDecisao)
-              }
-            />
-          ))}
+          {DECISOES_PADRAO.map((title) => {
+            const atual = conhecimento.decisoes.find(
+              (item) => item.titulo === title,
+            );
+
+            return (
+              <div
+                key={title}
+                className="space-y-2 rounded-lg border border-border p-3"
+              >
+                <SelectField
+                  label={title}
+                  value={atual?.status ?? "atencao"}
+                  options={STATUS_DECISAO}
+                  onChange={(status) =>
+                    editor.updateDecision(title, {
+                      status: status as StatusDecisao,
+                    })
+                  }
+                />
+                <TextField
+                  label="Motivo (opcional)"
+                  value={atual?.motivo ?? ""}
+                  placeholder="Por que essa decisão?"
+                  onChange={(motivo) =>
+                    editor.updateDecision(title, { motivo })
+                  }
+                />
+              </div>
+            );
+          })}
         </div>
       </FormSection>
 

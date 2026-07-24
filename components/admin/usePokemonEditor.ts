@@ -112,11 +112,18 @@ export function usePokemonEditor(
     }));
   }
 
-  function updateDecision(title: string, status: StatusDecisao) {
+  function updateDecision(
+    title: string,
+    patch: Partial<Pick<DecisaoPokemon, "status" | "motivo">>,
+  ) {
     setPokemon((c) => {
       const decisoes = c.studio.conhecimento.decisoes;
       const existing = decisoes.find((item) => item.titulo === title);
-      const decisao: DecisaoPokemon = { titulo: title, status };
+      const decisao: DecisaoPokemon = {
+        titulo: title,
+        status: patch.status ?? existing?.status ?? "atencao",
+        motivo: patch.motivo ?? existing?.motivo,
+      };
 
       return {
         ...c,

@@ -33,11 +33,13 @@
   --success: #10b981;
   --warning: #f59e0b;
 
-  /* Chips de combate (bom/ruim contra) */
+  /* Chips de combate (bom/ruim contra) e decisões (sim/atenção/não) */
   --good: #dcfce7;
   --good-foreground: #15803d;
   --bad: #fee2e2;
   --bad-foreground: #b91c1c;
+  --attention: #fef9c3;
+  --attention-foreground: #854d0e;
 }
 
 .dark {
@@ -74,6 +76,8 @@
   --good-foreground: #4ade80;
   --bad: #3a1618;
   --bad-foreground: #f87171;
+  --attention: #3d3210;
+  --attention-foreground: #fbbf24;
 }
 
 @theme inline {
@@ -101,6 +105,8 @@
   --color-good-foreground: var(--good-foreground);
   --color-bad: var(--bad);
   --color-bad-foreground: var(--bad-foreground);
+  --color-attention: var(--attention);
+  --color-attention-foreground: var(--attention-foreground);
 }
 
 body {

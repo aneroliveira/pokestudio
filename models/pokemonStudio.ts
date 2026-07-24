@@ -31,6 +31,7 @@ export type StatusDecisao =
 export interface DecisaoPokemon {
   titulo: string;
   status: StatusDecisao;
+  motivo?: string;
 }
 
 export interface EstrategiaStudio {
