@@ -23,6 +23,7 @@ export function MainHeader() {
   const items = [
     { href: "/", label: "Home" },
     { href: "/admin", label: "Admin" },
+    { href: "/faq", label: "FAQ" },
   ];
 
   return (

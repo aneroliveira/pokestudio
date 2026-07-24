@@ -1,0 +1,271 @@
+"use client";
+
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+import { PageContainer } from "@/components/layout/PageContainer";
+import { SectionTitle } from "@/components/ui/SectionTitle";
+import { Card } from "@/components/ui/Card";
+import { TypeIcon } from "@/components/ui/TypeIcon";
+import { TIERS, FUNCOES, MELHOR_PARA } from "@/constants/pokemon";
+
+type Topico = {
+  id: string;
+  titulo: string;
+  corpo: React.ReactNode;
+};
+
+const TOPICOS: Topico[] = [
+  {
+    id: "nome",
+    titulo: "Nome e forma",
+    corpo: (
+      <>
+        <p>
+          O nome e os dados oficiais vêm da PokéAPI e nunca são editados
+          manualmente — toda sincronização os sobrescreve.
+        </p>
+        <p>
+          Algumas espécies (Giratina, Landorus, Thundurus, Tornadus, Shaymin,
+          Meloetta...) têm sua forma-base cadastrada na PokéAPI com um
+          sufixo próprio (ex.: <code>giratina-altered</code>), mesmo sendo a
+          forma padrão do Pokémon. O PokéStudio detecta esses casos e usa o
+          nome da espécie (sempre limpo) em vez do nome bruto da variedade —
+          por isso aparece só <strong>"Giratina"</strong>, não
+          "Giratina-altered".
+        </p>
+        <p>
+          Formas alternativas de verdade (Mega, Gigamax, Regional, Primal)
+          continuam aparecendo formatadas na aba <strong>Forms</strong> do
+          Admin, com o rótulo traduzido (ex.: "Mega Charizard X").
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "tipos",
+    titulo: "Tipos",
+    corpo: (
+      <>
+        <p>
+          Cada Pokémon tem um ou dois tipos, mostrados como os ícones{" "}
+          <strong>oficiais do jogo</strong> — os mesmos badges usados dentro
+          do Pokémon GO, extraídos diretamente do APK.
+        </p>
+        <div className="flex items-center gap-3 py-2">
+          <TypeIcon tipo="Fire" className="bg-secondary" />
+          <TypeIcon tipo="Water" className="bg-secondary" />
+          <TypeIcon tipo="Dragon" className="bg-secondary" />
+          <span className="text-sm text-muted-foreground">
+            passe o mouse (ou toque no celular) pra ver o nome
+          </span>
+        </div>
+        <p>
+          Esse mesmo ícone é reaproveitado em várias seções do card:
+          no cabeçalho, em "Combate" e no tipo recomendado de cada Mega.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "tier",
+    titulo: "Tier, Função e Melhor para",
+    corpo: (
+      <>
+        <p>
+          O <strong>Tier</strong> é a nota de prioridade que o PokéStudio dá
+          ao Pokémon — quanto mais alto, mais vale a pena investir nele. É
+          curadoria própria do app, não uma métrica oficial do jogo.
+        </p>
+        <div className="flex flex-wrap gap-2 py-1">
+          {TIERS.map((tier) => (
+            <span
+              key={tier}
+              className="rounded-full bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground"
+            >
+              {tier}
+            </span>
+          ))}
+        </div>
+        <p>
+          <strong>Função</strong> classifica o papel do Pokémon:{" "}
+          {FUNCOES.join(", ")}. <strong>Melhor para</strong> indica em quais
+          modos ele se destaca: {MELHOR_PARA.join(", ")}.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "decisoes",
+    titulo: "Chips de decisão",
+    corpo: (
+      <>
+        <p>
+          Cada Pokémon curado pode ter até 5 decisões práticas, sempre com o
+          mesmo significado:
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li><strong>Vale guardar</strong> — mantenha no lugar de transferir.</li>
+          <li><strong>Vale maximizar</strong> — vale gastar Poeira Estelar e doces pra levar ao nível máximo.</li>
+          <li><strong>Vale Buddy</strong> — vale usar como Buddy pra ganhar doces (e XL).</li>
+          <li><strong>Vale Elite TM</strong> — vale gastar uma TM rara pra garantir o melhor moveset.</li>
+          <li><strong>Transferir</strong> — indica se compensa transferir exemplares comuns.</li>
+        </ul>
+        <p>
+          A cor do chip indica o veredito: <span className="text-good-foreground">verde = sim</span>,{" "}
+          <span className="text-attention-foreground">amarelo = depende do contexto</span>,{" "}
+          <span className="text-bad-foreground">vermelho = não</span>. Quando o
+          curador registra um motivo, ele aparece ao passar o mouse (ou tocar) no
+          chip.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "hundos",
+    titulo: "Hundos, quase-hundos e o CP",
+    corpo: (
+      <>
+        <p>
+          <strong>Hundo</strong> é o apelido para um Pokémon com IV 100% —
+          15/15/15 de Ataque, Defesa e Vida, o máximo possível.{" "}
+          <strong>Quase-hundo</strong> é quase tão bom, só que muito mais
+          fácil de encontrar: 98% é 15/15/14, e 96% é 15/14/14.
+        </p>
+        <p className="rounded-lg bg-muted px-3 py-2 font-mono text-xs">
+          CP = piso( (Atq+IVₐ) · √(Def+IV_d) · √(Vida+IVₛ) · CPM² / 10 )
+        </p>
+        <p>
+          O <strong>nível</strong> (via CPM, o multiplicador por nível) é o
+          que explica por que o mesmo IV pode aparecer com CPs diferentes:{" "}
+          <strong>"Sem clima"</strong> assume o nível máximo de uma captura
+          selvagem comum (nível 20); <strong>"Com clima"</strong> assume o
+          nível máximo quando o clima favorável do tipo do Pokémon está
+          ativo (nível 25). Mesmo IV, nível maior → CP maior.
+        </p>
+        <p>
+          Quando não há um valor manual salvo na curadoria, o ícone 🧮 indica
+          que o número foi <strong>calculado automaticamente</strong> a
+          partir das base stats reais do Pokémon GO (que não são as mesmas
+          da PokéAPI — a Niantic ajusta os valores à mão).
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "combate",
+    titulo: "Bom contra / Ruim contra",
+    corpo: (
+      <>
+        <p>
+          Esta seção é <strong>sempre calculada</strong>, nunca curada
+          manualmente — vem direto dos tipos oficiais do Pokémon, usando a
+          tabela de efetividade padrão da série principal (a partir da
+          Geração 6).
+        </p>
+        <p>
+          <strong>Bom contra</strong> lista os tipos que esse Pokémon resiste
+          (recebe menos dano). <strong>Ruim contra</strong> lista os tipos
+          que são fraqueza dele (recebe mais dano).
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "mega",
+    titulo: "Melhor Mega contra",
+    corpo: (
+      <>
+        <p>
+          Também é calculado automaticamente: o PokéStudio pega o roster
+          completo de Mega Evoluções do Pokémon GO e ranqueia cada uma pela
+          efetividade de tipo contra o Pokémon exibido — a mesma tabela usada
+          em "Combate", só que invertida (do ponto de vista de quem ataca).
+        </p>
+        <p>
+          Em caso de empate na efetividade, quem tem mais Ataque aparece
+          primeiro. O roster de Megas (nomes, tipos, imagem, stats) vem de um
+          mirror de assets extraídos do próprio jogo.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "observacoes",
+    titulo: "Observações e Sinergias",
+    corpo: (
+      <>
+        <p>
+          As duas últimas seções são anotações livres do curador, sem
+          cálculo nenhum por trás:
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li><strong>Observações</strong> — dicas práticas e contexto de uso.</li>
+          <li><strong>Sinergias</strong> — outros Pokémon ou Megas que combinam bem com ele em times de raid.</li>
+        </ul>
+      </>
+    ),
+  },
+];
+
+export default function FaqPage() {
+  const [ativo, setAtivo] = useState(TOPICOS[0].id);
+  const topico = TOPICOS.find((t) => t.id === ativo) ?? TOPICOS[0];
+
+  return (
+    <PageContainer>
+      <div className="w-full max-w-4xl space-y-6">
+        <SectionTitle
+          title="FAQ"
+          subtitle="Como ler as informações exibidas sobre cada Pokémon."
+        />
+
+        <div className="grid gap-6 lg:grid-cols-[220px_1fr]">
+          {/* Mobile/tablet: dropdown nativo — compacto, acessível, mostra
+              todos os tópicos sem precisar arrastar. */}
+          <div className="relative lg:hidden">
+            <select
+              value={ativo}
+              onChange={(e) => setAtivo(e.target.value)}
+              className="w-full appearance-none rounded-lg border border-border bg-background px-3 py-2 pr-9 text-sm font-medium text-foreground"
+            >
+              {TOPICOS.map((t) => (
+                <option key={t.id} value={t.id}>
+                  {t.titulo}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+          </div>
+
+          {/* Desktop: sidebar vertical. */}
+          <nav className="hidden lg:flex lg:flex-col lg:gap-1">
+            {TOPICOS.map((t) => {
+              const selecionado = t.id === ativo;
+              return (
+                <button
+                  key={t.id}
+                  type="button"
+                  onClick={() => setAtivo(t.id)}
+                  className={`rounded-lg px-3 py-2 text-left text-sm font-medium transition ${
+                    selecionado
+                      ? "bg-accent text-accent-foreground"
+                      : "text-muted-foreground hover:bg-accent/50 hover:text-foreground"
+                  }`}
+                >
+                  {t.titulo}
+                </button>
+              );
+            })}
+          </nav>
+
+          <Card className="min-w-0">
+            <h2 className="mb-4 text-lg font-semibold">{topico.titulo}</h2>
+            <div className="space-y-3 text-sm leading-relaxed text-foreground/90">
+              {topico.corpo}
+            </div>
+          </Card>
+        </div>
+      </div>
+    </PageContainer>
+  );
+}
