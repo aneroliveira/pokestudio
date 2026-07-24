@@ -12,7 +12,8 @@
       "attack": 241,
       "defense": 246,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm3.fMEGA.icon.png"
   },
   {
     "id": "CHARIZARD_MEGA_X",
@@ -27,7 +28,8 @@
       "attack": 273,
       "defense": 213,
       "stamina": 186
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fMEGA_X.icon.png"
   },
   {
     "id": "CHARIZARD_MEGA_Y",
@@ -42,7 +44,8 @@
       "attack": 319,
       "defense": 212,
       "stamina": 186
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fMEGA_Y.icon.png"
   },
   {
     "id": "BLASTOISE_MEGA",
@@ -56,7 +59,8 @@
       "attack": 264,
       "defense": 237,
       "stamina": 188
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm9.fMEGA.icon.png"
   },
   {
     "id": "BEEDRILL_MEGA",
@@ -71,7 +75,8 @@
       "attack": 303,
       "defense": 148,
       "stamina": 163
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm15.fMEGA.icon.png"
   },
   {
     "id": "PIDGEOT_MEGA",
@@ -86,7 +91,8 @@
       "attack": 280,
       "defense": 175,
       "stamina": 195
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm18.fMEGA.icon.png"
   },
   {
     "id": "RAICHU_MEGA_X",
@@ -100,7 +106,8 @@
       "attack": 277,
       "defense": 203,
       "stamina": 155
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm26.icon.png"
   },
   {
     "id": "RAICHU_MEGA_Y",
@@ -114,7 +121,8 @@
       "attack": 339,
       "defense": 157,
       "stamina": 155
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm26.icon.png"
   },
   {
     "id": "ALAKAZAM_MEGA",
@@ -128,7 +136,8 @@
       "attack": 367,
       "defense": 207,
       "stamina": 146
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm65.fMEGA.icon.png"
   },
   {
     "id": "VICTREEBEL_MEGA",
@@ -143,7 +152,8 @@
       "attack": 265,
       "defense": 181,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm71.icon.png"
   },
   {
     "id": "SLOWBRO_MEGA",
@@ -158,7 +168,8 @@
       "attack": 224,
       "defense": 259,
       "stamina": 216
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm80.fMEGA.icon.png"
   },
   {
     "id": "GENGAR_MEGA",
@@ -173,7 +184,8 @@
       "attack": 349,
       "defense": 199,
       "stamina": 155
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm94.fMEGA.icon.png"
   },
   {
     "id": "KANGASKHAN_MEGA",
@@ -187,7 +199,8 @@
       "attack": 246,
       "defense": 210,
       "stamina": 233
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm115.fMEGA.icon.png"
   },
   {
     "id": "PINSIR_MEGA",
@@ -202,7 +215,8 @@
       "attack": 305,
       "defense": 231,
       "stamina": 163
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm127.fMEGA.icon.png"
   },
   {
     "id": "GYARADOS_MEGA",
@@ -217,7 +231,8 @@
       "attack": 292,
       "defense": 247,
       "stamina": 216
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm130.fMEGA.icon.png"
   },
   {
     "id": "AERODACTYL_MEGA",
@@ -232,7 +247,8 @@
       "attack": 292,
       "defense": 210,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm142.fMEGA.icon.png"
   },
   {
     "id": "DRAGONITE_MEGA",
@@ -247,7 +263,8 @@
       "attack": 299,
       "defense": 255,
       "stamina": 209
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm149.icon.png"
   },
   {
     "id": "MEWTWO_MEGA_X",
@@ -262,7 +279,8 @@
       "attack": 399,
       "defense": 215,
       "stamina": 228
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.icon.png"
   },
   {
     "id": "MEWTWO_MEGA_Y",
@@ -276,7 +294,8 @@
       "attack": 413,
       "defense": 223,
       "stamina": 228
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.icon.png"
   },
   {
     "id": "AMPHAROS_MEGA",
@@ -291,7 +310,8 @@
       "attack": 294,
       "defense": 203,
       "stamina": 207
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm181.fMEGA.icon.png"
   },
   {
     "id": "STEELIX_MEGA",
@@ -306,7 +326,8 @@
       "attack": 212,
       "defense": 327,
       "stamina": 181
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm208.fMEGA.icon.png"
   },
   {
     "id": "SCIZOR_MEGA",
@@ -321,7 +342,8 @@
       "attack": 279,
       "defense": 250,
       "stamina": 172
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm212.fMEGA.icon.png"
   },
   {
     "id": "HERACROSS_MEGA",
@@ -336,7 +358,8 @@
       "attack": 334,
       "defense": 223,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm214.fMEGA.icon.png"
   },
   {
     "id": "SKARMORY_MEGA",
@@ -351,7 +374,8 @@
       "attack": 273,
       "defense": 228,
       "stamina": 163
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm227.icon.png"
   },
   {
     "id": "HOUNDOOM_MEGA",
@@ -366,7 +390,8 @@
       "attack": 289,
       "defense": 194,
       "stamina": 181
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm229.fMEGA.icon.png"
   },
   {
     "id": "TYRANITAR_MEGA",
@@ -381,7 +406,8 @@
       "attack": 309,
       "defense": 276,
       "stamina": 225
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm248.fMEGA.icon.png"
   },
   {
     "id": "SCEPTILE_MEGA",
@@ -396,7 +422,8 @@
       "attack": 320,
       "defense": 186,
       "stamina": 172
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm254.fMEGA.icon.png"
   },
   {
     "id": "BLAZIKEN_MEGA",
@@ -411,7 +438,8 @@
       "attack": 329,
       "defense": 168,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm257.fMEGA.icon.png"
   },
   {
     "id": "SWAMPERT_MEGA",
@@ -426,7 +454,8 @@
       "attack": 283,
       "defense": 218,
       "stamina": 225
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm260.fMEGA.icon.png"
   },
   {
     "id": "GARDEVOIR_MEGA",
@@ -441,7 +470,8 @@
       "attack": 326,
       "defense": 229,
       "stamina": 169
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm282.fMEGA.icon.png"
   },
   {
     "id": "SABLEYE_MEGA",
@@ -456,7 +486,8 @@
       "attack": 151,
       "defense": 216,
       "stamina": 137
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm302.fMEGA.icon.png"
   },
   {
     "id": "MAWILE_MEGA",
@@ -471,7 +502,8 @@
       "attack": 188,
       "defense": 217,
       "stamina": 137
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm303.fMEGA.icon.png"
   },
   {
     "id": "AGGRON_MEGA",
@@ -485,7 +517,8 @@
       "attack": 247,
       "defense": 331,
       "stamina": 172
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm306.fMEGA.icon.png"
   },
   {
     "id": "MEDICHAM_MEGA",
@@ -500,7 +533,8 @@
       "attack": 205,
       "defense": 179,
       "stamina": 155
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm308.fMEGA.icon.png"
   },
   {
     "id": "MANECTRIC_MEGA",
@@ -514,7 +548,8 @@
       "attack": 286,
       "defense": 179,
       "stamina": 172
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm310.fMEGA.icon.png"
   },
   {
     "id": "SHARPEDO_MEGA",
@@ -529,7 +564,8 @@
       "attack": 289,
       "defense": 144,
       "stamina": 172
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm319.fMEGA.icon.png"
   },
   {
     "id": "CAMERUPT_MEGA",
@@ -544,7 +580,8 @@
       "attack": 253,
       "defense": 183,
       "stamina": 172
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm323.fMEGA.icon.png"
   },
   {
     "id": "ALTARIA_MEGA",
@@ -559,7 +596,8 @@
       "attack": 222,
       "defense": 218,
       "stamina": 181
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm334.fMEGA.icon.png"
   },
   {
     "id": "BANETTE_MEGA",
@@ -573,7 +611,8 @@
       "attack": 312,
       "defense": 160,
       "stamina": 162
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm354.fMEGA.icon.png"
   },
   {
     "id": "ABSOL_MEGA",
@@ -587,7 +626,8 @@
       "attack": 314,
       "defense": 130,
       "stamina": 163
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm359.fMEGA.icon.png"
   },
   {
     "id": "GLALIE_MEGA",
@@ -601,7 +641,8 @@
       "attack": 252,
       "defense": 168,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm362.fMEGA.icon.png"
   },
   {
     "id": "SALAMENCE_MEGA",
@@ -616,7 +657,8 @@
       "attack": 310,
       "defense": 251,
       "stamina": 216
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm373.fMEGA.icon.png"
   },
   {
     "id": "METAGROSS_MEGA",
@@ -631,7 +673,8 @@
       "attack": 300,
       "defense": 289,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm376.fMEGA.icon.png"
   },
   {
     "id": "LATIAS_MEGA",
@@ -646,7 +689,8 @@
       "attack": 289,
       "defense": 297,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm380.fMEGA.icon.png"
   },
   {
     "id": "LATIOS_MEGA",
@@ -661,7 +705,8 @@
       "attack": 335,
       "defense": 241,
       "stamina": 190
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm381.fMEGA.icon.png"
   },
   {
     "id": "KYOGRE_PRIMAL",
@@ -675,7 +720,8 @@
       "attack": 353,
       "defense": 268,
       "stamina": 218
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm382.icon.png"
   },
   {
     "id": "GROUDON_PRIMAL",
@@ -690,7 +736,8 @@
       "attack": 353,
       "defense": 268,
       "stamina": 218
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm383.icon.png"
   },
   {
     "id": "RAYQUAZA_MEGA",
@@ -705,7 +752,8 @@
       "attack": 377,
       "defense": 210,
       "stamina": 227
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm384.fMEGA.icon.png"
   },
   {
     "id": "LOPUNNY_MEGA",
@@ -720,7 +768,8 @@
       "attack": 282,
       "defense": 214,
       "stamina": 163
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm428.fMEGA.icon.png"
   },
   {
     "id": "GARCHOMP_MEGA",
@@ -735,7 +784,8 @@
       "attack": 339,
       "defense": 222,
       "stamina": 239
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm445.fMEGA.icon.png"
   },
   {
     "id": "LUCARIO_MEGA",
@@ -750,7 +800,8 @@
       "attack": 310,
       "defense": 175,
       "stamina": 172
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm448.fMEGA.icon.png"
   },
   {
     "id": "ABOMASNOW_MEGA",
@@ -765,7 +816,8 @@
       "attack": 240,
       "defense": 191,
       "stamina": 207
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm460.fMEGA.icon.png"
   },
   {
     "id": "GALLADE_MEGA",
@@ -780,7 +832,8 @@
       "attack": 326,
       "defense": 230,
       "stamina": 169
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm475.fMEGA.icon.png"
   },
   {
     "id": "AUDINO_MEGA",
@@ -795,7 +848,8 @@
       "attack": 147,
       "defense": 239,
       "stamina": 230
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm531.fMEGA.icon.png"
   },
   {
     "id": "MALAMAR_MEGA",
@@ -810,7 +864,8 @@
       "attack": 208,
       "defense": 222,
       "stamina": 200
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm687.icon.png"
   },
   {
     "id": "DIANCIE_MEGA",
@@ -825,7 +880,8 @@
       "attack": 342,
       "defense": 235,
       "stamina": 137
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm719.fMEGA.icon.png"
   },
   {
     "id": "FALINKS_MEGA",
@@ -839,6 +895,7 @@
       "attack": 267,
       "defense": 229,
       "stamina": 163
-    }
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm870.icon.png"
   }
 ]

@@ -1,7 +1,8 @@
+import Image from "next/image";
 import type { Pokemon } from "@/models/pokemon";
 import { SectionCard } from "@/components/ui/SectionCard";
+import { TypeIcon } from "@/components/ui/TypeIcon";
 import { recomendarMegasContra } from "@/services/pokemon/recomendarMega";
-import { TIPO_LABEL } from "@/constants/typeLabels";
 
 const LIMITE = 3;
 
@@ -21,25 +22,34 @@ export function PokemonMegas({ pokemon }: PokemonMegasProps) {
           Nenhuma Mega super efetiva conhecida.
         </p>
       ) : (
-        <ul className="space-y-2">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {recomendadas.map(({ mega, melhorTipo, efetividade }) => (
-            <li
+            <div
               key={mega.id}
-              className="flex items-center justify-between gap-3 rounded-lg bg-accent px-3 py-2"
+              className="flex flex-col items-center gap-2 rounded-xl border border-border bg-accent p-3 text-center"
             >
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="font-medium">{mega.nome}</span>
-                <span className="rounded-full bg-secondary px-3 py-1 text-sm text-secondary-foreground">
-                  {TIPO_LABEL[melhorTipo]}
+              {mega.imagem && (
+                <Image
+                  src={mega.imagem}
+                  alt=""
+                  width={64}
+                  height={64}
+                />
+              )}
+
+              <span className="text-xs font-medium leading-tight">
+                {mega.nome}
+              </span>
+
+              <div className="flex items-center gap-2">
+                <TypeIcon tipo={melhorTipo} className="bg-secondary" compact />
+                <span className="text-sm font-semibold text-primary">
+                  {efetividade}×
                 </span>
               </div>
-
-              <span className="shrink-0 font-semibold text-primary">
-                {efetividade}×
-              </span>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </SectionCard>
   );

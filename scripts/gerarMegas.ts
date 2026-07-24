@@ -20,6 +20,7 @@ interface MegaBruto {
   stats?: { attack: number; defense: number; stamina: number };
   primaryType?: { type: string };
   secondaryType?: { type: string } | null;
+  assets?: { image?: string };
 }
 
 interface EntradaBruta {
@@ -34,6 +35,7 @@ interface EntradaMega {
   categoria: "Mega" | "Primal";
   tipos: TipoPokemon[];
   stats: { attack: number; defense: number; stamina: number };
+  imagem?: string;
 }
 
 function mapearTipo(bruto: string): TipoPokemon {
@@ -80,6 +82,7 @@ async function main() {
           defense: mega.stats.defense,
           stamina: mega.stats.stamina,
         },
+        imagem: mega.assets?.image,
       });
     }
   }

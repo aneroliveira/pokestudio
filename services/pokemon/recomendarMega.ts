@@ -13,6 +13,7 @@ export interface EntradaMega {
   categoria: "Mega" | "Primal";
   tipos: TipoPokemon[];
   stats: { attack: number; defense: number; stamina: number };
+  imagem?: string;
 }
 
 export const MEGAS = megasData as unknown as EntradaMega[];

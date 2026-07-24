@@ -9,11 +9,11 @@ export function InfoRow({
 }: InfoRowProps) {
   return (
     <div className="flex items-center justify-between">
-      <span className="text-zinc-600">
+      <span className="text-muted-foreground">
         {label}
       </span>
 
-      <strong className="text-lg font-bold text-zinc-900">
+      <strong className="text-lg font-bold text-foreground">
   {value}
 </strong>
     </div>
