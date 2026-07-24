@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/Card";
 import type { Pokemon } from "@/models/pokemon";
 import { PokemonDecision } from "@/components/pokemon/PokemonDecision";
 import { PokemonCombat } from "@/components/pokemon/PokemonCombat";
+import { PokemonMegas } from "@/components/pokemon/PokemonMegas";
 import { PokemonObservations } from "@/components/pokemon/PokemonObservations";
 import { StarRating } from "@/components/ui/StarRating";
 
@@ -36,6 +37,8 @@ export function PokemonCard({
       <PokemonHundos pokemon={pokemon} />
 
       <PokemonCombat pokemon={pokemon} />
+
+      <PokemonMegas pokemon={pokemon} />
 
       <PokemonObservations pokemon={pokemon} />
     </Card>
