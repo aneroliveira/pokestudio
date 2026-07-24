@@ -28,6 +28,7 @@ export type CategoriaFormaPokemon =
 
 export interface FormaPokemon {
   id: string;
+  nome: string;
   categoria: CategoriaFormaPokemon;
 }
 

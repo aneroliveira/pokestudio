@@ -18,7 +18,7 @@ export function FormsTab({ pokemon }: FormsTabProps) {
                 key={forma.id}
                 className="flex items-center justify-between rounded-lg border border-zinc-200 px-3 py-2 text-sm"
               >
-                <span>{forma.id}</span>
+                <span>{forma.nome}</span>
                 <span className="text-zinc-500">{forma.categoria}</span>
               </li>
             ))}
