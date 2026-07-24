@@ -73,6 +73,7 @@ export default function Home() {
           onSelect={selecionarPokemon}
           resultados={resultados}
           studioMap={studioMap}
+          autoFocus
         />
 
         {carregando ? (

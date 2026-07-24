@@ -14,6 +14,7 @@ type SearchBarProps = {
   placeholder?: string;
   resultados: ItemIndicePokemon[];
   studioMap?: StudioMap;
+  autoFocus?: boolean;
 };
 
 function formatarNome(nomeEn: string) {
@@ -30,6 +31,7 @@ export function SearchBar({
   placeholder = "Pesquise um Pokémon...",
   resultados,
   studioMap = {},
+  autoFocus = false,
 }: SearchBarProps) {
   return (
     <div className="space-y-2">
@@ -42,7 +44,8 @@ export function SearchBar({
           value={value}
           onChange={(event) => onChange(event.target.value)}
           placeholder={placeholder}
-          className="pl-10"
+          autoFocus={autoFocus}
+          className="border-border pl-10"
         />
       </div>
 
