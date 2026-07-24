@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "gen:index": "tsx scripts/gerarIndice.ts",
-    "gen:go-stats": "tsx scripts/gerarGoStats.ts"
+    "gen:go-stats": "tsx scripts/gerarGoStats.ts",
+    "gen:megas": "tsx scripts/gerarMegas.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

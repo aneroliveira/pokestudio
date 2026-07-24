@@ -1,0 +1,844 @@
+[
+  {
+    "id": "VENUSAUR_MEGA",
+    "nome": "Mega Venusaur",
+    "numeroBase": "#3",
+    "categoria": "Mega",
+    "tipos": [
+      "Grass",
+      "Poison"
+    ],
+    "stats": {
+      "attack": 241,
+      "defense": 246,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "CHARIZARD_MEGA_X",
+    "nome": "Mega Charizard X",
+    "numeroBase": "#6",
+    "categoria": "Mega",
+    "tipos": [
+      "Fire",
+      "Dragon"
+    ],
+    "stats": {
+      "attack": 273,
+      "defense": 213,
+      "stamina": 186
+    }
+  },
+  {
+    "id": "CHARIZARD_MEGA_Y",
+    "nome": "Mega Charizard Y",
+    "numeroBase": "#6",
+    "categoria": "Mega",
+    "tipos": [
+      "Fire",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 319,
+      "defense": 212,
+      "stamina": 186
+    }
+  },
+  {
+    "id": "BLASTOISE_MEGA",
+    "nome": "Mega Blastoise",
+    "numeroBase": "#9",
+    "categoria": "Mega",
+    "tipos": [
+      "Water"
+    ],
+    "stats": {
+      "attack": 264,
+      "defense": 237,
+      "stamina": 188
+    }
+  },
+  {
+    "id": "BEEDRILL_MEGA",
+    "nome": "Mega Beedrill",
+    "numeroBase": "#15",
+    "categoria": "Mega",
+    "tipos": [
+      "Bug",
+      "Poison"
+    ],
+    "stats": {
+      "attack": 303,
+      "defense": 148,
+      "stamina": 163
+    }
+  },
+  {
+    "id": "PIDGEOT_MEGA",
+    "nome": "Mega Pidgeot",
+    "numeroBase": "#18",
+    "categoria": "Mega",
+    "tipos": [
+      "Normal",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 280,
+      "defense": 175,
+      "stamina": 195
+    }
+  },
+  {
+    "id": "RAICHU_MEGA_X",
+    "nome": "Mega Raichu X",
+    "numeroBase": "#26",
+    "categoria": "Mega",
+    "tipos": [
+      "Electric"
+    ],
+    "stats": {
+      "attack": 277,
+      "defense": 203,
+      "stamina": 155
+    }
+  },
+  {
+    "id": "RAICHU_MEGA_Y",
+    "nome": "Mega Raichu Y",
+    "numeroBase": "#26",
+    "categoria": "Mega",
+    "tipos": [
+      "Electric"
+    ],
+    "stats": {
+      "attack": 339,
+      "defense": 157,
+      "stamina": 155
+    }
+  },
+  {
+    "id": "ALAKAZAM_MEGA",
+    "nome": "Mega Alakazam",
+    "numeroBase": "#65",
+    "categoria": "Mega",
+    "tipos": [
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 367,
+      "defense": 207,
+      "stamina": 146
+    }
+  },
+  {
+    "id": "VICTREEBEL_MEGA",
+    "nome": "Mega Victreebel",
+    "numeroBase": "#71",
+    "categoria": "Mega",
+    "tipos": [
+      "Grass",
+      "Poison"
+    ],
+    "stats": {
+      "attack": 265,
+      "defense": 181,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "SLOWBRO_MEGA",
+    "nome": "Mega Slowbro",
+    "numeroBase": "#80",
+    "categoria": "Mega",
+    "tipos": [
+      "Water",
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 224,
+      "defense": 259,
+      "stamina": 216
+    }
+  },
+  {
+    "id": "GENGAR_MEGA",
+    "nome": "Mega Gengar",
+    "numeroBase": "#94",
+    "categoria": "Mega",
+    "tipos": [
+      "Ghost",
+      "Poison"
+    ],
+    "stats": {
+      "attack": 349,
+      "defense": 199,
+      "stamina": 155
+    }
+  },
+  {
+    "id": "KANGASKHAN_MEGA",
+    "nome": "Mega Kangaskhan",
+    "numeroBase": "#115",
+    "categoria": "Mega",
+    "tipos": [
+      "Normal"
+    ],
+    "stats": {
+      "attack": 246,
+      "defense": 210,
+      "stamina": 233
+    }
+  },
+  {
+    "id": "PINSIR_MEGA",
+    "nome": "Mega Pinsir",
+    "numeroBase": "#127",
+    "categoria": "Mega",
+    "tipos": [
+      "Bug",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 305,
+      "defense": 231,
+      "stamina": 163
+    }
+  },
+  {
+    "id": "GYARADOS_MEGA",
+    "nome": "Mega Gyarados",
+    "numeroBase": "#130",
+    "categoria": "Mega",
+    "tipos": [
+      "Water",
+      "Dark"
+    ],
+    "stats": {
+      "attack": 292,
+      "defense": 247,
+      "stamina": 216
+    }
+  },
+  {
+    "id": "AERODACTYL_MEGA",
+    "nome": "Mega Aerodactyl",
+    "numeroBase": "#142",
+    "categoria": "Mega",
+    "tipos": [
+      "Rock",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 292,
+      "defense": 210,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "DRAGONITE_MEGA",
+    "nome": "Mega Dragonite",
+    "numeroBase": "#149",
+    "categoria": "Mega",
+    "tipos": [
+      "Dragon",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 299,
+      "defense": 255,
+      "stamina": 209
+    }
+  },
+  {
+    "id": "MEWTWO_MEGA_X",
+    "nome": "Mega Mewtwo X",
+    "numeroBase": "#150",
+    "categoria": "Mega",
+    "tipos": [
+      "Psychic",
+      "Fighting"
+    ],
+    "stats": {
+      "attack": 399,
+      "defense": 215,
+      "stamina": 228
+    }
+  },
+  {
+    "id": "MEWTWO_MEGA_Y",
+    "nome": "Mega Mewtwo Y",
+    "numeroBase": "#150",
+    "categoria": "Mega",
+    "tipos": [
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 413,
+      "defense": 223,
+      "stamina": 228
+    }
+  },
+  {
+    "id": "AMPHAROS_MEGA",
+    "nome": "Mega Ampharos",
+    "numeroBase": "#181",
+    "categoria": "Mega",
+    "tipos": [
+      "Electric",
+      "Dragon"
+    ],
+    "stats": {
+      "attack": 294,
+      "defense": 203,
+      "stamina": 207
+    }
+  },
+  {
+    "id": "STEELIX_MEGA",
+    "nome": "Mega Steelix",
+    "numeroBase": "#208",
+    "categoria": "Mega",
+    "tipos": [
+      "Steel",
+      "Ground"
+    ],
+    "stats": {
+      "attack": 212,
+      "defense": 327,
+      "stamina": 181
+    }
+  },
+  {
+    "id": "SCIZOR_MEGA",
+    "nome": "Mega Scizor",
+    "numeroBase": "#212",
+    "categoria": "Mega",
+    "tipos": [
+      "Bug",
+      "Steel"
+    ],
+    "stats": {
+      "attack": 279,
+      "defense": 250,
+      "stamina": 172
+    }
+  },
+  {
+    "id": "HERACROSS_MEGA",
+    "nome": "Mega Heracross",
+    "numeroBase": "#214",
+    "categoria": "Mega",
+    "tipos": [
+      "Bug",
+      "Fighting"
+    ],
+    "stats": {
+      "attack": 334,
+      "defense": 223,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "SKARMORY_MEGA",
+    "nome": "Mega Skarmory",
+    "numeroBase": "#227",
+    "categoria": "Mega",
+    "tipos": [
+      "Steel",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 273,
+      "defense": 228,
+      "stamina": 163
+    }
+  },
+  {
+    "id": "HOUNDOOM_MEGA",
+    "nome": "Mega Houndoom",
+    "numeroBase": "#229",
+    "categoria": "Mega",
+    "tipos": [
+      "Dark",
+      "Fire"
+    ],
+    "stats": {
+      "attack": 289,
+      "defense": 194,
+      "stamina": 181
+    }
+  },
+  {
+    "id": "TYRANITAR_MEGA",
+    "nome": "Mega Tyranitar",
+    "numeroBase": "#248",
+    "categoria": "Mega",
+    "tipos": [
+      "Rock",
+      "Dark"
+    ],
+    "stats": {
+      "attack": 309,
+      "defense": 276,
+      "stamina": 225
+    }
+  },
+  {
+    "id": "SCEPTILE_MEGA",
+    "nome": "Mega Sceptile",
+    "numeroBase": "#254",
+    "categoria": "Mega",
+    "tipos": [
+      "Grass",
+      "Dragon"
+    ],
+    "stats": {
+      "attack": 320,
+      "defense": 186,
+      "stamina": 172
+    }
+  },
+  {
+    "id": "BLAZIKEN_MEGA",
+    "nome": "Mega Blaziken",
+    "numeroBase": "#257",
+    "categoria": "Mega",
+    "tipos": [
+      "Fire",
+      "Fighting"
+    ],
+    "stats": {
+      "attack": 329,
+      "defense": 168,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "SWAMPERT_MEGA",
+    "nome": "Mega Swampert",
+    "numeroBase": "#260",
+    "categoria": "Mega",
+    "tipos": [
+      "Water",
+      "Ground"
+    ],
+    "stats": {
+      "attack": 283,
+      "defense": 218,
+      "stamina": 225
+    }
+  },
+  {
+    "id": "GARDEVOIR_MEGA",
+    "nome": "Mega Gardevoir",
+    "numeroBase": "#282",
+    "categoria": "Mega",
+    "tipos": [
+      "Psychic",
+      "Fairy"
+    ],
+    "stats": {
+      "attack": 326,
+      "defense": 229,
+      "stamina": 169
+    }
+  },
+  {
+    "id": "SABLEYE_MEGA",
+    "nome": "Mega Sableye",
+    "numeroBase": "#302",
+    "categoria": "Mega",
+    "tipos": [
+      "Dark",
+      "Ghost"
+    ],
+    "stats": {
+      "attack": 151,
+      "defense": 216,
+      "stamina": 137
+    }
+  },
+  {
+    "id": "MAWILE_MEGA",
+    "nome": "Mega Mawile",
+    "numeroBase": "#303",
+    "categoria": "Mega",
+    "tipos": [
+      "Steel",
+      "Fairy"
+    ],
+    "stats": {
+      "attack": 188,
+      "defense": 217,
+      "stamina": 137
+    }
+  },
+  {
+    "id": "AGGRON_MEGA",
+    "nome": "Mega Aggron",
+    "numeroBase": "#306",
+    "categoria": "Mega",
+    "tipos": [
+      "Steel"
+    ],
+    "stats": {
+      "attack": 247,
+      "defense": 331,
+      "stamina": 172
+    }
+  },
+  {
+    "id": "MEDICHAM_MEGA",
+    "nome": "Mega Medicham",
+    "numeroBase": "#308",
+    "categoria": "Mega",
+    "tipos": [
+      "Fighting",
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 205,
+      "defense": 179,
+      "stamina": 155
+    }
+  },
+  {
+    "id": "MANECTRIC_MEGA",
+    "nome": "Mega Manectric",
+    "numeroBase": "#310",
+    "categoria": "Mega",
+    "tipos": [
+      "Electric"
+    ],
+    "stats": {
+      "attack": 286,
+      "defense": 179,
+      "stamina": 172
+    }
+  },
+  {
+    "id": "SHARPEDO_MEGA",
+    "nome": "Mega Sharpedo",
+    "numeroBase": "#319",
+    "categoria": "Mega",
+    "tipos": [
+      "Water",
+      "Dark"
+    ],
+    "stats": {
+      "attack": 289,
+      "defense": 144,
+      "stamina": 172
+    }
+  },
+  {
+    "id": "CAMERUPT_MEGA",
+    "nome": "Mega Camerupt",
+    "numeroBase": "#323",
+    "categoria": "Mega",
+    "tipos": [
+      "Fire",
+      "Ground"
+    ],
+    "stats": {
+      "attack": 253,
+      "defense": 183,
+      "stamina": 172
+    }
+  },
+  {
+    "id": "ALTARIA_MEGA",
+    "nome": "Mega Altaria",
+    "numeroBase": "#334",
+    "categoria": "Mega",
+    "tipos": [
+      "Dragon",
+      "Fairy"
+    ],
+    "stats": {
+      "attack": 222,
+      "defense": 218,
+      "stamina": 181
+    }
+  },
+  {
+    "id": "BANETTE_MEGA",
+    "nome": "Mega Banette",
+    "numeroBase": "#354",
+    "categoria": "Mega",
+    "tipos": [
+      "Ghost"
+    ],
+    "stats": {
+      "attack": 312,
+      "defense": 160,
+      "stamina": 162
+    }
+  },
+  {
+    "id": "ABSOL_MEGA",
+    "nome": "Mega Absol",
+    "numeroBase": "#359",
+    "categoria": "Mega",
+    "tipos": [
+      "Dark"
+    ],
+    "stats": {
+      "attack": 314,
+      "defense": 130,
+      "stamina": 163
+    }
+  },
+  {
+    "id": "GLALIE_MEGA",
+    "nome": "Mega Glalie",
+    "numeroBase": "#362",
+    "categoria": "Mega",
+    "tipos": [
+      "Ice"
+    ],
+    "stats": {
+      "attack": 252,
+      "defense": 168,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "SALAMENCE_MEGA",
+    "nome": "Mega Salamence",
+    "numeroBase": "#373",
+    "categoria": "Mega",
+    "tipos": [
+      "Dragon",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 310,
+      "defense": 251,
+      "stamina": 216
+    }
+  },
+  {
+    "id": "METAGROSS_MEGA",
+    "nome": "Mega Metagross",
+    "numeroBase": "#376",
+    "categoria": "Mega",
+    "tipos": [
+      "Steel",
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 300,
+      "defense": 289,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "LATIAS_MEGA",
+    "nome": "Mega Latias",
+    "numeroBase": "#380",
+    "categoria": "Mega",
+    "tipos": [
+      "Dragon",
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 289,
+      "defense": 297,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "LATIOS_MEGA",
+    "nome": "Mega Latios",
+    "numeroBase": "#381",
+    "categoria": "Mega",
+    "tipos": [
+      "Dragon",
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 335,
+      "defense": 241,
+      "stamina": 190
+    }
+  },
+  {
+    "id": "KYOGRE_PRIMAL",
+    "nome": "Primal Kyogre",
+    "numeroBase": "#382",
+    "categoria": "Primal",
+    "tipos": [
+      "Water"
+    ],
+    "stats": {
+      "attack": 353,
+      "defense": 268,
+      "stamina": 218
+    }
+  },
+  {
+    "id": "GROUDON_PRIMAL",
+    "nome": "Primal Groudon",
+    "numeroBase": "#383",
+    "categoria": "Primal",
+    "tipos": [
+      "Ground",
+      "Fire"
+    ],
+    "stats": {
+      "attack": 353,
+      "defense": 268,
+      "stamina": 218
+    }
+  },
+  {
+    "id": "RAYQUAZA_MEGA",
+    "nome": "Mega Rayquaza",
+    "numeroBase": "#384",
+    "categoria": "Mega",
+    "tipos": [
+      "Dragon",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 377,
+      "defense": 210,
+      "stamina": 227
+    }
+  },
+  {
+    "id": "LOPUNNY_MEGA",
+    "nome": "Mega Lopunny",
+    "numeroBase": "#428",
+    "categoria": "Mega",
+    "tipos": [
+      "Normal",
+      "Fighting"
+    ],
+    "stats": {
+      "attack": 282,
+      "defense": 214,
+      "stamina": 163
+    }
+  },
+  {
+    "id": "GARCHOMP_MEGA",
+    "nome": "Mega Garchomp",
+    "numeroBase": "#445",
+    "categoria": "Mega",
+    "tipos": [
+      "Dragon",
+      "Ground"
+    ],
+    "stats": {
+      "attack": 339,
+      "defense": 222,
+      "stamina": 239
+    }
+  },
+  {
+    "id": "LUCARIO_MEGA",
+    "nome": "Mega Lucario",
+    "numeroBase": "#448",
+    "categoria": "Mega",
+    "tipos": [
+      "Fighting",
+      "Steel"
+    ],
+    "stats": {
+      "attack": 310,
+      "defense": 175,
+      "stamina": 172
+    }
+  },
+  {
+    "id": "ABOMASNOW_MEGA",
+    "nome": "Mega Abomasnow",
+    "numeroBase": "#460",
+    "categoria": "Mega",
+    "tipos": [
+      "Grass",
+      "Ice"
+    ],
+    "stats": {
+      "attack": 240,
+      "defense": 191,
+      "stamina": 207
+    }
+  },
+  {
+    "id": "GALLADE_MEGA",
+    "nome": "Mega Gallade",
+    "numeroBase": "#475",
+    "categoria": "Mega",
+    "tipos": [
+      "Psychic",
+      "Fighting"
+    ],
+    "stats": {
+      "attack": 326,
+      "defense": 230,
+      "stamina": 169
+    }
+  },
+  {
+    "id": "AUDINO_MEGA",
+    "nome": "Mega Audino",
+    "numeroBase": "#531",
+    "categoria": "Mega",
+    "tipos": [
+      "Normal",
+      "Fairy"
+    ],
+    "stats": {
+      "attack": 147,
+      "defense": 239,
+      "stamina": 230
+    }
+  },
+  {
+    "id": "MALAMAR_MEGA",
+    "nome": "Mega Malamar",
+    "numeroBase": "#687",
+    "categoria": "Mega",
+    "tipos": [
+      "Dark",
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 208,
+      "defense": 222,
+      "stamina": 200
+    }
+  },
+  {
+    "id": "DIANCIE_MEGA",
+    "nome": "Mega Diancie",
+    "numeroBase": "#719",
+    "categoria": "Mega",
+    "tipos": [
+      "Rock",
+      "Fairy"
+    ],
+    "stats": {
+      "attack": 342,
+      "defense": 235,
+      "stamina": 137
+    }
+  },
+  {
+    "id": "FALINKS_MEGA",
+    "nome": "Mega Falinks",
+    "numeroBase": "#870",
+    "categoria": "Mega",
+    "tipos": [
+      "Fighting"
+    ],
+    "stats": {
+      "attack": 267,
+      "defense": 229,
+      "stamina": 163
+    }
+  }
+]
