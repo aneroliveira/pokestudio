@@ -136,5 +136,921 @@
         "iv96": 2182
       }
     }
+  },
+  "#382": {
+    "estrategia": {
+      "tier": "S+",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Um dos melhores atacantes de Água do jogo; sempre relevante em raids."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "sim",
+          "motivo": "Ataque altíssimo compensa o investimento em poeira e doces."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Raramente disponível fora de raids/eventos; XL depende de captura em raid."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "sim",
+          "motivo": "Surf/Origin Pulse já é o melhor moveset; TM só compensa se vier com um moveset ruim."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Água é um dos tipos mais buscados para raids (fraqueza comum a Fogo/Terra/Pedra).",
+        "Guarde exemplares 100% ou 96%+ também para Master League em PvP.",
+        "Sem doce fácil via captura selvagem — só em raids/eventos especiais."
+      ],
+      "sinergias": [
+        "Mega Swampert",
+        "Mega Blastoise",
+        "Feraligatr"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#376": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Atacante Aço/Psíquico versátil, cobre Dragão, Gelo, Fada e Pedra."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "sim",
+          "motivo": "Bulk alto e dano consistente compensam o investimento."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Beldum evolui devagar; vale acumular XL via Buddy."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "atencao",
+          "motivo": "Meteor Mash já é considerado o melhor golpe carregado; só use se faltar esse moveset."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Bom substituto de Aço quando faltar acesso a Dialga/Melmetal.",
+        "Também competitivo na Master League em PvP."
+      ],
+      "sinergias": [
+        "Mega Metagross",
+        "Dialga",
+        "Melmetal"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Ganhar doces XL"
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#445": {
+    "estrategia": {
+      "tier": "A+",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Um dos melhores atacantes Dragão/Terra disponíveis fora de lendários."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "sim"
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Linha de evolução longa (Gible); prioridade média para XL."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "atencao",
+          "motivo": "Depende do moveset atual; Dragon Tail/Outrage já é ótimo."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Cobre Terra e Dragão ao mesmo tempo — útil em raids com fraqueza dupla.",
+        "Também relevante na Master League em PvP."
+      ],
+      "sinergias": [
+        "Mega Garchomp",
+        "Excadrill",
+        "Rayquaza"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#483": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Um dos melhores atacantes do tipo Aço, cobre Gelo, Fada, Pedra e Dragão."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "sim"
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Só disponível via raids/eventos; XL depende de sorte na captura."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "sim",
+          "motivo": "Útil se não vier com Iron Head e um golpe carregado ideal."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Prioridade alta para quem ainda não tem um atacante Aço forte.",
+        "Guarde exemplares altos para futuras raids de Dragão, Gelo, Fada e Pedra."
+      ],
+      "sinergias": [
+        "Metagross",
+        "Melmetal",
+        "Excadrill"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#530": {
+    "estrategia": {
+      "tier": "A+",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Um dos melhores atacantes Terra, com acesso fácil via Drilbur em eventos."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "sim"
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Drilbur costuma aparecer bastante em eventos de comunidade; XL acessível."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "atencao",
+          "motivo": "Mud-Slap + Drill Run/Earthquake já é um bom moveset padrão."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Também forte em Great/Ultra League com Mud-Slap.",
+        "Cobre bem Elétrico, Venenoso, Pedra e Aço em raids."
+      ],
+      "sinergias": [
+        "Garchomp",
+        "Rhyperior",
+        "Groudon"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Ganhar doces XL"
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#184": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Versátil",
+      "melhorPara": [
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Um dos pilares mais consistentes da Great League há anos."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "PvP prioriza IV de Ataque baixo, não maximização tradicional — maximize só se for para raids/Buddy."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Azurill costuma ser comum em ovos de 2km; XL acessível."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Water Gun + Ice Beam/Play Rough já é o moveset padrão em PvP; evite gastar TM à toa."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Para PvP, procure exemplares com Ataque baixo e Defesa/Vida altos ('IV ruim' é bom aqui).",
+        "Resiste a Lutador graças ao tipo Fada — um dos poucos counters confiáveis."
+      ],
+      "sinergias": [
+        "Skarmory",
+        "Registeel",
+        "Swampert"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Ganhar doces XL"
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#249": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Versátil",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um dos melhores tanques do jogo; forte em raids e em Master League." },
+        { "titulo": "Vale maximizar", "status": "sim", "motivo": "Bulk imenso combina bem com Ataque maximizado para raids." },
+        { "titulo": "Vale Buddy", "status": "atencao", "motivo": "Só disponível em raids/eventos; XL depende de sorte." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Aeroblast é o golpe carregado ideal; avalie o moveset atual antes de gastar." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Excelente contra ataques físicos por conta da defesa altíssima.",
+        "Um dos poucos Voadores viáveis na Master League em PvP."
+      ],
+      "sinergias": ["Ho-Oh", "Zapdos", "Articuno"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#487": {
+    "estrategia": {
+      "tier": "A+",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Bom atacante Fantasma/Dragão, útil contra Fantasma, Psíquico e Dragão." },
+        { "titulo": "Vale maximizar", "status": "atencao", "motivo": "A forma Origin (via item especial) é bem mais forte como atacante; maximize com essa evolução em mente." },
+        { "titulo": "Vale Buddy", "status": "atencao" },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Shadow Ball já é um bom golpe rápido padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "A forma Origin supera bastante a Altered como atacante — vale buscar o item de evolução se disponível.",
+        "Também competitiva na Master League em PvP."
+      ],
+      "sinergias": ["Mewtwo", "Metagross", "Dialga"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#888": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um dos melhores atacantes Fada, forte contra Dragão, Lutador e Sombrio." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "atencao", "motivo": "Disponível só via raids especiais; XL não é garantido." },
+        { "titulo": "Vale Elite TM", "status": "sim", "motivo": "Útil se não vier com Behemoth Blade ou moveset ideal." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "A forma Crowned Sword (com a Espada Enferrujada) é ainda mais forte, ganhando o tipo Aço.",
+        "Cobre bem raids de Dragão e Lutador."
+      ],
+      "sinergias": ["Xerneas", "Togekiss", "Sylveon"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#809": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um dos melhores atacantes Aço, e também forte em Master League." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "nao", "motivo": "Exige 400 doces de Meltan para evoluir; o caminho principal não é o Buddy tradicional." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Superpower/Rock Slide já cobre bem os principais usos; avalie o moveset atual." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Evolui de Meltan com 400 doces — normalmente via Caixa Místico.",
+        "Também relevante na Master League em PvP."
+      ],
+      "sinergias": ["Metagross", "Dialga", "Excadrill"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#468": {
+    "estrategia": {
+      "tier": "A+",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Bom atacante Fada/Voador, útil contra Lutador, Sombrio e Dragão." },
+        { "titulo": "Vale maximizar", "status": "atencao", "motivo": "Considere manter também um exemplar com IV baixo de Ataque, já que é forte em Great/Ultra League." },
+        { "titulo": "Vale Buddy", "status": "sim", "motivo": "Togepi é comum em ovos de 2km/7km; XL acessível." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Air Slash + Flamethrower/Dazzling Gleam já é um bom moveset padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Peça-chave da Great e Ultra League com Air Slash.",
+        "Resiste a Lutador e Sombrio graças ao tipo Fada."
+      ],
+      "sinergias": ["Azumarill", "Sylveon", "Registeel"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": true, "objetivo": "Ganhar doces XL" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#379": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Defensor",
+      "melhorPara": ["PvP", "Ginásios"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um dos melhores defensores de ginásio e forte na Great League." },
+        { "titulo": "Vale maximizar", "status": "atencao", "motivo": "PvP prioriza IV baixo de Ataque; maximize só se for usar em ginásios/raids." },
+        { "titulo": "Vale Buddy", "status": "atencao", "motivo": "Só disponível via raids; XL depende de sorte." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Lock-On + Focus Blast é um moveset de nicho; avalie antes de gastar TM." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Defesa altíssima o torna um dos melhores 'muros' da Great League.",
+        "Cobre bem contra ataques Normal e Voador."
+      ],
+      "sinergias": ["Azumarill", "Skarmory", "Bastiodon"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#645": {
+    "estrategia": {
+      "tier": "A+",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Forte atacante Terra/Voador, cobre bem Elétrico, Veneno, Pedra e Aço." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "atencao", "motivo": "Só disponível via raids/eventos." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Earthquake já é um golpe carregado sólido." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Também competitivo na Master League em PvP.",
+        "Boa opção para raids que pedem Terra sem depender de lendários mais raros."
+      ],
+      "sinergias": ["Garchomp", "Excadrill", "Groudon"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#383": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um dos melhores atacantes de Terra do jogo." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "atencao", "motivo": "Só disponível via raids/eventos." },
+        { "titulo": "Vale Elite TM", "status": "sim", "motivo": "Útil se não vier com Precipice Blades ou moveset ideal." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "A forma Primal (Mega-equivalente) é ainda mais forte — já aparece na seção 'Melhor Mega contra'.",
+        "Cobre bem raids de Fogo, Elétrico, Veneno, Pedra e Aço."
+      ],
+      "sinergias": ["Rhyperior", "Excadrill", "Garchomp"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#644": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Forte atacante Elétrico/Dragão, cobre Água, Voador e Dragão." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "atencao" },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Wild Charge/Outrage já é um bom moveset padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Bom substituto de Elétrico quando faltar acesso a atacantes puros do tipo.",
+        "Também forte contra Dragão em raids."
+      ],
+      "sinergias": ["Reshiram", "Dialga", "Rayquaza"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#643": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Forte atacante Fogo/Dragão, cobre Aço, Gelo, Grama e Inseto." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "atencao" },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Fire Fang/Overheat já é um bom moveset padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Bom substituto de Fogo quando faltar acesso a atacantes puros do tipo.",
+        "Também forte contra Dragão em raids."
+      ],
+      "sinergias": ["Zekrom", "Mega Charizard Y", "Entei"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#717": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Forte atacante Sombrio/Voador, cobre Psíquico, Fantasma e Lutador." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "atencao" },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Snarl/Dark Pulse já é um bom moveset padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Bom substituto de Sombrio em raids de Psíquico e Fantasma."
+      ],
+      "sinergias": ["Tyranitar", "Weavile", "Hydreigon"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#716": {
+    "estrategia": {
+      "tier": "S",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um dos melhores atacantes Fada, cobre Dragão, Lutador e Sombrio." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "atencao" },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Moonblast já é um golpe carregado excelente." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Cobre bem raids de Dragão, um dos tipos mais fortes do jogo."
+      ],
+      "sinergias": ["Zacian", "Togekiss", "Sylveon"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": false, "objetivo": "" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#464": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um dos melhores atacantes Terra/Pedra, cobre Fogo, Elétrico, Veneno, Pedra, Voador e Aço." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "sim", "motivo": "Rhyhorn costuma aparecer em eventos de comunidade; XL acessível." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Mud Slap/Rock Wrecker já é um bom moveset padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Cobre uma quantidade enorme de tipos em raids graças ao duplo tipo Terra/Pedra."
+      ],
+      "sinergias": ["Garchomp", "Excadrill", "Groudon"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": true, "objetivo": "Ganhar doces XL" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#260": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Bom atacante Água/Terra, com Mega disponível para ainda mais dano." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "sim", "motivo": "Mudkip é comum em eventos de comunidade; XL acessível." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Mud Shot/Hydro Cannon já é um bom moveset padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "A Mega Swampert já aparece nas recomendações de 'Melhor Mega contra'.",
+        "Também competitivo em Great/Ultra League."
+      ],
+      "sinergias": ["Kyogre", "Mega Swampert", "Feraligatr"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": true, "objetivo": "Ganhar doces XL" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#248": {
+    "estrategia": {
+      "tier": "A+",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um dos atacantes mais versáteis do jogo, com Mega disponível." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "sim", "motivo": "Larvitar é comum em ovos de 10km e eventos; XL acessível." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Smack Down/Stone Edge ou Bite/Brutal Swing já cobrem bem os principais usos." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Cobre Fogo, Voador, Inseto, Psíquico e Fantasma em raids.",
+        "A Mega Tyranitar já aparece nas recomendações de 'Melhor Mega contra' para diversos tipos."
+      ],
+      "sinergias": ["Mega Tyranitar", "Excadrill", "Rhyperior"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": true, "objetivo": "Ganhar doces XL" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#130": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Atacante Água/Voador consistente, com Mega disponível." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "sim", "motivo": "Magikarp é um dos Pokémon mais comuns do jogo; XL fácil de conseguir." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Waterfall/Hydro Pump já é um bom moveset padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Também competitivo na Ultra League em PvP.",
+        "A Mega Gyarados aumenta bastante o dano em raids."
+      ],
+      "sinergias": ["Kyogre", "Mega Gyarados", "Swampert"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": true, "objetivo": "Ganhar doces XL" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#143": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Versátil",
+      "melhorPara": ["PvP", "Ginásios"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Um pilar clássico de ginásios e da Great League." },
+        { "titulo": "Vale maximizar", "status": "atencao", "motivo": "PvP prioriza bulk sobre Ataque; maximize só se for defender ginásios." },
+        { "titulo": "Vale Buddy", "status": "sim", "motivo": "Munchlax é comum em ovos de 5km/7km; XL acessível." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Body Slam/Yawn já é o moveset padrão em PvP; avalie antes de gastar TM." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Vida altíssima o torna difícil de derrubar em ginásios e na Great League.",
+        "Body Slam + Superpower/Earthquake é uma boa opção ofensiva também."
+      ],
+      "sinergias": ["Registeel", "Azumarill", "Skarmory"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": true, "objetivo": "Ganhar doces XL" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
+  },
+  "#149": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": ["Raids", "PvP"]
+    },
+    "conhecimento": {
+      "decisoes": [
+        { "titulo": "Vale guardar", "status": "sim", "motivo": "Atacante Dragão/Voador clássico, ainda relevante em raids e PvP." },
+        { "titulo": "Vale maximizar", "status": "sim" },
+        { "titulo": "Vale Buddy", "status": "sim", "motivo": "Dratini costuma aparecer bastante em eventos de comunidade; XL acessível." },
+        { "titulo": "Vale Elite TM", "status": "atencao", "motivo": "Dragon Breath/Outrage já é um bom moveset padrão." },
+        { "titulo": "Transferir", "status": "nao" }
+      ],
+      "observacoes": [
+        "Também competitivo na Ultra League em PvP.",
+        "Bom substituto de Dragão quando faltar acesso a lendários do tipo."
+      ],
+      "sinergias": ["Rayquaza", "Garchomp", "Kyurem"]
+    },
+    "go": {
+      "estado": { "tipo": "Nenhum", "valeInvestir": true, "motivo": "" },
+      "shadow": { "possuiShadow": false, "recomendadoPurificar": false },
+      "buddy": { "necessario": true, "objetivo": "Ganhar doces XL" },
+      "hundos": { "semClima": 0, "comClima": 0 },
+      "quaseHundos": { "iv98": 0, "iv96": 0 }
+    }
   }
 }

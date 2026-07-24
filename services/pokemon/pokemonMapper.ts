@@ -6,7 +6,7 @@ import { obterFormasPokemon } from "./formMapper";
 
 export function mapearPokemonBasico(
   pokemon: any,
-  _especie: any,
+  especie: any,
   cadeiaEvolutiva: any,
   variedades: any[],
 ) {
@@ -21,13 +21,22 @@ export function mapearPokemonBasico(
     (item: any) => TIPOS_POKEMON[item.type.name],
   );
 
+  // A variedade padrão de algumas espécies (Giratina, Landorus, Shaymin...)
+  // tem sufixo próprio na PokéAPI (ex.: "giratina-altered") mesmo sendo a
+  // forma-base; nesse caso preferimos o nome limpo da espécie. Formas
+  // alternativas buscadas explicitamente (ex.: "giratina-origin") mantêm
+  // o nome da variedade, que é o que as distingue.
+  const nomeBase = pokemon.is_default
+    ? especie.name
+    : pokemon.name;
+
   const nome = {
     ptBR:
-      pokemon.name.charAt(0).toUpperCase() +
-      pokemon.name.slice(1),
+      nomeBase.charAt(0).toUpperCase() +
+      nomeBase.slice(1),
     enUS:
-      pokemon.name.charAt(0).toUpperCase() +
-      pokemon.name.slice(1),
+      nomeBase.charAt(0).toUpperCase() +
+      nomeBase.slice(1),
   };
 
   return {
