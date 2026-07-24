@@ -94,16 +94,16 @@ export function SincronizacaoTab({
           value={pesquisa}
           onChange={(event) => setPesquisa(event.target.value)}
           placeholder="ex.: gengar, #094"
-          className="w-full rounded-lg border border-zinc-300 px-3 py-2"
+          className="w-full rounded-lg border border-border bg-background px-3 py-2 text-foreground"
         />
 
         {pesquisa && resultados.length > 0 && (
-          <div className="absolute z-10 mt-1 max-h-64 w-full overflow-auto rounded-xl border bg-white shadow-lg">
+          <div className="absolute z-10 mt-1 max-h-64 w-full overflow-auto rounded-xl border border-border bg-popover shadow-lg">
             {resultados.map((item: ItemIndicePokemon) => (
               <div
                 key={item.numero}
                 onClick={() => importar(item.nomeEn)}
-                className="cursor-pointer border-b p-3 text-sm transition-colors hover:bg-zinc-50 last:border-b-0"
+                className="cursor-pointer border-b border-border p-3 text-sm transition-colors hover:bg-accent last:border-b-0"
               >
                 {item.numero} • {formatarNome(item.nomeEn)}
               </div>
@@ -112,14 +112,14 @@ export function SincronizacaoTab({
         )}
 
         {pesquisa && resultados.length === 0 && (
-          <p className="mt-1 text-sm text-zinc-400">
+          <p className="mt-1 text-sm text-muted-foreground">
             Nenhum Pokémon encontrado.
           </p>
         )}
       </div>
 
       {loadingImport && (
-        <p className="text-sm text-zinc-500">Importando...</p>
+        <p className="text-sm text-muted-foreground">Importando...</p>
       )}
 
       <button
@@ -132,7 +132,7 @@ export function SincronizacaoTab({
       </button>
 
       {status && (
-        <div className="rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm text-zinc-700">
+        <div className="rounded-lg border border-border bg-muted px-3 py-2 text-sm text-foreground">
           {status}
         </div>
       )}

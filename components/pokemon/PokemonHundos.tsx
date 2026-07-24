@@ -26,12 +26,6 @@ export function PokemonHundos({ pokemon }: PokemonHundosProps) {
   return (
     <SectionCard title="Hundos">
       <div className="space-y-2">
-        {usandoCalculado && (
-          <p className="text-xs text-zinc-400">
-            🧮 Estimado a partir das base stats do GO.
-          </p>
-        )}
-
         <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-zinc-400">
           100%
         </h3>
@@ -67,6 +61,12 @@ export function PokemonHundos({ pokemon }: PokemonHundosProps) {
             label="96%"
             value={iv96}
           />
+        )}
+
+        {usandoCalculado && (
+          <p className="text-xs text-muted-foreground">
+            🧮 Estimado a partir das base stats do GO.
+          </p>
         )}
       </div>
     </SectionCard>

@@ -64,7 +64,11 @@ export default function AdminPage() {
         )}
       </div>
 
-      <div className="mt-8 grid min-w-0 gap-8 lg:grid-cols-[1fr_380px]">
+      <div
+        className={`mt-8 grid min-w-0 gap-8 ${
+          dadosImportados ? "lg:grid-cols-[1fr_380px]" : ""
+        }`}
+      >
         <div className="min-w-0">
           <Tabs abas={ABAS} ativa={aba} onChange={setAba} marcadas={marcadas} />
 
@@ -88,12 +92,14 @@ export default function AdminPage() {
           </section>
         </div>
 
-        <div className="min-w-0 lg:sticky lg:top-8 lg:self-start">
-          <p className="mb-3 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-            Preview ao vivo
-          </p>
-          <PokemonCard pokemon={pokemon} preview />
-        </div>
+        {dadosImportados && (
+          <div className="min-w-0 lg:sticky lg:top-8 lg:self-start">
+            <p className="mb-3 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Preview ao vivo
+            </p>
+            <PokemonCard pokemon={pokemon} />
+          </div>
+        )}
       </div>
     </main>
   );

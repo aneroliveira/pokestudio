@@ -49,7 +49,7 @@ export function SearchBar({
         />
       </div>
 
-      <p className="text-sm text-muted-foreground">
+      <p className="text-xs text-muted-foreground">
         Digite o nome (em inglês) ou o número da Pokédex.
       </p>
 
@@ -84,9 +84,23 @@ export function SearchBar({
       )}
 
       {value && resultados.length === 0 && (
-        <p className="mt-4 text-center text-sm text-muted-foreground">
-          Nenhum Pokémon encontrado para &ldquo;{value}&rdquo;.
-        </p>
+        <div className="mt-4 flex flex-col items-center gap-2 py-4 text-center">
+          <div className="relative inline-block">
+            <Image
+              src={obterImagemPokemon(143)}
+              alt=""
+              width={220}
+              height={220}
+            />
+            <span className="absolute -right-5 top-7 rotate-12 text-3xl">
+              💤
+            </span>
+          </div>
+
+          <p className="text-sm text-muted-foreground">
+            Zzzzz... nenhum Pokémon encontrado para &ldquo;{value}&rdquo;.
+          </p>
+        </div>
       )}
     </div>
   );

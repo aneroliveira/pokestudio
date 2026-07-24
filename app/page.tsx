@@ -59,7 +59,7 @@ export default function Home() {
 
   return (
     <PageContainer>
-      <div className="w-full max-w-3xl space-y-6">
+      <div className="w-full max-w-2xl space-y-6">
         <SectionTitle
           title="PokéStudio da Lori"
           subtitle="A companheira para decisões inteligentes no Pokémon GO."
