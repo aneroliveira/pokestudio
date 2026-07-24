@@ -9,7 +9,7 @@ export function FormSection({
 }: FormSectionProps) {
   return (
     <section className="space-y-4">
-      <h3 className="border-b pb-2 text-lg font-semibold">
+      <h3 className="border-b border-border pb-2 text-lg font-semibold">
         {title}
       </h3>
 

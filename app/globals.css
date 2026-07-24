@@ -1,8 +1,106 @@
 @import "tailwindcss";
 
+/* Dark mode por classe .dark no <html> (Tailwind v4). */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #fafafa;
   --foreground: #18181b;
+
+  --card: #ffffff;
+  --card-foreground: #18181b;
+
+  --popover: #ffffff;
+  --popover-foreground: #18181b;
+
+  --primary: #a855f7;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+
+  --accent: #f3e8ff;
+  --accent-foreground: #6b21a8;
+
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #a855f7;
+
+  --destructive: #ef4444;
+  --success: #10b981;
+  --warning: #f59e0b;
+
+  /* Chips de combate (bom/ruim contra) */
+  --good: #dcfce7;
+  --good-foreground: #15803d;
+  --bad: #fee2e2;
+  --bad-foreground: #b91c1c;
+}
+
+.dark {
+  --background: #0b0b0f;
+  --foreground: #f4f4f5;
+
+  --card: #16161c;
+  --card-foreground: #f4f4f5;
+
+  --popover: #16161c;
+  --popover-foreground: #f4f4f5;
+
+  --primary: #c084fc;
+  --primary-foreground: #1a1030;
+
+  --secondary: #26262e;
+  --secondary-foreground: #f4f4f5;
+
+  --muted: #26262e;
+  --muted-foreground: #a1a1aa;
+
+  --accent: #2a1a3d;
+  --accent-foreground: #e9d5ff;
+
+  --border: #2a2a33;
+  --input: #33333d;
+  --ring: #c084fc;
+
+  --destructive: #f87171;
+  --success: #34d399;
+  --warning: #fbbf24;
+
+  --good: #14351f;
+  --good-foreground: #4ade80;
+  --bad: #3a1618;
+  --bad-foreground: #f87171;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-good: var(--good);
+  --color-good-foreground: var(--good-foreground);
+  --color-bad: var(--bad);
+  --color-bad-foreground: var(--bad-foreground);
 }
 
 body {

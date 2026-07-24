@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export function MainHeader() {
   const pathname = usePathname() || "/";
@@ -28,8 +29,8 @@ export function MainHeader() {
     <header className={cn(
       "sticky top-0 z-40",
       "backdrop-blur-sm",
-      "border-b border-black/6",
-      "bg-white/95",
+      "border-b border-border",
+      "bg-background/80",
       scrolled ? "shadow-sm" : "",
     )}>
       <div className="mx-auto max-w-3xl px-4 py-3 flex items-center justify-between">
@@ -45,7 +46,7 @@ export function MainHeader() {
                     aria-current={active ? "page" : undefined}
                     className={cn(
                       "text-sm font-medium transition",
-                      active ? "text-red-600 font-semibold border-b-2 border-red-600 pb-0.5" : "text-black/80 hover:text-black",
+                      active ? "text-primary font-semibold border-b-2 border-primary pb-0.5" : "text-foreground/70 hover:text-foreground",
                     )}
                   >
                     {it.label}
@@ -60,7 +61,7 @@ export function MainHeader() {
               aria-label={open ? "Fechar menu" : "Abrir menu"}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
-              className="p-2 rounded-md text-black/80 hover:bg-black/5"
+              className="p-2 rounded-md text-foreground/70 hover:bg-accent hover:text-foreground"
             >
               {/* simple hamburger icon */}
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,8 +73,8 @@ export function MainHeader() {
           </div>
         </div>
 
-        {/* Desktop placeholder to keep spacing */}
-        <div className="hidden md:block" />
+        {/* Toggle de tema à direita */}
+        <ThemeToggle />
 
         {/* Mobile drawer */}
         <div
@@ -85,7 +86,7 @@ export function MainHeader() {
           role="dialog"
           aria-modal="true"
         >
-          <div className={cn("mx-4 rounded-lg bg-white p-4 shadow-lg")}>
+          <div className={cn("mx-4 rounded-lg bg-popover p-4 shadow-lg")}>
             <nav className="flex flex-col gap-3">
               {items.map((it) => {
                 const active = pathname === it.href || (it.href !== "/" && pathname.startsWith(it.href));
@@ -96,7 +97,7 @@ export function MainHeader() {
                     onClick={() => setOpen(false)}
                     className={cn(
                       "text-base font-medium py-2",
-                      active ? "text-red-600 font-semibold" : "text-black/80 hover:text-black",
+                      active ? "text-primary font-semibold" : "text-foreground/70 hover:text-foreground",
                     )}
                   >
                     {it.label}

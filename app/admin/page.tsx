@@ -51,7 +51,7 @@ export default function AdminPage() {
       <div className="flex items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold">Workspace de Pokémon</h1>
-          <p className="mt-2 text-zinc-500">
+          <p className="mt-2 text-muted-foreground">
             Ferramenta interna do PokéStudio
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function AdminPage() {
         <div className="min-w-0">
           <Tabs abas={ABAS} ativa={aba} onChange={setAba} marcadas={marcadas} />
 
-          <section className="mt-6 min-w-0 rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
+          <section className="mt-6 min-w-0 rounded-xl border border-border bg-card p-6 shadow-sm">
             {aba === "Sincronização" && (
               <SincronizacaoTab
                 pokemon={pokemon}
@@ -89,7 +89,7 @@ export default function AdminPage() {
         </div>
 
         <div className="min-w-0 lg:sticky lg:top-8 lg:self-start">
-          <p className="mb-3 text-xs font-medium uppercase tracking-wide text-zinc-400">
+          <p className="mb-3 text-xs font-medium uppercase tracking-wide text-muted-foreground">
             Preview ao vivo
           </p>
           <PokemonCard pokemon={pokemon} preview />

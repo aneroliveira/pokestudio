@@ -17,7 +17,7 @@ export function PokemonCombat({ pokemon }: PokemonCombatProps) {
 
       <div className="space-y-5">
         <div>
-          <h3 className="mb-2 font-medium text-green-700">
+          <h3 className="mb-2 font-medium text-good-foreground">
             🟢 Bom contra
           </h3>
 
@@ -25,7 +25,7 @@ export function PokemonCombat({ pokemon }: PokemonCombatProps) {
             {resistencias.map((tipo) => (
               <span
                 key={tipo}
-                className="rounded-full bg-green-100 px-3 py-1 text-sm"
+                className="rounded-full bg-good px-3 py-1 text-sm text-good-foreground"
               >
                 {TIPO_LABEL[tipo]}
               </span>
@@ -34,7 +34,7 @@ export function PokemonCombat({ pokemon }: PokemonCombatProps) {
         </div>
 
         <div>
-          <h3 className="mb-2 font-medium text-red-700">
+          <h3 className="mb-2 font-medium text-bad-foreground">
             🔴 Ruim contra
           </h3>
 
@@ -42,7 +42,7 @@ export function PokemonCombat({ pokemon }: PokemonCombatProps) {
             {fraquezas.map((tipo) => (
               <span
                 key={tipo}
-                className="rounded-full bg-red-100 px-3 py-1 text-sm"
+                className="rounded-full bg-bad px-3 py-1 text-sm text-bad-foreground"
               >
                 {TIPO_LABEL[tipo]}
               </span>

@@ -17,7 +17,7 @@ export function PokemonMegas({ pokemon }: PokemonMegasProps) {
   return (
     <SectionCard title="Melhor Mega contra">
       {recomendadas.length === 0 ? (
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-muted-foreground">
           Nenhuma Mega super efetiva conhecida.
         </p>
       ) : (
@@ -25,16 +25,16 @@ export function PokemonMegas({ pokemon }: PokemonMegasProps) {
           {recomendadas.map(({ mega, melhorTipo, efetividade }) => (
             <li
               key={mega.id}
-              className="flex items-center justify-between gap-3 rounded-lg bg-purple-50 px-3 py-2"
+              className="flex items-center justify-between gap-3 rounded-lg bg-accent px-3 py-2"
             >
               <div className="flex flex-wrap items-center gap-2">
                 <span className="font-medium">{mega.nome}</span>
-                <span className="rounded-full bg-purple-100 px-3 py-1 text-sm">
+                <span className="rounded-full bg-secondary px-3 py-1 text-sm text-secondary-foreground">
                   {TIPO_LABEL[melhorTipo]}
                 </span>
               </div>
 
-              <span className="shrink-0 font-semibold text-purple-700">
+              <span className="shrink-0 font-semibold text-primary">
                 {efetividade}×
               </span>
             </li>
