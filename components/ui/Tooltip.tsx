@@ -27,7 +27,7 @@ export function Tooltip({ content, children, className = "" }: TooltipProps) {
         onFocus={() => setOpen(true)}
         onBlur={() => setOpen(false)}
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex cursor-default"
+        className="inline-flex cursor-default select-none [-webkit-touch-callout:none]"
       >
         {children}
       </span>
