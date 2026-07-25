@@ -10781,5 +10781,1205 @@
         "iv96": 0
       }
     }
+  },
+  "#254": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Guarde um com Frenzy Plant: ele é a base da Mega Sceptile, que com ataque 320 é a Mega de Grama que bate mais forte no jogo."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Nível 50 melhora pouco a forma normal e a Mega; só faz sentido depois de fechar seus projetos de lendário."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Andar com ele já Mega Evoluído rende Mega Energia de Sceptile — é o jeito grátis de reativar a Mega sem depender de raid."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "sim",
+          "motivo": "Frenzy Plant só sai em Community Day ou Elite TM; sem esse golpe carregado o dano de Grama dele cai muito."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Na forma normal ele é mediano: ataque 223 é razoável, mas Grama rende pouco em raid porque chefes de Água, Pedra e Terra quase sempre têm cobertura que castiga Grama.",
+        "O valor real está na Mega: Mega Sceptile é Grama/Dragão com ataque 320 (contra 241 da Mega Venusaur) e dá boost de Grama e Dragão para todo o grupo.",
+        "Como Grama/Dragão a Mega leva Gelo x4, então em chefe com golpe de Gelo ela cai rápido — conte com trocas e revive."
+      ],
+      "sinergias": [
+        "Kartana",
+        "Roserade",
+        "Rayquaza"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Andar com ele Mega Evoluído para acumular Mega Energia de Sceptile."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#286": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "Rocket"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque 241 com Counter e Dynamic Punch: um dos maiores DPS de Lutador do jogo e barato de montar."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Nível 50 aumenta o dano, mas com defesa 144 e stamina 155 ele morre igual de rápido — o retorno em XL é pequeno."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Shroomish não é spawn constante fora de eventos; o buddy é a via mais confiável de doce e XL."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Counter + Dynamic Punch, que é o kit ideal, sai em TM normal — ele não tem golpe legado relevante."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Use como atacante Lutador em raids e contra Rocket: DPS altíssimo e quase nenhum bulk, então espere trocar de Pokémon várias vezes.",
+        "Grama/Lutador é péssimo na defesa: Voador pega x4, e Fogo, Gelo, Veneno, Psíquico e Fada pegam x2 — evite contra chefes com cobertura Voador.",
+        "Em PvP ele não se sustenta (defesa 144, stamina 155), e o lado Grama é apenas secundário: o valor dele está no Lutador."
+      ],
+      "sinergias": [
+        "Terrakion",
+        "Lucario",
+        "Machamp"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Acumular doce e XL, já que Shroomish aparece pouco fora de eventos."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#389": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Versátil",
+      "melhorPara": [
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Guarde um com Frenzy Plant: é o golpe que torna o lado Grama dele utilizável em Ultra League."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "Ele passa dos 2500 antes do nível 40, então XL não serve para Ultra League; e em raid o ataque 202 não paga o slot."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Serve só para juntar doce comum da linha Turtwig; XL não muda nada, porque nas ligas ele nem chega perto do nível 40."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "sim",
+          "motivo": "Frenzy Plant é exclusivo de Community Day e é justamente o motivo de usar Torterra; sem ele não vale gastar recurso."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Ataque 202 é baixo para raid; o lugar dele é Ultra League, onde a bulk (defesa 188, stamina 216) somada a Frenzy Plant rende trocas decentes.",
+        "A defesa por tipo é boa: imune a Elétrico e resiste a Terra, Pedra e Grama; Água fica neutra, porque a resistência de Grama cancela a fraqueza de Terra.",
+        "O buraco é Gelo x4 (Grama e Terra somam), mais Fogo, Voador e Insetos x2 — Gelo aparece muito nas ligas, então cuidado com o que entra na frente dele."
+      ],
+      "sinergias": [
+        "Cresselia",
+        "Talonflame",
+        "Excadrill"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar doce comum da linha Turtwig; XL não é necessário para as ligas."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#407": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque 243 com Poison Jab e Sludge Bomb: bom atacante Grama e um dos melhores atacantes Veneno acessíveis."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Defesa 185 e stamina 155 o deixam frágil; nível 40 já entrega quase todo o dano, então XL só se ele for seu Grama/Veneno principal."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Evoluir Roselia pede bastante doce (além de Sinnoh Stone); o buddy é a forma mais estável de garantir doce e XL."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Poison Jab, Sludge Bomb e o lado Grama saem em TM normal — não há golpe legado que mude o uso dele."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Está entre os melhores atacantes Grama não-lendários, mas fica atrás de Kartana e das Megas; e Grama em si rende pouco em raid, porque chefes de Água, Pedra e Terra costumam ter cobertura punitiva.",
+        "O diferencial é o lado Veneno: com Poison Jab e Sludge Bomb ele é resposta barata contra Fada, algo que Sceptile e Torterra não oferecem.",
+        "Grama/Veneno é um typing seguro: fraquezas só a Fogo, Gelo, Voador e Psíquico, Terra fica neutra e ele resiste a Grama, Água, Elétrico, Lutador e Fada."
+      ],
+      "sinergias": [
+        "Kartana",
+        "Nihilego",
+        "Mega Beedrill"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Ganhar doce e XL para evoluir Roselia e subir o nível do atacante Grama/Veneno."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#465": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Versátil",
+      "melhorPara": [
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Stamina 225 com defesa 184 e ataque 207: um dos Gramas com mais bulk utilizável, feito para Great e Ultra League."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "Nas ligas ele fica bem abaixo do nível 40 para caber no cap; XL só serviria em Master League, onde ele não tem espaço."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "nao",
+          "motivo": "Não precisa de XL para as ligas e o doce para evoluir Tangela sai de capturas; andar com ele não é prioridade."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Power Whip e o resto do kit competitivo saem em TM normal; nenhum golpe legado dele justifica o item."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "O valor dele é PvP, não raid: mesmo com ataque 207, Grama rende pouco contra chefes de Água, Pedra e Terra, que quase sempre têm cobertura punitiva.",
+        "Em Great e Ultra League ele é uma muralha que troca bem contra Água, Terra, Elétrico e Grama — os quatro tipos que Grama resiste.",
+        "Não use como defensor de ginásio: Grama puro é fraco a Fogo, Gelo, Veneno, Voador e Insetos, e todos esses são comuns entre atacantes."
+      ],
+      "sinergias": [
+        "Registeel",
+        "Swampert",
+        "Galarian Stunfisk"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#257": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Counter + Blast Burn dá dano Fogo e Lutador no mesmo exemplar, e ele é a base da Mega Blaziken (ataque 329)."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Nível 50 muda pouco: ele já estoura os caps de Great e Ultra e não tem espaço na Master League. Só maximize se for seu principal atacante Fogo."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Útil só para juntar doce da linha Torchic; XL não serve para ajustar cap de liga, porque ele passa de 1500 e 2500 antes do nível 40."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "sim",
+          "motivo": "Blast Burn é legado de Community Day e não sai de TM comum; sem ele o dano de Fogo cai bastante."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "O valor real está na Mega Blaziken; como exemplar normal ele fica atrás de Lucario, Terrakion e Machamp no papel de Lutador e atrás de Chandelure e Reshiram no de Fogo.",
+        "Fraquezas reais do typing Fogo/Lutador: Água, Terra, Voador e Psíquico. Fada é neutra (Fogo resiste, Lutador é fraco) e ele resiste duas vezes a Inseto.",
+        "Defesa base 141 é baixa: desmaia rápido em raid e em PvP ele é nicho, dependendo de shield para completar as trocas."
+      ],
+      "sinergias": [
+        "Lucario",
+        "Terrakion",
+        "Reshiram"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": true,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#555": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque base 263 entrega dano de Fogo barato em raids curtas, sem depender de lendário nem de Mega."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "O problema é a defesa base 114, e nível 50 não conserta: ele continua desmaiando antes de devolver o investimento."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Só para juntar doce da linha Darumaka; XL não muda o resultado dele em raid."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Não há golpe legado nem exclusivo relevante; o kit de Fogo dele sai de TM comum."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "atencao",
+          "motivo": "Guarde um bom exemplar como atacante Fogo reserva e transfira os repetidos."
+        }
+      ],
+      "observacoes": [
+        "Esta entrada é a forma padrão (Fogo); a forma de Galar é Gelo, tem doce próprio e é uma linha separada.",
+        "Stamina alta (233) com defesa péssima (114): rende nos primeiros segundos e cai antes de raids longas terminarem.",
+        "Só vale investir enquanto você não tiver Reshiram, Chandelure ou uma Mega de Fogo; nesse caso é substituto barato, nunca pilar."
+      ],
+      "sinergias": [
+        "Reshiram",
+        "Chandelure",
+        "Mega Charizard Y"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#467": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Atacante Fogo de orçamento com ataque 247 e defesa 172 — bem mais durável em raid que Darmanitan, que tem defesa 114."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "Não chega ao topo do meta Fogo; Rare Candy rende muito mais em Chandelure ou Reshiram."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Ajuda no doce, mas o gargalo da evolução é o Magmarizer; só caminhe com ele se doce for o seu problema."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Nenhum golpe exclusivo muda o papel dele; o kit ideal de Fogo é obtido por TM comum."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "atencao",
+          "motivo": "Fique com o de melhor ataque e transfira os Magmar repetidos para não desperdiçar Magmarizer."
+        }
+      ],
+      "observacoes": [
+        "Encaixa em raids contra Grama, Gelo, Inseto e Aço quando faltam opções melhores; é acessível e não exige lendário.",
+        "Além do doce, precisa de Magmarizer para evoluir, então só evolua o melhor exemplar — e prefira a versão Shadow, se tiver, pelo bônus de ataque.",
+        "É preenchimento de equipe de seis, não investimento de longo prazo: não maximize esperando que ele vire pilar de raid."
+      ],
+      "sinergias": [
+        "Reshiram",
+        "Chandelure",
+        "Mega Houndoom"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": true,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#282": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Charm + Dazzling Gleam faz dela uma Fada consistente em PvP, e ela é a base da Mega Gardevoir."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Ela passa dos caps de Great e Ultra antes do nível 40; maximizar só serve para Master League, onde Charm não entrega dano suficiente."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Ralts é spawn comum e o doce vem fácil; XL não ajuda em liga limitada, porque ela já estoura o cap sem passar do nível 40."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Charm, Dazzling Gleam e Shadow Ball saem de TM comum; não há golpe exclusivo que mude o papel dela."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Typing seguro: Psíquico/Fada tem só três fraquezas (Fantasma, Veneno e Aço), resiste duas vezes a Lutador e é imune a Dragão — switch ótimo contra Dragões.",
+        "Em raid o dano de verdade vem da Mega Gardevoir; o exemplar normal rende mais em Great e Ultra League com Charm.",
+        "Charm castiga Dragão, Sombrio e Lutador, mas gera pouca energia: sem shield ela demora para fechar a troca."
+      ],
+      "sinergias": [
+        "Togekiss",
+        "Xerneas",
+        "Zacian"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": true,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#475": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "PvP",
+        "Rocket"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Close Combat com defesa base 195 aguenta mais que os Lutadores de ataque puro, e ele é a base da Mega Gallade."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Perde em dano para Lucario, Terrakion e Machamp; só maximize se ele for o seu melhor Lutador de raid."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Caminhar acelera os 100 doces da linha Ralts, que ainda alimenta Gardevoir; o XL, porém, não ajuda em liga limitada."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "O kit útil sai de TM comum; não existe golpe legado que mude o papel dele."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Psíquico/Lutador tem três fraquezas (Fantasma, Voador e Fada), a mesma quantidade de um Lutador puro; o que o segura em pé é a defesa 195, não o typing.",
+        "Para montar precisa de Kirlia macho e Sinnoh Stone, então evolua só o melhor exemplar da linha Ralts.",
+        "Bom Lutador de reserva contra chefes Sombrio, Aço, Gelo, Pedra e Normal e contra times da Rocket, mas não substitui Lucario nem Terrakion."
+      ],
+      "sinergias": [
+        "Lucario",
+        "Terrakion",
+        "Machamp"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": true,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar os doces da linha Ralts para evoluir o melhor Kirlia macho."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#289": {
+    "estrategia": {
+      "tier": "C",
+      "funcao": "Defensor",
+      "melhorPara": [
+        "Ginásios"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "atencao",
+          "motivo": "Guarde um só pelo CP alto e para deixar em ginásio; como atacante ele simplesmente não funciona."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "Subir nível não conserta nada: o dano continua preso a um fast move que não machuca."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "nao",
+          "motivo": "Nenhum ganho de nível transforma ele em atacante utilizável; XL aqui é caminhada desperdiçada."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Elite TM não cria fast move novo, e o único que ele tem (Yawn) não causa dano — nenhum carregado resolve isso."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "atencao",
+          "motivo": "Mantenha um exemplar de CP alto para ginásio e coleção; os repetidos podem ir sem culpa."
+        }
+      ],
+      "observacoes": [
+        "Armadilha clássica: ataque base 290 e bulk grande, mas Yawn, seu fast move, não causa dano — o CP alto na tela nunca vira DPS.",
+        "O 290 é alto e não é o maior do jogo (Deoxys, Xurkitree, Kartana e Mewtwo batem mais), e de qualquer forma não serve: ele não entra em raid nem em time competitivo.",
+        "Em ginásio ele funciona só como esponja: stamina 284, uma única fraqueza (Lutador) e imunidade a Fantasma fazem o atacante gastar tempo, mas ele não pressiona de volta."
+      ],
+      "sinergias": [
+        "Blissey",
+        "Snorlax",
+        "Registeel"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#409": {
+    "estrategia": {
+      "tier": "A+",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque base 295, o maior entre os Pedra não-Mega; é o DPS de Pedra mais alto que você monta sem gastar energia de Mega."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Defesa 109 é de papel: nível 50 rende um pouco mais de dano, mas não faz ele sobreviver mais tempo no boss."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Cranidos é spawn raro e a evolução pede muito doce; Buddy é o caminho realista para doce e XL."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Não tem golpe legado relevante — o kit de Pedra dele sai com TM normal."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Glass cannon de raid: em grupo grande, onde outros seguram o boss, o dano dele compensa as trocas constantes.",
+        "Ruim em solo, duo e contra boss de ataque alto — ele cai rápido e o tempo de revive derruba o DPS efetivo do grupo.",
+        "Fraco a Água, Grama, Lutador, Terra e Aço; quando o problema é aguentar pancada, Rhyperior ou Tyranitar rendem mais."
+      ],
+      "sinergias": [
+        "Rhyperior",
+        "Terrakion",
+        "Tyranitar"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar doce e XL de Cranidos, que raramente aparece no mapa."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#460": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "O valor está na Mega Abomasnow, que dá boost a Gelo e Grama ao mesmo tempo — dois tipos de raid muito usados."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Para Mega não precisa de nível 50; se o uso é Great League, o alvo é chegar perto do cap de 1500, não maximizar."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Doce de Snover serve tanto para a Mega quanto para o XL de Great League."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "atencao",
+          "motivo": "Reroll com TM normal costuma resolver o kit de Gelo; guarde a Elite TM para casos em que o legado realmente importa."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Grama/Gelo é o pior typing defensivo prático do jogo: sete fraquezas — Fogo em dobro, mais Lutador, Veneno, Voador, Inseto, Pedra e Aço.",
+        "Como atacante puro é fraco (ataque base 178); quem carrega a linha é a Mega, usada para dar boost aos seus Gelo e Grama de verdade.",
+        "Na Great League é peça de nicho contra Água e Terra, mas cai instantaneamente para qualquer Fogo."
+      ],
+      "sinergias": [
+        "Mamoswine",
+        "Weavile",
+        "Galarian Darmanitan"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar doce de Snover para a Mega e XL para a Great League."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#478": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Gelo/Fantasma barato de montar, útil na Great League e com imunidade a Normal e Lutador."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "O uso dela é Great League: maximizar passa do cap de 1500 e ela não tem bulk para Master."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Doce de Snorunt é dividido com Glalie e você vai querer XL para otimizar dentro do cap de 1500."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "O kit competitivo dela é obtido normalmente, sem depender de golpe legado."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Comparada ao Dusknoir, é a opção ofensiva do Fantasma barato: gera energia rápido e ameaça Dragão, Voador e Terra com dano de Gelo.",
+        "Bulk baixa (defesa 150 / stamina 172): ela troca golpes e sai, não segura o time — se o que você quer é aguentar dano por golpe, Dusknoir faz melhor.",
+        "Cinco fraquezas (Fogo, Pedra, Aço, Fantasma e Sombrio), mas as imunidades a Normal e Lutador dão switch-in seguro contra atacantes muito comuns."
+      ],
+      "sinergias": [
+        "Registeel",
+        "Lanturn",
+        "Bastiodon"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar doce e XL de Snorunt para otimizar dentro do cap da Great League."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#477": {
+    "estrategia": {
+      "tier": "C",
+      "funcao": "Defensor",
+      "melhorPara": [
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "atencao",
+          "motivo": "Defesa base 254 é excelente, mas stamina 128 desperdiça isso; guarde um só se gostar do estilo defensivo."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "Nível 50 não resolve a stamina baixa nem a falta de um kit competitivo; o investimento rende mais em outro Fantasma."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Só se você for usar de verdade — o tempo de Buddy rende mais numa linha com uso real em raid ou PvP."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Não tem golpe exclusivo relevante que justifique gastar Elite TM nele."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "atencao",
+          "motivo": "Mantenha um bom e transfira o resto — ele não tem uso em raid nem em ginásio."
+        }
+      ],
+      "observacoes": [
+        "Comparado à Froslass, o ataque base é parecido (180 contra 171): a diferença está no kit, ela pressiona mais rápido e ele apenas aguenta mais por golpe.",
+        "Defesa altíssima com stamina 128 significa pouco dano por golpe recebido, mas HP que acaba rápido — na prática ele desmonta em troca longa de PvP.",
+        "Fantasma puro: só duas fraquezas (Fantasma e Sombrio) e imune a Normal e Lutador, o que ainda o torna switch-in seguro contra atacantes Lutadores."
+      ],
+      "sinergias": [
+        "Registeel",
+        "Talonflame",
+        "Swampert"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": true,
+        "recomendadoPurificar": true
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#474": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque base 264, fraqueza única (Lutador) e imunidade a Fantasma; nuke não-lendário de liga sem cap."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Só compensa se você joga Master League ou Master Premier; fora dessas ligas o XL rende mais em outro lugar."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Porygon é spawn raro e a linha exige Up-Grade, Sinnoh Stone e muito doce; Buddy acelera tudo."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "sim",
+          "motivo": "Tri Attack, exclusivo do Community Day de Porygon, é o que o torna competitivo — fora de evento, só via Elite TM."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Sem Tri Attack ele fica bem pior: confira o moveset antes de gastar recurso, porque o resto do kit é lento ou caro de energia.",
+        "Dano de Normal é inútil em raid (nenhum tipo é fraco a Normal); o lugar dele é PvP sem cap, batendo neutro em quase tudo.",
+        "Uma fraqueza só, mas Lutador é comum em PvP — cuidado ao mandá-lo contra Machamp, Melmetal ou similares."
+      ],
+      "sinergias": [
+        "Togekiss",
+        "Dragonite",
+        "Gyarados"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar doce e XL de Porygon, que é spawn raro e exige itens de evolução."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#612": {
+    "estrategia": {
+      "tier": "A",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque base 284 com bulk aceitável: atacante Dragão sólido para raid e peça forte de Master Premier."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "sim",
+          "motivo": "É o nível 50 com XL que o coloca no páreo dos melhores não-lendários de Master Premier; abaixo disso ele fica curto."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Axew é raro e a linha tem três estágios; Buddy é praticamente obrigatório para juntar XL."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "O moveset com Dragon Claw é obtido normalmente; ele não depende de golpe legado para funcionar."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Bom atacante Dragão de raid, mas fica atrás dos lendários do tipo — priorize se você não tem Rayquaza, Dialga ou Salamence prontos.",
+        "Em Master Premier ele ganha espaço justamente porque lendários ficam de fora, e o ataque alto compensa a bulk mediana.",
+        "Fraco a Gelo, Dragão e Fada; contra Fada não tem resposta boa, então evite mandá-lo contra Togekiss ou Zacian."
+      ],
+      "sinergias": [
+        "Metagross",
+        "Melmetal",
+        "Excadrill"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": true,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar doce e XL de Axew para maximizar em Master League Premier."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
   }
 }
