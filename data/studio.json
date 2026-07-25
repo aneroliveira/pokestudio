@@ -516,7 +516,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "nao",
-          "motivo": "Water Gun + Ice Beam/Play Rough já é o moveset padrão em PvP; evite gastar TM à toa."
+          "motivo": "Bubble + Ice Beam/Play Rough já é o moveset padrão em PvP; evite gastar TM à toa."
         },
         {
           "titulo": "Transferir",
@@ -655,7 +655,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Shadow Ball já é um bom golpe rápido padrão."
+          "motivo": "Shadow Force é legado e só entra com Elite TM; os rápidos (Dragon Breath e Shadow Claw) saem normalmente."
         },
         {
           "titulo": "Transferir",
@@ -1000,8 +1000,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Earthquake já é um golpe carregado sólido."
+          "status": "nao",
+          "motivo": "Não tem golpe legado: Mud Shot + Earth Power/Rock Slide sai todo por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3305,7 +3305,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Thunder Shock/Thunderbolt já é um bom moveset padrão."
+          "motivo": "Thunder Cage é legado e só volta com Elite TM; Thunder Shock + Zap Cannon/Thunder sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -5974,7 +5974,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Ancient Power deu a ele bulk e utilidade real como tanque de Grama na Grande Liga."
+          "motivo": "A bulk alta com Frenzy Plant o torna um tanque de Grama utilizável na Grande Liga."
         },
         {
           "titulo": "Vale maximizar",
@@ -5997,7 +5997,7 @@
         }
       ],
       "observacoes": [
-        "Moveset Vine Whip + Frenzy Plant + Ancient Power aproveita a bulk alta e ainda tem chance de melhorar todos os atributos.",
+        "Moveset Vine Whip + Frenzy Plant aproveita a bulk alta; Earthquake é a cobertura carregada alternativa.",
         "Como atacante de raids é fraco; Grama tem opções muito melhores, como Mega Venusaur e Zarude."
       ],
       "sinergias": [
@@ -7930,8 +7930,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Só necessário se quiser fixar um golpe legado específico; o kit padrão (Mud Shot + Blizzard/Sludge Wave) já é competitivo."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado: Mud Shot + Blizzard/Mud Bomb sai todo por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -7940,7 +7940,7 @@
       ],
       "observacoes": [
         "Imunidade a Elétrico e bom bulk sustentam presença constante na Great League, mas atenção à fraqueza x4 a Grama.",
-        "Use Mud Shot + Blizzard/Sludge Wave para cobrir tanto Dragão/Voador quanto Fada/Grama."
+        "Use Mud Shot + Blizzard para cobrir Dragão/Voador, com Mud Bomb como carregado mais barato."
       ],
       "sinergias": [
         "Talonflame",
@@ -7974,8 +7974,8 @@
   },
   "#186": {
     "estrategia": {
-      "tier": "A",
-      "funcao": "Atacante",
+      "tier": "B",
+      "funcao": "Versátil",
       "melhorPara": [
         "PvP"
       ]
@@ -7985,22 +7985,22 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Com Hypnosis (exclusivo da Community Day de Poliwag), é um gerador de energia raríssimo para emendar dois golpes carregados."
+          "motivo": "Água puro com bulk equilibrada (174/179/207): só Grama e Elétrico machucam, e Mud Shot gera energia rápido."
         },
         {
           "titulo": "Vale maximizar",
-          "status": "atencao",
-          "motivo": "Só vale a pena se tiver o Hypnosis exclusivo; sem ele, perde grande parte do valor competitivo."
+          "status": "nao",
+          "motivo": "Ele cabe no cap da Great League bem antes do nível 50; maximizar não muda o uso dele."
         },
         {
           "titulo": "Vale Buddy",
           "status": "nao",
-          "motivo": "Novos Poliwag não trazem de volta o golpe exclusivo perdido, então o Buddy não agrega valor extra aqui."
+          "motivo": "Ele cabe no cap da Great League bem antes do nível 40, então XL não tem uso — o doce da linha sai de captura."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "nao",
-          "motivo": "Hypnosis é exclusivo de Community Day e não pode ser ensinado via Elite TM."
+          "status": "atencao",
+          "motivo": "Earthquake e Ice Beam são legados e só entram com Elite TM — vale só se quiser essa cobertura específica."
         },
         {
           "titulo": "Transferir",
@@ -8008,8 +8008,8 @@
         }
       ],
       "observacoes": [
-        "A fast move Hypnosis gera energia muito rápido, permitindo emendar dois golpes carregados na Great League.",
-        "Sem esse golpe exclusivo, o Politoed padrão com Mud Shot é bem mais fraco e perde relevância competitiva."
+        "Mud Shot gera energia rápido e Weather Ball é carregado barato: o par sustenta pressão constante na Great League.",
+        "Água puro tem só duas fraquezas (Grama e Elétrico) e resiste a Fogo, Água, Gelo e Aço, mas 174 de ataque não sustenta uso em raid."
       ],
       "sinergias": [
         "Galarian Stunfisk",
@@ -8054,7 +8054,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Um dos poucos não-Lutadores com Superpower, ótimo para surpreender Giratina e outros tipos Aço/Sombrio na Master League."
+          "motivo": "Um dos poucos não-Lutadores com Superpower, ótimo para surpreender Aço e Sombrio na Master League."
         },
         {
           "titulo": "Vale maximizar",
@@ -8069,7 +8069,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "nao",
-          "motivo": "Superpower é exclusivo de Community Day e não pode ser ensinado via Elite TM; sem ele, o moveset perde muito impacto."
+          "motivo": "Ele não tem golpe legado: Psycho Cut + Superpower/Foul Play sai todo por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -8077,8 +8077,8 @@
         }
       ],
       "observacoes": [
-        "Com Superpower, vira um contra-pick surpresa para Dialga, Melmetal e Snorlax na Master League — atenção: golpes de Lutador não afetam tipos Fantasma como Giratina, então não conte com Superpower nesse confronto.",
-        "Psycho Cut + Foul Play/Night Slash é a alternativa sem o golpe exclusivo, mas fica bem mais fraco."
+        "Com Superpower vira contra-pick surpresa para Dialga, Melmetal e Snorlax na Master League — mas golpe de Lutador não afeta Fantasma, então não conte com ele contra Giratina.",
+        "Foul Play é a alternativa de carregado quando o alvo não é fraco a Lutador, e Psybeam sai mais barato."
       ],
       "sinergias": [
         "Giratina (Origem)",
@@ -8277,7 +8277,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "nao",
-          "motivo": "O moveset ideal (Dragon Breath/Hex + Shadow Ball/Dragon Claw) é obtido normalmente, sem golpes exclusivos."
+          "motivo": "O moveset ideal (Dragon Tail + Shadow Ball/Dragon Pulse) é obtido normalmente, sem golpes exclusivos."
         },
         {
           "titulo": "Transferir",
