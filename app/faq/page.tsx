@@ -136,17 +136,76 @@ const TOPICOS: Topico[] = [
         </p>
         <p>
           O <strong>nível</strong> (via CPM, o multiplicador por nível) é o
-          que explica por que o mesmo IV pode aparecer com CPs diferentes:{" "}
-          <strong>"Sem clima"</strong> assume o nível máximo de uma captura
-          selvagem comum (nível 20); <strong>"Com clima"</strong> assume o
-          nível máximo quando o clima favorável do tipo do Pokémon está
-          ativo (nível 25). Mesmo IV, nível maior → CP maior.
+          que explica por que o mesmo IV aparece com CPs diferentes. Os dois
+          valores do resumo são a captura de <strong>raid/ovo</strong>:{" "}
+          <strong>"Sem clima"</strong> é o nível 20, e{" "}
+          <strong>"Com clima"</strong> é o nível 25 — clima favorável soma
+          +5 níveis ao encontro. Mesmo IV, nível maior → CP maior.
+        </p>
+        <p>
+          A aba <strong>"Por nível"</strong> abre a lista completa de CP
+          máximo por nível, incluindo os tetos de captura selvagem (30, ou
+          35 com clima) e de investimento (40 sem doce XL, 50 com).
         </p>
         <p>
           Quando não há um valor manual salvo na curadoria, o ícone 🧮 indica
           que o número foi <strong>calculado automaticamente</strong> a
           partir das base stats reais do Pokémon GO (que não são as mesmas
           da PokéAPI — a Niantic ajusta os valores à mão).
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "cp-divergente",
+    titulo: "Por que o CP não bate com o jogo?",
+    corpo: (
+      <>
+        <p>
+          Os CPs mostrados aqui são <strong>referências calculadas</strong>,
+          não a leitura do seu exemplar. Quando o número no jogo é diferente,
+          quase sempre é por um destes motivos:
+        </p>
+
+        <ul className="list-disc space-y-2 pl-5">
+          <li>
+            <strong>O IV não é 100%.</strong> Todo CP desta seção assume
+            15/15/15. Qualquer IV menor dá CP menor — é a causa nº 1 de
+            divergência. Use os valores de 98%/96% como referência do quanto
+            cai.
+          </li>
+          <li>
+            <strong>Os níveis da lista são tetos por origem, não o nível do
+            seu Pokémon.</strong> Raid e ovo são fixos no nível 20, então
+            batem exatamente. Captura selvagem, não: ela varia e{" "}
+            <em>pode vir bem abaixo</em> do nível 30 — o 30 é só o máximo
+            possível.
+          </li>
+          <li>
+            <strong>Clima favorável soma +5 níveis</strong> no momento do
+            encontro (raid 20 → 25, selvagem 30 → 35). Só vale se o clima que
+            impulsiona um dos tipos do Pokémon estava ativo na hora da
+            captura — e o clima do jogo muda ao longo do dia.
+          </li>
+          <li>
+            <strong>Origens especiais têm nível próprio.</strong> Sombrosos
+            da Equipe GO Rocket, por exemplo, vêm num nível fixo bem mais
+            baixo, que não aparece nesta lista.
+          </li>
+          <li>
+            <strong>As base stats são um retrato do momento.</strong> Elas
+            vêm de um arquivo gerado por script a partir do GAME_MASTER da
+            comunidade. Se a Niantic reequilibrar algum Pokémon, os números
+            aqui só mudam depois de regerar esse arquivo.
+          </li>
+        </ul>
+
+        <p>
+          Há também um caso específico do app: quando existe um CP salvo à
+          mão na curadoria, o <strong>Resumo mostra o valor salvo</strong>,
+          enquanto a lista <strong>"Por nível" é sempre calculada</strong>.
+          Se o valor digitado for diferente do cálculo, os dois vão divergir
+          entre si — e aí vale conferir qual está certo.
         </p>
       </>
     ),
