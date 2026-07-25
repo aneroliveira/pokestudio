@@ -20,4 +20,9 @@ export interface MovimentoGO {
 export interface MovepoolPokemon {
   rapidos: MovimentoGOId[];
   carregados: MovimentoGOId[];
+
+  // Golpes legados (Elite TM): não se obtêm por TM comum. São o critério do
+  // chip "Vale Elite TM" na curadoria, por isso ficam separados dos demais.
+  rapidosLegado?: MovimentoGOId[];
+  carregadosLegado?: MovimentoGOId[];
 }
