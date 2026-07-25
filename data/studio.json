@@ -165,7 +165,7 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Raramente disponível fora de raids/eventos; XL depende de captura em raid."
+          "motivo": "O XL tem endereço: leva o ataque 270 dos 4115 de CP do nível 40 aos 4652 do 50, e raid não tem cap para limitar isso."
         },
         {
           "titulo": "Vale Elite TM",
@@ -250,7 +250,8 @@
       ],
       "observacoes": [
         "Bom substituto de Aço quando faltar acesso a Dialga/Melmetal.",
-        "Também competitivo na Master League em PvP."
+        "Na Master League ele resiste a Dragão e Fada e devolve com Meteor Mash, mas precisa do XL até o 50 para não ficar pequeno diante dos lendários.",
+        "Só Fogo, Terra, Fantasma e Sombrio passam por ele: fora esses quatro, o par Aço/Psíquico resiste ou ignora dez tipos e entra em quase qualquer raid."
       ],
       "sinergias": [
         "Mega Metagross",
@@ -300,7 +301,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Raid e Master League não impõem cap e ele é titular nas duas: entre os destinos possíveis de XL Candy, esse é dos que mais rendem."
         },
         {
           "titulo": "Vale Buddy",
@@ -319,7 +321,8 @@
       ],
       "observacoes": [
         "Cobre Terra e Dragão ao mesmo tempo — útil em raids com fraqueza dupla.",
-        "Também relevante na Master League em PvP."
+        "Na Master League ele é o Dragão/Terra de entrada: bulk 193/239 aguenta troca e Earth Power, que é legado, resolve os Aço que travam Outrage.",
+        "Mega Garchomp sobe o ataque de 261 para 339 mantendo Dragão/Terra, então um exemplar de IV alto serve também de Mega para o grupo."
       ],
       "sinergias": [
         "Mega Garchomp",
@@ -368,17 +371,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Só duas fraquezas (Lutador e Terra) e 4565 de CP no nível 50: o XL aqui compra sobrevivência real na Master, além do dano em raid."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos; XL depende de sorte na captura."
+          "motivo": "Caminhar rende: o trecho do nível 40 (4038 de CP) ao 50 (4565) é todo pago em XL, e é onde o atacante Aço/Dragão fica completo."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "sim",
-          "motivo": "Útil se não vier com Iron Head e um golpe carregado ideal."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado nenhum: Metal Claw, Dragon Breath, Iron Head, Draco Meteor e Thunder saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -437,7 +441,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Só rende em raid: no nível 40 ele já passa de 3200 CP e fecha os caps de Great (perto do 16) e Ultra (perto do 27) sem precisar de XL."
         },
         {
           "titulo": "Vale Buddy",
@@ -446,8 +451,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Mud-Slap + Drill Run/Earthquake já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado nas listas: Mud-Slap, Mud Shot, Drill Run, Earthquake e Iron Head saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -581,7 +586,7 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível em raids/eventos; XL depende de sorte."
+          "motivo": "XL só serve para raid e Master: na Ultra ele enche os 2500 já no nível 24, então lá o doce comum basta."
         },
         {
           "titulo": "Vale Elite TM",
@@ -650,7 +655,8 @@
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao"
+          "status": "atencao",
+          "motivo": "Buddy só vale com Master League no plano: ela passa dos 2500 da Ultra no nível 26, e é o XL que leva os 3379 do nível 40 aos 3820 do 50."
         },
         {
           "titulo": "Vale Elite TM",
@@ -663,8 +669,9 @@
         }
       ],
       "observacoes": [
-        "A forma Origin supera bastante a Altered como atacante — vale buscar o item de evolução se disponível.",
-        "Também competitiva na Master League em PvP."
+        "Com defesa 225 e stamina 284 contra ataque 187, ela vence acumulando dano em trocas longas de Dragon Breath e Shadow Sneak; em raid não fecha nada.",
+        "Imune a Normal e Lutador e resistente a Fogo, Água, Grama, Elétrico, Veneno e Inseto, porém cinco fraquezas (Gelo, Fada, Sombrio, Fantasma e Dragão) limitam quem ela encara.",
+        "Shadow Force é o único legado dela e é o que separa o dano dela do resto; Dragon Claw e Ancient Power são o que sai por TM comum."
       ],
       "sinergias": [
         "Mewtwo",
@@ -713,17 +720,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Bulk 236/192 com ataque 254 aguenta raid inteira sem trocar, e na Master League o nível 50 decide as trocas: o XL vale nos dois usos."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Disponível só via raids especiais; XL não é garantido."
+          "motivo": "Vale caminhar por XL: são os níveis 41-50, de 3829 para 4329 de CP, que colocam o ataque 254 no topo do que ele entrega."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "sim",
-          "motivo": "Útil se não vier com Behemoth Blade ou moveset ideal."
+          "status": "nao",
+          "motivo": "Behemoth Blade não está no movepool dele e não há legado nas listas: Play Rough, Iron Head e Close Combat saem por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -782,7 +790,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Na Master League ele é peça central e o bulk 190/264 aproveita cada nível: o XL até o 50 é bem gasto mesmo com ataque 226."
         },
         {
           "titulo": "Vale Buddy",
@@ -792,7 +801,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Superpower/Rock Slide já cobre bem os principais usos; avalie o moveset atual."
+          "motivo": "Double Iron Bash é legado e só volta por Elite TM de carregado; sem ele o kit cai para Flash Cannon ou Superpower, que rendem bem menos."
         },
         {
           "titulo": "Transferir",
@@ -801,7 +810,8 @@
       ],
       "observacoes": [
         "Evolui de Meltan com 400 doces — normalmente via Caixa Místico.",
-        "Também relevante na Master League em PvP."
+        "O único rápido dele é Thunder Shock, que não é Aço: o dano de tipo sai todo do carregado, e por isso Double Iron Bash pesa tanto.",
+        "Aço resiste a dez tipos, ignora Veneno e só cai para Fogo, Lutador e Terra: com bulk 190/264 ele aguenta as trocas longas da Master League."
       ],
       "sinergias": [
         "Metagross",
@@ -926,8 +936,8 @@
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Só disponível via raids; XL depende de sorte."
+          "status": "sim",
+          "motivo": "Aqui o XL é obrigatório: ele só passa dos 2500 no nível 42, então sem XL o muro de Ultra nunca chega perto do cap."
         },
         {
           "titulo": "Vale Elite TM",
@@ -991,12 +1001,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Master League e raid são o alvo: com 4057 CP no nível 50 ele estoura os caps de Great (nível 15) e Ultra (nível 24), onde XL não serve."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "status": "sim",
+          "motivo": "O XL da caminhada só tem um endereço: nível 50 e 4057 de CP na Master. Nas ligas com cap ele passa dos 2500 antes do nível 25, e lá XL não serve."
         },
         {
           "titulo": "Vale Elite TM",
@@ -1009,8 +1020,9 @@
         }
       ],
       "observacoes": [
-        "Também competitivo na Master League em PvP.",
-        "Boa opção para raids que pedem Terra sem depender de lendários mais raros."
+        "Imune a Elétrico e a Terra e só leva dano quádruplo de Gelo: entra de graça em Elétrico, mas foge de Gelo e Água.",
+        "Ataque 261 fica a um passo de Groudon (270): em raid de Terra ele ocupa a segunda vaga sem perda perceptível de dano.",
+        "Mud Shot enche energia rápido e Earth Power fecha o dano; Rock Slide é a cobertura para Voador e Gelo."
       ],
       "sinergias": [
         "Garchomp",
@@ -1059,12 +1071,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Nível 50 rende duas vezes nele: como atacante de Terra em raid e na Master League, sem cap, e também como base da forma Primal."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "status": "sim",
+          "motivo": "Caminhar tem destino claro nele: os níveis 41-50 do atacante de Terra, até 4652 de CP, e a Primal herda o nível que você pagou em XL."
         },
         {
           "titulo": "Vale Elite TM",
@@ -1078,7 +1091,8 @@
       ],
       "observacoes": [
         "A forma Primal (Mega-equivalente) é ainda mais forte — já aparece na seção 'Melhor Mega contra'.",
-        "Cobre bem raids de Fogo, Elétrico, Veneno, Pedra e Aço."
+        "Ataque 270 com Precipice Blades (legado) o coloca à frente de Rhyperior e Excadrill como Terra de raid; sem o legado, Earthquake comum dá conta.",
+        "Terra puro tem só três fraquezas (Água, Grama e Gelo) e é imune a Elétrico: com bulk 228/205 ele fica em quadra até o fim da raid."
       ],
       "sinergias": [
         "Rhyperior",
@@ -1127,11 +1141,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ataque 275 e nenhum cap no caminho: o nível 50 rende dano extra em raid, e a defesa 211 o mantém em campo o bastante para usar isso."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao"
+          "status": "atencao",
+          "motivo": "O Buddy aqui é fonte de XL, não de moveset: ande com ele se quiser um Zekrom acima do nível 40, senão guarde a caminhada para outro projeto."
         },
         {
           "titulo": "Vale Elite TM",
@@ -1144,8 +1160,9 @@
         }
       ],
       "observacoes": [
-        "Bom substituto de Elétrico quando faltar acesso a atacantes puros do tipo.",
-        "Também forte contra Dragão em raids."
+        "Xurkitree bate mais forte (330 de ataque contra 275), mas com defesa 144 desmaia rápido; Zekrom troca um pouco de dano por bem mais bulk.",
+        "Elétrico/Dragão soma quatro fraquezas (Terra, Gelo, Dragão e Fada): o bulk ajuda, mas contra chefe de Terra ou Gelo ele não é a escolha.",
+        "Dragon Breath é o fast que sustenta o dano; escolha Wild Charge para chefe de Água ou Voador e Outrage quando o alvo for Dragão."
       ],
       "sinergias": [
         "Reshiram",
@@ -1194,11 +1211,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ataque 275 e nenhum cap para respeitar: no nível 50 ele passa de 4500 CP e supera Moltres (251 de ataque) como Fogo de raid."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao"
+          "status": "atencao",
+          "motivo": "Vale andar só se você já decidiu levar este exemplar ao nível 50; para um Reshiram de nível 40, o doce que vem das raids basta."
         },
         {
           "titulo": "Vale Elite TM",
@@ -1211,8 +1230,9 @@
         }
       ],
       "observacoes": [
-        "Bom substituto de Fogo quando faltar acesso a atacantes puros do tipo.",
-        "Também forte contra Dragão em raids."
+        "Com ataque 275 ele ocupa duas vagas em uma: serve de Fogo contra chefe de Gelo, Aço, Grama e Inseto e de Dragão contra chefe Dragão.",
+        "Fogo/Dragão o deixa neutro a Gelo e a Fada e fraco só a Terra, Pedra e Dragão: sobrevive bem mais que um Dragão puro em raid.",
+        "Fusion Flare é o único legado dele; sem ele, Fire Fang + Overheat sai por TM comum e já resolve as raids de Fogo."
       ],
       "sinergias": [
         "Zekrom",
@@ -1261,11 +1281,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Nível 50 vale porque ele fica na raid até o fim: com bulk 185/246 ele não é nuke descartável, e o XL soma dano em todo esse tempo."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao"
+          "status": "atencao",
+          "motivo": "Buddy aqui é para XL, não para doce comum: só compensa depois de escolher o exemplar de IV alto que você vai levar ao nível 50."
         },
         {
           "titulo": "Vale Elite TM",
@@ -1278,7 +1300,9 @@
         }
       ],
       "observacoes": [
-        "Bom substituto de Sombrio em raids de Psíquico e Fantasma."
+        "Bom substituto de Sombrio em raids de Psíquico e Fantasma.",
+        "Snarl e Dark Pulse saem por TM comum; Oblivion Wing é legado, mas é golpe Voador e não melhora o papel de Sombrio dele.",
+        "Sombrio/Voador não toma dano de Terra nem de Psíquico, mas leva dobrado de Elétrico, Gelo, Pedra e Fada: não escale ele contra chefe Gelo."
       ],
       "sinergias": [
         "Tyranitar",
@@ -1327,16 +1351,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "O papel dele é raid Fada contra chefe Dragão: ali o nível 50 encurta a luta, e é o único ganho real do XL nele."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao"
+          "status": "atencao",
+          "motivo": "Doce dele só sai de raid, e a caminhada de lendário é longa: ande com ele apenas se faltar XL para fechar o nível 50."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Moonblast já é um golpe carregado excelente."
+          "status": "sim",
+          "motivo": "Geomancy é rápido legado e o único golpe Fada rápido dele: sem Elite TM sobra Tackle ou Zen Headbutt, ambos fora do tipo."
         },
         {
           "titulo": "Transferir",
@@ -1344,7 +1370,9 @@
         }
       ],
       "observacoes": [
-        "Cobre bem raids de Dragão, um dos tipos mais fortes do jogo."
+        "Cobre bem raids de Dragão, um dos tipos mais fortes do jogo.",
+        "Moonblast é o único carregado Fada dele e, sem Geomancy, nenhum rápido é Fada: Megahorn, Close Combat e Thunder ficam só como cobertura.",
+        "Fada tem só duas fraquezas (Veneno e Aço), resiste a Lutador, Sombrio e Inseto e não toma dano de Dragão: sobrevive ao chefe que ele counteria."
       ],
       "sinergias": [
         "Zacian",
@@ -1393,7 +1421,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Em raid o nível 50 soma dano com Rock Wrecker; em PvP ele já enche a Ultra no nível 23, então lá o XL não tem para onde ir."
         },
         {
           "titulo": "Vale Buddy",
@@ -1402,8 +1431,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Mud Slap/Rock Wrecker já é um bom moveset padrão."
+          "status": "sim",
+          "motivo": "Rock Wrecker só volta por Elite TM e é o carregado que o coloca entre os melhores de Pedra; sem ele sobra Stone Edge, que rende menos."
         },
         {
           "titulo": "Transferir",
@@ -1411,7 +1440,9 @@
         }
       ],
       "observacoes": [
-        "Cobre uma quantidade enorme de tipos em raids graças ao duplo tipo Terra/Pedra."
+        "Smack Down com Rock Wrecker é o kit que vale investir; Mud Slap com Earthquake fica para chefe fraco a Terra.",
+        "Leva dano dobrado duas vezes de Água e de Grama: contra chefe desses tipos ele derrete, então reserve-o para Fogo, Elétrico, Pedra e Aço.",
+        "Sem Rock Wrecker ele vira um atacante de Terra a mais, e aí Excadrill e Garchomp entregam o mesmo por menos investimento."
       ],
       "sinergias": [
         "Garchomp",
@@ -1461,7 +1492,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "atencao",
+          "motivo": "O único ganho do XL é a Mega Swampert, que herda o nível dele; em Great e Ultra ele já está no cap antes do nível 30, e lá XL não muda nada."
         },
         {
           "titulo": "Vale Buddy",
@@ -1471,7 +1503,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Mud Shot/Hydro Cannon já é um bom moveset padrão."
+          "motivo": "Hydro Cannon é legado, não padrão: se o seu Swampert não tem, a Elite TM é justamente o que transforma ele em peça de Great League."
         },
         {
           "titulo": "Transferir",
@@ -1480,7 +1512,8 @@
       ],
       "observacoes": [
         "A Mega Swampert já aparece nas recomendações de 'Melhor Mega contra'.",
-        "Também competitivo em Great/Ultra League."
+        "Na Great League ele é peça de base: Elétrico não o afeta e a única fraqueza, Grama, vem dobrada — cuidado com Água/Grama.",
+        "Fora do PvP ele é reserva: ataque 208 rende pouco em raid, e quem entrega dano de verdade é a Mega, de ataque 283."
       ],
       "sinergias": [
         "Kyogre",
@@ -1530,7 +1563,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ataque 251 é de topo em Pedra e Sombrio, e ele fecha em 4335 de CP no nível 50, o que sustenta a Master League: o XL de Larvitar compensa."
         },
         {
           "titulo": "Vale Buddy",
@@ -1540,7 +1574,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Smack Down/Stone Edge ou Bite/Brutal Swing já cobrem bem os principais usos."
+          "motivo": "Smack Down é legado e só volta por Elite TM: sem ele o Tyranitar de Pedra perde muito, enquanto o kit Sombrio (Bite/Crunch) sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -1599,7 +1633,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Nível 50 só rende em raid, onde não há cap, e a Mega usa o nível do exemplar; em Great e Ultra ele estoura o cap muito antes do 40."
         },
         {
           "titulo": "Vale Buddy",
@@ -1609,7 +1644,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Waterfall/Hydro Pump já é um bom moveset padrão."
+          "motivo": "Waterfall com Hydro Pump sai por TM comum; a Elite TM só entra por Aqua Tail ou Dragon Pulse, que estão no legado e servem em PvP."
         },
         {
           "titulo": "Transferir",
@@ -1617,8 +1652,9 @@
         }
       ],
       "observacoes": [
-        "Também competitivo na Ultra League em PvP.",
-        "A Mega Gyarados aumenta bastante o dano em raids."
+        "A Mega Gyarados vira Água/Sombrio com 292 de ataque e 247 de defesa, e usa o nível do exemplar que você subir: é ela que justifica guardar um IV alto.",
+        "Como Água/Voador ele ignora Terra, mas Elétrico bate dobrado duas vezes e Pedra ainda acerta o lado Voador: não é resposta segura para chefe de Pedra.",
+        "Na Ultra a bulk 186/216 segura a troca, mas qualquer Elétrico ou Pedra na frente dele resolve a partida: use como quebra-gelo, não como âncora."
       ],
       "sinergias": [
         "Kyogre",
@@ -1738,7 +1774,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ataque 263 com bulk 198/209 aguenta raid longa, e a Master League não tem cap: é aqui que o nível 50 muda o resultado."
         },
         {
           "titulo": "Vale Buddy",
@@ -1756,8 +1793,9 @@
         }
       ],
       "observacoes": [
-        "Também competitivo na Ultra League em PvP.",
-        "Bom substituto de Dragão quando faltar acesso a lendários do tipo."
+        "Bom substituto de Dragão quando faltar acesso a lendários do tipo.",
+        "Dragão/Voador leva Gelo dobrado duas vezes: um Gelo rápido derruba ele, então cuide da troca em PvP e da vez dele em raid.",
+        "Steel Wing e Thunder Punch saem por acesso comum e dão resposta a Fada e Água, cobertura que o kit puro de Dragão não tem."
       ],
       "sinergias": [
         "Rayquaza",
@@ -1807,12 +1845,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "nao",
+          "motivo": "Ataque 192 é baixo para raid e na Ultra ele passa de 2500 no nível 29: sem uso em liga com cap nem na Master League, o XL não tem destino."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "Ele estoura o cap da Ultra no nível 29 e com ataque 192 não vira peça de raid: o XL fica parado, e o doce da caminhada só acelera power-ups até lá."
         },
         {
           "titulo": "Vale Elite TM",
@@ -1825,7 +1864,9 @@
         }
       ],
       "observacoes": [
-        "O mais fraco dos três lendários pássaros de Kanto como atacante, mas ainda útil em raids de Dragão/Terra."
+        "O mais fraco dos três lendários pássaros de Kanto como atacante, mas ainda útil em raids de Dragão/Terra.",
+        "Gelo/Voador leva dano dobrado duas vezes de Pedra e ainda sofre de Fogo, Aço e Elétrico: nunca escale ele contra chefe de Pedra.",
+        "Na Ultra a bulk 236/207 compensa o ataque 192, e Triple Axel, que sai por TM comum, é o que sustenta o papel dele lá."
       ],
       "sinergias": [
         "Mamoswine",
@@ -1875,17 +1916,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ataque 253 o mantém entre os melhores Elétricos de raid, e nem raid nem Master League têm cap: aqui o nível 50 rende dano de verdade."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "O XL tem destino: ataque 253, o maior do trio de Kanto, rende nível 50 em raid e Master; a caminhada é lenta, priorize-a se ele for seu Elétrico principal."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Thunder Shock/Thunderbolt já é um bom moveset padrão."
+          "status": "sim",
+          "motivo": "Thunder Shock, único rápido legado, é o golpe rápido que se usa nele em raid; sem Elite TM sobra apenas Charge Beam."
         },
         {
           "titulo": "Transferir",
@@ -1894,7 +1936,8 @@
       ],
       "observacoes": [
         "Cobre bem Água e Voador em raids.",
-        "Também competitivo na Ultra League em PvP."
+        "Na Ultra a bulk 185/207 segura a troca e Drill Peck dá saída Voador contra Lutador e Grama, sem depender do kit Elétrico.",
+        "Elétrico/Voador tem só duas fraquezas (Pedra e Gelo) e é imune a Terra, o que o deixa confortável contra chefe de Água e Voador."
       ],
       "sinergias": [
         "Zekrom",
@@ -1943,17 +1986,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Raid não tem cap e o ataque 251 ainda entrega como Fogo, então o nível 50 rende; em Great e Ultra ele estoura o cap antes do nível 30."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "Caminhe por ele se o alvo for raid, onde o ataque 251 usa o nível 50; em Great e Ultra ele passa do cap antes do nível 26 e o XL fica sem uso."
         },
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Fire Spin/Sky Attack ou Overheat já é um bom moveset padrão."
+          "motivo": "Sky Attack está só no legado e é o que faz dele atacante Voador; para o papel de Fogo, Fire Spin com Overheat sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -1961,7 +2005,9 @@
         }
       ],
       "observacoes": [
-        "Bom substituto de Fogo quando faltar acesso a Reshiram/Entei."
+        "Bom substituto de Fogo quando faltar acesso a Reshiram/Entei.",
+        "Fogo/Voador ignora Terra e resiste duas vezes a Grama, mas Pedra bate dobrado nele: contra chefe de Pedra ele não fica em pé.",
+        "Com Sky Attack ele soma o papel de atacante Voador ao de Fogo, então um único exemplar cobre duas funções no time."
       ],
       "sinergias": [
         "Reshiram",
@@ -2010,17 +2056,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Fecha em 3902 de CP no nível 50: o nível extra soma dano nas raids Elétricas e ainda dá a ele um papel de nicho na Master League."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "Ataque 241 aproveita o nível 50 em raid e no nicho de Master, mas ele fica atrás de Zapdos e Zekrom: caminhe por ele quando esses dois faltarem."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Volt Switch/Wild Charge já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado; Volt Switch com Wild Charge ou Thunderbolt sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -2028,7 +2075,9 @@
         }
       ],
       "observacoes": [
-        "Um dos três cães lendários de Johto — o foco em Elétrico."
+        "Ataque 241 com Volt Switch e Wild Charge faz dele um Elétrico de raid confiável contra chefes de Água e Voador.",
+        "Elétrico puro tem uma única fraqueza (Terra) e resiste a Elétrico, Voador e Aço: entra em raid com pouco risco de ser derrubado.",
+        "Na Master League ele fura times de Água e Voador, mas o bulk 195/207 não segura dragão — use como resposta pontual."
       ],
       "sinergias": [
         "Zekrom",
@@ -2073,21 +2122,22 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Bom atacante Fogo, alternativa a Moltres/Entei em raids."
+          "motivo": "Atacante Fogo com stamina 251, a maior entre os três cães: alternativa mais durável a Moltres em raid."
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "atencao",
+          "motivo": "Maximize só se ele for o seu único Fogo de raid; em liga não há retorno, porque ele já passa dos 2500 antes do nível 26."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "Só caminhe se ele for o seu único Fogo de raid: com ataque 235 atrás de Reshiram, o XL rende pouco, e em liga não rende nada."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Fire Fang/Flamethrower já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Fire Spin com Overheat ou Flamethrower sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -2095,7 +2145,9 @@
         }
       ],
       "observacoes": [
-        "Um dos três cães lendários de Johto — o foco em Fogo."
+        "Ataque 235 fica atrás de Reshiram (275) e da Mega Charizard Y (319): ele demora mais para derrubar o chefe, o que pesa em raid curta.",
+        "Fogo puro tem três fraquezas (Água, Terra e Pedra) e resiste a Fogo, Grama, Gelo, Inseto, Aço e Fada — serve bem contra chefes de Grama e Aço.",
+        "Sem golpe legado no movepool, o kit comum é o teto dele; a defesa 171 também não segura trocas em PvP."
       ],
       "sinergias": [
         "Reshiram",
@@ -2141,21 +2193,22 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Bom atacante Água, também competitivo na Master League."
+          "motivo": "Muro de Água para Great e Ultra League: defesa 235 com stamina 225 segura trocas longas — não é atacante de raid."
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "nao",
+          "motivo": "Na Ultra ele chega ao cap antes do nível 30, e com ataque 180 não existe raid nem Master League que justifique o XL."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "Ataque 180 e o cap da Ultra atingido no nível 29,5 deixam o XL sem uso; caminhe apenas pelo doce comum que sustenta o muro."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Snarl/Bubble Beam já é um bom moveset de nicho."
+          "status": "nao",
+          "motivo": "O único legado dele é Hidden Power, que não muda nada; Snarl com Bubble Beam ou Ice Beam sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -2163,8 +2216,9 @@
         }
       ],
       "observacoes": [
-        "Um dos três cães lendários de Johto — o foco em Água.",
-        "Bulk alto o torna também uma opção defensiva em PvP."
+        "Ice Fang e Snarl incomodam Dragão e Psíquico, mas com ataque 180 ele ganha por tempo e escudo, não por dano.",
+        "O nicho é a Ultra League, onde ele encaixa perto de 2500 sem precisar de XL e resiste a Fogo, Água, Gelo e Aço.",
+        "Água puro tem apenas duas fraquezas (Elétrico e Grama), então ele quase nunca toma dano dobrado — o limite é a falta de pressão ofensiva."
       ],
       "sinergias": [
         "Kyogre",
@@ -2213,12 +2267,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ho-Oh chega a 4367 de CP no nível 50, o que sustenta a Master League, e em raid o nível extra soma dano se ele tiver Sacred Fire."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "A defesa 244 só rende inteira no nível 50 da Master, e esse trecho todo é XL: caminhar com ele compensa se a Master League estiver no plano."
         },
         {
           "titulo": "Vale Elite TM",
@@ -2231,7 +2286,9 @@
         }
       ],
       "observacoes": [
-        "Cobre bem Aço, Gelo, Grama e Inseto em raids."
+        "Cobre bem Aço, Gelo, Grama e Inseto em raids.",
+        "Sacred Fire e Earthquake existem apenas como legado: com Fire Blast ele funciona, mas perde parte do potencial como atacante Fogo.",
+        "Defesa 244 com stamina 214 o deixa duro, porém a fraqueza dupla a Pedra mais Água e Elétrico limitam onde ele pode entrar."
       ],
       "sinergias": [
         "Reshiram",
@@ -2286,12 +2343,12 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via eventos especiais."
+          "motivo": "Ele encaixa Great e Ultra antes do nível 30, então pule o XL; a caminhada rende o doce comum que leva o exemplar de PvP exatamente até o cap."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Confusion/Dazzling Gleam já é um bom moveset em PvP."
+          "status": "sim",
+          "motivo": "Magical Leaf é legado e só volta por Elite TM; é ela que faz o kit girar, porque com Confusion ele fica lento demais para o Great League."
         },
         {
           "titulo": "Transferir",
@@ -2299,7 +2356,9 @@
         }
       ],
       "observacoes": [
-        "Tipagem Psíquico/Grama incomum ajuda a driblar contadores óbvios em PvP."
+        "Tipagem Psíquico/Grama incomum ajuda a driblar contadores óbvios em PvP.",
+        "Stats 210/210/225 dão bulk equilibrado, mas Psíquico/Grama acumula sete fraquezas, com Inseto em dobro — evite trocas cegas.",
+        "Ele encaixa o cap da Ultra antes do nível 30, então o lugar dele é Great ou Ultra: na Master, 3691 de CP no nível 50 é pouco."
       ],
       "sinergias": [
         "Cresselia",
@@ -2354,13 +2413,13 @@
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "status": "sim",
+          "motivo": "Na Master não há cap, e é o XL da caminhada que tira o bulk 246/190 do teto do nível 40 e o leva aos 3968 de CP."
         },
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Dragon Breath/Outrage já é um bom moveset padrão."
+          "motivo": "Mist Ball é o único legado dela e supera Psychic como carregado Psíquico; sem ele, Dragon Breath com Outrage já sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -2368,7 +2427,9 @@
         }
       ],
       "observacoes": [
-        "Também um atacante decente em raids de Lutador/Sombrio."
+        "Bulk 246/190 com ataque 228: na Master League ela é a Dragão que ainda resiste a Lutador, Elétrico e Fogo e segura trocas longas com Dragon Breath.",
+        "Em raid é Dragão de reserva com Dragon Breath e Outrage; o lado Psíquico só bate em Lutador e Veneno, e Sombrio não toma dano Psíquico.",
+        "Seis fraquezas (Gelo, Dragão, Fada, Inseto, Fantasma e Sombrio) cobram caro: o bulk aguenta neutro, mas o counter certo derruba rápido."
       ],
       "sinergias": [
         "Latios",
@@ -2418,12 +2479,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ele joga em raid e na Master League, onde não existe cap: acima do nível 40 cada nível vira dano, e com IV alto ele passa de 4300 CP no 50."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "status": "sim",
+          "motivo": "A conta do nível 41 ao 50 é de centenas de XL e a caminhada é o que a paga: o retorno é o ataque 268 fechando 4310 de CP em raid e na Master."
         },
         {
           "titulo": "Vale Elite TM",
@@ -2436,7 +2498,9 @@
         }
       ],
       "observacoes": [
-        "Mais orientado a ataque que Latias, sua contraparte."
+        "Mais orientado a ataque que Latias, sua contraparte.",
+        "Dragon Breath + Dragon Claw vem do movepool comum e já é o kit de Dragão dele; Luster Purge é o único legado e serve ao lado Psíquico.",
+        "Dragão/Psíquico soma seis fraquezas (Gelo, Dragão, Fada, Inseto, Fantasma e Sombrio): com defesa 212 ele funciona como atacante, não como muro."
       ],
       "sinergias": [
         "Latias",
@@ -2485,17 +2549,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ataque 280 com Draco Meteor rende em raid, e no nível 50 ele bate 4512 de CP: sem XL você trava no 40 e perde essa faixa na Master."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "status": "sim",
+          "motivo": "Vale caminhar: é o XL somado no dia a dia que leva o Draco Meteor do teto do nível 40 aos 4512 de CP da Master."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "sim",
-          "motivo": "Útil se não vier com Dragon Tail/Draco Meteor."
+          "status": "nao",
+          "motivo": "Não há legado no kit dele: Dragon Tail, Dragon Breath, Draco Meteor, Hydro Pump, Fire Blast e Aqua Tail saem por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -2503,7 +2568,9 @@
         }
       ],
       "observacoes": [
-        "Cobre dois tipos de raid ao mesmo tempo, ótimo custo-benefício de time."
+        "Ataque 280 com Draco Meteor o coloca entre os melhores Dragões de raid; como atacante de Água fica atrás de Kyogre, então priorize o kit de Dragão.",
+        "Fogo e Água chegam nele com dano reduzido duas vezes, e as únicas fraquezas são Dragão e Fada: contra chefe de Fogo ele troca sem medo.",
+        "Vale um segundo exemplar de IV alto: um com Draco Meteor e outro com Hydro Pump evitam gastar TM cada vez que o chefe muda."
       ],
       "sinergias": [
         "Kyogre",
@@ -2554,17 +2621,17 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "PvP prioriza bulk sobre Ataque; maximize com Great/Ultra League em mente."
+          "motivo": "Ele passa dos 2500 já no nível 23, então XL não serve para a Ultra; só vale se o plano for raid de Fogo ou Master League."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "Só vale caminhar se você for empurrar o Fire Spin além do nível 40 em raid de Fogo; para Ultra ele já está pronto no 23 e o doce fica sobrando."
         },
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Fire Spin/Flamethrower já é um bom moveset padrão."
+          "motivo": "Magma Storm é legado e só volta por Elite TM; é o melhor carregado dele, mas Fire Spin com Fire Blast já cobre o papel de Fogo."
         },
         {
           "titulo": "Transferir",
@@ -2572,7 +2639,9 @@
         }
       ],
       "observacoes": [
-        "Resiste a Grama, Gelo, Voador, Inseto, Aço, Fada e mais — um dos tipos duplos mais defensivos do jogo."
+        "Resiste a Grama, Gelo, Voador, Inseto, Aço, Fada e mais — um dos tipos duplos mais defensivos do jogo.",
+        "A fraqueza dupla a Terra desmonta o resto: em ginásio ou em PvP, qualquer golpe de Terra o derruba antes de ele render o bulk que o tipo promete.",
+        "Ataque 251 com Fire Spin e Magma Storm é o uso mais honesto dele: atacante de Fogo em raid, não muralha de ginásio."
       ],
       "sinergias": [
         "Registeel",
@@ -2617,7 +2686,7 @@
         {
           "titulo": "Vale guardar",
           "status": "atencao",
-          "motivo": "Stats normais são medianos para um lendário; vale mais pela raridade que pelo poder."
+          "motivo": "Stats de topo (ataque 287 e 4913 de CP no nível 50), mas sem golpe rápido de Normal ele não converte isso: guarde um exemplar, sem investir."
         },
         {
           "titulo": "Vale maximizar",
@@ -2626,7 +2695,8 @@
         },
         {
           "titulo": "Vale Buddy",
-          "status": "nao"
+          "status": "nao",
+          "motivo": "O gargalo dele é não ter rápido de Normal, não doce: nenhum XL conserta Zen Headbutt, então use o slot de Buddy em outro Pokémon."
         },
         {
           "titulo": "Vale Elite TM",
@@ -2635,14 +2705,19 @@
         },
         {
           "titulo": "Transferir",
-          "status": "nao",
-          "motivo": "Ainda assim vale guardar como raridade/colecionável."
+          "status": "nao"
         }
       ],
       "observacoes": [
-        "Exige uma raid especial de 'despertar' para liberar todo o potencial em algumas mecânicas do jogo."
+        "Ataque base 287, mas nenhum golpe rápido de Normal no kit (só Zen Headbutt e Hidden Power): a energia não acompanha Giga Impact e o DPS real fica muito abaixo do número.",
+        "Normal puro tem uma fraqueza só (Lutador) e é imune a Fantasma, então com defesa 210 e stamina 221 ele aguenta bem — só não converte isso em dano.",
+        "Crush Grip é legado e melhora o carregado, mas não resolve o rápido: guarde um exemplar e não gaste Rare Candy nem XL enquanto o kit for esse."
       ],
-      "sinergias": []
+      "sinergias": [
+        "Slaking",
+        "Snorlax",
+        "Melmetal"
+      ]
     },
     "go": {
       "estado": {
@@ -2685,18 +2760,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "atencao",
-          "motivo": "PvP prioriza bulk; maximize com Master League em mente."
+          "status": "nao",
+          "motivo": "Ela enche a Ultra no nível 31 e nem no 50 passa de 3230 de CP, pequena para a Master: o XL nela não tem para onde ir."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "Levá-la ao nível 31 da Ultra custa bastante doce, e a caminhada é o que paga essa conta; XL é desperdício: com ataque 152 ela não entra em raid."
         },
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Psycho Cut/Moonblast já é um bom moveset padrão."
+          "motivo": "Grass Knot é legado e só volta por Elite TM, cobrindo Água e Terra; mas Psycho Cut com Moonblast já dá conta sem gastar."
         },
         {
           "titulo": "Transferir",
@@ -2704,7 +2779,9 @@
         }
       ],
       "observacoes": [
-        "Resiste a Lutador e Sombrio graças ao segundo golpe de tipo Fada em seu kit."
+        "Bulk 258/260 com ataque 152: ela ganha por atrito e uso de escudo, nunca por nocaute rápido — conte com trocas longas.",
+        "Psíquico puro só resiste a Lutador e Psíquico e leva dano dobrado de Inseto, Fantasma e Sombrio: Moonblast existe justamente para punir o Sombrio que a ameaça.",
+        "O nicho dela é travar Lutador — o tipo resiste e Psycho Cut bate dobrado — mas contra Aço nada no kit passa: Psíquico, Fada, Gelo e Grama são todos resistidos."
       ],
       "sinergias": [
         "Lugia",
@@ -2754,17 +2831,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Sem XL ele para em 3739 de CP; no nível 50 chega a 4227, e é essa faixa que o mantém como Sombrio de ponta em raid e na Master."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "status": "sim",
+          "motivo": "Vale caminhar só pelo XL: é o doce que separa o teto de 3739 de CP do nível 50 com 4227, onde o ataque 285 dele realmente pesa em raid."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Snarl/Shadow Ball já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "O único legado dele é Sludge Bomb, que não serve para um Sombrio; Snarl, Shadow Ball, Dark Pulse e Focus Blast saem por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -2772,8 +2850,9 @@
         }
       ],
       "observacoes": [
-        "Cobre bem Psíquico, Fantasma e o próprio Sombrio em raids.",
-        "Também relevante na Master League em PvP."
+        "Snarl com Shadow Ball é o kit; Dark Pulse cobre exatamente os mesmos alvos que Shadow Ball (Psíquico e Fantasma), então basta um dos dois.",
+        "Ataque 285 com defesa 198 e stamina 172: entrega DPS altíssimo e cai rápido, então prepare mais trocas do que faria com um Tyranitar.",
+        "Imune a Psíquico e resistente a Fantasma e Sombrio, mas Lutador, Inseto e Fada o derrubam; Focus Blast é a única resposta dele contra Aço."
       ],
       "sinergias": [
         "Yveltal",
@@ -2822,18 +2901,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "atencao",
-          "motivo": "PvP prioriza bulk; maximize com Great League em mente."
+          "status": "nao",
+          "motivo": "Ele passa de 1500 CP perto do nível 17 e de 2500 antes do 30: em Great e Ultra o XL não muda nada, e ataque 210 o deixa fora de raid e de ML."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via eventos especiais."
+          "motivo": "Caminhar só compensa se o plano for Ultra: o doce comum sobe o bulk 210/225 até 2500 perto do nível 27, e XL nele não tem onde ser usado."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Confusion/Doom Desire é um moveset de nicho; avalie antes de gastar TM."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado nenhum: Confusion e Doom Desire saem por TM comum, então guarde a Elite TM para outro."
         },
         {
           "titulo": "Transferir",
@@ -2841,7 +2920,9 @@
         }
       ],
       "observacoes": [
-        "Resiste a Dragão, Voador, Normal, Fada, Veneno, Pedra graças ao tipo duplo."
+        "Aço/Psíquico resiste a nove tipos e é imune a Veneno, e Inseto e Lutador — que punem Aço ou Psíquico sozinhos — passam neutros nele.",
+        "Só quatro fraquezas (Fogo, Terra, Fantasma e Sombrio) com bulk 210/225: é isso que o sustenta como peça segura de Great League.",
+        "Ataque base 210 o tira de raid séria; o retorno dele vem de aguentar trocas longas com Confusion, não de fechar dano."
       ],
       "sinergias": [
         "Metagross",
@@ -2896,12 +2977,12 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via eventos especiais."
+          "motivo": "O cap da Ultra chega perto do nível 28, então XL não entra em PvP; o valor da caminhada é doce comum, dividido entre as formas que você jogar."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Depende da forma e do papel pretendido."
+          "status": "nao",
+          "motivo": "Não existe golpe legado para a forma Normal; Psycho Boost, que é o golpe que importa, sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -2909,7 +2990,9 @@
         }
       ],
       "observacoes": [
-        "As formas Ataque, Defesa e Velocidade aparecem na aba Forms e têm papéis distintos — vale conferir qual você tem antes de decidir o que fazer."
+        "As formas Ataque, Defesa e Velocidade aparecem na aba Forms e têm papéis distintos — vale conferir qual você tem antes de decidir o que fazer.",
+        "Ataque 345 é o maior da dex e vem com defesa 115 e stamina 137: ele bate como ninguém e cai em poucas trocas, então conte com revive em raid.",
+        "Psycho Boost está no movepool comum e é o golpe que justifica investir; fora dele o kit (Zap Cannon, Hyper Beam) não entrega nada relevante."
       ],
       "sinergias": [
         "Mewtwo",
@@ -2964,12 +3047,12 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "A caminhada rende XL, mas gaste em outro: com ataque 246 a forma cinza é Dragão de reserva, e reserva não precisa de nível 50."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Dragon Breath/Draco Meteor já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Só Glaciate é legado, e um carregado de Gelo não rende sem nenhum rápido de Gelo; Dragon Breath com Draco Meteor, o kit real, sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -2977,7 +3060,9 @@
         }
       ],
       "observacoes": [
-        "Vale a pena guardar mesmo sem maximizar, caso uma fusão fique disponível no futuro."
+        "Ataque 246 fica atrás de Dragonite (263) mesmo com stamina 245: use como Dragão de reserva, não como carro-chefe de raid.",
+        "Dragon Breath + Draco Meteor é o kit real: Blizzard existe, mas sem nenhum fast de Gelo ele nunca rende como atacante do tipo.",
+        "Dragão/Gelo acumula cinco fraquezas (Lutador, Pedra, Aço, Dragão e Fada), então desmaia mais rápido que os Dragões puros em raid."
       ],
       "sinergias": [
         "Zekrom",
@@ -3026,17 +3111,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Só muda raid: no nível 40 ele já passa de 3300 CP, longe dos caps de Great e Ultra, e o XL entra como HP extra para a stamina 174."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Só disponível via eventos especiais."
+          "status": "sim",
+          "motivo": "Vale a caminhada pelo XL: com stamina 174 ele desmaia cedo, e o HP do nível 50 é o único jeito de esticar o tempo dele na raid."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "O golpe carregado varia por 'Drive' equipado; confira antes de gastar TM."
+          "status": "nao",
+          "motivo": "Nenhum legado nas listas do projeto: Metal Claw/Fury Cutter com X-Scissor, Magnet Bomb e Hyper Beam saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3044,7 +3130,9 @@
         }
       ],
       "observacoes": [
-        "O Drive equipado (Douse/Shock/Burn/Chill) muda o tipo do golpe carregado Techno Blast."
+        "Como Inseto ele resolve com Fury Cutter + X-Scissor, mas como Aço fica atrás de Metagross: Metal Claw e Magnet Bomb não competem com Bullet Punch e Meteor Mash.",
+        "Inseto/Aço tem uma fraqueza só, mas Fogo bate quádruplo e a stamina 174 é baixa: contra chefe de Fogo ele cai em poucos golpes.",
+        "Resiste a Psíquico e a Fada e bate super efetivo nos dois: contra chefe desses tipos ele rende mais que um Inseto puro."
       ],
       "sinergias": [
         "Scizor",
@@ -3093,17 +3181,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "O que o XL compra aqui é sobrevivência: com só Close Combat de golpe Lutador, o nível 50 rende mais na Master League que em raid."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Disponível só via raids especiais."
+          "status": "sim",
+          "motivo": "Aqui o XL compra bulk: defesa 236 e stamina 192 no nível 50 é o que sustenta as trocas dele na Master, então caminhar tem retorno claro."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "sim",
-          "motivo": "Útil se não vier com Behemoth Bash ou moveset ideal."
+          "status": "nao",
+          "motivo": "Sem golpe legado nas listas, a TM rara não muda nada: Close Combat, Iron Head, Crunch e Moonblast saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3111,7 +3200,9 @@
         }
       ],
       "observacoes": [
-        "A forma Crowned Shield (com o Escudo Enferrujado) ganha o tipo Aço e vira mais defensiva."
+        "Close Combat é o único golpe Lutador dele e o kit não tem rápido do tipo, então em raid ele rende menos que Conkeldurr ou Machamp com Counter.",
+        "Moonblast e Crunch dão cobertura Fada e Sombrio: serve para chefe Dragão ou Psíquico quando não há especialista pronto.",
+        "Na Master League o bulk 236/192 é o argumento dele: aguenta trocas que Lutador comum não sustenta, mesmo com dano de saída mediano."
       ],
       "sinergias": [
         "Lucario",
@@ -3160,17 +3251,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ataque 278 com stamina 268 aguenta raid inteira batendo forte; é o tipo de exemplar em que o nível 50 devolve o XL gasto."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Disponível só via raids especiais."
+          "status": "sim",
+          "motivo": "Junte XL sem medo: o nível 50 leva ele a 5007 de CP, um dos maiores da Master, e essa subida acima do nível 40 sai toda de doce XL."
         },
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Poison Jab/Dynamax Cannon já é um bom moveset padrão."
+          "motivo": "Dynamax Cannon é legado e só volta por Elite TM; sem ele sobra Poison Jab ou Dragon Tail com Sludge Bomb, Dragon Pulse ou Flamethrower."
         },
         {
           "titulo": "Transferir",
@@ -3178,7 +3270,9 @@
         }
       ],
       "observacoes": [
-        "Tipagem Veneno/Dragão rara no jogo, boa opção de nicho contra Fada."
+        "Tipagem Veneno/Dragão rara no jogo, boa opção de nicho contra Fada.",
+        "Ataque 278 com bulk 192/268 é combinação rara: bate como lendário sem depender de troca rápida, então fecha raid longa de pé.",
+        "Leva dobrado só de Terra, Gelo, Dragão e Psíquico e resiste a sete tipos, Grama em dobro: contra chefe Fada ele bate forte e não toma nada extra."
       ],
       "sinergias": [
         "Zacian",
@@ -3227,17 +3321,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ataque 242 com bulk 215/233 rende raid longa, e em PvP ele só entra na Master League: o XL serve para esses dois usos."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Disponível só via eventos especiais."
+          "status": "sim",
+          "motivo": "Caminhe pelo XL: o bulk 215/233 só rende de verdade em raid longa e na Master do nível 41 para cima, e é lá que o doce XL entra."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Bite/Power Whip já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado nas listas: Bite, Power Whip, Energy Ball e Dark Pulse saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3245,7 +3340,9 @@
         }
       ],
       "observacoes": [
-        "Tipagem Sombrio/Grama incomum cobre bem tipos que a maioria dos atacantes Sombrio não cobre."
+        "Tipagem Sombrio/Grama incomum cobre bem tipos que a maioria dos atacantes Sombrio não cobre.",
+        "Power Whip é o carregado de dano e Dark Pulse cobre Psíquico e Fantasma: o mesmo exemplar serve para dois tipos de chefe.",
+        "É imune a Psíquico, o que ajuda contra Mewtwo, mas Inseto entra em quádruplo e ainda sobram seis fraquezas: nunca contra chefe Inseto."
       ],
       "sinergias": [
         "Yveltal",
@@ -3295,12 +3392,13 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Ele já passa de 2500 CP no nível 40, então o XL só serve para raid e Master League; com defesa 125, o HP do nível 50 é o que ele ganha."
         },
         {
           "titulo": "Vale Buddy",
-          "status": "atencao",
-          "motivo": "Disponível só via raids especiais."
+          "status": "sim",
+          "motivo": "O XL dele serve para raid e Master, não para Ultra: ele passa dos 2500 de CP perto do nível 33, e com defesa 125 o que o XL dá é HP."
         },
         {
           "titulo": "Vale Elite TM",
@@ -3313,7 +3411,9 @@
         }
       ],
       "observacoes": [
-        "Também tem uma presença relevante na Master League em PvP."
+        "Ataque 250 com defesa 125 e stamina 190: entrega dano Elétrico alto, mas é o primeiro a desmaiar na raid.",
+        "Thunder Cage é legado; sem ela o carregado é Thunder ou Zap Cannon, e é esse kit fraco que impede o ataque 250 de virar dano de topo.",
+        "Elétrico só cai para Terra e resiste a Elétrico, Voador e Aço: dá para escalar sem medo contra chefe Voador."
       ],
       "sinergias": [
         "Zekrom",
@@ -3368,12 +3468,12 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Disponível só via raids especiais."
+          "motivo": "A caminhada só rende XL, e XL nele é gasto ruim: com defesa 101 o HP extra do nível 50 derrete rápido e o dano segue atrás de Rayquaza."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "nao",
-          "motivo": "Não compensa gastar TM rara nele com tantas alternativas melhores."
+          "status": "atencao",
+          "motivo": "Dragon Breath e Dragon Energy são legado: sem Elite TM o único rápido dele é Bite, que é Sombrio, então a TM é o gargalo real."
         },
         {
           "titulo": "Transferir",
@@ -3381,7 +3481,9 @@
         }
       ],
       "observacoes": [
-        "Ainda vale guardar como raridade, mas raramente é a melhor escolha de atacante Dragão disponível."
+        "Ainda vale guardar como raridade, mas raramente é a melhor escolha de atacante Dragão disponível.",
+        "Stamina 400 com defesa 101 é o extremo do jogo: o HP gigante compensa pouco, porque a defesa baixíssima faz cada golpe tirar muito.",
+        "Com Bite e Outrage o dano de saída fica bem abaixo de Rayquaza, de ataque 284; só com Dragon Breath e Dragon Energy ele encosta no meta."
       ],
       "sinergias": [
         "Rayquaza",
@@ -3436,12 +3538,12 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Disponível só via eventos especiais."
+          "motivo": "XL só teria função na Ultra, onde ele cabe até o nível 47; para raid, caminhar por um ataque 162 não devolve o doce gasto."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Confusion/Psychic já é um bom moveset padrão na forma base."
+          "status": "nao",
+          "motivo": "Não há golpe legado na forma base: Confusion, Psyshock, Psychic e Energy Ball saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3449,7 +3551,9 @@
         }
       ],
       "observacoes": [
-        "As formas fusionadas (com Glastrier ou Spectrier, quando disponíveis) mudam bastante o papel dele."
+        "Ataque 162 e defesa 162 na forma base: guarde pela raridade, porque em raid ele fica muito atrás de Kartana e Mewtwo nos mesmos papéis.",
+        "Chega a 2278 de CP no nível 40 e 2575 no 50: só na Ultra League o XL teria função, e mesmo lá o ataque 162 não sustenta o investimento.",
+        "Grama/Psíquico soma sete fraquezas e Inseto bate quatro vezes mais forte: quase todo chefe de raid tem vantagem contra ele."
       ],
       "sinergias": [
         "Mewtwo",
@@ -3500,17 +3604,17 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "PvP prioriza IV baixo de Ataque; maximize só se for para ginásios/raids."
+          "motivo": "Ele estoura os dois caps antes do 40 (1500 no nível 17, 2500 perto do 28), então XL não entra em PvP; use-o no ginásio, onde defesa 309 rende."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "O doce da caminhada serve para levar a defesa 309 ao nível 40 no ginásio; XL não, porque ele fecha 1500 no nível 17 e 2500 no 28."
         },
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Lock-On + Zap Cannon é um moveset de nicho; avalie antes de gastar TM."
+          "motivo": "O único legado é Earthquake; Lock-On, Zap Cannon e Focus Blast saem por TM comum, então a TM só vale pela cobertura de Terra."
         },
         {
           "titulo": "Transferir",
@@ -3518,7 +3622,9 @@
         }
       ],
       "observacoes": [
-        "Defesa altíssima o torna difícil de derrubar em ginásios e na Great League."
+        "Defesa altíssima o torna difícil de derrubar em ginásios e na Great League.",
+        "Como Pedra puro ele tem cinco fraquezas (Água, Grama, Lutador, Terra e Aço) contra apenas quatro resistências (Normal, Fogo, Veneno e Voador).",
+        "Ataque 179 dá saída fraca: ele ganha por atrito, com Stone Edge para pressionar e Focus Blast contra Aço."
       ],
       "sinergias": [
         "Registeel",
@@ -3568,17 +3674,17 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "PvP prioriza IV baixo de Ataque; maximize só se for para raids."
+          "motivo": "Como muro de PvP ele já está pronto muito antes do 40 (2500 perto do 28) e ataque 179 não vira atacante de Gelo: nível 50 só engrossa ginásio."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Só disponível via raids/eventos."
+          "motivo": "Como muro de Great ele para no nível 17, então caminhar só rende doce comum para um segundo exemplar com IV de PvP; XL nele nunca entra em jogo."
         },
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Frost Breath/Blizzard é um bom moveset defensivo em PvP."
+          "motivo": "Thunder é o único legado e serve de surpresa contra Água; Frost Breath, Blizzard e Focus Blast saem por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3586,7 +3692,9 @@
         }
       ],
       "observacoes": [
-        "Bulk altíssimo compensa a fraqueza de tipo em raids e brilha mais em PvP."
+        "Defesa 309 sustenta trocas longas na Great League: ele aguenta pancada enquanto carrega Blizzard, que é o dano real dele.",
+        "Ataque 179 o desqualifica como atacante de Gelo em raid: trate como muro de PvP, não como fonte de dano.",
+        "Gelo puro tem quatro fraquezas (Fogo, Lutador, Pedra e Aço) e resiste só a Gelo, então ele segura dano neutro e cai contra counter."
       ],
       "sinergias": [
         "Regirock",
@@ -3637,7 +3745,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Raid e Rocket não têm cap de CP, então o nível 50 rende dano real; na Ultra ele já passa de 2500 no nível 29, e lá o XL não tem uso."
         },
         {
           "titulo": "Vale Buddy",
@@ -3647,7 +3756,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Counter/Dynamic Punch já é um bom moveset padrão."
+          "motivo": "Stone Edge é o único legado que interessa, e só como Pedra mais forte que o Rock Slide comum; Counter e Dynamic Punch não dependem de Elite TM."
         },
         {
           "titulo": "Transferir",
@@ -3655,7 +3764,9 @@
         }
       ],
       "observacoes": [
-        "Ótimo contra líderes Rocket que usam Sombrio, Gelo, Normal, Pedra ou Aço."
+        "Ótimo contra líderes Rocket que usam Sombrio, Gelo, Normal, Pedra ou Aço.",
+        "Lutador puro tem só três fraquezas (Voador, Psíquico e Fada) e resiste a Pedra, Inseto e Sombrio: fica de pé contra chefe de Pedra e Sombrio enquanto bate super efetivo.",
+        "Cobertura fora de Lutador já vem por TM comum (Rock Slide, Heavy Slam); Stone Edge, que é legado, é o único motivo para gastar Elite TM nele."
       ],
       "sinergias": [
         "Lucario",
@@ -3704,7 +3815,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Vale para raid de Lutador: o bulk 158/233 aproveita o nível 50 em batalhas longas; nas ligas com cap ele passa de 2500 antes do nível 27."
         },
         {
           "titulo": "Vale Buddy",
@@ -3713,8 +3825,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Counter/Dynamic Punch já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "O único legado é Brutal Swing, cobertura Sombrio dispensável num Lutador; Counter com Dynamic Punch, Focus Blast e Stone Edge sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3722,7 +3834,9 @@
         }
       ],
       "observacoes": [
-        "Cobre Normal, Gelo, Pedra, Sombrio e Aço em raids."
+        "Cobre Normal, Gelo, Pedra, Sombrio e Aço em raids.",
+        "Ataque 243 com bulk 158/233: aguenta mais ciclos em raid que Machamp (234/159/207), que é o comparativo direto dele.",
+        "Fraco a Voador, Psíquico e Fada; o kit responde com Stone Edge contra Voador e Poison Jab contra Fada, mas contra Psíquico não há resposta."
       ],
       "sinergias": [
         "Machamp",
@@ -3772,7 +3886,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Nível 50 rende em raid de Lutador e, principalmente, como base de Mega Lucario (ataque 310); na Ultra ele já estoura 2500 CP perto do 35."
         },
         {
           "titulo": "Vale Buddy",
@@ -3790,8 +3905,9 @@
         }
       ],
       "observacoes": [
-        "A Mega Lucario aumenta bastante o dano em raids.",
-        "Também competitivo em Great/Ultra League."
+        "Mega Lucario leva o ataque de 236 para 310 e é a razão principal para guardar um exemplar de IV alto.",
+        "Em Great e Ultra ele é atacante de pressão com Counter + Power-Up Punch, mas defesa 144 faz uma troca errada acabar com ele na hora.",
+        "Lutador/Aço tem só três fraquezas (Fogo, Lutador e Terra) e resiste a oito tipos, mas bulk 144/172 não deixa aproveitar isso: ele é atacante."
       ],
       "sinergias": [
         "Mega Lucario",
@@ -3841,7 +3957,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Nível 50 vale em raid, onde ele entra como Gelo e como Sombrio; na Ultra ele fura 2500 CP perto do nível 30, então o XL não é para PvP."
         },
         {
           "titulo": "Vale Buddy",
@@ -3850,8 +3967,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Snarl/Avalanche já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado: Snarl, Ice Shard e Avalanche saem por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3859,7 +3976,9 @@
         }
       ],
       "observacoes": [
-        "Também relevante em Great/Ultra League como atacante rápido."
+        "Ataque 243 com bulk 171/172 faz dele atacante de janela curta: entra com Ice Shard, descarrega Avalanche e sai antes da carga do chefe.",
+        "Em Great e Ultra funciona como fechador de Snarl + Triple Axel, mas qualquer Lutador ou Aço na frente encerra a troca.",
+        "Lutador bate em quádruplo, e ainda vêm Fogo, Pedra, Aço, Inseto e Fada: seis fraquezas contra uma única imunidade, a Psíquico."
       ],
       "sinergias": [
         "Mamoswine",
@@ -3908,7 +4027,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Nível 50 ajuda porque a defesa 146 já o derruba rápido em raid; na Ultra ele estoura os 2500 no nível 26, então lá o XL não entra."
         },
         {
           "titulo": "Vale Buddy",
@@ -3917,8 +4037,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Powder Snow/Avalanche já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "O único legado dele é Ancient Power, que não serve; Powder Snow, Avalanche e High Horsepower saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3926,7 +4046,9 @@
         }
       ],
       "observacoes": [
-        "Cobre dois tipos de raid ao mesmo tempo (Dragão e Voador)."
+        "Powder Snow com Avalanche é o kit de Gelo contra Dragão e Voador; Mud Slap com High Horsepower atende chefe fraco a Terra — escolha um papel por exemplar.",
+        "Defesa 146 com cinco fraquezas (Fogo, Lutador, Aço, Água e Grama): a stamina 242 não compensa, ele sai da raid antes de entregar todo o dano.",
+        "Weavile bate mais forte como Gelo, mas o lado Terra é o diferencial dele: contra chefe de Aço ou Elétrico o Mamoswine resolve e o Weavile não."
       ],
       "sinergias": [
         "Weavile",
@@ -3976,7 +4098,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "PvP prioriza bulk sobre Ataque; maximize com PvP em mente."
+          "motivo": "XL não muda as ligas dele: fecha 1500 antes do nível 18 e 2500 por volta do 29; só maximize se for usá-lo como defensor de ginásio."
         },
         {
           "titulo": "Vale Buddy",
@@ -3985,8 +4107,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Dragon Tail/Surf já é um bom moveset padrão em PvP."
+          "status": "nao",
+          "motivo": "Não há golpe legado nele: Dragon Tail ou Waterfall com Surf, Blizzard e Aqua Tail sai todo por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -3994,7 +4116,9 @@
         }
       ],
       "observacoes": [
-        "Pouco relevante em raids, mas um bulk sólido em PvP."
+        "Bulk 219/216 com apenas duas fraquezas (Elétrico e Grama) faz dele um muro de Água que já fecha os 1500 CP antes do nível 18.",
+        "Ataque 192 não gera pressão: o plano é atrito, com Waterfall carregando Surf e Aqua Tail enquanto ele aguenta a troca.",
+        "Em raid não rende nada: para Água use Kyogre ou Mega Swampert e guarde o Milotic só para PvP."
       ],
       "sinergias": [
         "Azumarill",
@@ -4043,8 +4167,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "atencao",
-          "motivo": "PvP prioriza bulk; maximize com PvP em mente."
+          "status": "nao",
+          "motivo": "Ele passa de 1500 CP antes do nível 20 e de 2500 bem antes do 40: nas duas ligas com cap o XL não serve, e o CP dele é baixo para ML."
         },
         {
           "titulo": "Vale Buddy",
@@ -4054,7 +4178,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Metal Claw/Hydro Cannon já é um bom moveset padrão."
+          "motivo": "Hydro Cannon é legado, não padrão: sem ele sobra só Hydro Pump como saída de dano, e a Elite TM é o único caminho para recuperá-lo."
         },
         {
           "titulo": "Transferir",
@@ -4062,7 +4186,9 @@
         }
       ],
       "observacoes": [
-        "Pouco relevante em raids frente a outros atacantes Água."
+        "Pouco relevante em raids frente a outros atacantes Água.",
+        "Água/Aço resiste a dez tipos e é imune a Veneno; leva dobro só de Elétrico, Lutador e Terra, e é essa tipagem que sustenta o papel em PvP.",
+        "Hydro Cannon é legado: sem ele a saída de dano fica em Hydro Pump, caro de carregar, e ele vira muro lento sem pressão."
       ],
       "sinergias": [
         "Swampert",
@@ -4121,8 +4247,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "nao",
-          "motivo": "Existem atacantes melhores para gastar uma TM rara."
+          "status": "atencao",
+          "motivo": "Blast Burn é o único legado e sem ele o kit para em Flamethrower: a TM vale se Infernape for o seu Fogo de raid, não se você já tem Blaziken."
         },
         {
           "titulo": "Transferir",
@@ -4130,7 +4256,9 @@
         }
       ],
       "observacoes": [
-        "Bom Pokémon 'de entrada' antes de conseguir atacantes lendários do mesmo tipo."
+        "Ataque 222 o deixa atrás de Blaziken (240) em Fogo e de Conkeldurr (243) em Lutador: ele é segunda linha de raid, não carro-chefe.",
+        "Blast Burn é legado e é o que salva o kit; com Flamethrower ou Close Combat comuns o dano de saída cai bastante.",
+        "Fogo/Lutador tem quatro fraquezas (Água, Terra, Voador e Psíquico) e Pedra passa neutro, mas defesa 151 já faz ele trocar mal em PvP."
       ],
       "sinergias": [
         "Reshiram",
@@ -4190,7 +4318,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "nao",
-          "motivo": "Existem atacantes melhores para gastar uma TM rara."
+          "motivo": "O único legado dele é Flamethrower, que não ajuda um Elétrico; Thunder Shock com Wild Charge sai por TM comum e já é o teto dele."
         },
         {
           "titulo": "Transferir",
@@ -4198,7 +4326,9 @@
         }
       ],
       "observacoes": [
-        "Bom Pokémon 'de entrada' antes de conseguir atacantes lendários do mesmo tipo."
+        "O gargalo é o golpe rápido: só Thunder Shock como Elétrico, e Low Kick não ganha bônus de tipo nele, então o DPS real fica muito abaixo do que o ataque 249 sugere.",
+        "Defesa 163 e stamina 181 deixam ele frágil: mesmo com uma fraqueza só (Terra), cai rápido e você reentra várias vezes na raid.",
+        "Ice Punch dá cobertura contra Dragão e Voador quando falta atacante de Gelo, mas é remendo, não motivo para investir nele."
       ],
       "sinergias": [
         "Zekrom",
@@ -4248,7 +4378,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "atencao",
+          "motivo": "Nível 50 só rende em raid, e com ataque 238 ele é Elétrico de segunda linha: gaste XL nele depois dos atacantes de topo do tipo."
         },
         {
           "titulo": "Vale Buddy",
@@ -4257,8 +4388,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Spark/Wild Charge já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Não há golpe legado para ele: Spark, Volt Switch e Wild Charge saem por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -4266,7 +4397,9 @@
         }
       ],
       "observacoes": [
-        "Também um bom defensor de ginásio pela resistência a vários tipos comuns."
+        "Elétrico/Aço resiste a onze tipos e é imune a Veneno, o que faz dele defensor de ginásio decente — mas Terra bate em quádruplo e derruba sozinha.",
+        "Ataque 238 com Volt Switch + Wild Charge o mantém como Elétrico confiável de raid contra Água e Voador, mesmo sem ser topo do tipo.",
+        "Flash Cannon dá a ele cobertura de Aço contra Gelo, Pedra e Fada, coisa rara num Elétrico."
       ],
       "sinergias": [
         "Melmetal",
@@ -4317,7 +4450,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "atencao",
+          "motivo": "Só muda em raid e Master League, e com defesa 149 ele cai em poucos golpes: o salto de dano dele vem da Mega Gengar, não do XL."
         },
         {
           "titulo": "Vale Buddy",
@@ -4327,7 +4461,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Lick/Shadow Ball já é um bom moveset padrão."
+          "motivo": "Shadow Claw com Shadow Ball sai por TM comum; a Elite TM só interessa por Lick ou Shadow Punch, que são legado e servem em PvP."
         },
         {
           "titulo": "Transferir",
@@ -4335,8 +4469,8 @@
         }
       ],
       "observacoes": [
-        "A Mega Gengar aumenta bastante o dano em raids.",
-        "Excelente contra líderes Rocket que usam Fantasma e Psíquico."
+        "Excelente contra líderes Rocket que usam Fantasma e Psíquico.",
+        "Mega Gengar chega a 349 de ataque e é o motivo real de guardar um exemplar de IV alto; a forma normal, com defesa 149, some rápido em raid."
       ],
       "sinergias": [
         "Mega Gengar",
@@ -4386,7 +4520,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "atencao",
+          "motivo": "Nível 50 pesa só em raid e Master League, e com defesa 167 e stamina 146 ele desmaia antes de compensar: o XL rende mais em atacante mais duro."
         },
         {
           "titulo": "Vale Buddy",
@@ -4405,7 +4540,7 @@
       ],
       "observacoes": [
         "Excelente contra líderes Rocket que usam Lutador e Veneno.",
-        "A Mega Alakazam aumenta bastante o dano em raids."
+        "A Mega Alakazam sobe o ataque de 271 para 367 sem mexer na stamina 146: dano altíssimo, mas ela continua caindo em poucos golpes."
       ],
       "sinergias": [
         "Mega Alakazam",
@@ -4465,7 +4600,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "nao",
-          "motivo": "Existem atacantes melhores para gastar uma TM rara."
+          "motivo": "O legado útil é Shadow Ball, mas como Psíquico ele já fica atrás de Mewtwo e Alakazam: a TM rara rende mais em um deles do que nele."
         },
         {
           "titulo": "Transferir",
@@ -4473,7 +4608,9 @@
         }
       ],
       "observacoes": [
-        "Bom Pokémon 'de entrada' antes de conseguir atacantes Psíquicos mais fortes."
+        "Bom Pokémon 'de entrada' antes de conseguir atacantes Psíquicos mais fortes.",
+        "Ataque 261 rende dano de raid, mas defesa 175 com stamina 163 dá poucos ciclos por batalha: leve cópias extras em vez de uma só.",
+        "Fora do Psíquico ele só tem legado (Shadow Ball e Last Resort), então sem Elite TM o kit é 100% Psíquico e qualquer Sombrio o para."
       ],
       "sinergias": [
         "Mewtwo",
@@ -4542,7 +4679,9 @@
         }
       ],
       "observacoes": [
-        "Resiste a Fantasma e Psíquico, comuns em ataques a ginásio."
+        "Resiste a Fantasma e Psíquico, comuns em ataques a ginásio.",
+        "No nível 50 ele chega a 2416 CP, ainda abaixo do teto de 2500 da Ultra: é um dos casos raros em que o XL serve para encostar no limite da liga.",
+        "Ataque 126 é baixíssimo: ele ganha por bulk 240/216 e desgaste, nunca por dano, então não conte com ele para fechar a partida."
       ],
       "sinergias": [
         "Skarmory",
@@ -4592,7 +4731,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Em Great ele fecha o cap perto do nível 18 e em Ultra perto do 29, então o XL só rende em raid de Fada contra chefe Dragão."
         },
         {
           "titulo": "Vale Buddy",
@@ -4610,7 +4750,9 @@
         }
       ],
       "observacoes": [
-        "Também uma boa opção em Great League com Charm."
+        "Na Grande Liga ele cabe no cap por volta do nível 18, então dá para montar um competitivo só com doce comum, sem XL.",
+        "Fada pura é imune a Dragão e resiste a Lutador, Inseto e Sombrio, com fraqueza só a Veneno e Aço: entrada segura em PvP.",
+        "Bulk 205/216 com ataque 203: ele ganha por acumulação de Charm, não por nuke, então precisa de shields e de turnos para funcionar."
       ],
       "sinergias": [
         "Xerneas",
@@ -4659,7 +4801,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Nível 50 rende em raid e na Mega Scizor, que herda o nível dele; nas ligas com cap ele já bate os 2500 antes do nível 30, então XL não serve."
         },
         {
           "titulo": "Vale Buddy",
@@ -4668,8 +4811,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Fury Cutter/X-Scissor já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado: Bullet Punch, Fury Cutter, X-Scissor e Iron Head saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -4727,17 +4870,18 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Em raid vale, sobretudo para alimentar a Mega Heracross e seu ataque 334; nas ligas com cap ele passa dos 2500 antes do nível 29 e o XL não tem função."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Disponibilidade varia por região/evento."
+          "motivo": "O XL vai para raid e para a Mega, que herda o nível pago: nas ligas com cap ele estoura os 2500 no nível 28 e o XL fica sem uso."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Counter/Close Combat já é um bom moveset padrão."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Counter com Megahorn ou Close Combat sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -4796,7 +4940,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "sim"
+          "status": "sim",
+          "motivo": "Nível 50 rende em raid e na Master League, que não têm cap de CP: com ataque 277 ele chega a 4239 de CP e o XL vira dano de verdade."
         },
         {
           "titulo": "Vale Buddy",
@@ -4806,7 +4951,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Dragon Tail/Outrage já é um bom moveset padrão."
+          "motivo": "Outrage é legado e só sai por Elite TM; sem ele a cobertura Dragão fica em Draco Meteor, que custa o dobro de energia e trava o ritmo."
         },
         {
           "titulo": "Transferir",
@@ -4814,8 +4959,9 @@
         }
       ],
       "observacoes": [
-        "A Mega Salamence aumenta bastante o dano em raids.",
-        "Também competitivo em Ultra League."
+        "Ataque 277 o coloca entre os melhores atacantes Dragão fora dos lendários, com Draco Meteor e Fire Blast dando cobertura em raid.",
+        "Defesa 168 com fraqueza dupla a Gelo (Dragão/Voador): use como nuke, entrando para bater e saindo antes do counter.",
+        "A Mega Salamence sobe para 310 de ataque com 251 de defesa, o que a torna útil até em raid longa de Dragão."
       ],
       "sinergias": [
         "Mega Salamence",
@@ -4865,7 +5011,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "PvP prioriza bulk; maximize com Great League em mente."
+          "motivo": "Na Great League ele fecha os 1500 CP já no nível 26, então XL só serve se o plano for Ultra, onde nem no nível 50 ele passa dos 2266."
         },
         {
           "titulo": "Vale Buddy",
@@ -4883,6 +5029,8 @@
         }
       ],
       "observacoes": [
+        "Defesa 201 e stamina 181 contra ataque de só 141: ele vence por bulk na Great League, com Dragon Breath enchendo energia e Sky Attack como saída.",
+        "Gelo bate duas vezes nele (Dragão e Voador): mesmo com bulk bom, não deixe Altaria de pé contra golpe de Gelo.",
         "A Mega Altaria ganha resistência a Lutador e Sombrio via tipo Fada."
       ],
       "sinergias": [
@@ -4938,12 +5086,12 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Disponibilidade varia por evento."
+          "motivo": "Em Great ele fecha 1500 perto do nível 21 e em Ultra encosta no cap já no 40, então o XL só serve para levar o atacante Sombrio ao 50 em raid."
         },
         {
           "titulo": "Vale Elite TM",
           "status": "nao",
-          "motivo": "Existem atacantes melhores para gastar uma TM rara."
+          "motivo": "Brutal Swing é o único legado e Dark Pulse comum já cobre o papel Sombrio: gaste a Elite TM em quem sobe de patamar, não nele."
         },
         {
           "titulo": "Transferir",
@@ -4951,7 +5099,9 @@
         }
       ],
       "observacoes": [
-        "A Mega Absol ajuda a compensar o atraso frente a outros atacantes Sombrio."
+        "Ataque 246 com defesa 120: entrega dano Sombrio alto por pouquíssimo tempo, então em raid você precisa de vários exemplares para revezar.",
+        "Snarl com Dark Pulse já é o kit dele; o legado Brutal Swing não muda o patamar frente a Yveltal, Darkrai e Tyranitar.",
+        "A Mega Absol sobe o ataque para 314 e é só aí que ele encosta nos atacantes Sombrio de topo."
       ],
       "sinergias": [
         "Yveltal",
@@ -5002,17 +5152,17 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "PvP prioriza IV baixo de Ataque; maximize só se for para ginásios."
+          "motivo": "Ele para em 2383 de CP no nível 50, ou seja, nunca chega ao cap da Ultra: só maximize se o plano for levá-lo para lá ou para ginásio."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Disponibilidade varia por evento."
+          "motivo": "Na Great, onde ele é muro, o CP passa de 1500 já no nível 25 e o XL não serve; só caminhe se o destino for Ultra ou ginásio."
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Air Slash/Sky Attack já é um bom moveset defensivo."
+          "status": "nao",
+          "motivo": "Ele não tem legado: Air Slash, Steel Wing, Sky Attack, Brave Bird e Flash Cannon saem por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -5020,7 +5170,9 @@
         }
       ],
       "observacoes": [
-        "Resiste a Normal, Grama, Inseto, Fada e mais — clássico defensor de Great League."
+        "Resiste a Normal, Grama, Inseto, Fada e mais — clássico defensor de Great League.",
+        "Só duas fraquezas (Fogo e Elétrico), com imunidade a Terra e Veneno: quase nenhum ataque comum passa dobrado por ele.",
+        "Ataque base 148 é baixo: ele aguenta e força escudo, mas quem fecha a partida tem que ser o parceiro."
       ],
       "sinergias": [
         "Registeel",
@@ -5070,8 +5222,8 @@
         },
         {
           "titulo": "Vale maximizar",
-          "status": "atencao",
-          "motivo": "PvP prioriza IV baixo de Ataque; maximize só se for para ginásios."
+          "status": "sim",
+          "motivo": "Com IV de Ataque baixo ele só encosta em 1500 CP no nível 50: aqui o XL é justamente o que libera o teto dele na Great League."
         },
         {
           "titulo": "Vale Buddy",
@@ -5080,8 +5232,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Smack Down/Stone Edge já é um bom moveset defensivo."
+          "status": "nao",
+          "motivo": "Ele não tem golpe legado: Smack Down, Stone Edge e Flash Cannon saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -5089,7 +5241,9 @@
         }
       ],
       "observacoes": [
-        "Resiste a Normal, Voador, Veneno, Pedra, Fogo e mais graças ao tipo duplo."
+        "Pedra/Aço resiste a oito tipos e é imune a Veneno, e Fogo passa neutro: o que o Aço dobra, a Pedra corta.",
+        "Lutador e Terra batem em quádruplo e Água em dobro — três fraquezas só, mas quem tem uma delas encerra a troca na hora.",
+        "Ataque base 94 significa dano de saída quase nulo: ele ganha tempo e escudos, mas quem fecha a partida tem que ser outro do time."
       ],
       "sinergias": [
         "Skarmory",
@@ -5139,7 +5293,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "PvP prioriza bulk; maximize com Great League em mente."
+          "motivo": "Na Grande Liga ele fecha o cap perto do nível 24, e ali XL não muda nada; o nível 50 só faz sentido na Ultra, onde ele para em 2493 CP."
         },
         {
           "titulo": "Vale Buddy",
@@ -5157,7 +5311,9 @@
         }
       ],
       "observacoes": [
-        "Pouco relevante em raids — o valor dele está quase todo em PvP."
+        "Ataque 176 é baixo demais para raid; o valor dele está em PvP, onde ele usa o bulk 155/186 para forçar trocas.",
+        "Leva dano quádruplo de Pedra e dobrado de Água e Elétrico, mas é imune a Terra: bom para entrar em Terra, péssimo contra Pedra.",
+        "Incinerate é legado e é o que o torna jogável; com Peck ou Fire Spin ele não sustenta pressão na Grande Liga."
       ],
       "sinergias": [
         "Togekiss",
@@ -5639,16 +5795,15 @@
         {
           "titulo": "Vale Elite TM",
           "status": "nao",
-          "motivo": "Bullet Seed é o golpe legado (só via Elite TM), mas Razor Leaf, o padrão atual, já rende mais DPS/energia, então não compensa gastar o item nele."
+          "motivo": "Os legados são Bullet Seed, que gera energia rápido mas bate fraco, e Last Resort, que não é de Grama: Razor Leaf rende mais, não gaste o item."
         },
         {
           "titulo": "Transferir",
-          "status": "nao",
-          "motivo": "Guarde apenas para cobertura contra Rocket, sem prioridade de recursos."
+          "status": "nao"
         }
       ],
       "observacoes": [
-        "Bullet Seed (golpe legado) é lento em geração de energia; Razor Leaf, o padrão atual, já rende mais DPS, o que deixa Leafeon atrás de outros atacantes de Grama mesmo assim.",
+        "Ataque 216 com bulk 219/163: mesmo com Razor Leaf, que é o melhor rápido dele, fica atrás de Mega Venusaur, Roserade e Tangrowth em raid de Grama.",
         "Útil como contra rápido de baixo custo contra grunts da Equipe GO Rocket com Pokémon de Terra/Água/Pedra."
       ],
       "sinergias": [
@@ -5914,7 +6069,8 @@
         },
         {
           "titulo": "Vale Buddy",
-          "status": "nao"
+          "status": "nao",
+          "motivo": "Com maximizar em 'não' e sem liga onde ele encaixe, o doce XL não teria destino; ande com um Fogo que você vá subir de verdade."
         },
         {
           "titulo": "Vale Elite TM",
@@ -6123,7 +6279,8 @@
         },
         {
           "titulo": "Vale Buddy",
-          "status": "nao"
+          "status": "nao",
+          "motivo": "Doce de Tepig só serve para chegar a um Emboar de nível 40, e com defesa 127 ele não sustenta raid longa: caminhe com outro projeto."
         },
         {
           "titulo": "Vale Elite TM",
@@ -6402,7 +6559,7 @@
         {
           "titulo": "Vale Buddy",
           "status": "nao",
-          "motivo": "Froakie tem disponibilidade limitada em eventos e pesquisas, não compensa dedicar buddy a ele."
+          "motivo": "XL não tem destino nele: fecha a Great no nível 20 e a Ultra no 36, e com defesa 152 ele não sustenta o nível 50 em raid."
         },
         {
           "titulo": "Vale Elite TM",
@@ -7370,7 +7527,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "nao",
-          "motivo": "Ataque muito baixo (65 base) limita bastante o potencial ofensivo mesmo maximizado."
+          "motivo": "Ataque 129 não vira dano nem no nível 50; ele até cabe no cap da Ultra (2417 no 50), mas gastar XL num tanque de nicho rende pouco."
         },
         {
           "titulo": "Vale Buddy",
@@ -7379,7 +7536,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "nao"
+          "status": "nao",
+          "motivo": "Não há golpe legado no movepool dele: Snarl/Air Slash com Foul Play, Dark Pulse e Shadow Ball saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -7516,7 +7674,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "nao"
+          "status": "nao",
+          "motivo": "Não tem golpe legado: Bite ou Waterfall com Hydro Pump e Crunch saem todos por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -7585,7 +7744,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "nao"
+          "status": "nao",
+          "motivo": "Sem golpe legado: Incinerate com Earth Power, Overheat ou Earthquake sai todo por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -7654,12 +7814,12 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "nao"
+          "status": "atencao",
+          "motivo": "Earth Power é legado dele e a Elite TM é a única via para esse golpe; em tier B, gaste só se ele for jogar PvP de verdade."
         },
         {
           "titulo": "Transferir",
-          "status": "nao",
-          "motivo": "Ainda vale manter por uso casual em ligas informais, mesmo sem prioridade de investimento."
+          "status": "nao"
         }
       ],
       "observacoes": [
@@ -7876,7 +8036,8 @@
       ],
       "sinergias": [
         "Registeel",
-        "Bastiodon"
+        "Bastiodon",
+        "Azumarill"
       ]
     },
     "go": {
@@ -10735,7 +10896,7 @@
         {
           "titulo": "Vale Buddy",
           "status": "sim",
-          "motivo": "Buddy é a fonte de doce XL fora das janelas limitadas em que ele fica disponível."
+          "motivo": "Caminhar é o que paga os níveis 41-50: com ataque 273 ele sai de 3385 para 3827 de CP, e em raid não há cap para desperdiçar isso."
         },
         {
           "titulo": "Vale Elite TM",
