@@ -5836,7 +5836,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Bom atacante bulky de Água em PvP e ótima escolha contra líderes do Rocket que usam Fogo e Rocha."
+          "motivo": "Bom atacante bulky de Água em PvP e ótima escolha contra líderes do Rocket que usam Fogo e Pedra."
         },
         {
           "titulo": "Vale maximizar",
@@ -6138,7 +6138,7 @@
       ],
       "observacoes": [
         "A dupla tipagem Fogo/Lutador soma muitas fraquezas (Água, Terra, Voador, Psíquico), tornando-o frágil apesar do ataque alto.",
-        "Serve como atacante de Lutador contra líderes do Rocket que usam tipos Normal, Gelo ou Rocha."
+        "Serve como atacante de Lutador contra líderes do Rocket que usam tipos Normal, Gelo ou Pedra."
       ],
       "sinergias": [
         "Mega Lucario",
@@ -7733,7 +7733,7 @@
       ],
       "observacoes": [
         "Resiste apenas a Água e Gelo — a fraqueza natural do Gelo a Fogo e Aço cancela a resistência da Água, deixando esses dois tipos neutros — mas ainda assim é um bom switch-in defensivo na Ultra League apesar do ataque mediano.",
-        "Fraco a Elétrico, Lutador, Grama e Rocha — cuidado ao enfrentar esses tipos em PvP."
+        "Fraco a Elétrico, Lutador, Grama e Pedra — cuidado ao enfrentar esses tipos em PvP."
       ],
       "sinergias": [
         "Registeel",
@@ -8008,7 +8008,7 @@
         }
       ],
       "observacoes": [
-        "A fast move Hypnosis (evento de 2020) gera energia muito rápido, permitindo emendar dois golpes carregados na Great League.",
+        "A fast move Hypnosis gera energia muito rápido, permitindo emendar dois golpes carregados na Great League.",
         "Sem esse golpe exclusivo, o Politoed padrão com Mud Shot é bem mais fraco e perde relevância competitiva."
       ],
       "sinergias": [
@@ -9975,7 +9975,7 @@
         }
       ],
       "observacoes": [
-        "Disponibilidade restrita: apareceu só em janela de evento (estreia no GO Fest 2023) e Míticos não podem ser negociados — sem um novo evento, quem não pegou fica de fora.",
+        "Disponibilidade restrita: apareceu só em janela de evento e Míticos não podem ser negociados — sem um novo evento, quem não pegou fica de fora.",
         "Mesmos stats base de Terrakion com typing Água/Lutador: serve de segundo Lutador e segundo Água, sem ser o melhor em nenhum dos dois papéis.",
         "Tem cinco fraquezas x2 (Elétrico, Grama, Voador, Psíquico e Fada), o que limita bastante onde ele aguenta ficar em pé."
       ],
@@ -11971,6 +11971,430 @@
       "buddy": {
         "necessario": true,
         "objetivo": "Juntar doce e XL de Axew para maximizar em Master League Premier."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#812": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids",
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque 239 com stamina 225: é o mais durável dos iniciais de Galar e serve como Grama de reserva em raid."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "Ele cabe no cap da Great League muito antes do nível 50, e em raid o dano extra não muda o resultado."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "atencao",
+          "motivo": "Só compensa se o plano for Great League, onde o XL ajuda a encaixar o nível certo perto de 1500 CP."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Não há golpe legado ou exclusivo confirmado para ele; o kit obtido na evolução é o que existe."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "atencao",
+          "motivo": "Guarde um exemplar de IV alto e passe as duplicatas: o gargalo dessa linha é doce, não Pokémon."
+        }
+      ],
+      "observacoes": [
+        "Ataque 239 com bulk 168/225 dá a ele a melhor sobrevivência dos três iniciais de Galar, mas em raid de Grama ele fica atrás de Kartana, Roserade e dos Grama sombrios.",
+        "O nicho real é a Great League contra Água/Terra: Swampert, Whiscash e Quagsire levam dano dobrado duas vezes de Grama, e ele resiste a Água, Grama, Elétrico e Terra.",
+        "Grama puro tem cinco fraquezas (Fogo, Gelo, Veneno, Voador e Inseto): use como atacante, nunca como defensor de ginásio."
+      ],
+      "sinergias": [
+        "Kartana",
+        "Roserade",
+        "Tangrowth"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#815": {
+    "estrategia": {
+      "tier": "C",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Guardar um IV alto custa pouco e ele cobre Grama, Gelo, Inseto e Aço como Fogo de reserva."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "Ataque 238 num pool de Fogo saturado: nível 50 não tira ele do banco, gaste o XL em outro atacante."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "nao",
+          "motivo": "Sem uso fixo em raid e sem nicho de PvP, o XL não tem destino: use Buddy em algo que você vai jogar."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Nenhum golpe legado ou exclusivo confirmado; o moveset dele é o obtido normalmente na evolução."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "atencao",
+          "motivo": "Se já tem Fogo investido, só um exemplar de IV alto justifica o espaço; o resto vira doce."
+        }
+      ],
+      "observacoes": [
+        "Ataque 238 com bulk fraca (163/190) e Fogo puro num pool cheio de opções melhores — Reshiram, Chandelure e os Charizard sombrios: ele é preenchimento de time, não peça de raid.",
+        "O lado bom do Fogo puro é defensivo: só três fraquezas (Água, Terra e Pedra) contra resistência a Fogo, Grama, Gelo, Inseto, Aço e Fada, o que ajuda em chefe de Grama, Gelo e Aço.",
+        "Em PvP ele não tem espaço: Fogo puro sem bulk perde as trocas na Great e na Ultra — invista só por gosto."
+      ],
+      "sinergias": [
+        "Reshiram",
+        "Chandelure",
+        "Charizard"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#818": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque 262 é altíssimo para um Água não lendário; guarde um IV alto como dano de raid de orçamento."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "nao",
+          "motivo": "Defesa 142 faz ele desmaiar antes de aproveitar o nível 50; dois no 40 rendem mais que um maximizado."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "nao",
+          "motivo": "Não tem espaço em Great nem Ultra League, e em raid o nível 40 já entrega quase todo o dano."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Nenhum golpe legado ou exclusivo confirmado para ele; o que aprende na evolução é o kit final."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "atencao",
+          "motivo": "Um exemplar de ataque alto basta; as duplicatas viram doce, que é o recurso escasso nessa linha."
+        }
+      ],
+      "observacoes": [
+        "Glass cannon puro: ataque 262 entrega dano de Água perto de lendário, mas defesa 142 e stamina 172 tiram ele cedo da raid e queimam Revive.",
+        "Água puro tem só duas fraquezas (Elétrico e Grama) e resiste a Fogo, Água, Gelo e Aço — bom time contra chefe de Fogo, Pedra e Terra.",
+        "Serve como substituto barato de Kyogre em raid quando faltam lendários; sem nicho de PvP, invista em um exemplar só."
+      ],
+      "sinergias": [
+        "Kyogre",
+        "Swampert",
+        "Empoleon"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": false,
+        "objetivo": ""
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#908": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque 233 em Grama/Sombrio: um só Pokémon cobre dois tipos de raid sem custo de lendário. Guarde o de melhor IV."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Nível 50 não muda o papel dele: segue atrás de Roserade no Grama e de Hydreigon no Sombrio. Maximize só se faltar alternativa."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "A linha Sprigatito tem três estágios e cobra bastante doce; andar com ele encurta o caminho até a evolução final."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Nunca teve golpe legado nem exclusivo de evento: o que ele sabe se troca com TM comum, sem gastar item raro."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Sem custo de lendário: serve como dano Grama e Sombrio barato para fechar equipe de seis em raid.",
+        "Defesa 153 com stamina 183 é frágil — entrega dano nos primeiros segundos e desmaia antes de raid longa acabar; nas ligas com cap o ataque alto derruba o stat product e não sobra bulk.",
+        "Grama/Sombrio soma sete fraquezas (Inseto em dobro, mais Fogo, Gelo, Veneno, Voador, Lutador e Fada), mas é imune a Psíquico e resiste a Água, Grama, Elétrico, Terra, Fantasma e Sombrio."
+      ],
+      "sinergias": [
+        "Metagross",
+        "Heatran",
+        "Skarmory"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar doce para completar a linha Sprigatito e XL caso decida subir o nível para raids."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#911": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Defensor",
+      "melhorPara": [
+        "PvP"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Fogo/Fantasma é typing incomum: imune a Normal e Lutador, com 178 de defesa e 232 de stamina para segurar troca em liga com cap."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Nível 50 só pesa na Master League, onde ele não tem espaço; em Great e Ultra o que interessa é XL para chegar no cap."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Doce de buddy encurta os três estágios da linha Fuecoco, e o XL é o que permite ajustar o nível dentro do limite de CP."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Não há golpe legado nem de evento passado no histórico dele; qualquer ajuste de moveset sai com TM comum."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Peça de nicho de liga com cap, não de raid: 207 de ataque não compete com atacante Fogo ou Fantasma de verdade, e a bulk é o que justifica o slot.",
+        "As duas imunidades (Normal e Lutador) e a resistência dupla a Inseto ajudam, mas as cinco fraquezas são a tipos que aparecem em toda liga — Água, Terra, Pedra, Fantasma e Sombrio —, então não é o typing blindado que parece.",
+        "Não depende de lendário; antes de gastar pó, teste ele numa liga com cap, porque o valor prático depende do moveset que ele recebeu."
+      ],
+      "sinergias": [
+        "Mandibuzz",
+        "Venusaur",
+        "Registeel"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Juntar doce para evoluir a linha Fuecoco e XL para ajustar o nível no cap da Great League."
+      },
+      "hundos": {
+        "semClima": 0,
+        "comClima": 0
+      },
+      "quaseHundos": {
+        "iv98": 0,
+        "iv96": 0
+      }
+    }
+  },
+  "#914": {
+    "estrategia": {
+      "tier": "B",
+      "funcao": "Atacante",
+      "melhorPara": [
+        "Raids"
+      ]
+    },
+    "conhecimento": {
+      "decisoes": [
+        {
+          "titulo": "Vale guardar",
+          "status": "sim",
+          "motivo": "Ataque 236 em Água/Lutador cobre dois tipos muito pedidos em raid num Pokémon que não custa lendário."
+        },
+        {
+          "titulo": "Vale maximizar",
+          "status": "atencao",
+          "motivo": "Contra Lucario no Lutador e Kyogre na Água ele perde de longe; maximize só se esses dois tipos forem buraco real na sua coleção."
+        },
+        {
+          "titulo": "Vale Buddy",
+          "status": "sim",
+          "motivo": "Os três estágios de Quaxly pedem muito doce; buddy é a forma mais barata de fechar a evolução e ainda acumular XL."
+        },
+        {
+          "titulo": "Vale Elite TM",
+          "status": "nao",
+          "motivo": "Entrou no jogo sem golpe exclusivo para resgatar; guarde a Elite TM para lendário com moveset legado."
+        },
+        {
+          "titulo": "Transferir",
+          "status": "nao"
+        }
+      ],
+      "observacoes": [
+        "Defesa 159 e stamina 198 seguram pouco: é preenchimento de equipe de seis em raid, não pilar, e o ataque alto atrapalha o stat product nas ligas com cap.",
+        "Água/Lutador tem cinco fraquezas (Elétrico, Grama, Voador, Psíquico e Fada) e resiste a Fogo, Água, Gelo, Aço, Pedra, Inseto e Sombrio.",
+        "Barato de montar: é a opção de emergência para raid Água ou Lutador enquanto faltar um Terrakion ou um atacante Água de topo."
+      ],
+      "sinergias": [
+        "Excadrill",
+        "Talonflame",
+        "Togekiss"
+      ]
+    },
+    "go": {
+      "estado": {
+        "tipo": "Nenhum",
+        "valeInvestir": false,
+        "motivo": ""
+      },
+      "shadow": {
+        "possuiShadow": false,
+        "recomendadoPurificar": false
+      },
+      "buddy": {
+        "necessario": true,
+        "objetivo": "Andar com ele para fechar os doces das duas evoluções da linha Quaxly."
       },
       "hundos": {
         "semClima": 0,
