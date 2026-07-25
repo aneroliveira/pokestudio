@@ -81,3 +81,68 @@ export function calcularHundosPorNumero(
 
   return calcularHundos(base);
 }
+
+// =========================
+// CP máximo por nível
+// =========================
+
+export interface NivelReferencia {
+  nivel: number;
+  /** De onde vem um Pokémon capturado nesse nível. */
+  contexto: string;
+}
+
+/**
+ * Níveis de referência do Pokémon GO, do maior para o menor — o teto de
+ * nível varia conforme a origem do encontro:
+ * - pesquisa de campo entrega nível 15;
+ * - chefes de raid e ovos entregam nível 20 (raid com clima favorável, 25);
+ * - capturas selvagens vão até o nível 30 (35 com clima favorável);
+ * - nível 40 é o teto sem doce XL, e 50 o teto absoluto.
+ *
+ * São tetos por origem, não o nível de um exemplar qualquer: raid e ovo são
+ * fixos, mas captura selvagem varia bem abaixo do teto.
+ */
+export const NIVEIS_REFERENCIA: NivelReferencia[] = [
+  { nivel: 50, contexto: "Máximo (com XL)" },
+  { nivel: 40, contexto: "Máximo (sem XL)" },
+  { nivel: 35, contexto: "Selvagem com clima" },
+  { nivel: 30, contexto: "Selvagem (teto)" },
+  { nivel: 25, contexto: "Raid com clima" },
+  { nivel: 20, contexto: "Raid e Ovo" },
+  { nivel: 15, contexto: "Pesquisa de campo" },
+];
+
+export interface CPNivel extends NivelReferencia {
+  cp: number;
+}
+
+/**
+ * CP de um 100% (15/15/15) em cada nível de referência — a leitura de
+ * "CP máximo por nível" usada pela comunidade para reconhecer de onde
+ * veio um exemplar perfeito.
+ */
+export function calcularCPPorNivel(base: BaseStatsGO): CPNivel[] {
+  const hundo = { atk: 15, def: 15, sta: 15 };
+
+  return NIVEIS_REFERENCIA.map((referencia) => ({
+    ...referencia,
+    cp: calcularCP(base, hundo, referencia.nivel),
+  }));
+}
+
+/**
+ * Idem, a partir do número da Pokédex. Retorna undefined quando não há
+ * base stats na fonte (Megas, formas alternativas, número vazio).
+ */
+export function calcularCPPorNivelPorNumero(
+  numero: string,
+): CPNivel[] | undefined {
+  const dexNr = Number(numero.replace("#", ""));
+  if (!dexNr) return undefined;
+
+  const base = obterBaseStatsGO(dexNr);
+  if (!base) return undefined;
+
+  return calcularCPPorNivel(base);
+}
