@@ -49,9 +49,8 @@ function IconesTipo({
 }
 
 export function PreviewTab({ pokemon }: PreviewTabProps) {
-  const { fraquezas, resistencias, climasFavoraveis } = calcularDerivados(
-    pokemon.oficial.tipos,
-  );
+  const { fraquezas, resistencias, imunidades, climasFavoraveis } =
+    calcularDerivados(pokemon.oficial.tipos);
 
   return (
     <div className="space-y-8">
@@ -70,6 +69,13 @@ export function PreviewTab({ pokemon }: PreviewTabProps) {
           <p className="text-sm font-medium">Resistências</p>
           <IconesTipo tipos={resistencias} className="bg-good" />
         </div>
+
+        {imunidades.length > 0 && (
+          <div className="space-y-1">
+            <p className="text-sm font-medium">Imunidades</p>
+            <IconesTipo tipos={imunidades} className="bg-good" />
+          </div>
+        )}
 
         <div className="space-y-1">
           <p className="text-sm font-medium">Climas favoráveis</p>

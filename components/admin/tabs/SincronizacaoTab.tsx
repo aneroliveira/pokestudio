@@ -9,6 +9,7 @@ import {
   carregarStudioMap,
   salvarStudio,
 } from "@/services/pokemon/studioStore";
+import { formatarNomePokemon } from "@/utils";
 
 type SincronizacaoTabProps = {
   pokemon: Pokemon;
@@ -16,13 +17,6 @@ type SincronizacaoTabProps = {
   onSalvo: () => void;
   onSincronizado: (studio: PokemonStudio) => void;
 };
-
-function formatarNome(nomeEn: string) {
-  return nomeEn
-    .split("-")
-    .map((parte) => parte.charAt(0).toUpperCase() + parte.slice(1))
-    .join(" ");
-}
 
 export function SincronizacaoTab({
   pokemon,
@@ -105,7 +99,7 @@ export function SincronizacaoTab({
                 onClick={() => importar(item.nomeEn)}
                 className="cursor-pointer border-b border-border p-3 text-sm transition-colors hover:bg-accent last:border-b-0"
               >
-                {item.numero} • {formatarNome(item.nomeEn)}
+                {item.numero} • {formatarNomePokemon(item.nomeEn)}
               </div>
             ))}
           </div>

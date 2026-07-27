@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import type { ItemIndicePokemon } from "@/models/indice";
 import type { StudioMap } from "@/services/pokemon/studioStore";
-import { obterImagemPokemon } from "@/utils";
+import { obterImagemPokemon, formatarNomePokemon } from "@/utils";
 
 type SearchBarProps = {
   value: string;
@@ -16,13 +16,6 @@ type SearchBarProps = {
   studioMap?: StudioMap;
   autoFocus?: boolean;
 };
-
-function formatarNome(nomeEn: string) {
-  return nomeEn
-    .split("-")
-    .map((parte) => parte.charAt(0).toUpperCase() + parte.slice(1))
-    .join(" ");
-}
 
 export function SearchBar({
   value,
@@ -73,7 +66,7 @@ export function SearchBar({
                 />
 
                 <p className="flex-1 font-medium">
-                  {item.numero} • {formatarNome(item.nomeEn)}
+                  {item.numero} • {formatarNomePokemon(item.nomeEn)}
                 </p>
 
                 {tier && <PriorityBadge value={tier} />}

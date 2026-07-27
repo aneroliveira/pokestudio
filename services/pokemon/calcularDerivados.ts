@@ -1,21 +1,33 @@
 import type { ClimaPokemon, TipoPokemon } from "@/models/pokemon";
 import { RELACOES_DEFENSIVAS } from "@/constants/typeChart";
 import { CLIMA_POR_TIPO } from "@/constants/typeWeather";
+import { calcularEfetividadeOfensiva } from "./efetividade";
 
 export interface DerivadosCalculados {
-  fraquezas: TipoPokemon[];
-  resistencias: TipoPokemon[];
+  // Defensivo — dano que o Pokémon RECEBE:
+  fraquezas: TipoPokemon[]; // recebe > 1× (teme)
+  resistencias: TipoPokemon[]; // recebe entre 0 e 1× (aguenta)
+  imunidades: TipoPokemon[]; // recebe 0× (não sofre)
+  // Ofensivo — dano que o Pokémon CAUSA com golpes STAB. Usa o melhor
+  // multiplicador entre os tipos do Pokémon (escolhe-se o golpe ideal):
+  fortesContra: TipoPokemon[]; // causa > 1× (supereficaz)
+  fracosContra: TipoPokemon[]; // causa < 1× (resistido ou nulo)
   climasFavoraveis: ClimaPokemon[];
 }
+
+const TODOS_OS_TIPOS = Object.keys(
+  RELACOES_DEFENSIVAS,
+) as TipoPokemon[];
 
 /**
  * Calcula os dados derivados de um Pokémon a partir dos seus tipos.
  *
  * RFC-001 — dados derivados nunca são persistidos; sempre calculados.
  *
- * Multiplica os fatores defensivos de cada tipo (×2 fraqueza, ×0.5
- * resistência, ×0 imunidade); fraquezas têm multiplicador > 1 e
- * resistências 0 < multiplicador < 1 (imunidades ficam de fora de ambos).
+ * Defesa: multiplica os fatores defensivos de cada tipo (×2 fraqueza, ×0.5
+ * resistência, ×0 imunidade) — fraquezas têm multiplicador > 1, resistências
+ * 0 < multiplicador < 1 e imunidades multiplicador 0.
+ * Ataque: derivado da efetividade ofensiva (fonte única em `efetividade.ts`).
  */
 export function calcularDerivados(
   tipos: TipoPokemon[],
@@ -48,6 +60,28 @@ export function calcularDerivados(
     )
     .map(([tipo]) => tipo);
 
+  const imunidades = Array.from(multiplicadores.entries())
+    .filter(([, multiplicador]) => multiplicador === 0)
+    .map(([tipo]) => tipo);
+
+  // Ofensivo: para cada tipo alvo, o melhor multiplicador entre os tipos do
+  // Pokémon (escolhe-se o golpe STAB mais eficaz). Fonte única: efetividade.ts.
+  const fortesContra: TipoPokemon[] = [];
+  const fracosContra: TipoPokemon[] = [];
+
+  if (tipos.length > 0) {
+    for (const alvo of TODOS_OS_TIPOS) {
+      const melhor = Math.max(
+        ...tipos.map((tipo) =>
+          calcularEfetividadeOfensiva(tipo, [alvo]),
+        ),
+      );
+
+      if (melhor > 1) fortesContra.push(alvo);
+      else if (melhor < 1) fracosContra.push(alvo);
+    }
+  }
+
   const climasFavoraveis = Array.from(
     new Set(
       tipos.flatMap((tipo) => {
@@ -57,5 +91,12 @@ export function calcularDerivados(
     ),
   );
 
-  return { fraquezas, resistencias, climasFavoraveis };
+  return {
+    fraquezas,
+    resistencias,
+    imunidades,
+    fortesContra,
+    fracosContra,
+    climasFavoraveis,
+  };
 }
