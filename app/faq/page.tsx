@@ -67,7 +67,7 @@ const TOPICOS: Topico[] = [
           <TypeIcon tipo="Water" className="bg-secondary" />
           <TypeIcon tipo="Dragon" className="bg-secondary" />
           <span className="text-sm text-muted-foreground">
-            passe o mouse (ou toque no celular) pra ver o nome
+            toque (ou clique) no ícone pra ver o nome
           </span>
         </div>
         <p>
@@ -125,8 +125,7 @@ const TOPICOS: Topico[] = [
           A cor do chip indica o veredito: <span className="text-good-foreground">verde = sim</span>,{" "}
           <span className="text-attention-foreground">amarelo = depende do contexto</span>,{" "}
           <span className="text-bad-foreground">vermelho = não</span>. Quando o
-          curador registra um motivo, ele aparece ao passar o mouse (ou tocar) no
-          chip.
+          curador registra um motivo, ele aparece ao tocar (ou clicar) no chip.
         </p>
       </>
     ),

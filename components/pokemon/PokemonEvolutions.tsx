@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { ArrowRight, Coins, Dna, Gem, Info } from "lucide-react";
 import type {
@@ -9,7 +10,6 @@ import type {
 } from "@/models/pokemon";
 import type { ItemIndicePokemon } from "@/models/indice";
 import { SectionCard } from "@/components/ui/SectionCard";
-import { Tooltip } from "@/components/ui/Tooltip";
 import {
   ICONE_DOCE,
   ICONE_GENERICO_ITEM,
@@ -38,6 +38,7 @@ function SetaComRequisito({
 }: {
   requisito?: RequisitoEvolucao;
 }) {
+  const [condicaoAberta, setCondicaoAberta] = useState(false);
   const iconeItem = requisito?.item
     ? urlIconeItemEvolucao(requisito.item)
     : null;
@@ -81,16 +82,27 @@ function SetaComRequisito({
           )}
 
           {requisito.quest && (
-            // Trigger do tooltip é um elemento à parte do card clicável —
-            // em telas de toque, tocar aqui só abre a dica; tocar no card
-            // (fora deste elemento) navega normalmente, sem os dois toques
-            // disputarem o mesmo alvo.
-            <Tooltip content={traduzirCondicaoEvolucao(requisito.quest)}>
-              <span className="flex items-center gap-0.5 text-primary">
+            // Toca em "condição" e o texto abre inline, ali mesmo — sem
+            // tooltip por hover nem balão flutuante que sai da tela. O botão
+            // é um elemento à parte do card clicável, então tocá-lo só
+            // expande a condição; tocar no card (fora dele) navega normal.
+            <>
+              <button
+                type="button"
+                onClick={() => setCondicaoAberta((v) => !v)}
+                aria-expanded={condicaoAberta}
+                className="flex items-center gap-0.5 text-primary"
+              >
                 <Info className="h-3 w-3" />
                 condição
-              </span>
-            </Tooltip>
+              </button>
+
+              {condicaoAberta && (
+                <span className="mt-0.5 rounded-md bg-accent px-1.5 py-1 text-[10px] leading-tight text-foreground">
+                  {traduzirCondicaoEvolucao(requisito.quest)}
+                </span>
+              )}
+            </>
           )}
         </div>
       )}
