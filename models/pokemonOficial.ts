@@ -42,6 +42,9 @@ export interface FormaPokemon {
   id: string;
   nome: string;
   categoria: CategoriaFormaPokemon;
+  // Sprite pixelado da variedade (PokéAPI). Pode ser "" quando a variedade
+  // não tem sprite publicado no repositório.
+  sprite: string;
 }
 
 // =========================

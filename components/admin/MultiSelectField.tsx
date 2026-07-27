@@ -18,7 +18,7 @@ export function MultiSelectField({
         {options.map((option) => (
           <label
             key={option}
-            className="flex cursor-pointer items-center gap-2 rounded-lg border border-zinc-200 px-3 py-2 text-sm"
+            className="flex cursor-pointer items-center gap-2 rounded-lg border border-border px-3 py-2 text-sm"
           >
             <input
               type="checkbox"

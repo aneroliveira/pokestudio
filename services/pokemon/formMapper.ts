@@ -83,8 +83,20 @@ export function obterFormasPokemon(
             id: variedade.pokemon.name,
             nome: formatarNomeForma(partes),
             categoria: obterCategoriaForma(partes),
+            sprite: spriteDaVariedade(variedade.pokemon.url),
         };
     });
+}
+
+// Sprite pixelado da variedade, derivado do id numérico presente na URL da
+// PokéAPI (ex.: ".../pokemon/10080/"). Usa o sprite pequeno (front_default),
+// mais completo para formas do que a arte oficial.
+function spriteDaVariedade(url: string): string {
+    const id = url.match(/\/pokemon\/(\d+)\/?$/)?.[1];
+
+    return id
+        ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
+        : "";
 }
 
 function capitalizar(texto: string): string {

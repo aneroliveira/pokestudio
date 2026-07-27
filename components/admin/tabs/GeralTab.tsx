@@ -9,10 +9,10 @@ type GeralTabProps = {
 function Campo({ label, valor }: { label: string; valor: string }) {
   return (
     <div>
-      <p className="text-xs uppercase tracking-wide text-zinc-400">
+      <p className="text-xs uppercase tracking-wide text-muted-foreground">
         {label}
       </p>
-      <p className="text-sm font-medium text-zinc-800">{valor || "—"}</p>
+      <p className="text-sm font-medium text-foreground">{valor || "—"}</p>
     </div>
   );
 }
@@ -30,23 +30,22 @@ export function GeralTab({ pokemon }: GeralTabProps) {
             alt={nome.ptBR || "Pokémon"}
             width={56}
             height={56}
-            className="shrink-0 rounded-lg bg-zinc-50"
+            className="shrink-0 rounded-lg bg-muted"
           />
         ) : (
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-dashed border-zinc-300 bg-zinc-50 text-xs text-zinc-400">
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-dashed border-border bg-muted text-xs text-muted-foreground">
             —
           </div>
         )}
 
-        <div className="grid flex-1 grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="grid flex-1 grid-cols-2 gap-3 sm:grid-cols-3">
           <Campo label="Número" valor={numero} />
-          <Campo label="Nome (pt-BR)" valor={nome.ptBR} />
-          <Campo label="Nome (en-US)" valor={nome.enUS} />
+          <Campo label="Nome" valor={nome.ptBR} />
           <Campo label="Região" valor={regiao} />
         </div>
       </div>
 
-      <p className="text-xs text-zinc-400">
+      <p className="text-xs text-muted-foreground">
         {dadosImportados
           ? "Sincronizado da PokéAPI — não editável aqui."
           : "Sincronize um Pokémon na aba Sincronização."}

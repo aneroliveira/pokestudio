@@ -19,7 +19,7 @@ export function JsonPreview({ pokemon }: JsonPreviewProps) {
   }
 
   return (
-    <section className="min-w-0 rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
+    <section className="min-w-0 rounded-xl border border-border bg-card p-6 shadow-sm">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <button
           type="button"
@@ -27,7 +27,7 @@ export function JsonPreview({ pokemon }: JsonPreviewProps) {
           className="flex items-center gap-2 text-xl font-semibold"
         >
           JSON
-          <span className="text-sm font-normal text-zinc-500">
+          <span className="text-sm font-normal text-muted-foreground">
             {aberto ? "▲ ocultar" : "▼ ver JSON"}
           </span>
         </button>
@@ -36,7 +36,7 @@ export function JsonPreview({ pokemon }: JsonPreviewProps) {
           <button
             type="button"
             onClick={copyToClipboard}
-            className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700"
+            className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition hover:bg-primary/90"
           >
             {copied ? "Copiado!" : "Copiar para a área de transferência"}
           </button>
@@ -44,7 +44,7 @@ export function JsonPreview({ pokemon }: JsonPreviewProps) {
       </div>
 
       {aberto && (
-        <pre className="mt-6 max-h-[calc(100vh-14rem)] w-full overflow-auto rounded bg-zinc-100 p-4 text-sm">
+        <pre className="mt-6 max-h-[calc(100vh-14rem)] w-full overflow-auto rounded bg-muted p-4 text-sm">
           {json}
         </pre>
       )}

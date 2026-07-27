@@ -152,7 +152,7 @@ export function GoTab({ pokemon, editor }: GoTabProps) {
             </div>
           </div>
         ) : (
-          <p className="text-xs text-zinc-400">
+          <p className="text-xs text-muted-foreground">
             Sem base stats do GO para este número (Megas/formas alternativas
             não estão cobertas) — preencha manualmente.
           </p>
