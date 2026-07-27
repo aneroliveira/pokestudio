@@ -14,6 +14,17 @@ type Topico = {
   corpo: React.ReactNode;
 };
 
+// Legenda dos tiers — RASCUNHO, ajustar os textos depois (curadoria da Lori).
+// Chaveado por tier; a ordem de exibição vem do array TIERS.
+const TIER_LEGENDA: Record<(typeof TIERS)[number], string> = {
+  "S+": "Essencial — prioridade máxima; está entre os melhores do jogo na função dele.",
+  S: "Excelente — peça de topo, vale investir sem pensar duas vezes.",
+  "A+": "Muito bom — forte e relevante no meta atual.",
+  A: "Bom — sólido e útil em vários cenários.",
+  B: "Situacional — brilha em nichos específicos ou como opção de orçamento.",
+  C: "Dispensável — baixa prioridade; costuma ser pré-evolução ou filler.",
+};
+
 const TOPICOS: Topico[] = [
   {
     id: "nome",
@@ -76,14 +87,14 @@ const TOPICOS: Topico[] = [
           ao Pokémon — quanto mais alto, mais vale a pena investir nele. É
           curadoria própria do app, não uma métrica oficial do jogo.
         </p>
-        <div className="flex flex-wrap gap-2 py-1">
+        <div className="space-y-1.5 py-1">
           {TIERS.map((tier) => (
-            <span
-              key={tier}
-              className="rounded-full bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground"
-            >
-              {tier}
-            </span>
+            <div key={tier} className="flex items-baseline gap-3">
+              <span className="w-9 shrink-0 rounded-full bg-secondary px-2 py-1 text-center text-xs font-semibold text-secondary-foreground">
+                {tier}
+              </span>
+              <span className="text-sm">{TIER_LEGENDA[tier]}</span>
+            </div>
           ))}
         </div>
         <p>
