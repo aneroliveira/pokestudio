@@ -7,6 +7,9 @@ import { MovepoolPokemon } from "./movimento";
 
 export interface EvolucaoReferencia {
   nome: string;
+  numero: string;
+  imagem: string;
+  proximas: EvolucaoReferencia[];
 }
 
 export interface EvolucaoPokemon {

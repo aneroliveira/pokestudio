@@ -37,6 +37,7 @@ export default function Home() {
   async function selecionarPokemon(item: ItemIndicePokemon) {
     setPesquisa("");
     setCarregando(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     try {
       const importado = await importarPokemon(item.nomeEn);
@@ -79,7 +80,10 @@ export default function Home() {
         {carregando ? (
           <PokemonCardSkeleton />
         ) : pokemonSelecionado ? (
-          <PokemonCard pokemon={pokemonSelecionado} />
+          <PokemonCard
+            pokemon={pokemonSelecionado}
+            onSelecionarPokemon={selecionarPokemon}
+          />
         ) : (
           <EmptyState />
         )}

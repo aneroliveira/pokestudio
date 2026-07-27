@@ -1,6 +1,7 @@
 import type { Pokemon } from "@/models/pokemon";
 import { TIPO_LABEL } from "@/constants/typeLabels";
 import { FormSection } from "@/components/admin/FormSection";
+import { flattenNomesEvolucao } from "@/services/pokemon/evolutionMapper";
 
 type OficialTabProps = {
   pokemon: Pokemon;
@@ -39,7 +40,7 @@ export function OficialTab({ pokemon }: OficialTabProps) {
         <p className="text-sm text-foreground/80">
           <span className="font-medium">Próximas:</span>{" "}
           {evolucao.proximas.length > 0
-            ? evolucao.proximas.map((e) => e.nome).join(", ")
+            ? flattenNomesEvolucao(evolucao.proximas).join(", ")
             : "—"}
         </p>
         <p className="text-xs text-muted-foreground">
