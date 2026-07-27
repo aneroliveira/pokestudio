@@ -10,6 +10,7 @@ export function createEmptyPokemon(): Pokemon {
       },
       regiao: "",
       imagem: "",
+      imagemShiny: "",
       tipos: [],
       evolucao: {
         anteriores: [],

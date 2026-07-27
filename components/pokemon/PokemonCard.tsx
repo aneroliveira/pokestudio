@@ -20,7 +20,7 @@ export function PokemonCard({
 }: PokemonCardProps) {
   return (
     <Card>
-      <PokemonHeader pokemon={pokemon} />
+      <PokemonHeader key={pokemon.oficial.numero} pokemon={pokemon} />
 
       <PokemonDecision pokemon={pokemon} />
 

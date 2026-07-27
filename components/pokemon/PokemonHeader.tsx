@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { TypeIcon } from "@/components/ui/TypeIcon";
@@ -8,6 +11,14 @@ type PokemonHeaderProps = {
 };
 
 export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
+  const [mostrarShiny, setMostrarShiny] = useState(false);
+
+  const temShiny = Boolean(pokemon.oficial.imagemShiny);
+  const imagemExibida =
+    mostrarShiny && temShiny
+      ? pokemon.oficial.imagemShiny
+      : pokemon.oficial.imagem;
+
   return (
     <div className="flex items-start justify-between gap-6">
       <div className="min-w-0 flex-1">
@@ -15,9 +26,26 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
           {pokemon.oficial.numero || "#000"}
         </p>
 
-        <h2 className="text-3xl font-bold">
-          {pokemon.oficial.nome.ptBR || "Pokémon"}
-        </h2>
+        <div className="flex flex-wrap items-center gap-2">
+          <h2 className="text-3xl font-bold">
+            {pokemon.oficial.nome.ptBR || "Pokémon"}
+          </h2>
+
+          {temShiny && (
+            <button
+              type="button"
+              onClick={() => setMostrarShiny((valor) => !valor)}
+              aria-pressed={mostrarShiny}
+              className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
+                mostrarShiny
+                  ? "border-primary bg-primary/10 text-primary"
+                  : "border-border text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              ✨ Shiny
+            </button>
+          )}
+        </div>
 
         <div className="mt-3 flex flex-wrap gap-2">
           {pokemon.oficial.tipos.length > 0 ? (
@@ -42,9 +70,9 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
       </div>
 
       <div className="flex shrink-0 flex-col items-center gap-2">
-        {pokemon.oficial.imagem ? (
+        {imagemExibida ? (
           <Image
-            src={pokemon.oficial.imagem}
+            src={imagemExibida}
             alt={pokemon.oficial.nome.ptBR || "Pokémon"}
             width={104}
             height={104}

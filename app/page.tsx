@@ -66,16 +66,18 @@ export default function Home() {
           subtitle="A companheira para decisões inteligentes no Pokémon GO."
         />
 
-        <SearchBar
-          value={pesquisa}
-          onChange={(valor) => {
-            setPesquisa(valor);
-          }}
-          onSelect={selecionarPokemon}
-          resultados={resultados}
-          studioMap={studioMap}
-          autoFocus
-        />
+        <div className="md:sticky md:top-16 md:z-30 md:pb-2 md:backdrop-blur-md">
+          <SearchBar
+            value={pesquisa}
+            onChange={(valor) => {
+              setPesquisa(valor);
+            }}
+            onSelect={selecionarPokemon}
+            resultados={resultados}
+            studioMap={studioMap}
+            autoFocus
+          />
+        </div>
 
         {carregando ? (
           <PokemonCardSkeleton />

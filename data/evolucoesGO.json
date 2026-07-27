@@ -1,0 +1,3766 @@
+{
+  "bulbasaur": [
+    {
+      "para": "ivysaur",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "ivysaur": [
+    {
+      "para": "venusaur",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "charmander": [
+    {
+      "para": "charmeleon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "charmeleon": [
+    {
+      "para": "charizard",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "squirtle": [
+    {
+      "para": "wartortle",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "wartortle": [
+    {
+      "para": "blastoise",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "caterpie": [
+    {
+      "para": "metapod",
+      "doces": 12,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "metapod": [
+    {
+      "para": "butterfree",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "weedle": [
+    {
+      "para": "kakuna",
+      "doces": 12,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "kakuna": [
+    {
+      "para": "beedrill",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pidgey": [
+    {
+      "para": "pidgeotto",
+      "doces": 12,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pidgeotto": [
+    {
+      "para": "pidgeot",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "rattata": [
+    {
+      "para": "raticate",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "spearow": [
+    {
+      "para": "fearow",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "ekans": [
+    {
+      "para": "arbok",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pikachu": [
+    {
+      "para": "raichu",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sandshrew": [
+    {
+      "para": "sandslash",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nidoran_female": [
+    {
+      "para": "nidorina",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nidorina": [
+    {
+      "para": "nidoqueen",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nidoran_male": [
+    {
+      "para": "nidorino",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nidorino": [
+    {
+      "para": "nidoking",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "clefairy": [
+    {
+      "para": "clefable",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "vulpix": [
+    {
+      "para": "ninetales",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "jigglypuff": [
+    {
+      "para": "wigglytuff",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "zubat": [
+    {
+      "para": "golbat",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "golbat": [
+    {
+      "para": "crobat",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "oddish": [
+    {
+      "para": "gloom",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "gloom": [
+    {
+      "para": "vileplume",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "bellossom",
+      "doces": 100,
+      "item": "Sun Stone",
+      "quest": null
+    }
+  ],
+  "paras": [
+    {
+      "para": "parasect",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "venonat": [
+    {
+      "para": "venomoth",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "diglett": [
+    {
+      "para": "dugtrio",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "meowth": [
+    {
+      "para": "persian",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "psyduck": [
+    {
+      "para": "golduck",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "mankey": [
+    {
+      "para": "primeape",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "primeape": [
+    {
+      "para": "annihilape",
+      "doces": 100,
+      "item": null,
+      "quest": "Defeat 30 Psychic- or Ghost-type Pokémon"
+    }
+  ],
+  "growlithe": [
+    {
+      "para": "arcanine",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "poliwag": [
+    {
+      "para": "poliwhirl",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "poliwhirl": [
+    {
+      "para": "poliwrath",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "politoed",
+      "doces": 100,
+      "item": "King's Rock",
+      "quest": null
+    }
+  ],
+  "abra": [
+    {
+      "para": "kadabra",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "kadabra": [
+    {
+      "para": "alakazam",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "machop": [
+    {
+      "para": "machoke",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "machoke": [
+    {
+      "para": "machamp",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bellsprout": [
+    {
+      "para": "weepinbell",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "weepinbell": [
+    {
+      "para": "victreebel",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tentacool": [
+    {
+      "para": "tentacruel",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "geodude": [
+    {
+      "para": "graveler",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "graveler": [
+    {
+      "para": "golem",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "ponyta": [
+    {
+      "para": "rapidash",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "slowpoke": [
+    {
+      "para": "slowbro",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "slowking",
+      "doces": 50,
+      "item": "King's Rock",
+      "quest": null
+    }
+  ],
+  "magnemite": [
+    {
+      "para": "magneton",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "magneton": [
+    {
+      "para": "magnezone",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "doduo": [
+    {
+      "para": "dodrio",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "seel": [
+    {
+      "para": "dewgong",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "grimer": [
+    {
+      "para": "muk",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "shellder": [
+    {
+      "para": "cloyster",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "gastly": [
+    {
+      "para": "haunter",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "haunter": [
+    {
+      "para": "gengar",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "onix": [
+    {
+      "para": "steelix",
+      "doces": 50,
+      "item": "Metal Coat",
+      "quest": null
+    }
+  ],
+  "drowzee": [
+    {
+      "para": "hypno",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "krabby": [
+    {
+      "para": "kingler",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "voltorb": [
+    {
+      "para": "electrode",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "exeggcute": [
+    {
+      "para": "exeggutor",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cubone": [
+    {
+      "para": "marowak",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "lickitung": [
+    {
+      "para": "lickilicky",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "koffing": [
+    {
+      "para": "weezing",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "rhyhorn": [
+    {
+      "para": "rhydon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "rhydon": [
+    {
+      "para": "rhyperior",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "chansey": [
+    {
+      "para": "blissey",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tangela": [
+    {
+      "para": "tangrowth",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "horsea": [
+    {
+      "para": "seadra",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "seadra": [
+    {
+      "para": "kingdra",
+      "doces": 100,
+      "item": "Dragon Scale",
+      "quest": null
+    }
+  ],
+  "goldeen": [
+    {
+      "para": "seaking",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "staryu": [
+    {
+      "para": "starmie",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "scyther": [
+    {
+      "para": "scizor",
+      "doces": 50,
+      "item": "Metal Coat",
+      "quest": null
+    }
+  ],
+  "electabuzz": [
+    {
+      "para": "electivire",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "magmar": [
+    {
+      "para": "magmortar",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "magikarp": [
+    {
+      "para": "gyarados",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "eevee": [
+    {
+      "para": "vaporeon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "jolteon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "flareon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "espeon",
+      "doces": 25,
+      "item": null,
+      "quest": "Walk 10 km with your buddy"
+    },
+    {
+      "para": "umbreon",
+      "doces": 25,
+      "item": null,
+      "quest": "Walk 10 km with your buddy"
+    },
+    {
+      "para": "leafeon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "glaceon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "sylveon",
+      "doces": 25,
+      "item": null,
+      "quest": "Earn a heart with your buddy"
+    }
+  ],
+  "porygon": [
+    {
+      "para": "porygon2",
+      "doces": 25,
+      "item": "Upgrade",
+      "quest": null
+    }
+  ],
+  "omanyte": [
+    {
+      "para": "omastar",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "kabuto": [
+    {
+      "para": "kabutops",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dratini": [
+    {
+      "para": "dragonair",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dragonair": [
+    {
+      "para": "dragonite",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "chikorita": [
+    {
+      "para": "bayleef",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bayleef": [
+    {
+      "para": "meganium",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cyndaquil": [
+    {
+      "para": "quilava",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "quilava": [
+    {
+      "para": "typhlosion",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "totodile": [
+    {
+      "para": "croconaw",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "croconaw": [
+    {
+      "para": "feraligatr",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sentret": [
+    {
+      "para": "furret",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "hoothoot": [
+    {
+      "para": "noctowl",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "ledyba": [
+    {
+      "para": "ledian",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "spinarak": [
+    {
+      "para": "ariados",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "chinchou": [
+    {
+      "para": "lanturn",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pichu": [
+    {
+      "para": "pikachu",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cleffa": [
+    {
+      "para": "clefairy",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "igglybuff": [
+    {
+      "para": "jigglypuff",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "togepi": [
+    {
+      "para": "togetic",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "togetic": [
+    {
+      "para": "togekiss",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "natu": [
+    {
+      "para": "xatu",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "mareep": [
+    {
+      "para": "flaaffy",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "flaaffy": [
+    {
+      "para": "ampharos",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "marill": [
+    {
+      "para": "azumarill",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "hoppip": [
+    {
+      "para": "skiploom",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "skiploom": [
+    {
+      "para": "jumpluff",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "aipom": [
+    {
+      "para": "ambipom",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "sunkern": [
+    {
+      "para": "sunflora",
+      "doces": 50,
+      "item": "Sun Stone",
+      "quest": null
+    }
+  ],
+  "yanma": [
+    {
+      "para": "yanmega",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "wooper": [
+    {
+      "para": "quagsire",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "murkrow": [
+    {
+      "para": "honchkrow",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "misdreavus": [
+    {
+      "para": "mismagius",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "pineco": [
+    {
+      "para": "forretress",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dunsparce": [
+    {
+      "para": "dudunsparce",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "dudunsparce",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "gligar": [
+    {
+      "para": "gliscor",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "snubbull": [
+    {
+      "para": "granbull",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sneasel": [
+    {
+      "para": "weavile",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "teddiursa": [
+    {
+      "para": "ursaring",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "ursaring": [
+    {
+      "para": "ursaluna",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "slugma": [
+    {
+      "para": "magcargo",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "swinub": [
+    {
+      "para": "piloswine",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "piloswine": [
+    {
+      "para": "mamoswine",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "remoraid": [
+    {
+      "para": "octillery",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "houndour": [
+    {
+      "para": "houndoom",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "phanpy": [
+    {
+      "para": "donphan",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "porygon2": [
+    {
+      "para": "porygon_z",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "tyrogue": [
+    {
+      "para": "hitmonlee",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "hitmonchan",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "hitmontop",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "smoochum": [
+    {
+      "para": "jynx",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "elekid": [
+    {
+      "para": "electabuzz",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "magby": [
+    {
+      "para": "magmar",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "larvitar": [
+    {
+      "para": "pupitar",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pupitar": [
+    {
+      "para": "tyranitar",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "treecko": [
+    {
+      "para": "grovyle",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "grovyle": [
+    {
+      "para": "sceptile",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "torchic": [
+    {
+      "para": "combusken",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "combusken": [
+    {
+      "para": "blaziken",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "mudkip": [
+    {
+      "para": "marshtomp",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "marshtomp": [
+    {
+      "para": "swampert",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "poochyena": [
+    {
+      "para": "mightyena",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "zigzagoon": [
+    {
+      "para": "linoone",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "wurmple": [
+    {
+      "para": "silcoon",
+      "doces": 12,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "cascoon",
+      "doces": 12,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "silcoon": [
+    {
+      "para": "beautifly",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cascoon": [
+    {
+      "para": "dustox",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "lotad": [
+    {
+      "para": "lombre",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "lombre": [
+    {
+      "para": "ludicolo",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "seedot": [
+    {
+      "para": "nuzleaf",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nuzleaf": [
+    {
+      "para": "shiftry",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "taillow": [
+    {
+      "para": "swellow",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "wingull": [
+    {
+      "para": "pelipper",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "ralts": [
+    {
+      "para": "kirlia",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "kirlia": [
+    {
+      "para": "gallade",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    },
+    {
+      "para": "gardevoir",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "surskit": [
+    {
+      "para": "masquerain",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "shroomish": [
+    {
+      "para": "breloom",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "slakoth": [
+    {
+      "para": "vigoroth",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "vigoroth": [
+    {
+      "para": "slaking",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nincada": [
+    {
+      "para": "ninjask",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "whismur": [
+    {
+      "para": "loudred",
+      "doces": 12,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "loudred": [
+    {
+      "para": "exploud",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "makuhita": [
+    {
+      "para": "hariyama",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "azurill": [
+    {
+      "para": "marill",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nosepass": [
+    {
+      "para": "probopass",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "skitty": [
+    {
+      "para": "delcatty",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "aron": [
+    {
+      "para": "lairon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "lairon": [
+    {
+      "para": "aggron",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "meditite": [
+    {
+      "para": "medicham",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "electrike": [
+    {
+      "para": "manectric",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "roselia": [
+    {
+      "para": "roserade",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "gulpin": [
+    {
+      "para": "swalot",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "carvanha": [
+    {
+      "para": "sharpedo",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "wailmer": [
+    {
+      "para": "wailord",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "numel": [
+    {
+      "para": "camerupt",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "spoink": [
+    {
+      "para": "grumpig",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "trapinch": [
+    {
+      "para": "vibrava",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "vibrava": [
+    {
+      "para": "flygon",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cacnea": [
+    {
+      "para": "cacturne",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "swablu": [
+    {
+      "para": "altaria",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "barboach": [
+    {
+      "para": "whiscash",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "corphish": [
+    {
+      "para": "crawdaunt",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "baltoy": [
+    {
+      "para": "claydol",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "lileep": [
+    {
+      "para": "cradily",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "anorith": [
+    {
+      "para": "armaldo",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "feebas": [
+    {
+      "para": "milotic",
+      "doces": 100,
+      "item": null,
+      "quest": "Walk 20 km with your buddy"
+    }
+  ],
+  "shuppet": [
+    {
+      "para": "banette",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "duskull": [
+    {
+      "para": "dusclops",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dusclops": [
+    {
+      "para": "dusknoir",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    }
+  ],
+  "wynaut": [
+    {
+      "para": "wobbuffet",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "snorunt": [
+    {
+      "para": "froslass",
+      "doces": 100,
+      "item": "Sinnoh Stone",
+      "quest": null
+    },
+    {
+      "para": "glalie",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "spheal": [
+    {
+      "para": "sealeo",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sealeo": [
+    {
+      "para": "walrein",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "clamperl": [
+    {
+      "para": "huntail",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "gorebyss",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bagon": [
+    {
+      "para": "shelgon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "shelgon": [
+    {
+      "para": "salamence",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "beldum": [
+    {
+      "para": "metang",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "metang": [
+    {
+      "para": "metagross",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "turtwig": [
+    {
+      "para": "grotle",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "grotle": [
+    {
+      "para": "torterra",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "chimchar": [
+    {
+      "para": "monferno",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "monferno": [
+    {
+      "para": "infernape",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "piplup": [
+    {
+      "para": "prinplup",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "prinplup": [
+    {
+      "para": "empoleon",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "starly": [
+    {
+      "para": "staravia",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "staravia": [
+    {
+      "para": "staraptor",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bidoof": [
+    {
+      "para": "bibarel",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "kricketot": [
+    {
+      "para": "kricketune",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "shinx": [
+    {
+      "para": "luxio",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "luxio": [
+    {
+      "para": "luxray",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "budew": [
+    {
+      "para": "roselia",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cranidos": [
+    {
+      "para": "rampardos",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "shieldon": [
+    {
+      "para": "bastiodon",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "burmy": [
+    {
+      "para": "wormadam",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "mothim",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "combee": [
+    {
+      "para": "vespiquen",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "buizel": [
+    {
+      "para": "floatzel",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cherubi": [
+    {
+      "para": "cherrim",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "cherrim",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "shellos": [
+    {
+      "para": "gastrodon",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "drifloon": [
+    {
+      "para": "drifblim",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "buneary": [
+    {
+      "para": "lopunny",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "glameow": [
+    {
+      "para": "purugly",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "chingling": [
+    {
+      "para": "chimecho",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "stunky": [
+    {
+      "para": "skuntank",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bronzor": [
+    {
+      "para": "bronzong",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bonsly": [
+    {
+      "para": "sudowoodo",
+      "doces": 50,
+      "item": null,
+      "quest": "Walk 15 km with your buddy"
+    }
+  ],
+  "mime_jr": [
+    {
+      "para": "mr_mime",
+      "doces": 50,
+      "item": null,
+      "quest": "Walk 15 km with your buddy"
+    }
+  ],
+  "happiny": [
+    {
+      "para": "chansey",
+      "doces": 25,
+      "item": null,
+      "quest": "Walk 15 km with your buddy"
+    }
+  ],
+  "gible": [
+    {
+      "para": "gabite",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "gabite": [
+    {
+      "para": "garchomp",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "munchlax": [
+    {
+      "para": "snorlax",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "riolu": [
+    {
+      "para": "lucario",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "hippopotas": [
+    {
+      "para": "hippowdon",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "skorupi": [
+    {
+      "para": "drapion",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "croagunk": [
+    {
+      "para": "toxicroak",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "finneon": [
+    {
+      "para": "lumineon",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "mantyke": [
+    {
+      "para": "mantine",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "snover": [
+    {
+      "para": "abomasnow",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "snivy": [
+    {
+      "para": "servine",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "servine": [
+    {
+      "para": "serperior",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tepig": [
+    {
+      "para": "pignite",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pignite": [
+    {
+      "para": "emboar",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "oshawott": [
+    {
+      "para": "dewott",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dewott": [
+    {
+      "para": "samurott",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "patrat": [
+    {
+      "para": "watchog",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "lillipup": [
+    {
+      "para": "herdier",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "herdier": [
+    {
+      "para": "stoutland",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "purrloin": [
+    {
+      "para": "liepard",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pansage": [
+    {
+      "para": "simisage",
+      "doces": 50,
+      "item": "Unova Stone",
+      "quest": null
+    }
+  ],
+  "pansear": [
+    {
+      "para": "simisear",
+      "doces": 50,
+      "item": "Unova Stone",
+      "quest": null
+    }
+  ],
+  "panpour": [
+    {
+      "para": "simipour",
+      "doces": 50,
+      "item": "Unova Stone",
+      "quest": null
+    }
+  ],
+  "munna": [
+    {
+      "para": "musharna",
+      "doces": 50,
+      "item": "Unova Stone",
+      "quest": null
+    }
+  ],
+  "pidove": [
+    {
+      "para": "tranquill",
+      "doces": 12,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tranquill": [
+    {
+      "para": "unfezant",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "blitzle": [
+    {
+      "para": "zebstrika",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "roggenrola": [
+    {
+      "para": "boldore",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "boldore": [
+    {
+      "para": "gigalith",
+      "doces": 200,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "woobat": [
+    {
+      "para": "swoobat",
+      "doces": 50,
+      "item": null,
+      "quest": "Walk 1 km with your buddy"
+    }
+  ],
+  "drilbur": [
+    {
+      "para": "excadrill",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "timburr": [
+    {
+      "para": "gurdurr",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "gurdurr": [
+    {
+      "para": "conkeldurr",
+      "doces": 200,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tympole": [
+    {
+      "para": "palpitoad",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "palpitoad": [
+    {
+      "para": "seismitoad",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sewaddle": [
+    {
+      "para": "swadloon",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "swadloon": [
+    {
+      "para": "leavanny",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "venipede": [
+    {
+      "para": "whirlipede",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "whirlipede": [
+    {
+      "para": "scolipede",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cottonee": [
+    {
+      "para": "whimsicott",
+      "doces": 50,
+      "item": "Sun Stone",
+      "quest": null
+    }
+  ],
+  "petilil": [
+    {
+      "para": "lilligant",
+      "doces": 50,
+      "item": "Sun Stone",
+      "quest": null
+    }
+  ],
+  "sandile": [
+    {
+      "para": "krokorok",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "krokorok": [
+    {
+      "para": "krookodile",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "darumaka": [
+    {
+      "para": "darmanitan",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dwebble": [
+    {
+      "para": "crustle",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "scraggy": [
+    {
+      "para": "scrafty",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "yamask": [
+    {
+      "para": "cofagrigus",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tirtouga": [
+    {
+      "para": "carracosta",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "archen": [
+    {
+      "para": "archeops",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "trubbish": [
+    {
+      "para": "garbodor",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "zorua": [
+    {
+      "para": "zoroark",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "minccino": [
+    {
+      "para": "cinccino",
+      "doces": 50,
+      "item": "Unova Stone",
+      "quest": null
+    }
+  ],
+  "gothita": [
+    {
+      "para": "gothorita",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "gothorita": [
+    {
+      "para": "gothitelle",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "solosis": [
+    {
+      "para": "duosion",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "duosion": [
+    {
+      "para": "reuniclus",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "ducklett": [
+    {
+      "para": "swanna",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "vanillite": [
+    {
+      "para": "vanillish",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "vanillish": [
+    {
+      "para": "vanilluxe",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "karrablast": [
+    {
+      "para": "escavalier",
+      "doces": 200,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "foongus": [
+    {
+      "para": "amoonguss",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "frillish": [
+    {
+      "para": "jellicent",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "joltik": [
+    {
+      "para": "galvantula",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "ferroseed": [
+    {
+      "para": "ferrothorn",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "klink": [
+    {
+      "para": "klang",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "klang": [
+    {
+      "para": "klinklang",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tynamo": [
+    {
+      "para": "eelektrik",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "eelektrik": [
+    {
+      "para": "eelektross",
+      "doces": 100,
+      "item": "Unova Stone",
+      "quest": null
+    }
+  ],
+  "elgyem": [
+    {
+      "para": "beheeyem",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "litwick": [
+    {
+      "para": "lampent",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "lampent": [
+    {
+      "para": "chandelure",
+      "doces": 100,
+      "item": "Unova Stone",
+      "quest": null
+    }
+  ],
+  "axew": [
+    {
+      "para": "fraxure",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "fraxure": [
+    {
+      "para": "haxorus",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cubchoo": [
+    {
+      "para": "beartic",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "shelmet": [
+    {
+      "para": "accelgor",
+      "doces": 200,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "mienfoo": [
+    {
+      "para": "mienshao",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "golett": [
+    {
+      "para": "golurk",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pawniard": [
+    {
+      "para": "bisharp",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bisharp": [
+    {
+      "para": "kingambit",
+      "doces": 100,
+      "item": null,
+      "quest": "Defeat 15 Dark- or Steel-type Raid Bosses"
+    }
+  ],
+  "rufflet": [
+    {
+      "para": "braviary",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "vullaby": [
+    {
+      "para": "mandibuzz",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "deino": [
+    {
+      "para": "zweilous",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "zweilous": [
+    {
+      "para": "hydreigon",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "larvesta": [
+    {
+      "para": "volcarona",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "chespin": [
+    {
+      "para": "quilladin",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "quilladin": [
+    {
+      "para": "chesnaught",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "fennekin": [
+    {
+      "para": "braixen",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "braixen": [
+    {
+      "para": "delphox",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "froakie": [
+    {
+      "para": "frogadier",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "frogadier": [
+    {
+      "para": "greninja",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bunnelby": [
+    {
+      "para": "diggersby",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "fletchling": [
+    {
+      "para": "fletchinder",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "fletchinder": [
+    {
+      "para": "talonflame",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "scatterbug": [
+    {
+      "para": "spewpa",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "spewpa": [
+    {
+      "para": "vivillon",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "litleo": [
+    {
+      "para": "pyroar",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "pyroar",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "flabebe": [
+    {
+      "para": "floette",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "floette": [
+    {
+      "para": "florges",
+      "doces": 100,
+      "item": null,
+      "quest": "Earn a heart with your buddy"
+    }
+  ],
+  "skiddo": [
+    {
+      "para": "gogoat",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pancham": [
+    {
+      "para": "pangoro",
+      "doces": 50,
+      "item": null,
+      "quest": "Catch 32 Dark-type Pokémon"
+    }
+  ],
+  "espurr": [
+    {
+      "para": "meowstic",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "meowstic",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "honedge": [
+    {
+      "para": "doublade",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "doublade": [
+    {
+      "para": "aegislash",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "spritzee": [
+    {
+      "para": "aromatisse",
+      "doces": 50,
+      "item": null,
+      "quest": "Use an Incense"
+    }
+  ],
+  "swirlix": [
+    {
+      "para": "slurpuff",
+      "doces": 50,
+      "item": null,
+      "quest": "Give your buddy 25 treats"
+    }
+  ],
+  "inkay": [
+    {
+      "para": "malamar",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "binacle": [
+    {
+      "para": "barbaracle",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "skrelp": [
+    {
+      "para": "dragalge",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "clauncher": [
+    {
+      "para": "clawitzer",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "helioptile": [
+    {
+      "para": "heliolisk",
+      "doces": 50,
+      "item": "Sun Stone",
+      "quest": null
+    }
+  ],
+  "tyrunt": [
+    {
+      "para": "tyrantrum",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "amaura": [
+    {
+      "para": "aurorus",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "goomy": [
+    {
+      "para": "sliggoo",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sliggoo": [
+    {
+      "para": "goodra",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "phantump": [
+    {
+      "para": "trevenant",
+      "doces": 200,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pumpkaboo": [
+    {
+      "para": "gourgeist",
+      "doces": 200,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bergmite": [
+    {
+      "para": "avalugg",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "noibat": [
+    {
+      "para": "noivern",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "zygarde": [
+    {
+      "para": "zygarde",
+      "doces": 0,
+      "item": "Zygarde Cell",
+      "quest": null
+    }
+  ],
+  "rowlet": [
+    {
+      "para": "dartrix",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dartrix": [
+    {
+      "para": "decidueye",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "litten": [
+    {
+      "para": "torracat",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "torracat": [
+    {
+      "para": "incineroar",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "popplio": [
+    {
+      "para": "brionne",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "brionne": [
+    {
+      "para": "primarina",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pikipek": [
+    {
+      "para": "trumbeak",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "trumbeak": [
+    {
+      "para": "toucannon",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "yungoos": [
+    {
+      "para": "gumshoos",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "grubbin": [
+    {
+      "para": "charjabug",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "charjabug": [
+    {
+      "para": "vikavolt",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "crabrawler": [
+    {
+      "para": "crabominable",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cutiefly": [
+    {
+      "para": "ribombee",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "rockruff": [
+    {
+      "para": "lycanroc",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "lycanroc",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "mareanie": [
+    {
+      "para": "toxapex",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "mudbray": [
+    {
+      "para": "mudsdale",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dewpider": [
+    {
+      "para": "araquanid",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "fomantis": [
+    {
+      "para": "lurantis",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "morelull": [
+    {
+      "para": "shiinotic",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "salandit": [
+    {
+      "para": "salazzle",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "stufful": [
+    {
+      "para": "bewear",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bounsweet": [
+    {
+      "para": "steenee",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "steenee": [
+    {
+      "para": "tsareena",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "wimpod": [
+    {
+      "para": "golisopod",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sandygast": [
+    {
+      "para": "palossand",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "type_null": [
+    {
+      "para": "silvally",
+      "doces": 200,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "jangmo_o": [
+    {
+      "para": "hakamo_o",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "hakamo_o": [
+    {
+      "para": "kommo_o",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cosmog": [
+    {
+      "para": "cosmoem",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cosmoem": [
+    {
+      "para": "solgaleo",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "lunala",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "poipole": [
+    {
+      "para": "naganadel",
+      "doces": 200,
+      "item": null,
+      "quest": "Catch 20 Dragon-type Pokémon"
+    }
+  ],
+  "meltan": [
+    {
+      "para": "melmetal",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "grookey": [
+    {
+      "para": "thwackey",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "thwackey": [
+    {
+      "para": "rillaboom",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "scorbunny": [
+    {
+      "para": "raboot",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "raboot": [
+    {
+      "para": "cinderace",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sobble": [
+    {
+      "para": "drizzile",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "drizzile": [
+    {
+      "para": "inteleon",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "skwovet": [
+    {
+      "para": "greedent",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "rookidee": [
+    {
+      "para": "corvisquire",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "corvisquire": [
+    {
+      "para": "corviknight",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "blipbug": [
+    {
+      "para": "dottler",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dottler": [
+    {
+      "para": "orbeetle",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nickit": [
+    {
+      "para": "thievul",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "gossifleur": [
+    {
+      "para": "eldegoss",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "wooloo": [
+    {
+      "para": "dubwool",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "chewtle": [
+    {
+      "para": "drednaw",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "yamper": [
+    {
+      "para": "boltund",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "rolycoly": [
+    {
+      "para": "carkol",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "carkol": [
+    {
+      "para": "coalossal",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "applin": [
+    {
+      "para": "appletun",
+      "doces": 200,
+      "item": "Sweet Apple",
+      "quest": null
+    },
+    {
+      "para": "flapple",
+      "doces": 200,
+      "item": "Tart Apple",
+      "quest": null
+    },
+    {
+      "para": "dipplin",
+      "doces": 200,
+      "item": "Syrupy Apple",
+      "quest": null
+    }
+  ],
+  "silicobra": [
+    {
+      "para": "sandaconda",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "arrokuda": [
+    {
+      "para": "barraskewda",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "toxel": [
+    {
+      "para": "toxtricity",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "toxtricity",
+      "doces": 400,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sizzlipede": [
+    {
+      "para": "centiskorch",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "clobbopus": [
+    {
+      "para": "grapploct",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "sinistea": [
+    {
+      "para": "polteageist",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "hatenna": [
+    {
+      "para": "hattrem",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "hattrem": [
+    {
+      "para": "hatterene",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "impidimp": [
+    {
+      "para": "morgrem",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "morgrem": [
+    {
+      "para": "grimmsnarl",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "milcery": [
+    {
+      "para": "alcremie",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "snom": [
+    {
+      "para": "frosmoth",
+      "doces": 400,
+      "item": null,
+      "quest": "Earn 10 hearts with your buddy"
+    }
+  ],
+  "cufant": [
+    {
+      "para": "copperajah",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dreepy": [
+    {
+      "para": "drakloak",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "drakloak": [
+    {
+      "para": "dragapult",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "kubfu": [
+    {
+      "para": "urshifu",
+      "doces": 200,
+      "item": null,
+      "quest": "Defeat 30 Dark-type Pokémon in raids or Max Battles"
+    },
+    {
+      "para": "urshifu",
+      "doces": 200,
+      "item": null,
+      "quest": "Defeat 30 Water-type Pokémon in raids or Max Battles"
+    }
+  ],
+  "sprigatito": [
+    {
+      "para": "floragato",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "floragato": [
+    {
+      "para": "meowscarada",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "fuecoco": [
+    {
+      "para": "crocalor",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "crocalor": [
+    {
+      "para": "skeledirge",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "quaxly": [
+    {
+      "para": "quaxwell",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "quaxwell": [
+    {
+      "para": "quaquaval",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "lechonk": [
+    {
+      "para": "oinkologne",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "oinkologne",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tarountula": [
+    {
+      "para": "spidops",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nymble": [
+    {
+      "para": "lokix",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pawmi": [
+    {
+      "para": "pawmo",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "pawmo": [
+    {
+      "para": "pawmot",
+      "doces": 100,
+      "item": null,
+      "quest": "Walk 25 km with your buddy"
+    }
+  ],
+  "tandemaus": [
+    {
+      "para": "maushold",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    },
+    {
+      "para": "maushold",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "fidough": [
+    {
+      "para": "dachsbun",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "smoliv": [
+    {
+      "para": "dolliv",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "dolliv": [
+    {
+      "para": "arboliva",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "nacli": [
+    {
+      "para": "naclstack",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "naclstack": [
+    {
+      "para": "garganacl",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "charcadet": [
+    {
+      "para": "armarouge",
+      "doces": 50,
+      "item": null,
+      "quest": "Defeat 30 Psychic-type Pokémon"
+    },
+    {
+      "para": "ceruledge",
+      "doces": 50,
+      "item": null,
+      "quest": "Defeat 30 Ghost-type Pokémon"
+    }
+  ],
+  "tadbulb": [
+    {
+      "para": "bellibolt",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "wattrel": [
+    {
+      "para": "kilowattrel",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "maschiff": [
+    {
+      "para": "mabosstiff",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "shroodle": [
+    {
+      "para": "grafaiai",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "bramblin": [
+    {
+      "para": "brambleghast",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "toedscool": [
+    {
+      "para": "toedscruel",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "capsakid": [
+    {
+      "para": "scovillain",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "rellor": [
+    {
+      "para": "rabsca",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "flittle": [
+    {
+      "para": "espathra",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tinkatink": [
+    {
+      "para": "tinkatuff",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "tinkatuff": [
+    {
+      "para": "tinkaton",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "wiglett": [
+    {
+      "para": "wugtrio",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "finizen": [
+    {
+      "para": "palafin",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "varoom": [
+    {
+      "para": "revavroom",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "glimmet": [
+    {
+      "para": "glimmora",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "greavard": [
+    {
+      "para": "houndstone",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "cetoddle": [
+    {
+      "para": "cetitan",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "frigibax": [
+    {
+      "para": "arctibax",
+      "doces": 25,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "arctibax": [
+    {
+      "para": "baxcalibur",
+      "doces": 100,
+      "item": null,
+      "quest": null
+    }
+  ],
+  "gimmighoul": [
+    {
+      "para": "gholdengo",
+      "doces": 0,
+      "item": "Gimmighoul Coins",
+      "quest": null
+    }
+  ],
+  "dipplin": [
+    {
+      "para": "hydrapple",
+      "doces": 400,
+      "item": null,
+      "quest": "Catch 7 Dragon-type Pokémon"
+    }
+  ],
+  "poltchageist": [
+    {
+      "para": "sinistcha",
+      "doces": 50,
+      "item": null,
+      "quest": null
+    }
+  ]
+}

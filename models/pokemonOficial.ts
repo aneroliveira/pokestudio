@@ -5,11 +5,20 @@ import { MovepoolPokemon } from "./movimento";
 // Evolução
 // =========================
 
+export interface RequisitoEvolucao {
+  doces: number | null;
+  item: string | null;
+  quest: string | null;
+}
+
 export interface EvolucaoReferencia {
   nome: string;
   numero: string;
   imagem: string;
   proximas: EvolucaoReferencia[];
+  // Custo pra evoluir do estágio anterior até este (GO). Ausente quando
+  // não há dado do GO para essa transição (não existe na PokéAPI).
+  requisito?: RequisitoEvolucao;
 }
 
 export interface EvolucaoPokemon {
@@ -45,6 +54,7 @@ export interface PokemonOficial {
   nome: NomeTraduzido;
   regiao: string;
   imagem: string;
+  imagemShiny: string;
 
   // Combate
   tipos: TipoPokemon[];

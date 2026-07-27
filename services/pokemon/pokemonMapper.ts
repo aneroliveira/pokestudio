@@ -47,6 +47,9 @@ export function mapearPokemonBasico(
       imagem:
         pokemon.sprites.other["official-artwork"]
           .front_default,
+      imagemShiny:
+        pokemon.sprites.other["official-artwork"]
+          .front_shiny,
       tipos,
       evolucao,
       formas,

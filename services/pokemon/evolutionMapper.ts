@@ -1,7 +1,14 @@
 import type {
   EvolucaoPokemon,
   EvolucaoReferencia,
+  RequisitoEvolucao,
 } from "@/models/pokemonOficial";
+import evolucoesGO from "@/data/evolucoesGO.json";
+
+const EVOLUCOES_GO: Record<
+  string,
+  { para: string; doces: number | null; item: string | null; quest: string | null }[]
+> = evolucoesGO;
 
 function idDaEspecie(speciesUrl: string): string {
   return speciesUrl.split("/").filter(Boolean).pop() ?? "";
@@ -12,12 +19,38 @@ function imagemDaEspecie(speciesUrl: string): string {
   return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
 }
 
-function construirNo(no: any): EvolucaoReferencia {
+function requisitoDoGO(
+  nomeAnterior: string,
+  nomeAtual: string,
+): RequisitoEvolucao | undefined {
+  const requisito = EVOLUCOES_GO[nomeAnterior]?.find(
+    (r) => r.para === nomeAtual,
+  );
+
+  if (!requisito) {
+    return undefined;
+  }
+
   return {
-    nome: no.species.name,
+    doces: requisito.doces,
+    item: requisito.item,
+    quest: requisito.quest,
+  };
+}
+
+function construirNo(no: any, nomeAnterior?: string): EvolucaoReferencia {
+  const nome = no.species.name;
+
+  return {
+    nome,
     numero: `#${idDaEspecie(no.species.url).padStart(3, "0")}`,
     imagem: imagemDaEspecie(no.species.url),
-    proximas: no.evolves_to.map(construirNo),
+    proximas: no.evolves_to.map((proxima: any) =>
+      construirNo(proxima, nome),
+    ),
+    requisito: nomeAnterior
+      ? requisitoDoGO(nomeAnterior, nome)
+      : undefined,
   };
 }
 
