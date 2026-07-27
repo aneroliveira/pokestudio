@@ -223,19 +223,47 @@ const TOPICOS: Topico[] = [
   },
   {
     id: "combate",
-    titulo: "Bom contra / Ruim contra",
+    titulo: "Combate (atacando e defendendo)",
     corpo: (
       <>
         <p>
           Esta seção é <strong>sempre calculada</strong>, nunca curada
           manualmente — vem direto dos tipos oficiais do Pokémon, usando a
           tabela de efetividade padrão da série principal (a partir da
-          Geração 6).
+          Geração 6). O foco é <strong>raid e ginásio</strong>.
         </p>
         <p>
-          <strong>Bom contra</strong> lista os tipos que esse Pokémon resiste
-          (recebe menos dano). <strong>Ruim contra</strong> lista os tipos
-          que são fraqueza dele (recebe mais dano).
+          <strong>⚔️ Atacando</strong> — o que importa quando ele é o seu
+          atacante:
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong>Bom contra</strong> — tipos em que os golpes dele batem{" "}
+            <strong>forte</strong> (supereficaz). É o que decide contra quais
+            chefes/defensores vale trazê-lo.
+          </li>
+        </ul>
+        <p>
+          <strong>🛡️ Defendendo</strong> — quanto de dano ele recebe enquanto
+          ataca:
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong>Fraco a</strong> — tipos que batem forte{" "}
+            <strong>nele</strong> (as fraquezas dele); avisam quando um chefe
+            vai derrubá-lo rápido.
+          </li>
+          <li>
+            <strong>Resiste a</strong> — tipos que ele aguenta bem (recebe
+            menos dano), sobrevivendo mais.
+          </li>
+        </ul>
+        <p>
+          Detalhe do GO: no Pokémon GO <strong>não existe imunidade</strong>.
+          Onde a série principal zeraria o dano (ex.: Elétrico em Terra), o GO
+          aplica uma <strong>resistência dupla</strong> (leva ~39% do dano) —
+          por isso esses tipos aparecem dentro de <strong>Resiste a</strong>, e
+          não numa lista de "imune".
         </p>
       </>
     ),
@@ -246,15 +274,40 @@ const TOPICOS: Topico[] = [
     corpo: (
       <>
         <p>
-          Também é calculado automaticamente: o PokéStudio pega o roster
+          Este card é o "de fora pra dentro": mostra as melhores{" "}
+          <strong>Megas para usar COMO counter contra</strong> o Pokémon
+          exibido. É calculado automaticamente — o PokéStudio pega o roster
           completo de Mega Evoluções do Pokémon GO e ranqueia cada uma pela
-          efetividade de tipo contra o Pokémon exibido — a mesma tabela usada
-          em "Combate", só que invertida (do ponto de vista de quem ataca).
+          efetividade de tipo contra a tipagem dele (a mesma tabela de
+          "Combate", vista do lado de quem ataca).
         </p>
         <p>
-          Em caso de empate na efetividade, quem tem mais Ataque aparece
-          primeiro. O roster de Megas (nomes, tipos, imagem, stats) vem de um
-          mirror de assets extraídos do próprio jogo.
+          Cada Mega mostra o multiplicador com um <strong>rótulo</strong> em
+          linguagem simples do lado:
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong>2× · Supereficaz</strong> — o tipo da Mega é forte contra{" "}
+            <strong>um</strong> dos tipos do Pokémon.
+          </li>
+          <li>
+            <strong>4× · Fraqueza dupla</strong> — é forte contra{" "}
+            <strong>os dois</strong> tipos ao mesmo tempo, causando dano ainda
+            maior (ex.: Elétrico contra Gyarados, que é Água/Voador).
+          </li>
+        </ul>
+        <p>
+          Uma ressalva: esses <strong>2× e 4× são a notação da série
+          principal</strong>, familiar pra maioria. No Pokémon GO os
+          multiplicadores reais são <strong>×1,6</strong> (supereficaz) e{" "}
+          <strong>×2,56</strong> (fraqueza dupla, 1,6 × 1,6) — o rótulo está
+          ali justamente pra deixar claro o <em>significado</em>, não só o
+          número.
+        </p>
+        <p>
+          Em caso de empate, quem tem mais Ataque aparece primeiro. O roster de
+          Megas (nomes, tipos, imagem, stats) vem de um mirror de assets
+          extraídos do próprio jogo.
         </p>
       </>
     ),

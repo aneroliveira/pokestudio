@@ -71,12 +71,15 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
 
       <div className="flex shrink-0 flex-col items-center gap-2">
         {imagemExibida ? (
-          <Image
-            src={imagemExibida}
-            alt={pokemon.oficial.nome.ptBR || "Pokémon"}
-            width={104}
-            height={104}
-          />
+          <div className="relative h-[104px] w-[104px]">
+            <Image
+              src={imagemExibida}
+              alt={pokemon.oficial.nome.ptBR || "Pokémon"}
+              fill
+              sizes="104px"
+              className="object-contain"
+            />
+          </div>
         ) : (
           <div className="flex h-[104px] w-[104px] items-center justify-center rounded-xl border-2 border-dashed border-border bg-muted text-center text-xs text-muted-foreground">
             Sem imagem

@@ -40,41 +40,27 @@ function GrupoTipos({
 }
 
 export function PokemonCombat({ pokemon }: PokemonCombatProps) {
-  const {
-    fortesContra,
-    fracosContra,
-    fraquezas,
-    resistencias,
-    imunidades,
-  } = calcularDerivados(pokemon.oficial.tipos);
+  const { fortesContra, fraquezas, resistencias, imunidades } =
+    calcularDerivados(pokemon.oficial.tipos);
 
   return (
     <SectionCard title="Combate">
       <div className="space-y-5">
-        {/* Ataque — dano que ele CAUSA com golpes do próprio tipo */}
+        {/* Ataque — contra quem os golpes dele são fortes (foco de raid/ginásio) */}
         <div>
           <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             ⚔️ Atacando
           </p>
 
-          <div className="grid grid-cols-2 gap-4">
-            <GrupoTipos
-              titulo="🟢 Bom contra"
-              tipos={fortesContra}
-              corTitulo="text-good-foreground"
-              corChip="bg-good"
-            />
-            <GrupoTipos
-              titulo="🔴 Ruim contra"
-              tipos={fracosContra}
-              corTitulo="text-bad-foreground"
-              corChip="bg-bad"
-              borda
-            />
-          </div>
+          <GrupoTipos
+            titulo="🟢 Bom contra"
+            tipos={fortesContra}
+            corTitulo="text-good-foreground"
+            corChip="bg-good"
+          />
         </div>
 
-        {/* Defesa — dano que ele RECEBE */}
+        {/* Defesa — dano que ele RECEBE enquanto ataca */}
         <div className="border-t border-border pt-4">
           <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             🛡️ Defendendo
@@ -82,16 +68,16 @@ export function PokemonCombat({ pokemon }: PokemonCombatProps) {
 
           <div className="grid grid-cols-2 gap-4">
             <GrupoTipos
-              titulo="🟢 Resiste a"
-              tipos={[...resistencias, ...imunidades]}
-              corTitulo="text-good-foreground"
-              corChip="bg-good"
-            />
-            <GrupoTipos
               titulo="🔴 Fraco a"
               tipos={fraquezas}
               corTitulo="text-bad-foreground"
               corChip="bg-bad"
+            />
+            <GrupoTipos
+              titulo="🟢 Resiste a"
+              tipos={[...resistencias, ...imunidades]}
+              corTitulo="text-good-foreground"
+              corChip="bg-good"
               borda
             />
           </div>

@@ -6,6 +6,13 @@ import { recomendarMegasContra } from "@/services/pokemon/recomendarMega";
 
 const LIMITE = 3;
 
+// Rótulo qualitativo de efetividade. O GO não usa os multiplicadores 2×/4× da
+// série principal (lá é ×1,6 e ×2,56), então mostramos o significado em vez do
+// número: > 2 = supereficaz contra os dois tipos (fraqueza dupla).
+function rotuloEfetividade(efetividade: number): string {
+  return efetividade > 2 ? "Fraqueza dupla" : "Supereficaz";
+}
+
 type PokemonMegasProps = {
   pokemon: Pokemon;
 };
@@ -41,10 +48,15 @@ export function PokemonMegas({ pokemon }: PokemonMegasProps) {
                 {mega.nome}
               </span>
 
-              <div className="flex items-center gap-2">
-                <TypeIcon tipo={melhorTipo} className="bg-secondary" compact />
-                <span className="text-sm font-semibold text-primary">
-                  {efetividade}×
+              <div className="flex flex-col items-center gap-1">
+                <div className="flex items-center gap-1.5">
+                  <TypeIcon tipo={melhorTipo} className="bg-secondary" compact />
+                  <span className="text-sm font-semibold text-primary">
+                    {efetividade}×
+                  </span>
+                </div>
+                <span className="text-center text-xs font-medium leading-tight text-muted-foreground">
+                  {rotuloEfetividade(efetividade)}
                 </span>
               </div>
             </div>
