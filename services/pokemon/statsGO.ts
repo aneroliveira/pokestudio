@@ -103,11 +103,14 @@ export interface NivelReferencia {
  * São tetos por origem, não o nível de um exemplar qualquer: raid e ovo são
  * fixos, mas captura selvagem varia bem abaixo do teto.
  */
+export const TETO_NIVEL_SELVAGEM = 30;
+export const TETO_NIVEL_SELVAGEM_CLIMA = 35;
+
 export const NIVEIS_REFERENCIA: NivelReferencia[] = [
   { nivel: 50, contexto: "Máximo (com XL)" },
   { nivel: 40, contexto: "Máximo (sem XL)" },
-  { nivel: 35, contexto: "Selvagem com clima" },
-  { nivel: 30, contexto: "Selvagem (teto)" },
+  { nivel: TETO_NIVEL_SELVAGEM_CLIMA, contexto: "Selvagem com clima" },
+  { nivel: TETO_NIVEL_SELVAGEM, contexto: "Selvagem (teto)" },
   { nivel: 25, contexto: "Raid com clima" },
   { nivel: 20, contexto: "Raid e Ovo" },
   { nivel: 15, contexto: "Pesquisa de campo" },
@@ -145,4 +148,65 @@ export function calcularCPPorNivelPorNumero(
   if (!base) return undefined;
 
   return calcularCPPorNivel(base);
+}
+
+// =========================
+// Caçada — CP por nível, por faixa de IV
+// =========================
+
+/**
+ * Faixas de IV usadas na caçada, mesma convenção do "quase hundo":
+ * 100% = 15/15/15, 98% = 15/15/14, 96% = 15/14/14.
+ */
+export const FAIXAS_IV_CACADA = [
+  { label: "100%", ivs: { atk: 15, def: 15, sta: 15 } },
+  { label: "98%", ivs: { atk: 15, def: 15, sta: 14 } },
+  { label: "96%", ivs: { atk: 15, def: 14, sta: 14 } },
+] as const;
+
+export type FaixaIVCacada = (typeof FAIXAS_IV_CACADA)[number]["label"];
+
+export interface LinhaCacada {
+  nivel: number;
+  cps: Record<FaixaIVCacada, number>;
+}
+
+/**
+ * CP de cada faixa de IV (100/98/96%), nível a nível, até o teto informado —
+ * a base para "que CP eu deveria conferir se estou caçando um hundo".
+ */
+export function calcularCacada(
+  base: BaseStatsGO,
+  tetoNivel: number,
+): LinhaCacada[] {
+  const niveis: LinhaCacada[] = [];
+
+  for (let nivel = 1; nivel <= tetoNivel; nivel++) {
+    const cps = {} as Record<FaixaIVCacada, number>;
+
+    for (const faixa of FAIXAS_IV_CACADA) {
+      cps[faixa.label] = calcularCP(base, faixa.ivs, nivel);
+    }
+
+    niveis.push({ nivel, cps });
+  }
+
+  return niveis;
+}
+
+/**
+ * Idem, a partir do número da Pokédex. Retorna undefined quando não há
+ * base stats na fonte (Megas, formas alternativas, número vazio).
+ */
+export function calcularCacadaPorNumero(
+  numero: string,
+  tetoNivel: number,
+): LinhaCacada[] | undefined {
+  const dexNr = Number(numero.replace("#", ""));
+  if (!dexNr) return undefined;
+
+  const base = obterBaseStatsGO(dexNr);
+  if (!base) return undefined;
+
+  return calcularCacada(base, tetoNivel);
 }
