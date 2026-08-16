@@ -42,9 +42,12 @@ todos os aparelhos).
 4. Marcar os ambientes: **Production**, **Preview** e — se for rodar local —
    **Development**
 
-A Vercel injeta sozinha `BLOB_STORE_ID`, `VERCEL_OIDC_TOKEN` e
-`BLOB_READ_WRITE_TOKEN`. Depois é só definir `PLANO_SENHA` em
-**Settings → Environment Variables** e refazer o deploy.
+A Vercel injeta sozinha o `BLOB_STORE_ID` (e emite o `VERCEL_OIDC_TOKEN` em
+runtime — é assim que a autenticação funciona; não há token estático). Depois é só
+definir `PLANO_SENHA` em **Settings → Environment Variables** e refazer o deploy.
+
+> `PLANO_SENHA` e `BLOB_STORE_ID` precisam existir **nos mesmos ambientes**. Se um
+> deles faltar em algum, ali o `/plano` fica sem sincronizar.
 
 ### Rodar local
 
@@ -54,7 +57,8 @@ vercel env pull
 
 Se as variáveis do Blob não aparecerem no `.env.local`, a conexão do store não
 inclui **Development**: no store, aba **Projects** → menu `⋯` do projeto →
-**Update Project Connection** → marcar Development.
+**Update Project Connection** → marcar Development. O mesmo vale para a
+`PLANO_SENHA`, que precisa estar marcada em Development.
 
 Sem o Blob o app funciona normalmente — só o `/plano` fica sem sincronizar, usando
 o estado gravado no `data/plano.json`.
