@@ -28,21 +28,35 @@ Centralizar todas as informações importantes sobre um Pokémon para responder 
 
 ## Configuração
 
-Copie `.env.example` para `.env.local` e preencha:
+Só uma variável é definida à mão: **`PLANO_SENHA`**, a senha para marcar os passos
+em `/plano`. Sem ela a página abre em modo leitura.
 
-| Variável | Para quê |
-|---|---|
-| `PLANO_SENHA` | Senha para marcar os passos em `/plano`. Sem ela, a página abre em modo leitura. |
-| `BLOB_READ_WRITE_TOKEN` | Vercel Blob, onde o progresso do checklist é guardado (compartilhado entre aparelhos). |
+O resto vem do Blob store, onde o progresso do checklist é guardado (o mesmo em
+todos os aparelhos).
 
-O token entra sozinho no projeto quando o Blob store é criado no painel da Vercel
-(**Storage → Create → Blob**). Para rodar local, traga as variáveis com:
+### Criar o Blob store
+
+1. Painel da Vercel → projeto → **Storage** → **Create Database** → **Blob**
+2. **Continue** → acesso **Private** (o código usa blob privado; público não serve)
+3. Dar um nome e criar
+4. Marcar os ambientes: **Production**, **Preview** e — se for rodar local —
+   **Development**
+
+A Vercel injeta sozinha `BLOB_STORE_ID`, `VERCEL_OIDC_TOKEN` e
+`BLOB_READ_WRITE_TOKEN`. Depois é só definir `PLANO_SENHA` em
+**Settings → Environment Variables** e refazer o deploy.
+
+### Rodar local
 
 ```bash
-vercel env pull .env.local
+vercel env pull
 ```
 
-Sem o token o app funciona normalmente — só o `/plano` fica sem sincronizar, usando
+Se as variáveis do Blob não aparecerem no `.env.local`, a conexão do store não
+inclui **Development**: no store, aba **Projects** → menu `⋯` do projeto →
+**Update Project Connection** → marcar Development.
+
+Sem o Blob o app funciona normalmente — só o `/plano` fica sem sincronizar, usando
 o estado gravado no `data/plano.json`.
 
 ---
