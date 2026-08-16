@@ -7,7 +7,7 @@ import { PageContainer } from "@/components/layout/PageContainer";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Card } from "@/components/ui/Card";
 import { BlocoCard } from "@/components/plano/BlocoCard";
-import { OrdemExecucao } from "@/components/plano/OrdemExecucao";
+import { OrdemExecucao, type Sincronia } from "@/components/plano/OrdemExecucao";
 import { EstadoPorTipo } from "@/components/plano/EstadoPorTipo";
 import { Etiquetas } from "@/components/plano/Etiquetas";
 import { Aprendizados } from "@/components/plano/Aprendizados";
@@ -16,7 +16,12 @@ import {
   aplicarProgresso,
   carregarPlano,
   carregarProgresso,
+  gravarCacheLocal,
+  gravarSenha,
+  lerCacheLocal,
+  lerSenha,
   salvarProgresso,
+  type ResultadoSalvar,
 } from "@/services/plano";
 
 const SECOES = [
@@ -34,11 +39,20 @@ function formatarData(iso: string): string {
   return iso.split("-").reverse().join("/");
 }
 
+const SINCRONIA_POR_RESULTADO: Record<ResultadoSalvar, Sincronia> = {
+  salvo: "sincronizado",
+  "sem-senha": "bloqueado",
+  "senha-invalida": "senha-invalida",
+  offline: "offline",
+};
+
 export default function PlanoPage() {
   const [plano, setPlano] = useState<Plano | null>(null);
   const [carregando, setCarregando] = useState(true);
   const [secao, setSecao] = useState<Secao>("Ordem de execução");
   const [erro, setErro] = useState<string | null>(null);
+  const [senha, setSenha] = useState<string | null>(null);
+  const [sincronia, setSincronia] = useState<Sincronia>("bloqueado");
 
   // Numa ref, não em estado: marcar dois passos em toques seguidos acontece
   // antes do React re-renderizar, e um closure com o valor antigo faria o
@@ -46,24 +60,68 @@ export default function PlanoPage() {
   // de `plano.ordemExecucao`.
   const progresso = useRef<ProgressoPlano>({});
 
+  // Serializa as gravações. Sem isso, dois toques rápidos viram dois PUTs
+  // concorrentes e o que chegar por último no servidor decide — podendo ser
+  // o que carrega o valor mais antigo.
+  const fila = useRef<Promise<unknown>>(Promise.resolve());
+
   useEffect(() => {
-    carregarPlano()
-      .then((curadoria) => {
-        // O progresso do aparelho entra por cima do estado commitado, e só
-        // depois que o JSON chegou — senão a lista pisca com o valor errado.
-        const salvo = carregarProgresso();
-        progresso.current = salvo;
+    let cancelado = false;
+
+    async function iniciar() {
+      try {
+        const curadoria = await carregarPlano();
+        const remoto = await carregarProgresso();
+
+        // Sem resposta do servidor a página ainda abre, com o último estado
+        // conhecido deste aparelho — é o caso de estar sem sinal na rua.
+        const atual = remoto ?? lerCacheLocal();
+        if (remoto) gravarCacheLocal(remoto);
+
+        if (cancelado) return;
+
+        const senhaSalva = lerSenha();
+        progresso.current = atual;
+        setSenha(senhaSalva);
+        setSincronia(
+          !remoto ? "offline" : senhaSalva ? "sincronizado" : "bloqueado",
+        );
         setPlano({
           ...curadoria,
-          ordemExecucao: aplicarProgresso(curadoria.ordemExecucao, salvo),
+          ordemExecucao: aplicarProgresso(curadoria.ordemExecucao, atual),
         });
-      })
-      .catch(() => setErro("Não foi possível carregar o plano."))
-      .finally(() => setCarregando(false));
+      } catch {
+        if (!cancelado) setErro("Não foi possível carregar o plano.");
+      } finally {
+        if (!cancelado) setCarregando(false);
+      }
+    }
+
+    iniciar();
+
+    return () => {
+      cancelado = true;
+    };
   }, []);
 
+  function enfileirarGravacao(
+    dados: ProgressoPlano,
+    chave: string | null,
+  ): Promise<void> {
+    setSincronia("salvando");
+
+    fila.current = fila.current
+      .then(() => salvarProgresso(dados, chave))
+      .then((resultado) => setSincronia(SINCRONIA_POR_RESULTADO[resultado]));
+
+    return fila.current as Promise<void>;
+  }
+
   function alternarPasso(id: string, concluido: boolean) {
-    progresso.current = { ...progresso.current, [id]: concluido };
+    const atualizado = { ...progresso.current, [id]: concluido };
+
+    progresso.current = atualizado;
+    gravarCacheLocal(atualizado);
 
     setPlano((atual) =>
       atual
@@ -76,12 +134,26 @@ export default function PlanoPage() {
         : atual,
     );
 
-    setErro(
-      salvarProgresso(progresso.current)
-        ? null
-        : "Marcado só nesta sessão — o navegador não deixou salvar (janela anônima?).",
-    );
+    enfileirarGravacao(atualizado, senha);
   }
+
+  /** Valida a senha gravando o estado atual — se voltar 200, ela serve. */
+  async function desbloquear(informada: string) {
+    setSenha(informada);
+    await enfileirarGravacao(progresso.current, informada);
+  }
+
+  function esquecerSenha() {
+    setSenha(null);
+    gravarSenha(null);
+    setSincronia("bloqueado");
+  }
+
+  // Só persiste a senha depois que o servidor aceitou, para não guardar uma
+  // senha errada e a página reabrir travada sem explicar por quê.
+  useEffect(() => {
+    if (sincronia === "sincronizado" && senha) gravarSenha(senha);
+  }, [sincronia, senha]);
 
   if (carregando) {
     return (
@@ -183,7 +255,12 @@ export default function PlanoPage() {
                 passos={plano.ordemExecucao}
                 bloqueios={plano.bloqueios}
                 onAlternar={alternarPasso}
-                erro={erro}
+                sincronia={sincronia}
+                onDesbloquear={desbloquear}
+                onEsquecerSenha={esquecerSenha}
+                onTentarNovamente={() =>
+                  enfileirarGravacao(progresso.current, senha)
+                }
               />
             )}
 

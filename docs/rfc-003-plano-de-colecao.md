@@ -111,13 +111,57 @@ um JSON no `localStorage`, sob a chave `pokestudio:plano:progresso`.
 - `salvarProgresso` devolve `false` quando o armazenamento não está disponível
   (janela anônima, cota cheia), e a UI avisa em vez de fingir que salvou.
 
-**Preço aceito:** o progresso é por aparelho — marcar no celular não reflete no PC.
-Para uso pessoal isso é aceitável, e evita banco, login e custo. Se um dia precisar
-ser compartilhado, o ponto de troca é só `planoStore.ts`.
-
 Nota de implementação: o progresso vive numa `ref`, não em `useState`. Dois toques
 seguidos acontecem antes do React re-renderizar, e um closure com o valor antigo
 fazia o segundo apagar o primeiro.
+
+---
+
+## Correção 2 — progresso compartilhado entre aparelhos
+
+O `localStorage` resolveu o erro, mas o progresso ficava preso ao aparelho: marcar
+no celular não aparecia no PC. Para um plano que existe justamente para ser seguido
+na rua e revisado em casa, isso é uma limitação de fundo, não de conforto.
+
+**Decisão:** o progresso passou a viver no **Vercel Blob**, em
+`plano/progresso.json`. Continua sendo um JSON — a RFC-006 segue de pé, o projeto
+não ganhou banco relacional.
+
+| Detalhe | Escolha | Por quê |
+|---|---|---|
+| `access` | `private` | O blob não é servido por URL pública; só a rota o lê, com o token do projeto. |
+| `useCache: false` na leitura | sempre | O CDN do Blob tem cache **mínimo de 1 minuto**. Com cache, "marquei no celular" demoraria a aparecer no PC — justamente o problema que a mudança resolve. |
+| Escrita | mescla, não substitui | A rota lê o estado atual e aplica as chaves recebidas por cima. Um passo marcado por outro aparelho sobrevive a uma gravação que não o conhecia. |
+| Gravações no cliente | serializadas numa fila | Dois toques rápidos viravam dois `PUT` concorrentes, e o que chegasse por último decidia — podendo ser o que carregava o valor mais antigo. |
+
+### Escrita protegida por senha
+
+O produto não tem login (decisão de 11/07/2026) e a URL é pública, então um endpoint
+de escrita aberto deixaria qualquer um mexer no checklist. A proteção é uma senha
+única em `PLANO_SENHA`, enviada no header `x-plano-senha`.
+
+- Sem senha válida, a página abre em **modo leitura** e os checkboxes ficam
+  desabilitados. Deixar marcar sem sincronizar seria pior: o aparelho mentiria em
+  silêncio.
+- A comparação usa `timingSafeEqual` sobre digests SHA-256 — digests têm tamanho
+  fixo, então senhas de comprimentos diferentes não quebram a função nem vazam o
+  tamanho pelo tempo de resposta.
+- Se `PLANO_SENHA` não estiver configurada, a escrita é **recusada** (503). O padrão
+  seguro é travar, não abrir por esquecimento.
+- A senha só é guardada no navegador **depois** que o servidor aceitou, para a página
+  não reabrir travada por causa de uma senha errada memorizada.
+
+### Cache local, agora como rede de segurança
+
+O `localStorage` continua, mas mudou de papel: deixou de ser a fonte de verdade e
+virou cache. A página abre com o último estado conhecido sem esperar rede, e se o
+servidor não responder ela avisa (`Sem conexão com o servidor`) em vez de fingir que
+salvou.
+
+### Configuração necessária
+
+Ver `.env.example`. Sem `BLOB_READ_WRITE_TOKEN` a leitura devolve 503 e a página
+entra em modo offline — funciona, mas não sincroniza.
 
 ---
 

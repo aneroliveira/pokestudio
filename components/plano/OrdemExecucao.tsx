@@ -1,26 +1,48 @@
 "use client";
 
-import { Check, Lock } from "lucide-react";
+import { useState } from "react";
+import { Check, CloudOff, Lock, RefreshCw } from "lucide-react";
 
 import { Card } from "@/components/ui/Card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import type { BloqueioPlano, PassoPlano } from "@/models/plano";
+
+export type Sincronia =
+  | "sincronizado"
+  | "salvando"
+  | "bloqueado"
+  | "senha-invalida"
+  | "offline";
 
 type OrdemExecucaoProps = {
   passos: PassoPlano[];
   bloqueios: BloqueioPlano[];
   onAlternar: (id: string, concluido: boolean) => void;
-  erro: string | null;
+  sincronia: Sincronia;
+  onDesbloquear: (senha: string) => void;
+  onEsquecerSenha: () => void;
+  onTentarNovamente: () => void;
 };
 
 export function OrdemExecucao({
   passos,
   bloqueios,
   onAlternar,
-  erro,
+  sincronia,
+  onDesbloquear,
+  onEsquecerSenha,
+  onTentarNovamente,
 }: OrdemExecucaoProps) {
+  const [senhaDigitada, setSenhaDigitada] = useState("");
+
   const feitos = passos.filter((passo) => passo.concluido).length;
   const total = passos.length;
   const progresso = total === 0 ? 0 : Math.round((feitos / total) * 100);
+
+  // Sem senha válida a lista é só leitura: deixar marcar e não sincronizar
+  // seria pior do que não deixar — o aparelho ficaria mentindo em silêncio.
+  const travado = sincronia === "bloqueado" || sincronia === "senha-invalida";
 
   return (
     <div className="space-y-6">
@@ -30,6 +52,7 @@ export function OrdemExecucao({
 
           <span className="text-sm text-muted-foreground">
             {feitos} de {total} concluídos
+            {sincronia === "salvando" && " · salvando..."}
           </span>
         </div>
 
@@ -47,23 +70,73 @@ export function OrdemExecucao({
           />
         </div>
 
-        {erro && (
-          <p className="mt-3 rounded-lg bg-attention px-3 py-2 text-sm text-attention-foreground">
-            {erro}
-          </p>
+        {travado && (
+          <form
+            onSubmit={(evento) => {
+              evento.preventDefault();
+              if (senhaDigitada.trim()) onDesbloquear(senhaDigitada.trim());
+            }}
+            className="mt-4 rounded-xl bg-secondary/60 p-3"
+          >
+            <p className="flex items-center gap-2 text-sm font-medium">
+              <Lock className="h-4 w-4 text-muted-foreground" />
+              {sincronia === "senha-invalida"
+                ? "Senha incorreta."
+                : "Modo leitura."}
+            </p>
+
+            <p className="mt-1 text-xs text-muted-foreground">
+              Digite a senha para marcar os passos. O progresso vale em todos
+              os seus aparelhos.
+            </p>
+
+            <div className="mt-2 flex gap-2">
+              <Input
+                type="password"
+                value={senhaDigitada}
+                onChange={(evento) => setSenhaDigitada(evento.target.value)}
+                placeholder="Senha"
+                autoComplete="current-password"
+                className="h-9"
+              />
+              <Button type="submit" className="h-9 shrink-0">
+                Destravar
+              </Button>
+            </div>
+          </form>
         )}
 
-        <p className="mt-3 text-xs text-muted-foreground">
-          O que você marcar fica salvo neste aparelho.
-        </p>
+        {sincronia === "offline" && (
+          <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-xl bg-attention px-3 py-2 text-sm text-attention-foreground">
+            <span className="flex items-center gap-2">
+              <CloudOff className="h-4 w-4 shrink-0" />
+              Sem conexão com o servidor — o que você marcou está só neste
+              aparelho.
+            </span>
+
+            <button
+              type="button"
+              onClick={onTentarNovamente}
+              className="inline-flex items-center gap-1.5 font-medium underline underline-offset-2"
+            >
+              <RefreshCw className="h-3.5 w-3.5" />
+              Tentar de novo
+            </button>
+          </div>
+        )}
 
         <ol className="mt-4 space-y-1">
           {passos.map((passo, indice) => (
             <li key={passo.id}>
-              <label className="flex cursor-pointer items-start gap-3 rounded-xl px-2 py-2.5 transition-colors hover:bg-accent">
+              <label
+                className={`flex items-start gap-3 rounded-xl px-2 py-2.5 transition-colors ${
+                  travado ? "cursor-default" : "cursor-pointer hover:bg-accent"
+                }`}
+              >
                 <input
                   type="checkbox"
                   checked={passo.concluido}
+                  disabled={travado}
                   onChange={(evento) =>
                     onAlternar(passo.id, evento.target.checked)
                   }
@@ -79,7 +152,7 @@ export function OrdemExecucao({
                     passo.concluido
                       ? "border-primary bg-primary text-primary-foreground"
                       : "border-border bg-background"
-                  }`}
+                  } ${travado ? "opacity-50" : ""}`}
                 >
                   {passo.concluido && <Check className="h-3.5 w-3.5" />}
                 </span>
@@ -108,6 +181,19 @@ export function OrdemExecucao({
             </li>
           ))}
         </ol>
+
+        {sincronia === "sincronizado" && (
+          <p className="mt-3 flex flex-wrap items-center gap-x-2 text-xs text-muted-foreground">
+            <span>Sincronizado — vale em todos os seus aparelhos.</span>
+            <button
+              type="button"
+              onClick={onEsquecerSenha}
+              className="underline underline-offset-2"
+            >
+              Esquecer senha neste aparelho
+            </button>
+          </p>
+        )}
       </Card>
 
       <Card>
