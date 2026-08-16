@@ -21,3 +21,16 @@ export function buscarPokemon(texto: string): ItemIndicePokemon[] {
       item.numero.replace("#", "").startsWith(pesquisa),
   ).slice(0, 20);
 }
+
+/**
+ * Busca exata pelo slug da PokéAPI. Diferente de `buscarPokemon`, que é
+ * por prefixo: aqui o slug já veio de um link interno (ex.: `/?p=gengar`,
+ * usado pelo Plano), então tem que resolver num item só ou em nenhum.
+ */
+export function buscarPorNomeEn(
+  nomeEn: string,
+): ItemIndicePokemon | undefined {
+  const slug = nomeEn.trim().toLowerCase();
+
+  return INDICE.find((item) => item.nomeEn.toLowerCase() === slug);
+}

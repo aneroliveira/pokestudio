@@ -1,0 +1,1061 @@
+{
+  "meta": {
+    "titulo": "Curadoria de Atacantes de Reide",
+    "subtitulo": "Auditoria da bolsa inteira — o que fazer, e em que ordem.",
+    "data": "2026-08-16",
+    "tiposVarridos": 15,
+    "poeiraEstelar": 694949,
+    "gargalo": "TMs Elite e doces de lendário"
+  },
+  "blocos": [
+    {
+      "id": "bloco-0",
+      "titulo": "Bloco 0 — O pilar",
+      "exemplares": [
+        {
+          "numero": "#150",
+          "nomeEn": "mewtwo",
+          "nome": "Mewtwo X",
+          "detalhe": "IV 100%",
+          "pc": 4724,
+          "cobre": [
+            "Fighting"
+          ],
+          "nota": "via Mega X"
+        },
+        {
+          "numero": "#150",
+          "nomeEn": "mewtwo",
+          "nome": "Mewtwo Y",
+          "detalhe": "IV 100%",
+          "pc": 2387,
+          "cobre": [
+            "Psychic"
+          ],
+          "nota": "via Mega Y"
+        }
+      ],
+      "notas": [
+        "O Mewtwo X 4724 é o Pokémon mais forte da bolsa e já está bem nivelado — exceção no acervo, onde quase tudo está sub-investido.",
+        "⚠️ Conferir se não inverteu: Mega Mewtwo X = Lutador, Mega Mewtwo Y = Psíquico. Logo o X recebe Contra-Ataque + Foco Explosivo; o Y recebe Confusão + Psíquico.",
+        "Mega Mewtwo Y ainda buffa aliados Psíquicos em 30%.",
+        "Guardar 3 Mewtwo: um X, um Y, e um normal de bom IV como reserva. Doce de Mewtwo é caro de repor."
+      ]
+    },
+    {
+      "id": "bloco-1",
+      "titulo": "Bloco 1 — Trocar TM",
+      "concluido": true,
+      "exemplares": [
+        {
+          "numero": "#609",
+          "nomeEn": "chandelure",
+          "nome": "Chandelure",
+          "nota": "Chama Furacão + Superaquecimento",
+          "status": "✅ alvo exato"
+        },
+        {
+          "numero": "#639",
+          "nomeEn": "terrakion",
+          "nome": "Terrakion",
+          "nota": "Chute Duplo + Espada Sagrada",
+          "status": "✅ alvo exato — Tier S #9 Lutador"
+        },
+        {
+          "numero": "#376",
+          "nomeEn": "metagross",
+          "nome": "Metagross",
+          "detalhe": "sortudo",
+          "nota": "Soco Projétil + Meteoro Esmagador",
+          "status": "✅ ótimo possível"
+        },
+        {
+          "numero": "#888",
+          "nomeEn": "zacian",
+          "nome": "Zacian",
+          "nota": "Ataque Rápido + Jogo Duro",
+          "status": "✅ máximo da forma Herói"
+        },
+        {
+          "numero": "#248",
+          "nomeEn": "tyranitar",
+          "nome": "Tyranitar",
+          "detalhe": "3 Stars",
+          "nota": "Derrubada + Gume de Pedra",
+          "status": "✅ via TM Elite"
+        }
+      ],
+      "subsecoes": [
+        {
+          "titulo": "Correções descobertas na execução",
+          "itens": [
+            "Metagross não aprende Garra de Metal. O pool rápido dele é Cortador de Fúria, Soco Projétil, Cabeçada Zen (+ Garra Sombria via Elite). Soco Projétil é o único com STAB de Aço → é o alvo correto, não um resultado ruim.",
+            "Terrakion precisou de 2 TMs. A primeira caiu em Derrubada; a segunda acertou Chute Duplo.",
+            "Derrubada é MT Elite no Tyranitar, mas é golpe normal no Terrakion.",
+            "A TM Elite foi aplicada no Tyranitar 3 Stars (melhor IV). O sortudo ficou como portador da mega — moveset importa menos numa mega temporária, e o desconto de sortudo + mega barateia o fortalecimento.",
+            "Sobrou 1 TM Carregada Elite. Reservada para o Glaciar no Kyurem, quando a fusão liberar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bloco-2",
+      "titulo": "Bloco 2 — Fortalecer agora",
+      "resumo": "Sortudos custam metade da poeira.",
+      "exemplares": [
+        {
+          "numero": "#248",
+          "nomeEn": "tyranitar",
+          "nome": "Tyranitar",
+          "detalhe": "sortudo",
+          "pc": 2434,
+          "cobre": [
+            "Rock"
+          ],
+          "nota": "381 doces + 52 XL + mega pronta (575/300)"
+        },
+        {
+          "numero": "#282",
+          "nomeEn": "gardevoir",
+          "nome": "Gardevoir",
+          "detalhe": "sortudo",
+          "pc": 2298,
+          "cobre": [
+            "Fairy"
+          ],
+          "nota": "Mega Gardevoir é Fada de topo"
+        },
+        {
+          "numero": "#094",
+          "nomeEn": "gengar",
+          "nome": "Gengar",
+          "detalhe": "sortudo",
+          "pc": 1612,
+          "cobre": [
+            "Ghost"
+          ],
+          "nota": "Mega Gengar é o melhor Fantasma"
+        },
+        {
+          "numero": "#376",
+          "nomeEn": "metagross",
+          "nome": "Metagross",
+          "detalhe": "sortudo",
+          "pc": 3390,
+          "cobre": [
+            "Steel"
+          ],
+          "nota": "Melhor Aço não-lendário"
+        },
+        {
+          "numero": "#373",
+          "nomeEn": "salamence",
+          "nome": "Salamence",
+          "detalhe": "sortudo",
+          "pc": 3381,
+          "cobre": [
+            "Dragon"
+          ],
+          "nota": "Mega Salamence"
+        },
+        {
+          "numero": "#635",
+          "nomeEn": "hydreigon",
+          "nome": "Hydreigon",
+          "detalhe": "sortudo",
+          "pc": 2732,
+          "cobre": [
+            "Dark"
+          ],
+          "nota": "Libera o Tyranitar pra ser Pedra"
+        },
+        {
+          "numero": "#243",
+          "nomeEn": "raikou",
+          "nome": "Raikou",
+          "pc": 1452,
+          "cobre": [
+            "Electric"
+          ],
+          "nota": "Buraco mais grave da bolsa"
+        },
+        {
+          "numero": "#382",
+          "nomeEn": "kyogre",
+          "nome": "Kyogre",
+          "pc": 2331,
+          "cobre": [
+            "Water"
+          ],
+          "nota": "Melhor Água do jogo, muito sub-nivelado"
+        },
+        {
+          "numero": "#214",
+          "nomeEn": "heracross",
+          "nome": "Heracross",
+          "pc": 2683,
+          "cobre": [
+            "Fighting"
+          ],
+          "nota": "Mega Heracross"
+        },
+        {
+          "numero": "#483",
+          "nomeEn": "dialga",
+          "nome": "Dialga",
+          "pc": 2283,
+          "cobre": [
+            "Steel",
+            "Dragon"
+          ],
+          "nota": "4 exemplares = doce disponível"
+        }
+      ],
+      "movesets": [
+        {
+          "pokemon": "Mewtwo X",
+          "rapido": "Contra-Ataque",
+          "carregado": "Foco Explosivo"
+        },
+        {
+          "pokemon": "Mewtwo Y",
+          "rapido": "Confusão",
+          "carregado": "Psíquico"
+        },
+        {
+          "pokemon": "Tyranitar",
+          "rapido": "Derrubada",
+          "carregado": "Gume de Pedra"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "rapido": "Encantar",
+          "carregado": "Brilho Mágico"
+        },
+        {
+          "pokemon": "Gengar",
+          "rapido": "Assombro",
+          "carregado": "Bola Sombria"
+        },
+        {
+          "pokemon": "Metagross",
+          "rapido": "Soco Projétil",
+          "carregado": "Meteoro Esmagador"
+        },
+        {
+          "pokemon": "Salamence",
+          "rapido": "Cauda de Dragão",
+          "carregado": "Fúria"
+        },
+        {
+          "pokemon": "Hydreigon",
+          "rapido": "Rosnado",
+          "carregado": "Balanço Violento"
+        },
+        {
+          "pokemon": "Raikou",
+          "rapido": "Choque do Trovão",
+          "carregado": "Trovão Selvagem"
+        },
+        {
+          "pokemon": "Kyogre",
+          "rapido": "Cascata",
+          "carregado": "Surfar"
+        },
+        {
+          "pokemon": "Heracross",
+          "rapido": "Contra-Ataque",
+          "carregado": "Corpo-a-corpo"
+        },
+        {
+          "pokemon": "Palkia",
+          "rapido": "Cauda de Dragão",
+          "carregado": "Meteoro do Dragão"
+        },
+        {
+          "pokemon": "Dialga",
+          "rapido": "Sopro de Dragão",
+          "carregado": "Rajada de Ferro",
+          "observacao": "Rajada de Ferro para jogar de Aço; Meteoro do Dragão para jogar de Dragão."
+        }
+      ]
+    },
+    {
+      "id": "bloco-3",
+      "titulo": "Bloco 3 — Prontos, não mexer",
+      "exemplares": [
+        {
+          "numero": "#150",
+          "nomeEn": "mewtwo",
+          "nome": "Mewtwo X",
+          "pc": 4724,
+          "etiqueta": "RAID-LUTADOR"
+        },
+        {
+          "numero": "#464",
+          "nomeEn": "rhyperior",
+          "nome": "Rhyperior",
+          "pc": 3653,
+          "etiqueta": "RAID-TERRESTRE",
+          "nota": "Tapa de Lama + Terremoto"
+        },
+        {
+          "numero": "#609",
+          "nomeEn": "chandelure",
+          "nome": "Chandelure",
+          "pc": 3175,
+          "etiqueta": "RAID-FOGO"
+        },
+        {
+          "numero": "#130",
+          "nomeEn": "gyarados",
+          "nome": "Gyarados",
+          "pc": 3246,
+          "etiqueta": "RAID-AGUA"
+        }
+      ]
+    },
+    {
+      "id": "bloco-4",
+      "titulo": "Bloco 4 — Aguardando recurso",
+      "exemplares": [
+        {
+          "numero": "#646",
+          "nomeEn": "kyurem",
+          "nome": "Kyurem",
+          "detalhe": "×7",
+          "nota": "Bloqueado por Energia de Fusão"
+        },
+        {
+          "numero": "#643",
+          "nomeEn": "reshiram",
+          "nome": "Reshiram",
+          "pc": 2245,
+          "nota": "⛔ NÃO fortalecer — reservado p/ White Kyurem"
+        },
+        {
+          "numero": "#644",
+          "nomeEn": "zekrom",
+          "nome": "Zekrom",
+          "pc": 2250,
+          "nota": "⛔ NÃO fortalecer — reservado p/ Black Kyurem"
+        },
+        {
+          "numero": "#888",
+          "nomeEn": "zacian",
+          "nome": "Zacian",
+          "pc": 2628,
+          "nota": "Forma Coroada exige 1.000 de Energia Espada Coroada (tem 0) + 30 doces (tem 10) + saber Cabeça de Ferro"
+        }
+      ],
+      "notas": [
+        "Energia Espada Coroada vem de derrotar Zacian Espada Coroada em reide — não é a Espada Enferrujada.",
+        "Quando chegar a hora, o Cabeça de Ferro entra com TM Carregada normal. ⛔ Não gastar os 100.000 de poeira no segundo ataque.",
+        "✅ Mamoswine — evoluído e etiquetado RAID-GELO.",
+        "Energia de Fusão vem de derrotar Reshiram/Zekrom em reide — não acumula sozinha. Ficar de olho na rotação de chefes.",
+        "Reservar a próxima TM Rápida Elite para o Tyranitar."
+      ],
+      "subsecoes": [
+        {
+          "titulo": "Timburr sombroso → Conkeldurr Sombroso",
+          "itens": [
+            "Vale o investimento — Conkeldurr Sombroso é o que aparece no meta de Lutador.",
+            "Evoluir primeiro; o movepool bom (Contra-Ataque + Soco Dinâmico) só existe na forma final.",
+            "⛔ NÃO purificar. Perde o +20% de ataque e vira um Conkeldurr comum.",
+            "Sombroso custa mais poeira e doce por nível — o bônus compensa, mas o custo é real.",
+            "Verificar doces de Timburr antes de começar."
+          ]
+        },
+        {
+          "titulo": "Lucario",
+          "itens": [
+            "Melhor Lutador não-mega junto com o Terrakion, e tem Mega Lucario.",
+            "Alvo: Contra-Ataque + Aura Esfera.",
+            "Vantagem: doce de Riolu vem de ovo e caminhada, não de reide — mais fácil de sustentar.",
+            "Fica em quarto na fila porque Lutador já está bem servido."
+          ]
+        },
+        {
+          "titulo": "Regras da fusão do Kyurem",
+          "itens": [
+            "Kyurem precisa saber Glaciar ANTES de fundir, senão não aprende Queimadura Gélida (White) nem Choque Congelante (Black).",
+            "Glaciar só via TM Carregada Elite, durante eventos específicos.",
+            "A forma fundida herda IV, nível e status brilhante do Kyurem.",
+            "Logo: usar o melhor Kyurem e o pior Reshiram/Zekrom.",
+            "White Kyurem = melhor Gelo do jogo. Black Kyurem = melhor Dragão não-mega."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bloco-5",
+      "titulo": "Bloco 5 — Limpar duplicatas de lendário",
+      "resumo": "Doce de lendário é o gargalo. Transferir excedentes resolve.",
+      "exemplares": [
+        {
+          "numero": "#484",
+          "nomeEn": "palkia",
+          "nome": "Palkia",
+          "detalhe": "~7 exemplares",
+          "nota": "Manter 2",
+          "status": "Transferir ~5"
+        },
+        {
+          "numero": "#646",
+          "nomeEn": "kyurem",
+          "nome": "Kyurem",
+          "detalhe": "7 exemplares",
+          "nota": "Manter 2–3 (após fusão)",
+          "status": "Transferir o resto"
+        },
+        {
+          "numero": "#150",
+          "nomeEn": "mewtwo",
+          "nome": "Mewtwo",
+          "detalhe": "vários",
+          "nota": "Manter 3 (X, Y, reserva)",
+          "status": "Transferir o resto"
+        },
+        {
+          "numero": "#483",
+          "nomeEn": "dialga",
+          "nome": "Dialga",
+          "detalhe": "4 exemplares",
+          "nota": "Manter 2",
+          "status": "Transferir 2"
+        },
+        {
+          "numero": "#791",
+          "nomeEn": "solgaleo",
+          "nome": "Solgaleo",
+          "detalhe": "4 exemplares",
+          "nota": "Manter 1",
+          "status": "Transferir 3"
+        },
+        {
+          "numero": "#382",
+          "nomeEn": "kyogre",
+          "nome": "Kyogre",
+          "detalhe": "2 exemplares",
+          "nota": "Manter 2",
+          "status": "Transferir 0"
+        }
+      ],
+      "notas": [
+        "Critério: manter por IV, não por PC. Conferir antes de transferir."
+      ]
+    }
+  ],
+  "estadoPorTipo": [
+    {
+      "tipo": "Psychic",
+      "status": "excelente",
+      "titular": "Mewtwo Y (IV 100%)",
+      "reservas": [
+        "Espeon 3090 / 2851",
+        "Alakazam 2741 (Mega Alakazam)"
+      ]
+    },
+    {
+      "tipo": "Fighting",
+      "status": "excelente",
+      "titular": "Mewtwo X 4724 → Terrakion → Heracross",
+      "etiqueta": "RAID-LUTADOR",
+      "reservas": [
+        "Blaziken 2512 (Mega)",
+        "Buzzwole 2451",
+        "Machamp 2165",
+        "Infernape ×2"
+      ]
+    },
+    {
+      "tipo": "Rock",
+      "status": "ok",
+      "titular": "Tyranitar sortudo",
+      "etiqueta": "RAID-PEDRA"
+    },
+    {
+      "tipo": "Ground",
+      "status": "pronto",
+      "titular": "Rhyperior 3653",
+      "etiqueta": "RAID-TERRESTRE"
+    },
+    {
+      "tipo": "Fire",
+      "status": "pronto",
+      "titular": "Chandelure 3175",
+      "etiqueta": "RAID-FOGO"
+    },
+    {
+      "tipo": "Steel",
+      "status": "ok",
+      "titular": "Metagross sortudo / Dialga",
+      "etiqueta": "RAID-ACO"
+    },
+    {
+      "tipo": "Dragon",
+      "status": "ok",
+      "titular": "Salamence sortudo / Palkia",
+      "etiqueta": "RAID-DRAGAO"
+    },
+    {
+      "tipo": "Dark",
+      "status": "ok",
+      "titular": "Hydreigon sortudo",
+      "etiqueta": "RAID-SOMBRIO"
+    },
+    {
+      "tipo": "Water",
+      "status": "subnivelado",
+      "titular": "Kyogre / Gyarados",
+      "etiqueta": "RAID-AGUA",
+      "reservas": [
+        "Greninja 2826"
+      ]
+    },
+    {
+      "tipo": "Fairy",
+      "status": "subnivelado",
+      "titular": "Gardevoir sortudo",
+      "etiqueta": "RAID-FADA"
+    },
+    {
+      "tipo": "Ghost",
+      "status": "subnivelado",
+      "titular": "Gengar sortudo / Lunala",
+      "etiqueta": "RAID-FANTASMA",
+      "reservas": [
+        "Lunala 1713",
+        "Ceruledge 1791 (na verdade Fogo)"
+      ]
+    },
+    {
+      "tipo": "Ice",
+      "status": "magro",
+      "titular": "Baxcalibur → Mamoswine",
+      "etiqueta": "RAID-GELO",
+      "reservas": [
+        "Baxcalibur 2907"
+      ]
+    },
+    {
+      "tipo": "Grass",
+      "status": "baixa",
+      "titular": "Roserade ou Rillaboom (só 1)",
+      "etiqueta": "RAID-PLANTA"
+    },
+    {
+      "tipo": "Electric",
+      "status": "buraco",
+      "titular": "Raikou 1452",
+      "etiqueta": "RAID-ELETRICO"
+    }
+  ],
+  "ordemExecucao": [
+    {
+      "id": "passo-1",
+      "titulo": "TMs Rápidas",
+      "concluido": true
+    },
+    {
+      "id": "passo-2",
+      "titulo": "Piloswine → Mamoswine",
+      "concluido": true
+    },
+    {
+      "id": "passo-3",
+      "titulo": "Megaevoluir Tyranitar sortudo",
+      "detalhe": "575 de energia, custa 300. Liberado agora.",
+      "concluido": false
+    },
+    {
+      "id": "passo-4",
+      "titulo": "Fortalecer Tyranitar 3 Stars",
+      "detalhe": "Moveset pronto, é o Pedra de linha.",
+      "concluido": false
+    },
+    {
+      "id": "passo-5",
+      "titulo": "Timburr sombroso → Conkeldurr",
+      "detalhe": "⛔ Não purificar.",
+      "concluido": false
+    },
+    {
+      "id": "passo-6",
+      "titulo": "Raikou",
+      "detalhe": "Elétrico é o único buraco real.",
+      "concluido": false
+    },
+    {
+      "id": "passo-7",
+      "titulo": "Os cinco sortudos restantes",
+      "detalhe": "Gardevoir, Gengar, Metagross, Salamence, Hydreigon.",
+      "concluido": false
+    },
+    {
+      "id": "passo-8",
+      "titulo": "Kyogre e Dialga",
+      "detalhe": "Lendários sub-nivelados com doce disponível.",
+      "concluido": false
+    },
+    {
+      "id": "passo-9",
+      "titulo": "Lucario",
+      "detalhe": "Já etiquetado, sem pressa.",
+      "concluido": false
+    },
+    {
+      "id": "passo-10",
+      "titulo": "Limpar duplicatas de lendário",
+      "detalhe": "Libera doce.",
+      "concluido": false
+    }
+  ],
+  "bloqueios": [
+    {
+      "titulo": "Zacian → forma Coroada",
+      "motivo": "Energia Espada Coroada + doces"
+    },
+    {
+      "titulo": "Metagross → mega",
+      "motivo": "0 de energia"
+    },
+    {
+      "titulo": "Kyurem → fusão",
+      "motivo": "Energia de Fusão"
+    }
+  ],
+  "etiquetas": {
+    "prefixo": "RAID-",
+    "lista": [
+      "RAID-PEDRA",
+      "RAID-LUTADOR",
+      "RAID-TERRESTRE",
+      "RAID-FOGO",
+      "RAID-ACO",
+      "RAID-DRAGAO",
+      "RAID-SOMBRIO",
+      "RAID-AGUA",
+      "RAID-FADA",
+      "RAID-FANTASMA",
+      "RAID-GELO",
+      "RAID-PLANTA",
+      "RAID-ELETRICO"
+    ],
+    "excecao": "Mewtwo Y fica sem etiqueta por opção — é o único Psíquico titular, fácil de achar.",
+    "conferencia": "Conferência: aba TAGS → tocar em cada etiqueta para ver quem está marcado.",
+    "comoUsar": [
+      {
+        "titulo": "Veja a fraqueza do chefe",
+        "corpo": "Na tela de entrada da reide, toque no chefe → aba BATALHA. Aparece \"UM ITEM QUE DUPLICA O\" com os ícones dos tipos que causam dano dobrado."
+      },
+      {
+        "titulo": "Monte a equipe pela etiqueta",
+        "corpo": "Ao escolher os 6, toque na lupa e digite a etiqueta. Só os marcados aparecem. Selecione e entre.",
+        "exemplo": "RAID-PEDRA"
+      },
+      {
+        "titulo": "Se o chefe tiver duas fraquezas",
+        "corpo": "Combine com vírgula (= \"ou\").",
+        "exemplo": "RAID-PEDRA,RAID-ACO"
+      },
+      {
+        "titulo": "Se faltar gente",
+        "corpo": "Relaxe pro tipo puro.",
+        "exemplo": "pedra"
+      }
+    ],
+    "manutencao": [
+      "Ao fortalecer alguém novo, etiquete na hora — senão ele não entra no fluxo.",
+      "Se um Pokémon mudar de função por causa de TM, troque a etiqueta. O caso do Ceruledge (Fantasma → Fogo) mostra por quê.",
+      "Um Pokémon pode ter mais de uma etiqueta. Garchomp serve em RAID-DRAGAO e RAID-TERRESTRE conforme o moveset.",
+      "Antes de megaevoluir, lembre que a mega buffa aliados do mesmo tipo em 30% — vale escolher a mega que combina com a etiqueta que você está usando."
+    ]
+  },
+  "countersPorChefe": [
+    {
+      "tipoChefe": "Dragon",
+      "usar": [
+        {
+          "tipo": "Ice",
+          "etiqueta": "RAID-GELO"
+        },
+        {
+          "tipo": "Fairy",
+          "etiqueta": "RAID-FADA"
+        },
+        {
+          "tipo": "Dragon",
+          "etiqueta": "RAID-DRAGAO"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Flying",
+      "usar": [
+        {
+          "tipo": "Electric",
+          "etiqueta": "RAID-ELETRICO"
+        },
+        {
+          "tipo": "Rock",
+          "etiqueta": "RAID-PEDRA"
+        },
+        {
+          "tipo": "Ice",
+          "etiqueta": "RAID-GELO"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Fire",
+      "usar": [
+        {
+          "tipo": "Water",
+          "etiqueta": "RAID-AGUA"
+        },
+        {
+          "tipo": "Rock",
+          "etiqueta": "RAID-PEDRA"
+        },
+        {
+          "tipo": "Ground",
+          "etiqueta": "RAID-TERRESTRE"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Water",
+      "usar": [
+        {
+          "tipo": "Electric",
+          "etiqueta": "RAID-ELETRICO"
+        },
+        {
+          "tipo": "Grass",
+          "etiqueta": "RAID-PLANTA"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Grass",
+      "usar": [
+        {
+          "tipo": "Fire",
+          "etiqueta": "RAID-FOGO"
+        },
+        {
+          "tipo": "Ice",
+          "etiqueta": "RAID-GELO"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Ice",
+      "usar": [
+        {
+          "tipo": "Fire",
+          "etiqueta": "RAID-FOGO"
+        },
+        {
+          "tipo": "Fighting",
+          "etiqueta": "RAID-LUTADOR"
+        },
+        {
+          "tipo": "Steel",
+          "etiqueta": "RAID-ACO"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Fighting",
+      "usar": [
+        {
+          "tipo": "Psychic",
+          "nota": "Mewtwo Y"
+        },
+        {
+          "tipo": "Fairy",
+          "etiqueta": "RAID-FADA"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Psychic",
+      "usar": [
+        {
+          "tipo": "Dark",
+          "etiqueta": "RAID-SOMBRIO"
+        },
+        {
+          "tipo": "Ghost",
+          "etiqueta": "RAID-FANTASMA"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Ghost",
+      "usar": [
+        {
+          "tipo": "Ghost",
+          "etiqueta": "RAID-FANTASMA"
+        },
+        {
+          "tipo": "Dark",
+          "etiqueta": "RAID-SOMBRIO"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Dark",
+      "usar": [
+        {
+          "tipo": "Fighting",
+          "etiqueta": "RAID-LUTADOR"
+        },
+        {
+          "tipo": "Fairy",
+          "etiqueta": "RAID-FADA"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Steel",
+      "usar": [
+        {
+          "tipo": "Fire",
+          "etiqueta": "RAID-FOGO"
+        },
+        {
+          "tipo": "Fighting",
+          "etiqueta": "RAID-LUTADOR"
+        },
+        {
+          "tipo": "Ground",
+          "etiqueta": "RAID-TERRESTRE"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Fairy",
+      "usar": [
+        {
+          "tipo": "Steel",
+          "etiqueta": "RAID-ACO"
+        },
+        {
+          "tipo": "Poison"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Rock",
+      "usar": [
+        {
+          "tipo": "Water",
+          "etiqueta": "RAID-AGUA"
+        },
+        {
+          "tipo": "Grass",
+          "etiqueta": "RAID-PLANTA"
+        },
+        {
+          "tipo": "Fighting",
+          "etiqueta": "RAID-LUTADOR"
+        },
+        {
+          "tipo": "Steel",
+          "etiqueta": "RAID-ACO"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Ground",
+      "usar": [
+        {
+          "tipo": "Water",
+          "etiqueta": "RAID-AGUA"
+        },
+        {
+          "tipo": "Grass",
+          "etiqueta": "RAID-PLANTA"
+        },
+        {
+          "tipo": "Ice",
+          "etiqueta": "RAID-GELO"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Electric",
+      "usar": [
+        {
+          "tipo": "Ground",
+          "etiqueta": "RAID-TERRESTRE"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Poison",
+      "usar": [
+        {
+          "tipo": "Ground",
+          "etiqueta": "RAID-TERRESTRE"
+        },
+        {
+          "tipo": "Psychic",
+          "nota": "Mewtwo Y"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Bug",
+      "usar": [
+        {
+          "tipo": "Fire",
+          "etiqueta": "RAID-FOGO"
+        },
+        {
+          "tipo": "Rock",
+          "etiqueta": "RAID-PEDRA"
+        }
+      ]
+    },
+    {
+      "tipoChefe": "Normal",
+      "usar": [
+        {
+          "tipo": "Fighting",
+          "etiqueta": "RAID-LUTADOR"
+        }
+      ]
+    }
+  ],
+  "armadilhas": {
+    "licoes": [
+      {
+        "titulo": "PC alto ≠ bom atacante",
+        "corpo": "Golem 2947 é o caso-exemplo: maior PC do banco de Pedra, atacante ruim."
+      },
+      {
+        "titulo": "O tipo do Pokémon não é o tipo do atacante",
+        "corpo": "O que define é o golpe rápido. Quatro casos apareceram nesta auditoria:"
+      },
+      {
+        "titulo": "Forma base não mostra o movepool do atacante",
+        "corpo": "O Pokédex exibe só os golpes daquela forma. Timburr mostra Pancada/Rasteira; o Contra-Ataque + Soco Dinâmico só aparece depois de virar Conkeldurr. Mesmo caso do Piloswine → Mamoswine. Evoluir primeiro, avaliar depois."
+      },
+      {
+        "titulo": "Lendário sub-nivelado não serve",
+        "corpo": "Zapdos 1495 e Raikou 1452 são espécies ótimas paradas no nível ~25."
+      },
+      {
+        "titulo": "Buscar só por tipo esconde problema de moveset",
+        "corpo": "Sempre cruzar com @1<tipo>&@2<tipo>."
+      }
+    ],
+    "tiposEnganosos": [
+      {
+        "pokemon": "Rhyperior",
+        "parece": "Pedra",
+        "ehNaVerdade": "Terrestre",
+        "motivo": "Tapa de Lama + Terremoto"
+      },
+      {
+        "pokemon": "Kleavor",
+        "parece": "Pedra",
+        "ehNaVerdade": "nenhum",
+        "motivo": "Sem golpe rápido de Pedra"
+      },
+      {
+        "pokemon": "Zacian",
+        "parece": "Fada",
+        "ehNaVerdade": "fraco",
+        "motivo": "Sem golpe rápido de Fada"
+      },
+      {
+        "pokemon": "Ceruledge",
+        "parece": "Fantasma",
+        "ehNaVerdade": "Fogo",
+        "motivo": "Sem golpe rápido de Fantasma"
+      }
+    ]
+  },
+  "glossario": [
+    {
+      "ptbr": "Planta",
+      "en": "Grass"
+    },
+    {
+      "ptbr": "Terrestre",
+      "en": "Ground"
+    },
+    {
+      "ptbr": "Sombrio",
+      "en": "Dark"
+    },
+    {
+      "ptbr": "Lutador",
+      "en": "Fighting"
+    },
+    {
+      "ptbr": "Chama Furacão",
+      "en": "Fire Spin"
+    },
+    {
+      "ptbr": "Meteoro Esmagador",
+      "en": "Meteor Mash"
+    },
+    {
+      "ptbr": "Meteoro do Dragão",
+      "en": "Draco Meteor"
+    },
+    {
+      "ptbr": "Derrubada",
+      "en": "Smack Down"
+    },
+    {
+      "ptbr": "Gume de Pedra",
+      "en": "Stone Edge"
+    },
+    {
+      "ptbr": "Soco Projétil",
+      "en": "Bullet Punch"
+    },
+    {
+      "ptbr": "Cabeça de Ferro",
+      "en": "Iron Head"
+    },
+    {
+      "ptbr": "Jogo Duro",
+      "en": "Play Rough"
+    },
+    {
+      "ptbr": "Balanço Violento",
+      "en": "Brutal Swing"
+    },
+    {
+      "ptbr": "Foco Explosivo",
+      "en": "Focus Blast"
+    },
+    {
+      "ptbr": "Glaciar",
+      "en": "Glaciate"
+    }
+  ],
+  "buscas": [
+    {
+      "sintaxe": "<tipo>",
+      "descricao": "Coleção completa daquele tipo."
+    },
+    {
+      "sintaxe": "@1<tipo>&@2<tipo>",
+      "descricao": "Só os com STAB duplo."
+    },
+    {
+      "sintaxe": "!lendário&!sombroso&!sortudo&!brilhante&!favorito&0*,1*",
+      "descricao": "Limpeza em massa."
+    }
+  ],
+  "diagnostico": "O problema não era IV. Era moveset errado nos titulares e espécies excelentes paradas no nível ~25 — incluindo um Mewtwo IV 100% de 4724 PC que não estava sendo usado."
+}

@@ -7,9 +7,9 @@ import { EmptyState } from "@/components/pokemon/EmptyState";
 import { SearchBar } from "@/components/pokemon/SearchBar";
 import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import type { Pokemon } from "@/models/pokemon";
+import type { Pokemon, PokemonStudio } from "@/models/pokemon";
 import type { ItemIndicePokemon } from "@/models/indice";
-import { buscarPokemon } from "@/services/pokemon";
+import { buscarPokemon, buscarPorNomeEn } from "@/services/pokemon";
 import { importarPokemon } from "@/services/pokemon/importPokemon";
 import { mergePokemon } from "@/services/pokemon/mergePokemon";
 import {
@@ -18,6 +18,29 @@ import {
 } from "@/services/pokemon/studioStore";
 import { createEmptyPokemon } from "@/utils/createEmptyPokemon";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
+
+/**
+ * Junta o oficial (PokéAPI, sob demanda) com a curadoria local. Fica fora
+ * do componente para poder ser chamada tanto pela seleção manual quanto
+ * pelo deep link, sem virar dependência de efeito.
+ */
+async function montarPokemon(
+  item: ItemIndicePokemon,
+  studio: PokemonStudio,
+): Promise<Pokemon> {
+  const importado = await importarPokemon(item.nomeEn);
+
+  const base: Pokemon = {
+    oficial: createEmptyPokemon().oficial,
+    studio,
+  };
+
+  return mergePokemon(base, importado);
+}
+
+function studioDoMapa(mapa: StudioMap, numero: string): PokemonStudio {
+  return mapa[numero] ?? createEmptyPokemon().studio;
+}
 
 export default function Home() {
   const [pesquisa, setPesquisa] = useState("");
@@ -29,9 +52,49 @@ export default function Home() {
   const resultados = buscarPokemon(pesquisa);
 
   useEffect(() => {
-    carregarStudioMap()
-      .then(setStudioMap)
-      .catch(() => setStudioMap({}));
+    let cancelado = false;
+
+    async function iniciar() {
+      let mapa: StudioMap = {};
+
+      try {
+        mapa = await carregarStudioMap();
+      } catch {
+        mapa = {};
+      }
+
+      if (cancelado) return;
+      setStudioMap(mapa);
+
+      // Deep link do Plano: `/?p=<slug>` abre o card já montado. Lido do
+      // window em vez de useSearchParams para não exigir um boundary de
+      // Suspense só por causa de um parâmetro opcional.
+      const slug = new URLSearchParams(window.location.search).get("p");
+      if (!slug) return;
+
+      const item = buscarPorNomeEn(slug);
+      if (!item) return;
+
+      setCarregando(true);
+
+      try {
+        const pokemon = await montarPokemon(
+          item,
+          studioDoMapa(mapa, item.numero),
+        );
+        if (!cancelado) setPokemonSelecionado(pokemon);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        if (!cancelado) setCarregando(false);
+      }
+    }
+
+    iniciar();
+
+    return () => {
+      cancelado = true;
+    };
   }, []);
 
   async function selecionarPokemon(item: ItemIndicePokemon) {
@@ -40,16 +103,9 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     try {
-      const importado = await importarPokemon(item.nomeEn);
-      const studio =
-        studioMap[item.numero] ?? createEmptyPokemon().studio;
-
-      const base: Pokemon = {
-        oficial: createEmptyPokemon().oficial,
-        studio,
-      };
-
-      setPokemonSelecionado(mergePokemon(base, importado));
+      setPokemonSelecionado(
+        await montarPokemon(item, studioDoMapa(studioMap, item.numero)),
+      );
     } catch (error) {
       console.error(error);
       alert("Não foi possível carregar o Pokémon.");
