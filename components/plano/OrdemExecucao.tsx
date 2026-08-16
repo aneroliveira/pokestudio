@@ -9,7 +9,6 @@ type OrdemExecucaoProps = {
   passos: PassoPlano[];
   bloqueios: BloqueioPlano[];
   onAlternar: (id: string, concluido: boolean) => void;
-  salvando: boolean;
   erro: string | null;
 };
 
@@ -17,7 +16,6 @@ export function OrdemExecucao({
   passos,
   bloqueios,
   onAlternar,
-  salvando,
   erro,
 }: OrdemExecucaoProps) {
   const feitos = passos.filter((passo) => passo.concluido).length;
@@ -32,7 +30,6 @@ export function OrdemExecucao({
 
           <span className="text-sm text-muted-foreground">
             {feitos} de {total} concluídos
-            {salvando && " · salvando..."}
           </span>
         </div>
 
@@ -51,10 +48,14 @@ export function OrdemExecucao({
         </div>
 
         {erro && (
-          <p className="mt-3 rounded-lg bg-bad px-3 py-2 text-sm text-bad-foreground">
+          <p className="mt-3 rounded-lg bg-attention px-3 py-2 text-sm text-attention-foreground">
             {erro}
           </p>
         )}
+
+        <p className="mt-3 text-xs text-muted-foreground">
+          O que você marcar fica salvo neste aparelho.
+        </p>
 
         <ol className="mt-4 space-y-1">
           {passos.map((passo, indice) => (

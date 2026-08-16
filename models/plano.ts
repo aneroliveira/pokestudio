@@ -75,13 +75,28 @@ export interface EstadoTipo {
   reservas?: string[];
 }
 
-/** Item da ordem de execução. `concluido` é o único campo mutável do plano. */
+/**
+ * Item da ordem de execução. `concluido` aqui é o estado **commitado** —
+ * o que a auditoria registrou. O que a Lori marca no dia a dia vive em
+ * `ProgressoPlano`, à parte, e se sobrepõe a este valor.
+ */
 export interface PassoPlano {
   id: string;
   titulo: string;
   detalhe?: string;
   concluido: boolean;
 }
+
+/**
+ * Progresso do checklist: `passoId → concluído`. Fica separado da curadoria
+ * porque só ele muda durante o uso — a curadoria é editada no JSON e
+ * commitada, enquanto isto é marcado em pé na frente de um ginásio.
+ *
+ * Guardado no navegador, não no arquivo: em hospedagem serverless (Vercel)
+ * o sistema de arquivos é somente leitura, então gravar no `plano.json` em
+ * produção é impossível.
+ */
+export type ProgressoPlano = Record<string, boolean>;
 
 export interface BloqueioPlano {
   titulo: string;

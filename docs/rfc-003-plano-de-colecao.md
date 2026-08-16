@@ -52,8 +52,8 @@ Um **novo domínio `plano`**, paralelo ao `studio`, com rota própria.
 | Camada | Arquivo |
 |--------|---------|
 | Modelo | `models/plano.ts` |
-| Dados | `data/plano.json` |
-| Rota de dados | `app/api/plano/route.ts` (GET + PATCH) |
+| Curadoria | `data/plano.json` |
+| Rota de dados | `app/api/plano/route.ts` (GET, somente leitura) |
 | Service | `services/plano/planoStore.ts` |
 | UI | `app/plano/page.tsx` + `components/plano/*` |
 
@@ -62,9 +62,10 @@ Um **novo domínio `plano`**, paralelo ao `studio`, com rota própria.
 - **O plano não é indexado por número.** Ao contrário do `studio`, a chave não existe:
   cada entrada é um *exemplar em um papel*, e a mesma espécie pode repetir.
   `numero` e `nomeEn` ficam em cada entrada apenas para resolver sprite e link.
-- **Só a ordem de execução é mutável.** O `PATCH` alcança exclusivamente
-  `ordemExecucao[].concluido`. Auditoria, etiquetas e aprendizados são curadoria
-  manual, editada direto no JSON — mesmo espírito do `studio.json`.
+- **Curadoria e progresso são coisas separadas.** A curadoria (auditoria, etiquetas,
+  aprendizados) é editada no JSON e commitada. O progresso do checklist — a única
+  coisa que muda durante o uso — é um JSON próprio (`ProgressoPlano`,
+  `passoId → concluído`) guardado no navegador. Ver *Correção* abaixo.
 - **Nada é derivado aqui.** A tabela chefe → etiqueta é *curadoria*, não cálculo de
   `typeChart`: ela responde "qual etiqueta eu digito na lupa", que depende de quem
   a Lori realmente tem etiquetado, não da efetividade teórica. Se um dia virar
@@ -80,6 +81,43 @@ passou a aceitar `/?p=<slug>`, que abre o card já montado — é o destino de t
 linha de Pokémon do plano. O parâmetro é lido do `window.location` dentro do efeito
 que já existia, e não via `useSearchParams`, para não exigir um boundary de
 `Suspense` por causa de um parâmetro opcional.
+
+---
+
+## Correção — persistência do progresso
+
+A primeira versão gravava `ordemExecucao[].concluido` de volta no `data/plano.json`
+via `PATCH`, espelhando o que o Admin faz com o `studio.json`. **Funcionava em
+`next dev` e quebrava no ar.**
+
+Em hospedagem serverless (Vercel, o alvo do projeto) o sistema de arquivos é
+somente leitura: o `writeFile` estoura com `EROFS` e o `PATCH` devolve 500. O
+sintoma era enganoso — os passos já marcados apareciam normalmente, porque vinham
+do JSON commitado, e só a gravação de um passo novo falhava.
+
+O `writeFile` de curadoria do `studio.json` tem o mesmo limite, mas ali é aceitável:
+o Admin é ferramenta de bancada, usada na máquina de desenvolvimento. O checklist
+do plano é o oposto — o uso previsto é no celular, em pé na frente de um ginásio,
+que é exatamente onde só existe a versão publicada.
+
+**Decisão:** o `PATCH` foi removido (a rota é `GET` puro) e o progresso passou a ser
+um JSON no `localStorage`, sob a chave `pokestudio:plano:progresso`.
+
+- O `concluido` do `plano.json` vira o **estado inicial** — o que a auditoria
+  registrou como já feito.
+- O progresso do aparelho **se sobrepõe** a ele. A checagem é por *presença da
+  chave*, não pelo valor, para que desmarcar um passo que veio marcado do JSON
+  funcione e sobreviva ao reload.
+- `salvarProgresso` devolve `false` quando o armazenamento não está disponível
+  (janela anônima, cota cheia), e a UI avisa em vez de fingir que salvou.
+
+**Preço aceito:** o progresso é por aparelho — marcar no celular não reflete no PC.
+Para uso pessoal isso é aceitável, e evita banco, login e custo. Se um dia precisar
+ser compartilhado, o ponto de troca é só `planoStore.ts`.
+
+Nota de implementação: o progresso vive numa `ref`, não em `useState`. Dois toques
+seguidos acontecem antes do React re-renderizar, e um closure com o valor antigo
+fazia o segundo apagar o primeiro.
 
 ---
 

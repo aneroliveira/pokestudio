@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/PageContainer";
@@ -11,8 +11,13 @@ import { OrdemExecucao } from "@/components/plano/OrdemExecucao";
 import { EstadoPorTipo } from "@/components/plano/EstadoPorTipo";
 import { Etiquetas } from "@/components/plano/Etiquetas";
 import { Aprendizados } from "@/components/plano/Aprendizados";
-import type { Plano } from "@/models/plano";
-import { carregarPlano, salvarPasso } from "@/services/plano";
+import type { Plano, ProgressoPlano } from "@/models/plano";
+import {
+  aplicarProgresso,
+  carregarPlano,
+  carregarProgresso,
+  salvarProgresso,
+} from "@/services/plano";
 
 const SECOES = [
   "Ordem de execução",
@@ -33,19 +38,33 @@ export default function PlanoPage() {
   const [plano, setPlano] = useState<Plano | null>(null);
   const [carregando, setCarregando] = useState(true);
   const [secao, setSecao] = useState<Secao>("Ordem de execução");
-  const [salvando, setSalvando] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
+
+  // Numa ref, não em estado: marcar dois passos em toques seguidos acontece
+  // antes do React re-renderizar, e um closure com o valor antigo faria o
+  // segundo apagar o primeiro. Nada aqui é renderizado direto — a lista vem
+  // de `plano.ordemExecucao`.
+  const progresso = useRef<ProgressoPlano>({});
 
   useEffect(() => {
     carregarPlano()
-      .then(setPlano)
+      .then((curadoria) => {
+        // O progresso do aparelho entra por cima do estado commitado, e só
+        // depois que o JSON chegou — senão a lista pisca com o valor errado.
+        const salvo = carregarProgresso();
+        progresso.current = salvo;
+        setPlano({
+          ...curadoria,
+          ordemExecucao: aplicarProgresso(curadoria.ordemExecucao, salvo),
+        });
+      })
       .catch(() => setErro("Não foi possível carregar o plano."))
       .finally(() => setCarregando(false));
   }, []);
 
-  async function alternarPasso(id: string, concluido: boolean) {
-    // Otimista: o checkbox responde na hora e só volta atrás se o PATCH
-    // falhar. Marcar um passo em pé na rua não pode esperar rede.
+  function alternarPasso(id: string, concluido: boolean) {
+    progresso.current = { ...progresso.current, [id]: concluido };
+
     setPlano((atual) =>
       atual
         ? {
@@ -56,26 +75,12 @@ export default function PlanoPage() {
           }
         : atual,
     );
-    setErro(null);
-    setSalvando(true);
 
-    try {
-      await salvarPasso(id, concluido);
-    } catch {
-      setPlano((atual) =>
-        atual
-          ? {
-              ...atual,
-              ordemExecucao: atual.ordemExecucao.map((passo) =>
-                passo.id === id ? { ...passo, concluido: !concluido } : passo,
-              ),
-            }
-          : atual,
-      );
-      setErro("Não foi possível salvar. O passo voltou ao estado anterior.");
-    } finally {
-      setSalvando(false);
-    }
+    setErro(
+      salvarProgresso(progresso.current)
+        ? null
+        : "Marcado só nesta sessão — o navegador não deixou salvar (janela anônima?).",
+    );
   }
 
   if (carregando) {
@@ -178,7 +183,6 @@ export default function PlanoPage() {
                 passos={plano.ordemExecucao}
                 bloqueios={plano.bloqueios}
                 onAlternar={alternarPasso}
-                salvando={salvando}
                 erro={erro}
               />
             )}
