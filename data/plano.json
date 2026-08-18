@@ -565,13 +565,13 @@
     {
       "id": "passo-3",
       "titulo": "Megaevoluir Tyranitar sortudo",
-      "detalhe": "575 de energia, custa 300. Liberado agora.",
-      "concluido": false
+      "detalhe": "Feito — em período de descanso da mega.",
+      "concluido": true
     },
     {
       "id": "passo-4",
       "titulo": "Fortalecer Tyranitar 3 Stars",
-      "detalhe": "Moveset pronto, é o Pedra de linha.",
+      "detalhe": "Em andamento — falta doce e Poeira Estelar pro próximo nível.",
       "concluido": false
     },
     {
@@ -601,7 +601,7 @@
     {
       "id": "passo-9",
       "titulo": "Lucario",
-      "detalhe": "Já etiquetado, sem pressa.",
+      "detalhe": "Já etiquetado — falta doce para render.",
       "concluido": false
     },
     {
