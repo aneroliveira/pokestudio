@@ -23,9 +23,7 @@ export function MainHeader() {
   const items = [
     { href: "/", label: "Home" },
     { href: "/plano", label: "Plano" },
-    // Seção temporária do evento — remover este item junto com
-    // app/festival-aquatico/ quando o evento sair do ar.
-    { href: "/festival-aquatico", label: "Festival Aquático" },
+    { href: "/eventos", label: "Eventos" },
     { href: "/admin", label: "Admin" },
     { href: "/faq", label: "FAQ" },
   ];

@@ -137,8 +137,8 @@ body {
   background-color: var(--primary);
 }
 
-/* Festival Aquático (seção temporária) — remover este bloco junto com
-   app/festival-aquatico/ quando o evento sair do ar. */
+/* Animações compartilhadas do sistema de eventos (components/eventos/),
+   usadas no hero de qualquer evento — não são de um evento específico. */
 @media (prefers-reduced-motion: no-preference) {
   @keyframes festival-shimmer {
     from {
