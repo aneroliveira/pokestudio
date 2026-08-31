@@ -1,4 +1,3 @@
-import { createHash, timingSafeEqual } from "node:crypto";
 import { get, put } from "@vercel/blob";
 import type { ProgressoPlano } from "@/models/plano";
 
@@ -12,16 +11,11 @@ const CAMINHO_BLOB = "plano/progresso.json";
  * O blob é **privado**: só esta rota o lê, com o token do projeto. E toda
  * leitura usa `useCache: false` — o CDN do Blob tem cache mínimo de 1 minuto,
  * o que faria "marquei no celular" demorar a aparecer no PC.
+ *
+ * A escrita é **aberta**, por decisão da Lori (31/08/2026): o site é pessoal,
+ * e a senha atrapalhava mais do que protegia. O pior caso é alguém alternar
+ * checkbox — a curadoria em si vive versionada no `data/plano.json`.
  */
-
-function senhaConfere(recebida: string, esperada: string): boolean {
-  // Compara digests de tamanho fixo: `timingSafeEqual` exige buffers do
-  // mesmo tamanho, e assim o tempo não vaza o comprimento da senha.
-  const a = createHash("sha256").update(recebida).digest();
-  const b = createHash("sha256").update(esperada).digest();
-
-  return timingSafeEqual(a, b);
-}
 
 /** Descarta chaves que não sejam booleanas — o corpo vem da rede. */
 function sanitizar(dados: unknown): ProgressoPlano {
@@ -57,21 +51,6 @@ export async function GET() {
 }
 
 export async function PUT(request: Request) {
-  const esperada = process.env.PLANO_SENHA;
-
-  if (!esperada) {
-    return Response.json(
-      { erro: "PLANO_SENHA não configurada — escrita desabilitada." },
-      { status: 503 },
-    );
-  }
-
-  const recebida = request.headers.get("x-plano-senha");
-
-  if (!recebida || !senhaConfere(recebida, esperada)) {
-    return Response.json({ erro: "Senha incorreta." }, { status: 401 });
-  }
-
   const enviado = sanitizar(await request.json());
 
   try {
@@ -90,8 +69,8 @@ export async function PUT(request: Request) {
     return Response.json(progresso);
   } catch (error) {
     // Token ausente, cota estourada, storage fora do ar. O cliente trata
-    // qualquer não-2xx que não seja 401 como "não sincronizado", então o
-    // importante aqui é não devolver um 500 sem explicação.
+    // qualquer não-2xx como "não sincronizado", então o importante aqui é
+    // não devolver um 500 sem explicação.
     console.error("Falha ao gravar o progresso do plano:", error);
 
     return Response.json(

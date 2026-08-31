@@ -1,14 +1,9 @@
 import type { PassoPlano, Plano, ProgressoPlano } from "@/models/plano";
 
 const CHAVE_CACHE = "pokestudio:plano:progresso";
-const CHAVE_SENHA = "pokestudio:plano:senha";
 
 /** Como terminou a última tentativa de gravar. */
-export type ResultadoSalvar =
-  | "salvo"
-  | "sem-senha"
-  | "senha-invalida"
-  | "offline";
+export type ResultadoSalvar = "salvo" | "offline";
 
 /** Carrega a curadoria do plano (somente leitura, servida do JSON). */
 export async function carregarPlano(): Promise<Plano> {
@@ -29,17 +24,6 @@ export async function carregarPlano(): Promise<Plano> {
 // uso na rua: a página abre e responde sem esperar rede, e um toque não se
 // perde se o sinal cair no meio.
 
-function lerJson<T>(chave: string): T | null {
-  if (typeof window === "undefined") return null;
-
-  try {
-    const bruto = window.localStorage.getItem(chave);
-    return bruto ? (JSON.parse(bruto) as T) : null;
-  } catch {
-    return null;
-  }
-}
-
 function sanitizar(dados: unknown): ProgressoPlano {
   if (typeof dados !== "object" || dados === null) return {};
 
@@ -51,7 +35,14 @@ function sanitizar(dados: unknown): ProgressoPlano {
 }
 
 export function lerCacheLocal(): ProgressoPlano {
-  return sanitizar(lerJson<unknown>(CHAVE_CACHE));
+  if (typeof window === "undefined") return {};
+
+  try {
+    const bruto = window.localStorage.getItem(CHAVE_CACHE);
+    return bruto ? sanitizar(JSON.parse(bruto)) : {};
+  } catch {
+    return {};
+  }
 }
 
 export function gravarCacheLocal(progresso: ProgressoPlano): void {
@@ -62,31 +53,6 @@ export function gravarCacheLocal(progresso: ProgressoPlano): void {
   } catch {
     // Cota cheia ou janela anônima: o Blob continua sendo a fonte de
     // verdade, então perder o cache não perde o progresso.
-  }
-}
-
-// =========================
-// Senha
-// =========================
-
-export function lerSenha(): string | null {
-  if (typeof window === "undefined") return null;
-
-  try {
-    return window.localStorage.getItem(CHAVE_SENHA);
-  } catch {
-    return null;
-  }
-}
-
-export function gravarSenha(senha: string | null): void {
-  if (typeof window === "undefined") return;
-
-  try {
-    if (senha === null) window.localStorage.removeItem(CHAVE_SENHA);
-    else window.localStorage.setItem(CHAVE_SENHA, senha);
-  } catch {
-    // Sem persistir a senha ela vale só nesta aba — dá para trabalhar.
   }
 }
 
@@ -113,27 +79,18 @@ export async function carregarProgresso(): Promise<ProgressoPlano | null> {
   }
 }
 
-/** Grava o progresso compartilhado. Exige a senha. */
+/** Grava o progresso compartilhado. Escrita aberta — ver RFC-003. */
 export async function salvarProgresso(
   progresso: ProgressoPlano,
-  senha: string | null,
 ): Promise<ResultadoSalvar> {
-  if (!senha) return "sem-senha";
-
   try {
     const response = await fetch("/api/plano/progresso", {
       method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-        "x-plano-senha": senha,
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(progresso),
     });
 
-    if (response.status === 401) return "senha-invalida";
-    if (!response.ok) return "offline";
-
-    return "salvo";
+    return response.ok ? "salvo" : "offline";
   } catch {
     return "offline";
   }
