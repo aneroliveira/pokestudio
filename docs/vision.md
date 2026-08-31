@@ -1,5 +1,7 @@
 # 🌸 PokéStudio da Lori
 
+<!-- Nota interna: projeto renomeado para "PokéPocket da Lori" (domínio pogopocket.vercel.app). Este documento ainda não foi atualizado com o novo nome. -->
+
 > A companheira para decisões inteligentes no Pokémon GO.
 
 ## Visão

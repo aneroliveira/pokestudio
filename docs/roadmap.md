@@ -1,5 +1,7 @@
 # Roadmap
 
+<!-- Nota interna: projeto renomeado para "PokéPocket da Lori" (domínio pogopocket.vercel.app). Este documento ainda não foi atualizado com o novo nome. -->
+
 ## Visão do Produto
 
 O PokéStudio da Lori é uma aplicação web criada para auxiliar jogadores de Pokémon GO na tomada de decisões estratégicas.

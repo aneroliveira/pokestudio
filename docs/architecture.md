@@ -1,5 +1,7 @@
 # Arquitetura
 
+<!-- Nota interna: projeto renomeado para "PokéPocket da Lori" (domínio pogopocket.vercel.app). Este documento ainda não foi atualizado com o novo nome. -->
+
 Este documento registra as principais decisões arquiteturais do PokéStudio da Lori.
 
 ## Objetivo

@@ -118,8 +118,9 @@ export default function Home() {
     <PageContainer>
       <div className="w-full max-w-2xl space-y-6">
         <SectionTitle
-          title="PokéStudio da Lori"
-          subtitle="A companheira para decisões inteligentes no Pokémon GO."
+          title="PokéPocket da Lori"
+          // title="PokéStudio da Lori" // nome anterior, antes do domínio pogopocket.vercel.app
+          subtitle="O companheiro para decisões inteligentes no Pokémon GO."
         />
 
         <div className="md:sticky md:top-16 md:z-30 md:pb-2 md:backdrop-blur-md">

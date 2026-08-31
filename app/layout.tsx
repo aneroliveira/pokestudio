@@ -23,8 +23,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PokéStudio da Lori",
-  description: "A companheira para decisões inteligentes no Pokémon GO.",
+  title: "PokéPocket da Lori",
+  // title: "PokéStudio da Lori", // nome anterior, antes do domínio pogopocket.vercel.app
+  description: "O companheiro para decisões inteligentes no Pokémon GO.",
 };
 
 export default function RootLayout({
