@@ -34,8 +34,17 @@ export const megaAscension: Evento = {
     },
   ],
   notaCuradoria: {
-    texto:
-      "Escolha o iniciante de Kalos (Chespin, Fennekin ou Froakie) o quanto antes — a escolha define o caminho do Passe GO: Mega Finale e não dá pra trocar depois. Comparando com o plano: Mega Chesnaught (Planta/Lutador) fecha o maior buraco — Planta está \"baixa\" (só Roserade ou Rillaboom, nunca os dois), enquanto Lutador já está \"excelente\" com o Mewtwo X. Mega Greninja (Água/Sombrio) é a segunda opção — Água está \"subnivelado\" (titular Kyogre/Gyarados ainda pede investimento, e já tem um Greninja 2826 de reserva), mas Sombrio já está \"ok\" com o Hydreigon sortudo. Mega Delphox (Fogo/Psíquico) é o pick mais redundante — Fogo \"pronto\" (Chandelure) e Psíquico \"excelente\" (Mewtwo Y) já estão resolvidos. Recomendação: Chesnaught. As Mega Raids da semana (elenco variando por dia, sem agenda oficial detalhada ainda) são a hora de acumular Mega Energia com folga antes do fim de semana do Mega Finale; com o limite de Passe de Reide Remoto em 30 até 04/09, dá pra fechar várias sem sair de casa. Capturas em Mega Raid ganham fundo especial temático até o fim do Mega Finale.",
+    texto: [
+      "Escolha o iniciante de Kalos (Chespin, Fennekin ou Froakie) o quanto antes — a escolha define o caminho do Passe GO: Mega Finale e não dá pra trocar depois. Comparando com o plano:",
+      "",
+      '- Mega Chesnaught (Planta/Lutador): Planta está "baixa" (só Roserade ou Rillaboom, nunca os dois) — o maior buraco a fechar. Lutador já está "excelente" com o Mewtwo X.',
+      '- Mega Greninja (Água/Sombrio): Água está "subnivelado" (titular Kyogre/Gyarados ainda pede investimento, e já tem um Greninja 2826 de reserva). Sombrio já está "ok" com o Hydreigon sortudo.',
+      '- Mega Delphox (Fogo/Psíquico): o pick mais redundante — Fogo "pronto" (Chandelure) e Psíquico "excelente" (Mewtwo Y) já estão resolvidos.',
+      "",
+      "Recomendação: Mega Chesnaught.",
+      "",
+      "As Mega Raids da semana (elenco variando por dia, sem agenda oficial detalhada ainda) são a hora de acumular Mega Energia com folga antes do fim de semana do Mega Finale; com o limite de Passe de Reide Remoto em 30 até 04/09, dá pra fechar várias sem sair de casa. Capturas em Mega Raid ganham fundo especial temático até o fim do Mega Finale.",
+    ].join("\n"),
     linkPlano: true,
   },
 };

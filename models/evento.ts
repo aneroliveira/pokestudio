@@ -76,7 +76,8 @@ export interface Evento {
   reides?: GrupoReideEvento[];
   notaCuradoria?: {
     texto: string;
-    /** Quando true, mostra o link "Ver o plano completo" para /plano. */
+    /** Quando true, mostra o link "Ver o plano completo" para a aba
+     *  "Plano" em /admin. */
     linkPlano?: boolean;
   };
 }

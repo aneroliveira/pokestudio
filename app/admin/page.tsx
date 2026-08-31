@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { PokemonStudio } from "@/models/pokemon";
 import { createEmptyPokemon } from "@/utils/createEmptyPokemon";
 import { Tabs } from "@/components/ui/Tabs";
@@ -33,6 +33,16 @@ export default function AdminPage() {
   const [aba, setAba] = useState<Aba>("Sincronização");
   const [studioBaseline, setStudioBaseline] = useState<string | null>(null);
   const editor = usePokemonEditor(setPokemon);
+
+  // Deep link (ex.: "Ver o plano completo" nos eventos): `/admin?aba=Plano`
+  // já abre na aba certa. Lido do window em vez de useSearchParams para não
+  // exigir um boundary de Suspense só por causa de um parâmetro opcional.
+  useEffect(() => {
+    const desejada = new URLSearchParams(window.location.search).get("aba");
+    if (desejada && (ABAS as readonly string[]).includes(desejada)) {
+      setAba(desejada as Aba);
+    }
+  }, []);
 
   const dadosImportados = pokemon.oficial.numero !== "";
   const mostrarPreview = dadosImportados && aba !== "Plano";
