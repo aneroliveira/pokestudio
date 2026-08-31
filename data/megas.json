@@ -13,7 +13,9 @@
       "defense": 246,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm3.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm3.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm3.fMEGA.s.icon.png",
+    "escala": 1.037
   },
   {
     "id": "CHARIZARD_MEGA_X",
@@ -29,7 +31,9 @@
       "defense": 213,
       "stamina": 186
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fMEGA_X.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fMEGA_X.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fMEGA_X.s.icon.png",
+    "escala": 1.155
   },
   {
     "id": "CHARIZARD_MEGA_Y",
@@ -45,7 +49,9 @@
       "defense": 212,
       "stamina": 186
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fMEGA_Y.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fMEGA_Y.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fMEGA_Y.s.icon.png",
+    "escala": 0.959
   },
   {
     "id": "BLASTOISE_MEGA",
@@ -60,7 +66,9 @@
       "defense": 237,
       "stamina": 188
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm9.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm9.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm9.fMEGA.s.icon.png",
+    "escala": 1.216
   },
   {
     "id": "BEEDRILL_MEGA",
@@ -76,7 +84,9 @@
       "defense": 148,
       "stamina": 163
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm15.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm15.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm15.fMEGA.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "PIDGEOT_MEGA",
@@ -92,7 +102,9 @@
       "defense": 175,
       "stamina": 195
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm18.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm18.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm18.fMEGA.s.icon.png",
+    "escala": 1.01
   },
   {
     "id": "RAICHU_MEGA_X",
@@ -107,7 +119,9 @@
       "defense": 203,
       "stamina": 155
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm26.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm26.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm26.s.icon.png",
+    "escala": 1.297
   },
   {
     "id": "RAICHU_MEGA_Y",
@@ -122,7 +136,9 @@
       "defense": 157,
       "stamina": 155
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm26.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm26.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm26.s.icon.png",
+    "escala": 1.297
   },
   {
     "id": "ALAKAZAM_MEGA",
@@ -137,7 +153,9 @@
       "defense": 207,
       "stamina": 146
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm65.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm65.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm65.fMEGA.s.icon.png",
+    "escala": 1.209
   },
   {
     "id": "VICTREEBEL_MEGA",
@@ -153,7 +171,9 @@
       "defense": 181,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm71.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm71.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm71.fMEGA.s.icon.png",
+    "escala": 1.01
   },
   {
     "id": "SLOWBRO_MEGA",
@@ -169,7 +189,9 @@
       "defense": 259,
       "stamina": 216
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm80.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm80.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm80.fMEGA.s.icon.png",
+    "escala": 1.222
   },
   {
     "id": "GENGAR_MEGA",
@@ -185,7 +207,9 @@
       "defense": 199,
       "stamina": 155
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm94.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm94.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm94.fMEGA.s.icon.png",
+    "escala": 0.98
   },
   {
     "id": "KANGASKHAN_MEGA",
@@ -200,7 +224,27 @@
       "defense": 210,
       "stamina": 233
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm115.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm115.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm115.fMEGA.s.icon.png",
+    "escala": 1.106
+  },
+  {
+    "id": "STARMIE_MEGA",
+    "nome": "Mega Starmie",
+    "numeroBase": "#121",
+    "categoria": "Mega",
+    "tipos": [
+      "Water",
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 276,
+      "defense": 229,
+      "stamina": 155
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm121.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm121.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "PINSIR_MEGA",
@@ -216,7 +260,9 @@
       "defense": 231,
       "stamina": 163
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm127.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm127.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm127.fMEGA.s.icon.png",
+    "escala": 1.173
   },
   {
     "id": "GYARADOS_MEGA",
@@ -232,7 +278,9 @@
       "defense": 247,
       "stamina": 216
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm130.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm130.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm130.fMEGA.s.icon.png",
+    "escala": 1.032
   },
   {
     "id": "AERODACTYL_MEGA",
@@ -248,7 +296,9 @@
       "defense": 210,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm142.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm142.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm142.fMEGA.s.icon.png",
+    "escala": 0.972
   },
   {
     "id": "DRAGONITE_MEGA",
@@ -264,7 +314,9 @@
       "defense": 255,
       "stamina": 209
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm149.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm149.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm149.fMEGA.s.icon.png",
+    "escala": 1.197
   },
   {
     "id": "MEWTWO_MEGA_X",
@@ -280,7 +332,9 @@
       "defense": 215,
       "stamina": 228
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.fMEGA_X.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.fMEGA_X.s.icon.png",
+    "escala": 1.111
   },
   {
     "id": "MEWTWO_MEGA_Y",
@@ -295,7 +349,9 @@
       "defense": 223,
       "stamina": 228
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.fMEGA_Y.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.fMEGA_Y.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "AMPHAROS_MEGA",
@@ -311,7 +367,9 @@
       "defense": 203,
       "stamina": 207
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm181.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm181.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm181.fMEGA.s.icon.png",
+    "escala": 1.191
   },
   {
     "id": "STEELIX_MEGA",
@@ -327,7 +385,9 @@
       "defense": 327,
       "stamina": 181
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm208.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm208.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm208.fMEGA.s.icon.png",
+    "escala": 1.051
   },
   {
     "id": "SCIZOR_MEGA",
@@ -343,7 +403,9 @@
       "defense": 250,
       "stamina": 172
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm212.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm212.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm212.fMEGA.s.icon.png",
+    "escala": 1.179
   },
   {
     "id": "HERACROSS_MEGA",
@@ -359,7 +421,9 @@
       "defense": 223,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm214.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm214.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm214.fMEGA.s.icon.png",
+    "escala": 1.229
   },
   {
     "id": "SKARMORY_MEGA",
@@ -375,7 +439,9 @@
       "defense": 228,
       "stamina": 163
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm227.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm227.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm227.s.icon.png",
+    "escala": 1.248
   },
   {
     "id": "HOUNDOOM_MEGA",
@@ -391,7 +457,9 @@
       "defense": 194,
       "stamina": 181
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm229.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm229.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm229.fMEGA.s.icon.png",
+    "escala": 1.07
   },
   {
     "id": "TYRANITAR_MEGA",
@@ -407,7 +475,9 @@
       "defense": 276,
       "stamina": 225
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm248.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm248.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm248.fMEGA.s.icon.png",
+    "escala": 1.116
   },
   {
     "id": "SCEPTILE_MEGA",
@@ -423,7 +493,9 @@
       "defense": 186,
       "stamina": 172
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm254.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm254.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm254.fMEGA.s.icon.png",
+    "escala": 1.161
   },
   {
     "id": "BLAZIKEN_MEGA",
@@ -439,7 +511,9 @@
       "defense": 168,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm257.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm257.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm257.fMEGA.s.icon.png",
+    "escala": 1.255
   },
   {
     "id": "SWAMPERT_MEGA",
@@ -455,7 +529,9 @@
       "defense": 218,
       "stamina": 225
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm260.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm260.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm260.fMEGA.s.icon.png",
+    "escala": 1.116
   },
   {
     "id": "GARDEVOIR_MEGA",
@@ -471,7 +547,9 @@
       "defense": 229,
       "stamina": 169
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm282.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm282.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm282.fMEGA.s.icon.png",
+    "escala": 1.35
   },
   {
     "id": "SABLEYE_MEGA",
@@ -487,7 +565,9 @@
       "defense": 216,
       "stamina": 137
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm302.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm302.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm302.fMEGA.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "MAWILE_MEGA",
@@ -503,7 +583,9 @@
       "defense": 217,
       "stamina": 137
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm303.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm303.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm303.fMEGA.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "AGGRON_MEGA",
@@ -518,7 +600,9 @@
       "defense": 331,
       "stamina": 172
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm306.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm306.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm306.fMEGA.s.icon.png",
+    "escala": 1.014
   },
   {
     "id": "MEDICHAM_MEGA",
@@ -534,7 +618,9 @@
       "defense": 179,
       "stamina": 155
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm308.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm308.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm308.fMEGA.s.icon.png",
+    "escala": 1.167
   },
   {
     "id": "MANECTRIC_MEGA",
@@ -549,7 +635,9 @@
       "defense": 179,
       "stamina": 172
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm310.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm310.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm310.fMEGA.s.icon.png",
+    "escala": 1.085
   },
   {
     "id": "SHARPEDO_MEGA",
@@ -565,7 +653,9 @@
       "defense": 144,
       "stamina": 172
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm319.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm319.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm319.fMEGA.s.icon.png",
+    "escala": 1.283
   },
   {
     "id": "CAMERUPT_MEGA",
@@ -581,7 +671,9 @@
       "defense": 183,
       "stamina": 172
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm323.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm323.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm323.fMEGA.s.icon.png",
+    "escala": 1.001
   },
   {
     "id": "ALTARIA_MEGA",
@@ -597,7 +689,9 @@
       "defense": 218,
       "stamina": 181
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm334.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm334.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm334.fMEGA.s.icon.png",
+    "escala": 1.116
   },
   {
     "id": "BANETTE_MEGA",
@@ -612,7 +706,9 @@
       "defense": 160,
       "stamina": 162
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm354.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm354.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm354.fMEGA.s.icon.png",
+    "escala": 1.276
   },
   {
     "id": "ABSOL_MEGA",
@@ -627,7 +723,9 @@
       "defense": 130,
       "stamina": 163
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm359.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm359.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm359.fMEGA.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "GLALIE_MEGA",
@@ -642,7 +740,9 @@
       "defense": 168,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm362.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm362.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm362.fMEGA.s.icon.png",
+    "escala": 1.075
   },
   {
     "id": "SALAMENCE_MEGA",
@@ -658,7 +758,9 @@
       "defense": 251,
       "stamina": 216
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm373.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm373.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm373.fMEGA.s.icon.png",
+    "escala": 0.948
   },
   {
     "id": "METAGROSS_MEGA",
@@ -674,7 +776,9 @@
       "defense": 289,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm376.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm376.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm376.fMEGA.s.icon.png",
+    "escala": 0.948
   },
   {
     "id": "LATIAS_MEGA",
@@ -690,7 +794,9 @@
       "defense": 297,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm380.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm380.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm380.fMEGA.s.icon.png",
+    "escala": 1.127
   },
   {
     "id": "LATIOS_MEGA",
@@ -706,7 +812,9 @@
       "defense": 241,
       "stamina": 190
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm381.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm381.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm381.fMEGA.s.icon.png",
+    "escala": 1.046
   },
   {
     "id": "KYOGRE_PRIMAL",
@@ -721,7 +829,9 @@
       "defense": 268,
       "stamina": 218
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm382.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm382.fPRIMAL.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm382.fPRIMAL.s.icon.png",
+    "escala": 0.98
   },
   {
     "id": "GROUDON_PRIMAL",
@@ -737,7 +847,9 @@
       "defense": 268,
       "stamina": 218
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm383.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm383.fPRIMAL.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm383.fPRIMAL.s.icon.png",
+    "escala": 0.918
   },
   {
     "id": "RAYQUAZA_MEGA",
@@ -753,7 +865,9 @@
       "defense": 210,
       "stamina": 227
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm384.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm384.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm384.fMEGA.s.icon.png",
+    "escala": 1.133
   },
   {
     "id": "LOPUNNY_MEGA",
@@ -769,7 +883,9 @@
       "defense": 214,
       "stamina": 163
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm428.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm428.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm428.fMEGA.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "GARCHOMP_MEGA",
@@ -785,7 +901,9 @@
       "defense": 222,
       "stamina": 239
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm445.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm445.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm445.fMEGA.s.icon.png",
+    "escala": 1.209
   },
   {
     "id": "LUCARIO_MEGA",
@@ -801,7 +919,9 @@
       "defense": 175,
       "stamina": 172
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm448.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm448.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm448.fMEGA.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "ABOMASNOW_MEGA",
@@ -817,7 +937,9 @@
       "defense": 191,
       "stamina": 207
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm460.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm460.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm460.fMEGA.s.icon.png",
+    "escala": 0.948
   },
   {
     "id": "GALLADE_MEGA",
@@ -833,7 +955,9 @@
       "defense": 230,
       "stamina": 169
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm475.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm475.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm475.fMEGA.s.icon.png",
+    "escala": 1.342
   },
   {
     "id": "AUDINO_MEGA",
@@ -849,7 +973,63 @@
       "defense": 239,
       "stamina": 230
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm531.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm531.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm531.fMEGA.s.icon.png",
+    "escala": 1.4
+  },
+  {
+    "id": "CHESNAUGHT_MEGA",
+    "nome": "Mega Chesnaught",
+    "numeroBase": "#652",
+    "categoria": "Mega",
+    "tipos": [
+      "Grass",
+      "Fighting"
+    ],
+    "stats": {
+      "attack": 242,
+      "defense": 282,
+      "stamina": 204
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm652.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm652.s.icon.png",
+    "escala": 1.173
+  },
+  {
+    "id": "DELPHOX_MEGA",
+    "nome": "Mega Delphox",
+    "numeroBase": "#655",
+    "categoria": "Mega",
+    "tipos": [
+      "Fire",
+      "Psychic"
+    ],
+    "stats": {
+      "attack": 331,
+      "defense": 235,
+      "stamina": 181
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm655.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm655.s.icon.png",
+    "escala": 1.366
+  },
+  {
+    "id": "GRENINJA_MEGA",
+    "nome": "Mega Greninja",
+    "numeroBase": "#658",
+    "categoria": "Mega",
+    "tipos": [
+      "Water",
+      "Dark"
+    ],
+    "stats": {
+      "attack": 299,
+      "defense": 180,
+      "stamina": 176
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm658.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm658.s.icon.png",
+    "escala": 1.283
   },
   {
     "id": "MALAMAR_MEGA",
@@ -865,7 +1045,9 @@
       "defense": 222,
       "stamina": 200
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm687.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm687.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm687.fMEGA.s.icon.png",
+    "escala": 1.138
   },
   {
     "id": "DIANCIE_MEGA",
@@ -881,7 +1063,9 @@
       "defense": 235,
       "stamina": 137
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm719.fMEGA.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm719.fMEGA.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm719.fMEGA.s.icon.png",
+    "escala": 1.4
   },
   {
     "id": "FALINKS_MEGA",
@@ -896,6 +1080,8 @@
       "defense": 229,
       "stamina": 163
     },
-    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm870.icon.png"
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm870.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm870.s.icon.png",
+    "escala": 1.06
   }
 ]

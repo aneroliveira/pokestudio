@@ -14,6 +14,10 @@ export interface EntradaMega {
   tipos: TipoPokemon[];
   stats: { attack: number; defense: number; stamina: number };
   imagem?: string;
+  imagemShiny?: string;
+  /** Compensa a moldura do ícone de Mega ter menos preenchimento que a
+   *  arte oficial da forma base — aplicar como transform: scale() na UI. */
+  escala?: number;
 }
 
 export const MEGAS = megasData as unknown as EntradaMega[];

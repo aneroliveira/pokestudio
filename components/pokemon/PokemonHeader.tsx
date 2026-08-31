@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { TypeIcon } from "@/components/ui/TypeIcon";
+import { ToggleChip } from "@/components/ui/ToggleChip";
+import { useMegaShiny } from "@/components/pokemon/useMegaShiny";
 import Image from "next/image";
 
 type PokemonHeaderProps = {
@@ -11,13 +12,15 @@ type PokemonHeaderProps = {
 };
 
 export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
-  const [mostrarShiny, setMostrarShiny] = useState(false);
-
-  const temShiny = Boolean(pokemon.oficial.imagemShiny);
-  const imagemExibida =
-    mostrarShiny && temShiny
-      ? pokemon.oficial.imagemShiny
-      : pokemon.oficial.imagem;
+  const {
+    mostrarShiny,
+    setMostrarShiny,
+    mostrarMega,
+    setMostrarMega,
+    temShiny,
+    temMega,
+    imagensExibidas,
+  } = useMegaShiny(pokemon);
 
   return (
     <div className="flex items-start justify-between gap-6">
@@ -32,18 +35,21 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
           </h2>
 
           {temShiny && (
-            <button
-              type="button"
+            <ToggleChip
+              ativo={mostrarShiny}
               onClick={() => setMostrarShiny((valor) => !valor)}
-              aria-pressed={mostrarShiny}
-              className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
-                mostrarShiny
-                  ? "border-primary bg-primary/10 text-primary"
-                  : "border-border text-muted-foreground hover:text-foreground"
-              }`}
             >
               ✨ Shiny
-            </button>
+            </ToggleChip>
+          )}
+
+          {temMega && (
+            <ToggleChip
+              ativo={mostrarMega}
+              onClick={() => setMostrarMega((valor) => !valor)}
+            >
+              💠 Mega
+            </ToggleChip>
           )}
         </div>
 
@@ -69,22 +75,35 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
         </div>
       </div>
 
-      <div className="flex shrink-0 flex-col items-center gap-2">
-        {imagemExibida ? (
-          <div className="relative h-[104px] w-[104px]">
-            <Image
-              src={imagemExibida}
-              alt={pokemon.oficial.nome.ptBR || "Pokémon"}
-              fill
-              sizes="104px"
-              className="object-contain"
-            />
+      <div className="flex shrink-0 flex-wrap items-start justify-end gap-4">
+        {imagensExibidas.map((imagem) => (
+          <div key={imagem.key} className="flex flex-col items-center gap-1">
+            {imagem.src ? (
+              <div className="relative h-[104px] w-[104px]">
+                <Image
+                  src={imagem.src}
+                  alt={imagem.alt}
+                  fill
+                  sizes="104px"
+                  className="object-contain"
+                  style={
+                    imagem.escala ? { transform: `scale(${imagem.escala})` } : undefined
+                  }
+                />
+              </div>
+            ) : (
+              <div className="flex h-[104px] w-[104px] items-center justify-center rounded-xl border-2 border-dashed border-border bg-muted text-center text-xs text-muted-foreground">
+                Sem imagem
+              </div>
+            )}
+
+            {imagem.legenda && (
+              <span className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                {imagem.legenda}
+              </span>
+            )}
           </div>
-        ) : (
-          <div className="flex h-[104px] w-[104px] items-center justify-center rounded-xl border-2 border-dashed border-border bg-muted text-center text-xs text-muted-foreground">
-            Sem imagem
-          </div>
-        )}
+        ))}
       </div>
     </div>
   )
