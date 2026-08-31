@@ -10,7 +10,7 @@
 // RecommendationChip. O registro cresce a cada evento — não é um convite
 // a reaproveitar visual entre eventos diferentes.
 
-export type TemaEvento = "agua" | "psiquico";
+export type TemaEvento = "agua" | "psiquico" | "mega";
 
 export interface PresetTemaEvento {
   /** Gradiente de fundo do hero (inclui variantes dark:). */
@@ -53,5 +53,19 @@ export const EVENTO_TEMA: Record<TemaEvento, PresetTemaEvento> = {
     ],
     ondaClasses: "text-violet-500/25 dark:text-violet-400/15",
     destaqueGradiente: "to-violet-500/5 dark:to-violet-400/10",
+  },
+  mega: {
+    heroGradiente:
+      "from-blue-500/15 via-indigo-500/10 to-sky-500/15 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-sky-400/15",
+    badgeClasses:
+      "bg-blue-500/15 text-blue-700 dark:bg-blue-400/15 dark:text-blue-300",
+    bolhasClasses: [
+      "bg-blue-400/60",
+      "bg-indigo-400/60",
+      "bg-sky-400/50",
+      "bg-blue-300/60",
+    ],
+    ondaClasses: "text-blue-500/25 dark:text-blue-400/15",
+    destaqueGradiente: "to-blue-500/5 dark:to-blue-400/10",
   },
 };

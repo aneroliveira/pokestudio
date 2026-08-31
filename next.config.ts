@@ -9,15 +9,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: "/festival-aquatico",
-        destination: "/eventos/festival-aquatico",
-        permanent: false,
-      },
-    ];
-  },
 };
 
 export default nextConfig;

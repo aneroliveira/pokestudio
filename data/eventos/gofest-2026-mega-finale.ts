@@ -16,7 +16,7 @@ export const goFest2026MegaFinale: Evento = {
     inicio: "2026-09-05T10:00:00-03:00",
     fim: "2026-09-06T18:00:00-03:00",
   },
-  periodoTexto: "5/09 10h → 6/09 18h de 2026 (horário local)",
+  periodoTexto: "5/09 (sáb) 10h → 6/09 (dom) 18h de 2026 (horário local)",
   tema: "psiquico",
   badge: "Reides remotos sem limite + estreia de 3 Megas de Kalos",
   estreias: {
