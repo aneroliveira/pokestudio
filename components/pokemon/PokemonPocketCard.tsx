@@ -40,8 +40,8 @@ export function PokemonPocketCard({ pokemon }: PokemonPocketCardProps) {
   const nome = pokemon.oficial.nome.ptBR || "Pokémon";
 
   return (
-    <Card className="grid gap-4 sm:grid-cols-[96px_1fr]">
-      <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+    <Card className="grid gap-4 sm:grid-cols-[minmax(96px,max-content)_1fr]">
+      <div className="flex flex-nowrap items-center justify-center gap-3 sm:justify-start">
         {imagensExibidas.map((imagem) => (
           <div key={imagem.key} className="flex flex-col items-center gap-1">
             {imagem.src ? (
