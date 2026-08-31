@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { MainHeader } from "@/components/layout/MainHeader";
@@ -40,9 +39,12 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">
-        <Script
+        {/* Script cru, não o componente <Script> do Next — beforeInteractive
+            só executa quando o bundle JS carrega e processa a fila
+            __next_s, o que no dev server é lento o bastante pra piscar o
+            tema. Uma <script> comum bloqueia o parse e roda na hora. */}
+        <script
           id="theme-init"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: scriptTema }}
         />
 
