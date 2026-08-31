@@ -7,40 +7,19 @@ import { EmptyState } from "@/components/pokemon/EmptyState";
 import { SearchBar } from "@/components/pokemon/SearchBar";
 import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import type { Pokemon, PokemonStudio } from "@/models/pokemon";
+import type { Pokemon } from "@/models/pokemon";
 import type { ItemIndicePokemon } from "@/models/indice";
-import { buscarPokemon, buscarPorNomeEn } from "@/services/pokemon";
-import { importarPokemon } from "@/services/pokemon/importPokemon";
-import { mergePokemon } from "@/services/pokemon/mergePokemon";
+import {
+  buscarPokemon,
+  buscarPorNomeEn,
+  montarPokemon,
+  studioDoMapa,
+} from "@/services/pokemon";
 import {
   carregarStudioMap,
   type StudioMap,
 } from "@/services/pokemon/studioStore";
-import { createEmptyPokemon } from "@/utils/createEmptyPokemon";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
-
-/**
- * Junta o oficial (PokéAPI, sob demanda) com a curadoria local. Fica fora
- * do componente para poder ser chamada tanto pela seleção manual quanto
- * pelo deep link, sem virar dependência de efeito.
- */
-async function montarPokemon(
-  item: ItemIndicePokemon,
-  studio: PokemonStudio,
-): Promise<Pokemon> {
-  const importado = await importarPokemon(item.nomeEn);
-
-  const base: Pokemon = {
-    oficial: createEmptyPokemon().oficial,
-    studio,
-  };
-
-  return mergePokemon(base, importado);
-}
-
-function studioDoMapa(mapa: StudioMap, numero: string): PokemonStudio {
-  return mapa[numero] ?? createEmptyPokemon().studio;
-}
 
 export default function Home() {
   const [pesquisa, setPesquisa] = useState("");

@@ -22,7 +22,7 @@ export function MainHeader() {
 
   const items = [
     { href: "/", label: "Home" },
-    { href: "/plano", label: "Plano" },
+    { href: "/pocket", label: "Pocket" },
     { href: "/eventos", label: "Eventos" },
     { href: "/admin", label: "Admin" },
     { href: "/faq", label: "FAQ" },
