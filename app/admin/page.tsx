@@ -13,6 +13,7 @@ import { EstrategiaTab } from "@/components/admin/tabs/EstrategiaTab";
 import { SincronizacaoTab } from "@/components/admin/tabs/SincronizacaoTab";
 import { PreviewTab } from "@/components/admin/tabs/PreviewTab";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
+import { PlanoView } from "@/components/plano/PlanoView";
 
 const ABAS = [
   "Sincronização",
@@ -22,6 +23,7 @@ const ABAS = [
   "Estratégia",
   "Forms",
   "Preview",
+  "Plano",
 ] as const;
 
 type Aba = (typeof ABAS)[number];
@@ -33,6 +35,7 @@ export default function AdminPage() {
   const editor = usePokemonEditor(setPokemon);
 
   const dadosImportados = pokemon.oficial.numero !== "";
+  const mostrarPreview = dadosImportados && aba !== "Plano";
   const naoSalvo =
     dadosImportados &&
     studioBaseline !== null &&
@@ -66,7 +69,7 @@ export default function AdminPage() {
 
       <div
         className={`mt-8 grid min-w-0 gap-8 ${
-          dadosImportados ? "lg:grid-cols-[1fr_380px]" : ""
+          mostrarPreview ? "lg:grid-cols-[1fr_380px]" : ""
         }`}
       >
         <div className="min-w-0">
@@ -89,10 +92,11 @@ export default function AdminPage() {
             )}
             {aba === "Forms" && <FormsTab pokemon={pokemon} />}
             {aba === "Preview" && <PreviewTab pokemon={pokemon} />}
+            {aba === "Plano" && <PlanoView />}
           </section>
         </div>
 
-        {dadosImportados && (
+        {mostrarPreview && (
           <div className="min-w-0 lg:sticky lg:top-8 lg:self-start">
             <p className="mb-3 text-xs font-medium uppercase tracking-wide text-muted-foreground">
               Preview ao vivo
