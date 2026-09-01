@@ -41,7 +41,8 @@ a mega; o Tyranitar 3 Stars é o atacante de linha. Dois destinos, um `#248`.
    conjunto (ordem, orçamento, cobertura) não tem onde morar e se perderia.
 3. **Só um `.md` em `docs/`.** Descartada: vira documento, não ferramenta. Não dá
    para marcar progresso em pé na rua, na frente de um ginásio.
-4. **Rota própria `/plano`.** ✅ Escolhida.
+4. **Rota própria `/plano`.** ✅ Escolhida na época. A rota foi depois absorvida
+   como aba do `/admin`, alcançável por `/admin?aba=Plano`.
 
 ---
 
@@ -55,7 +56,7 @@ Um **novo domínio `plano`**, paralelo ao `studio`, com rota própria.
 | Curadoria | `data/plano.json` |
 | Rota de dados | `app/api/plano/route.ts` (GET, somente leitura) |
 | Service | `services/plano/planoStore.ts` |
-| UI | `app/plano/page.tsx` + `components/plano/*` |
+| UI | `components/plano/*` — hoje montada pelo `PlanoView` na aba **Plano** do `/admin` |
 
 ### Regras
 
@@ -134,10 +135,13 @@ não ganhou banco relacional.
 | Escrita | mescla, não substitui | A rota lê o estado atual e aplica as chaves recebidas por cima. Um passo marcado por outro aparelho sobrevive a uma gravação que não o conhecia. |
 | Gravações no cliente | serializadas numa fila | Dois toques rápidos viravam dois `PUT` concorrentes, e o que chegasse por último decidia — podendo ser o que carregava o valor mais antigo. |
 
-### Escrita protegida por senha
+### ~~Escrita protegida por senha~~ — revertido em 31/08/2026
+
+> **Esta proteção não existe mais.** Ver *Correção 3*, no fim do documento. O que
+> segue descreve o desenho que vigorou entre 16/08 e 31/08/2026.
 
 O produto não tem login (decisão de 11/07/2026) e a URL é pública, então um endpoint
-de escrita aberto deixaria qualquer um mexer no checklist. A proteção é uma senha
+de escrita aberto deixaria qualquer um mexer no checklist. A proteção era uma senha
 única em `PLANO_SENHA`, enviada no header `x-plano-senha`.
 
 - Sem senha válida, a página abre em **modo leitura** e os checkboxes ficam
@@ -160,8 +164,8 @@ salvou.
 
 ### Configuração necessária
 
-Ver `.env.example`. Sem `BLOB_READ_WRITE_TOKEN` a leitura devolve 503 e a página
-entra em modo offline — funciona, mas não sincroniza.
+Ver `.env.example`. Sem o `BLOB_STORE_ID` a leitura devolve 503 e a página entra em
+modo offline — funciona, mas não sincroniza.
 
 ---
 
@@ -180,3 +184,24 @@ caminho de entrada a mais e `buscarPokemon.ts` ganhou `buscarPorNomeEn`.
 - Os itens de Pokémon específico do plano (movesets-alvo, "não purificar o Timburr",
   "não fortalecer Reshiram/Zekrom") ainda **não** aparecem no card do Pokémon.
   Levá-los para `observacoes` / `decisoes` no `studio.json` é trabalho separado.
+
+---
+
+## Correção 3 — a senha saiu
+
+A senha travava o checklist em **modo leitura** em todo aparelho novo. Só que o uso
+previsto é justamente esse: abrir no celular, na rua, para marcar um passo. A
+proteção atrapalhava exatamente onde o recurso serve.
+
+**Decisão da Lori (31/08/2026):** escrita aberta. O `PUT /api/plano/progresso` não
+exige mais header nenhum.
+
+**Risco assumido, e por que é pequeno:** o endpoint aceita gravação de qualquer um, e
+o pior caso é alguém alternar um checkbox. A curadoria — os blocos, as etiquetas, os
+aprendizados — vive versionada no `data/plano.json`, que a rota não alcança. Nada de
+valor real está exposto.
+
+O que saiu junto: o estado `bloqueado`/`senha-invalida` do tipo `Sincronia`, o
+formulário de destravar, o "esquecer senha neste aparelho", e as funções de senha do
+`planoStore`. A variável `PLANO_SENHA` deixou de ser lida e pode ser removida do
+projeto na Vercel.

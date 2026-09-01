@@ -30,11 +30,8 @@ Centralizar todas as informações importantes sobre um Pokémon para responder 
 
 ## Configuração
 
-Só uma variável é definida à mão: **`PLANO_SENHA`**, a senha para marcar os passos
-em `/plano`. Sem ela a página abre em modo leitura.
-
-O resto vem do Blob store, onde o progresso do checklist é guardado (o mesmo em
-todos os aparelhos).
+Nenhuma variável precisa ser digitada à mão. Tudo vem do Blob store, onde o
+progresso do checklist do `/plano` é guardado — o mesmo em todos os aparelhos.
 
 ### Criar o Blob store
 
@@ -44,12 +41,12 @@ todos os aparelhos).
 4. Marcar os ambientes: **Production**, **Preview** e — se for rodar local —
    **Development**
 
-A Vercel injeta sozinha o `BLOB_STORE_ID` (e emite o `VERCEL_OIDC_TOKEN` em
-runtime — é assim que a autenticação funciona; não há token estático). Depois é só
-definir `PLANO_SENHA` em **Settings → Environment Variables** e refazer o deploy.
+A Vercel injeta sozinha o `BLOB_STORE_ID` e emite o `VERCEL_OIDC_TOKEN` em
+runtime. É assim que a autenticação funciona; não há token estático.
 
-> `PLANO_SENHA` e `BLOB_STORE_ID` precisam existir **nos mesmos ambientes**. Se um
-> deles faltar em algum, ali o `/plano` fica sem sincronizar.
+> A escrita do progresso é **aberta** — não há senha. Decisão de 31/08/2026: o
+> site é pessoal, e o pior caso é alguém alternar um checkbox. A curadoria em si
+> vive versionada no `data/plano.json`, fora do alcance da rota.
 
 ### Rodar local
 
@@ -59,11 +56,15 @@ vercel env pull
 
 Se as variáveis do Blob não aparecerem no `.env.local`, a conexão do store não
 inclui **Development**: no store, aba **Projects** → menu `⋯` do projeto →
-**Update Project Connection** → marcar Development. O mesmo vale para a
-`PLANO_SENHA`, que precisa estar marcada em Development.
+**Update Project Connection** → marcar Development.
 
 Sem o Blob o app funciona normalmente — só o `/plano` fica sem sincronizar, usando
 o estado gravado no `data/plano.json`.
+
+### Publicar
+
+A branch de produção é a `develop` (**Settings → Environments → Production →
+Branch Tracking**). Push nela publica direto; não é preciso promover nada.
 
 ---
 
