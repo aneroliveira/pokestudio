@@ -47,10 +47,14 @@ export default function PocketPage() {
     };
   }, []);
 
+  // O caso "busca vazia" limpa a lista sem esperar o debounce, e por isso
+  // chama setState direto no efeito. Vale reescrever um dia derivando o
+  // estado vazio no render — hoje seria mexer no debounce sem necessidade.
   useEffect(() => {
     const resultados = buscarPokemon(pesquisa);
 
     if (resultados.length === 0) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setPokemons([]);
       setCarregando(false);
       return;

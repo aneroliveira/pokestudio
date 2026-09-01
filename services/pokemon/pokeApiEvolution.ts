@@ -1,4 +1,8 @@
-export async function buscarCadeiaEvolutiva(url: string) {
+import type { CadeiaEvolutivaApi } from "@/models/pokeApi";
+
+export async function buscarCadeiaEvolutiva(
+  url: string,
+): Promise<CadeiaEvolutivaApi> {
   const response = await fetch(url);
 
   if (!response.ok) {

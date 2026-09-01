@@ -1,3 +1,4 @@
+import type { VariedadeApi } from "@/models/pokeApi";
 import type { CategoriaFormaPokemon, FormaPokemon } from "@/models/pokemon";
 
 const REGIOES = ["alola", "galar", "hisui", "paldea"];
@@ -73,9 +74,9 @@ function formatarNomeForma(partes: string[]): string {
 }
 
 export function obterFormasPokemon(
-    variedades: any[],
+    variedades: VariedadeApi[],
 ): FormaPokemon[] {
-    return variedades.map((variedade: any) => {
+    return variedades.map((variedade) => {
         const partes =
             variedade.pokemon.name.split("-");
 

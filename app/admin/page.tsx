@@ -40,6 +40,8 @@ export default function AdminPage() {
   useEffect(() => {
     const desejada = new URLSearchParams(window.location.search).get("aba");
     if (desejada && (ABAS as readonly string[]).includes(desejada)) {
+      // Ler o parâmetro exige o window, que só existe depois da montagem.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setAba(desejada as Aba);
     }
   }, []);

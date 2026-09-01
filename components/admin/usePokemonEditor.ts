@@ -1,9 +1,5 @@
 import type { Dispatch, SetStateAction } from "react";
-import type {
-  DecisaoPokemon,
-  Pokemon,
-  StatusDecisao,
-} from "@/models/pokemon";
+import type { DecisaoPokemon, Pokemon } from "@/models/pokemon";
 
 /**
  * Helpers imutáveis de edição do Pokémon, compartilhados entre as abas

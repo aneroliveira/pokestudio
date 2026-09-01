@@ -1,4 +1,8 @@
-export async function buscarPokemonNaApi(nome: string) {
+import type { PokemonApi } from "@/models/pokeApi";
+
+export async function buscarPokemonNaApi(
+  nome: string,
+): Promise<PokemonApi> {
   const response = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${nome.toLowerCase()}`
   );

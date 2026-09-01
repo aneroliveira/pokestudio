@@ -1,4 +1,8 @@
 import type {
+  CadeiaEvolutivaApi,
+  NoEvolucaoApi,
+} from "@/models/pokeApi";
+import type {
   EvolucaoPokemon,
   EvolucaoReferencia,
   RequisitoEvolucao,
@@ -38,14 +42,17 @@ function requisitoDoGO(
   };
 }
 
-function construirNo(no: any, nomeAnterior?: string): EvolucaoReferencia {
+function construirNo(
+  no: NoEvolucaoApi,
+  nomeAnterior?: string,
+): EvolucaoReferencia {
   const nome = no.species.name;
 
   return {
     nome,
     numero: `#${idDaEspecie(no.species.url).padStart(3, "0")}`,
     imagem: imagemDaEspecie(no.species.url),
-    proximas: no.evolves_to.map((proxima: any) =>
+    proximas: no.evolves_to.map((proxima) =>
       construirNo(proxima, nome),
     ),
     requisito: nomeAnterior
@@ -102,7 +109,7 @@ export function flattenNomesEvolucao(
 }
 
 export function obterEvolucaoPokemon(
-  cadeiaEvolutiva: any,
+  cadeiaEvolutiva: CadeiaEvolutivaApi,
   nomePokemon: string,
 ): EvolucaoPokemon {
   const raiz = construirNo(cadeiaEvolutiva.chain);

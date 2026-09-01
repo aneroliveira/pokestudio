@@ -17,7 +17,11 @@ export function ThemeToggle() {
   const [montado, setMontado] = useState(false);
 
   // Sincroniza com o estado já aplicado pelo script anti-flash no <html>.
+  //
+  // O setState aqui é intencional e não tem alternativa: o valor só existe
+  // no DOM depois da hidratação, e lê-lo durante o render quebraria o SSR.
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTema(temaAtual());
     setMontado(true);
   }, []);

@@ -41,13 +41,13 @@ const TOPICOS: Topico[] = [
           sufixo próprio (ex.: <code>giratina-altered</code>), mesmo sendo a
           forma padrão do Pokémon. O PokéStudio detecta esses casos e usa o
           nome da espécie (sempre limpo) em vez do nome bruto da variedade —
-          por isso aparece só <strong>"Giratina"</strong>, não
-          "Giratina-altered".
+          por isso aparece só <strong>&ldquo;Giratina&rdquo;</strong>, não
+          &ldquo;Giratina-altered&rdquo;.
         </p>
         <p>
           Formas alternativas de verdade (Mega, Gigamax, Regional, Primal)
           continuam aparecendo formatadas na aba <strong>Forms</strong> do
-          Admin, com o rótulo traduzido (ex.: "Mega Charizard X").
+          Admin, com o rótulo traduzido (ex.: &ldquo;Mega Charizard X&rdquo;).
         </p>
       </>
     ),
@@ -72,7 +72,7 @@ const TOPICOS: Topico[] = [
         </div>
         <p>
           Esse mesmo ícone é reaproveitado em várias seções do card:
-          no cabeçalho, em "Combate" e no tipo recomendado de cada Mega.
+          no cabeçalho, em &ldquo;Combate&rdquo; e no tipo recomendado de cada Mega.
         </p>
       </>
     ),
@@ -148,12 +148,12 @@ const TOPICOS: Topico[] = [
           O <strong>nível</strong> (via CPM, o multiplicador por nível) é o
           que explica por que o mesmo IV aparece com CPs diferentes. Os dois
           valores do resumo são a captura de <strong>raid/ovo</strong>:{" "}
-          <strong>"Sem clima"</strong> é o nível 20, e{" "}
-          <strong>"Com clima"</strong> é o nível 25 — clima favorável soma
+          <strong>&ldquo;Sem clima&rdquo;</strong> é o nível 20, e{" "}
+          <strong>&ldquo;Com clima&rdquo;</strong> é o nível 25 — clima favorável soma
           +5 níveis ao encontro. Mesmo IV, nível maior → CP maior.
         </p>
         <p>
-          A aba <strong>"Por nível"</strong> abre a lista completa de CP
+          A aba <strong>&ldquo;Por nível&rdquo;</strong> abre a lista completa de CP
           máximo por nível, incluindo os tetos de captura selvagem (30, ou
           35 com clima) e de investimento (40 sem doce XL, 50 com).
         </p>
@@ -213,7 +213,7 @@ const TOPICOS: Topico[] = [
         <p>
           Há também um caso específico do app: quando existe um CP salvo à
           mão na curadoria, o <strong>Resumo mostra o valor salvo</strong>,
-          enquanto a lista <strong>"Por nível" é sempre calculada</strong>.
+          enquanto a lista <strong>&ldquo;Por nível&rdquo; é sempre calculada</strong>.
           Se o valor digitado for diferente do cálculo, os dois vão divergir
           entre si — e aí vale conferir qual está certo.
         </p>
@@ -262,7 +262,7 @@ const TOPICOS: Topico[] = [
           Onde a série principal zeraria o dano (ex.: Elétrico em Terra), o GO
           aplica uma <strong>resistência dupla</strong> (leva ~39% do dano) —
           por isso esses tipos aparecem dentro de <strong>Resiste a</strong>, e
-          não numa lista de "imune".
+          não numa lista de &ldquo;imune&rdquo;.
         </p>
       </>
     ),
@@ -273,12 +273,12 @@ const TOPICOS: Topico[] = [
     corpo: (
       <>
         <p>
-          Este card é o "de fora pra dentro": mostra as melhores{" "}
+          Este card é o &ldquo;de fora pra dentro&rdquo;: mostra as melhores{" "}
           <strong>Megas para usar COMO counter contra</strong> o Pokémon
           exibido. É calculado automaticamente — o PokéStudio pega o roster
           completo de Mega Evoluções do Pokémon GO e ranqueia cada uma pela
           efetividade de tipo contra a tipagem dele (a mesma tabela de
-          "Combate", vista do lado de quem ataca).
+          &ldquo;Combate&rdquo;, vista do lado de quem ataca).
         </p>
         <p>
           Cada Mega mostra o multiplicador com um <strong>rótulo</strong> em

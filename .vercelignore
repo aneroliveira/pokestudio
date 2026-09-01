@@ -1,0 +1,18 @@
+# Arquivos que existem só na máquina e nunca devem subir num deploy.
+#
+# Sem isto, `vercel --prod` rodado da pasta do projeto envia TUDO que está no
+# diretório, inclusive o que o Git ignora — foi por isso que os deploys de
+# 31/08 precisaram ser feitos a partir de `git archive`.
+
+# Segredos e configuração local
+.env*
+.vercel
+
+# Rascunhos e material de trabalho que ficam soltos na pasta
+*.txt
+atualizacao*/
+prints*/
+
+# Build local (a Vercel constrói do zero)
+.next
+tsconfig.tsbuildinfo

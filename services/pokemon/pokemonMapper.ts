@@ -1,3 +1,9 @@
+import type {
+  CadeiaEvolutivaApi,
+  EspecieApi,
+  PokemonApi,
+  VariedadeApi,
+} from "@/models/pokeApi";
 import type { Pokemon, TipoPokemon } from "@/models/pokemon";
 import { getRegion } from "@/utils/getRegion";
 import { formatarNomePokemon } from "@/utils/formatarNomePokemon";
@@ -9,8 +15,8 @@ import { obterFormasPokemon } from "./formMapper";
 // pt-BR usa os nomes internacionais, então preferimos pt/pt-BR (raro) e caímos
 // para en ("Flutter Mane", "Ho-Oh", "Mr. Mime", "Farfetch'd"), que já vem
 // corretamente formatado e sem sufixo de forma.
-function obterNomeCanonicoEspecie(especie: any): string | null {
-  const names: any[] = especie?.names ?? [];
+function obterNomeCanonicoEspecie(especie: EspecieApi): string | null {
+  const names = especie?.names ?? [];
   const porIdioma = (idioma: string) =>
     names.find((n) => n?.language?.name === idioma)?.name;
 
@@ -23,10 +29,10 @@ function obterNomeCanonicoEspecie(especie: any): string | null {
 }
 
 export function mapearPokemonBasico(
-  pokemon: any,
-  especie: any,
-  cadeiaEvolutiva: any,
-  variedades: any[],
+  pokemon: PokemonApi,
+  especie: EspecieApi,
+  cadeiaEvolutiva: CadeiaEvolutivaApi,
+  variedades: VariedadeApi[],
 ) {
   const evolucao = obterEvolucaoPokemon(
     cadeiaEvolutiva,
@@ -36,7 +42,7 @@ export function mapearPokemonBasico(
   const formas = obterFormasPokemon(variedades);
 
   const tipos: TipoPokemon[] = pokemon.types.map(
-    (item: any) => TIPOS_POKEMON[item.type.name],
+    (item) => TIPOS_POKEMON[item.type.name],
   );
 
   // A variedade padrão de algumas espécies (Giratina, Landorus, Shaymin...)
@@ -60,12 +66,13 @@ export function mapearPokemonBasico(
       numero: `#${String(pokemon.id).padStart(3, "0")}`,
       nome,
       regiao: getRegion(pokemon.id),
+      // A PokéAPI devolve null para formas sem arte oficial. O domínio usa
+      // string vazia como "sem imagem" (mesma convenção do formMapper), e a
+      // UI já trata o valor vazio mostrando o texto de fallback.
       imagem:
-        pokemon.sprites.other["official-artwork"]
-          .front_default,
+        pokemon.sprites.other["official-artwork"].front_default ?? "",
       imagemShiny:
-        pokemon.sprites.other["official-artwork"]
-          .front_shiny,
+        pokemon.sprites.other["official-artwork"].front_shiny ?? "",
       tipos,
       evolucao,
       formas,
