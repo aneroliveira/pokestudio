@@ -35,11 +35,44 @@ export interface EncontroEvento {
 export interface ChefeReideEvento {
   nome: string;
   tipos: TipoPokemon[];
+  /**
+   * Imagem e CP curados manualmente — só pra chefes que NÃO são uma Mega
+   * (então não têm entrada em data/megas.json pra derivar isso em runtime,
+   * ex.: Mewtwo de Armadura). Quando `nome` bate com uma Mega, o componente
+   * ignora esses campos e deriva tudo do roster (RFC-002).
+   */
+  imagem?: string;
+  /** Fator de escala pra compensar a moldura do ícone (mesmo cálculo do
+   *  roster de Megas — ver scripts/gerarMegas.ts) — só relevante junto de
+   *  `imagem` custom, já que Megas derivam a própria escala do roster. */
+  escala?: number;
+  cpSemClima?: number;
+  cpComClima?: number;
 }
 
 export interface GrupoReideEvento {
   nivel: string;
   chefes: ChefeReideEvento[];
+}
+
+export interface DiaGradeMega {
+  /** Rótulo da aba (ex.: "Sábado 05/09"). */
+  rotulo: string;
+  grupos: GrupoHorarioMega[];
+}
+
+export interface GrupoHorarioMega {
+  /** Rótulo livre do horário (ex.: "10h–11h e 14h–15h") — sem o dia, que já
+   *  fica implícito na aba selecionada. */
+  horario: string;
+  /** Rótulo do habitat/tema da janela, quando o evento nomeia (opcional). */
+  habitat?: string;
+  /**
+   * Nomes batendo exatamente com `EntradaMega.nome` em data/megas.json (ex.:
+   * "Mega Beedrill") — imagem, tipos e CP são derivados de lá em runtime,
+   * nunca duplicados aqui (RFC-002).
+   */
+  megas: string[];
 }
 
 export interface Evento {
@@ -74,6 +107,13 @@ export interface Evento {
   };
   encontros?: EncontroEvento[];
   reides?: GrupoReideEvento[];
+  /** Grade de Mega Raids por horário (habitats rotativos), separada por
+   *  dia em abas — quando o evento tem agenda hora a hora, além (ou em
+   *  vez) do resumo em `reides`. */
+  gradeMegaRaids?: {
+    titulo: string;
+    dias: DiaGradeMega[];
+  };
   notaCuradoria?: {
     texto: string;
     /** Quando true, mostra o link "Ver o plano completo" para a aba

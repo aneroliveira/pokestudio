@@ -6,6 +6,7 @@ import { EventoEstreias } from "@/components/eventos/EventoEstreias";
 import { EventoBonusPoeira } from "@/components/eventos/EventoBonusPoeira";
 import { EventoEncontros } from "@/components/eventos/EventoEncontros";
 import { EventoReides } from "@/components/eventos/EventoReides";
+import { EventoGradeMegaRaids } from "@/components/eventos/EventoGradeMegaRaids";
 import { EventoNotaCuradoria } from "@/components/eventos/EventoNotaCuradoria";
 import { buscarEvento } from "@/data/eventos";
 
@@ -40,6 +41,13 @@ export default async function EventoPage(props: PageProps<"/eventos/[slug]">) {
         {evento.encontros && <EventoEncontros encontros={evento.encontros} />}
 
         {evento.reides && <EventoReides grupos={evento.reides} />}
+
+        {evento.gradeMegaRaids && (
+          <EventoGradeMegaRaids
+            titulo={evento.gradeMegaRaids.titulo}
+            dias={evento.gradeMegaRaids.dias}
+          />
+        )}
 
         {evento.notaCuradoria && (
           <EventoNotaCuradoria
