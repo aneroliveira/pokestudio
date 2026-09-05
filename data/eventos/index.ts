@@ -1,9 +1,9 @@
 import type { Evento } from "@/models/evento";
-import { megaAscension } from "./mega-ascension";
+// import { megaAscension } from "./mega-ascension"; // encerrado em 04/09, deu lugar ao Mega Finale
 import { goFest2026MegaFinale } from "./gofest-2026-mega-finale";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
-export const EVENTOS: Evento[] = [megaAscension, goFest2026MegaFinale];
+export const EVENTOS: Evento[] = [goFest2026MegaFinale];
 
 export function buscarEvento(slug: string): Evento | undefined {
   return EVENTOS.find((evento) => evento.slug === slug);
