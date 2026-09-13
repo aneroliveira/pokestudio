@@ -3,9 +3,9 @@ import type { Evento } from "@/models/evento";
 /**
  * Fonte: calendário de setembro/2026 levantado pela Lorena (rotação de
  * Reides Veteranos, início às 5h — sem checagem cruzada adicional
- * confirmada). Sem sprite/CP curados: Zacian não está no roster de Megas
- * (data/megas.json), então o card renderiza com os ícones de tipo em vez
- * de sprite (ver EventoReides.tsx).
+ * confirmada). Zacian não está no roster de Megas (data/megas.json), então
+ * usa sprite curado manualmente (mesmo CDN de pokemon-go-api/assets usado
+ * lá) — sem CP curado por falta de fonte confirmada.
  */
 export const zacianVeterano: Evento = {
   slug: "zacian-veterano",
@@ -19,7 +19,14 @@ export const zacianVeterano: Evento = {
   reides: [
     {
       nivel: "Reides Veteranos (09→15/09)",
-      chefes: [{ nome: "Zacian", tipos: ["Fairy"] }],
+      chefes: [
+        {
+          nome: "Zacian",
+          tipos: ["Fairy"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm888.icon.png",
+        },
+      ],
     },
   ],
   notaCuradoria: {

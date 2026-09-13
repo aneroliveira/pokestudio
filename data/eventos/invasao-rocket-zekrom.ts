@@ -7,7 +7,8 @@ import type { Evento } from "@/models/evento";
  * encaixado aqui como destaque secundário (mesmo tratamento dado ao Mega
  * Staraptor dentro do Mega Venusaur, e ao Xerneas dentro do Mega
  * Victreebel). Nem Zekrom Sombroso nem G-Cinderace estão no roster de
- * Megas — cards renderizam com ícone de tipo, sem sprite/CP curados.
+ * Megas — usam sprite curado manualmente (G-Cinderace com a forma
+ * Gigantamax, `.fGIGANTAMAX`), sem CP por falta de fonte confirmada.
  */
 export const invasaoRocketZekrom: Evento = {
   slug: "invasao-rocket-zekrom",
@@ -22,11 +23,25 @@ export const invasaoRocketZekrom: Evento = {
   reides: [
     {
       nivel: "Invasão da Equipe Rocket — Giovanni (02→05/10)",
-      chefes: [{ nome: "Zekrom Sombroso", tipos: ["Dragon", "Electric"] }],
+      chefes: [
+        {
+          nome: "Zekrom Sombroso",
+          tipos: ["Dragon", "Electric"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm644.icon.png",
+        },
+      ],
     },
     {
       nivel: "Dia de Batalhas GMax (03/10, 14h–17h)",
-      chefes: [{ nome: "G-Cinderace", tipos: ["Fire"] }],
+      chefes: [
+        {
+          nome: "G-Cinderace",
+          tipos: ["Fire"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm815.fGIGANTAMAX.icon.png",
+        },
+      ],
     },
   ],
   notaCuradoria: {

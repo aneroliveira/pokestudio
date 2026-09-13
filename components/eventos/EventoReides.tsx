@@ -47,7 +47,7 @@ export function EventoReides({ grupos }: EventoReidesProps) {
         Reides
       </h2>
 
-      <div className="mt-4 space-y-5">
+      <div className="mt-4 flex flex-wrap gap-x-8 gap-y-5">
         {grupos.map((grupo) => (
           <div key={grupo.nivel}>
             <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground">

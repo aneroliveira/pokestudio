@@ -5,8 +5,8 @@ import type { Evento } from "@/models/evento";
  * do calendário que caem na mesma semana: a rotação de Dynamax das aves
  * lendárias (21→27/09, iniciando com a Segunda Max do dia 21, 6h–21h) e a
  * Hora Lendária das Ultra Bestas (23/09, 18h–19h). Nenhum dos chefes está
- * no roster de Megas — cards renderizam com ícones de tipo, sem sprite/CP
- * curados.
+ * no roster de Megas — sprites curados manualmente, sem CP por falta de
+ * fonte confirmada.
  */
 export const rotacaoLendariaMax: Evento = {
   slug: "rotacao-lendaria-max",
@@ -22,17 +22,47 @@ export const rotacaoLendariaMax: Evento = {
     {
       nivel: "Dynamax — aves lendárias (21→27/09)",
       chefes: [
-        { nome: "Articuno", tipos: ["Ice", "Flying"] },
-        { nome: "Zapdos", tipos: ["Electric", "Flying"] },
-        { nome: "Moltres", tipos: ["Fire", "Flying"] },
+        {
+          nome: "Articuno",
+          tipos: ["Ice", "Flying"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm144.icon.png",
+        },
+        {
+          nome: "Zapdos",
+          tipos: ["Electric", "Flying"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm145.icon.png",
+        },
+        {
+          nome: "Moltres",
+          tipos: ["Fire", "Flying"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm146.icon.png",
+        },
       ],
     },
     {
       nivel: "Hora Lendária — Ultra Bestas (23/09, 18h–19h)",
       chefes: [
-        { nome: "Xurkitree", tipos: ["Electric"] },
-        { nome: "Buzzwole", tipos: ["Fighting"] },
-        { nome: "Pheromosa", tipos: ["Bug", "Fighting"] },
+        {
+          nome: "Xurkitree",
+          tipos: ["Electric"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm796.icon.png",
+        },
+        {
+          nome: "Buzzwole",
+          tipos: ["Fighting"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm794.icon.png",
+        },
+        {
+          nome: "Pheromosa",
+          tipos: ["Bug", "Fighting"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm795.icon.png",
+        },
       ],
     },
   ],

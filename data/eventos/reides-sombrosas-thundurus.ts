@@ -3,7 +3,8 @@ import type { Evento } from "@/models/evento";
 /**
  * Fonte: calendário de setembro/2026 levantado pela Lorena. Janela mais
  * longa do mês (quase um mês inteiro) — Thundurus Sombroso (Forma
- * Materializada). Sem sprite/CP curados: não está no roster de Megas.
+ * Materializada). Não está no roster de Megas; sprite usa a forma
+ * Incarnate (`.fINCARNATE`), sem CP curado por falta de fonte confirmada.
  */
 export const reidesSombrosasThundurus: Evento = {
   slug: "reides-sombrosas-thundurus",
@@ -18,7 +19,14 @@ export const reidesSombrosasThundurus: Evento = {
   reides: [
     {
       nivel: "Reides Sombrosas (09/09 → 06/10)",
-      chefes: [{ nome: "Thundurus Sombroso", tipos: ["Electric", "Flying"] }],
+      chefes: [
+        {
+          nome: "Thundurus Sombroso",
+          tipos: ["Electric", "Flying"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm642.fINCARNATE.icon.png",
+        },
+      ],
     },
   ],
   notaCuradoria: {

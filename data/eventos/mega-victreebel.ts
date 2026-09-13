@@ -5,7 +5,7 @@ import type { Evento } from "@/models/evento";
  * de Mega Raids, início às 5h, junto com a Hora Lendária do Xerneas no
  * dia 30/09 — horário 18h–19h assumido pelo padrão das outras Horas
  * Lendárias do mês, não confirmado explicitamente no calendário-fonte).
- * Xerneas não está no roster de Megas — card renderiza com ícone de tipo.
+ * Xerneas não está no roster de Megas — usa sprite curado manualmente.
  */
 export const megaVictreebel: Evento = {
   slug: "mega-victreebel",
@@ -24,7 +24,14 @@ export const megaVictreebel: Evento = {
     },
     {
       nivel: "Hora Lendária — Xerneas (30/09, 18h–19h)",
-      chefes: [{ nome: "Xerneas", tipos: ["Fairy"] }],
+      chefes: [
+        {
+          nome: "Xerneas",
+          tipos: ["Fairy"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm716.icon.png",
+        },
+      ],
     },
   ],
   notaCuradoria: {

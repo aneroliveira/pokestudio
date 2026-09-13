@@ -2,8 +2,9 @@ import type { Evento } from "@/models/evento";
 
 /**
  * Fonte: calendário de setembro/2026 levantado pela Lorena (rotação de
- * Reides Veteranos, início às 5h). Sem sprite/CP curados: Zamazenta não
- * está no roster de Megas, então o card renderiza com os ícones de tipo.
+ * Reides Veteranos, início às 5h). Zamazenta não está no roster de Megas,
+ * então usa sprite curado manualmente — sem CP curado por falta de fonte
+ * confirmada.
  */
 export const zamazentaVeterano: Evento = {
   slug: "zamazenta-veterano",
@@ -17,7 +18,14 @@ export const zamazentaVeterano: Evento = {
   reides: [
     {
       nivel: "Reides Veteranos (16→22/09)",
-      chefes: [{ nome: "Zamazenta", tipos: ["Fighting"] }],
+      chefes: [
+        {
+          nome: "Zamazenta",
+          tipos: ["Fighting"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm889.icon.png",
+        },
+      ],
     },
   ],
   notaCuradoria: {

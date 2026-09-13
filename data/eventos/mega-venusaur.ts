@@ -5,9 +5,11 @@ import type { Evento } from "@/models/evento";
  * de Mega Raids, início às 5h). Inclui o "Dia de Super Mega Reides"
  * (19/09, sáb, 14h–17h) com Mega Staraptor — confirmado pela Lorena via
  * post do Instagram (@jogadaexcelente, 25/08). Staraptor não está no
- * roster de Megas do site (data/megas.json) e não achei sprite oficial
- * pra essa forma (a única URL que tentei deu 404), então o card renderiza
- * só com ícone de tipo por enquanto — sem CP/sprite curados.
+ * roster de Megas do site (data/megas.json), e não existe sprite oficial
+ * da forma Mega (URL testada deu 404 — provavelmente porque essa Mega não
+ * existe em nenhum jogo da série principal). Usa o ícone do Staraptor
+ * base como aproximação visual, já que é melhor que nenhuma imagem — mas
+ * não é o sprite real do chefe. Sem CP curado.
  *
  * Sobre o tie-in "Pokémon Horizontes": o post do Instagram indicado pela
  * Lorena (@pokemongoappbr, 02/09) ficou bloqueado atrás do login do
@@ -33,7 +35,14 @@ export const megaVenusaur: Evento = {
     },
     {
       nivel: "Dia de Super Mega Reides (19/09, 14h–17h)",
-      chefes: [{ nome: "Mega Staraptor", tipos: ["Normal", "Flying"] }],
+      chefes: [
+        {
+          nome: "Mega Staraptor",
+          tipos: ["Normal", "Flying"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm398.icon.png",
+        },
+      ],
     },
   ],
   notaCuradoria: {
