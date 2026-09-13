@@ -5,7 +5,8 @@ import { PageContainer } from "@/components/layout/PageContainer";
 import { Card } from "@/components/ui/Card";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { RotinaSemanal } from "@/components/eventos/RotinaSemanal";
-import { listarEventos, type EstadoEvento } from "@/data/eventos";
+import { listarEventos } from "@/data/eventos";
+import { ROTULO_ESTADO, ESTILO_ESTADO } from "@/constants/estadoEvento";
 
 /**
  * Sem chamada a nenhuma API "dinâmica" do Next, essa página é elegível a
@@ -17,18 +18,6 @@ import { listarEventos, type EstadoEvento } from "@/data/eventos";
  * isso sem abrir mão do cache estático entre requisições.
  */
 export const revalidate = 60;
-
-const ROTULO_ESTADO: Record<EstadoEvento, string> = {
-  ativo: "Ativo agora",
-  "em-breve": "Em breve",
-  encerrado: "Encerrado",
-};
-
-const ESTILO_ESTADO: Record<EstadoEvento, string> = {
-  ativo: "bg-good text-good-foreground",
-  "em-breve": "bg-attention text-attention-foreground",
-  encerrado: "bg-secondary text-secondary-foreground",
-};
 
 export default function EventosPage() {
   const eventos = listarEventos(new Date());

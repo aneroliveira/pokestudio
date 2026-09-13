@@ -1,7 +1,10 @@
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EventoHero } from "@/components/eventos/EventoHero";
+import { EventoNavRapida } from "@/components/eventos/EventoNavRapida";
 import { EventoEstreias } from "@/components/eventos/EventoEstreias";
 import { EventoBonusPoeira } from "@/components/eventos/EventoBonusPoeira";
 import { EventoEncontros } from "@/components/eventos/EventoEncontros";
@@ -19,6 +22,18 @@ export default async function EventoPage(props: PageProps<"/eventos/[slug]">) {
   return (
     <PageContainer>
       <div className="w-full max-w-4xl space-y-6">
+        <div className="space-y-3">
+          <Link
+            href="/eventos"
+            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition hover:text-foreground"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Eventos
+          </Link>
+
+          <EventoNavRapida slugAtual={evento.slug} />
+        </div>
+
         <EventoHero
           titulo={evento.titulo}
           periodoTexto={evento.periodoTexto}
