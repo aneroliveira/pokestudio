@@ -64,7 +64,7 @@ export function EventoReides({ grupos }: EventoReidesProps) {
                 return (
                   <div
                     key={chefe.nome}
-                    className="flex flex-col items-center gap-1.5 rounded-xl border border-border/60 bg-background/40 p-3 text-center"
+                    className="flex min-w-24 max-w-48 flex-1 flex-col items-center gap-1.5 rounded-xl border border-border/60 bg-background/40 p-3 text-center"
                   >
                     {resolvido.imagem ? (
                       <div className="relative h-14 w-14">

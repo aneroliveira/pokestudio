@@ -4,7 +4,19 @@ import { ArrowRight } from "lucide-react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Card } from "@/components/ui/Card";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+import { RotinaSemanal } from "@/components/eventos/RotinaSemanal";
 import { listarEventos, type EstadoEvento } from "@/data/eventos";
+
+/**
+ * Sem chamada a nenhuma API "dinâmica" do Next, essa página é elegível a
+ * renderização estática — o que significa `new Date()` rodando uma vez no
+ * build e nunca mais, deixando o selo Ativo/Em breve/Encerrado congelado
+ * na data do último deploy em produção (visto: Mega Ascension preso em
+ * "Em breve" durante o evento inteiro, porque promoção pra produção é
+ * manual — ver memória "Deploy na Vercel"). Revalidar a cada minuto evita
+ * isso sem abrir mão do cache estático entre requisições.
+ */
+export const revalidate = 60;
 
 const ROTULO_ESTADO: Record<EstadoEvento, string> = {
   ativo: "Ativo agora",
@@ -59,6 +71,8 @@ export default function EventosPage() {
             ))}
           </div>
         )}
+
+        <RotinaSemanal />
       </div>
     </PageContainer>
   );

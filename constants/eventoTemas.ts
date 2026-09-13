@@ -10,7 +10,13 @@
 // RecommendationChip. O registro cresce a cada evento — não é um convite
 // a reaproveitar visual entre eventos diferentes.
 
-export type TemaEvento = "agua" | "psiquico" | "mega";
+export type TemaEvento =
+  | "agua"
+  | "psiquico"
+  | "mega"
+  | "lendario"
+  | "sombrio"
+  | "comunidade";
 
 export interface PresetTemaEvento {
   /** Gradiente de fundo do hero (inclui variantes dark:). */
@@ -67,5 +73,47 @@ export const EVENTO_TEMA: Record<TemaEvento, PresetTemaEvento> = {
     ],
     ondaClasses: "text-blue-500/25 dark:text-blue-400/15",
     destaqueGradiente: "to-blue-500/5 dark:to-blue-400/10",
+  },
+  lendario: {
+    heroGradiente:
+      "from-amber-500/15 via-yellow-500/10 to-orange-500/15 dark:from-amber-400/10 dark:via-yellow-400/10 dark:to-orange-400/15",
+    badgeClasses:
+      "bg-amber-500/15 text-amber-700 dark:bg-amber-400/15 dark:text-amber-300",
+    bolhasClasses: [
+      "bg-amber-400/60",
+      "bg-yellow-400/60",
+      "bg-orange-400/50",
+      "bg-amber-300/60",
+    ],
+    ondaClasses: "text-amber-500/25 dark:text-amber-400/15",
+    destaqueGradiente: "to-amber-500/5 dark:to-amber-400/10",
+  },
+  sombrio: {
+    heroGradiente:
+      "from-purple-600/15 via-violet-700/10 to-slate-900/15 dark:from-purple-400/10 dark:via-violet-400/10 dark:to-slate-400/15",
+    badgeClasses:
+      "bg-purple-600/15 text-purple-800 dark:bg-purple-400/15 dark:text-purple-300",
+    bolhasClasses: [
+      "bg-purple-500/60",
+      "bg-violet-500/60",
+      "bg-slate-500/50",
+      "bg-purple-400/60",
+    ],
+    ondaClasses: "text-purple-600/25 dark:text-purple-400/15",
+    destaqueGradiente: "to-purple-600/5 dark:to-purple-400/10",
+  },
+  comunidade: {
+    heroGradiente:
+      "from-orange-500/15 via-rose-500/10 to-amber-500/15 dark:from-orange-400/10 dark:via-rose-400/10 dark:to-amber-400/15",
+    badgeClasses:
+      "bg-orange-500/15 text-orange-700 dark:bg-orange-400/15 dark:text-orange-300",
+    bolhasClasses: [
+      "bg-orange-400/60",
+      "bg-rose-400/60",
+      "bg-amber-400/50",
+      "bg-orange-300/60",
+    ],
+    ondaClasses: "text-orange-500/25 dark:text-orange-400/15",
+    destaqueGradiente: "to-orange-500/5 dark:to-orange-400/10",
   },
 };

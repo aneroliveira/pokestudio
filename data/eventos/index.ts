@@ -1,9 +1,36 @@
 import type { Evento } from "@/models/evento";
-// import { megaAscension } from "./mega-ascension"; // encerrado em 04/09, deu lugar ao Mega Finale
-import { goFest2026MegaFinale } from "./gofest-2026-mega-finale";
+import { megaBeedrill } from "./mega-beedrill";
+import { zacianVeterano } from "./zacian-veterano";
+import { megaHoundoom } from "./mega-houndoom";
+import { megaVenusaur } from "./mega-venusaur";
+import { zamazentaVeterano } from "./zamazenta-veterano";
+import { reidesSombrosasThundurus } from "./reides-sombrosas-thundurus";
+import { rotacaoLendariaMax } from "./rotacao-lendaria-max";
+import { escolhaSeuCaminho } from "./escolha-seu-caminho";
+import { megaMalamar } from "./mega-malamar";
+import { citySafari } from "./city-safari";
+import { mestreDaCaptura } from "./mestre-da-captura";
+import { festivalDaColheita } from "./festival-da-colheita";
+import { megaVictreebel } from "./mega-victreebel";
+import { invasaoRocketZekrom } from "./invasao-rocket-zekrom";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
-export const EVENTOS: Evento[] = [goFest2026MegaFinale];
+export const EVENTOS: Evento[] = [
+  megaBeedrill,
+  zacianVeterano,
+  megaHoundoom,
+  megaVenusaur,
+  zamazentaVeterano,
+  reidesSombrosasThundurus,
+  rotacaoLendariaMax,
+  escolhaSeuCaminho,
+  megaMalamar,
+  citySafari,
+  mestreDaCaptura,
+  festivalDaColheita,
+  megaVictreebel,
+  invasaoRocketZekrom,
+];
 
 export function buscarEvento(slug: string): Evento | undefined {
   return EVENTOS.find((evento) => evento.slug === slug);
