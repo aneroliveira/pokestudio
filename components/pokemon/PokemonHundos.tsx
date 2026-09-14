@@ -14,7 +14,7 @@ import {
   type FaixaIVCacada,
 } from "@/services/pokemon/statsGO";
 
-const ABAS = ["Caçada", "Resumo"] as const;
+const ABAS = ["Resumo", "Caçada"] as const;
 type Aba = (typeof ABAS)[number];
 
 type PokemonHundosProps = {
@@ -22,7 +22,7 @@ type PokemonHundosProps = {
 };
 
 export function PokemonHundos({ pokemon }: PokemonHundosProps) {
-  const [aba, setAba] = useState<Aba>("Caçada");
+  const [aba, setAba] = useState<Aba>("Resumo");
   const [faixasAtivas, setFaixasAtivas] = useState<
     Record<FaixaIVCacada, boolean>
   >({ "100%": false, "98%": false, "96%": false });

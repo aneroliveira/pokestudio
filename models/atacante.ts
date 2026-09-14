@@ -11,10 +11,9 @@ import type { TipoPokemon } from "./pokemon";
 export interface GolpeAtacante {
   nome: string;
   /**
-   * Marcador que a fonte usa depois de alguns golpes ("*"/"+") — indica
-   * golpe exclusivo/legado (Elite TM, Community Day ou evento passado),
-   * sem uma regra 100% confirmada pra diferenciar os dois símbolos. Vira
-   * só um selo genérico na UI.
+   * Marcador que a fonte usa depois de alguns golpes: "*" é golpe legado
+   * (não dá mais pra ensinar, exceto via TM Elite); "+" é golpe exclusivo
+   * (geralmente uma versão "Plus" do golpe carregado).
    */
   marcador?: "*" | "+";
 }
@@ -31,11 +30,17 @@ export interface AtacanteRanking {
   /**
    * Curado manualmente só quando o nome não bate com nada em
    * data/megas.json (aí o sprite sai de graça, ver
-   * services/pokemon/recomendarMega.ts). Ainda faltam vários — entram sem
-   * `imagem` por enquanto e caem no fallback de ícone de tipo.
+   * services/pokemon/recomendarMega.ts).
    */
   imagem?: string;
   escala?: number;
+  /**
+   * Slug da espécie BASE (ex.: "mewtwo", "landorus-incarnate") em
+   * data/pokemonIndex.json — linka o card em `/?p=<nomeEn>`, mesmo padrão
+   * de components/plano/ExemplarRow.tsx. É a espécie base, não a forma
+   * Mega/Sombrosa/Coroada específica (o site não tem card por forma).
+   */
+  nomeEn?: string;
 }
 
 export interface RankingTipo {

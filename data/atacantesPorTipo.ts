@@ -15,6 +15,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Regigigas Sombroso",
+        nomeEn: "regigigas",
         tipos: ["Normal"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm486.icon.png",
@@ -26,6 +27,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Delphox",
+        nomeEn: "delphox",
         tipos: ["Fire", "Psychic"],
         rapido: { nome: "Arranhão" },
         carregado: { nome: "Fogo Místico", marcador: "+" },
@@ -35,6 +37,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Mewtwo Y",
+        nomeEn: "mewtwo",
         tipos: ["Psychic"],
         rapido: { nome: "Confusão" },
         carregado: { nome: "Hiper-raio", marcador: "*" },
@@ -44,6 +47,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Mewtwo X",
+        nomeEn: "mewtwo",
         tipos: ["Psychic", "Fighting"],
         rapido: { nome: "Contra-atacar", marcador: "*" },
         carregado: { nome: "Hiper-raio", marcador: "*" },
@@ -53,6 +57,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Starmie",
+        nomeEn: "starmie",
         tipos: ["Water", "Psychic"],
         rapido: { nome: "Investida", marcador: "*" },
         carregado: { nome: "Aquaríete", marcador: "+" },
@@ -67,6 +72,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Mewtwo X",
+        nomeEn: "mewtwo",
         tipos: ["Psychic", "Fighting"],
         rapido: { nome: "Contra-atacar", marcador: "*" },
         carregado: { nome: "Soco Dinâmico", marcador: "+" },
@@ -76,6 +82,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Lucario",
+        nomeEn: "lucario",
         tipos: ["Fighting", "Steel"],
         rapido: { nome: "Palma da Força", marcador: "*" },
         carregado: { nome: "Aura Esférica" },
@@ -85,6 +92,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Blaziken",
+        nomeEn: "blaziken",
         tipos: ["Fire", "Fighting"],
         rapido: { nome: "Contra-atacar" },
         carregado: { nome: "Aura Esférica" },
@@ -94,6 +102,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Falinks",
+        nomeEn: "falinks",
         tipos: ["Fighting"],
         rapido: { nome: "Contra-atacar" },
         carregado: { nome: "Quebra-telha", marcador: "+" },
@@ -103,6 +112,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Keldeo (Forma Resoluta)",
+        nomeEn: "keldeo-ordinary",
         tipos: ["Water", "Fighting"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm647.fRESOLUTE.icon.png",
@@ -119,6 +129,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Rayquaza",
+        nomeEn: "rayquaza",
         tipos: ["Dragon", "Flying"],
         rapido: { nome: "Golpe de Ar" },
         carregado: { nome: "Ascenção do Dragão" },
@@ -128,6 +139,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Skarmory",
+        nomeEn: "skarmory",
         tipos: ["Steel", "Flying"],
         rapido: { nome: "Golpe de Ar" },
         carregado: { nome: "Bico Broca", marcador: "+" },
@@ -137,6 +149,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Rayquaza",
+        nomeEn: "rayquaza",
         tipos: ["Dragon", "Flying"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm384.icon.png",
@@ -148,6 +161,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Moltres Sombroso",
+        nomeEn: "moltres",
         tipos: ["Fire", "Flying"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm146.icon.png",
@@ -159,6 +173,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Salamence Sombroso",
+        nomeEn: "salamence",
         tipos: ["Dragon", "Flying"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm373.icon.png",
@@ -175,6 +190,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Victreebel",
+        nomeEn: "victreebel",
         tipos: ["Grass", "Poison"],
         rapido: { nome: "Ácido" },
         carregado: { nome: "Spray Ácido", marcador: "+" },
@@ -184,6 +200,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Gengar",
+        nomeEn: "gengar",
         tipos: ["Ghost", "Poison"],
         rapido: { nome: "Lambida", marcador: "*" },
         carregado: { nome: "Bomba de Lodo" },
@@ -193,6 +210,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Beedrill",
+        nomeEn: "beedrill",
         tipos: ["Bug", "Poison"],
         rapido: { nome: "Golpe Envenenado" },
         carregado: { nome: "Bomba de Lodo" },
@@ -202,6 +220,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Eternatus",
+        nomeEn: "eternatus",
         tipos: ["Poison", "Dragon"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm890.icon.png",
@@ -213,6 +232,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Overqwil Sombroso",
+        nomeEn: "overqwil",
         tipos: ["Dark", "Poison"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm904.icon.png",
@@ -229,6 +249,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Groudon Primitivo",
+        nomeEn: "groudon",
         tipos: ["Ground", "Fire"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm383.fPRIMAL.icon.png",
@@ -240,6 +261,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Garchomp",
+        nomeEn: "garchomp",
         tipos: ["Dragon", "Ground"],
         rapido: { nome: "Tiro de Lama" },
         carregado: { nome: "Poder da Terra", marcador: "*" },
@@ -249,6 +271,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Groudon Sombroso",
+        nomeEn: "groudon",
         tipos: ["Ground"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm383.icon.png",
@@ -260,6 +283,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Garchomp Sombroso",
+        nomeEn: "garchomp",
         tipos: ["Dragon", "Ground"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm445.icon.png",
@@ -271,6 +295,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Landorus (Forma Therian)",
+        nomeEn: "landorus-incarnate",
         tipos: ["Ground", "Flying"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm645.fTHERIAN.icon.png",
@@ -287,6 +312,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Diancie",
+        nomeEn: "diancie",
         tipos: ["Rock", "Fairy"],
         rapido: { nome: "Lançamento de Rocha" },
         carregado: { nome: "Deslize de Pedras" },
@@ -296,6 +322,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Rhyperior Sombroso",
+        nomeEn: "rhyperior",
         tipos: ["Ground", "Rock"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm464.icon.png",
@@ -307,6 +334,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Rampardos Sombroso",
+        nomeEn: "rampardos",
         tipos: ["Rock"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm409.icon.png",
@@ -318,6 +346,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Tyranitar",
+        nomeEn: "tyranitar",
         tipos: ["Rock", "Dark"],
         rapido: { nome: "Derrubada", marcador: "*" },
         carregado: { nome: "Gume de Pedra" },
@@ -327,6 +356,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Gigalith Sombroso",
+        nomeEn: "gigalith",
         tipos: ["Rock"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm526.icon.png",
@@ -343,6 +373,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Beedrill",
+        nomeEn: "beedrill",
         tipos: ["Bug", "Poison"],
         rapido: { nome: "Picada", marcador: "*" },
         carregado: { nome: "Ferrão Letal", marcador: "+" },
@@ -352,6 +383,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Heracross",
+        nomeEn: "heracross",
         tipos: ["Bug", "Fighting"],
         rapido: { nome: "Cortador de Fúria" },
         carregado: { nome: "Megachifre" },
@@ -361,6 +393,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Pinsir",
+        nomeEn: "pinsir",
         tipos: ["Bug", "Flying"],
         rapido: { nome: "Cortador de Fúria" },
         carregado: { nome: "Tesoura X" },
@@ -370,6 +403,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Vikavolt Sombroso",
+        nomeEn: "vikavolt",
         tipos: ["Bug", "Electric"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm738.icon.png",
@@ -381,6 +415,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Scizor",
+        nomeEn: "scizor",
         tipos: ["Bug", "Steel"],
         rapido: { nome: "Cortador de Fúria" },
         carregado: { nome: "Tesoura X" },
@@ -395,6 +430,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Necrozma Asas Alvorada",
+        nomeEn: "necrozma",
         tipos: ["Psychic", "Ghost"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm800.fDAWN_WINGS.icon.png",
@@ -406,6 +442,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Gengar",
+        nomeEn: "gengar",
         tipos: ["Ghost", "Poison"],
         rapido: { nome: "Lambida", marcador: "*" },
         carregado: { nome: "Bola Sombria" },
@@ -415,6 +452,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Mewtwo Y",
+        nomeEn: "mewtwo",
         tipos: ["Psychic"],
         rapido: { nome: "Corte Psíquico" },
         carregado: { nome: "Bola Sombria", marcador: "*" },
@@ -424,6 +462,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Mewtwo X",
+        nomeEn: "mewtwo",
         tipos: ["Psychic", "Fighting"],
         rapido: { nome: "Corte Psíquico" },
         carregado: { nome: "Bola Sombria", marcador: "*" },
@@ -433,6 +472,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Darkrai Sombroso",
+        nomeEn: "darkrai",
         tipos: ["Dark"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm491.icon.png",
@@ -449,6 +489,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Zacian Espada Coroada",
+        nomeEn: "zacian",
         tipos: ["Fairy", "Steel"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm888.fCROWNED_SWORD.icon.png",
@@ -460,6 +501,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Zamazenta Escudo Coroada",
+        nomeEn: "zamazenta",
         tipos: ["Fighting", "Steel"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm889.fCROWNED_SHIELD.icon.png",
@@ -471,6 +513,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Necrozma Juba Crepúsculo",
+        nomeEn: "necrozma",
         tipos: ["Psychic", "Steel"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm800.fDUSK_MANE.icon.png",
@@ -482,6 +525,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Lucario",
+        nomeEn: "lucario",
         tipos: ["Fighting", "Steel"],
         rapido: { nome: "Palma da Força", marcador: "*" },
         carregado: { nome: "Meteoro Esmagador" },
@@ -491,6 +535,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Metagross Sombroso",
+        nomeEn: "metagross",
         tipos: ["Steel", "Psychic"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm376.icon.png",
@@ -507,6 +552,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Delphox",
+        nomeEn: "delphox",
         tipos: ["Fire", "Psychic"],
         rapido: { nome: "Chama Furacão" },
         carregado: { nome: "Fogo Místico", marcador: "+" },
@@ -516,6 +562,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Blaziken",
+        nomeEn: "blaziken",
         tipos: ["Fire", "Fighting"],
         rapido: { nome: "Chama Furacão" },
         carregado: { nome: "Queimadura Explosiva", marcador: "*" },
@@ -525,6 +572,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Charizard Y",
+        nomeEn: "charizard",
         tipos: ["Fire", "Flying"],
         rapido: { nome: "Chama Furacão" },
         carregado: { nome: "Queimadura Explosiva", marcador: "*" },
@@ -534,6 +582,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Reshiram Sombroso",
+        nomeEn: "reshiram",
         tipos: ["Dragon", "Fire"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm643.icon.png",
@@ -545,6 +594,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Blacephalon",
+        nomeEn: "blacephalon",
         tipos: ["Fire", "Ghost"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm806.icon.png",
@@ -561,6 +611,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Greninja",
+        nomeEn: "greninja",
         tipos: ["Water", "Dark"],
         rapido: { nome: "Estrela Ninja de Água" },
         carregado: { nome: "Surfar", marcador: "+" },
@@ -570,6 +621,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Kyogre Primitivo",
+        nomeEn: "kyogre",
         tipos: ["Water"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm382.fPRIMAL.icon.png",
@@ -581,6 +633,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Starmie",
+        nomeEn: "starmie",
         tipos: ["Water", "Psychic"],
         rapido: { nome: "Onda Psíquica" },
         carregado: { nome: "Aquaríete", marcador: "+" },
@@ -590,6 +643,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Swampert",
+        nomeEn: "swampert",
         tipos: ["Water", "Ground"],
         rapido: { nome: "Revólver d'Água" },
         carregado: { nome: "Hidro Canhão", marcador: "*" },
@@ -599,6 +653,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Kyogre Sombroso",
+        nomeEn: "kyogre",
         tipos: ["Water"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm382.icon.png",
@@ -615,6 +670,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Chesnaught",
+        nomeEn: "chesnaught",
         tipos: ["Grass", "Fighting"],
         rapido: { nome: "Chicote de Vinha" },
         carregado: { nome: "Bomba de Sementes", marcador: "+" },
@@ -624,6 +680,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Sceptile",
+        nomeEn: "sceptile",
         tipos: ["Grass", "Dragon"],
         rapido: { nome: "Cortador de Fúria" },
         carregado: { nome: "Planta Mortal", marcador: "*" },
@@ -633,6 +690,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Kartana",
+        nomeEn: "kartana",
         tipos: ["Grass", "Steel"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm798.icon.png",
@@ -644,6 +702,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Venusaur",
+        nomeEn: "venusaur",
         tipos: ["Grass", "Poison"],
         rapido: { nome: "Chicote de Vinha" },
         carregado: { nome: "Planta Mortal", marcador: "*" },
@@ -653,6 +712,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Chesnaught Sombroso",
+        nomeEn: "chesnaught",
         tipos: ["Grass", "Fighting"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm652.icon.png",
@@ -669,6 +729,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Raichu Y",
+        nomeEn: "raichu",
         tipos: ["Electric"],
         rapido: { nome: "Trovoada de Choques" },
         carregado: { nome: "Canhão Zap", marcador: "+" },
@@ -678,6 +739,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Raichu X",
+        nomeEn: "raichu",
         tipos: ["Electric"],
         rapido: { nome: "Trovoada de Choques" },
         carregado: { nome: "Investida Trovão", marcador: "+" },
@@ -687,6 +749,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Thundurus Sombroso (Forma Therian)",
+        nomeEn: "thundurus-incarnate",
         tipos: ["Electric", "Flying"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm642.fTHERIAN.icon.png",
@@ -698,6 +761,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Mewtwo Y",
+        nomeEn: "mewtwo",
         tipos: ["Psychic"],
         rapido: { nome: "Corte Psíquico" },
         carregado: { nome: "Relâmpago" },
@@ -707,6 +771,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Zeraora",
+        nomeEn: "zeraora",
         tipos: ["Electric"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm807.icon.png",
@@ -723,6 +788,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Mewtwo Y",
+        nomeEn: "mewtwo",
         tipos: ["Psychic"],
         rapido: { nome: "Corte Psíquico" },
         carregado: { nome: "Visão do Futuro", marcador: "+" },
@@ -732,6 +798,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Mewtwo X",
+        nomeEn: "mewtwo",
         tipos: ["Psychic", "Fighting"],
         rapido: { nome: "Confusão" },
         carregado: { nome: "Golpe Psíquico", marcador: "*" },
@@ -741,6 +808,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mewtwo Sombroso",
+        nomeEn: "mewtwo",
         tipos: ["Psychic"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm150.icon.png",
@@ -752,6 +820,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Alakazam",
+        nomeEn: "alakazam",
         tipos: ["Psychic"],
         rapido: { nome: "Confusão" },
         carregado: { nome: "Psíquico", marcador: "*" },
@@ -761,6 +830,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Gardevoir",
+        nomeEn: "gardevoir",
         tipos: ["Psychic", "Fairy"],
         rapido: { nome: "Confusão" },
         carregado: { nome: "Psíquico" },
@@ -775,6 +845,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Kyurem Branco",
+        nomeEn: "kyurem",
         tipos: ["Dragon", "Ice"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm646.fWHITE.icon.png",
@@ -786,6 +857,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Kyurem Preto",
+        nomeEn: "kyurem",
         tipos: ["Dragon", "Ice"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm646.fBLACK.icon.png",
@@ -797,6 +869,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Mewtwo Y",
+        nomeEn: "mewtwo",
         tipos: ["Psychic"],
         rapido: { nome: "Corte Psíquico" },
         carregado: { nome: "Raio Congelante" },
@@ -806,6 +879,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Mewtwo X",
+        nomeEn: "mewtwo",
         tipos: ["Psychic", "Fighting"],
         rapido: { nome: "Corte Psíquico" },
         carregado: { nome: "Raio Congelante" },
@@ -815,6 +889,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mamoswine Sombroso",
+        nomeEn: "mamoswine",
         tipos: ["Ice", "Ground"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm473.icon.png",
@@ -831,6 +906,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Rayquaza",
+        nomeEn: "rayquaza",
         tipos: ["Dragon", "Flying"],
         rapido: { nome: "Cauda do Dragão" },
         carregado: { nome: "Golpe Deslizante", marcador: "*" },
@@ -840,6 +916,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Eternatus",
+        nomeEn: "eternatus",
         tipos: ["Poison", "Dragon"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm890.icon.png",
@@ -851,6 +928,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Dragonite",
+        nomeEn: "dragonite",
         tipos: ["Dragon", "Flying"],
         rapido: { nome: "Cauda do Dragão" },
         carregado: { nome: "Ultraje", marcador: "+" },
@@ -860,6 +938,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Kyurem Preto",
+        nomeEn: "kyurem",
         tipos: ["Dragon", "Ice"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm646.fBLACK.icon.png",
@@ -871,6 +950,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Garchomp",
+        nomeEn: "garchomp",
         tipos: ["Dragon", "Ground"],
         rapido: { nome: "Cauda do Dragão" },
         carregado: { nome: "Golpe Deslizante" },
@@ -885,6 +965,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Houndoom",
+        nomeEn: "houndoom",
         tipos: ["Dark", "Fire"],
         rapido: { nome: "Rosnado" },
         carregado: { nome: "Pulso Sombrio", marcador: "+" },
@@ -894,6 +975,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Darkrai Sombroso",
+        nomeEn: "darkrai",
         tipos: ["Dark"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm491.icon.png",
@@ -905,6 +987,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Tyranitar",
+        nomeEn: "tyranitar",
         tipos: ["Rock", "Dark"],
         rapido: { nome: "Mordida" },
         carregado: { nome: "Balanço Violento" },
@@ -914,6 +997,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Gengar",
+        nomeEn: "gengar",
         tipos: ["Ghost", "Poison"],
         rapido: { nome: "Soco Enganador" },
         carregado: { nome: "Bola Sombria" },
@@ -923,6 +1007,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Absol",
+        nomeEn: "absol",
         tipos: ["Dark"],
         rapido: { nome: "Rosnado" },
         carregado: { nome: "Balanço Violento", marcador: "*" },
@@ -937,6 +1022,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
     atacantes: [
       {
         nome: "Mega Gardevoir",
+        nomeEn: "gardevoir",
         tipos: ["Psychic", "Fairy"],
         rapido: { nome: "Encantar" },
         carregado: { nome: "Clarão Deslumbrante" },
@@ -946,6 +1032,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Zacian Espada Coroada",
+        nomeEn: "zacian",
         tipos: ["Fairy", "Steel"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm888.fCROWNED_SWORD.icon.png",
@@ -957,6 +1044,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Gardevoir Sombroso",
+        nomeEn: "gardevoir",
         tipos: ["Psychic", "Fairy"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm282.icon.png",
@@ -968,6 +1056,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Enamorus (Forma Materializada)",
+        nomeEn: "enamorus-incarnate",
         tipos: ["Fairy", "Flying"],
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm905.fINCARNATE.icon.png",
@@ -979,6 +1068,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
       },
       {
         nome: "Mega Alakazam",
+        nomeEn: "alakazam",
         tipos: ["Psychic"],
         rapido: { nome: "Corte Psíquico" },
         carregado: { nome: "Clarão Deslumbrante", marcador: "*" },

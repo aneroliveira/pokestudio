@@ -43,9 +43,10 @@ export function NavegacaoTipos() {
           fonte combinando os dois; é o critério de ordenação do ranking.
         </p>
         <p>
-          Golpes com <sup>*</sup> ou <sup>+</sup> são exclusivos/legado
-          (Elite TM, Community Day ou evento passado — a fonte não deixa
-          clara a diferença exata entre os dois símbolos).
+          Golpes com <sup>*</sup> são legados — não dá mais pra ensinar
+          normalmente, só via TM Elite (ou em quem já tinha de antes).
+          Golpes com <sup>+</sup> são exclusivos, geralmente uma versão
+          &ldquo;Plus&rdquo; do golpe carregado.
         </p>
       </div>
     </Card>

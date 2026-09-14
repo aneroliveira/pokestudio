@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { TypeIcon } from "@/components/ui/TypeIcon";
 import { TIPO_LABEL } from "@/constants/typeLabels";
@@ -11,6 +12,11 @@ import type { AtacanteRanking, RankingTipo as RankingTipoModel } from "@/models/
  * (formas Sombrosas/Primordiais/Coroadas/Therian e lendários avulsos)
  * ainda não têm sprite curado — caem no fallback de ícone de tipo.
  */
+const TITULO_MARCADOR: Record<"*" | "+", string> = {
+  "*": "Legado — só via TM Elite (ou em quem já tinha de antes)",
+  "+": 'Exclusivo — geralmente uma versão "Plus" do golpe carregado',
+};
+
 function resolverImagem(atacante: AtacanteRanking) {
   const mega = MEGAS.find((item) => item.nome === atacante.nome);
   if (mega) return { imagem: mega.imagem, escala: mega.escala };
@@ -40,14 +46,14 @@ export function RankingTipo({ ranking }: RankingTipoProps) {
             return (
               <li
                 key={`${atacante.nome}-${indice}`}
-                className="flex flex-wrap items-center gap-x-3 gap-y-1.5 py-2.5"
+                className="grid grid-cols-[1.25rem_2.5rem_1fr] items-center gap-x-3 gap-y-1 py-2.5 sm:grid-cols-[1.25rem_2.5rem_1fr_auto]"
               >
-                <span className="w-5 shrink-0 text-sm font-semibold text-muted-foreground">
+                <span className="text-sm font-semibold text-muted-foreground">
                   {indice + 1}.
                 </span>
 
                 {resolvido.imagem ? (
-                  <div className="relative h-10 w-10 shrink-0">
+                  <div className="relative h-10 w-10">
                     <Image
                       src={resolvido.imagem}
                       alt={atacante.nome}
@@ -62,7 +68,7 @@ export function RankingTipo({ ranking }: RankingTipoProps) {
                     />
                   </div>
                 ) : (
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center -space-x-1">
+                  <div className="flex h-10 w-10 items-center justify-center -space-x-1">
                     {atacante.tipos.map((t) => (
                       <TypeIcon
                         key={t}
@@ -74,32 +80,41 @@ export function RankingTipo({ ranking }: RankingTipoProps) {
                   </div>
                 )}
 
-                <div className="min-w-0 flex-1 basis-32">
-                  <p className="truncate text-sm font-semibold">{atacante.nome}</p>
-                  <p className="truncate text-xs text-muted-foreground">
+                <div className="min-w-0">
+                  {atacante.nomeEn ? (
+                    <Link
+                      href={`/?p=${atacante.nomeEn}`}
+                      title={`Ver ${atacante.nome} no Pocket`}
+                      className="block truncate text-sm font-semibold transition hover:text-primary hover:underline"
+                    >
+                      {atacante.nome}
+                    </Link>
+                  ) : (
+                    <p className="truncate text-sm font-semibold">{atacante.nome}</p>
+                  )}
+                  <p className="text-xs text-muted-foreground">
                     {atacante.rapido.nome}
                     {atacante.rapido.marcador && (
-                      <sup title="Golpe exclusivo ou legado">
+                      <sup title={TITULO_MARCADOR[atacante.rapido.marcador]}>
                         {atacante.rapido.marcador}
                       </sup>
                     )}
                     {" → "}
                     {atacante.carregado.nome}
                     {atacante.carregado.marcador && (
-                      <sup title="Golpe exclusivo ou legado">
+                      <sup title={TITULO_MARCADOR[atacante.carregado.marcador]}>
                         {atacante.carregado.marcador}
                       </sup>
                     )}
                   </p>
                 </div>
 
-                <div className="shrink-0 text-right text-[11px] leading-tight text-muted-foreground">
-                  <div>
-                    DPS {atacante.dps.toFixed(2)} · TDO {atacante.tdo.toFixed(1)}
-                  </div>
-                  <div className="font-semibold text-primary">
+                <div className="col-span-3 flex flex-col pl-[calc(1.25rem+2.5rem+0.75rem)] text-[11px] leading-tight text-muted-foreground sm:col-span-1 sm:items-end sm:pl-0">
+                  <span>DPS {atacante.dps.toFixed(2)}</span>
+                  <span>TDO {atacante.tdo.toFixed(1)}</span>
+                  <span className="hidden font-semibold text-primary sm:inline">
                     Score {atacante.score.toFixed(2)}
-                  </div>
+                  </span>
                 </div>
               </li>
             );
