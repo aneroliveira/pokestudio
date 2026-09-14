@@ -24,6 +24,7 @@ export function MainHeader() {
     { href: "/", label: "Home" },
     { href: "/pocket", label: "Pocket" },
     { href: "/eventos", label: "Eventos" },
+    { href: "/atacantes", label: "Atacantes" },
     { href: "/admin", label: "Admin" },
     { href: "/faq", label: "FAQ" },
   ];
