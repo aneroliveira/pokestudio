@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
+import { cookies } from "next/headers";
 
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EventoHero } from "@/components/eventos/EventoHero";
@@ -12,12 +13,16 @@ import { EventoReides } from "@/components/eventos/EventoReides";
 import { EventoGradeMegaRaids } from "@/components/eventos/EventoGradeMegaRaids";
 import { EventoNotaCuradoria } from "@/components/eventos/EventoNotaCuradoria";
 import { buscarEvento } from "@/data/eventos";
+import { COOKIE_ADMIN, cookieAdminValido } from "@/lib/auth/adminSession";
 
 export default async function EventoPage(props: PageProps<"/eventos/[slug]">) {
   const { slug } = await props.params;
   const evento = buscarEvento(slug);
 
   if (!evento) notFound();
+
+  const cookieStore = await cookies();
+  const autenticado = cookieAdminValido(cookieStore.get(COOKIE_ADMIN.nome)?.value);
 
   return (
     <PageContainer>
@@ -64,7 +69,7 @@ export default async function EventoPage(props: PageProps<"/eventos/[slug]">) {
           />
         )}
 
-        {evento.notaCuradoria && (
+        {evento.notaCuradoria && autenticado && (
           <EventoNotaCuradoria
             texto={evento.notaCuradoria.texto}
             linkPlano={evento.notaCuradoria.linkPlano}
