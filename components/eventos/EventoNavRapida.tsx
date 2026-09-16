@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { listarEventos } from "@/data/eventos";
 import { COR_PONTO_ESTADO } from "@/constants/estadoEvento";
@@ -9,9 +12,20 @@ type EventoNavRapidaProps = {
 /** Tira horizontal (arrasta/rola) com todos os eventos, pra pular de um
  *  evento pro outro sem precisar voltar pra listagem. O evento atual fica
  *  destacado; o pontinho colorido mostra o estado (ativo/em-breve/
- *  encerrado) de cada um. */
+ *  encerrado) de cada um. Ao navegar, a tira já chega rolada até o pill
+ *  atual — sem isso, cada clique reabria a lista lá do início e era
+ *  preciso rolar de novo pra achar onde se estava. */
 export function EventoNavRapida({ slugAtual }: EventoNavRapidaProps) {
   const eventos = listarEventos(new Date());
+  const ativoRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    ativoRef.current?.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest",
+    });
+  }, [slugAtual]);
 
   if (eventos.length < 2) return null;
 
@@ -23,6 +37,7 @@ export function EventoNavRapida({ slugAtual }: EventoNavRapidaProps) {
         return (
           <Link
             key={evento.slug}
+            ref={atual ? ativoRef : undefined}
             href={`/eventos/${evento.slug}`}
             aria-current={atual || undefined}
             className={`inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-medium transition ${

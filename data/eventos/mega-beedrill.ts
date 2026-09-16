@@ -1,19 +1,19 @@
 import type { Evento } from "@/models/evento";
 
 /**
- * Fonte: calendário de setembro/2026 levantado pela Lorena (rotação semanal
- * de Mega Raids, início às 5h — sem checagem cruzada adicional confirmada).
- * Horário de término assumido como o início da próxima rotação (mesmo
- * padrão observado nas outras janelas do mês).
+ * Fonte: leekduck.com/events/mega-beedrill-in-mega-raids-september-2026,
+ * horário de término corrigido pra 21h a partir de um card de reide mais
+ * preciso que a Lorena conferiu (o Leek Duck em inglês dizia 22h) — 08/09
+ * 6h → 15/09 21h local.
  */
 export const megaBeedrill: Evento = {
   slug: "mega-beedrill",
   titulo: "Mega Beedrill",
   periodo: {
-    inicio: "2026-09-08T05:00:00-03:00",
-    fim: "2026-09-15T05:00:00-03:00",
+    inicio: "2026-09-08T06:00:00-03:00",
+    fim: "2026-09-15T21:00:00-03:00",
   },
-  periodoTexto: "08/09 (ter) 5h → 15/09 (ter) 5h de 2026 (horário local)",
+  periodoTexto: "08/09 (ter) 6h → 15/09 (ter) 21h de 2026 (horário local)",
   tema: "mega",
   reides: [
     {

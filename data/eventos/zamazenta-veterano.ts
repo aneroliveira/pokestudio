@@ -1,20 +1,23 @@
 import type { Evento } from "@/models/evento";
 
 /**
- * Fonte: calendário de setembro/2026 levantado pela Lorena (rotação de
- * Reides Veteranos, início às 5h). Zamazenta não está no roster de Megas,
- * então usa sprite curado manualmente — sem CP curado por falta de fonte
- * confirmada.
+ * Fonte: card de reide colado pela Lorena (PC de Captura, fraquezas,
+ * contadores) — confirma 16/09 6h → 22/09 21h local (não 22h; corrigido a
+ * partir da fonte anterior, o Leek Duck em inglês dizia 22h). CP de
+ * captura (nível 20, 67–100% IV): 2100–2188 sem clima, 2625–2735 com
+ * clima — uso o teto (100%) como CP curado. Zamazenta não está no roster
+ * de Megas, então usa sprite curado manualmente.
  */
 export const zamazentaVeterano: Evento = {
   slug: "zamazenta-veterano",
   titulo: "Zamazenta Veterano",
   periodo: {
-    inicio: "2026-09-16T05:00:00-03:00",
-    fim: "2026-09-22T05:00:00-03:00",
+    inicio: "2026-09-16T06:00:00-03:00",
+    fim: "2026-09-22T21:00:00-03:00",
   },
-  periodoTexto: "16/09 (qua) 5h → 22/09 (ter) 5h de 2026 (horário local)",
+  periodoTexto: "16/09 (qua) 6h → 22/09 (ter) 21h de 2026 (horário local)",
   tema: "lendario",
+  badge: "Hora de Reide extra: 16/09 18h–19h",
   reides: [
     {
       nivel: "Reides Veteranos (16→22/09)",
@@ -24,6 +27,8 @@ export const zamazentaVeterano: Evento = {
           tipos: ["Fighting"],
           imagem:
             "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm889.icon.png",
+          cpSemClima: 2188,
+          cpComClima: 2735,
         },
       ],
     },

@@ -1,18 +1,20 @@
 import type { Evento } from "@/models/evento";
 
 /**
- * Fonte: calendário de setembro/2026 levantado pela Lorena (rotação semanal
- * de Mega Raids, início às 5h, sobreposta à janela do Mega Beedrill — sem
- * confirmação de como as duas rotações se relacionam entre si).
+ * Fonte: leekduck.com/events/mega-houndoom-in-mega-raids-september-2026,
+ * horário de término corrigido pra 21h (mesmo ajuste do Mega Beedrill,
+ * confirmado por um card de reide mais preciso) — 11/09 6h → 15/09 21h
+ * local. Sobreposta de propósito à janela do Mega Beedrill: as duas
+ * rotações são reais e concorrentes, ligadas ao evento "Mega Squads".
  */
 export const megaHoundoom: Evento = {
   slug: "mega-houndoom",
   titulo: "Mega Houndoom",
   periodo: {
-    inicio: "2026-09-11T05:00:00-03:00",
-    fim: "2026-09-15T05:00:00-03:00",
+    inicio: "2026-09-11T06:00:00-03:00",
+    fim: "2026-09-15T21:00:00-03:00",
   },
-  periodoTexto: "11/09 (sex) 5h → 15/09 (ter) 5h de 2026 (horário local)",
+  periodoTexto: "11/09 (sex) 6h → 15/09 (ter) 21h de 2026 (horário local)",
   tema: "mega",
   reides: [
     {

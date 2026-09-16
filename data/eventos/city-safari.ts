@@ -1,23 +1,33 @@
 import type { Evento } from "@/models/evento";
 
 /**
- * Fonte: calendário de setembro/2026 levantado pela Lorena. Só data e
- * horário de início vieram confirmados — City Safari costuma ter
- * ingresso/região específica e encontros exclusivos, mas nada disso veio
- * no calendário-fonte. Horário de encerramento (20h do dia 27) é uma
- * suposição baseada no padrão comum desse tipo de evento, não confirmada.
+ * Fonte: pokemongo.com/en/news/city-safaris-europe-2026 e
+ * dittobase.com/pokemon-go/events/pokemon-go-city-safari-2026-rio-de-janeiro
+ * (confirmado 16/09/2026) — o Rio de Janeiro é uma das cidades-sede de
+ * 2026! Evento presencial com ingresso pago, não joga em casa.
  */
 export const citySafari: Evento = {
   slug: "city-safari",
-  titulo: "Pokémon GO City Safari",
+  titulo: "Pokémon GO City Safari: Rio de Janeiro",
   periodo: {
     inicio: "2026-09-26T10:00:00-03:00",
-    fim: "2026-09-27T20:00:00-03:00",
+    fim: "2026-09-27T18:00:00-03:00",
   },
-  periodoTexto: "26/09 (sáb) 10h → 27/09 (dom) 20h de 2026 (horário local)",
+  periodoTexto: "26/09 (sáb) e 27/09 (dom), 10h → 18h cada dia (horário de Brasília)",
   tema: "comunidade",
+  badge: "Presencial no Rio de Janeiro — ingresso R$38/dia",
+  estreias: {
+    lista: [
+      {
+        nome: "Mudbray",
+        tipos: ["Ground"],
+        origem:
+          "Exclusivo dos eventos City Safari 2026 — pode chegar ao mundo todo depois, mas por enquanto só aqui.",
+      },
+    ],
+  },
   notaCuradoria: {
     texto:
-      "Ainda não tenho a cidade/região do Safari nem a lista de encontros exclusivos — normalmente esse tipo de evento pede ingresso e é local, então talvez nem se aplique. Atualizo assim que confirmar.",
+      "Evento presencial e pago (R$38/dia, com adicionais \"Raid Lover\" e \"Egg-thusiast\" a R$23 cada) — só vale a pena se você for estar no Rio nesse fim de semana. Traz Pesquisa Especial exclusiva, Mudbray (só sai daqui por enquanto) e o GO Stamp Rally: até 8 carimbos por dia em PokéStops marcadas, cada um dando um encontro com Eevee de chapéu de explorador (evolui em 8 formas fantasiadas diferentes).",
   },
 };
