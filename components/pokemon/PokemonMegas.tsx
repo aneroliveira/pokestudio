@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Pokemon } from "@/models/pokemon";
 import { SectionCard } from "@/components/ui/SectionCard";
 import { InfoRow } from "@/components/ui/InfoRow";
+import { InfoTip } from "@/components/ui/InfoTip";
 import { TypeIcon } from "@/components/ui/TypeIcon";
 import {
   MEGAS,
@@ -97,7 +98,15 @@ export function PokemonMegas({ pokemon }: PokemonMegasProps) {
     <>
       <SuaMega megas={proprias} />
 
-      <SectionCard title="Melhor Mega contra">
+      <SectionCard
+        title="Melhor Mega contra"
+        actions={
+          <InfoTip
+            texto="Mostra as melhores Megas pra usar COMO counter contra este Pokémon, ranqueadas pela efetividade de tipo — quanto maior o multiplicador, mais forte o ataque."
+            topico="mega"
+          />
+        }
+      >
         {recomendadas.length === 0 ? (
           <p className="text-sm text-muted-foreground">
             Nenhuma Mega super efetiva conhecida.

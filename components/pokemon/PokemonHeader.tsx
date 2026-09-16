@@ -4,6 +4,7 @@ import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { TypeIcon } from "@/components/ui/TypeIcon";
 import { ToggleChip } from "@/components/ui/ToggleChip";
+import { InfoTip } from "@/components/ui/InfoTip";
 import { useMegaShiny } from "@/components/pokemon/useMegaShiny";
 import Image from "next/image";
 
@@ -70,8 +71,12 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
           )}
         </div>
 
-        <div className="mt-3">
+        <div className="mt-3 flex items-center gap-1.5">
           <PriorityBadge value={pokemon.studio.estrategia.tier} />
+          <InfoTip
+            texto="Tier é a nota de prioridade que o PokéStudio dá ao Pokémon — quanto mais alto, mais vale a pena investir nele. É curadoria própria do app, não uma métrica oficial do jogo."
+            topico="tier"
+          />
         </div>
       </div>
 

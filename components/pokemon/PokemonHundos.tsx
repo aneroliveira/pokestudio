@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Pokemon } from "@/models/pokemon";
 import { SectionCard } from "@/components/ui/SectionCard";
 import { InfoRow } from "@/components/ui/InfoRow";
+import { InfoTip } from "@/components/ui/InfoTip";
 import { Input } from "@/components/ui/input";
 import {
   calcularCacadaPorNumero,
@@ -79,7 +80,15 @@ export function PokemonHundos({ pokemon }: PokemonHundosProps) {
   }
 
   return (
-    <SectionCard title="Hundos">
+    <SectionCard
+      title="Hundos"
+      actions={
+        <InfoTip
+          texto="Hundo é o apelido para um Pokémon com IV 100% (15/15/15). Aqui você vê o CP máximo por nível e, na aba Caçada, em qual nível um exemplar capturado bate com cada faixa de IV."
+          topico="hundos"
+        />
+      }
+    >
       <div className="mb-4 inline-flex rounded-lg bg-muted p-0.5">
         {ABAS.map((item) => (
           <button

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Shield } from "lucide-react";
+import { Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
@@ -89,7 +89,7 @@ export function MainHeader() {
               emAdmin ? "text-primary" : "text-foreground/70 hover:text-foreground",
             )}
           >
-            <Shield className="h-4 w-4" />
+            <Lock className="h-4 w-4" />
           </Link>
 
           <ThemeToggle />

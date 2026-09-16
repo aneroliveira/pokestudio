@@ -1,6 +1,7 @@
 import type { Pokemon, TipoPokemon } from "@/models/pokemon";
 import { SectionCard } from "@/components/ui/SectionCard";
 import { TypeIcon } from "@/components/ui/TypeIcon";
+import { InfoTip } from "@/components/ui/InfoTip";
 import { calcularDerivados } from "@/services/pokemon/calcularDerivados";
 
 type PokemonCombatProps = {
@@ -45,7 +46,15 @@ export function PokemonCombat({ pokemon }: PokemonCombatProps) {
     calcularDerivados(pokemon.oficial.tipos);
 
   return (
-    <SectionCard title="Combate">
+    <SectionCard
+      title="Combate"
+      actions={
+        <InfoTip
+          texto="Calculado a partir dos tipos oficiais do Pokémon, com foco em raid e ginásio: contra quais tipos ele bate forte, e quais tipos batem forte nele."
+          topico="combate"
+        />
+      }
+    >
       <div className="space-y-5">
         {/* Ataque — contra quem os golpes dele são fortes (foco de raid/ginásio) */}
         <div>

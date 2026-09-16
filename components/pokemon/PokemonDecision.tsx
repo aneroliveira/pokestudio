@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { Pokemon } from "@/models/pokemon";
 import { SectionCard } from "@/components/ui/SectionCard";
 import { RecommendationChip } from "@/components/ui/RecommendationChip";
+import { InfoTip } from "@/components/ui/InfoTip";
 
 type PokemonDecisionProps = {
   pokemon: Pokemon;
@@ -51,6 +52,12 @@ export function PokemonDecision({ pokemon }: PokemonDecisionProps) {
               />
             );
           })}
+
+          <InfoTip
+            texto="Cada Pokémon curado pode ter até 5 decisões práticas: Vale guardar, Vale maximizar, Vale Buddy, Vale Elite TM e Transferir. A cor do chip indica o veredito — verde, amarelo ou vermelho."
+            topico="decisoes"
+            className="ml-auto"
+          />
         </div>
 
         {decisaoAberta && (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { SectionTitle } from "@/components/ui/SectionTitle";
@@ -332,6 +332,18 @@ const TOPICOS: Topico[] = [
 export default function FaqPage() {
   const [ativo, setAtivo] = useState(TOPICOS[0].id);
   const topico = TOPICOS.find((t) => t.id === ativo) ?? TOPICOS[0];
+
+  // Deep link (ex.: ícones de info espalhados pelo card do Pokémon) já abre
+  // no tópico certo: `/faq?topico=hundos`. Lido do window em vez de
+  // useSearchParams pra não exigir um boundary de Suspense só por causa de
+  // um parâmetro opcional.
+  useEffect(() => {
+    const desejado = new URLSearchParams(window.location.search).get("topico");
+    if (desejado && TOPICOS.some((t) => t.id === desejado)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setAtivo(desejado);
+    }
+  }, []);
 
   return (
     <PageContainer>
