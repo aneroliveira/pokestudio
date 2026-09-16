@@ -1,8 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
+import { LogOut } from "lucide-react";
 import type { PokemonStudio } from "@/models/pokemon";
 import { createEmptyPokemon } from "@/utils/createEmptyPokemon";
 import { Tabs } from "@/components/ui/Tabs";
+import { Button } from "@/components/ui/button";
 import { usePokemonEditor } from "@/components/admin/usePokemonEditor";
 import { abaPossuiDados } from "@/components/admin/tabAvailability";
 import { GeralTab } from "@/components/admin/tabs/GeralTab";
@@ -14,6 +16,7 @@ import { SincronizacaoTab } from "@/components/admin/tabs/SincronizacaoTab";
 import { PreviewTab } from "@/components/admin/tabs/PreviewTab";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
 import { PlanoView } from "@/components/plano/PlanoView";
+import { sair } from "./actions";
 
 const ABAS = [
   "Sincronização",
@@ -71,12 +74,21 @@ export default function AdminPage() {
           </p>
         </div>
 
-        {naoSalvo && (
-          <span className="flex shrink-0 items-center gap-1.5 rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-800">
-            <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
-            não salvo
-          </span>
-        )}
+        <div className="flex shrink-0 items-center gap-3">
+          {naoSalvo && (
+            <span className="flex items-center gap-1.5 rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-800">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
+              não salvo
+            </span>
+          )}
+
+          <form action={sair}>
+            <Button type="submit" variant="outline" size="sm">
+              <LogOut className="h-4 w-4" />
+              Sair
+            </Button>
+          </form>
+        </div>
       </div>
 
       <div
