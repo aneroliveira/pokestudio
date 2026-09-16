@@ -1,4 +1,5 @@
 export * from "./buscarPokemon";
+export * from "./buscaRecente";
 export * from "./mergePokemon";
 export * from "./calcularDerivados";
 export * from "./efetividade";

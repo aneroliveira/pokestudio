@@ -5,13 +5,16 @@ import { useEffect, useState } from "react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
 import { SearchBar } from "@/components/pokemon/SearchBar";
+import { ChipsRecentes } from "@/components/pokemon/ChipsRecentes";
 import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import type { Pokemon } from "@/models/pokemon";
 import type { ItemIndicePokemon } from "@/models/indice";
 import {
+  adicionarRecente,
   buscarPokemon,
   buscarPorNomeEn,
+  lerRecentes,
   montarPokemon,
   studioDoMapa,
 } from "@/services/pokemon";
@@ -27,10 +30,17 @@ export default function Home() {
     useState<Pokemon | null>(null);
   const [carregando, setCarregando] = useState(false);
   const [studioMap, setStudioMap] = useState<StudioMap>({});
+  const [recentes, setRecentes] = useState<ItemIndicePokemon[]>([]);
 
   const resultados = buscarPokemon(pesquisa);
 
   useEffect(() => {
+    // Recentes só existem no localStorage do navegador — não dá pra ler
+    // durante o SSR, então entra num efeito mesmo (mesmo padrão já usado
+    // em app/pocket/page.tsx pro caso de busca vazia).
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setRecentes(lerRecentes());
+
     let cancelado = false;
 
     async function iniciar() {
@@ -61,7 +71,10 @@ export default function Home() {
           item,
           studioDoMapa(mapa, item.numero),
         );
-        if (!cancelado) setPokemonSelecionado(pokemon);
+        if (!cancelado) {
+          setPokemonSelecionado(pokemon);
+          setRecentes(adicionarRecente(item));
+        }
       } catch (error) {
         console.error(error);
       } finally {
@@ -85,6 +98,7 @@ export default function Home() {
       setPokemonSelecionado(
         await montarPokemon(item, studioDoMapa(studioMap, item.numero)),
       );
+      setRecentes(adicionarRecente(item));
     } catch (error) {
       console.error(error);
       alert("Não foi possível carregar o Pokémon.");
@@ -113,6 +127,10 @@ export default function Home() {
             studioMap={studioMap}
             autoFocus
           />
+
+          <div className="mt-3">
+            <ChipsRecentes itens={recentes} onSelect={selecionarPokemon} />
+          </div>
         </div>
 
         {carregando ? (

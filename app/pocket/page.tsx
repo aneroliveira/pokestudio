@@ -5,13 +5,17 @@ import { Search } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
+import { ChipsRecentes } from "@/components/pokemon/ChipsRecentes";
 import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
 import { PokemonPocketCard } from "@/components/pokemon/PokemonPocketCard";
 import { Input } from "@/components/ui/input";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import type { Pokemon } from "@/models/pokemon";
+import type { ItemIndicePokemon } from "@/models/indice";
 import {
+  adicionarRecente,
   buscarPokemon,
+  lerRecentes,
   montarPokemon,
   studioDoMapa,
 } from "@/services/pokemon";
@@ -30,8 +34,14 @@ export default function PocketPage() {
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
   const [carregando, setCarregando] = useState(false);
   const [studioMap, setStudioMap] = useState<StudioMap>({});
+  const [recentes, setRecentes] = useState<ItemIndicePokemon[]>([]);
 
   useEffect(() => {
+    // Recentes só existem no localStorage do navegador — não dá pra ler
+    // durante o SSR, então entra num efeito mesmo.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setRecentes(lerRecentes());
+
     let cancelado = false;
 
     carregarStudioMap()
@@ -62,6 +72,12 @@ export default function PocketPage() {
 
     let cancelado = false;
     setCarregando(true);
+
+    // Só registra como "recente" quando a busca já fechou num Pokémon só —
+    // uma busca genérica tipo "char" que traz várias espécies não conta.
+    if (resultados.length === 1) {
+      setRecentes(adicionarRecente(resultados[0]));
+    }
 
     const atraso = setTimeout(() => {
       Promise.all(
@@ -108,6 +124,13 @@ export default function PocketPage() {
           <p className="mt-2 text-xs text-muted-foreground">
             Digite o nome (em inglês) ou o número da Pokédex.
           </p>
+
+          <div className="mt-3">
+            <ChipsRecentes
+              itens={recentes}
+              onSelect={(item) => setPesquisa(item.nomeEn)}
+            />
+          </div>
         </div>
 
         {!pesquisa ? (

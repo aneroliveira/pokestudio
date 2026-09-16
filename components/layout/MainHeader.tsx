@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { Shield } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
@@ -10,6 +11,7 @@ export function MainHeader() {
   const pathname = usePathname() || "/";
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const emAdmin = pathname === "/admin" || pathname.startsWith("/admin/");
 
   useEffect(() => {
     function onScroll() {
@@ -25,7 +27,6 @@ export function MainHeader() {
     { href: "/pocket", label: "Pocket" },
     { href: "/eventos", label: "Eventos" },
     { href: "/atacantes", label: "Atacantes" },
-    { href: "/admin", label: "Admin" },
     { href: "/faq", label: "FAQ" },
   ];
 
@@ -77,8 +78,22 @@ export function MainHeader() {
           </div>
         </div>
 
-        {/* Toggle de tema à direita */}
-        <ThemeToggle />
+        {/* Admin (ícone) + toggle de tema à direita */}
+        <div className="flex items-center gap-1">
+          <Link
+            href="/admin"
+            aria-label="Admin"
+            aria-current={emAdmin ? "page" : undefined}
+            className={cn(
+              "rounded-md p-2 transition hover:bg-accent",
+              emAdmin ? "text-primary" : "text-foreground/70 hover:text-foreground",
+            )}
+          >
+            <Shield className="h-4 w-4" />
+          </Link>
+
+          <ThemeToggle />
+        </div>
 
         {/* Mobile drawer */}
         <div
