@@ -1,12 +1,8 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-
 import { PageContainer } from "@/components/layout/PageContainer";
-import { Card } from "@/components/ui/Card";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { RotinaSemanal } from "@/components/eventos/RotinaSemanal";
+import { EventosView } from "@/components/eventos/EventosView";
 import { listarEventos } from "@/data/eventos";
-import { ROTULO_ESTADO, ESTILO_ESTADO } from "@/constants/estadoEvento";
 
 /**
  * Sem chamada a nenhuma API "dinâmica" do Next, essa página é elegível a
@@ -20,7 +16,8 @@ import { ROTULO_ESTADO, ESTILO_ESTADO } from "@/constants/estadoEvento";
 export const revalidate = 60;
 
 export default function EventosPage() {
-  const eventos = listarEventos(new Date());
+  const agora = new Date();
+  const eventos = listarEventos(agora);
 
   return (
     <PageContainer>
@@ -30,36 +27,7 @@ export default function EventosPage() {
           subtitle="Bônus, estreias e reides especiais de cada evento em cartaz."
         />
 
-        {eventos.length === 0 ? (
-          <Card>
-            <p className="text-sm text-muted-foreground">
-              Nenhum evento cadastrado no momento.
-            </p>
-          </Card>
-        ) : (
-          <div className="space-y-3">
-            {eventos.map(({ evento, estado }) => (
-              <Link key={evento.slug} href={`/eventos/${evento.slug}`}>
-                <Card className="flex items-center justify-between gap-4 hover:border-primary/40">
-                  <div className="min-w-0">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <h3 className="font-semibold">{evento.titulo}</h3>
-                      <span
-                        className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${ESTILO_ESTADO[estado]}`}
-                      >
-                        {ROTULO_ESTADO[estado]}
-                      </span>
-                    </div>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      {evento.periodoTexto}
-                    </p>
-                  </div>
-                  <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground" />
-                </Card>
-              </Link>
-            ))}
-          </div>
-        )}
+        <EventosView eventos={eventos} hojeISO={agora.toISOString()} />
 
         <RotinaSemanal />
       </div>

@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { MainHeader } from "@/components/layout/MainHeader";
 import { AppBackground } from "@/components/layout/AppBackground";
+import { Footer } from "@/components/layout/Footer";
 
 // Aplica o tema salvo (ou o preferido pelo sistema) antes da primeira
 // pintura, evitando flash de tema errado.
@@ -53,6 +54,8 @@ export default function RootLayout({
         <MainHeader />
 
         <div className="flex-1">{children}</div>
+
+        <Footer />
       </body>
     </html>
   );
