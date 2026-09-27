@@ -13,7 +13,7 @@ export const megaBeedrill: Evento = {
     inicio: "2026-09-08T06:00:00-03:00",
     fim: "2026-09-15T21:00:00-03:00",
   },
-  periodoTexto: "08/09 (ter) 6h → 15/09 (ter) 21h de 2026 (horário local)",
+  periodoTexto: "Terça, 08/09 às 6h até Terça, 15/09 às 21h (horário local)",
   tema: "mega",
   reides: [
     {

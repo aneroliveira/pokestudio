@@ -15,7 +15,7 @@ export const reidesSombrosasThundurus: Evento = {
     inicio: "2026-09-09T10:00:00-03:00",
     fim: "2026-10-06T10:00:00-03:00",
   },
-  periodoTexto: "09/09 (qua) 10h → 06/10 (ter) 10h de 2026 (horário local)",
+  periodoTexto: "Quarta, 09/09 às 10h até Terça, 06/10 às 10h (horário local — só aos fins de semana)",
   tema: "sombrio",
   badge: "Thundurus Sombroso — só nos fins de semana",
   reides: [

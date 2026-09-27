@@ -17,7 +17,7 @@ export const escolhaSeuCaminho: Evento = {
     inicio: "2026-09-23T10:00:00-03:00",
     fim: "2026-09-28T20:00:00-03:00",
   },
-  periodoTexto: "23/09 (qua) 10h → 28/09 (seg) 20h de 2026 (horário local)",
+  periodoTexto: "Quarta, 23/09 às 10h até Segunda, 28/09 às 20h (horário local)",
   tema: "comunidade",
   badge: "3 caminhos: Explorar, Capturar ou Batalhar",
   notaCuradoria: {

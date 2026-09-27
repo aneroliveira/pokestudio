@@ -16,7 +16,7 @@ export const gigantamaxCinderaceMaxBattleDay: Evento = {
     inicio: "2026-10-03T14:00:00-03:00",
     fim: "2026-10-03T17:00:00-03:00",
   },
-  periodoTexto: "03/10 (sáb) 14h → 17h de 2026 (horário local)",
+  periodoTexto: "Sábado, 03/10, das 14h às 17h (horário local)",
   tema: "mega",
   badge: "Estreia shiny do Gigantamax Cinderace",
   reides: [

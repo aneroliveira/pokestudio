@@ -1,5 +1,6 @@
 "use client";
 
+import { useSyncExternalStore } from "react";
 import Link from "next/link";
 import { Info, ArrowRight } from "lucide-react";
 import { Popover } from "@base-ui/react/popover";
@@ -11,9 +12,38 @@ type InfoTipProps = {
   className?: string;
 };
 
+function assinarPonteiro(retorno: () => void) {
+  const consulta = window.matchMedia("(pointer: coarse)");
+  consulta.addEventListener("change", retorno);
+  return () => consulta.removeEventListener("change", retorno);
+}
+
+function lerPonteiroGrosso() {
+  return window.matchMedia("(pointer: coarse)").matches;
+}
+
+function lerPonteiroGrossoServidor() {
+  return false;
+}
+
+/** Em toque (mobile), o gesto de rolar a tela começa com um toque fora do
+ *  popover — a lib entende isso como "clique fora" e fecha o tooltip antes
+ *  do scroll em si acontecer. `modal` trava o scroll do documento enquanto
+ *  o popover está aberto, então nem chega a nascer esse toque "de fora"; em
+ *  ponteiro fino (mouse) não faz diferença, então só liga no touch. */
+function usePonteiroGrosso() {
+  return useSyncExternalStore(
+    assinarPonteiro,
+    lerPonteiroGrosso,
+    lerPonteiroGrossoServidor,
+  );
+}
+
 export function InfoTip({ texto, topico, className }: InfoTipProps) {
+  const modal = usePonteiroGrosso();
+
   return (
-    <Popover.Root>
+    <Popover.Root modal={modal}>
       <Popover.Trigger
         aria-label="Saiba mais"
         className={cn(

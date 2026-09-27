@@ -4,7 +4,11 @@ import { Card } from "@/components/ui/Card";
 import { TypeIcon } from "@/components/ui/TypeIcon";
 import { TIPO_LABEL } from "@/constants/typeLabels";
 import { MEGAS } from "@/services/pokemon/recomendarMega";
-import type { AtacanteRanking, RankingTipo as RankingTipoModel } from "@/models/atacante";
+import type {
+  AtacanteRanking,
+  GolpeAtacante,
+  RankingTipo as RankingTipoModel,
+} from "@/models/atacante";
 
 /**
  * Quando o nome bate com uma Mega do roster, o sprite vem de
@@ -21,6 +25,25 @@ function resolverImagem(atacante: AtacanteRanking) {
   const mega = MEGAS.find((item) => item.nome === atacante.nome);
   if (mega) return { imagem: mega.imagem, escala: mega.escala };
   return { imagem: atacante.imagem, escala: atacante.escala };
+}
+
+/** Legado (*) deixa o nome do golpe em negrito; exclusivo (+) deixa só o
+ *  símbolo sobrescrito na cor de destaque do projeto — sinalização visual
+ *  rápida, sem precisar ler o marcador. */
+function Golpe({ golpe }: { golpe: GolpeAtacante }) {
+  return (
+    <span className={golpe.marcador === "*" ? "font-semibold text-foreground" : undefined}>
+      {golpe.nome}
+      {golpe.marcador && (
+        <sup
+          title={TITULO_MARCADOR[golpe.marcador]}
+          className={golpe.marcador === "+" ? "font-semibold text-primary" : undefined}
+        >
+          {golpe.marcador}
+        </sup>
+      )}
+    </span>
+  );
 }
 
 type RankingTipoProps = {
@@ -93,26 +116,31 @@ export function RankingTipo({ ranking }: RankingTipoProps) {
                     <p className="truncate text-sm font-semibold">{atacante.nome}</p>
                   )}
                   <p className="text-xs text-muted-foreground">
-                    {atacante.rapido.nome}
-                    {atacante.rapido.marcador && (
-                      <sup title={TITULO_MARCADOR[atacante.rapido.marcador]}>
-                        {atacante.rapido.marcador}
-                      </sup>
-                    )}
+                    <Golpe golpe={atacante.rapido} />
                     {" → "}
-                    {atacante.carregado.nome}
-                    {atacante.carregado.marcador && (
-                      <sup title={TITULO_MARCADOR[atacante.carregado.marcador]}>
-                        {atacante.carregado.marcador}
-                      </sup>
-                    )}
+                    <Golpe golpe={atacante.carregado} />
                   </p>
                 </div>
 
-                <div className="col-span-3 flex flex-col pl-[calc(1.25rem+2.5rem+0.75rem)] text-[11px] leading-tight text-muted-foreground sm:col-span-1 sm:items-end sm:pl-0">
+                {/* Mobile: chips (Score destacado na cor do projeto) — fácil
+                    de bater o olho, já que é a visão mais usada. Desktop
+                    mantém o texto empilhado à direita, sem mudanças. */}
+                <div className="col-span-3 flex flex-wrap gap-1.5 pl-[calc(1.25rem+2.5rem+0.75rem)] sm:hidden">
+                  <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                    DPS {atacante.dps.toFixed(2)}
+                  </span>
+                  <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                    TDO {atacante.tdo.toFixed(1)}
+                  </span>
+                  <span className="rounded-full bg-primary/15 px-2 py-0.5 text-[10px] font-semibold text-primary">
+                    Score {atacante.score.toFixed(2)}
+                  </span>
+                </div>
+
+                <div className="col-span-3 hidden flex-col text-[11px] leading-tight text-muted-foreground sm:col-span-1 sm:flex sm:items-end">
                   <span>DPS {atacante.dps.toFixed(2)}</span>
                   <span>TDO {atacante.tdo.toFixed(1)}</span>
-                  <span className="hidden font-semibold text-primary sm:inline">
+                  <span className="font-semibold text-primary">
                     Score {atacante.score.toFixed(2)}
                   </span>
                 </div>

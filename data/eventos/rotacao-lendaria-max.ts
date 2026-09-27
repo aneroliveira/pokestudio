@@ -23,7 +23,7 @@ export const rotacaoLendariaMax: Evento = {
     inicio: "2026-09-21T06:00:00-03:00",
     fim: "2026-09-29T21:00:00-03:00",
   },
-  periodoTexto: "21/09 (seg) 6h → 29/09 (ter) 21h de 2026 (horário local)",
+  periodoTexto: "Segunda, 21/09 às 6h até Terça, 29/09 às 21h (horário local)",
   tema: "lendario",
   badge: "Segunda Max: aves lendárias em Dynamax, 21/09 6h–21h",
   reides: [

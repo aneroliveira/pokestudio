@@ -12,7 +12,7 @@ export const megaMalamar: Evento = {
     inicio: "2026-09-23T06:00:00-03:00",
     fim: "2026-09-29T21:00:00-03:00",
   },
-  periodoTexto: "23/09 (qua) 6h → 29/09 (ter) 21h de 2026 (horário local)",
+  periodoTexto: "Quarta, 23/09 às 6h até Terça, 29/09 às 21h (horário local)",
   tema: "mega",
   reides: [
     {

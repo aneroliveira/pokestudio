@@ -13,7 +13,7 @@ export const mestreDaCaptura: Evento = {
     inicio: "2026-09-26T10:00:00-03:00",
     fim: "2026-09-26T20:00:00-03:00",
   },
-  periodoTexto: "26/09 (sáb) 10h → 20h de 2026 (horário local)",
+  periodoTexto: "Sábado, 26/09, das 10h às 20h (horário local)",
   tema: "comunidade",
   badge: "Chance elevada de Phantump, Cherubi e Drifloon shiny",
   encontros: [

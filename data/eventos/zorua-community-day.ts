@@ -14,7 +14,7 @@ export const zoruaCommunityDay: Evento = {
     inicio: "2026-10-10T14:00:00-03:00",
     fim: "2026-10-10T21:00:00-03:00",
   },
-  periodoTexto: "10/10 (sáb) 14h → 21h de 2026 (horário local, bônus extra até 21h)",
+  periodoTexto: "Sábado, 10/10, das 14h às 17h (horário local — bônus estendido até 21h)",
   tema: "comunidade",
   badge: "Evolua até 4h depois pra Zoroark com Sucker Punch exclusivo",
   encontros: [

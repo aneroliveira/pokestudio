@@ -16,7 +16,7 @@ export const megaVictreebel: Evento = {
     inicio: "2026-09-30T06:00:00-03:00",
     fim: "2026-10-06T21:00:00-03:00",
   },
-  periodoTexto: "30/09 (qua) 6h → 06/10 (ter) 21h de 2026 (horário local)",
+  periodoTexto: "Quarta, 30/09 às 6h até Terça, 06/10 às 21h (horário local)",
   tema: "mega",
   badge: "Hora de Reide extra: Xerneas, 30/09 18h–19h",
   reides: [

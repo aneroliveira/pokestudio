@@ -17,7 +17,7 @@ export const pokemonHorizontes: Evento = {
     inicio: "2026-09-16T10:00:00-03:00",
     fim: "2026-09-22T20:00:00-03:00",
   },
-  periodoTexto: "16/09 (qua) 10h → 22/09 (ter) 20h de 2026 (horário local)",
+  periodoTexto: "Quarta, 16/09 às 10h até Terça, 22/09 às 20h (horário local)",
   tema: "comunidade",
   badge: "Estreia: Charmander de óculos de aviador do Friede",
   estreias: {

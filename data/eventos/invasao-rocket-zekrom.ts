@@ -20,7 +20,7 @@ export const invasaoRocketZekrom: Evento = {
     inicio: "2026-10-02T00:00:00-03:00",
     fim: "2026-10-05T20:00:00-03:00",
   },
-  periodoTexto: "02/10 (sex) meia-noite → 05/10 (seg) 20h de 2026 (horário local)",
+  periodoTexto: "Sexta, 02/10 a 00h até Segunda, 05/10 às 20h (horário local)",
   tema: "sombrio",
   badge: "Giovanni com Zekrom Sombroso",
   reides: [

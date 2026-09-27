@@ -13,7 +13,7 @@ export const festivalDaColheita: Evento = {
     inicio: "2026-09-29T10:00:00-03:00",
     fim: "2026-10-05T20:00:00-03:00",
   },
-  periodoTexto: "29/09 (ter) 10h → 05/10 (seg) 20h de 2026 (horário local)",
+  periodoTexto: "Terça, 29/09 às 10h até Segunda, 05/10 às 20h (horário local)",
   tema: "comunidade",
   badge: "Estreia: Applin brilhante",
   estreias: {

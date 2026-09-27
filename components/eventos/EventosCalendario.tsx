@@ -97,6 +97,18 @@ function tituloMes(ano: number, mes: number): string {
   return texto.charAt(0).toUpperCase() + texto.slice(1);
 }
 
+/** Nome do mês, sem ano (ex.: "Outubro") — usado no separador que marca a
+ *  virada de mês dentro do grid (o grid de 6 semanas sempre fecha com uns
+ *  dias do mês seguinte, pra completar a última semana). */
+function nomeMes(mes: number): string {
+  const data = new Date(Date.UTC(2000, mes, 1));
+  const texto = data.toLocaleDateString("pt-BR", {
+    month: "long",
+    timeZone: "UTC",
+  });
+  return texto.charAt(0).toUpperCase() + texto.slice(1);
+}
+
 /** Uma semana do grid: 7 dias corridos a partir de `inicioKey`. */
 function gerarSemana(inicioKey: string): string[] {
   return Array.from({ length: 7 }, (_, i) => somarDias(inicioKey, i));
@@ -195,6 +207,15 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                         passado && !selecionado && "opacity-50",
                       )}
                     >
+                      {/* Primeiro dia de um mês diferente do vigente — só
+                          esse dia carrega o rótulo do mês, não a semana
+                          inteira (a semana mistura dias dos dois meses). */}
+                      {data.getUTCDate() === 1 && !noMesAtual && (
+                        <span className="text-[8px] font-semibold uppercase leading-none tracking-wide text-primary/70">
+                          {nomeMes(data.getUTCMonth()).slice(0, 3)}
+                        </span>
+                      )}
+
                       <span
                         className={cn(
                           "flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-xs",

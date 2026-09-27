@@ -13,7 +13,7 @@ export const citySafari: Evento = {
     inicio: "2026-09-26T10:00:00-03:00",
     fim: "2026-09-27T18:00:00-03:00",
   },
-  periodoTexto: "26/09 (sáb) e 27/09 (dom), 10h → 18h cada dia (horário de Brasília)",
+  periodoTexto: "Sábado, 26/09 e Domingo, 27/09, das 10h às 18h cada dia (horário de Brasília — evento presencial)",
   tema: "comunidade",
   badge: "Presencial no Rio de Janeiro — ingresso R$38/dia",
   estreias: {

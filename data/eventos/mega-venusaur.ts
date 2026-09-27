@@ -24,7 +24,7 @@ export const megaVenusaur: Evento = {
     inicio: "2026-09-16T06:00:00-03:00",
     fim: "2026-09-22T21:00:00-03:00",
   },
-  periodoTexto: "16/09 (qua) 6h → 22/09 (ter) 21h de 2026 (horário local)",
+  periodoTexto: "Quarta, 16/09 às 6h até Terça, 22/09 às 21h (horário local)",
   tema: "mega",
   badge: "19/09: estreia mundial de Mega Staraptor",
   reides: [
