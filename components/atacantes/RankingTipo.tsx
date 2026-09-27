@@ -55,7 +55,7 @@ export function RankingTipo({ ranking }: RankingTipoProps) {
   const slug = tipo.toLowerCase();
 
   return (
-    <div id={slug} className="scroll-mt-20">
+    <div id={slug} className="scroll-mt-[var(--offset-atacantes,5rem)]">
       <Card>
         <h2 className="flex items-center gap-2 text-lg font-semibold">
           <TypeIcon tipo={tipo} compact />
