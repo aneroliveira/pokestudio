@@ -171,6 +171,10 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                   const selecionado = diaKey === diaSelecionado;
                   const diaDaSemana = data.getUTCDay();
                   const fimDeSemana = diaDaSemana === 0 || diaDaSemana === 6;
+                  // Dia já passado — não trava a interação (um evento
+                  // encerrado ainda pode valer clicar pra conferir), só
+                  // esmaece pra dar a "ilusão" visual de desabilitado.
+                  const passado = diaKey < hojeKey;
 
                   return (
                     <button
@@ -188,6 +192,7 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                         temEventos && "hover:border-primary/40",
                         selecionado && "border-primary bg-primary/5",
                         !temEventos && "cursor-default",
+                        passado && !selecionado && "opacity-50",
                       )}
                     >
                       <span

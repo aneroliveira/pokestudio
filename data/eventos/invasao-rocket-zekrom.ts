@@ -3,12 +3,15 @@ import type { Evento } from "@/models/evento";
 /**
  * Fonte: pokemongo.com/en/news/harvest-festival-2026 (evento oficial
  * "Harvest Festival: Taken Over" — a Equipe Rocket toma conta do Festival
- * da Colheita nesses dias) e leekduck.com/events/gigantamax-cinderace-max-battle-day-2026
- * (confirmado 16/09/2026, horário 03/10 14h–17h certinho). Horário de
- * término corrigido pra 20h (antes eu tinha meia-noite). Nem Zekrom
- * Sombroso nem G-Cinderace estão no roster de Megas — usam sprite curado
- * manualmente (G-Cinderace com a forma Gigantamax, `.fGIGANTAMAX`), sem CP
- * por falta de fonte confirmada.
+ * da Colheita nesses dias), confirmado 16/09/2026. Horário de término
+ * corrigido pra 20h (antes eu tinha meia-noite). Zekrom Sombroso não está
+ * no roster de Megas — usa sprite curado manualmente, sem CP por falta de
+ * fonte confirmada.
+ *
+ * O Gigantamax Cinderace Max Battle Day (03/10, 14h–17h) que caía dentro
+ * dessa janela virou evento próprio (é uma página/marca oficial separada,
+ * com bônus específicos de Batalhas Max, não do Festival da Colheita) —
+ * ver `gigantamax-cinderace-max-battle-day.ts`.
  */
 export const invasaoRocketZekrom: Evento = {
   slug: "invasao-rocket-zekrom",
@@ -29,17 +32,6 @@ export const invasaoRocketZekrom: Evento = {
           tipos: ["Dragon", "Electric"],
           imagem:
             "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm644.icon.png",
-        },
-      ],
-    },
-    {
-      nivel: "Dia de Batalhas GMax (03/10, 14h–17h)",
-      chefes: [
-        {
-          nome: "G-Cinderace",
-          tipos: ["Fire"],
-          imagem:
-            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm815.fGIGANTAMAX.icon.png",
         },
       ],
     },

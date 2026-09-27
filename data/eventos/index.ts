@@ -14,6 +14,9 @@ import { mestreDaCaptura } from "./mestre-da-captura";
 import { festivalDaColheita } from "./festival-da-colheita";
 import { megaVictreebel } from "./mega-victreebel";
 import { invasaoRocketZekrom } from "./invasao-rocket-zekrom";
+import { gigantamaxCinderaceMaxBattleDay } from "./gigantamax-cinderace-max-battle-day";
+import { worldSpaceWeek } from "./world-space-week";
+import { zoruaCommunityDay } from "./zorua-community-day";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
 export const EVENTOS: Evento[] = [
@@ -32,6 +35,9 @@ export const EVENTOS: Evento[] = [
   festivalDaColheita,
   megaVictreebel,
   invasaoRocketZekrom,
+  gigantamaxCinderaceMaxBattleDay,
+  worldSpaceWeek,
+  zoruaCommunityDay,
 ];
 
 export function buscarEvento(slug: string): Evento | undefined {

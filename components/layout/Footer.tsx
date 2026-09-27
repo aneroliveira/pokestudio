@@ -30,7 +30,7 @@ function RostoPikachu({ espelhado = false }: { espelhado?: boolean }) {
 
 export function Footer() {
   return (
-    <footer className="border-t border-border py-6">
+    <footer className="relative border-t border-border bg-background py-6">
       <div className="mx-auto flex w-full max-w-md items-center justify-center gap-1.5 px-3 text-center text-[10px] text-muted-foreground sm:text-sm">
         <RostoPikachu />
         <span className="whitespace-nowrap">
