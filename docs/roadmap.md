@@ -140,3 +140,4 @@ Ideias em estudo
 - PWA
 - Modo Offline
 - Tema escuro
+- Navegação anterior/próxima no card do Pokémon (ver RFC-004)
