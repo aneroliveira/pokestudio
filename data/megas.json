@@ -870,6 +870,24 @@
     "escala": 1.133
   },
   {
+    "id": "STARAPTOR_MEGA",
+    "nome": "Mega Staraptor",
+    "numeroBase": "#398",
+    "categoria": "Mega",
+    "tipos": [
+      "Fighting",
+      "Flying"
+    ],
+    "stats": {
+      "attack": 278,
+      "defense": 207,
+      "stamina": 198
+    },
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm398.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm398.s.icon.png",
+    "escala": 1.037
+  },
+  {
     "id": "LOPUNNY_MEGA",
     "nome": "Mega Lopunny",
     "numeroBase": "#428",
