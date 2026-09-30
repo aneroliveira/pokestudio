@@ -24,7 +24,6 @@ export function MainHeader() {
 
   const items = [
     { href: "/", label: "Home" },
-    { href: "/pocket", label: "Pocket" },
     { href: "/eventos", label: "Eventos" },
     { href: "/atacantes", label: "Atacantes" },
     { href: "/faq", label: "FAQ" },

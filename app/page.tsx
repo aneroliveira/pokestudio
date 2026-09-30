@@ -28,9 +28,39 @@ import {
   type StudioMap,
 } from "@/services/pokemon/studioStore";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
+import { PokemonPocketCard } from "@/components/pokemon/PokemonPocketCard";
 
 const ABAS = ["Buscar", "Pokédex"] as const;
 type Aba = (typeof ABAS)[number];
+
+// RFC-005: a ficha rápida (antiga /pocket) é um modo de visualização da
+// Home. O modo escolhido fica só neste navegador — se o storage falhar,
+// volta pra Completa sem quebrar nada. `?modo=rapida` (pra onde a /pocket
+// redireciona) tem prioridade sobre o que está salvo.
+const MODOS = ["Completa", "Rápida"] as const;
+type ModoFicha = (typeof MODOS)[number];
+const CHAVE_MODO = "pokestudio:modo-ficha";
+
+function lerModo(): ModoFicha {
+  const daUrl = new URLSearchParams(window.location.search).get("modo");
+  if (daUrl === "rapida") return "Rápida";
+  if (daUrl === "completa") return "Completa";
+
+  try {
+    const salvo = window.localStorage.getItem(CHAVE_MODO);
+    return salvo === "Rápida" ? "Rápida" : "Completa";
+  } catch {
+    return "Completa";
+  }
+}
+
+function salvarModo(modo: ModoFicha) {
+  try {
+    window.localStorage.setItem(CHAVE_MODO, modo);
+  } catch {
+    // Sem storage o modo só não é lembrado na próxima visita.
+  }
+}
 
 function assinarScroll(retorno: () => void) {
   window.addEventListener("scroll", retorno, { passive: true });
@@ -64,15 +94,22 @@ export default function Home() {
   const [carregando, setCarregando] = useState(false);
   const [studioMap, setStudioMap] = useState<StudioMap>({});
   const [recentes, setRecentes] = useState<ItemIndicePokemon[]>([]);
+  const [modo, setModo] = useState<ModoFicha>("Completa");
+
+  function trocarModo(novo: ModoFicha) {
+    setModo(novo);
+    salvarModo(novo);
+  }
 
   const resultados = buscarPokemon(pesquisa);
 
   useEffect(() => {
     // Recentes só existem no localStorage do navegador — não dá pra ler
-    // durante o SSR, então entra num efeito mesmo (mesmo padrão já usado
-    // em app/pocket/page.tsx pro caso de busca vazia).
+    // durante o SSR, então entra num efeito mesmo — o modo de ficha salvo
+    // vem do mesmo lugar e pelo mesmo motivo.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setRecentes(lerRecentes());
+    setModo(lerModo());
 
     let cancelado = false;
 
@@ -181,8 +218,39 @@ export default function Home() {
                 autoFocus
               />
 
-              <div className="mt-3">
-                <ChipsRecentes itens={recentes} onSelect={selecionarPokemon} />
+              {/* Recentes à esquerda, seletor de ficha à direita na mesma
+                  linha — o seletor só aparece quando tem um Pokémon aberto. */}
+              <div className="mt-3 flex items-start justify-between gap-3">
+                <div className="min-w-0 flex-1">
+                  <ChipsRecentes
+                    itens={recentes}
+                    onSelect={selecionarPokemon}
+                  />
+                </div>
+
+                {pokemonSelecionado && (
+                  <div className="flex shrink-0 items-center gap-2">
+                    <span className="text-xs text-muted-foreground">Ficha</span>
+                    <div className="inline-flex rounded-lg bg-muted p-0.5">
+                      {MODOS.map((item) => (
+                        <button
+                          key={item}
+                          type="button"
+                          onClick={() => trocarModo(item)}
+                          aria-pressed={modo === item}
+                          className={cn(
+                            "rounded-md px-3 py-1 text-xs font-medium transition",
+                            modo === item
+                              ? "bg-card text-foreground shadow-sm"
+                              : "text-muted-foreground hover:text-foreground",
+                          )}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -197,10 +265,14 @@ export default function Home() {
             {carregando ? (
               <PokemonCardSkeleton />
             ) : pokemonSelecionado ? (
-              <PokemonCard
-                pokemon={pokemonSelecionado}
-                onSelecionarPokemon={selecionarPokemon}
-              />
+              modo === "Rápida" ? (
+                <PokemonPocketCard pokemon={pokemonSelecionado} />
+              ) : (
+                <PokemonCard
+                  pokemon={pokemonSelecionado}
+                  onSelecionarPokemon={selecionarPokemon}
+                />
+              )
             ) : (
               <EmptyState />
             )}
