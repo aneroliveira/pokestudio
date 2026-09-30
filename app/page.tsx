@@ -1,13 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import { ArrowUp } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
 import { SearchBar } from "@/components/pokemon/SearchBar";
 import { ChipsRecentes } from "@/components/pokemon/ChipsRecentes";
 import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
+import { PokedexGrid } from "@/components/pokemon/PokedexGrid";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+import { Tabs } from "@/components/ui/Tabs";
+import { cn } from "@/lib/utils";
 import type { Pokemon } from "@/models/pokemon";
 import type { ItemIndicePokemon } from "@/models/indice";
 import {
@@ -24,7 +28,35 @@ import {
 } from "@/services/pokemon/studioStore";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
 
+const ABAS = ["Buscar", "Pokédex"] as const;
+type Aba = (typeof ABAS)[number];
+
+function assinarScroll(retorno: () => void) {
+  window.addEventListener("scroll", retorno, { passive: true });
+  return () => window.removeEventListener("scroll", retorno);
+}
+
+function leuPassouDoTopo() {
+  return window.scrollY > 300;
+}
+
+function leuPassouDoTopoServidor() {
+  return false;
+}
+
+/** Só mostra o "voltar ao topo" depois de rolar um pouco — perto do topo
+ *  o botão não serve pra nada, só ocupa espaço na tela. */
+function useMostrarBotaoTopo() {
+  return useSyncExternalStore(
+    assinarScroll,
+    leuPassouDoTopo,
+    leuPassouDoTopoServidor,
+  );
+}
+
 export default function Home() {
+  const [aba, setAba] = useState<Aba>("Buscar");
+  const mostrarBotaoTopo = useMostrarBotaoTopo();
   const [pesquisa, setPesquisa] = useState("");
   const [pokemonSelecionado, setPokemonSelecionado] =
     useState<Pokemon | null>(null);
@@ -107,43 +139,95 @@ export default function Home() {
     }
   }
 
+  // A Pokédex é só uma porta de entrada visual — selecionar um quadrado
+  // volta pra aba de busca pra revelar o card, igual clicar num resultado
+  // de busca ou num chip de recente.
+  function selecionarDaPokedex(item: ItemIndicePokemon) {
+    setAba("Buscar");
+    selecionarPokemon(item);
+  }
+
   return (
     <PageContainer>
-      <div className="w-full max-w-2xl space-y-6">
+      <div
+        id="topo"
+        className={cn(
+          "w-full scroll-mt-20 space-y-6",
+          aba === "Pokédex" ? "max-w-5xl" : "max-w-2xl",
+        )}
+      >
         <SectionTitle
           title="PokéPocket da Lori"
           // title="PokéStudio da Lori" // nome anterior, antes do domínio pogopocket.vercel.app
           subtitle="O companheiro para decisões inteligentes no Pokémon GO."
         />
 
-        <div className="md:sticky md:top-16 md:z-30 md:pb-2 md:backdrop-blur-md">
-          <SearchBar
-            value={pesquisa}
-            onChange={(valor) => {
-              setPesquisa(valor);
-            }}
-            onSelect={selecionarPokemon}
-            resultados={resultados}
-            studioMap={studioMap}
-            autoFocus
-          />
+        <Tabs abas={ABAS} ativa={aba} onChange={setAba} />
 
-          <div className="mt-3">
-            <ChipsRecentes itens={recentes} onSelect={selecionarPokemon} />
-          </div>
-        </div>
-
-        {carregando ? (
-          <PokemonCardSkeleton />
-        ) : pokemonSelecionado ? (
-          <PokemonCard
-            pokemon={pokemonSelecionado}
-            onSelecionarPokemon={selecionarPokemon}
-          />
+        {aba === "Pokédex" ? (
+          <PokedexGrid onSelect={selecionarDaPokedex} />
         ) : (
-          <EmptyState />
+          <>
+            <div className="md:sticky md:top-16 md:z-30 md:pb-2 md:backdrop-blur-md">
+              <SearchBar
+                value={pesquisa}
+                onChange={(valor) => {
+                  setPesquisa(valor);
+                }}
+                onSelect={selecionarPokemon}
+                resultados={resultados}
+                studioMap={studioMap}
+                autoFocus
+              />
+
+              <div className="mt-3">
+                <ChipsRecentes itens={recentes} onSelect={selecionarPokemon} />
+              </div>
+            </div>
+
+            {carregando ? (
+              <PokemonCardSkeleton />
+            ) : pokemonSelecionado ? (
+              <PokemonCard
+                pokemon={pokemonSelecionado}
+                onSelecionarPokemon={selecionarPokemon}
+              />
+            ) : (
+              <EmptyState />
+            )}
+          </>
         )}
       </div>
+
+      {aba === "Pokédex" && mostrarBotaoTopo && (
+        <>
+          {/* Mobile: canto da tela — o conteúdo já ocupa quase a largura
+              toda, então "perto do conteúdo" já é aqui. */}
+          <a
+            href="#topo"
+            aria-label="Voltar ao topo"
+            title="Voltar ao topo"
+            className="fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-lg transition hover:bg-secondary sm:hidden"
+          >
+            <ArrowUp className="h-5 w-5" />
+          </a>
+
+          {/* Desktop: alinhado com a borda direita do conteúdo (max-w-5xl
+              na Pokédex), não com o canto do viewport. */}
+          <div className="pointer-events-none fixed inset-x-0 bottom-6 z-40 hidden sm:block">
+            <div className="relative mx-auto w-full max-w-5xl">
+              <a
+                href="#topo"
+                aria-label="Voltar ao topo"
+                title="Voltar ao topo"
+                className="pointer-events-auto absolute bottom-0 right-0 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-lg transition hover:bg-secondary"
+              >
+                <ArrowUp className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </>
+      )}
     </PageContainer>
   );
 }
