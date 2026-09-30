@@ -40,11 +40,11 @@ type EventosViewProps = {
   hojeISO: string;
 };
 
-const ABAS = ["Lista", "Calendário"] as const;
+const ABAS = ["Calendário", "Lista"] as const;
 type Aba = (typeof ABAS)[number];
 
 export function EventosView({ eventos, hojeISO }: EventosViewProps) {
-  const [aba, setAba] = useState<Aba>("Lista");
+  const [aba, setAba] = useState<Aba>("Calendário");
   const [encerradosAbertos, setEncerradosAbertos] = useState(false);
 
   if (eventos.length === 0) {

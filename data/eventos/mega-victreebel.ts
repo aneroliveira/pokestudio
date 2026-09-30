@@ -11,7 +11,7 @@ import type { Evento } from "@/models/evento";
  */
 export const megaVictreebel: Evento = {
   slug: "mega-victreebel",
-  titulo: "Mega Victreebel",
+  titulo: "Mega Victreebel + Xerneas",
   periodo: {
     inicio: "2026-09-30T06:00:00-03:00",
     fim: "2026-10-06T21:00:00-03:00",
