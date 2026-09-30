@@ -34,3 +34,24 @@ export function buscarPorNomeEn(
 
   return INDICE.find((item) => item.nomeEn.toLowerCase() === slug);
 }
+
+/**
+ * Quem vem antes e depois na Pokédex nacional. O índice já vem ordenado por
+ * número, então os vizinhos são só as posições ao lado — nas bordas (#001 e
+ * o último) um dos lados fica `undefined`.
+ */
+export function buscarVizinhos(numero: string): {
+  anterior?: ItemIndicePokemon;
+  proximo?: ItemIndicePokemon;
+} {
+  const posicao = INDICE.findIndex((item) => item.numero === numero);
+
+  if (posicao === -1) {
+    return {};
+  }
+
+  return {
+    anterior: INDICE[posicao - 1],
+    proximo: INDICE[posicao + 1],
+  };
+}

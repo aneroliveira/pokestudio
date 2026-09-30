@@ -1,6 +1,8 @@
 # RFC-004 — Navegação Anterior/Próxima no card do Pokémon
 
-Status: Proposta (viabilidade avaliada, não implementada)
+Status: Implementada (30/09/2026) — ordem nacional, barra própria com nome
+do vizinho (`components/pokemon/NavegacaoVizinhos.tsx`), só na Home. Admin
+fica pra depois.
 Autor: Lori (ideia) + Claude (viabilidade e plano)
 Data: 30/09/2026
 Objetivo: Deixar a pessoa passear pela Pokédex inteira sem voltar pra busca —

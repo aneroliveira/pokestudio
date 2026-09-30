@@ -9,6 +9,7 @@ import { SearchBar } from "@/components/pokemon/SearchBar";
 import { ChipsRecentes } from "@/components/pokemon/ChipsRecentes";
 import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
 import { PokedexGrid } from "@/components/pokemon/PokedexGrid";
+import { NavegacaoVizinhos } from "@/components/pokemon/NavegacaoVizinhos";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Tabs } from "@/components/ui/Tabs";
 import { cn } from "@/lib/utils";
@@ -184,6 +185,14 @@ export default function Home() {
                 <ChipsRecentes itens={recentes} onSelect={selecionarPokemon} />
               </div>
             </div>
+
+            {pokemonSelecionado && (
+              <NavegacaoVizinhos
+                numero={pokemonSelecionado.oficial.numero}
+                onSelect={selecionarPokemon}
+                desabilitado={carregando}
+              />
+            )}
 
             {carregando ? (
               <PokemonCardSkeleton />
