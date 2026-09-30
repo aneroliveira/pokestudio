@@ -2,20 +2,10 @@ import Image from "next/image";
 import type { Pokemon } from "@/models/pokemon";
 import { Card } from "@/components/ui/Card";
 import { TypeIcon } from "@/components/ui/TypeIcon";
-import { ToggleChip } from "@/components/ui/ToggleChip";
-import { useMegaShiny } from "@/components/pokemon/useMegaShiny";
+import { useFormasVisuais } from "@/components/pokemon/useFormasVisuais";
+import { BotaoForma } from "@/components/pokemon/BotaoForma";
 import { calcularDerivados } from "@/services/pokemon/calcularDerivados";
-import {
-  calcularHundosPorNumero,
-  NIVEIS_REFERENCIA,
-} from "@/services/pokemon/statsGO";
-
-/** "Nv. 20 · Raid e Ovo" — reaproveita o mesmo texto de contexto usado na
- *  Caçada (PokemonHundos), não uma legenda nova e solta. */
-function legendaNivel(nivel: number): string {
-  const contexto = NIVEIS_REFERENCIA.find((item) => item.nivel === nivel)?.contexto;
-  return contexto ? `Nv. ${nivel} · ${contexto}` : `Nv. ${nivel}`;
-}
+import { calcularHundosPorNumero } from "@/services/pokemon/statsGO";
 
 type PokemonPocketCardProps = {
   pokemon: Pokemon;
@@ -27,13 +17,16 @@ type PokemonPocketCardProps = {
 export function PokemonPocketCard({ pokemon }: PokemonPocketCardProps) {
   const {
     mostrarShiny,
-    setMostrarShiny,
+    alternarShiny,
     mostrarMega,
-    setMostrarMega,
+    alternarMega,
+    mostrarGigamax,
+    alternarGigamax,
     temShiny,
     temMega,
+    temGigamax,
     imagensExibidas,
-  } = useMegaShiny(pokemon);
+  } = useFormasVisuais(pokemon);
 
   const { fraquezas } = calcularDerivados(pokemon.oficial.tipos);
   const hundos = calcularHundosPorNumero(pokemon.oficial.numero);
@@ -93,54 +86,55 @@ export function PokemonPocketCard({ pokemon }: PokemonPocketCardProps) {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-2 sm:items-end">
-            {(temShiny || temMega) && (
-              <div className="flex flex-wrap items-center justify-center gap-1.5 sm:justify-end">
+          {/* A partir de `sm`, chips de forma + CPs não encolhem nem quebram
+              linha — quando duas Megas (X/Y) aparecem lado a lado e sobra
+              menos espaço, quem cede é o bloco de nome/tipos à esquerda. */}
+          <div className="flex flex-col items-center gap-2 sm:shrink-0 sm:items-end">
+            {(temShiny || temMega || temGigamax) && (
+              <div className="flex flex-wrap items-center justify-center gap-1.5 sm:flex-nowrap sm:justify-end">
                 {temShiny && (
-                  <ToggleChip
+                  <BotaoForma
+                    forma="shiny"
                     ativo={mostrarShiny}
-                    onClick={() => setMostrarShiny((valor) => !valor)}
-                  >
-                    ✨ Shiny
-                  </ToggleChip>
+                    onClick={alternarShiny}
+                  />
                 )}
 
                 {temMega && (
-                  <ToggleChip
+                  <BotaoForma
+                    forma="mega"
                     ativo={mostrarMega}
-                    onClick={() => setMostrarMega((valor) => !valor)}
-                  >
-                    💠 Mega
-                  </ToggleChip>
+                    onClick={alternarMega}
+                  />
+                )}
+
+                {temGigamax && (
+                  <BotaoForma
+                    forma="gigamax"
+                    ativo={mostrarGigamax}
+                    onClick={alternarGigamax}
+                  />
                 )}
               </div>
             )}
 
             {hundos && (
               <div className="flex flex-wrap items-start justify-center gap-2 sm:justify-end">
-                <div className="flex flex-col items-center gap-0.5">
-                  <span
-                    title="CP 100% sem clima · nível 20"
-                    className="rounded-full border border-border px-3 py-1.5 text-[21px] font-bold text-foreground"
-                  >
-                    ☁️ {hundos.semClima}
-                  </span>
-                  <span className="text-[10px] font-medium text-muted-foreground">
-                    {legendaNivel(20)}
-                  </span>
-                </div>
+                {/* Sem legenda embaixo: a explicação dos níveis fica na
+                    ficha completa (Hundos); aqui só a dica ao passar o mouse. */}
+                <span
+                  title="CP 100% sem clima · nível 20 (reide e ovo)"
+                  className="rounded-full border border-border px-3 py-1.5 text-[21px] font-bold text-foreground"
+                >
+                  ☁️ {hundos.semClima}
+                </span>
 
-                <div className="flex flex-col items-center gap-0.5">
-                  <span
-                    title="CP 100% com clima · nível 25"
-                    className="rounded-full border border-border px-3 py-1.5 text-[21px] font-bold text-foreground"
-                  >
-                    ☀️ {hundos.comClima}
-                  </span>
-                  <span className="text-[10px] font-medium text-muted-foreground">
-                    {legendaNivel(25)}
-                  </span>
-                </div>
+                <span
+                  title="CP 100% com clima · nível 25 (reide com clima)"
+                  className="rounded-full border border-border px-3 py-1.5 text-[21px] font-bold text-foreground"
+                >
+                  ☀️ {hundos.comClima}
+                </span>
               </div>
             )}
           </div>

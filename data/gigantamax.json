@@ -1,0 +1,114 @@
+[
+  {
+    "numeroBase": "#3",
+    "nome": "Venusaur",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm3.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm3.fGIGANTAMAX.s.icon.png",
+    "escala": 1.075
+  },
+  {
+    "numeroBase": "#6",
+    "nome": "Charizard",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm6.fGIGANTAMAX.s.icon.png",
+    "escala": 1.041
+  },
+  {
+    "numeroBase": "#9",
+    "nome": "Blastoise",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm9.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm9.fGIGANTAMAX.s.icon.png",
+    "escala": 1.173
+  },
+  {
+    "numeroBase": "#12",
+    "nome": "Butterfree",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm12.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm12.fGIGANTAMAX.s.icon.png",
+    "escala": 1.075
+  },
+  {
+    "numeroBase": "#52",
+    "nome": "Meowth",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm52.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm52.fGIGANTAMAX.s.icon.png",
+    "escala": 0.984
+  },
+  {
+    "numeroBase": "#68",
+    "nome": "Machamp",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm68.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm68.fGIGANTAMAX.s.icon.png",
+    "escala": 1.08
+  },
+  {
+    "numeroBase": "#94",
+    "nome": "Gengar",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm94.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm94.fGIGANTAMAX.s.icon.png",
+    "escala": 1.037
+  },
+  {
+    "numeroBase": "#99",
+    "nome": "Kingler",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm99.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm99.fGIGANTAMAX.s.icon.png",
+    "escala": 1.023
+  },
+  {
+    "numeroBase": "#131",
+    "nome": "Lapras",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm131.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm131.fGIGANTAMAX.s.icon.png",
+    "escala": 1.262
+  },
+  {
+    "numeroBase": "#143",
+    "nome": "Snorlax",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm143.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm143.fGIGANTAMAX.s.icon.png",
+    "escala": 1.4
+  },
+  {
+    "numeroBase": "#569",
+    "nome": "Garbodor",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm569.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm569.fGIGANTAMAX.s.icon.png",
+    "escala": 0.907
+  },
+  {
+    "numeroBase": "#812",
+    "nome": "Rillaboom",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm812.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm812.fGIGANTAMAX.s.icon.png",
+    "escala": 0.984
+  },
+  {
+    "numeroBase": "#815",
+    "nome": "Cinderace",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm815.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm815.fGIGANTAMAX.s.icon.png",
+    "escala": 1.018
+  },
+  {
+    "numeroBase": "#818",
+    "nome": "Inteleon",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm818.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm818.fGIGANTAMAX.s.icon.png",
+    "escala": 1.203
+  },
+  {
+    "numeroBase": "#849",
+    "nome": "Toxtricity",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm849.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm849.fGIGANTAMAX.s.icon.png",
+    "escala": 1.07
+  },
+  {
+    "numeroBase": "#861",
+    "nome": "Grimmsnarl",
+    "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm861.fGIGANTAMAX.icon.png",
+    "imagemShiny": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm861.fGIGANTAMAX.s.icon.png",
+    "escala": 0.992
+  }
+]

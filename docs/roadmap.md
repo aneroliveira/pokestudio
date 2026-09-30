@@ -142,3 +142,4 @@ Ideias em estudo
 - Tema escuro
 - Navegação anterior/próxima no card do Pokémon (ver RFC-004)
 - Pocket dentro da Home como visualização Completa / Rápida (ver RFC-005, implementada)
+- Botão Gigantamax no card do Pokémon, junto de Shiny e Mega (ver RFC-006)

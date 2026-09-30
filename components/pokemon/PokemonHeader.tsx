@@ -3,9 +3,9 @@
 import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { TypeIcon } from "@/components/ui/TypeIcon";
-import { ToggleChip } from "@/components/ui/ToggleChip";
 import { InfoTip } from "@/components/ui/InfoTip";
-import { useMegaShiny } from "@/components/pokemon/useMegaShiny";
+import { useFormasVisuais } from "@/components/pokemon/useFormasVisuais";
+import { BotaoForma } from "@/components/pokemon/BotaoForma";
 import Image from "next/image";
 
 type PokemonHeaderProps = {
@@ -15,13 +15,16 @@ type PokemonHeaderProps = {
 export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
   const {
     mostrarShiny,
-    setMostrarShiny,
+    alternarShiny,
     mostrarMega,
-    setMostrarMega,
+    alternarMega,
+    mostrarGigamax,
+    alternarGigamax,
     temShiny,
     temMega,
+    temGigamax,
     imagensExibidas,
-  } = useMegaShiny(pokemon);
+  } = useFormasVisuais(pokemon);
 
   return (
     <div className="flex items-start justify-between gap-6">
@@ -30,27 +33,32 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
           {pokemon.oficial.numero || "#000"}
         </p>
 
-        <div className="flex flex-wrap items-center gap-2">
-          <h2 className="text-3xl font-bold">
-            {pokemon.oficial.nome.ptBR || "Pokémon"}
-          </h2>
+        <h2 className="text-3xl font-bold">
+          {pokemon.oficial.nome.ptBR || "Pokémon"}
+        </h2>
 
+        {/* Chips de forma numa linha só deles, sem quebrar — ao lado do nome
+            eles pulavam de linha quando duas Megas (X/Y) estreitavam a
+            coluna. Mesma ideia da ficha rápida: os chips não cedem espaço. */}
+        <div className="mt-2 flex flex-nowrap items-center gap-2 empty:hidden">
           {temShiny && (
-            <ToggleChip
+            <BotaoForma
+              forma="shiny"
               ativo={mostrarShiny}
-              onClick={() => setMostrarShiny((valor) => !valor)}
-            >
-              ✨ Shiny
-            </ToggleChip>
+              onClick={alternarShiny}
+            />
           )}
 
           {temMega && (
-            <ToggleChip
-              ativo={mostrarMega}
-              onClick={() => setMostrarMega((valor) => !valor)}
-            >
-              💠 Mega
-            </ToggleChip>
+            <BotaoForma forma="mega" ativo={mostrarMega} onClick={alternarMega} />
+          )}
+
+          {temGigamax && (
+            <BotaoForma
+              forma="gigamax"
+              ativo={mostrarGigamax}
+              onClick={alternarGigamax}
+            />
           )}
         </div>
 
@@ -80,7 +88,9 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
         </div>
       </div>
 
-      <div className="flex shrink-0 flex-wrap items-start justify-end gap-4">
+      {/* No celular, duas imagens lado a lado (Megas X/Y) espremiam o nome
+          por cima delas — limitando a largura a uma imagem, elas empilham. */}
+      <div className="flex max-w-[104px] shrink-0 flex-wrap items-start justify-end gap-4 sm:max-w-none">
         {imagensExibidas.map((imagem) => (
           <div key={imagem.key} className="flex flex-col items-center gap-1">
             {imagem.src ? (
