@@ -100,8 +100,8 @@ direto em produção). Não toca `data/`, `models/` nem os cards.
 
 ## Pendências
 
-- Posição do seletor no celular: na linha dos recentes ele aperta os chips.
-  Já testadas e descartadas: chips com rolagem pro lado e seletor dentro do
-  card. Segue em aberto achar algo melhor.
+- No celular o seletor fica só com ícones (📄 completa | ⚡ rápida),
+  porque o seletor com texto apertava os chips. Também foram testadas e
+  descartadas a rolagem dos chips para o lado e o seletor dentro do card.
 - Avaliar com o uso se faz falta ver vários resultados de uma vez no modo
   Rápida (a busca "ao vivo" da antiga /pocket).

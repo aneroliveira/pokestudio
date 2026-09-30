@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, FileText, Zap } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
@@ -228,9 +228,42 @@ export default function Home() {
                   />
                 </div>
 
+                {/* Celular: o mesmo seletor, só com ícones (documento =
+                    completa, raio = rápida) — com texto apertava os chips.
+                    Mostrar as duas opções deixa claro que é uma escolha. */}
                 {pokemonSelecionado && (
-                  <div className="flex shrink-0 items-center gap-2">
-                    <span className="text-xs text-muted-foreground">Ficha</span>
+                  <div
+                    role="group"
+                    aria-label="Tipo de ficha"
+                    className="inline-flex shrink-0 rounded-lg bg-muted p-0.5 sm:hidden"
+                  >
+                    {MODOS.map((item) => {
+                      const Icone = item === "Completa" ? FileText : Zap;
+                      return (
+                        <button
+                          key={item}
+                          type="button"
+                          onClick={() => trocarModo(item)}
+                          aria-pressed={modo === item}
+                          aria-label={`Ficha ${item.toLowerCase()}`}
+                          title={`Ficha ${item.toLowerCase()}`}
+                          className={cn(
+                            "flex h-6 w-7 items-center justify-center rounded-md transition",
+                            modo === item
+                              ? "bg-card text-primary shadow-sm"
+                              : "text-muted-foreground hover:text-foreground",
+                          )}
+                        >
+                          <Icone className="h-3.5 w-3.5" />
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {pokemonSelecionado && (
+                  <div className="hidden shrink-0 items-center gap-2 sm:flex">
+                    <span className="text-xs text-muted-foreground">Ver</span>
                     <div className="inline-flex rounded-lg bg-muted p-0.5">
                       {MODOS.map((item) => (
                         <button
