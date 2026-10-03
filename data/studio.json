@@ -28935,7 +28935,7 @@
         }
       ],
       "observacoes": [
-        "Inseto/Veneno com acesso a Investida de Inseto + Zumbido de Inseto; nicho de atacante de Inseto barato apenas."
+        "Inseto/Veneno com Infestação + Zumbido de Inseto/Vento Prateado; nicho de atacante de Inseto barato apenas."
       ],
       "sinergias": [
         "Scizor",
@@ -29410,7 +29410,7 @@
         }
       ],
       "observacoes": [
-        "Água/Veneno de nicho; Investida de Veneno + Escaldada dão um kit ok, mas sem espaço no meta."
+        "Água/Veneno de nicho; Golpe Envenenado + Escaldada/Onda de Lama dão um kit ok, mas sem espaço no meta."
       ],
       "sinergias": [
         "Roserade",
@@ -30889,8 +30889,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Investida de Inseto + Tesoura X é o ideal; MT Elite só se veio moveset ruim."
+          "status": "nao",
+          "motivo": "Picada ou Cortador de Fúria + Tesoura X é o ideal e sai por TM comum; o único legado (Submissão) não compensa a MT Elite."
         },
         {
           "titulo": "Transferir",
@@ -30899,7 +30899,7 @@
       ],
       "observacoes": [
         "O Mega Pinsir (Inseto/Voador) é um dos maiores DPS de Inseto do jogo, ótimo contra Grama, Psíquico e Sombrio.",
-        "Investida de Inseto + Tesoura X é o kit de ataque; fora do Mega, o Pinsir comum é de nicho."
+        "Picada/Cortador de Fúria + Tesoura X é o kit de ataque; fora do Mega, o Pinsir comum é de nicho."
       ],
       "sinergias": [
         "Scizor",
@@ -32333,7 +32333,7 @@
         }
       ],
       "observacoes": [
-        "Base do Yanmega (Inseto/Voador), atacante de Inseto com Investida de Inseto + Zumbido de Inseto."
+        "Base do Yanmega (Inseto/Voador); sozinho tem só Ataque de Asa/Ataque Rápido + Vento Prateado/Ás dos Ares."
       ],
       "sinergias": []
     },
@@ -38559,7 +38559,7 @@
         }
       ],
       "observacoes": [
-        "Psíquico com Investida de Lodo + Bola Sombria/Investida de Sonho; nicho pontual de PvP."
+        "Psíquico com Extrassensorial/Onda Psíquica + Bola Sombria/Psíquico; nicho pontual de PvP."
       ],
       "sinergias": [
         "Cresselia",
@@ -41479,7 +41479,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Investida de Asa + Pássaro Bravo é o ideal; MT Elite se veio ruim."
+          "motivo": "Ataque de Asa + Pássaro Bravo é o ideal e sai por TM comum; MT Elite só para Lufada de Vento (legado)."
         },
         {
           "titulo": "Transferir",
@@ -41488,7 +41488,7 @@
         }
       ],
       "observacoes": [
-        "Normal/Voador com Investida de Asa + Pássaro Bravo; atacante de Voador acessível.",
+        "Normal/Voador com Ataque de Asa + Pássaro Bravo; atacante de Voador acessível.",
         "Frágil, mas com DPS alto — bom custo-benefício antes dos lendários de Voador."
       ],
       "sinergias": [
@@ -43512,8 +43512,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Confusão + Investida de Sonho/Bola Sombria conforme o alvo; MT Elite abre opções."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Confusão/Extrassensorial + Visão do Futuro/Trovão sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -43581,8 +43581,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Confusão + Investida de Sonho/Bola Sombria conforme o alvo; MT Elite abre opções."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Confusão/Extrassensorial + Visão do Futuro/Nevasca sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -43651,8 +43651,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Confusão + Investida de Sonho/Explosão conforme o alvo; MT Elite abre opções."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Confusão/Extrassensorial + Visão do Futuro/Rajada de Fogo sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -47909,7 +47909,7 @@
         }
       ],
       "observacoes": [
-        "Inseto/Veneno rápido com Investida de Veneno + Megachifre; nicho de atacante."
+        "Inseto/Veneno rápido com Golpe Envenenado/Picada + Megachifre/Bomba de Lodo; nicho de atacante."
       ],
       "sinergias": [
         "Scizor",
@@ -48579,7 +48579,7 @@
         }
       ],
       "observacoes": [
-        "Veneno com Investida de Lodo + Bomba de Lodo; peça de nicho de Grande Liga."
+        "Veneno com Infestação/Desmantelar + Tiro de Sujeira/Spray Ácido; peça de nicho de Grande Liga."
       ],
       "sinergias": [
         "Nidoqueen",
@@ -52299,8 +52299,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Impacto de Sombra + Cabeça de Ferro/Investida de Sombra conforme o alvo; MT Elite abre opções."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Corte Psíquico/Golpe de Ar + Bola Sombria/Canhão de Flash sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -52913,7 +52913,7 @@
         }
       ],
       "observacoes": [
-        "Lutador/Voador com Contra-atacar/Investida de Asa + Aperto Voador/Corpo-a-corpo; DPS bom, mas frágil."
+        "Lutador/Voador com Rasteira + Aperto Voador/Ás dos Ares; DPS bom, mas frágil."
       ],
       "sinergias": [
         "Machamp",
@@ -56716,7 +56716,7 @@
         }
       ],
       "observacoes": [
-        "Elétrico/Aço com Faísca/Investida de Inseto + Bomba Ímã/Cabeça de Ferro; peça de nicho de Grande Liga."
+        "Elétrico/Aço com Trovoada de Choques/Faísca + Ataque Selvagem/Ferrão Letal/Girobola; peça de nicho de Grande Liga."
       ],
       "sinergias": [
         "Togedemaru",
@@ -59504,8 +59504,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Terremoto/Investida de Dragão de cobertura; MT Elite conforme o alvo."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Pulso do Dragão/Ultraje de cobertura sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -59514,7 +59514,7 @@
         }
       ],
       "observacoes": [
-        "Grama/Dragão bulky com Investida de Dragão/Mordida + Golpe Pesado/Terremoto; peça de nicho de Grande e Ultra Liga."
+        "Grama/Dragão bulky com Projétil de Semente/Abismar + Pulso do Dragão/Bomba de Sementes; peça de nicho de Grande e Ultra Liga."
       ],
       "sinergias": [
         "Dragonite",
@@ -59782,7 +59782,7 @@
         }
       ],
       "observacoes": [
-        "Elétrico/Veneno com Investida de Veneno/Faísca + Ataque Selvagem/Soco Empoderador; peça de nicho de PvP. Forma Amplificado/Grave pela natureza."
+        "Elétrico/Veneno com Golpe Envenenado/Faísca + Ataque Selvagem/Soco Empoderador; peça de nicho de PvP. Forma Amplificado/Grave pela natureza."
       ],
       "sinergias": [
         "Toxtricity",
@@ -60117,7 +60117,7 @@
         }
       ],
       "observacoes": [
-        "Aço (evolui do Meowth de Galar) com Investida de Metal + Cabeça de Ferro/Explosão Focalizada; nicho de atacante e de PvP."
+        "Aço (evolui do Meowth de Galar) com Garra de Metal/Som de Metal + Cabeça de Ferro/Corpo-a-corpo; nicho de atacante e de PvP."
       ],
       "sinergias": [
         "Metagross",
@@ -61314,8 +61314,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Investida de Sonho/Cauda de Fada de cobertura; MT Elite conforme o alvo."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Megachifre/Ataque Selvagem de cobertura sai por TM comum."
         },
         {
           "titulo": "Transferir",
@@ -61669,7 +61669,7 @@
         }
       ],
       "observacoes": [
-        "Sombrio/Veneno (evolui do Qwilfish de Hisui) com Investida de Veneno + cobertura; peça de nicho de Grande Liga."
+        "Sombrio/Veneno (evolui do Qwilfish de Hisui) com Golpe Envenenado/Ferrão Venenoso + Pulso Sombrio/Aqua Cauda; peça de nicho de Grande Liga."
       ],
       "sinergias": [
         "Nidoqueen",
@@ -64115,7 +64115,7 @@
         }
       ],
       "observacoes": [
-        "Grama/Fantasma com Feitiço/Investida de Areia + Bola Sombria/Chicote Poderoso; peça de nicho de PvP."
+        "Grama/Fantasma com Feitiço/Projétil de Semente + Chicote Poderoso/Sombra Noturna; peça de nicho de PvP."
       ],
       "sinergias": [
         "Trevenant",
@@ -65053,7 +65053,7 @@
         }
       ],
       "observacoes": [
-        "Gelo bulky com Neve em Pó/Investida de Gelo + Nevasca/Pancada Corporal; nicho de atacante de Gelo."
+        "Gelo bulky com Neve em Pó/Caco de Gelo + Avalanche/Pancada Corporal; nicho de atacante de Gelo."
       ],
       "sinergias": [
         "Mamoswine",
@@ -65314,8 +65314,8 @@
         },
         {
           "titulo": "Vale Elite TM",
-          "status": "atencao",
-          "motivo": "Investida de Sonho/Psíquico de cobertura; MT Elite conforme o alvo."
+          "status": "nao",
+          "motivo": "Não há legado no movepool dele; Psíquico/Relâmpago de cobertura sai por TM comum."
         },
         {
           "titulo": "Transferir",
