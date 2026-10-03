@@ -50,7 +50,7 @@
       ],
       "notas": [
         "O Mewtwo X 4724 segue sendo o mais forte da bolsa, mas agora tem companhia: o sombroso 912 é a peça de maior potencial do acervo, mesmo com o PC baixo — sombroso soma +20% de ataque, e isso não se compra com poeira.",
-        "⚠️ Conferir se não inverteu: Mega Mewtwo X = Lutador, Mega Mewtwo Y = Psíquico. Logo o X recebe Contra-Ataque + Foco Explosivo; o Y recebe Confusão + Psíquico.",
+        "⚠️ Conferir se não inverteu: Mega Mewtwo X = Lutador, Mega Mewtwo Y = Psíquico. Logo o X recebe Contra-atacar + Explosão Focalizada; o Y recebe Confusão + Psíquico.",
         "Mega Mewtwo Y ainda buffa aliados Psíquicos em 30%.",
         "Guardar quatro: o X, o Y, o sombroso e um comum de bom IV. Com 138 lendários na bolsa, todo Mewtwo além desses quatro é doce."
       ]
@@ -175,8 +175,8 @@
       "movesets": [
         {
           "pokemon": "Mewtwo X",
-          "rapido": "Contra-Ataque",
-          "carregado": "Foco Explosivo"
+          "rapido": "Contra-atacar",
+          "carregado": "Explosão Focalizada"
         },
         {
           "pokemon": "Mewtwo Y",
@@ -217,7 +217,7 @@
         },
         {
           "pokemon": "Salamence",
-          "rapido": "Cauda de Dragão",
+          "rapido": "Cauda do Dragão",
           "carregado": "Fúria"
         },
         {
@@ -232,12 +232,12 @@
         },
         {
           "pokemon": "Heracross",
-          "rapido": "Contra-Ataque",
+          "rapido": "Contra-atacar",
           "carregado": "Corpo-a-corpo"
         },
         {
           "pokemon": "Lucario",
-          "rapido": "Contra-Ataque",
+          "rapido": "Contra-atacar",
           "carregado": "Aura Esfera"
         },
         {
@@ -1096,7 +1096,7 @@
       },
       {
         "titulo": "Forma base não mostra o movepool do atacante",
-        "corpo": "O Pokédex exibe só os golpes daquela forma. Timburr mostra Pancada/Rasteira; o Contra-Ataque + Soco Dinâmico só aparece depois de virar Conkeldurr. Evoluir primeiro, avaliar depois."
+        "corpo": "O Pokédex exibe só os golpes daquela forma. Timburr mostra Pancada/Rasteira; o Contra-atacar + Soco Dinâmico só aparece depois de virar Conkeldurr. Evoluir primeiro, avaliar depois."
       },
       {
         "titulo": "Lendário sub-nivelado não serve",
@@ -1159,7 +1159,7 @@
     },
     {
       "ptbr": "Troca Elétrica",
-      "en": "Volt Switch"
+      "en": "Troca Elétrica"
     },
     {
       "ptbr": "Canhão Zap",
@@ -1206,7 +1206,7 @@
       "en": "Brutal Swing"
     },
     {
-      "ptbr": "Foco Explosivo",
+      "ptbr": "Explosão Focalizada",
       "en": "Focus Blast"
     },
     {

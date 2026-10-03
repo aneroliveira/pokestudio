@@ -4,10 +4,10 @@ import type { RankingTipo } from "@/models/atacante";
  * Fonte: db.pokemongohub.net/pt/best/attackers-per-type (colado pela Lorena
  * via print — o site tem proteção anti-bot da Cloudflare, sem acesso
  * automatizado). Top 5 de cada um dos 18 tipos, na ordem clássica de
- * Pokédex. `dps`/`tdo`/`score` e os nomes de golpe são exatamente os da
- * fonte — ver models/atacante.ts sobre por que os golpes não usam
- * data/movimentosGO.ts (esse arquivo não traduz nomes de golpe de
- * propósito, e a fonte externa usa tradução de comunidade).
+ * Pokédex. `dps`/`tdo`/`score` são exatamente os da fonte. Os nomes de
+ * golpe seguem o jogo em PT-BR (o mesmo `ptBR` de data/movimentosGO.ts);
+ * Espada Secreta, Explosão Mental e Punhos de Plasma ainda não estão nos
+ * textos do jogo e ficam com o nome da fonte.
  */
 export const ATACANTES_POR_TIPO: RankingTipo[] = [
   {
@@ -506,7 +506,7 @@ export const ATACANTES_POR_TIPO: RankingTipo[] = [
         imagem:
           "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm889.fCROWNED_SHIELD.icon.png",
         rapido: { nome: "Garra de Metal" },
-        carregado: { nome: "Investida Suprema" },
+        carregado: { nome: "Pancada Colossal" },
         dps: 36.65,
         tdo: 1443.5,
         score: 35.0,
