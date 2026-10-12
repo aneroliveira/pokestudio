@@ -9,6 +9,7 @@ import { SearchBar } from "@/components/pokemon/SearchBar";
 import { ChipsRecentes } from "@/components/pokemon/ChipsRecentes";
 import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
 import { PokedexGrid } from "@/components/pokemon/PokedexGrid";
+import { FiltrosPoGo } from "@/components/filtros/FiltrosPoGo";
 import { NavegacaoVizinhos } from "@/components/pokemon/NavegacaoVizinhos";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Tabs } from "@/components/ui/Tabs";
@@ -30,7 +31,7 @@ import {
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
 import { PokemonPocketCard } from "@/components/pokemon/PokemonPocketCard";
 
-const ABAS = ["Buscar", "Pokédex"] as const;
+const ABAS = ["Buscar", "Pokédex", "Filtros PoGo"] as const;
 type Aba = (typeof ABAS)[number];
 
 // RFC-005: a ficha rápida (antiga /pocket) é um modo de visualização da
@@ -191,7 +192,7 @@ export default function Home() {
         id="topo"
         className={cn(
           "w-full scroll-mt-20 space-y-6",
-          aba === "Pokédex" ? "max-w-5xl" : "max-w-2xl",
+          aba === "Buscar" ? "max-w-2xl" : "max-w-5xl",
         )}
       >
         <SectionTitle
@@ -204,6 +205,8 @@ export default function Home() {
 
         {aba === "Pokédex" ? (
           <PokedexGrid onSelect={selecionarDaPokedex} />
+        ) : aba === "Filtros PoGo" ? (
+          <FiltrosPoGo />
         ) : (
           <>
             <div className="md:sticky md:top-16 md:z-30 md:pb-2 md:backdrop-blur-md">
