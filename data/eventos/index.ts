@@ -17,6 +17,18 @@ import { invasaoRocketZekrom } from "./invasao-rocket-zekrom";
 import { gigantamaxCinderaceMaxBattleDay } from "./gigantamax-cinderace-max-battle-day";
 import { worldSpaceWeek } from "./world-space-week";
 import { zoruaCommunityDay } from "./zorua-community-day";
+import { megaBlastoise } from "./mega-blastoise";
+import { reidesSombrosasLandorus } from "./reides-sombrosas-landorus";
+import { maratonaDeOutono } from "./maratona-de-outono";
+import { megaDragonite } from "./mega-dragonite";
+import { diaDeChocarSandile } from "./dia-de-chocar-sandile";
+import { chuvaDeMiniorOrionideos } from "./chuva-de-minior-orionideos";
+import { megaCharizard } from "./mega-charizard";
+import { trioDoLagoMaxBattleDay } from "./trio-do-lago-max-battle-day";
+import { halloweenParte1 } from "./halloween-parte-1";
+import { megaSableye } from "./mega-sableye";
+import { superMegaRaidDayOutubro } from "./super-mega-raid-day-outubro";
+import { halloweenParte2 } from "./halloween-parte-2";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
 export const EVENTOS: Evento[] = [
@@ -38,6 +50,18 @@ export const EVENTOS: Evento[] = [
   gigantamaxCinderaceMaxBattleDay,
   worldSpaceWeek,
   zoruaCommunityDay,
+  megaBlastoise,
+  reidesSombrosasLandorus,
+  maratonaDeOutono,
+  megaDragonite,
+  diaDeChocarSandile,
+  chuvaDeMiniorOrionideos,
+  megaCharizard,
+  trioDoLagoMaxBattleDay,
+  halloweenParte1,
+  megaSableye,
+  superMegaRaidDayOutubro,
+  halloweenParte2,
 ];
 
 export function buscarEvento(slug: string): Evento | undefined {
