@@ -1,0 +1,69 @@
+# Vigia de eventos do Pokémon GO — avisa no Telegram o que apareceu de novo
+# (Leek Duck, blog oficial, datamine do PokeMiners, YouTube). Não publica
+# nada no site. Detalhes em scripts/vigiaEventos.mjs.
+#
+# Secrets necessários (Settings → Secrets and variables → Actions):
+#   TELEGRAM_BOT_TOKEN — token do bot, do @BotFather
+#   TELEGRAM_CHAT_ID   — ID do chat com o bot
+name: Vigia de eventos
+
+on:
+  schedule:
+    # 9h, 13h, 17h e 21h em Brasília (UTC−3). O GitHub pode atrasar alguns
+    # minutos em horário de pico.
+    - cron: "0 0,12,16,20 * * *"
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Só mandar uma mensagem de teste pro Telegram"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vigia-eventos
+  cancel-in-progress: false
+
+jobs:
+  vigiar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # O estado (o que já foi avisado) passa de uma rodada pra outra pelo
+      # cache: restaura o mais recente e salva uma cópia nova a cada rodada.
+      - name: Restaurar estado
+        uses: actions/cache/restore@v4
+        with:
+          path: .vigia
+          key: vigia-estado-${{ github.run_id }}
+          restore-keys: vigia-estado-
+
+      - name: Testar Telegram
+        if: inputs.teste
+        run: node scripts/vigiaEventos.mjs --teste
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Vigiar fontes
+        if: ${{ !inputs.teste }}
+        run: node scripts/vigiaEventos.mjs
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Salvar estado
+        if: ${{ always() && !inputs.teste }}
+        uses: actions/cache/save@v4
+        with:
+          path: .vigia
+          key: vigia-estado-${{ github.run_id }}
