@@ -254,7 +254,7 @@ async function enviarTelegram(texto) {
 
 if (process.argv.includes("--teste")) {
   await enviarTelegram(
-    "✅ <b>Vigia de eventos conectado!</b>\nOs avisos vão chegar aqui às 9h, 13h, 17h e 21h quando houver novidade.",
+    "✅ <b>Vigia de eventos conectado!</b>\nOs avisos vão chegar aqui por volta de 9h17, 13h17, 17h17 e 21h17 quando houver novidade.",
   );
   console.log("Mensagem de teste enviada.");
   process.exit(0);
