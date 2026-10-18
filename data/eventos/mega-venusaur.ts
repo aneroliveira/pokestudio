@@ -14,8 +14,6 @@ import type { Evento } from "@/models/evento";
  * — testado, 404), então continua com o ícone do Staraptor base como
  * aproximação, sem CP curado. Tipo (Normal/Flying) segue o Staraptor
  * normal — a página oficial não confirmou o tipo da Mega explicitamente.
- * O tie-in "Pokémon Horizontes" saiu como evento próprio, cheio de
- * conteúdo confirmado — ver data/eventos/pokemon-horizontes.ts.
  */
 export const megaVenusaur: Evento = {
   slug: "mega-venusaur",

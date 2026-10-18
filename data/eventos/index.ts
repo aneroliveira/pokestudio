@@ -3,7 +3,6 @@ import { megaBeedrill } from "./mega-beedrill";
 import { zacianVeterano } from "./zacian-veterano";
 import { megaHoundoom } from "./mega-houndoom";
 import { megaVenusaur } from "./mega-venusaur";
-import { pokemonHorizontes } from "./pokemon-horizontes";
 import { zamazentaVeterano } from "./zamazenta-veterano";
 import { reidesSombrosasThundurus } from "./reides-sombrosas-thundurus";
 import { rotacaoLendariaMax } from "./rotacao-lendaria-max";
@@ -41,7 +40,6 @@ export const EVENTOS: Evento[] = [
   zacianVeterano,
   megaHoundoom,
   megaVenusaur,
-  pokemonHorizontes,
   zamazentaVeterano,
   reidesSombrosasThundurus,
   rotacaoLendariaMax,
