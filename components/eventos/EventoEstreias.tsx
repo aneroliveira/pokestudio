@@ -1,6 +1,8 @@
 import { Sparkles } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { TypeIcon } from "@/components/ui/TypeIcon";
+import { SpriteEvento } from "@/components/eventos/SpriteEvento";
+import { especiePorNome } from "@/services/eventos/especiePokemon";
 import type { EstreiaEvento } from "@/models/evento";
 
 type EventoEstreiasProps = {
@@ -20,21 +22,28 @@ export function EventoEstreias({ lista, dica }: EventoEstreiasProps) {
       </div>
 
       <div className="mt-4 divide-y divide-border/50">
-        {lista.map((estreia) => (
-          <div key={estreia.nome} className="flex items-start gap-3 py-3 first:pt-0">
-            <div className="flex shrink-0 -space-x-1">
-              {estreia.tipos.map((tipo) => (
-                <TypeIcon key={tipo} tipo={tipo} compact className="bg-secondary" />
-              ))}
+        {lista.map((estreia) => {
+          const especie = especiePorNome(estreia.nome);
+
+          return (
+            <div key={estreia.nome} className="flex items-center gap-3 py-3 first:pt-0">
+              {especie && <SpriteEvento especie={especie} />}
+              <div className="min-w-0">
+                <p className="flex items-center gap-1.5 font-medium leading-tight">
+                  {estreia.nome}
+                  <span className="flex shrink-0 gap-0.5">
+                    {estreia.tipos.map((tipo) => (
+                      <TypeIcon key={tipo} tipo={tipo} mini className="bg-secondary" />
+                    ))}
+                  </span>
+                </p>
+                <p className="mt-0.5 text-sm leading-relaxed text-muted-foreground">
+                  {estreia.origem}
+                </p>
+              </div>
             </div>
-            <div className="min-w-0">
-              <p className="font-medium leading-tight">{estreia.nome}</p>
-              <p className="mt-0.5 text-sm leading-relaxed text-muted-foreground">
-                {estreia.origem}
-              </p>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {dica && (

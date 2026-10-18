@@ -11,6 +11,8 @@ type TypeIconProps = {
   className?: string;
   /** Tamanho reduzido, para caber ao lado de outros elementos. */
   compact?: boolean;
+  /** Menor ainda — do tamanho da linha de texto, pra ir colado num nome. */
+  mini?: boolean;
   /**
    * Modo controlado: quando `onToggle` é passado, o pai gerencia qual
    * ícone está aberto (ex.: "só um nome por vez"). Sem ele, o ícone usa
@@ -41,18 +43,19 @@ export function TypeIcon({
   tipo,
   className = "",
   compact = false,
+  mini = false,
   aberto,
   onToggle,
   mostrarNome = false,
 }: TypeIconProps) {
   const [abertoLocal, setAbertoLocal] = useState(false);
   const nome = TIPO_LABEL[tipo];
-  const circulo = compact ? "h-7 w-7" : "h-9 w-9";
-  const imagem = compact ? 18 : 24;
+  const circulo = mini ? "h-5 w-5 p-0.5" : compact ? "h-7 w-7 p-1" : "h-9 w-9 p-1";
+  const imagem = mini ? 13 : compact ? 18 : 24;
 
   const badge = (
     <span
-      className={`flex items-center justify-center rounded-full p-1 ${circulo} ${className}`}
+      className={`flex items-center justify-center rounded-full ${circulo} ${className}`}
     >
       <span
         role="img"

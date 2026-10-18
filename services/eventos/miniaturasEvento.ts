@@ -1,19 +1,8 @@
-import indiceData from "@/data/pokemonIndex.json";
 import type { Evento } from "@/models/evento";
-import type { ItemIndicePokemon } from "@/models/indice";
 import type { EstadoEvento } from "@/data/eventos";
 import { MEGAS } from "@/services/pokemon/recomendarMega";
+import { especiePorNome } from "@/services/eventos/especiePokemon";
 import { obterSpritePokemon } from "@/utils";
-
-const INDICE = indiceData as ItemIndicePokemon[];
-const ID_POR_NOME = new Map(INDICE.map((item) => [item.nomeEn, item.id]));
-// O índice guarda algumas espécies com a forma padrão no nome
-// ("minior-red-meteor", "giratina-altered") — a espécie sozinha também
-// precisa achar.
-for (const item of INDICE) {
-  const especie = item.nomeEn.split("-")[0];
-  if (!ID_POR_NOME.has(especie)) ID_POR_NOME.set(especie, item.id);
-}
 
 export interface MiniaturaEvento {
   nome: string;
@@ -29,15 +18,9 @@ export type ItemEventoListado = {
   miniaturas: MiniaturaEvento[];
 };
 
-/** "Zubat de cartola" → zubat, "Mega Chandelure" → chandelure,
- *  "Regidrago Dinamax (12/11)" → regidrago. Nomes de evento são curados em
- *  PT-BR com o nome da espécie na frente, então a primeira palavra (fora o
- *  "Mega") basta pra achar no índice. */
 function spritePorNome(nome: string): string | undefined {
-  const palavras = nome.toLowerCase().split(/[\s(]+/).filter(Boolean);
-  const especie = palavras[0] === "mega" ? palavras[1] : palavras[0];
-  const id = especie ? ID_POR_NOME.get(especie) : undefined;
-  return id ? obterSpritePokemon(id) : undefined;
+  const especie = especiePorNome(nome);
+  return especie ? obterSpritePokemon(especie.id) : undefined;
 }
 
 /** Todos os Pokémon do evento, na ordem estreias → chefes de reide →
