@@ -40,10 +40,11 @@ function spritePorNome(nome: string): string | undefined {
   return id ? obterSpritePokemon(id) : undefined;
 }
 
-/** Até `max` miniaturas, na ordem estreias → chefes de reide → encontros.
- *  Chefe com imagem curada (ou Mega do roster) usa a dela; o resto cai no
- *  sprite da espécie. Evento ainda sem Pokémon anunciado volta vazio. */
-export function miniaturasEvento(evento: Evento, max = 3): MiniaturaEvento[] {
+/** Todos os Pokémon do evento, na ordem estreias → chefes de reide →
+ *  encontros. Chefe com imagem curada (ou Mega do roster) usa a dela; o
+ *  resto cai no sprite da espécie. Evento ainda sem Pokémon anunciado volta
+ *  vazio. */
+export function miniaturasEvento(evento: Evento): MiniaturaEvento[] {
   const candidatos: MiniaturaEvento[] = [];
 
   function adicionar(nome: string, imagem?: string, escala?: number) {
@@ -69,15 +70,15 @@ export function miniaturasEvento(evento: Evento, max = 3): MiniaturaEvento[] {
 
   for (const encontro of evento.encontros ?? []) adicionar(encontro.nome);
 
-  // Mesma espécie aparece em mais de uma seção (ex.: estreia e chefe de
-  // reide) — fica a primeira.
+  // O mesmo Pokémon aparece em mais de uma seção (ex.: estreia e chefe de
+  // reide, às vezes com a data entre parênteses só no chefe) — fica a
+  // primeira. Compara pelo nome, não pela espécie, pra não juntar formas
+  // diferentes (Mega Charizard X e Y, Kyurem Branco e Negro).
   const vistos = new Set<string>();
-  return candidatos
-    .filter((item) => {
-      const chave = spritePorNome(item.nome) ?? item.imagem;
-      if (vistos.has(chave)) return false;
-      vistos.add(chave);
-      return true;
-    })
-    .slice(0, max);
+  return candidatos.filter((item) => {
+    const chave = item.nome.replace(/\s*\(.*\)\s*/g, "").toLowerCase();
+    if (vistos.has(chave)) return false;
+    vistos.add(chave);
+    return true;
+  });
 }

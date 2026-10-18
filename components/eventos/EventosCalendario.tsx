@@ -273,23 +273,20 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                     <Link
                       key={evento.slug}
                       href={`/eventos/${evento.slug}`}
-                      className="flex items-center gap-3 rounded-lg p-2 transition hover:bg-background/60"
+                      className="block rounded-lg p-2 transition hover:bg-background/60"
                     >
-                      <MiniaturasEvento miniaturas={miniaturas} />
-
-                      <div className="min-w-0">
-                        <div className="flex flex-wrap items-center gap-2">
-                          <h4 className="font-semibold">{evento.titulo}</h4>
-                          <span
-                            className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${ESTILO_ESTADO[estado]}`}
-                          >
-                            {ROTULO_ESTADO[estado]}
-                          </span>
-                        </div>
-                        <p className="mt-0.5 text-sm text-muted-foreground">
-                          {evento.periodoTexto}
-                        </p>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <h4 className="font-semibold">{evento.titulo}</h4>
+                        <span
+                          className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${ESTILO_ESTADO[estado]}`}
+                        >
+                          {ROTULO_ESTADO[estado]}
+                        </span>
                       </div>
+                      <p className="mt-0.5 text-sm text-muted-foreground">
+                        {evento.periodoTexto}
+                      </p>
+                      <MiniaturasEvento miniaturas={miniaturas} className="mt-2" />
                     </Link>
                   ))}
                 </div>

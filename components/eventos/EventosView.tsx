@@ -14,8 +14,6 @@ function CardEvento({ evento, estado, miniaturas }: ItemEventoListado) {
   return (
     <Link href={`/eventos/${evento.slug}`}>
       <Card className="flex items-center gap-4 hover:border-primary/40">
-        <MiniaturasEvento miniaturas={miniaturas} />
-
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             <h3 className="font-semibold">{evento.titulo}</h3>
@@ -28,6 +26,7 @@ function CardEvento({ evento, estado, miniaturas }: ItemEventoListado) {
           <p className="mt-1 text-sm text-muted-foreground">
             {evento.periodoTexto}
           </p>
+          <MiniaturasEvento miniaturas={miniaturas} className="mt-3" />
         </div>
         <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground" />
       </Card>
