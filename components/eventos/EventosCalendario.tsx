@@ -3,12 +3,12 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import type { Evento } from "@/models/evento";
-import type { EstadoEvento } from "@/data/eventos";
+import { MiniaturasEvento } from "@/components/eventos/MiniaturasEvento";
+import type { ItemEventoListado } from "@/services/eventos/miniaturasEvento";
 import { ROTULO_ESTADO, ESTILO_ESTADO, COR_PONTO_ESTADO } from "@/constants/estadoEvento";
 
 type EventosCalendarioProps = {
-  eventos: { evento: Evento; estado: EstadoEvento }[];
+  eventos: ItemEventoListado[];
   /** ISO da data usada como "hoje" — vem do servidor (mesmo instante usado
    *  pra calcular o estado de cada evento) pra não abrir o calendário num
    *  mês diferente do que a listagem em lista considera "agora". */
@@ -56,7 +56,7 @@ function somarDias(diaKey: string, quantidade: number): string {
   return paraDiaKey(data);
 }
 
-type EventoDoDia = { evento: Evento; estado: EstadoEvento };
+type EventoDoDia = ItemEventoListado;
 
 /** Mapa dia → eventos que tocam aquele dia, expandindo cada evento por
  *  todo o intervalo entre `periodo.inicio` e `periodo.fim` (um evento de
@@ -269,23 +269,27 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
 
               {diaExpandidoNaSemana && eventosDoDiaExpandido.length > 0 && (
                 <div className="mt-1 space-y-2 rounded-xl border border-primary/30 bg-primary/5 p-3">
-                  {eventosDoDiaExpandido.map(({ evento, estado }) => (
+                  {eventosDoDiaExpandido.map(({ evento, estado, miniaturas }) => (
                     <Link
                       key={evento.slug}
                       href={`/eventos/${evento.slug}`}
-                      className="block rounded-lg p-2 transition hover:bg-background/60"
+                      className="flex items-center gap-3 rounded-lg p-2 transition hover:bg-background/60"
                     >
-                      <div className="flex flex-wrap items-center gap-2">
-                        <h4 className="font-semibold">{evento.titulo}</h4>
-                        <span
-                          className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${ESTILO_ESTADO[estado]}`}
-                        >
-                          {ROTULO_ESTADO[estado]}
-                        </span>
+                      <MiniaturasEvento miniaturas={miniaturas} />
+
+                      <div className="min-w-0">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <h4 className="font-semibold">{evento.titulo}</h4>
+                          <span
+                            className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${ESTILO_ESTADO[estado]}`}
+                          >
+                            {ROTULO_ESTADO[estado]}
+                          </span>
+                        </div>
+                        <p className="mt-0.5 text-sm text-muted-foreground">
+                          {evento.periodoTexto}
+                        </p>
                       </div>
-                      <p className="mt-0.5 text-sm text-muted-foreground">
-                        {evento.periodoTexto}
-                      </p>
                     </Link>
                   ))}
                 </div>

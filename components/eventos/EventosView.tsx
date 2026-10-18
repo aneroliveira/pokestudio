@@ -6,17 +6,17 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { Tabs } from "@/components/ui/Tabs";
 import { EventosCalendario } from "@/components/eventos/EventosCalendario";
-import type { Evento } from "@/models/evento";
-import type { EstadoEvento } from "@/data/eventos";
+import { MiniaturasEvento } from "@/components/eventos/MiniaturasEvento";
+import type { ItemEventoListado } from "@/services/eventos/miniaturasEvento";
 import { ROTULO_ESTADO, ESTILO_ESTADO } from "@/constants/estadoEvento";
 
-type ItemEvento = { evento: Evento; estado: EstadoEvento };
-
-function CardEvento({ evento, estado }: ItemEvento) {
+function CardEvento({ evento, estado, miniaturas }: ItemEventoListado) {
   return (
     <Link href={`/eventos/${evento.slug}`}>
-      <Card className="flex items-center justify-between gap-4 hover:border-primary/40">
-        <div className="min-w-0">
+      <Card className="flex items-center gap-4 hover:border-primary/40">
+        <MiniaturasEvento miniaturas={miniaturas} />
+
+        <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             <h3 className="font-semibold">{evento.titulo}</h3>
             <span
@@ -36,7 +36,7 @@ function CardEvento({ evento, estado }: ItemEvento) {
 }
 
 type EventosViewProps = {
-  eventos: { evento: Evento; estado: EstadoEvento }[];
+  eventos: ItemEventoListado[];
   hojeISO: string;
 };
 

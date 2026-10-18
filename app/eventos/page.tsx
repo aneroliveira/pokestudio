@@ -3,6 +3,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { RotinaSemanal } from "@/components/eventos/RotinaSemanal";
 import { EventosView } from "@/components/eventos/EventosView";
 import { listarEventos } from "@/data/eventos";
+import { miniaturasEvento } from "@/services/eventos/miniaturasEvento";
 
 /**
  * Sem chamada a nenhuma API "dinâmica" do Next, essa página é elegível a
@@ -17,7 +18,10 @@ export const revalidate = 60;
 
 export default function EventosPage() {
   const agora = new Date();
-  const eventos = listarEventos(agora);
+  const eventos = listarEventos(agora).map((item) => ({
+    ...item,
+    miniaturas: miniaturasEvento(item.evento),
+  }));
 
   return (
     <PageContainer>
