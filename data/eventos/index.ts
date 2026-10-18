@@ -29,6 +29,11 @@ import { halloweenParte1 } from "./halloween-parte-1";
 import { megaSableye } from "./mega-sableye";
 import { superMegaRaidDayOutubro } from "./super-mega-raid-day-outubro";
 import { halloweenParte2 } from "./halloween-parte-2";
+import { naturezaSelvagem } from "./natureza-selvagem";
+import { areaSelvagemGlobal } from "./area-selvagem-global";
+import { chuvaDeMiniorLeonideos } from "./chuva-de-minior-leonideos";
+import { communityDayNovembro } from "./community-day-novembro";
+import { superMegaRaidDayNovembro } from "./super-mega-raid-day-novembro";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
 export const EVENTOS: Evento[] = [
@@ -62,6 +67,11 @@ export const EVENTOS: Evento[] = [
   megaSableye,
   superMegaRaidDayOutubro,
   halloweenParte2,
+  naturezaSelvagem,
+  areaSelvagemGlobal,
+  chuvaDeMiniorLeonideos,
+  communityDayNovembro,
+  superMegaRaidDayNovembro,
 ];
 
 export function buscarEvento(slug: string): Evento | undefined {
