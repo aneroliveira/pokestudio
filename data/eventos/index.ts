@@ -33,6 +33,13 @@ import { areaSelvagemGlobal } from "./area-selvagem-global";
 import { chuvaDeMiniorLeonideos } from "./chuva-de-minior-leonideos";
 import { communityDayNovembro } from "./community-day-novembro";
 import { superMegaRaidDayNovembro } from "./super-mega-raid-day-novembro";
+import { reidesSombrosasTornadus } from "./reides-sombrosas-tornadus";
+import { megaBanette } from "./mega-banette";
+import { trilhasDinamax } from "./trilhas-dinamax";
+import { desejosDoEntardecer } from "./desejos-do-entardecer";
+import { megaMetagross } from "./mega-metagross";
+import { chuvaDeMiniorGeminidas } from "./chuva-de-minior-geminidas";
+import { goTourAlolaGlobal } from "./go-tour-alola-global";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
 export const EVENTOS: Evento[] = [
@@ -70,6 +77,13 @@ export const EVENTOS: Evento[] = [
   chuvaDeMiniorLeonideos,
   communityDayNovembro,
   superMegaRaidDayNovembro,
+  reidesSombrosasTornadus,
+  megaBanette,
+  trilhasDinamax,
+  desejosDoEntardecer,
+  megaMetagross,
+  chuvaDeMiniorGeminidas,
+  goTourAlolaGlobal,
 ];
 
 export function buscarEvento(slug: string): Evento | undefined {

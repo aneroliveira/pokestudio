@@ -49,7 +49,7 @@ export const halloweenParte2: Evento = {
   ],
   notaCuradoria: {
     texto:
-      "Mega Sableye Super Max: levar o Sableye ao nível Mega 3 (Máx.) e depois gastar Energia Mega dele — dá pra juntar energia nas Mega Raids dele (28/10 → 03/11). Sombra Noturna+ (160 de poder em reide) faz dele uma Mega de apoio boa pra Fantasma, tipo \"subnivelado\" no plano. Os bônus do GO Pass: Halloween 2026 continuam valendo (2× Doce no rank 10, 2× Poeira no rank 20).",
+      "Mega Sableye Super Max: levar o Sableye ao nível Mega 3 (Máx.) e depois gastar Energia Mega dele — dá pra juntar energia nas Mega Raids dele (28/10 → 08/11). Sombra Noturna+ (160 de poder em reide) faz dele uma Mega de apoio boa pra Fantasma, tipo \"subnivelado\" no plano. Os bônus do GO Pass: Halloween 2026 continuam valendo (2× Doce no rank 10, 2× Poeira no rank 20).",
     linkPlano: true,
   },
 };
