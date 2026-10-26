@@ -1,7 +1,8 @@
 import type { Evento } from "@/models/evento";
 
 /**
- * Fonte: leekduck.com/events/halloween-2026-part-1 (confirmado 12/10/2026).
+ * Fonte: leekduck.com/events/halloween-2026-part-1 (confirmado 12/10/2026,
+ * atualizado 26/10 com a Pesquisa Cronometrada e os encontros do GO Pass).
  * As tarefas de Pesquisa de Campo e o resto das reides ainda não foram
  * anunciados — só as de 1 estrela. GO Pass: Halloween 2026 cobre as duas
  * partes (27/10 → 05/11).
@@ -51,6 +52,6 @@ export const halloweenParte1: Evento = {
   ],
   notaCuradoria: {
     texto:
-      "GO Pass: Halloween 2026 (grátis; Deluxe US$7,99): rank 10 dá 2× Doce em capturas (3× no Deluxe), rank 20 dá 2× Poeira Estelar (3× no Deluxe) — bom momento pra farmar Poeira. Resgatar recompensas até 07/11 às 20h. Evento de captura/coleção — o que importa pro plano de Fantasma nesta semana é a Giratina Origem nas reides de 5 estrelas (a partir de 28/10).",
+      "Pesquisa Cronometrada grátis (já vem concluída): 6 Doces Raros e um encontro com o Pikachu fantasiado — resgatar até 01/11 às 10h. GO Pass: Halloween 2026 (grátis; Deluxe US$7,99): rank 10 dá 2× Doce em capturas (3× no Deluxe), rank 20 dá 2× Poeira Estelar (3× no Deluxe) — bom momento pra farmar Poeira; os ranks também dão encontros com Rotom e Spiritomb. Resgatar recompensas até 07/11 às 20h. Evento de captura/coleção — o que importa pro plano de Fantasma nesta semana é a Giratina Origem nas reides de 5 estrelas (a partir de 28/10).",
   },
 };
