@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { MiniaturasEvento } from "@/components/eventos/MiniaturasEvento";
+import { Tabs } from "@/components/ui/Tabs";
 import type { ItemEventoListado } from "@/services/eventos/miniaturasEvento";
 import { ROTULO_ESTADO, ESTILO_ESTADO, COR_PONTO_ESTADO } from "@/constants/estadoEvento";
 
@@ -118,14 +119,20 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
   const hojeKey = diaLocalBrasilia(hojeISO);
   const hoje = paraDataUTC(hojeKey);
 
-  // Sem navegação entre meses — só o mês vigente é exibido (RFC "e
-  // apresente apenas o calendário do mês vigente"). O grid de 6 semanas
-  // ainda cobre os dias de fechamento do mês anterior/seguinte (ver
-  // `noMesAtual` abaixo), então um evento que começa nos primeiros dias do
-  // próximo mês continua aparecendo, só não dá pra "virar a página" pra
-  // navegar livremente por ele.
-  const ano = hoje.getUTCFullYear();
-  const mes = hoje.getUTCMonth();
+  // Duas abas: mês vigente e o seguinte — sem navegação livre entre meses
+  // (o seguinte entrou porque perto do fim do mês já tem bastante evento
+  // confirmado pra frente). O grid de 6 semanas ainda cobre os dias de
+  // fechamento do mês anterior/seguinte (ver `noMesAtual` abaixo).
+  const abasMeses = [0, 1].map((deslocamento) => {
+    const data = new Date(Date.UTC(hoje.getUTCFullYear(), hoje.getUTCMonth() + deslocamento, 1));
+    const ano = data.getUTCFullYear();
+    const mes = data.getUTCMonth();
+    return { ano, mes, rotulo: tituloMes(ano, mes) };
+  });
+  const rotulos = abasMeses.map((aba) => aba.rotulo);
+
+  const [abaMes, setAbaMes] = useState(rotulos[0]);
+  const { ano, mes } = abasMeses.find((aba) => aba.rotulo === abaMes) ?? abasMeses[0];
 
   const [diaSelecionado, setDiaSelecionado] = useState<string | null>(null);
 
@@ -149,7 +156,16 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
 
   return (
     <div className="space-y-3">
-      <h3 className="text-lg font-semibold">{tituloMes(ano, mes)}</h3>
+      <Tabs
+        abas={rotulos}
+        ativa={abaMes}
+        onChange={(aba) => {
+          setAbaMes(aba);
+          // O dia aberto era do outro mês — fecha pra não abrir uma semana
+          // de fechamento que por acaso tenha o mesmo dia.
+          setDiaSelecionado(null);
+        }}
+      />
 
       <div className="grid grid-cols-7 gap-1 text-center text-xs font-medium text-muted-foreground">
         {DIAS_SEMANA.map((dia, indice) => {
@@ -170,10 +186,27 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
           const eventosDoDiaExpandido = diaExpandidoNaSemana
             ? eventosPorDia.get(diaExpandidoNaSemana) ?? []
             : [];
+          // Três tempos por semana, não por dia: a semana corrente fica em
+          // destaque, as anteriores esmaecidas (ainda clicáveis — um evento
+          // encerrado pode valer conferir) e as futuras um pouco mais escuras.
+          const tempo: "passada" | "atual" | "futura" =
+            semana[6] < hojeKey ? "passada" : semana[0] > hojeKey ? "futura" : "atual";
 
           return (
             <div key={semana[0]}>
-              <div className="grid grid-cols-7 gap-1">
+              {tempo === "atual" && (
+                <span className="mb-1 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
+                  <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-primary" />
+                  Esta semana
+                </span>
+              )}
+              <div
+                className={cn(
+                  "grid grid-cols-7 gap-1",
+                  tempo === "atual" &&
+                    "-mx-1 rounded-2xl bg-primary/[0.06] p-1 ring-1 ring-primary/25",
+                )}
+              >
                 {semana.map((diaKey) => {
                   const data = paraDataUTC(diaKey);
                   const noMesAtual = data.getUTCMonth() === mes;
@@ -183,10 +216,6 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                   const selecionado = diaKey === diaSelecionado;
                   const diaDaSemana = data.getUTCDay();
                   const fimDeSemana = diaDaSemana === 0 || diaDaSemana === 6;
-                  // Dia já passado — não trava a interação (um evento
-                  // encerrado ainda pode valer clicar pra conferir), só
-                  // esmaece pra dar a "ilusão" visual de desabilitado.
-                  const passado = diaKey < hojeKey;
 
                   return (
                     <button
@@ -204,7 +233,8 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                         temEventos && "hover:border-primary/40",
                         selecionado && "border-primary bg-primary/5",
                         !temEventos && "cursor-default",
-                        passado && !selecionado && "opacity-50",
+                        tempo === "passada" && !selecionado && "opacity-40",
+                        tempo === "futura" && !selecionado && "opacity-75",
                       )}
                     >
                       {/* Primeiro dia de um mês diferente do vigente — só
@@ -247,7 +277,10 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                         {eventosDoDia.slice(0, 2).map(({ evento, estado }) => (
                           <span
                             key={evento.slug}
-                            className="flex items-center gap-1 truncate text-[10px] leading-tight text-foreground/80"
+                            className={cn(
+                              "flex items-center gap-1 truncate text-[10px] leading-tight",
+                              tempo === "atual" ? "text-foreground" : "text-foreground/70",
+                            )}
                           >
                             <span
                               aria-hidden
