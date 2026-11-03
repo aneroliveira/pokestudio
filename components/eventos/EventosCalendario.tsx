@@ -186,15 +186,13 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
           const eventosDoDiaExpandido = diaExpandidoNaSemana
             ? eventosPorDia.get(diaExpandidoNaSemana) ?? []
             : [];
-          // Três tempos por semana, não por dia: a semana corrente fica em
-          // destaque, as anteriores esmaecidas (ainda clicáveis — um evento
-          // encerrado pode valer conferir) e as futuras um pouco mais escuras.
-          const tempo: "passada" | "atual" | "futura" =
-            semana[6] < hojeKey ? "passada" : semana[0] > hojeKey ? "futura" : "atual";
+          // A semana corrente ganha a faixa "Esta semana"; o tom de cada
+          // casa vem do dia (ver `tempoDia` abaixo).
+          const semanaAtual = semana[0] <= hojeKey && hojeKey <= semana[6];
 
           return (
             <div key={semana[0]}>
-              {tempo === "atual" && (
+              {semanaAtual && (
                 <span className="mb-1 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
                   <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-primary" />
                   Esta semana
@@ -203,7 +201,7 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
               <div
                 className={cn(
                   "grid grid-cols-7 gap-1",
-                  tempo === "atual" &&
+                  semanaAtual &&
                     "-mx-1 rounded-2xl bg-primary/[0.06] p-1 ring-1 ring-primary/25",
                 )}
               >
@@ -216,6 +214,11 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                   const selecionado = diaKey === diaSelecionado;
                   const diaDaSemana = data.getUTCDay();
                   const fimDeSemana = diaDaSemana === 0 || diaDaSemana === 6;
+                  // Passado: mais escuro, mas ainda clicável — o dia passou,
+                  // não quer dizer que o evento acabou. Hoje: destaque cheio.
+                  // Futuro: tom normal, com a borda um pouco mais clara.
+                  const tempoDia: "passado" | "hoje" | "futuro" =
+                    diaKey < hojeKey ? "passado" : eEhHoje ? "hoje" : "futuro";
 
                   return (
                     <button
@@ -229,12 +232,13 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                       className={cn(
                         "flex min-h-[40px] flex-col items-start gap-1 rounded-xl border p-1 text-left transition sm:min-h-[64px] sm:p-1.5",
                         noMesAtual ? "border-border/60" : "border-border/30",
-                        fimDeSemana && !selecionado && "bg-primary/[0.03]",
+                        tempoDia === "futuro" && noMesAtual && "border-foreground/15",
+                        tempoDia === "hoje" && "border-primary/70 bg-primary/10",
+                        fimDeSemana && tempoDia === "futuro" && !selecionado && "bg-primary/[0.03]",
                         temEventos && "hover:border-primary/40",
                         selecionado && "border-primary bg-primary/5",
                         !temEventos && "cursor-default",
-                        tempo === "passada" && !selecionado && "opacity-40",
-                        tempo === "futura" && !selecionado && "opacity-75",
+                        tempoDia === "passado" && !selecionado && "bg-black/20 opacity-50",
                       )}
                     >
                       {/* Primeiro dia de um mês diferente do vigente — só
@@ -279,7 +283,7 @@ export function EventosCalendario({ eventos, hojeISO }: EventosCalendarioProps) 
                             key={evento.slug}
                             className={cn(
                               "flex items-center gap-1 truncate text-[10px] leading-tight",
-                              tempo === "atual" ? "text-foreground" : "text-foreground/70",
+                              tempoDia === "hoje" ? "text-foreground" : "text-foreground/75",
                             )}
                           >
                             <span
