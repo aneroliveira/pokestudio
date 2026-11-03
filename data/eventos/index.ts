@@ -107,13 +107,21 @@ const ORDEM_ESTADO: Record<EstadoEvento, number> = {
   encerrado: 2,
 };
 
+/** Quanto tempo um evento encerrado continua na listagem (lista, calendário
+ *  e a tira de navegação) — depois disso só abre pelo link direto. */
+const DIAS_ENCERRADO_NA_LISTAGEM = 14;
+
 /** Eventos ordenados por relevância: ativos primeiro, depois futuros,
- *  depois encerrados — e por `periodo.inicio` dentro de cada grupo. */
+ *  depois encerrados — e por `periodo.inicio` dentro de cada grupo. Os que
+ *  terminaram há mais de 2 semanas ficam de fora. */
 export function listarEventos(
   agora: Date,
 ): { evento: Evento; estado: EstadoEvento }[] {
-  return EVENTOS.map((evento) => ({ evento, estado: estadoEvento(evento, agora) })).sort(
-    (a, b) => {
+  const corte = agora.getTime() - DIAS_ENCERRADO_NA_LISTAGEM * 24 * 60 * 60 * 1000;
+
+  return EVENTOS.filter((evento) => new Date(evento.periodo.fim).getTime() >= corte)
+    .map((evento) => ({ evento, estado: estadoEvento(evento, agora) }))
+    .sort((a, b) => {
       const porEstado = ORDEM_ESTADO[a.estado] - ORDEM_ESTADO[b.estado];
       if (porEstado !== 0) return porEstado;
 
@@ -121,6 +129,5 @@ export function listarEventos(
         new Date(a.evento.periodo.inicio).getTime() -
         new Date(b.evento.periodo.inicio).getTime()
       );
-    },
-  );
+    });
 }
