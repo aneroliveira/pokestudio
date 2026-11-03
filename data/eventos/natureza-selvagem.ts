@@ -6,7 +6,10 @@ import type { Evento } from "@/models/evento";
  * aquecimento da Área Selvagem GO 2026: Global. O evento vai até 13/11, mas
  * bônus, GO Pass e Caixa Misteriosa seguem até 15/11 às 18h. Nenhum chefe
  * está no roster de Megas — sprites curados manualmente (Orthworm não tem
- * ícone no CDN ainda).
+ * ícone no CDN ainda). Completado em 03/11 com o guia do canal Pokémon Go
+ * Brasil (WhatsApp), que bate com o Leek Duck: Batalhas Max de Ralts e
+ * Machop, requisitos das formas Coroadas e o acesso antecipado ao GO Pass
+ * das Trilhas Dinamax (confirmado no post oficial delas).
  */
 export const naturezaSelvagem: Evento = {
   slug: "natureza-selvagem",
@@ -89,10 +92,27 @@ export const naturezaSelvagem: Evento = {
         },
       ],
     },
+    {
+      nivel: "Batalhas Max de 1 e 2 estrelas",
+      chefes: [
+        {
+          nome: "Ralts Dinamax (1 estrela)",
+          tipos: ["Psychic", "Fairy"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm280.icon.png",
+        },
+        {
+          nome: "Machop Dinamax (2 estrelas)",
+          tipos: ["Fighting"],
+          imagem:
+            "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm66.icon.png",
+        },
+      ],
+    },
   ],
   notaCuradoria: {
     texto:
-      "Prioridade alta: derrotar Zacian Espada Coroada dá Energia Espada Coroada — o Zacian 2628 da reserva tem 0/1.000 e é o que trava a Forma Coroada (Fada \"subnivelado\" no plano). Zamazenta Escudo Coroado dá a energia do escudo. Limite de Reide Remota 30 de 09/11 a 13/11 e ilimitado em 14–15/11. Moeda (Gimmighoul) e Caixa Misteriosa (Meltan) com chance de shiny, e a caixa reabre mais rápido. GO Pass Deluxe (US$14,99) traz Tampinha Prateada, +5.000 XP em reides e Batalhas Max e +1 Doce/Doce XL. Sem Descobertas Diárias de 09/11 a 15/11.",
+      "Prioridade alta: derrotar Zacian Espada Coroada dá Energia Espada Coroada — o Zacian 2628 da reserva tem 0/1.000 e é o que trava a Forma Coroada (Fada \"subnivelado\" no plano). Zamazenta Escudo Coroado dá a energia do escudo. A captura depois da reide é da forma Herói — pra virar Coroada precisa de 1.000 de energia + 30 Doces, e o golpe carregado vira Cabeça de Ferro. Machop Dinamax (2 estrelas) é o que vale farmar: Machamp Dinamax é a resposta pra Dialga e Duraludon nas Batalhas Max da Área Selvagem. Limite de Reide Remota 30 de 09/11 a 13/11 e ilimitado em 14–15/11. Moeda (Gimmighoul) e Caixa Misteriosa (Meltan) com chance de shiny, e a caixa reabre mais rápido. GO Pass Deluxe (US$14,99) traz Tampinha Prateada (não serve em Sombrosos), +5.000 XP em reides e Batalhas Max e +1 Doce/Doce XL. Resgatar o rank 1 deste GO Pass dá acesso antecipado (14/11, 10h) e upgrade grátis pro Deluxe do GO Pass: Trilhas Dinamax. Sem Descobertas Diárias de 09/11 a 15/11.",
     linkPlano: true,
   },
 };

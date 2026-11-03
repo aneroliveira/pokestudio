@@ -6,6 +6,8 @@ import type { Evento } from "@/models/evento";
  * os dois dias. Tarefas de Pesquisa de Campo e taxa exata de shiny ainda
  * não foram anunciadas. Nenhum chefe está no roster de Megas — sprites
  * curados manualmente (sem ícone Gigantamax do Duraludon no CDN, usa o base).
+ * Celebração no Brasil: pokemongo.com/pt_BR/news/gowa-global-2026-brazil
+ * (03/11 — o corpo do post ainda diz 2025 nas datas, erro do próprio post).
  */
 export const areaSelvagemGlobal: Evento = {
   slug: "area-selvagem-global",
@@ -104,7 +106,7 @@ export const areaSelvagemGlobal: Evento = {
   ],
   notaCuradoria: {
     texto:
-      "Prioridade máxima pro Kyurem: Zekrom (sábado) dá Energia Voltaica e Reshiram (domingo) dá Incandescente — o Black está em 505/1.000 e o White em 355/1.000. As reides de Kyurem Branco/Negro também dão Energia de Fusão, e Kyurem de reide pode vir com Glaciar, o que economiza a MT Elite reservada pra isso. Grátis pra todos (10h–18h): até 3 Passes de Reide por dia, Safári Bolas, limite de Partículas Max 1.600 e Jogo em Grupo de 8h. Com ingresso: até 6 passes por dia, 2× Doce, Incenso em dobro, partículas até 3.200, mais Ovos de 10 km e até 6 Trocas Especiais com metade da Poeira. Reide Remota sem limite nos dois dias (vem da Natureza Selvagem).",
+      "Prioridade máxima pro Kyurem: Zekrom (sábado) dá Energia Voltaica e Reshiram (domingo) dá Incandescente — o Black está em 505/1.000 e o White em 355/1.000. As reides de Kyurem Branco/Negro também dão Energia de Fusão, e Kyurem de reide pode vir com Glaciar, o que economiza a MT Elite reservada pra isso. Grátis pra todos (10h–18h): até 3 Passes de Reide por dia, Safári Bolas, limite de Partículas Max 1.600 e Jogo em Grupo de 8h. Com ingresso: até 6 passes por dia, 2× Doce, Incenso em dobro, partículas até 3.200, mais Ovos de 10 km e até 6 Trocas Especiais com metade da Poeira. Reide Remota sem limite nos dois dias (vem da Natureza Selvagem). No Brasil: celebração oficial em São Paulo (Pavilhão Japonês, Parque Ibirapuera, 10h–18h), com Pontos de Energia e Ginásios extras no local e itens Premium no check-in do Campfire, e encontros das Comunidades Oficiais em ~100 lugares (BH, Curitiba, Manaus, Porto Alegre, Rio…).",
     linkPlano: true,
   },
 };
