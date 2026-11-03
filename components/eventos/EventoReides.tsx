@@ -1,13 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Swords } from "lucide-react";
 import { Card } from "@/components/ui/Card";
+import { cn } from "@/lib/utils";
 import { TypeIcon } from "@/components/ui/TypeIcon";
 import { MEGAS } from "@/services/pokemon/recomendarMega";
 import { calcularHundosPorNumero } from "@/services/pokemon/statsGO";
+import { especiePorNome } from "@/services/eventos/especiePokemon";
 import type { ChefeReideEvento, GrupoReideEvento } from "@/models/evento";
 
 type EventoReidesProps = {
   grupos: GrupoReideEvento[];
+  slugEvento: string;
 };
 
 /**
@@ -39,7 +43,7 @@ function resolverChefe(chefe: ChefeReideEvento) {
   };
 }
 
-export function EventoReides({ grupos }: EventoReidesProps) {
+export function EventoReides({ grupos, slugEvento }: EventoReidesProps) {
   return (
     <Card>
       <h2 className="flex items-center gap-2 text-lg font-semibold">
@@ -57,6 +61,9 @@ export function EventoReides({ grupos }: EventoReidesProps) {
             <div className="mt-3 flex flex-wrap gap-3">
               {grupo.chefes.map((chefe) => {
                 const resolvido = resolverChefe(chefe);
+                // Clicar na imagem abre a ficha na Home (deep link `/?p=`) —
+                // Mega e forma especial abrem a ficha da espécie base.
+                const especie = especiePorNome(chefe.nome);
                 const temCp =
                   resolvido.cpSemClima !== undefined &&
                   resolvido.cpComClima !== undefined;
@@ -67,7 +74,16 @@ export function EventoReides({ grupos }: EventoReidesProps) {
                     className="flex min-w-24 max-w-48 flex-1 flex-col items-center gap-1.5 rounded-xl border border-border/60 bg-background/40 p-3 text-center"
                   >
                     {resolvido.imagem ? (
-                      <div className="relative h-14 w-14">
+                      <Link
+                        href={especie ? `/?p=${especie.nomeEn}&evento=${slugEvento}` : "#"}
+                        aria-label={`Ver ficha de ${chefe.nome}`}
+                        title="Ver ficha"
+                        className={cn(
+                          "relative h-14 w-14 rounded-xl transition hover:scale-110",
+                          !especie && "pointer-events-none",
+                        )}
+                        tabIndex={especie ? undefined : -1}
+                      >
                         <Image
                           src={resolvido.imagem}
                           alt={chefe.nome}
@@ -80,7 +96,7 @@ export function EventoReides({ grupos }: EventoReidesProps) {
                               : undefined
                           }
                         />
-                      </div>
+                      </Link>
                     ) : (
                       <div className="flex h-14 w-14 items-center justify-center -space-x-1">
                         {chefe.tipos.map((tipo) => (

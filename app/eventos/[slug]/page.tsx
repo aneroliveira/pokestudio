@@ -47,7 +47,11 @@ export default async function EventoPage(props: PageProps<"/eventos/[slug]">) {
         />
 
         {evento.estreias && (
-          <EventoEstreias lista={evento.estreias.lista} dica={evento.estreias.dica} />
+          <EventoEstreias
+            lista={evento.estreias.lista}
+            dica={evento.estreias.dica}
+            slugEvento={evento.slug}
+          />
         )}
 
         {evento.bonusPoeira && (
@@ -58,9 +62,9 @@ export default async function EventoPage(props: PageProps<"/eventos/[slug]">) {
           />
         )}
 
-        {evento.encontros && <EventoEncontros encontros={evento.encontros} />}
+        {evento.encontros && <EventoEncontros encontros={evento.encontros} slugEvento={evento.slug} />}
 
-        {evento.reides && <EventoReides grupos={evento.reides} />}
+        {evento.reides && <EventoReides grupos={evento.reides} slugEvento={evento.slug} />}
 
         {evento.gradeMegaRaids && (
           <EventoGradeMegaRaids

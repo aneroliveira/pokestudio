@@ -3,6 +3,7 @@ import type { ItemIndicePokemon } from "@/models/indice";
 
 const INDICE = indiceData as ItemIndicePokemon[];
 const ID_POR_NOME = new Map(INDICE.map((item) => [item.nomeEn, item.id]));
+const NOME_POR_ID = new Map(INDICE.map((item) => [item.id, item.nomeEn]));
 // O índice guarda algumas espécies com a forma padrão no nome
 // ("minior-red-meteor", "giratina-altered") — a espécie sozinha também
 // precisa achar.
@@ -22,6 +23,9 @@ const FORMAS_REGIONAIS: [RegExp, string][] = [
 
 export interface EspeciePokemon {
   id: number;
+  /** Nome exato no índice ("minior-red-meteor") — o que o deep link da
+   *  Home (`/?p=<nomeEn>`) espera pra abrir a ficha. */
+  nomeEn: string;
   /** Forma regional, quando o nome curado diz ("Ponyta de Galar"). */
   forma?: string;
 }
@@ -39,5 +43,5 @@ export function especiePorNome(nome: string): EspeciePokemon | undefined {
   if (!id) return undefined;
 
   const forma = FORMAS_REGIONAIS.find(([padrao]) => padrao.test(minusculo))?.[1];
-  return { id, forma };
+  return { id, nomeEn: NOME_POR_ID.get(id)!, forma };
 }

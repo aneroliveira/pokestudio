@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { ArrowUp, FileText, Zap } from "lucide-react";
+import Link from "next/link";
+import { ArrowLeft, ArrowUp, FileText, Zap } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/PageContainer";
 import { EmptyState } from "@/components/pokemon/EmptyState";
@@ -14,6 +15,7 @@ import { NavegacaoVizinhos } from "@/components/pokemon/NavegacaoVizinhos";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Tabs } from "@/components/ui/Tabs";
 import { cn } from "@/lib/utils";
+import { buscarEvento } from "@/data/eventos";
 import type { Pokemon } from "@/models/pokemon";
 import type { ItemIndicePokemon } from "@/models/indice";
 import {
@@ -96,6 +98,12 @@ export default function Home() {
   const [studioMap, setStudioMap] = useState<StudioMap>({});
   const [recentes, setRecentes] = useState<ItemIndicePokemon[]>([]);
   const [modo, setModo] = useState<ModoFicha>("Completa");
+  // Evento de onde a ficha foi aberta (`/?p=<slug>&evento=<slug>`) — só
+  // vale pra essa ficha: escolher outro Pokémon aqui some com o "voltar".
+  const [origemEvento, setOrigemEvento] = useState<{
+    slug: string;
+    titulo: string;
+  } | null>(null);
 
   function trocarModo(novo: ModoFicha) {
     setModo(novo);
@@ -129,11 +137,15 @@ export default function Home() {
       // Deep link do Plano: `/?p=<slug>` abre o card já montado. Lido do
       // window em vez de useSearchParams para não exigir um boundary de
       // Suspense só por causa de um parâmetro opcional.
-      const slug = new URLSearchParams(window.location.search).get("p");
+      const parametros = new URLSearchParams(window.location.search);
+      const slug = parametros.get("p");
       if (!slug) return;
 
       const item = buscarPorNomeEn(slug);
       if (!item) return;
+
+      const evento = buscarEvento(parametros.get("evento") ?? "");
+      if (evento) setOrigemEvento({ slug: evento.slug, titulo: evento.titulo });
 
       setCarregando(true);
 
@@ -161,6 +173,7 @@ export default function Home() {
   }, []);
 
   async function selecionarPokemon(item: ItemIndicePokemon) {
+    setOrigemEvento(null);
     setPesquisa("");
     setCarregando(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -289,6 +302,16 @@ export default function Home() {
                 )}
               </div>
             </div>
+
+            {pokemonSelecionado && origemEvento && (
+              <Link
+                href={`/eventos/${origemEvento.slug}`}
+                className="inline-flex max-w-full items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary transition hover:bg-primary/15"
+              >
+                <ArrowLeft className="h-4 w-4 shrink-0" />
+                <span className="truncate">Voltar para {origemEvento.titulo}</span>
+              </Link>
+            )}
 
             {pokemonSelecionado && (
               <NavegacaoVizinhos

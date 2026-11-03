@@ -8,9 +8,10 @@ import type { EstreiaEvento } from "@/models/evento";
 type EventoEstreiasProps = {
   lista: EstreiaEvento[];
   dica?: string;
+  slugEvento: string;
 };
 
-export function EventoEstreias({ lista, dica }: EventoEstreiasProps) {
+export function EventoEstreias({ lista, dica, slugEvento }: EventoEstreiasProps) {
   return (
     <Card>
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
@@ -27,7 +28,7 @@ export function EventoEstreias({ lista, dica }: EventoEstreiasProps) {
 
           return (
             <div key={estreia.nome} className="flex items-center gap-3 py-3 first:pt-0">
-              {especie && <SpriteEvento especie={especie} />}
+              {especie && <SpriteEvento especie={especie} nome={estreia.nome} slugEvento={slugEvento} />}
               <div className="min-w-0">
                 <p className="flex items-center gap-1.5 font-medium leading-tight">
                   {estreia.nome}

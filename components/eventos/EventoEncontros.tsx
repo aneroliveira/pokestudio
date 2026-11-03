@@ -7,9 +7,10 @@ import type { EncontroEvento } from "@/models/evento";
 
 type EventoEncontrosProps = {
   encontros: EncontroEvento[];
+  slugEvento: string;
 };
 
-export function EventoEncontros({ encontros }: EventoEncontrosProps) {
+export function EventoEncontros({ encontros, slugEvento }: EventoEncontrosProps) {
   return (
     <Card>
       <h2 className="flex items-center gap-2 text-lg font-semibold">
@@ -23,7 +24,7 @@ export function EventoEncontros({ encontros }: EventoEncontrosProps) {
 
           return (
             <div key={encontro.nome} className="flex items-center gap-3 py-2.5">
-              {especie && <SpriteEvento especie={especie} />}
+              {especie && <SpriteEvento especie={especie} nome={encontro.nome} slugEvento={slugEvento} />}
               {/* Celular: a nota vai pra baixo do nome — na mesma linha, com
                   o sprite, ela espremia em 4–5 linhas. */}
               <div className="min-w-0 flex-1 sm:flex sm:items-center sm:gap-3">
