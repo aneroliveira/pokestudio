@@ -40,6 +40,7 @@ import { desejosDoEntardecer } from "./desejos-do-entardecer";
 import { megaMetagross } from "./mega-metagross";
 import { chuvaDeMiniorGeminidas } from "./chuva-de-minior-geminidas";
 import { goTourAlolaGlobal } from "./go-tour-alola-global";
+import { pesquisaMachampGigamax } from "./pesquisa-machamp-gigamax";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
 export const EVENTOS: Evento[] = [
@@ -84,6 +85,7 @@ export const EVENTOS: Evento[] = [
   megaMetagross,
   chuvaDeMiniorGeminidas,
   goTourAlolaGlobal,
+  pesquisaMachampGigamax,
 ];
 
 export function buscarEvento(slug: string): Evento | undefined {

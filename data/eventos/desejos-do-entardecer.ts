@@ -70,7 +70,7 @@ export const desejosDoEntardecer: Evento = {
   ],
   notaCuradoria: {
     texto:
-      "Pesquisa de Campo dá Megaenergia e encontros: de 24/11 10h a 26/11 10h, Applin (shiny) e Maschiff; de 26/11 10h a 30/11 20h, Gengar do Festival Arrepiante (shiny), Drifblim de Travessura (shiny) e Bramblin. Mega Sableye volta nas Megarreides — chance de juntar mais energia pro Super Max dele (Fantasma \"subnivelado\" no plano). GO Pass grátis (Deluxe US$4,99; +6 ranques US$6,99): rank 1 dá mais chance de Pokémon e Amizade sortudos em trocas, rank 10 dá 2× Poeira (3× no Deluxe). Resgatar recompensas até 02/12 às 20h. Cai junto do Mega Metagross + Deoxys (25/11 → 01/12) e do Super Megarreides de 28/11.",
+      "Pesquisa de Campo dá Megaenergia e encontros: de 24/11 10h a 26/11 10h, Applin (shiny) e Maschiff; de 26/11 10h a 30/11 20h, Gengar do Festival Arrepiante (shiny), Drifblim de Travessura (shiny) e Bramblin. Mega Sableye volta nas Megarreides — chance de juntar mais energia pro Super Max dele (Fantasma \"subnivelado\" no plano). GO Pass grátis (Deluxe US$4,99; +6 ranques US$6,99): rank 1 dá mais chance de Pokémon e Amizade sortudos em trocas, rank 10 dá 2× Poeira (3× no Deluxe). Resgatar recompensas até 02/12 às 20h. Cai junto do Mega Metagross + Deoxys (25/11 → 01/12) e do Super Megarreides do Mega Clefable em 28/11.",
     linkPlano: true,
   },
 };
