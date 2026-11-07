@@ -3,9 +3,18 @@ import { cn } from "@/lib/utils";
 import indiceData from "@/data/pokemonIndex.json";
 import type { ItemIndicePokemon } from "@/models/indice";
 import { getRegion } from "@/utils/getRegion";
-import { obterSpritePokemon, formatarNomePokemon } from "@/utils";
+import {
+  obterSpritePokemon,
+  obterSpriteShinyPokemon,
+  formatarNomePokemon,
+  idDoNumero,
+} from "@/utils";
+import { MEGAS } from "@/services/pokemon/recomendarMega";
+import { GIGANTAMAX } from "@/services/pokemon/gigantamax";
+import type { VisualInicial } from "@/components/pokemon/useFormasVisuais";
 
 const INDICE = indiceData as ItemIndicePokemon[];
+const ITEM_POR_ID = new Map(INDICE.map((item) => [item.id, item]));
 
 /** Ordem de exibição — a mesma ordem cronológica das gerações, que também
  *  é a ordem em que `getRegion` cobre as faixas de número da Pokédex. */
@@ -21,19 +30,72 @@ const REGIOES = [
   "Paldea",
 ] as const;
 
-const PORCAO_POR_REGIAO = new Map<string, ItemIndicePokemon[]>();
-for (const item of INDICE) {
-  const regiao = getRegion(item.id);
-  const lista = PORCAO_POR_REGIAO.get(regiao);
-  if (lista) {
-    lista.push(item);
-  } else {
-    PORCAO_POR_REGIAO.set(regiao, [item]);
+/** Um quadrado da grade. `item` é sempre a espécie base no índice — é o
+ *  que a ficha abre; nome e imagem mudam conforme o visual (Mega Venusaur,
+ *  sprite brilhante...). */
+type Quadrado = {
+  chave: string;
+  item: ItemIndicePokemon;
+  nome: string;
+  imagem: string;
+  /** Ícones do GO (Mega/Gigamax) têm margem própria — mesma escala do roster. */
+  escala?: number;
+};
+
+function agruparPorRegiao(quadrados: Quadrado[]): Map<string, Quadrado[]> {
+  const mapa = new Map<string, Quadrado[]>();
+  for (const quadrado of quadrados) {
+    const regiao = getRegion(quadrado.item.id);
+    mapa.set(regiao, [...(mapa.get(regiao) ?? []), quadrado]);
   }
+  return mapa;
 }
+
+function quadradoDoIndice(item: ItemIndicePokemon, shiny: boolean): Quadrado {
+  return {
+    chave: String(item.id),
+    item,
+    nome: formatarNomePokemon(item.nomeEn),
+    imagem: shiny ? obterSpriteShinyPokemon(item.id) : obterSpritePokemon(item.id),
+  };
+}
+
+/** Grades prontas por visual — montadas uma vez só, no carregamento. Mega
+ *  e Gigamax só têm as espécies que existem nessas formas (uma entrada por
+ *  forma: Charizard X e Y são dois quadrados). */
+const GRADES: Record<"normal" | VisualInicial, Map<string, Quadrado[]>> = {
+  normal: agruparPorRegiao(INDICE.map((item) => quadradoDoIndice(item, false))),
+  shiny: agruparPorRegiao(INDICE.map((item) => quadradoDoIndice(item, true))),
+  mega: agruparPorRegiao(
+    MEGAS.flatMap((mega) => {
+      const item = ITEM_POR_ID.get(idDoNumero(mega.numeroBase));
+      return item && mega.imagem
+        ? [{ chave: mega.id, item, nome: mega.nome, imagem: mega.imagem, escala: mega.escala }]
+        : [];
+    }),
+  ),
+  gigamax: agruparPorRegiao(
+    GIGANTAMAX.flatMap((gigamax) => {
+      const item = ITEM_POR_ID.get(idDoNumero(gigamax.numeroBase));
+      return item && gigamax.imagem
+        ? [
+            {
+              chave: `gmax-${item.id}`,
+              item,
+              nome: `${gigamax.nome} Gigamax`,
+              imagem: gigamax.imagem,
+              escala: gigamax.escala,
+            },
+          ]
+        : [];
+    }),
+  ),
+};
 
 type PokedexGridProps = {
   onSelect: (item: ItemIndicePokemon) => void;
+  /** Filtro do seletor Shiny | Mega | Gigamax (nenhum = grade normal). */
+  visual?: VisualInicial | null;
 };
 
 /** Grade com todos os Pokémon do índice (1025, mesma fonte da busca),
@@ -44,7 +106,12 @@ type PokedexGridProps = {
  *  grudada embaixo do header. Clicar num quadrado chama `onSelect`, igual
  *  a um resultado de busca ou um chip de recente — o card individual abre
  *  do mesmo jeito. */
-export function PokedexGrid({ onSelect }: PokedexGridProps) {
+export function PokedexGrid({ onSelect, visual = null }: PokedexGridProps) {
+  const grade = GRADES[visual ?? "normal"];
+  // Mega e Gigamax não têm Pokémon de toda região — a lateral só lista as
+  // que têm algum quadrado.
+  const regioes = REGIOES.filter((regiao) => (grade.get(regiao)?.length ?? 0) > 0);
+
   const [regiaoVisivel, setRegiaoVisivel] = useState<string>(REGIOES[0]);
   const [mostrarFaixa, setMostrarFaixa] = useState(false);
   const navTopoRef = useRef<HTMLElement>(null);
@@ -55,9 +122,12 @@ export function PokedexGrid({ onSelect }: PokedexGridProps) {
     // cujo topo já passou da linha do header (+ a faixa, no celular).
     function aoRolar() {
       const limiar = 120;
-      let atual: string = REGIOES[0];
+      const presentes = REGIOES.filter((regiao) =>
+        document.getElementById(`regiao-${regiao.toLowerCase()}`),
+      );
+      let atual: string = presentes[0] ?? REGIOES[0];
 
-      for (const regiao of REGIOES) {
+      for (const regiao of presentes) {
         const el = document.getElementById(`regiao-${regiao.toLowerCase()}`);
         if (el && el.getBoundingClientRect().top <= limiar) {
           atual = regiao;
@@ -77,7 +147,7 @@ export function PokedexGrid({ onSelect }: PokedexGridProps) {
     aoRolar();
     window.addEventListener("scroll", aoRolar, { passive: true });
     return () => window.removeEventListener("scroll", aoRolar);
-  }, []);
+  }, [visual]);
 
   useEffect(() => {
     // O chip ativo pode estar fora da área visível da faixa — rola só a
@@ -94,7 +164,7 @@ export function PokedexGrid({ onSelect }: PokedexGridProps) {
   }, [regiaoVisivel, mostrarFaixa]);
 
   function atalhos(faixa: boolean) {
-    return REGIOES.map((regiao) => {
+    return regioes.map((regiao) => {
       const ativa = regiao === regiaoVisivel;
 
       return (
@@ -146,8 +216,8 @@ export function PokedexGrid({ onSelect }: PokedexGridProps) {
       </nav>
 
       <div className="mt-6 min-w-0 flex-1 space-y-8 sm:mt-0">
-        {REGIOES.map((regiao) => {
-          const itens = PORCAO_POR_REGIAO.get(regiao) ?? [];
+        {regioes.map((regiao) => {
+          const itens = grade.get(regiao) ?? [];
           if (itens.length === 0) return null;
 
           return (
@@ -159,12 +229,12 @@ export function PokedexGrid({ onSelect }: PokedexGridProps) {
               <h2 className="text-lg font-semibold">{regiao}</h2>
 
               <div className="grid grid-cols-4 gap-2 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8">
-                {itens.map((item) => (
+                {itens.map((quadrado) => (
                   <button
-                    key={item.id}
+                    key={quadrado.chave}
                     type="button"
-                    onClick={() => onSelect(item)}
-                    title={formatarNomePokemon(item.nomeEn)}
+                    onClick={() => onSelect(quadrado.item)}
+                    title={quadrado.nome}
                     className="flex flex-col items-center gap-1 rounded-xl border border-border/60 p-2 text-center transition hover:border-primary/40 hover:bg-secondary/40"
                   >
                     {/* <img> comum, não next/image — a Pokédex inteira soma
@@ -174,18 +244,23 @@ export function PokedexGrid({ onSelect }: PokedexGridProps) {
                         requisições de otimização de uma vez). */}
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={obterSpritePokemon(item.id)}
+                      src={quadrado.imagem}
                       alt=""
                       loading="lazy"
                       width={48}
                       height={48}
                       className="h-12 w-12 object-contain"
+                      style={
+                        quadrado.escala
+                          ? { transform: `scale(${quadrado.escala})` }
+                          : undefined
+                      }
                     />
                     <span className="text-[10px] text-muted-foreground">
-                      {item.numero}
+                      {quadrado.item.numero}
                     </span>
                     <span className="w-full truncate text-[11px] font-medium">
-                      {formatarNomePokemon(item.nomeEn)}
+                      {quadrado.nome}
                     </span>
                   </button>
                 ))}

@@ -40,18 +40,24 @@ export function buscarPorNomeEn(
  * número, então os vizinhos são só as posições ao lado — nas bordas (#001 e
  * o último) um dos lados fica `undefined`.
  */
-export function buscarVizinhos(numero: string): {
+export function buscarVizinhos(
+  numero: string,
+  /** Restringe a navegação a estas espécies (ex.: só as que têm Mega) —
+   *  sem ela, é a Pokédex nacional inteira. */
+  apenasIds?: ReadonlySet<number>,
+): {
   anterior?: ItemIndicePokemon;
   proximo?: ItemIndicePokemon;
 } {
-  const posicao = INDICE.findIndex((item) => item.numero === numero);
+  const lista = apenasIds ? INDICE.filter((item) => apenasIds.has(item.id)) : INDICE;
+  const posicao = lista.findIndex((item) => item.numero === numero);
 
   if (posicao === -1) {
     return {};
   }
 
   return {
-    anterior: INDICE[posicao - 1],
-    proximo: INDICE[posicao + 1],
+    anterior: lista[posicao - 1],
+    proximo: lista[posicao + 1],
   };
 }

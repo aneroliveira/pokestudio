@@ -2,19 +2,23 @@ import Image from "next/image";
 import type { Pokemon } from "@/models/pokemon";
 import { Card } from "@/components/ui/Card";
 import { TypeIcon } from "@/components/ui/TypeIcon";
-import { useFormasVisuais } from "@/components/pokemon/useFormasVisuais";
+import {
+  useFormasVisuais,
+  type VisualInicial,
+} from "@/components/pokemon/useFormasVisuais";
 import { BotaoForma } from "@/components/pokemon/BotaoForma";
 import { calcularDerivados } from "@/services/pokemon/calcularDerivados";
 import { calcularHundosPorNumero } from "@/services/pokemon/statsGO";
 
 type PokemonPocketCardProps = {
   pokemon: Pokemon;
+  visualInicial?: VisualInicial;
 };
 
 /** Versão enxuta do card do Pokémon: só o essencial pra bater o olho — sem
  *  as seções de curadoria/decisão/megas da ficha completa (ver PokemonCard).
  *  No mobile tudo centraliza; a partir de `sm` volta pro layout em colunas. */
-export function PokemonPocketCard({ pokemon }: PokemonPocketCardProps) {
+export function PokemonPocketCard({ pokemon, visualInicial }: PokemonPocketCardProps) {
   const {
     mostrarShiny,
     alternarShiny,
@@ -26,7 +30,7 @@ export function PokemonPocketCard({ pokemon }: PokemonPocketCardProps) {
     temMega,
     temGigamax,
     imagensExibidas,
-  } = useFormasVisuais(pokemon);
+  } = useFormasVisuais(pokemon, visualInicial);
 
   const { fraquezas } = calcularDerivados(pokemon.oficial.tipos);
   const hundos = calcularHundosPorNumero(pokemon.oficial.numero);

@@ -10,6 +10,11 @@ export function obterSpritePokemon(id: number): string {
   return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 }
 
+/** Versão brilhante do sprite pequeno — usada na Pokédex em modo Shiny. */
+export function obterSpriteShinyPokemon(id: number): string {
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png`;
+}
+
 /** "#094" → 94. O índice guarda o número já formatado com zeros à esquerda. */
 export function idDoNumero(numero: string): number {
   return Number(numero.replace("#", ""));

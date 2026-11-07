@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowUp, FileText, Zap } from "lucide-react";
 
@@ -32,9 +32,30 @@ import {
 } from "@/services/pokemon/studioStore";
 import { PokemonCard } from "@/components/pokemon/PokemonCard";
 import { PokemonPocketCard } from "@/components/pokemon/PokemonPocketCard";
+import type { VisualInicial } from "@/components/pokemon/useFormasVisuais";
+import { MEGAS } from "@/services/pokemon/recomendarMega";
+import { GIGANTAMAX } from "@/services/pokemon/gigantamax";
+import { idDoNumero } from "@/utils";
 
 const ABAS = ["Buscar", "Pokédex", "Filtros PoGo"] as const;
 type Aba = (typeof ABAS)[number];
+
+/** Seletor da Pokédex: troca a grade pra versão brilhante, só Megas ou só
+ *  Gigamax. Sem nenhum marcado, é a grade normal. */
+/** Espécies com cada forma — com a ficha aberta da grade de Megas ou de
+ *  Gigamax, as setas só pulam entre elas. Shiny não restringe nada. */
+const IDS_COM_FORMA: Partial<Record<VisualInicial, ReadonlySet<number>>> = {
+  mega: new Set(MEGAS.map((mega) => idDoNumero(mega.numeroBase))),
+  gigamax: new Set(
+    GIGANTAMAX.filter((item) => item.imagem).map((item) => idDoNumero(item.numeroBase)),
+  ),
+};
+
+const VISUAIS_POKEDEX: { valor: VisualInicial; rotulo: string }[] = [
+  { valor: "shiny", rotulo: "Shiny" },
+  { valor: "mega", rotulo: "Mega" },
+  { valor: "gigamax", rotulo: "Gigamax" },
+];
 
 // RFC-005: a ficha rápida (antiga /pocket) é um modo de visualização da
 // Home. O modo escolhido fica só neste navegador — se o storage falhar,
@@ -98,6 +119,12 @@ export default function Home() {
   const [studioMap, setStudioMap] = useState<StudioMap>({});
   const [recentes, setRecentes] = useState<ItemIndicePokemon[]>([]);
   const [modo, setModo] = useState<ModoFicha>("Completa");
+  const [visualPokedex, setVisualPokedex] = useState<VisualInicial | null>(null);
+  // Ficha aberta a partir da grade: fica na aba Pokédex (setas inclusive),
+  // com "voltar à Pokédex", e já abre no visual que a grade mostrava.
+  const [fichaDaPokedex, setFichaDaPokedex] = useState(false);
+  const [visualFicha, setVisualFicha] = useState<VisualInicial | null>(null);
+  const rolagemDaGrade = useRef(0);
   // Evento de onde a ficha foi aberta (`/?p=<slug>&evento=<slug>`) — só
   // vale pra essa ficha: escolher outro Pokémon aqui some com o "voltar".
   const [origemEvento, setOrigemEvento] = useState<{
@@ -191,13 +218,70 @@ export default function Home() {
     }
   }
 
-  // A Pokédex é só uma porta de entrada visual — selecionar um quadrado
-  // volta pra aba de busca pra revelar o card, igual clicar num resultado
-  // de busca ou num chip de recente.
-  function selecionarDaPokedex(item: ItemIndicePokemon) {
-    setAba("Buscar");
+  // Busca e chips de recentes abrem a ficha no visual normal.
+  function selecionarDaBusca(item: ItemIndicePokemon) {
+    setVisualFicha(null);
     selecionarPokemon(item);
   }
+
+  // Selecionar um quadrado abre a ficha ali mesmo, sem trocar de aba —
+  // guarda onde a grade estava rolada pra voltar pro mesmo ponto.
+  function selecionarDaPokedex(item: ItemIndicePokemon) {
+    rolagemDaGrade.current = window.scrollY;
+    setFichaDaPokedex(true);
+    setVisualFicha(visualPokedex);
+    selecionarPokemon(item);
+  }
+
+  function voltarAPokedex() {
+    setFichaDaPokedex(false);
+    requestAnimationFrame(() => window.scrollTo({ top: rolagemDaGrade.current }));
+  }
+
+  function trocarAba(nova: Aba) {
+    setAba(nova);
+    // Tocar na aba Pokédex (de novo ou vindo de outra) sempre mostra a grade.
+    setFichaDaPokedex(false);
+  }
+
+  const fichaNaPokedex = aba === "Pokédex" && fichaDaPokedex;
+
+  // NavegacaoVizinhos + ficha: o mesmo bloco na aba Buscar e na ficha
+  // aberta pela Pokédex. A key remonta a ficha quando muda o Pokémon ou o
+  // visual de origem (o visual só vale como estado inicial dos botões).
+  const fichaAberta = (
+    <>
+      {pokemonSelecionado && (
+        <NavegacaoVizinhos
+          numero={pokemonSelecionado.oficial.numero}
+          onSelect={selecionarPokemon}
+          desabilitado={carregando}
+          apenasIds={visualFicha ? IDS_COM_FORMA[visualFicha] : undefined}
+        />
+      )}
+
+      {carregando ? (
+        <PokemonCardSkeleton />
+      ) : pokemonSelecionado ? (
+        modo === "Rápida" ? (
+          <PokemonPocketCard
+            key={`${pokemonSelecionado.oficial.numero}-${visualFicha}`}
+            pokemon={pokemonSelecionado}
+            visualInicial={visualFicha ?? undefined}
+          />
+        ) : (
+          <PokemonCard
+            key={`${pokemonSelecionado.oficial.numero}-${visualFicha}`}
+            pokemon={pokemonSelecionado}
+            onSelecionarPokemon={selecionarPokemon}
+            visualInicial={visualFicha ?? undefined}
+          />
+        )
+      ) : (
+        <EmptyState />
+      )}
+    </>
+  );
 
   return (
     <PageContainer>
@@ -205,7 +289,7 @@ export default function Home() {
         id="topo"
         className={cn(
           "w-full scroll-mt-20 space-y-6",
-          aba === "Buscar" ? "max-w-2xl" : "max-w-5xl",
+          aba === "Buscar" || fichaNaPokedex ? "max-w-2xl" : "max-w-5xl",
         )}
       >
         <SectionTitle
@@ -214,10 +298,55 @@ export default function Home() {
           subtitle="O companheiro para decisões inteligentes no Pokémon GO."
         />
 
-        <Tabs abas={ABAS} ativa={aba} onChange={setAba} />
+        <div className="relative">
+          <Tabs abas={ABAS} ativa={aba} onChange={trocarAba} />
+
+          {/* Seletor da grade — à direita das abas no desktop, embaixo
+              delas no celular. Tocar de novo no marcado desmarca. */}
+          {aba === "Pokédex" && !fichaDaPokedex && (
+            <div className="mt-3 flex items-center justify-end gap-2 sm:absolute sm:bottom-1.5 sm:right-0 sm:mt-0">
+              <span className="text-xs text-muted-foreground">Ver</span>
+              <div role="group" aria-label="Visual da Pokédex" className="inline-flex rounded-lg bg-muted p-0.5">
+                {VISUAIS_POKEDEX.map(({ valor, rotulo }) => (
+                  <button
+                    key={valor}
+                    type="button"
+                    onClick={() =>
+                      setVisualPokedex((atual) => (atual === valor ? null : valor))
+                    }
+                    aria-pressed={visualPokedex === valor}
+                    className={cn(
+                      "rounded-md px-3 py-1 text-xs font-medium transition",
+                      visualPokedex === valor
+                        ? "bg-card text-foreground shadow-sm"
+                        : "text-muted-foreground hover:text-foreground",
+                    )}
+                  >
+                    {rotulo}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
 
         {aba === "Pokédex" ? (
-          <PokedexGrid onSelect={selecionarDaPokedex} />
+          fichaDaPokedex ? (
+            <>
+              <button
+                type="button"
+                onClick={voltarAPokedex}
+                className="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary transition hover:bg-primary/15"
+              >
+                <ArrowLeft className="h-4 w-4 shrink-0" />
+                Voltar à Pokédex
+              </button>
+
+              {fichaAberta}
+            </>
+          ) : (
+            <PokedexGrid onSelect={selecionarDaPokedex} visual={visualPokedex} />
+          )
         ) : aba === "Filtros PoGo" ? (
           <FiltrosPoGo />
         ) : (
@@ -228,7 +357,7 @@ export default function Home() {
                 onChange={(valor) => {
                   setPesquisa(valor);
                 }}
-                onSelect={selecionarPokemon}
+                onSelect={selecionarDaBusca}
                 resultados={resultados}
                 studioMap={studioMap}
                 autoFocus
@@ -240,7 +369,7 @@ export default function Home() {
                 <div className="min-w-0 flex-1">
                   <ChipsRecentes
                     itens={recentes}
-                    onSelect={selecionarPokemon}
+                    onSelect={selecionarDaBusca}
                   />
                 </div>
 
@@ -313,28 +442,7 @@ export default function Home() {
               </Link>
             )}
 
-            {pokemonSelecionado && (
-              <NavegacaoVizinhos
-                numero={pokemonSelecionado.oficial.numero}
-                onSelect={selecionarPokemon}
-                desabilitado={carregando}
-              />
-            )}
-
-            {carregando ? (
-              <PokemonCardSkeleton />
-            ) : pokemonSelecionado ? (
-              modo === "Rápida" ? (
-                <PokemonPocketCard pokemon={pokemonSelecionado} />
-              ) : (
-                <PokemonCard
-                  pokemon={pokemonSelecionado}
-                  onSelecionarPokemon={selecionarPokemon}
-                />
-              )
-            ) : (
-              <EmptyState />
-            )}
+            {fichaAberta}
           </>
         )}
       </div>

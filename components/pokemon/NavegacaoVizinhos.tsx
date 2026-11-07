@@ -8,6 +8,9 @@ type NavegacaoVizinhosProps = {
   numero: string;
   onSelect: (item: ItemIndicePokemon) => void;
   desabilitado?: boolean;
+  /** Só pula entre estas espécies — a Pokédex em modo Mega/Gigamax passa
+   *  as que têm a forma. */
+  apenasIds?: ReadonlySet<number>;
 };
 
 /** Barra "← anterior / próximo →" em cima do card, pra folhear a Pokédex
@@ -17,8 +20,9 @@ export function NavegacaoVizinhos({
   numero,
   onSelect,
   desabilitado = false,
+  apenasIds,
 }: NavegacaoVizinhosProps) {
-  const { anterior, proximo } = buscarVizinhos(numero);
+  const { anterior, proximo } = buscarVizinhos(numero, apenasIds);
 
   if (!anterior && !proximo) return null;
 

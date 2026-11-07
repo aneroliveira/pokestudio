@@ -1,4 +1,5 @@
 import { PokemonHeader } from "@/components/pokemon/PokemonHeader";
+import type { VisualInicial } from "@/components/pokemon/useFormasVisuais";
 import { PokemonHundos } from "@/components/pokemon/PokemonHundos";
 import { Card } from "@/components/ui/Card";
 import type { Pokemon } from "@/models/pokemon";
@@ -12,15 +13,21 @@ import { PokemonEvolutions } from "@/components/pokemon/PokemonEvolutions";
 type PokemonCardProps = {
   pokemon: Pokemon;
   onSelecionarPokemon?: (item: ItemIndicePokemon) => void;
+  visualInicial?: VisualInicial;
 };
 
 export function PokemonCard({
   pokemon,
   onSelecionarPokemon,
+  visualInicial,
 }: PokemonCardProps) {
   return (
     <Card>
-      <PokemonHeader key={pokemon.oficial.numero} pokemon={pokemon} />
+      <PokemonHeader
+        key={pokemon.oficial.numero}
+        pokemon={pokemon}
+        visualInicial={visualInicial}
+      />
 
       <PokemonDecision pokemon={pokemon} />
 

@@ -18,6 +18,10 @@ export interface ImagemExibida {
   escala?: number;
 }
 
+/** Visual com que a ficha já abre — vem do seletor da Pokédex (abrir um
+ *  Pokémon na grade de Megas mostra a ficha já com a Mega ligada). */
+export type VisualInicial = "shiny" | "mega" | "gigamax";
+
 /** Extrai a variante (X/Y) do id da Mega (ex.: "MEWTWO_MEGA_X" → "X"). */
 function obterVarianteMega(id: string): string | undefined {
   const match = id.match(/_(X|Y)$/);
@@ -31,10 +35,14 @@ function obterVarianteMega(id: string): string | undefined {
  * nos dois. Shiny combina com qualquer forma; Mega e Gigamax não existem
  * juntas, então ligar uma desliga a outra.
  */
-export function useFormasVisuais(pokemon: Pokemon) {
-  const [mostrarShiny, setMostrarShiny] = useState(false);
-  const [mostrarMega, setMostrarMegaInterno] = useState(false);
-  const [mostrarGigamax, setMostrarGigamaxInterno] = useState(false);
+export function useFormasVisuais(pokemon: Pokemon, visualInicial?: VisualInicial) {
+  // Só o valor inicial — a ficha remonta (key) quando o Pokémon ou o
+  // visual de origem mudam, então não precisa sincronizar depois.
+  const [mostrarShiny, setMostrarShiny] = useState(visualInicial === "shiny");
+  const [mostrarMega, setMostrarMegaInterno] = useState(visualInicial === "mega");
+  const [mostrarGigamax, setMostrarGigamaxInterno] = useState(
+    visualInicial === "gigamax",
+  );
 
   function alternarShiny() {
     setMostrarShiny((valor) => !valor);

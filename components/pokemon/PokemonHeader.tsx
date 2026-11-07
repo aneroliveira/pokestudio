@@ -4,15 +4,19 @@ import type { Pokemon } from "@/models/pokemon";
 import { PriorityBadge } from "@/components/ui/PriorityBadge";
 import { TypeIcon } from "@/components/ui/TypeIcon";
 import { InfoTip } from "@/components/ui/InfoTip";
-import { useFormasVisuais } from "@/components/pokemon/useFormasVisuais";
+import {
+  useFormasVisuais,
+  type VisualInicial,
+} from "@/components/pokemon/useFormasVisuais";
 import { BotaoForma } from "@/components/pokemon/BotaoForma";
 import Image from "next/image";
 
 type PokemonHeaderProps = {
   pokemon: Pokemon;
+  visualInicial?: VisualInicial;
 };
 
-export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
+export function PokemonHeader({ pokemon, visualInicial }: PokemonHeaderProps) {
   const {
     mostrarShiny,
     alternarShiny,
@@ -24,7 +28,7 @@ export function PokemonHeader({ pokemon }: PokemonHeaderProps) {
     temMega,
     temGigamax,
     imagensExibidas,
-  } = useFormasVisuais(pokemon);
+  } = useFormasVisuais(pokemon, visualInicial);
 
   return (
     <div className="flex items-start justify-between gap-6">
