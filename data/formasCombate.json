@@ -1,0 +1,622 @@
+[
+  {
+    "numeroBase": "#351",
+    "formas": [
+      {
+        "id": "CASTFORM",
+        "nome": "Forma Normal",
+        "tipos": [
+          "Normal"
+        ]
+      },
+      {
+        "id": "CASTFORM_RAINY",
+        "nome": "Forma Chuvosa",
+        "tipos": [
+          "Water"
+        ]
+      },
+      {
+        "id": "CASTFORM_SNOWY",
+        "nome": "Forma Nevada",
+        "tipos": [
+          "Ice"
+        ]
+      },
+      {
+        "id": "CASTFORM_SUNNY",
+        "nome": "Forma Ensolarada",
+        "tipos": [
+          "Fire"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#413",
+    "formas": [
+      {
+        "id": "WORMADAM_PLANT",
+        "nome": "Manto de Planta",
+        "tipos": [
+          "Bug",
+          "Grass"
+        ]
+      },
+      {
+        "id": "WORMADAM_SANDY",
+        "nome": "Manto Arenoso",
+        "tipos": [
+          "Bug",
+          "Ground"
+        ]
+      },
+      {
+        "id": "WORMADAM_TRASH",
+        "nome": "Manto de Lixo",
+        "tipos": [
+          "Bug",
+          "Steel"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#479",
+    "formas": [
+      {
+        "id": "ROTOM",
+        "nome": "Rotom",
+        "tipos": [
+          "Electric",
+          "Ghost"
+        ],
+        "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm479.icon.png"
+      },
+      {
+        "id": "ROTOM_FAN",
+        "nome": "Rotom Ventilador",
+        "tipos": [
+          "Electric",
+          "Flying"
+        ],
+        "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm479.fFAN.icon.png"
+      },
+      {
+        "id": "ROTOM_FROST",
+        "nome": "Rotom Congelante",
+        "tipos": [
+          "Electric",
+          "Ice"
+        ],
+        "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm479.fFROST.icon.png"
+      },
+      {
+        "id": "ROTOM_HEAT",
+        "nome": "Rotom Calor",
+        "tipos": [
+          "Electric",
+          "Fire"
+        ],
+        "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm479.fHEAT.icon.png"
+      },
+      {
+        "id": "ROTOM_MOW",
+        "nome": "Rotom Corte",
+        "tipos": [
+          "Electric",
+          "Grass"
+        ],
+        "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm479.fMOW.icon.png"
+      },
+      {
+        "id": "ROTOM_WASH",
+        "nome": "Rotom Lavagem",
+        "tipos": [
+          "Electric",
+          "Water"
+        ],
+        "imagem": "https://raw.githubusercontent.com/pokemon-go-api/assets/main/Pokemon/pm479.fWASH.icon.png"
+      }
+    ]
+  },
+  {
+    "numeroBase": "#492",
+    "formas": [
+      {
+        "id": "SHAYMIN_LAND",
+        "nome": "Forma Terrestre",
+        "tipos": [
+          "Grass"
+        ]
+      },
+      {
+        "id": "SHAYMIN_SKY",
+        "nome": "Forma Céu",
+        "tipos": [
+          "Grass",
+          "Flying"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#493",
+    "formas": [
+      {
+        "id": "ARCEUS",
+        "nome": "Tipo Normal",
+        "tipos": [
+          "Normal"
+        ]
+      },
+      {
+        "id": "ARCEUS_BUG",
+        "nome": "Tipo Inseto",
+        "tipos": [
+          "Bug"
+        ]
+      },
+      {
+        "id": "ARCEUS_DARK",
+        "nome": "Tipo Sombrio",
+        "tipos": [
+          "Dark"
+        ]
+      },
+      {
+        "id": "ARCEUS_DRAGON",
+        "nome": "Tipo Dragão",
+        "tipos": [
+          "Dragon"
+        ]
+      },
+      {
+        "id": "ARCEUS_ELECTRIC",
+        "nome": "Tipo Elétrico",
+        "tipos": [
+          "Electric"
+        ]
+      },
+      {
+        "id": "ARCEUS_FAIRY",
+        "nome": "Tipo Fada",
+        "tipos": [
+          "Fairy"
+        ]
+      },
+      {
+        "id": "ARCEUS_FIGHTING",
+        "nome": "Tipo Lutador",
+        "tipos": [
+          "Fighting"
+        ]
+      },
+      {
+        "id": "ARCEUS_FIRE",
+        "nome": "Tipo Fogo",
+        "tipos": [
+          "Fire"
+        ]
+      },
+      {
+        "id": "ARCEUS_FLYING",
+        "nome": "Tipo Voador",
+        "tipos": [
+          "Flying"
+        ]
+      },
+      {
+        "id": "ARCEUS_GHOST",
+        "nome": "Tipo Fantasma",
+        "tipos": [
+          "Ghost"
+        ]
+      },
+      {
+        "id": "ARCEUS_GRASS",
+        "nome": "Tipo Planta",
+        "tipos": [
+          "Grass"
+        ]
+      },
+      {
+        "id": "ARCEUS_GROUND",
+        "nome": "Tipo Terrestre",
+        "tipos": [
+          "Ground"
+        ]
+      },
+      {
+        "id": "ARCEUS_ICE",
+        "nome": "Tipo Gelo",
+        "tipos": [
+          "Ice"
+        ]
+      },
+      {
+        "id": "ARCEUS_POISON",
+        "nome": "Tipo Venenoso",
+        "tipos": [
+          "Poison"
+        ]
+      },
+      {
+        "id": "ARCEUS_PSYCHIC",
+        "nome": "Tipo Psíquico",
+        "tipos": [
+          "Psychic"
+        ]
+      },
+      {
+        "id": "ARCEUS_ROCK",
+        "nome": "Tipo Pedra",
+        "tipos": [
+          "Rock"
+        ]
+      },
+      {
+        "id": "ARCEUS_STEEL",
+        "nome": "Tipo Aço",
+        "tipos": [
+          "Steel"
+        ]
+      },
+      {
+        "id": "ARCEUS_WATER",
+        "nome": "Tipo Água",
+        "tipos": [
+          "Water"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#555",
+    "formas": [
+      {
+        "id": "DARMANITAN_STANDARD",
+        "nome": "Modo Padrão",
+        "tipos": [
+          "Fire"
+        ]
+      },
+      {
+        "id": "DARMANITAN_ZEN",
+        "nome": "Modo Zen",
+        "tipos": [
+          "Fire",
+          "Psychic"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#648",
+    "formas": [
+      {
+        "id": "MELOETTA_ARIA",
+        "nome": "Forma Ária",
+        "tipos": [
+          "Normal",
+          "Psychic"
+        ]
+      },
+      {
+        "id": "MELOETTA_PIROUETTE",
+        "nome": "Forma Pirueta",
+        "tipos": [
+          "Normal",
+          "Fighting"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#720",
+    "formas": [
+      {
+        "id": "HOOPA_CONFINED",
+        "nome": "Hoopa Contido",
+        "tipos": [
+          "Psychic",
+          "Ghost"
+        ]
+      },
+      {
+        "id": "HOOPA_UNBOUND",
+        "nome": "Hoopa Libertado",
+        "tipos": [
+          "Psychic",
+          "Dark"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#741",
+    "formas": [
+      {
+        "id": "ORICORIO_BAILE",
+        "nome": "Estilo Flamenco",
+        "tipos": [
+          "Fire",
+          "Flying"
+        ]
+      },
+      {
+        "id": "ORICORIO_PAU",
+        "nome": "Estilo Hula",
+        "tipos": [
+          "Psychic",
+          "Flying"
+        ]
+      },
+      {
+        "id": "ORICORIO_POMPOM",
+        "nome": "Estilo Animado",
+        "tipos": [
+          "Electric",
+          "Flying"
+        ]
+      },
+      {
+        "id": "ORICORIO_SENSU",
+        "nome": "Estilo Elegante",
+        "tipos": [
+          "Ghost",
+          "Flying"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#773",
+    "formas": [
+      {
+        "id": "SILVALLY",
+        "nome": "Tipo: Normal",
+        "tipos": [
+          "Normal"
+        ]
+      },
+      {
+        "id": "SILVALLY_BUG",
+        "nome": "Tipo: Inseto",
+        "tipos": [
+          "Bug"
+        ]
+      },
+      {
+        "id": "SILVALLY_DARK",
+        "nome": "Tipo: Sombrio",
+        "tipos": [
+          "Dark"
+        ]
+      },
+      {
+        "id": "SILVALLY_DRAGON",
+        "nome": "Tipo: Dragão",
+        "tipos": [
+          "Dragon"
+        ]
+      },
+      {
+        "id": "SILVALLY_ELECTRIC",
+        "nome": "Tipo: Elétrico",
+        "tipos": [
+          "Electric"
+        ]
+      },
+      {
+        "id": "SILVALLY_FAIRY",
+        "nome": "Tipo: Fada",
+        "tipos": [
+          "Fairy"
+        ]
+      },
+      {
+        "id": "SILVALLY_FIGHTING",
+        "nome": "Tipo: Lutador",
+        "tipos": [
+          "Fighting"
+        ]
+      },
+      {
+        "id": "SILVALLY_FIRE",
+        "nome": "Tipo: Fogo",
+        "tipos": [
+          "Fire"
+        ]
+      },
+      {
+        "id": "SILVALLY_FLYING",
+        "nome": "Tipo: Voador",
+        "tipos": [
+          "Flying"
+        ]
+      },
+      {
+        "id": "SILVALLY_GHOST",
+        "nome": "Tipo: Fantasma",
+        "tipos": [
+          "Ghost"
+        ]
+      },
+      {
+        "id": "SILVALLY_GRASS",
+        "nome": "Tipo: Planta",
+        "tipos": [
+          "Grass"
+        ]
+      },
+      {
+        "id": "SILVALLY_GROUND",
+        "nome": "Tipo: Terrestre",
+        "tipos": [
+          "Ground"
+        ]
+      },
+      {
+        "id": "SILVALLY_ICE",
+        "nome": "Tipo: Gelo",
+        "tipos": [
+          "Ice"
+        ]
+      },
+      {
+        "id": "SILVALLY_POISON",
+        "nome": "Tipo: Venenoso",
+        "tipos": [
+          "Poison"
+        ]
+      },
+      {
+        "id": "SILVALLY_PSYCHIC",
+        "nome": "Tipo: Psíquico",
+        "tipos": [
+          "Psychic"
+        ]
+      },
+      {
+        "id": "SILVALLY_ROCK",
+        "nome": "Tipo: Pedra",
+        "tipos": [
+          "Rock"
+        ]
+      },
+      {
+        "id": "SILVALLY_STEEL",
+        "nome": "Tipo: Aço",
+        "tipos": [
+          "Steel"
+        ]
+      },
+      {
+        "id": "SILVALLY_WATER",
+        "nome": "Tipo: Água",
+        "tipos": [
+          "Water"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#800",
+    "formas": [
+      {
+        "id": "NECROZMA",
+        "nome": "Necrozma",
+        "tipos": [
+          "Psychic"
+        ]
+      },
+      {
+        "id": "NECROZMA_DAWN_WINGS",
+        "nome": "Asas Alvorada",
+        "tipos": [
+          "Psychic",
+          "Ghost"
+        ]
+      },
+      {
+        "id": "NECROZMA_DUSK_MANE",
+        "nome": "Juba Crepúsculo",
+        "tipos": [
+          "Psychic",
+          "Steel"
+        ]
+      },
+      {
+        "id": "NECROZMA_ULTRA",
+        "nome": "Ultra Necrozma",
+        "tipos": [
+          "Psychic",
+          "Dragon"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#888",
+    "formas": [
+      {
+        "id": "ZACIAN_CROWNED_SWORD",
+        "nome": "Espada Coroada",
+        "tipos": [
+          "Fairy",
+          "Steel"
+        ]
+      },
+      {
+        "id": "ZACIAN_HERO",
+        "nome": "Herói Veterano",
+        "tipos": [
+          "Fairy"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#889",
+    "formas": [
+      {
+        "id": "ZAMAZENTA_CROWNED_SHIELD",
+        "nome": "Escudo Coroado",
+        "tipos": [
+          "Fighting",
+          "Steel"
+        ]
+      },
+      {
+        "id": "ZAMAZENTA_HERO",
+        "nome": "Herói Veterano",
+        "tipos": [
+          "Fighting"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#892",
+    "formas": [
+      {
+        "id": "URSHIFU_RAPID_STRIKE",
+        "nome": "Estilo Golpe Fluido",
+        "tipos": [
+          "Fighting",
+          "Water"
+        ]
+      },
+      {
+        "id": "URSHIFU_SINGLE_STRIKE",
+        "nome": "Estilo Golpe Decisivo",
+        "tipos": [
+          "Fighting",
+          "Dark"
+        ]
+      }
+    ]
+  },
+  {
+    "numeroBase": "#898",
+    "formas": [
+      {
+        "id": "CALYREX",
+        "nome": "Calyrex",
+        "tipos": [
+          "Psychic",
+          "Grass"
+        ]
+      },
+      {
+        "id": "CALYREX_ICE_RIDER",
+        "nome": "Cavaleiro Glacial",
+        "tipos": [
+          "Psychic",
+          "Ice"
+        ]
+      }
+    ]
+  }
+]

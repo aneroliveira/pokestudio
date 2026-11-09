@@ -10,6 +10,7 @@
     "gen:index": "tsx scripts/gerarIndice.ts",
     "gen:go-stats": "tsx scripts/gerarGoStats.ts",
     "gen:megas": "tsx scripts/gerarMegas.ts",
+    "gen:formas-combate": "tsx scripts/gerarFormasCombate.ts",
     "gen:movimentos": "tsx scripts/gerarMovimentosGO.ts"
   },
   "dependencies": {
