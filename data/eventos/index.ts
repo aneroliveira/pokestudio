@@ -41,6 +41,10 @@ import { megaMetagross } from "./mega-metagross";
 import { chuvaDeMiniorGeminidas } from "./chuva-de-minior-geminidas";
 import { goTourAlolaGlobal } from "./go-tour-alola-global";
 import { pesquisaMachampGigamax } from "./pesquisa-machamp-gigamax";
+import { diaDeBatalhasMaxDezembro } from "./dia-de-batalhas-max-dezembro";
+import { communityDayDezembro } from "./community-day-dezembro";
+import { diaDeReidesDezembro } from "./dia-de-reides-dezembro";
+import { diaDeChocarDezembro } from "./dia-de-chocar-dezembro";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
 export const EVENTOS: Evento[] = [
@@ -86,6 +90,10 @@ export const EVENTOS: Evento[] = [
   chuvaDeMiniorGeminidas,
   goTourAlolaGlobal,
   pesquisaMachampGigamax,
+  diaDeBatalhasMaxDezembro,
+  communityDayDezembro,
+  diaDeReidesDezembro,
+  diaDeChocarDezembro,
 ];
 
 export function buscarEvento(slug: string): Evento | undefined {
