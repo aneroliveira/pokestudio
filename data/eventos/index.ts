@@ -45,6 +45,13 @@ import { diaDeBatalhasMaxDezembro } from "./dia-de-batalhas-max-dezembro";
 import { communityDayDezembro } from "./community-day-dezembro";
 import { diaDeReidesDezembro } from "./dia-de-reides-dezembro";
 import { diaDeChocarDezembro } from "./dia-de-chocar-dezembro";
+import { communityDayClassicoJaneiro } from "./community-day-classico-janeiro";
+import { superMegaRaidDayJaneiro } from "./super-mega-raid-day-janeiro";
+import { communityDayJaneiro } from "./community-day-janeiro";
+import { diaDeBatalhasMaxJaneiro } from "./dia-de-batalhas-max-janeiro";
+import { superMegaRaidDayJaneiro30 } from "./super-mega-raid-day-janeiro-30";
+import { communityDayFevereiro } from "./community-day-fevereiro";
+import { diaDeReidesFevereiro } from "./dia-de-reides-fevereiro";
 
 /** Registro de todos os eventos. Um evento novo só precisa entrar aqui. */
 export const EVENTOS: Evento[] = [
@@ -94,6 +101,13 @@ export const EVENTOS: Evento[] = [
   communityDayDezembro,
   diaDeReidesDezembro,
   diaDeChocarDezembro,
+  communityDayClassicoJaneiro,
+  superMegaRaidDayJaneiro,
+  communityDayJaneiro,
+  diaDeBatalhasMaxJaneiro,
+  superMegaRaidDayJaneiro30,
+  communityDayFevereiro,
+  diaDeReidesFevereiro,
 ];
 
 export function buscarEvento(slug: string): Evento | undefined {
