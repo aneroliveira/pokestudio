@@ -8,6 +8,8 @@ import type { Evento } from "@/models/evento";
  * curados manualmente (sem ícone Gigantamax do Duraludon no CDN, usa o base).
  * Celebração no Brasil: pokemongo.com/pt_BR/news/gowa-global-2026-brazil
  * (03/11 — o corpo do post ainda diz 2025 nas datas, erro do próprio post).
+ * Atualizado em 10/11 com Ovos de 10 km, medalhas da Pesquisa Especial e
+ * a confirmação de que os chefes ficam o dia todo (sem Hora de Reide).
  */
 export const areaSelvagemGlobal: Evento = {
   slug: "area-selvagem-global",
@@ -33,6 +35,7 @@ export const areaSelvagemGlobal: Evento = {
     { nome: "Gible", tipos: ["Dragon", "Ground"], nota: "Horas \"Ousados como Dragões\" (11h, 13h, 15h e 17h), com Dratini, Bagon, Deino, Goomy, Jangmo-o, Frigibax e outros Dragão.", shiny: true },
     { nome: "Metagross poderoso", tipos: ["Steel", "Psychic"], nota: "Pokémon poderoso de sábado (mais chance de IV alto e XL/XXL). Evoluído no evento aprende Soco Meteoro." },
     { nome: "Hydreigon poderoso", tipos: ["Dark", "Dragon"], nota: "Pokémon poderoso de domingo. Evoluído no evento aprende Balanço Brutal." },
+    { nome: "Duraludon", tipos: ["Steel", "Dragon"], nota: "Ovo de 10 km, junto com Honedge, Klefki e Drampa (ingresso aumenta a chance de Ovos de 10 km).", shiny: true },
   ],
   reides: [
     {
@@ -47,7 +50,7 @@ export const areaSelvagemGlobal: Evento = {
       ],
     },
     {
-      nivel: "5 estrelas — Sábado, 14/11",
+      nivel: "5 estrelas — Sábado, 14/11 (o dia todo, 10h–18h)",
       chefes: [
         {
           nome: "Zekrom",
@@ -64,7 +67,7 @@ export const areaSelvagemGlobal: Evento = {
       ],
     },
     {
-      nivel: "5 estrelas — Domingo, 15/11",
+      nivel: "5 estrelas — Domingo, 15/11 (o dia todo, 10h–18h)",
       chefes: [
         {
           nome: "Reshiram",
@@ -106,7 +109,7 @@ export const areaSelvagemGlobal: Evento = {
   ],
   notaCuradoria: {
     texto:
-      "Prioridade máxima pro Kyurem: Zekrom (sábado) dá Energia Voltaica e Reshiram (domingo) dá Incandescente — o Black está em 505/1.000 e o White em 355/1.000. As reides de Kyurem Branco/Negro também dão Energia de Fusão, e Kyurem de reide pode vir com Glaciar, o que economiza a MT Elite reservada pra isso. Grátis pra todos (10h–18h): até 3 Passes de Reide por dia, Safári Bolas, limite de Partículas Max 1.600 e Jogo em Grupo de 8h. Com ingresso: até 6 passes por dia, 2× Doce, Incenso em dobro, partículas até 3.200, mais Ovos de 10 km e até 6 Trocas Especiais com metade da Poeira. Reide Remota sem limite nos dois dias (vem da Natureza Selvagem). No Brasil: celebração oficial em São Paulo (Pavilhão Japonês, Parque Ibirapuera, 10h–18h), com Pontos de Energia e Ginásios extras no local e itens Premium no check-in do Campfire, e encontros das Comunidades Oficiais em ~100 lugares (BH, Curitiba, Manaus, Porto Alegre, Rio…).",
+      "Prioridade máxima pro Kyurem: Zekrom (sábado) dá Energia Voltaica e Reshiram (domingo) dá Incandescente — o Black está em 505/1.000 e o White em 355/1.000. As reides de Kyurem Branco/Negro também dão Energia de Fusão, e Kyurem de reide pode vir com Glaciar, o que economiza a MT Elite reservada pra isso. Grátis pra todos (10h–18h): até 3 Passes de Reide por dia, Safári Bolas, limite de Partículas Max 1.600 e Jogo em Grupo de 8h. Com ingresso: até 6 passes por dia, 2× Doce, Incenso em dobro, partículas até 3.200, mais Ovos de 10 km e até 6 Trocas Especiais com metade da Poeira. Reide Remota sem limite nos dois dias (vem da Natureza Selvagem). No Brasil: celebração oficial em São Paulo (Pavilhão Japonês, Parque Ibirapuera, 10h–18h), com Pontos de Energia e Ginásios extras no local e itens Premium no check-in do Campfire, e encontros das Comunidades Oficiais em ~100 lugares (BH, Curitiba, Manaus, Porto Alegre, Rio…). Reides e Batalhas Max não têm Hora de Reide: os chefes de cada dia ficam das 10h às 18h. Com ingresso, a medalha do caminho escolhido (Aço ou Dragão) dá +1 Doce GG e +1.000 Poeira por Pokémon poderoso daquele tipo (nível 31+) até 15/11 às 18h.",
     linkPlano: true,
   },
 };

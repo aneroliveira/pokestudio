@@ -6,7 +6,9 @@ import type { Evento } from "@/models/evento";
  * aquecimento da Área Selvagem GO 2026: Global. O evento vai até 13/11, mas
  * bônus, GO Pass e Caixa Misteriosa seguem até 15/11 às 18h. Nenhum chefe
  * está no roster de Megas — sprites curados manualmente (Orthworm não tem
- * ícone no CDN ainda). Completado em 03/11 com o guia do canal Pokémon Go
+ * ícone no CDN ainda). Atualizado em 10/11 com as tarefas de Pesquisa de Campo, o Desafio
+ * de Coleção e os outros selvagens frequentes (Leek Duck). Completado em
+ * 03/11 com o guia do canal Pokémon Go
  * Brasil (WhatsApp), que bate com o Leek Duck: Batalhas Max de Ralts e
  * Machop, requisitos das formas Coroadas e o acesso antecipado ao GO Pass
  * das Trilhas Dinamax (confirmado no post oficial delas).
@@ -32,6 +34,15 @@ export const naturezaSelvagem: Evento = {
     { nome: "Magnemite", tipos: ["Electric", "Steel"], nota: "Selvagem, mais frequente, com shiny.", shiny: true },
     { nome: "Noibat", tipos: ["Flying", "Dragon"], nota: "Selvagem, mais frequente, com shiny.", shiny: true },
     { nome: "Togedemaru", tipos: ["Electric", "Steel"], nota: "Selvagem, mais frequente, com shiny.", shiny: true },
+    { nome: "Meowth de Galar", tipos: ["Steel"], nota: "Selvagem, mais frequente." },
+    { nome: "Aron", tipos: ["Steel", "Rock"], nota: "Selvagem, mais frequente." },
+    { nome: "Mawile", tipos: ["Steel", "Fairy"], nota: "Selvagem, mais frequente." },
+    { nome: "Scyther", tipos: ["Bug", "Flying"], nota: "Selvagem, mais frequente." },
+    { nome: "Mareep", tipos: ["Electric"], nota: "Selvagem, mais frequente." },
+    { nome: "Dratini", tipos: ["Dragon"], nota: "Selvagem, mais frequente." },
+    { nome: "Bagon", tipos: ["Dragon"], nota: "Selvagem, mais frequente." },
+    { nome: "Horsea", tipos: ["Water"], nota: "Selvagem, mais frequente." },
+    { nome: "Skrelp", tipos: ["Poison", "Water"], nota: "Selvagem, mais frequente." },
   ],
   reides: [
     {
@@ -47,7 +58,7 @@ export const naturezaSelvagem: Evento = {
       ],
     },
     {
-      nivel: "5 estrelas — Horas de Reide 18h–19h: Zacian em 09/11, Zamazenta em 10/11",
+      nivel: "5 estrelas — os dois a semana toda · Horas de Reide 18h–19h: Zacian 09/11, Zamazenta 10/11",
       chefes: [
         {
           nome: "Zacian Espada Coroada",
@@ -112,7 +123,7 @@ export const naturezaSelvagem: Evento = {
   ],
   notaCuradoria: {
     texto:
-      "Prioridade alta: derrotar Zacian Espada Coroada dá Energia Espada Coroada — o Zacian 2628 da reserva tem 0/1.000 e é o que trava a Forma Coroada (Fada \"subnivelado\" no plano). Zamazenta Escudo Coroado dá a energia do escudo. A captura depois da reide é da forma Herói — pra virar Coroada precisa de 1.000 de energia + 30 Doces, e o golpe carregado vira Cabeça de Ferro. Machop Dinamax (2 estrelas) é o que vale farmar: Machamp Dinamax é a resposta pra Dialga e Duraludon nas Batalhas Max da Área Selvagem. Limite de Reide Remota 30 de 09/11 a 13/11 e ilimitado em 14–15/11. Moeda (Gimmighoul) e Caixa Misteriosa (Meltan) com chance de shiny, e a caixa reabre mais rápido. GO Pass Deluxe (US$14,99) traz Tampinha Prateada (não serve em Sombrosos), +5.000 XP em reides e Batalhas Max e +1 Doce/Doce XL. Resgatar o rank 1 deste GO Pass dá acesso antecipado (14/11, 10h) e upgrade grátis pro Deluxe do GO Pass: Trilhas Dinamax. Sem Descobertas Diárias de 09/11 a 15/11.",
+      "Prioridade alta: derrotar Zacian Espada Coroada dá Energia Espada Coroada — o Zacian 2628 da reserva tem 0/1.000 e é o que trava a Forma Coroada (Fada \"subnivelado\" no plano). Zamazenta Escudo Coroado dá a energia do escudo. A captura depois da reide é da forma Herói — pra virar Coroada precisa de 1.000 de energia + 30 Doces, e o golpe carregado vira Cabeça de Ferro. Machop Dinamax (2 estrelas) é o que vale farmar: Machamp Dinamax é a resposta pra Dialga e Duraludon nas Batalhas Max da Área Selvagem. Limite de Reide Remota 30 de 09/11 a 13/11 e ilimitado em 14–15/11. Moeda (Gimmighoul) e Caixa Misteriosa (Meltan) com chance de shiny, e a caixa reabre mais rápido. GO Pass Deluxe (US$14,99) traz Tampinha Prateada (não serve em Sombrosos), +5.000 XP em reides e Batalhas Max e +1 Doce/Doce XL. Resgatar o rank 1 deste GO Pass dá acesso antecipado (14/11, 10h) e upgrade grátis pro Deluxe do GO Pass: Trilhas Dinamax. Sem Descobertas Diárias de 09/11 a 15/11. Pesquisa de Campo: capturar Machop Dinamax ou Ralts Dinamax dá 25 Doces da espécie + 5.000 Poeira cada; vencer reide dá Dratini, Scyther ou 2 Doces Raros. Desafio de Coleção (Magnemite, Aron, Noibat, Mareep, Meowth de Galar, Skrelp, Togedemaru, Mawile, Scyther, Bagon, Horsea e Dratini) dá Ralts Dinamax + 5.000 XP + 5.000 Poeira. Captura de reide ou Batalha Max de 5 estrelas pode vir com Fundo Especial.",
     linkPlano: true,
   },
 };
