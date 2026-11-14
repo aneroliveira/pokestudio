@@ -11,6 +11,7 @@ import { ChipsRecentes } from "@/components/pokemon/ChipsRecentes";
 import { PokemonCardSkeleton } from "@/components/pokemon/PokemonCardSkeleton";
 import { PokedexGrid } from "@/components/pokemon/PokedexGrid";
 import { FiltrosPoGo } from "@/components/filtros/FiltrosPoGo";
+import { TiposView } from "@/components/tipos/TiposView";
 import { NavegacaoVizinhos } from "@/components/pokemon/NavegacaoVizinhos";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Tabs } from "@/components/ui/Tabs";
@@ -37,7 +38,7 @@ import { MEGAS } from "@/services/pokemon/recomendarMega";
 import { GIGANTAMAX } from "@/services/pokemon/gigantamax";
 import { idDoNumero } from "@/utils";
 
-const ABAS = ["Buscar", "Pokédex", "Filtros PoGo"] as const;
+const ABAS = ["Buscar", "Pokédex", "Filtros PoGo", "Tipos"] as const;
 type Aba = (typeof ABAS)[number];
 
 /** Seletor da Pokédex: troca a grade pra versão brilhante, só Megas ou só
@@ -349,6 +350,8 @@ export default function Home() {
           )
         ) : aba === "Filtros PoGo" ? (
           <FiltrosPoGo />
+        ) : aba === "Tipos" ? (
+          <TiposView />
         ) : (
           <>
             <div className="md:sticky md:top-16 md:z-30 md:pb-2 md:backdrop-blur-md">

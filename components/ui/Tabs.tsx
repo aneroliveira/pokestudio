@@ -14,7 +14,9 @@ export function Tabs<T extends string>({
   return (
     <div
       role="tablist"
-      className="flex flex-wrap gap-1 border-b border-border"
+      // Uma linha só: se não couber (celular com 4 abas), rola pro lado em
+      // vez de quebrar — quebrar deixava uma aba sozinha na linha de baixo.
+      className="flex gap-0 overflow-x-auto border-b border-border [scrollbar-width:none] sm:gap-1"
     >
       {abas.map((aba) => {
         const selecionada = aba === ativa;
@@ -27,7 +29,7 @@ export function Tabs<T extends string>({
             role="tab"
             aria-selected={selecionada}
             onClick={() => onChange(aba)}
-            className={`-mb-px flex items-center gap-1.5 border-b-2 px-4 py-2 text-sm font-medium transition ${
+            className={`-mb-px flex shrink-0 items-center gap-1.5 whitespace-nowrap border-b-2 px-3 py-2 text-sm font-medium transition sm:px-4 ${
               selecionada
                 ? "border-primary text-primary"
                 : "border-transparent text-muted-foreground hover:text-foreground"
