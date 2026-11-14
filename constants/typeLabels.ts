@@ -16,7 +16,7 @@ export const TIPO_LABEL: Record<TipoPokemon, string> = {
   Flying: "Voador",
   Ghost: "Fantasma",
   Grass: "Planta",
-  Ground: "Terra",
+  Ground: "Terrestre",
   Ice: "Gelo",
   Normal: "Normal",
   Poison: "Venenoso",

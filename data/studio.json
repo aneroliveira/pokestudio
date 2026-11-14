@@ -178,7 +178,7 @@
         }
       ],
       "observacoes": [
-        "Água é um dos tipos mais buscados para raids (fraqueza comum a Fogo/Terra/Pedra).",
+        "Água é um dos tipos mais buscados para raids (fraqueza comum a Fogo/Terrestre/Pedra).",
         "Guarde exemplares 100% ou 96%+ também para Liga Mestre em PvP.",
         "Sem doce fácil via captura selvagem — só em raids/eventos especiais."
       ],
@@ -251,7 +251,7 @@
       "observacoes": [
         "Bom substituto de Aço quando faltar acesso a Dialga/Melmetal.",
         "Na Liga Mestre ele resiste a Dragão e Fada e devolve com Meteoro Esmagador, mas precisa do XL até o 50 para não ficar pequeno diante dos lendários.",
-        "Só Fogo, Terra, Fantasma e Sombrio passam por ele: fora esses quatro, o par Aço/Psíquico resiste ou ignora dez tipos e entra em quase qualquer raid."
+        "Só Fogo, Terrestre, Fantasma e Sombrio passam por ele: fora esses quatro, o par Aço/Psíquico resiste ou ignora dez tipos e entra em quase qualquer raid."
       ],
       "sinergias": [
         "Mega Metagross",
@@ -297,7 +297,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Um dos melhores atacantes Dragão/Terra disponíveis fora de lendários."
+          "motivo": "Um dos melhores atacantes Dragão/Terrestre disponíveis fora de lendários."
         },
         {
           "titulo": "Vale maximizar",
@@ -320,9 +320,9 @@
         }
       ],
       "observacoes": [
-        "Cobre Terra e Dragão ao mesmo tempo — útil em raids com fraqueza dupla.",
-        "Na Liga Mestre ele é o Dragão/Terra de entrada: bulk 193/239 aguenta troca e Poder da Terra, que é legado, resolve os Aço que travam Ultraje.",
-        "Mega Garchomp sobe o ataque de 261 para 339 mantendo Dragão/Terra, então um exemplar de IV alto serve também de Mega para o grupo."
+        "Cobre Terrestre e Dragão ao mesmo tempo — útil em raids com fraqueza dupla.",
+        "Na Liga Mestre ele é o Dragão/Terrestre de entrada: bulk 193/239 aguenta troca e Poder da Terra, que é legado, resolve os Aço que travam Ultraje.",
+        "Mega Garchomp sobe o ataque de 261 para 339 mantendo Dragão/Terrestre, então um exemplar de IV alto serve também de Mega para o grupo."
       ],
       "sinergias": [
         "Mega Garchomp",
@@ -372,7 +372,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "sim",
-          "motivo": "Só duas fraquezas (Lutador e Terra) e 4565 de CP no nível 50: o XL aqui compra sobrevivência real na Master, além do dano em raid."
+          "motivo": "Só duas fraquezas (Lutador e Terrestre) e 4565 de CP no nível 50: o XL aqui compra sobrevivência real na Master, além do dano em raid."
         },
         {
           "titulo": "Vale Buddy",
@@ -437,7 +437,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Um dos melhores atacantes Terra, com acesso fácil via Drilbur em eventos."
+          "motivo": "Um dos melhores atacantes Terrestre, com acesso fácil via Drilbur em eventos."
         },
         {
           "titulo": "Vale maximizar",
@@ -811,7 +811,7 @@
       "observacoes": [
         "Evolui de Meltan com 400 doces — normalmente via Caixa Místico.",
         "O único rápido dele é Trovoada de Choques, que não é Aço: o dano de tipo sai todo do carregado, e por isso Pancada de Ferro Dupla pesa tanto.",
-        "Aço resiste a dez tipos, ignora Veneno e só cai para Fogo, Lutador e Terra: com bulk 190/264 ele aguenta as trocas longas da Liga Mestre."
+        "Aço resiste a dez tipos, ignora Veneno e só cai para Fogo, Lutador e Terrestre: com bulk 190/264 ele aguenta as trocas longas da Liga Mestre."
       ],
       "sinergias": [
         "Metagross",
@@ -997,7 +997,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Forte atacante Terra/Voador, cobre bem Elétrico, Veneno, Pedra e Aço."
+          "motivo": "Forte atacante Terrestre/Voador, cobre bem Elétrico, Veneno, Pedra e Aço."
         },
         {
           "titulo": "Vale maximizar",
@@ -1020,8 +1020,8 @@
         }
       ],
       "observacoes": [
-        "Imune a Elétrico e a Terra e só leva dano quádruplo de Gelo: entra de graça em Elétrico, mas foge de Gelo e Água.",
-        "Ataque 261 fica a um passo de Groudon (270): em raid de Terra ele ocupa a segunda vaga sem perda perceptível de dano.",
+        "Imune a Elétrico e a Terrestre e só leva dano quádruplo de Gelo: entra de graça em Elétrico, mas foge de Gelo e Água.",
+        "Ataque 261 fica a um passo de Groudon (270): em raid de Terrestre ele ocupa a segunda vaga sem perda perceptível de dano.",
         "Tiro de Lama enche energia rápido e Poder da Terra fecha o dano; Deslize de Pedras é a cobertura para Voador e Gelo."
       ],
       "sinergias": [
@@ -1067,17 +1067,17 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Um dos melhores atacantes de Terra do jogo."
+          "motivo": "Um dos melhores atacantes de Terrestre do jogo."
         },
         {
           "titulo": "Vale maximizar",
           "status": "sim",
-          "motivo": "Nível 50 rende duas vezes nele: como atacante de Terra em raid e na Liga Mestre, sem cap, e também como base da forma Primal."
+          "motivo": "Nível 50 rende duas vezes nele: como atacante de Terrestre em raid e na Liga Mestre, sem cap, e também como base da forma Primal."
         },
         {
           "titulo": "Vale Buddy",
           "status": "sim",
-          "motivo": "Caminhar tem destino claro nele: os níveis 41-50 do atacante de Terra, até 4652 de CP, e a Primal herda o nível que você pagou em XL."
+          "motivo": "Caminhar tem destino claro nele: os níveis 41-50 do atacante de Terrestre, até 4652 de CP, e a Primal herda o nível que você pagou em XL."
         },
         {
           "titulo": "Vale Elite TM",
@@ -1091,8 +1091,8 @@
       ],
       "observacoes": [
         "A forma Primal (Mega-equivalente) é ainda mais forte — já aparece na seção 'Melhor Mega contra'.",
-        "Ataque 270 com Lâmina Abissal (legado) o coloca à frente de Rhyperior e Excadrill como Terra de raid; sem o legado, Terremoto comum dá conta.",
-        "Terra puro tem só três fraquezas (Água, Grama e Gelo) e é imune a Elétrico: com bulk 228/205 ele fica em quadra até o fim da raid."
+        "Ataque 270 com Lâmina Abissal (legado) o coloca à frente de Rhyperior e Excadrill como Terrestre de raid; sem o legado, Terremoto comum dá conta.",
+        "Terrestre puro tem só três fraquezas (Água, Grama e Gelo) e é imune a Elétrico: com bulk 228/205 ele fica em quadra até o fim da raid."
       ],
       "sinergias": [
         "Rhyperior",
@@ -1161,7 +1161,7 @@
       ],
       "observacoes": [
         "Xurkitree bate mais forte (330 de ataque contra 275), mas com defesa 144 desmaia rápido; Zekrom troca um pouco de dano por bem mais bulk.",
-        "Elétrico/Dragão soma quatro fraquezas (Terra, Gelo, Dragão e Fada): o bulk ajuda, mas contra chefe de Terra ou Gelo ele não é a escolha.",
+        "Elétrico/Dragão soma quatro fraquezas (Terrestre, Gelo, Dragão e Fada): o bulk ajuda, mas contra chefe de Terrestre ou Gelo ele não é a escolha.",
         "Sopro do Dragão é o fast que sustenta o dano; escolha Ataque Selvagem para chefe de Água ou Voador e Ultraje quando o alvo for Dragão."
       ],
       "sinergias": [
@@ -1231,7 +1231,7 @@
       ],
       "observacoes": [
         "Com ataque 275 ele ocupa duas vagas em uma: serve de Fogo contra chefe de Gelo, Aço, Grama e Inseto e de Dragão contra chefe Dragão.",
-        "Fogo/Dragão o deixa neutro a Gelo e a Fada e fraco só a Terra, Pedra e Dragão: sobrevive bem mais que um Dragão puro em raid.",
+        "Fogo/Dragão o deixa neutro a Gelo e a Fada e fraco só a Terrestre, Pedra e Dragão: sobrevive bem mais que um Dragão puro em raid.",
         "Chama da Fusão é o único legado dele; sem ele, Presas de Fogo + Superaquecimento sai por TM comum e já resolve as raids de Fogo."
       ],
       "sinergias": [
@@ -1302,7 +1302,7 @@
       "observacoes": [
         "Bom substituto de Sombrio em raids de Psíquico e Fantasma.",
         "Rosnado e Pulso Sombrio saem por TM comum; Asa do Esquecimento é legado, mas é golpe Voador e não melhora o papel de Sombrio dele.",
-        "Sombrio/Voador não toma dano de Terra nem de Psíquico, mas leva dobrado de Elétrico, Gelo, Pedra e Fada: não escale ele contra chefe Gelo."
+        "Sombrio/Voador não toma dano de Terrestre nem de Psíquico, mas leva dobrado de Elétrico, Gelo, Pedra e Fada: não escale ele contra chefe Gelo."
       ],
       "sinergias": [
         "Tyranitar",
@@ -1417,7 +1417,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Um dos melhores atacantes Terra/Pedra, cobre Fogo, Elétrico, Veneno, Pedra, Voador e Aço."
+          "motivo": "Um dos melhores atacantes Terrestre/Pedra, cobre Fogo, Elétrico, Veneno, Pedra, Voador e Aço."
         },
         {
           "titulo": "Vale maximizar",
@@ -1440,9 +1440,9 @@
         }
       ],
       "observacoes": [
-        "Pancada com Demolidor de Pedras é o kit que vale investir; Tapa de Lama com Terremoto fica para chefe fraco a Terra.",
+        "Pancada com Demolidor de Pedras é o kit que vale investir; Tapa de Lama com Terremoto fica para chefe fraco a Terrestre.",
         "Leva dano dobrado duas vezes de Água e de Grama: contra chefe desses tipos ele derrete, então reserve-o para Fogo, Elétrico, Pedra e Aço.",
-        "Sem Demolidor de Pedras ele vira um atacante de Terra a mais, e aí Excadrill e Garchomp entregam o mesmo por menos investimento."
+        "Sem Demolidor de Pedras ele vira um atacante de Terrestre a mais, e aí Excadrill e Garchomp entregam o mesmo por menos investimento."
       ],
       "sinergias": [
         "Garchomp",
@@ -1488,7 +1488,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Bom atacante Água/Terra, com Mega disponível para ainda mais dano."
+          "motivo": "Bom atacante Água/Terrestre, com Mega disponível para ainda mais dano."
         },
         {
           "titulo": "Vale maximizar",
@@ -1653,7 +1653,7 @@
       ],
       "observacoes": [
         "A Mega Gyarados vira Água/Sombrio com 292 de ataque e 247 de defesa, e usa o nível do exemplar que você subir: é ela que justifica guardar um IV alto.",
-        "Como Água/Voador ele ignora Terra, mas Elétrico bate dobrado duas vezes e Pedra ainda acerta o lado Voador: não é resposta segura para chefe de Pedra.",
+        "Como Água/Voador ele ignora Terrestre, mas Elétrico bate dobrado duas vezes e Pedra ainda acerta o lado Voador: não é resposta segura para chefe de Pedra.",
         "Na Ultra a bulk 186/216 segura a troca, mas qualquer Elétrico ou Pedra na frente dele resolve a partida: use como quebra-gelo, não como âncora."
       ],
       "sinergias": [
@@ -1864,7 +1864,7 @@
         }
       ],
       "observacoes": [
-        "O mais fraco dos três lendários pássaros de Kanto como atacante, mas ainda útil em raids de Dragão/Terra.",
+        "O mais fraco dos três lendários pássaros de Kanto como atacante, mas ainda útil em raids de Dragão/Terrestre.",
         "Gelo/Voador leva dano dobrado duas vezes de Pedra e ainda sofre de Fogo, Aço e Elétrico: nunca escale ele contra chefe de Pedra.",
         "Na Ultra a bulk 236/207 compensa o ataque 192, e Pinote Triplo, que sai por TM comum, é o que sustenta o papel dele lá."
       ],
@@ -1937,7 +1937,7 @@
       "observacoes": [
         "Cobre bem Água e Voador em raids.",
         "Na Ultra a bulk 185/207 segura a troca e Bico Broca dá saída Voador contra Lutador e Grama, sem depender do kit Elétrico.",
-        "Elétrico/Voador tem só duas fraquezas (Pedra e Gelo) e é imune a Terra, o que o deixa confortável contra chefe de Água e Voador."
+        "Elétrico/Voador tem só duas fraquezas (Pedra e Gelo) e é imune a Terrestre, o que o deixa confortável contra chefe de Água e Voador."
       ],
       "sinergias": [
         "Zekrom",
@@ -2006,7 +2006,7 @@
       ],
       "observacoes": [
         "Bom substituto de Fogo quando faltar acesso a Reshiram/Entei.",
-        "Fogo/Voador ignora Terra e resiste duas vezes a Grama, mas Pedra bate dobrado nele: contra chefe de Pedra ele não fica em pé.",
+        "Fogo/Voador ignora Terrestre e resiste duas vezes a Grama, mas Pedra bate dobrado nele: contra chefe de Pedra ele não fica em pé.",
         "Com Ataque do Céu ele soma o papel de atacante Voador ao de Fogo, então um único exemplar cobre duas funções no time."
       ],
       "sinergias": [
@@ -2076,7 +2076,7 @@
       ],
       "observacoes": [
         "Ataque 241 com Troca Elétrica e Ataque Selvagem faz dele um Elétrico de raid confiável contra chefes de Água e Voador.",
-        "Elétrico puro tem uma única fraqueza (Terra) e resiste a Elétrico, Voador e Aço: entra em raid com pouco risco de ser derrubado.",
+        "Elétrico puro tem uma única fraqueza (Terrestre) e resiste a Elétrico, Voador e Aço: entra em raid com pouco risco de ser derrubado.",
         "Na Liga Mestre ele fura times de Água e Voador, mas o bulk 195/207 não segura dragão — use como resposta pontual."
       ],
       "sinergias": [
@@ -2146,7 +2146,7 @@
       ],
       "observacoes": [
         "Ataque 235 fica atrás de Reshiram (275) e da Mega Charizard Y (319): ele demora mais para derrubar o chefe, o que pesa em raid curta.",
-        "Fogo puro tem três fraquezas (Água, Terra e Pedra) e resiste a Fogo, Grama, Gelo, Inseto, Aço e Fada — serve bem contra chefes de Grama e Aço.",
+        "Fogo puro tem três fraquezas (Água, Terrestre e Pedra) e resiste a Fogo, Grama, Gelo, Inseto, Aço e Fada — serve bem contra chefes de Grama e Aço.",
         "Sem golpe legado no movepool, o kit comum é o teto dele; a defesa 171 também não segura trocas em PvP."
       ],
       "sinergias": [
@@ -2545,7 +2545,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Excelente atacante Água/Dragão, cobre Fogo, Terra, Pedra e o próprio Dragão."
+          "motivo": "Excelente atacante Água/Dragão, cobre Fogo, Terrestre, Pedra e o próprio Dragão."
         },
         {
           "titulo": "Vale maximizar",
@@ -2640,7 +2640,7 @@
       ],
       "observacoes": [
         "Resiste a Grama, Gelo, Voador, Inseto, Aço, Fada e mais — um dos tipos duplos mais defensivos do jogo.",
-        "A fraqueza dupla a Terra desmonta o resto: em ginásio ou em PvP, qualquer golpe de Terra o derruba antes de ele render o bulk que o tipo promete.",
+        "A fraqueza dupla a Terrestre desmonta o resto: em ginásio ou em PvP, qualquer golpe de Terrestre o derruba antes de ele render o bulk que o tipo promete.",
         "Ataque 251 com Chama Furacão e Tempestade de Magma é o uso mais honesto dele: atacante de Fogo em raid, não muralha de ginásio."
       ],
       "sinergias": [
@@ -2771,7 +2771,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "Nó de Grama é legado e só volta por MT Elite, cobrindo Água e Terra; mas Corte Psíquico com Explosão Lunar já dá conta sem gastar."
+          "motivo": "Nó de Grama é legado e só volta por MT Elite, cobrindo Água e Terrestre; mas Corte Psíquico com Explosão Lunar já dá conta sem gastar."
         },
         {
           "titulo": "Transferir",
@@ -2921,7 +2921,7 @@
       ],
       "observacoes": [
         "Aço/Psíquico resiste a nove tipos e é imune a Veneno, e Inseto e Lutador — que punem Aço ou Psíquico sozinhos — passam neutros nele.",
-        "Só quatro fraquezas (Fogo, Terra, Fantasma e Sombrio) com bulk 210/225: é isso que o sustenta como peça segura de Grande Liga.",
+        "Só quatro fraquezas (Fogo, Terrestre, Fantasma e Sombrio) com bulk 210/225: é isso que o sustenta como peça segura de Grande Liga.",
         "Ataque base 210 o tira de raid séria; o retorno dele vem de aguentar trocas longas com Confusão, não de fechar dano."
       ],
       "sinergias": [
@@ -3272,7 +3272,7 @@
       "observacoes": [
         "Tipagem Veneno/Dragão rara no jogo, boa opção de nicho contra Fada.",
         "Ataque 278 com bulk 192/268 é combinação rara: bate como lendário sem depender de troca rápida, então fecha raid longa de pé.",
-        "Leva dobrado só de Terra, Gelo, Dragão e Psíquico e resiste a sete tipos, Grama em dobro: contra chefe Fada ele bate forte e não toma nada extra."
+        "Leva dobrado só de Terrestre, Gelo, Dragão e Psíquico e resiste a sete tipos, Grama em dobro: contra chefe Fada ele bate forte e não toma nada extra."
       ],
       "sinergias": [
         "Zacian",
@@ -3317,7 +3317,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Bom atacante Sombrio/Grama, cobre Água, Terra, Pedra, Psíquico e Fantasma."
+          "motivo": "Bom atacante Sombrio/Grama, cobre Água, Terrestre, Pedra, Psíquico e Fantasma."
         },
         {
           "titulo": "Vale maximizar",
@@ -3413,7 +3413,7 @@
       "observacoes": [
         "Ataque 250 com defesa 125 e stamina 190: entrega dano Elétrico alto, mas é o primeiro a desmaiar na raid.",
         "Prisão Elétrica é legado; sem ela o carregado é Trovão ou Canhão Zap, e é esse kit fraco que impede o ataque 250 de virar dano de topo.",
-        "Elétrico só cai para Terra e resiste a Elétrico, Voador e Aço: dá para escalar sem medo contra chefe Voador."
+        "Elétrico só cai para Terrestre e resiste a Elétrico, Voador e Aço: dá para escalar sem medo contra chefe Voador."
       ],
       "sinergias": [
         "Zekrom",
@@ -3614,7 +3614,7 @@
         {
           "titulo": "Vale Elite TM",
           "status": "atencao",
-          "motivo": "O único legado é Terremoto; Mira, Canhão Zap e Explosão Focalizada saem por TM comum, então a TM só vale pela cobertura de Terra."
+          "motivo": "O único legado é Terremoto; Mira, Canhão Zap e Explosão Focalizada saem por TM comum, então a TM só vale pela cobertura de Terrestre."
         },
         {
           "titulo": "Transferir",
@@ -3623,7 +3623,7 @@
       ],
       "observacoes": [
         "Defesa altíssima o torna difícil de derrubar em ginásios e na Grande Liga.",
-        "Como Pedra puro ele tem cinco fraquezas (Água, Grama, Lutador, Terra e Aço) contra apenas quatro resistências (Normal, Fogo, Veneno e Voador).",
+        "Como Pedra puro ele tem cinco fraquezas (Água, Grama, Lutador, Terrestre e Aço) contra apenas quatro resistências (Normal, Fogo, Veneno e Voador).",
         "Ataque 179 dá saída fraca: ele ganha por atrito, com Gume de Pedra para pressionar e Explosão Focalizada contra Aço."
       ],
       "sinergias": [
@@ -3907,7 +3907,7 @@
       "observacoes": [
         "Mega Lucario leva o ataque de 236 para 310 e é a razão principal para guardar um exemplar de IV alto.",
         "Em Great e Ultra ele é atacante de pressão com Contra-atacar + Soco Turbo, mas defesa 144 faz uma troca errada acabar com ele na hora.",
-        "Lutador/Aço tem só três fraquezas (Fogo, Lutador e Terra) e resiste a oito tipos, mas bulk 144/172 não deixa aproveitar isso: ele é atacante."
+        "Lutador/Aço tem só três fraquezas (Fogo, Lutador e Terrestre) e resiste a oito tipos, mas bulk 144/172 não deixa aproveitar isso: ele é atacante."
       ],
       "sinergias": [
         "Mega Lucario",
@@ -4023,7 +4023,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Forte atacante Gelo/Terra, muito eficaz contra Dragão e Voador."
+          "motivo": "Forte atacante Gelo/Terrestre, muito eficaz contra Dragão e Voador."
         },
         {
           "titulo": "Vale maximizar",
@@ -4046,9 +4046,9 @@
         }
       ],
       "observacoes": [
-        "Neve em Pó com Avalanche é o kit de Gelo contra Dragão e Voador; Tapa de Lama com Potência Equina atende chefe fraco a Terra — escolha um papel por exemplar.",
+        "Neve em Pó com Avalanche é o kit de Gelo contra Dragão e Voador; Tapa de Lama com Potência Equina atende chefe fraco a Terrestre — escolha um papel por exemplar.",
         "Defesa 146 com cinco fraquezas (Fogo, Lutador, Aço, Água e Grama): a stamina 242 não compensa, ele sai da raid antes de entregar todo o dano.",
-        "Weavile bate mais forte como Gelo, mas o lado Terra é o diferencial dele: contra chefe de Aço ou Elétrico o Mamoswine resolve e o Weavile não."
+        "Weavile bate mais forte como Gelo, mas o lado Terrestre é o diferencial dele: contra chefe de Aço ou Elétrico o Mamoswine resolve e o Weavile não."
       ],
       "sinergias": [
         "Weavile",
@@ -4187,7 +4187,7 @@
       ],
       "observacoes": [
         "Pouco relevante em raids frente a outros atacantes Água.",
-        "Água/Aço resiste a dez tipos e é imune a Veneno; leva dobro só de Elétrico, Lutador e Terra, e é essa tipagem que sustenta o papel em PvP.",
+        "Água/Aço resiste a dez tipos e é imune a Veneno; leva dobro só de Elétrico, Lutador e Terrestre, e é essa tipagem que sustenta o papel em PvP.",
         "Hidro Canhão é legado: sem ele a saída de dano fica em Jato d'Água, caro de carregar, e ele vira muro lento sem pressão."
       ],
       "sinergias": [
@@ -4258,7 +4258,7 @@
       "observacoes": [
         "Ataque 222 o deixa atrás de Blaziken (240) em Fogo e de Conkeldurr (243) em Lutador: ele é segunda linha de raid, não carro-chefe.",
         "Queimadura Explosiva é legado e é o que salva o kit; com Lança-chamas ou Corpo-a-corpo comuns o dano de saída cai bastante.",
-        "Fogo/Lutador tem quatro fraquezas (Água, Terra, Voador e Psíquico) e Pedra passa neutro, mas defesa 151 já faz ele trocar mal em PvP."
+        "Fogo/Lutador tem quatro fraquezas (Água, Terrestre, Voador e Psíquico) e Pedra passa neutro, mas defesa 151 já faz ele trocar mal em PvP."
       ],
       "sinergias": [
         "Reshiram",
@@ -4327,7 +4327,7 @@
       ],
       "observacoes": [
         "O gargalo é o golpe rápido: só Trovoada de Choques como Elétrico, e Rasteira não ganha bônus de tipo nele, então o DPS real fica muito abaixo do que o ataque 249 sugere.",
-        "Defesa 163 e stamina 181 deixam ele frágil: mesmo com uma fraqueza só (Terra), cai rápido e você reentra várias vezes na raid.",
+        "Defesa 163 e stamina 181 deixam ele frágil: mesmo com uma fraqueza só (Terrestre), cai rápido e você reentra várias vezes na raid.",
         "Soco de Gelo dá cobertura contra Dragão e Voador quando falta atacante de Gelo, mas é remendo, não motivo para investir nele."
       ],
       "sinergias": [
@@ -4397,7 +4397,7 @@
         }
       ],
       "observacoes": [
-        "Elétrico/Aço resiste a onze tipos e é imune a Veneno, o que faz dele defensor de ginásio decente — mas Terra bate em quádruplo e derruba sozinha.",
+        "Elétrico/Aço resiste a onze tipos e é imune a Veneno, o que faz dele defensor de ginásio decente — mas Terrestre bate em quádruplo e derruba sozinha.",
         "Ataque 238 com Troca Elétrica + Ataque Selvagem o mantém como Elétrico confiável de raid contra Água e Voador, mesmo sem ser topo do tipo.",
         "Canhão de Flash dá a ele cobertura de Aço contra Gelo, Pedra e Fada, coisa rara num Elétrico."
       ],
@@ -5171,7 +5171,7 @@
       ],
       "observacoes": [
         "Resiste a Normal, Grama, Inseto, Fada e mais — clássico defensor de Grande Liga.",
-        "Só duas fraquezas (Fogo e Elétrico), com imunidade a Terra e Veneno: quase nenhum ataque comum passa dobrado por ele.",
+        "Só duas fraquezas (Fogo e Elétrico), com imunidade a Terrestre e Veneno: quase nenhum ataque comum passa dobrado por ele.",
         "Ataque base 148 é baixo: ele aguenta e força escudo, mas quem fecha a partida tem que ser o parceiro."
       ],
       "sinergias": [
@@ -5242,7 +5242,7 @@
       ],
       "observacoes": [
         "Pedra/Aço resiste a oito tipos e é imune a Veneno, e Fogo passa neutro: o que o Aço dobra, a Pedra corta.",
-        "Lutador e Terra batem em quádruplo e Água em dobro — três fraquezas só, mas quem tem uma delas encerra a troca na hora.",
+        "Lutador e Terrestre batem em quádruplo e Água em dobro — três fraquezas só, mas quem tem uma delas encerra a troca na hora.",
         "Ataque base 94 significa dano de saída quase nulo: ele ganha tempo e escudos, mas quem fecha a partida tem que ser outro do time."
       ],
       "sinergias": [
@@ -5312,7 +5312,7 @@
       ],
       "observacoes": [
         "Ataque 176 é baixo demais para raid; o valor dele está em PvP, onde ele usa o bulk 155/186 para forçar trocas.",
-        "Leva dano quádruplo de Pedra e dobrado de Água e Elétrico, mas é imune a Terra: bom para entrar em Terra, péssimo contra Pedra.",
+        "Leva dano quádruplo de Pedra e dobrado de Água e Elétrico, mas é imune a Terrestre: bom para entrar em Terrestre, péssimo contra Pedra.",
         "Incinerar é legado e é o que o torna jogável; com Bicada ou Chama Furacão ele não sustenta pressão na Grande Liga."
       ],
       "sinergias": [
@@ -5384,7 +5384,7 @@
       ],
       "observacoes": [
         "Planta Mortal + Bomba de Lodo é o moveset ideal tanto para PvP quanto para o Mega Venusaur em raids.",
-        "Chicote de Vinha como golpe rápido garante ciclo de energia veloz e cobre bem Água, Terra e Pedra na Grande Liga."
+        "Chicote de Vinha como golpe rápido garante ciclo de energia veloz e cobre bem Água, Terrestre e Pedra na Grande Liga."
       ],
       "sinergias": [
         "Registeel",
@@ -5524,7 +5524,7 @@
         }
       ],
       "observacoes": [
-        "Hidro Canhão + Raio Congelante cobre bem Dragão e Terra/Voador contra líderes da Equipe GO Rocket.",
+        "Hidro Canhão + Raio Congelante cobre bem Dragão e Terrestre/Voador contra líderes da Equipe GO Rocket.",
         "Não é prioridade para raids pesadas: existem atacantes de Água com DPS bem superior disponíveis."
       ],
       "sinergias": [
@@ -5595,7 +5595,7 @@
         }
       ],
       "observacoes": [
-        "Revólver d'Água + Escaldada é o padrão em PvP: ciclo de energia rápido com dano consistente contra Fogo e Terra.",
+        "Revólver d'Água + Escaldada é o padrão em PvP: ciclo de energia rápido com dano consistente contra Fogo e Terrestre.",
         "Ainda funciona como defensor de ginásio graças ao HP altíssimo, mesmo fora do topo do meta de raids."
       ],
       "sinergias": [
@@ -5804,7 +5804,7 @@
       ],
       "observacoes": [
         "Ataque 216 com bulk 219/163: mesmo com Folha Navalha, que é o melhor rápido dele, fica atrás de Mega Venusaur, Roserade e Tangrowth em raid de Grama.",
-        "Útil como contra rápido de baixo custo contra grunts da Equipe GO Rocket com Pokémon de Terra/Água/Pedra."
+        "Útil como contra rápido de baixo custo contra grunts da Equipe GO Rocket com Pokémon de Terrestre/Água/Pedra."
       ],
       "sinergias": [
         "Mega Venusaur",
@@ -6294,7 +6294,7 @@
         }
       ],
       "observacoes": [
-        "A dupla tipagem Fogo/Lutador soma muitas fraquezas (Água, Terra, Voador, Psíquico), tornando-o frágil apesar do ataque alto.",
+        "A dupla tipagem Fogo/Lutador soma muitas fraquezas (Água, Terrestre, Voador, Psíquico), tornando-o frágil apesar do ataque alto.",
         "Serve como atacante de Lutador contra líderes do Rocket que usam tipos Normal, Gelo ou Pedra."
       ],
       "sinergias": [
@@ -6641,7 +6641,7 @@
         }
       ],
       "observacoes": [
-        "Com Folhagem + Planta Mortal/Manilha Sombria cobre bem Água, Psíquico e Terra na Ultra Liga.",
+        "Com Folhagem + Planta Mortal/Manilha Sombria cobre bem Água, Psíquico e Terrestre na Ultra Liga.",
         "Evite usar em raids: perde em DPS para atacantes puros de Grama (Kartana) ou Fantasma (Giratina)."
       ],
       "sinergias": [
@@ -6710,8 +6710,8 @@
         }
       ],
       "observacoes": [
-        "Fogo/Sombrio resiste a 6 tipos (Fogo, Grama, Gelo, Fantasma, Sombrio e Aço) e é imune a Psíquico, com apenas 4 fraquezas (Água, Lutador, Terra e Pedra) — uma tipagem defensiva subestimada na Grande Liga.",
-        "Sofre contra os onipresentes Água/Terra (Swampert, Politoed), funcionando melhor como tech pick que carro-chefe."
+        "Fogo/Sombrio resiste a 6 tipos (Fogo, Grama, Gelo, Fantasma, Sombrio e Aço) e é imune a Psíquico, com apenas 4 fraquezas (Água, Lutador, Terrestre e Pedra) — uma tipagem defensiva subestimada na Grande Liga.",
+        "Sofre contra os onipresentes Água/Terrestre (Swampert, Politoed), funcionando melhor como tech pick que carro-chefe."
       ],
       "sinergias": [
         "Skarmory",
@@ -7111,7 +7111,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "Vale maximizar pensando na Grande Liga; para raids existem atacantes de Terra melhores, como Excadrill e Mamoswine."
+          "motivo": "Vale maximizar pensando na Grande Liga; para raids existem atacantes de Terrestre melhores, como Excadrill e Mamoswine."
         },
         {
           "titulo": "Vale Buddy",
@@ -7130,7 +7130,7 @@
       ],
       "observacoes": [
         "A tripla imunidade (Normal, Elétrico, Lutador) o torna um pick surpresa forte contra Registeel e afins na Grande Liga.",
-        "Como atacante de raid é uma opção honesta, mas perde em DPS puro de Terra para Excadrill e Mamoswine."
+        "Como atacante de raid é uma opção honesta, mas perde em DPS puro de Terrestre para Excadrill e Mamoswine."
       ],
       "sinergias": [
         "Registeel",
@@ -7182,7 +7182,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "sim",
-          "motivo": "Vale maximizar como atacante de Terra versátil para raids e batalhas contra o Rocket."
+          "motivo": "Vale maximizar como atacante de Terrestre versátil para raids e batalhas contra o Rocket."
         },
         {
           "titulo": "Vale Buddy",
@@ -7200,7 +7200,7 @@
         }
       ],
       "observacoes": [
-        "Terra/Sombrio cobre bem Venenoso, Fogo, Pedra e Fantasma, tornando-o um dos melhores generalistas contra o Time GO Rocket.",
+        "Terrestre/Sombrio cobre bem Venenoso, Fogo, Pedra e Fantasma, tornando-o um dos melhores generalistas contra o Time GO Rocket.",
         "Como atacante de raid rende bem contra Aço, Elétrico, Fogo, Pedra e Veneno, mesmo sem ser topo de tier."
       ],
       "sinergias": [
@@ -7221,7 +7221,7 @@
       },
       "buddy": {
         "necessario": true,
-        "objetivo": "Ganhar doces XL para maximizar como atacante de Terra/Sombrio versátil"
+        "objetivo": "Ganhar doces XL para maximizar como atacante de Terrestre/Sombrio versátil"
       },
       "hundos": {
         "semClima": 0,
@@ -7546,7 +7546,7 @@
       ],
       "observacoes": [
         "Ataque muito baixo faz dele um tanque puro, não um atacante — funciona para segurar turnos, não para causar dano.",
-        "Resiste a Fantasma, Sombrio e Grama, e é imune a Psíquico e Terra, mas é vulnerável a Gelo, Pedra, Elétrico e Fada (Lutador, ao contrário do que se pensa, é neutro para ele)."
+        "Resiste a Fantasma, Sombrio e Grama, e é imune a Psíquico e Terrestre, mas é vulnerável a Gelo, Pedra, Elétrico e Fada (Lutador, ao contrário do que se pensa, é neutro para ele)."
       ],
       "sinergias": [
         "Registeel",
@@ -7614,7 +7614,7 @@
         }
       ],
       "observacoes": [
-        "Sozinho (sem Mega) é fraco em PvP por causa da fraqueza quádrupla a Lutador e Terra.",
+        "Sozinho (sem Mega) é fraco em PvP por causa da fraqueza quádrupla a Lutador e Terrestre.",
         "Seu real valor está em evoluir para Mega Aggron, que se torna um bom atacante de Aço em raids."
       ],
       "sinergias": [
@@ -7735,7 +7735,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "nao",
-          "motivo": "É superado por outros atacantes de Fogo/Terra mais fortes no elenco atual."
+          "motivo": "É superado por outros atacantes de Fogo/Terrestre mais fortes no elenco atual."
         },
         {
           "titulo": "Vale Buddy",
@@ -7753,7 +7753,7 @@
         }
       ],
       "observacoes": [
-        "Imune a Elétrico graças ao tipo Terra, útil de forma pontual contra certas raids.",
+        "Imune a Elétrico graças ao tipo Terrestre, útil de forma pontual contra certas raids.",
         "Em PvP funciona melhor na Ultra Liga do que na Grande Liga, pois seu CP cresce rápido."
       ],
       "sinergias": [
@@ -7800,7 +7800,7 @@
         {
           "titulo": "Vale guardar",
           "status": "atencao",
-          "motivo": "Querido pelos treinadores, mas hoje é ofuscado por outros atacantes de Terra e Dragão."
+          "motivo": "Querido pelos treinadores, mas hoje é ofuscado por outros atacantes de Terrestre e Dragão."
         },
         {
           "titulo": "Vale maximizar",
@@ -7823,7 +7823,7 @@
         }
       ],
       "observacoes": [
-        "Fraqueza quádrupla a Gelo é decisiva contra ele; existem opções melhores para raids de Terra/Dragão, como Excadrill e Garchomp.",
+        "Fraqueza quádrupla a Gelo é decisiva contra ele; existem opções melhores para raids de Terrestre/Dragão, como Excadrill e Garchomp.",
         "Ainda assim é um pick divertido e viável em ligas casuais de PvP graças à boa cobertura de tipos."
       ],
       "sinergias": [
@@ -8987,7 +8987,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Só duas fraquezas (Grama e Terra) e stamina 268: switch seguro clássico da Grande Liga."
+          "motivo": "Só duas fraquezas (Grama e Terrestre) e stamina 268: switch seguro clássico da Grande Liga."
         },
         {
           "titulo": "Vale maximizar",
@@ -9010,7 +9010,7 @@
         }
       ],
       "observacoes": [
-        "Água/Elétrico tem apenas duas fraquezas (Grama e Terra), resiste a Aço em dobro e ainda a Fogo, Água, Gelo e Voador — typing defensivo raro e muito seguro.",
+        "Água/Elétrico tem apenas duas fraquezas (Grama e Terrestre), resiste a Aço em dobro e ainda a Fogo, Água, Gelo e Voador — typing defensivo raro e muito seguro.",
         "Peça de Grande Liga: esponja com dano aceitável nos dois tipos. Em Ultra ele fica pequeno mesmo no nível 50 e em raids não tem lugar.",
         "Quem carrega golpe Grama passa por cima dele; escolha o parceiro do time pensando nisso."
       ],
@@ -9080,7 +9080,7 @@
         }
       ],
       "observacoes": [
-        "Só três fraquezas (Terra, Psíquico e Elétrico) e resistência a Lutador, Veneno, Bug, Fada, Fogo, Água, Gelo e Aço: sobrevive contra grande parte da Grande Liga.",
+        "Só três fraquezas (Terrestre, Psíquico e Elétrico) e resistência a Lutador, Veneno, Bug, Fada, Fogo, Água, Gelo e Aço: sobrevive contra grande parte da Grande Liga.",
         "Ataque 114 com stamina 137: ele empata trocas e força o oponente a gastar escudo, mas quase nunca fecha a luta sozinho.",
         "Uso praticamente exclusivo de Grande Liga — em Ultra não alcança o cap e em raids não serve."
       ],
@@ -9409,7 +9409,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Typing Aço/Lutador raro: só três fraquezas x2 (Fogo, Lutador, Terra), imunidade a Veneno e oito resistências."
+          "motivo": "Typing Aço/Lutador raro: só três fraquezas x2 (Fogo, Lutador, Terrestre), imunidade a Veneno e oito resistências."
         },
         {
           "titulo": "Vale maximizar",
@@ -9504,7 +9504,7 @@
       ],
       "observacoes": [
         "Melhor atacante Pedra lendário disponível hoje: Pancada + Deslize de Pedras cobre chefes Voador, Gelo, Fogo e Inseto, e ele ainda tem carregado Lutador para PvP.",
-        "Defensivamente é papel: sete fraquezas x2 (Água, Grama, Lutador, Terra, Psíquico, Aço e Fada) — use para bater rápido, nunca para segurar.",
+        "Defensivamente é papel: sete fraquezas x2 (Água, Grama, Lutador, Terrestre, Psíquico, Aço e Fada) — use para bater rápido, nunca para segurar.",
         "Aparece em rotações de raid 5 estrelas com boa frequência; vale juntar várias cópias e investir na de melhor ataque."
       ],
       "sinergias": [
@@ -9576,7 +9576,7 @@
       "observacoes": [
         "Fraqueza x4 a Voador (Grama e Lutador somados) é o problema central: qualquer atacante Voador derruba ele antes de fazer diferença.",
         "Grama/Lutador com ataque 192 sobra como preenchimento: em raid perde para Kartana no Grama e para Lucario e Terrakion no Lutador.",
-        "Resiste a Água, Grama, Elétrico, Terra, Pedra e Sombrio, mas a defesa 229 não compensa a falta de dano nem na Ultra Liga."
+        "Resiste a Água, Grama, Elétrico, Terrestre, Pedra e Sombrio, mas a defesa 229 não compensa a falta de dano nem na Ultra Liga."
       ],
       "sinergias": [
         "Registeel",
@@ -9645,7 +9645,7 @@
         }
       ],
       "observacoes": [
-        "Puro Voador tem só três fraquezas x2 (Elétrico, Gelo e Pedra) e imunidade a Terra, mas defesa 164 desperdiça esse typing em raid.",
+        "Puro Voador tem só três fraquezas x2 (Elétrico, Gelo e Pedra) e imunidade a Terrestre, mas defesa 164 desperdiça esse typing em raid.",
         "Esta é a forma Incarnate, a de ataque mais alto; a Therian troca dano por corpo e tem kit próprio, então são escolhas diferentes.",
         "Como atacante Voador ele fica atrás de Rayquaza e na mesma faixa de Moltres — não é upgrade se você já investiu nesses dois."
       ],
@@ -9692,7 +9692,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Elétrico/Voador com ataque 266, só duas fraquezas x2 (Gelo e Pedra) e imunidade a Terra; reserva útil se faltar Zapdos ou Zekrom."
+          "motivo": "Elétrico/Voador com ataque 266, só duas fraquezas x2 (Gelo e Pedra) e imunidade a Terrestre; reserva útil se faltar Zapdos ou Zekrom."
         },
         {
           "titulo": "Vale maximizar",
@@ -9716,7 +9716,7 @@
         }
       ],
       "observacoes": [
-        "Typing muito bom na defesa: só Gelo e Pedra batem x2 e ele é imune a Terra — mas defesa 164 anula boa parte dessa vantagem.",
+        "Typing muito bom na defesa: só Gelo e Pedra batem x2 e ele é imune a Terrestre — mas defesa 164 anula boa parte dessa vantagem.",
         "Esta é a forma Incarnate; a Therian, também já disponível, é a de ataque maior, então priorize ela se o objetivo é um atacante Elétrico lendário.",
         "Como atacante Elétrico é opção de banco: só entra em raid se você ainda não tem Zekrom, Xurkitree ou Raikou investidos."
       ],
@@ -9787,7 +9787,7 @@
       ],
       "observacoes": [
         "Ataque 281 contra 237 de Gardevoir e 225 de Togekiss: por stat é o Fada de maior dano bruto entre os três, e o alvo natural são chefes Dragão.",
-        "Fada/Voador é imune a Dragão e a Terra — em GO isso não é dano zero, mas o dano recebido é mínimo, o que ajuda muito contra chefe Dragão puro.",
+        "Fada/Voador é imune a Dragão e a Terrestre — em GO isso não é dano zero, mas o dano recebido é mínimo, o que ajuda muito contra chefe Dragão puro.",
         "Defesa 162 e cinco fraquezas x2 (Elétrico, Gelo, Veneno, Pedra e Aço) o derrubam rápido; e como ele só volta em janelas de raid 5 estrelas, junte doce enquanto estiver na rotação."
       ],
       "sinergias": [
@@ -9833,7 +9833,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Ataque 250 e typing Elétrico/Fada que só toma dano dobrado de Terra e Veneno; bom reserva contra Água e Voador."
+          "motivo": "Ataque 250 e typing Elétrico/Fada que só toma dano dobrado de Terrestre e Veneno; bom reserva contra Água e Voador."
         },
         {
           "titulo": "Vale maximizar",
@@ -9857,7 +9857,7 @@
       ],
       "observacoes": [
         "Ataque 250 é o mesmo patamar de Zapdos (253), mas os Elétricos de topo (Xurkitree 330, Zekrom 275) entregam bem mais dano — ele é reserva, não peça principal.",
-        "Defensivamente é ótimo: só fraco x2 a Terra e Veneno, resiste Elétrico, Voador, Lutador, Inseto e Sombrio, e é imune a Dragão.",
+        "Defensivamente é ótimo: só fraco x2 a Terrestre e Veneno, resiste Elétrico, Voador, Lutador, Inseto e Sombrio, e é imune a Dragão.",
         "Volta em raids 5 estrelas em rotação; com 172 de stamina ele é frágil, então não gaste XL sem um objetivo claro."
       ],
       "sinergias": [
@@ -9973,7 +9973,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Ataque 249 faz dele um dos Grama mais fortes do jogo, útil contra chefes Água, Terra e Pedra."
+          "motivo": "Ataque 249 faz dele um dos Grama mais fortes do jogo, útil contra chefes Água, Terrestre e Pedra."
         },
         {
           "titulo": "Vale maximizar",
@@ -10278,7 +10278,7 @@
       ],
       "observacoes": [
         "Veio por pesquisa especial de evento (linha do Cosmog): não é algo que você farma, então trate o seu como peça única.",
-        "Fraquezas: Fogo, Terra, Sombrio e Fantasma — atenção que Aço não resiste a Fantasma. Em troca resiste a nove tipos e é imune a Veneno, o que segura raid longa.",
+        "Fraquezas: Fogo, Terrestre, Sombrio e Fantasma — atenção que Aço não resiste a Fantasma. Em troca resiste a nove tipos e é imune a Veneno, o que segura raid longa.",
         "Guardar também importa porque ele é material para uma das formas fundidas de Necrozma; como atacante Aço puro, não substitui um Metagross maximizado."
       ],
       "sinergias": [
@@ -10605,7 +10605,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Fogo/Água é typing único: 252 de ataque, bulk decente e só três fraquezas (Terra, Pedra e Elétrico)."
+          "motivo": "Fogo/Água é typing único: 252 de ataque, bulk decente e só três fraquezas (Terrestre, Pedra e Elétrico)."
         },
         {
           "titulo": "Vale maximizar",
@@ -10629,7 +10629,7 @@
       ],
       "observacoes": [
         "Mítico: não aparece em raid nem selvagem, só em pesquisa de evento — se você não tem um, não existe caminho confiável hoje.",
-        "Resiste dobrado a Fogo, Gelo e Aço, resiste a Inseto e Fada e tem só três fraquezas (Terra, Pedra e Elétrico): aguenta bem raid longa.",
+        "Resiste dobrado a Fogo, Gelo e Aço, resiste a Inseto e Fada e tem só três fraquezas (Terrestre, Pedra e Elétrico): aguenta bem raid longa.",
         "Não bate Kyogre como atacante Água nem os melhores Fogo em dano; o valor dele é sobreviver mais e cobrir dois tipos no mesmo slot."
       ],
       "sinergias": [
@@ -10810,7 +10810,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Ataque 246 com defesa 223: entre os atacantes Gelo é o que mais aguenta pancada, útil contra Dragão, Terra, Voador e Grama."
+          "motivo": "Ataque 246 com defesa 223: entre os atacantes Gelo é o que mais aguenta pancada, útil contra Dragão, Terrestre, Voador e Grama."
         },
         {
           "titulo": "Vale maximizar",
@@ -10973,7 +10973,7 @@
         }
       ],
       "observacoes": [
-        "Na forma normal ele é mediano: ataque 223 é razoável, mas Grama rende pouco em raid porque chefes de Água, Pedra e Terra quase sempre têm cobertura que castiga Grama.",
+        "Na forma normal ele é mediano: ataque 223 é razoável, mas Grama rende pouco em raid porque chefes de Água, Pedra e Terrestre quase sempre têm cobertura que castiga Grama.",
         "O valor real está na Mega: Mega Sceptile é Grama/Dragão com ataque 320 (contra 241 da Mega Venusaur) e dá boost de Grama e Dragão para todo o grupo.",
         "Como Grama/Dragão a Mega leva Gelo x4, então em chefe com golpe de Gelo ela cai rápido — conte com trocas e revive."
       ],
@@ -11115,8 +11115,8 @@
       ],
       "observacoes": [
         "Ataque 202 é baixo para raid; o lugar dele é Ultra Liga, onde a bulk (defesa 188, stamina 216) somada a Planta Mortal rende trocas decentes.",
-        "A defesa por tipo é boa: imune a Elétrico e resiste a Terra, Pedra e Grama; Água fica neutra, porque a resistência de Grama cancela a fraqueza de Terra.",
-        "O buraco é Gelo x4 (Grama e Terra somam), mais Fogo, Voador e Insetos x2 — Gelo aparece muito nas ligas, então cuidado com o que entra na frente dele."
+        "A defesa por tipo é boa: imune a Elétrico e resiste a Terrestre, Pedra e Grama; Água fica neutra, porque a resistência de Grama cancela a fraqueza de Terrestre.",
+        "O buraco é Gelo x4 (Grama e Terrestre somam), mais Fogo, Voador e Insetos x2 — Gelo aparece muito nas ligas, então cuidado com o que entra na frente dele."
       ],
       "sinergias": [
         "Cresselia",
@@ -11184,9 +11184,9 @@
         }
       ],
       "observacoes": [
-        "Está entre os melhores atacantes Grama não-lendários, mas fica atrás de Kartana e das Megas; e Grama em si rende pouco em raid, porque chefes de Água, Pedra e Terra costumam ter cobertura punitiva.",
+        "Está entre os melhores atacantes Grama não-lendários, mas fica atrás de Kartana e das Megas; e Grama em si rende pouco em raid, porque chefes de Água, Pedra e Terrestre costumam ter cobertura punitiva.",
         "O diferencial é o lado Veneno: com Golpe Envenenado e Bomba de Lodo ele é resposta barata contra Fada, algo que Sceptile e Torterra não oferecem.",
-        "Grama/Veneno é um typing seguro: fraquezas só a Fogo, Gelo, Voador e Psíquico, Terra fica neutra e ele resiste a Grama, Água, Elétrico, Lutador e Fada."
+        "Grama/Veneno é um typing seguro: fraquezas só a Fogo, Gelo, Voador e Psíquico, Terrestre fica neutra e ele resiste a Grama, Água, Elétrico, Lutador e Fada."
       ],
       "sinergias": [
         "Kartana",
@@ -11254,8 +11254,8 @@
         }
       ],
       "observacoes": [
-        "O valor dele é PvP, não raid: mesmo com ataque 207, Grama rende pouco contra chefes de Água, Pedra e Terra, que quase sempre têm cobertura punitiva.",
-        "Em Great e Ultra Liga ele é uma muralha que troca bem contra Água, Terra, Elétrico e Grama — os quatro tipos que Grama resiste.",
+        "O valor dele é PvP, não raid: mesmo com ataque 207, Grama rende pouco contra chefes de Água, Pedra e Terrestre, que quase sempre têm cobertura punitiva.",
+        "Em Great e Ultra Liga ele é uma muralha que troca bem contra Água, Terrestre, Elétrico e Grama — os quatro tipos que Grama resiste.",
         "Não use como defensor de ginásio: Grama puro é fraco a Fogo, Gelo, Veneno, Voador e Insetos, e todos esses são comuns entre atacantes."
       ],
       "sinergias": [
@@ -11325,7 +11325,7 @@
       ],
       "observacoes": [
         "O valor real está na Mega Blaziken; como exemplar normal ele fica atrás de Lucario, Terrakion e Machamp no papel de Lutador e atrás de Chandelure e Reshiram no de Fogo.",
-        "Fraquezas reais do typing Fogo/Lutador: Água, Terra, Voador e Psíquico. Fada é neutra (Fogo resiste, Lutador é fraco) e ele resiste duas vezes a Inseto.",
+        "Fraquezas reais do typing Fogo/Lutador: Água, Terrestre, Voador e Psíquico. Fada é neutra (Fogo resiste, Lutador é fraco) e ele resiste duas vezes a Inseto.",
         "Defesa base 141 é baixa: desmaia rápido em raid e em PvP ele é nicho, dependendo de shield para completar as trocas."
       ],
       "sinergias": [
@@ -11752,7 +11752,7 @@
       "observacoes": [
         "Glass cannon de raid: em grupo grande, onde outros seguram o boss, o dano dele compensa as trocas constantes.",
         "Ruim em solo, duo e contra boss de ataque alto — ele cai rápido e o tempo de revive derruba o DPS efetivo do grupo.",
-        "Fraco a Água, Grama, Lutador, Terra e Aço; quando o problema é aguentar pancada, Rhyperior ou Tyranitar rendem mais."
+        "Fraco a Água, Grama, Lutador, Terrestre e Aço; quando o problema é aguentar pancada, Rhyperior ou Tyranitar rendem mais."
       ],
       "sinergias": [
         "Rhyperior",
@@ -11823,7 +11823,7 @@
       "observacoes": [
         "Grama/Gelo é o pior typing defensivo prático do jogo: sete fraquezas — Fogo em dobro, mais Lutador, Veneno, Voador, Inseto, Pedra e Aço.",
         "Como atacante puro é fraco (ataque base 178); quem carrega a linha é a Mega, usada para dar boost aos seus Gelo e Grama de verdade.",
-        "Na Grande Liga é peça de nicho contra Água e Terra, mas cai instantaneamente para qualquer Fogo."
+        "Na Grande Liga é peça de nicho contra Água e Terrestre, mas cai instantaneamente para qualquer Fogo."
       ],
       "sinergias": [
         "Mamoswine",
@@ -11891,7 +11891,7 @@
         }
       ],
       "observacoes": [
-        "Comparada ao Dusknoir, é a opção ofensiva do Fantasma barato: gera energia rápido e ameaça Dragão, Voador e Terra com dano de Gelo.",
+        "Comparada ao Dusknoir, é a opção ofensiva do Fantasma barato: gera energia rápido e ameaça Dragão, Voador e Terrestre com dano de Gelo.",
         "Bulk baixa (defesa 150 / stamina 172): ela troca golpes e sai, não segura o time — se o que você quer é aguentar dano por golpe, Dusknoir faz melhor.",
         "Cinco fraquezas (Fogo, Pedra, Aço, Fantasma e Sombrio), mas as imunidades a Normal e Lutador dão switch-in seguro contra atacantes muito comuns."
       ],
@@ -12176,7 +12176,7 @@
       ],
       "observacoes": [
         "Ataque 239 com bulk 168/225 dá a ele a melhor sobrevivência dos três iniciais de Galar, mas em raid de Grama ele fica atrás de Kartana, Roserade e dos Grama sombrios.",
-        "O nicho real é a Grande Liga contra Água/Terra: Swampert, Whiscash e Quagsire levam dano dobrado duas vezes de Grama, e ele resiste a Água, Grama, Elétrico e Terra.",
+        "O nicho real é a Grande Liga contra Água/Terrestre: Swampert, Whiscash e Quagsire levam dano dobrado duas vezes de Grama, e ele resiste a Água, Grama, Elétrico e Terrestre.",
         "Grama puro tem cinco fraquezas (Fogo, Gelo, Veneno, Voador e Inseto): use como atacante, nunca como defensor de ginásio."
       ],
       "sinergias": [
@@ -12247,7 +12247,7 @@
       ],
       "observacoes": [
         "Ataque 238 com bulk fraca (163/190) e Fogo puro num pool cheio de opções melhores — Reshiram, Chandelure e os Charizard sombrios: ele é preenchimento de time, não peça de raid.",
-        "O lado bom do Fogo puro é defensivo: só três fraquezas (Água, Terra e Pedra) contra resistência a Fogo, Grama, Gelo, Inseto, Aço e Fada, o que ajuda em chefe de Grama, Gelo e Aço.",
+        "O lado bom do Fogo puro é defensivo: só três fraquezas (Água, Terrestre e Pedra) contra resistência a Fogo, Grama, Gelo, Inseto, Aço e Fada, o que ajuda em chefe de Grama, Gelo e Aço.",
         "Em PvP ele não tem espaço: Fogo puro sem bulk perde as trocas na Great e na Ultra — invista só por gosto."
       ],
       "sinergias": [
@@ -12318,7 +12318,7 @@
       ],
       "observacoes": [
         "Glass cannon puro: ataque 262 entrega dano de Água perto de lendário, mas defesa 142 e stamina 172 tiram ele cedo da raid e queimam Revive.",
-        "Água puro tem só duas fraquezas (Elétrico e Grama) e resiste a Fogo, Água, Gelo e Aço — bom time contra chefe de Fogo, Pedra e Terra.",
+        "Água puro tem só duas fraquezas (Elétrico e Grama) e resiste a Fogo, Água, Gelo e Aço — bom time contra chefe de Fogo, Pedra e Terrestre.",
         "Serve como substituto barato de Kyogre em raid quando faltam lendários; sem nicho de PvP, invista em um exemplar só."
       ],
       "sinergias": [
@@ -12389,7 +12389,7 @@
       "observacoes": [
         "Sem custo de lendário: serve como dano Grama e Sombrio barato para fechar equipe de seis em raid.",
         "Defesa 153 com stamina 183 é frágil — entrega dano nos primeiros segundos e desmaia antes de raid longa acabar; nas ligas com cap o ataque alto derruba o stat product e não sobra bulk.",
-        "Grama/Sombrio soma sete fraquezas (Inseto em dobro, mais Fogo, Gelo, Veneno, Voador, Lutador e Fada), mas é imune a Psíquico e resiste a Água, Grama, Elétrico, Terra, Fantasma e Sombrio."
+        "Grama/Sombrio soma sete fraquezas (Inseto em dobro, mais Fogo, Gelo, Veneno, Voador, Lutador e Fada), mas é imune a Psíquico e resiste a Água, Grama, Elétrico, Terrestre, Fantasma e Sombrio."
       ],
       "sinergias": [
         "Metagross",
@@ -12458,7 +12458,7 @@
       ],
       "observacoes": [
         "Peça de nicho de liga com cap, não de raid: 207 de ataque não compete com atacante Fogo ou Fantasma de verdade, e a bulk é o que justifica o slot.",
-        "As duas imunidades (Normal e Lutador) e a resistência dupla a Inseto ajudam, mas as cinco fraquezas são a tipos que aparecem em toda liga — Água, Terra, Pedra, Fantasma e Sombrio —, então não é o typing blindado que parece.",
+        "As duas imunidades (Normal e Lutador) e a resistência dupla a Inseto ajudam, mas as cinco fraquezas são a tipos que aparecem em toda liga — Água, Terrestre, Pedra, Fantasma e Sombrio —, então não é o typing blindado que parece.",
         "Não depende de lendário; antes de gastar pó, teste ele numa liga com cap, porque o valor prático depende do moveset que ele recebeu."
       ],
       "sinergias": [
@@ -14691,7 +14691,7 @@
       ],
       "observacoes": [
         "Base da linha do Sceptile — farme doce (de preferência em Dia da Comunidade) e evolua o melhor IV; o Planta Mortal vem na forma final.",
-        "Sceptile é um atacante de Grama rápido e frágil, bom contra Água, Terra e Pedra."
+        "Sceptile é um atacante de Grama rápido e frágil, bom contra Água, Terrestre e Pedra."
       ],
       "sinergias": []
     },
@@ -14945,7 +14945,7 @@
       ],
       "observacoes": [
         "Base da linha do Swampert — farme doce (de preferência em Dia da Comunidade) e evolua o melhor IV; o Hidro Canhão vem na forma final.",
-        "Swampert (Água/Terra) é dos melhores da Grande Liga e ótimo atacante de Água."
+        "Swampert (Água/Terrestre) é dos melhores da Grande Liga e ótimo atacante de Água."
       ],
       "sinergias": []
     },
@@ -15640,7 +15640,7 @@
         }
       ],
       "observacoes": [
-        "Base do Camerupt (Fogo/Terra); o Mega Camerupt é um atacante de nicho de Fogo e Terra."
+        "Base do Camerupt (Fogo/Terrestre); o Mega Camerupt é um atacante de nicho de Fogo e Terrestre."
       ],
       "sinergias": []
     },
@@ -15703,7 +15703,7 @@
         }
       ],
       "observacoes": [
-        "Base do Flygon (Terra/Dragão), atacante e peça de PvP versátil; a linha custa 125 doces até o fim."
+        "Base do Flygon (Terrestre/Dragão), atacante e peça de PvP versátil; a linha custa 125 doces até o fim."
       ],
       "sinergias": []
     },
@@ -15892,7 +15892,7 @@
         }
       ],
       "observacoes": [
-        "Base do Whiscash (Água/Terra), pick barato de PvP com Tiro de Lama + golpes de Água e Terra."
+        "Base do Whiscash (Água/Terrestre), pick barato de PvP com Tiro de Lama + golpes de Água e Terrestre."
       ],
       "sinergias": []
     },
@@ -16400,7 +16400,7 @@
       ],
       "observacoes": [
         "Base da linha do Torterra — farme doce (de preferência em Dia da Comunidade) e evolua o melhor IV; o Planta Mortal vem na forma final.",
-        "Torterra (Grama/Terra) é atacante e peça de PvP com bom bulk; cuidado com Gelo, que entra dobrado (x4)."
+        "Torterra (Grama/Terrestre) é atacante e peça de PvP com bom bulk; cuidado com Gelo, que entra dobrado (x4)."
       ],
       "sinergias": []
     },
@@ -17032,7 +17032,7 @@
         }
       ],
       "observacoes": [
-        "Base do Garchomp (Dragão/Terra), atacante de topo em raid e Liga Mestre.",
+        "Base do Garchomp (Dragão/Terrestre), atacante de topo em raid e Liga Mestre.",
         "Gible volta em Dia da Comunidade — guarde vários bons IVs e farme XL; o Garchomp quer Tiro de Lama + Ultraje."
       ],
       "sinergias": []
@@ -17286,7 +17286,7 @@
         }
       ],
       "observacoes": [
-        "Base do Abomasnow (Grama/Gelo); o Mega Abomasnow é forte contra Dragão, Água, Terra e Voador, mas leva Fogo dobrado."
+        "Base do Abomasnow (Grama/Gelo); o Mega Abomasnow é forte contra Dragão, Água, Terrestre e Voador, mas leva Fogo dobrado."
       ],
       "sinergias": []
     },
@@ -17476,7 +17476,7 @@
         }
       ],
       "observacoes": [
-        "Base do Rhyperior (Pedra/Terra), um dos melhores atacantes de Pedra e Terra — guarde vários bons IVs e farme XL.",
+        "Base do Rhyperior (Pedra/Terrestre), um dos melhores atacantes de Pedra e Terrestre — guarde vários bons IVs e farme XL.",
         "A evolução final usa uma Pedra de Sinnoh (no Rhydon)."
       ],
       "sinergias": []
@@ -18047,7 +18047,7 @@
         }
       ],
       "observacoes": [
-        "Base do Mamoswine (Gelo/Terra), um dos melhores atacantes de Gelo — guarde vários bons IVs e farme XL.",
+        "Base do Mamoswine (Gelo/Terrestre), um dos melhores atacantes de Gelo — guarde vários bons IVs e farme XL.",
         "A linha evolui só com doce (sem Pedra de Sinnoh): 125 doces no total."
       ],
       "sinergias": []
@@ -18935,7 +18935,7 @@
         }
       ],
       "observacoes": [
-        "Base do Excadrill (Terra/Aço), um dos melhores atacantes de Terra e bom de Aço — guarde vários bons IVs e farme XL.",
+        "Base do Excadrill (Terrestre/Aço), um dos melhores atacantes de Terrestre e bom de Aço — guarde vários bons IVs e farme XL.",
         "Excadrill quer Tiro de Lama + Furação/Terremoto; forte em raid e Liga Mestre."
       ],
       "sinergias": []
@@ -19126,7 +19126,7 @@
         }
       ],
       "observacoes": [
-        "Base do Krookodile (Terra/Sombrio), atacante e peça de PvP; Sandile já apareceu em Dia da Comunidade."
+        "Base do Krookodile (Terrestre/Sombrio), atacante e peça de PvP; Sandile já apareceu em Dia da Comunidade."
       ],
       "sinergias": []
     },
@@ -19884,7 +19884,7 @@
         }
       ],
       "observacoes": [
-        "Base do Golurk (Terra/Fantasma), atacante versátil com bom ataque."
+        "Base do Golurk (Terrestre/Fantasma), atacante versátil com bom ataque."
       ],
       "sinergias": []
     },
@@ -23081,7 +23081,7 @@
         }
       ],
       "observacoes": [
-        "Base do Donphan (Terra), atacante barato e peça de Grande Liga; guarde um bom IV e evolua."
+        "Base do Donphan (Terrestre), atacante barato e peça de Grande Liga; guarde um bom IV e evolua."
       ],
       "sinergias": []
     },
@@ -23123,12 +23123,12 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Atacante de Terra barato e peça de Grande Liga com bulk sólido."
+          "motivo": "Atacante de Terrestre barato e peça de Grande Liga com bulk sólido."
         },
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "Vale subir para a Grande Liga ou como atacante de Terra de orçamento."
+          "motivo": "Vale subir para a Grande Liga ou como atacante de Terrestre de orçamento."
         },
         {
           "titulo": "Vale Buddy",
@@ -23147,7 +23147,7 @@
         }
       ],
       "observacoes": [
-        "Terra puro com bulk bom: atacante de orçamento e peça de Grande Liga (Contra-atacar/Tapa de Lama + Terremoto).",
+        "Terrestre puro com bulk bom: atacante de orçamento e peça de Grande Liga (Contra-atacar/Tapa de Lama + Terremoto).",
         "Já foi defensor de ginásio popular; hoje rende mais como opção barata."
       ],
       "sinergias": []
@@ -23403,7 +23403,7 @@
         }
       ],
       "observacoes": [
-        "Base do Claydol (Terra/Psíquico), peça de nicho de PvP; guarde um bom IV para evoluir."
+        "Base do Claydol (Terrestre/Psíquico), peça de nicho de PvP; guarde um bom IV para evoluir."
       ],
       "sinergias": []
     },
@@ -23444,12 +23444,12 @@
         {
           "titulo": "Vale guardar",
           "status": "atencao",
-          "motivo": "Terra/Psíquico de nicho; guarde se quiser a peça de PvP."
+          "motivo": "Terrestre/Psíquico de nicho; guarde se quiser a peça de PvP."
         },
         {
           "titulo": "Vale maximizar",
           "status": "nao",
-          "motivo": "Há opções melhores de Terra e de Psíquico — não precisa maximizar."
+          "motivo": "Há opções melhores de Terrestre e de Psíquico — não precisa maximizar."
         },
         {
           "titulo": "Vale Buddy",
@@ -23468,8 +23468,8 @@
         }
       ],
       "observacoes": [
-        "Terra/Psíquico com bulk alto: peça de nicho de PvP, sem ser destaque em nenhum tipo.",
-        "Imune a Terra e resiste a Lutador, Pedra, Elétrico e Veneno — typing defensivo interessante."
+        "Terrestre/Psíquico com bulk alto: peça de nicho de PvP, sem ser destaque em nenhum tipo.",
+        "Imune a Terrestre e resiste a Lutador, Pedra, Elétrico e Veneno — typing defensivo interessante."
       ],
       "sinergias": []
     },
@@ -24049,7 +24049,7 @@
         }
       ],
       "observacoes": [
-        "Aço/Fantasma tem poucas fraquezas (Fogo e Terra) e muitas resistências — ótimo em PvP.",
+        "Aço/Fantasma tem poucas fraquezas (Fogo e Terrestre) e muitas resistências — ótimo em PvP.",
         "Evolui do Gimmighoul juntando Moedas de Gimmighoul."
       ],
       "sinergias": []
@@ -24091,7 +24091,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Terra/Lutador (Paradoxo) com ataque alto: atacante forte."
+          "motivo": "Terrestre/Lutador (Paradoxo) com ataque alto: atacante forte."
         },
         {
           "titulo": "Vale maximizar",
@@ -24115,7 +24115,7 @@
         }
       ],
       "observacoes": [
-        "Paradoxo Terra/Lutador de alto dano; bom atacante duplo em raid.",
+        "Paradoxo Terrestre/Lutador de alto dano; bom atacante duplo em raid.",
         "Não evolui de ninguém; a raridade vem da forma como aparece no jogo."
       ],
       "sinergias": []
@@ -24308,7 +24308,7 @@
       ],
       "observacoes": [
         "Defesa e stamina altas fazem dele um dos maiores muros de PvP recentes.",
-        "Pedra puro (sem segundo tipo): aguenta muito, mas leva Água/Grama/Terra/Lutador/Aço dobrado."
+        "Pedra puro (sem segundo tipo): aguenta muito, mas leva Água/Grama/Terrestre/Lutador/Aço dobrado."
       ],
       "sinergias": []
     },
@@ -24499,7 +24499,7 @@
         }
       ],
       "observacoes": [
-        "Fada/Aço tem poucas fraquezas (Fogo e Terra) e muitas resistências — peça sólida de PvP.",
+        "Fada/Aço tem poucas fraquezas (Fogo e Terrestre) e muitas resistências — peça sólida de PvP.",
         "Cobre Dragões e Sombrios pelo lado Fada; conferir o moveset atual no GO."
       ],
       "sinergias": []
@@ -25586,7 +25586,7 @@
         }
       ],
       "observacoes": [
-        "Base do Sandslash de Kanto (Terra); a forma de Alola (Gelo/Aço) é bem mais interessante, mas é outra forma."
+        "Base do Sandslash de Kanto (Terrestre); a forma de Alola (Gelo/Aço) é bem mais interessante, mas é outra forma."
       ],
       "sinergias": []
     },
@@ -25649,7 +25649,7 @@
         }
       ],
       "observacoes": [
-        "Base do Nidoqueen (Veneno/Terra), tanque valioso de Grande Liga.",
+        "Base do Nidoqueen (Veneno/Terrestre), tanque valioso de Grande Liga.",
         "Segure bons IVs de PvP (ataque baixo costuma ser melhor) e farme XL."
       ],
       "sinergias": []
@@ -25776,7 +25776,7 @@
         }
       ],
       "observacoes": [
-        "Base do Nidoking (Veneno/Terra), bom atacante e peça de PvP.",
+        "Base do Nidoking (Veneno/Terrestre), bom atacante e peça de PvP.",
         "Nidoking Sombroso é a versão mais forte de ataque; guarde bons IVs."
       ],
       "sinergias": []
@@ -26345,7 +26345,7 @@
         }
       ],
       "observacoes": [
-        "Base do Dugtrio de Kanto (Terra); a forma de Alola (Terra/Aço) é outra forma. Atacante superado."
+        "Base do Dugtrio de Kanto (Terrestre); a forma de Alola (Terrestre/Aço) é outra forma. Atacante superado."
       ],
       "sinergias": []
     },
@@ -26787,7 +26787,7 @@
         }
       ],
       "observacoes": [
-        "Base do Golem de Kanto (Pedra/Terra), atacante de Pedra barato — o Sombroso é forte.",
+        "Base do Golem de Kanto (Pedra/Terrestre), atacante de Pedra barato — o Sombroso é forte.",
         "A forma de Alola (Elétrico/Pedra) é outra forma; guarde o Geodude de Kanto."
       ],
       "sinergias": []
@@ -27293,7 +27293,7 @@
         }
       ],
       "observacoes": [
-        "Base do Steelix (Aço/Terra), tanque de Grande/Ultra Liga.",
+        "Base do Steelix (Aço/Terrestre), tanque de Grande/Ultra Liga.",
         "Para evoluir precisa de 50 doces + Revestimento de Metal — guarde o melhor IV."
       ],
       "sinergias": []
@@ -27595,7 +27595,7 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "A forma de Alola do Marowak (Fogo/Fantasma) é a boa; a de Kanto (Terra) é fraca."
+          "motivo": "A forma de Alola do Marowak (Fogo/Fantasma) é a boa; a de Kanto (Terrestre) é fraca."
         },
         {
           "titulo": "Vale Elite TM",
@@ -28501,12 +28501,12 @@
         {
           "titulo": "Vale guardar",
           "status": "nao",
-          "motivo": "Terra comum sem nicho; a forma de Alola (Gelo/Aço) é a interessante."
+          "motivo": "Terrestre comum sem nicho; a forma de Alola (Gelo/Aço) é a interessante."
         },
         {
           "titulo": "Vale maximizar",
           "status": "nao",
-          "motivo": "Atacante de Terra superado por Groudon, Garchomp e Excadrill."
+          "motivo": "Atacante de Terrestre superado por Groudon, Garchomp e Excadrill."
         },
         {
           "titulo": "Vale Buddy",
@@ -28525,7 +28525,7 @@
         }
       ],
       "observacoes": [
-        "Sandslash de Kanto (Terra) é filler; a forma de Alola (Gelo/Aço) é outra forma e tem uso de PvP."
+        "Sandslash de Kanto (Terrestre) é filler; a forma de Alola (Gelo/Aço) é outra forma e tem uso de PvP."
       ],
       "sinergias": [
         "Excadrill",
@@ -28575,7 +28575,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "Vale para PvP; em raids está bem atrás dos atacantes de Terra/Veneno de topo."
+          "motivo": "Vale para PvP; em raids está bem atrás dos atacantes de Terrestre/Veneno de topo."
         },
         {
           "titulo": "Vale Buddy",
@@ -28594,7 +28594,7 @@
         }
       ],
       "observacoes": [
-        "Tanque de Veneno/Terra da Grande Liga, com bulk alto e boa cobertura (Poder da Terra + Presa Venenosa).",
+        "Tanque de Veneno/Terrestre da Grande Liga, com bulk alto e boa cobertura (Poder da Terra + Presa Venenosa).",
         "Ataque baixo tende a render melhor no PvP por elevar Defesa/HP dentro do limite de PC."
       ],
       "sinergias": [
@@ -28641,7 +28641,7 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Bom atacante de Veneno/Terra e peça de Ultra Liga — guarde bons IVs."
+          "motivo": "Bom atacante de Veneno/Terrestre e peça de Ultra Liga — guarde bons IVs."
         },
         {
           "titulo": "Vale maximizar",
@@ -28665,8 +28665,8 @@
         }
       ],
       "observacoes": [
-        "Veneno/Terra versátil: Nidoking Sombroso é um ótimo atacante de custo baixo com Poder da Terra.",
-        "Cobertura ampla (Terra, Veneno, Fogo, Gelo) o mantém útil em várias situações."
+        "Veneno/Terrestre versátil: Nidoking Sombroso é um ótimo atacante de custo baixo com Poder da Terra.",
+        "Cobertura ampla (Terrestre, Veneno, Fogo, Gelo) o mantém útil em várias situações."
       ],
       "sinergias": [
         "Nidoqueen",
@@ -28978,7 +28978,7 @@
         {
           "titulo": "Vale guardar",
           "status": "atencao",
-          "motivo": "Guarde um bom IV; glass cannon de Terra hoje superado."
+          "motivo": "Guarde um bom IV; glass cannon de Terrestre hoje superado."
         },
         {
           "titulo": "Vale maximizar",
@@ -29002,7 +29002,7 @@
         }
       ],
       "observacoes": [
-        "Dugtrio de Kanto (Terra) é glass cannon superado; a forma de Alola (Terra/Aço) é outra forma."
+        "Dugtrio de Kanto (Terrestre) é glass cannon superado; a forma de Alola (Terrestre/Aço) é outra forma."
       ],
       "sinergias": [
         "Garchomp",
@@ -29479,7 +29479,7 @@
         }
       ],
       "observacoes": [
-        "Pedra/Terra de custo baixo; o Golem Sombroso é um atacante de Pedra muito eficiente.",
+        "Pedra/Terrestre de custo baixo; o Golem Sombroso é um atacante de Pedra muito eficiente.",
         "A forma de Alola (Elétrico/Pedra) é outra forma; esta entrada cobre o Golem de Kanto."
       ],
       "sinergias": [
@@ -30272,7 +30272,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "nao",
-          "motivo": "Marowak de Kanto (Terra) é fraco frente aos atacantes de Terra de topo."
+          "motivo": "Marowak de Kanto (Terrestre) é fraco frente aos atacantes de Terrestre de topo."
         },
         {
           "titulo": "Vale Buddy",
@@ -30291,7 +30291,7 @@
         }
       ],
       "observacoes": [
-        "Marowak de Kanto (Terra) é filler; a forma de Alola (Fogo/Fantasma) é outra forma e brilha em PvP."
+        "Marowak de Kanto (Terrestre) é filler; a forma de Alola (Fogo/Fantasma) é outra forma e brilha em PvP."
       ],
       "sinergias": [
         "Garchomp",
@@ -31175,7 +31175,7 @@
       ],
       "observacoes": [
         "Pedra/Água de PvP com Tiro de Lama + Deslize de Pedras/Jato d'Água; peça sólida de Grande e Ultra Liga.",
-        "Tipagem dupla dá boa cobertura ofensiva, mas o deixa exposto a Grama e Terra."
+        "Tipagem dupla dá boa cobertura ofensiva, mas o deixa exposto a Grama e Terrestre."
       ],
       "sinergias": [
         "Kabutops",
@@ -32396,8 +32396,8 @@
         }
       ],
       "observacoes": [
-        "Base do Quagsire (Água/Terra), peça de Grande Liga.",
-        "O Wooper de Paldea (Veneno/Terra) evolui em Clodsire e é outra forma."
+        "Base do Quagsire (Água/Terrestre), peça de Grande Liga.",
+        "O Wooper de Paldea (Veneno/Terrestre) evolui em Clodsire e é outra forma."
       ],
       "sinergias": []
     },
@@ -32776,7 +32776,7 @@
         }
       ],
       "observacoes": [
-        "Base do Gliscor (Terra/Voador), uma das peças de PvP mais fortes da linha.",
+        "Base do Gliscor (Terrestre/Voador), uma das peças de PvP mais fortes da linha.",
         "Evolui do Gligar com 100 doces + Pedra de Sinnoh — guarde bons IVs de PvP e farme XL."
       ],
       "sinergias": []
@@ -32889,7 +32889,7 @@
         {
           "titulo": "Vale Buddy",
           "status": "sim",
-          "motivo": "Ursaluna é bom atacante de Terra; farme XL pela linha (Teddiursa costuma voltar em evento)."
+          "motivo": "Ursaluna é bom atacante de Terrestre; farme XL pela linha (Teddiursa costuma voltar em evento)."
         },
         {
           "titulo": "Vale Elite TM",
@@ -32903,7 +32903,7 @@
         }
       ],
       "observacoes": [
-        "Base do Ursaluna (Terra/Normal), atacante de Terra sólido.",
+        "Base do Ursaluna (Terrestre/Normal), atacante de Terrestre sólido.",
         "A evolução Ursaring→Ursaluna tem requisito especial — confira o método atual."
       ],
       "sinergias": []
@@ -34156,8 +34156,8 @@
         }
       ],
       "observacoes": [
-        "Água/Terra bulky de Grande Liga com Tiro de Lama + Gume de Pedra; boa dupla-imunidade a Elétrico.",
-        "O Wooper de Paldea (Veneno/Terra) vira Clodsire e é outra forma."
+        "Água/Terrestre bulky de Grande Liga com Tiro de Lama + Gume de Pedra; boa dupla-imunidade a Elétrico.",
+        "O Wooper de Paldea (Veneno/Terrestre) vira Clodsire e é outra forma."
       ],
       "sinergias": [
         "Whiscash",
@@ -34415,7 +34415,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "Vale para PvP/defesa; o Sombroso rende mais como atacante de Terra."
+          "motivo": "Vale para PvP/defesa; o Sombroso rende mais como atacante de Terrestre."
         },
         {
           "titulo": "Vale Buddy",
@@ -34434,8 +34434,8 @@
         }
       ],
       "observacoes": [
-        "Aço/Terra bulky com Cauda de Ferro + Terremoto; ótimo tanque de Grande e Ultra Liga.",
-        "Evolui do Onix com Revestimento de Metal; o Steelix Sombroso é bom atacante de Terra."
+        "Aço/Terrestre bulky com Cauda de Ferro + Terremoto; ótimo tanque de Grande e Ultra Liga.",
+        "Evolui do Onix com Revestimento de Metal; o Steelix Sombroso é bom atacante de Terrestre."
       ],
       "sinergias": [
         "Forretress",
@@ -39098,7 +39098,7 @@
       ],
       "observacoes": [
         "Pedra/Grama bulky de Grande Liga com Projétil de Semente/Infestação + Nó de Grama/Gume de Pedra.",
-        "Tipagem incomum dá cobertura contra Água, Terra e Rocha."
+        "Tipagem incomum dá cobertura contra Água, Terrestre e Rocha."
       ],
       "sinergias": [
         "Swampert",
@@ -40538,7 +40538,7 @@
         }
       ],
       "observacoes": [
-        "Base do Gastrodon (Água/Terra), peça sólida de Grande e Ultra Liga.",
+        "Base do Gastrodon (Água/Terrestre), peça sólida de Grande e Ultra Liga.",
         "Shellos tem formas Leste/Oeste por região; ambas viram Gastrodon."
       ],
       "sinergias": []
@@ -41220,7 +41220,7 @@
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Vale caminhar se for usar o Hippowdon bulky de Terra em PvP."
+          "motivo": "Vale caminhar se for usar o Hippowdon bulky de Terrestre em PvP."
         },
         {
           "titulo": "Vale Elite TM",
@@ -41234,7 +41234,7 @@
         }
       ],
       "observacoes": [
-        "Base do Hippowdon (Terra), tanque de Terra de nicho de PvP."
+        "Base do Hippowdon (Terrestre), tanque de Terrestre de nicho de PvP."
       ],
       "sinergias": []
     },
@@ -42161,7 +42161,7 @@
         }
       ],
       "observacoes": [
-        "Água/Terra bulky de Grande e Ultra Liga; imune a Elétrico e resistente a muitos tipos.",
+        "Água/Terrestre bulky de Grande e Ultra Liga; imune a Elétrico e resistente a muitos tipos.",
         "Tiro de Lama + Corpo Mole/Poder da Terra dá boa pressão de STAB."
       ],
       "sinergias": [
@@ -42886,12 +42886,12 @@
         {
           "titulo": "Vale guardar",
           "status": "atencao",
-          "motivo": "Guarde um bom IV; tanque de Terra de nicho de PvP."
+          "motivo": "Guarde um bom IV; tanque de Terrestre de nicho de PvP."
         },
         {
           "titulo": "Vale maximizar",
           "status": "nao",
-          "motivo": "Fora do meta de raids de Terra frente a Groudon/Garchomp."
+          "motivo": "Fora do meta de raids de Terrestre frente a Groudon/Garchomp."
         },
         {
           "titulo": "Vale Buddy",
@@ -42910,7 +42910,7 @@
         }
       ],
       "observacoes": [
-        "Terra bulky com Ataque de Areia + Terremoto; tanque de nicho de Ultra Liga."
+        "Terrestre bulky com Ataque de Areia + Terremoto; tanque de nicho de Ultra Liga."
       ],
       "sinergias": [
         "Garchomp",
@@ -43317,7 +43317,7 @@
         }
       ],
       "observacoes": [
-        "Terra/Voador dos picks mais fortes de Grande e Ultra Liga, com bulk e Ataque de Asa + Talho Noturno.",
+        "Terrestre/Voador dos picks mais fortes de Grande e Ultra Liga, com bulk e Ataque de Asa + Talho Noturno.",
         "Evolui do Gligar com 100 doces + Pedra de Sinnoh — vale muito guardar bons IVs de PvP."
       ],
       "sinergias": [
@@ -43845,12 +43845,12 @@
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "Vale na forma Céu (Grama/Voador); a forma Terra é mais bulky e de PvP."
+          "motivo": "Vale na forma Céu (Grama/Voador); a forma Terrestre é mais bulky e de PvP."
         },
         {
           "titulo": "Vale Buddy",
           "status": "atencao",
-          "motivo": "Usa XL sem cap na Liga Mestre na forma Terra; caminhe se for esse o alvo."
+          "motivo": "Usa XL sem cap na Liga Mestre na forma Terrestre; caminhe se for esse o alvo."
         },
         {
           "titulo": "Vale Elite TM",
@@ -43863,7 +43863,7 @@
         }
       ],
       "observacoes": [
-        "Grama mítico; a forma Céu (Grama/Voador, via Gracídea) é um bom atacante de Grama, a forma Terra é bulky de PvP.",
+        "Grama mítico; a forma Céu (Grama/Voador, via Gracídea) é um bom atacante de Grama, a forma Terrestre é bulky de PvP.",
         "Obtido por pesquisa/ingresso — confira a disponibilidade atual."
       ],
       "sinergias": [
@@ -44756,7 +44756,7 @@
         }
       ],
       "observacoes": [
-        "Base do Seismitoad (Água/Terra), peça de nicho de Grande e Ultra Liga."
+        "Base do Seismitoad (Água/Terrestre), peça de nicho de Grande e Ultra Liga."
       ],
       "sinergias": []
     },
@@ -47641,7 +47641,7 @@
         }
       ],
       "observacoes": [
-        "Água/Terra com Tiro de Lama + Água Barrenta/Poder da Terra; peça de nicho de Grande e Ultra Liga."
+        "Água/Terrestre com Tiro de Lama + Água Barrenta/Poder da Terra; peça de nicho de Grande e Ultra Liga."
       ],
       "sinergias": [
         "Swampert",
@@ -49118,7 +49118,7 @@
       ],
       "observacoes": [
         "Grama/Veneno extremamente bulky de Grande e Ultra Liga, com Nó de Grama + Bomba de Lodo.",
-        "A tipagem cobre bem Água, Terra e Elétrico — peça consistente em várias metas."
+        "A tipagem cobre bem Água, Terrestre e Elétrico — peça consistente em várias metas."
       ],
       "sinergias": [
         "Venusaur",
@@ -49697,7 +49697,7 @@
         {
           "titulo": "Vale guardar",
           "status": "nao",
-          "motivo": "Terra/Elétrico de Unova sem nicho; a forma de Galar (Terra/Aço) é a beast de Grande Liga."
+          "motivo": "Terrestre/Elétrico de Unova sem nicho; a forma de Galar (Terrestre/Aço) é a beast de Grande Liga."
         },
         {
           "titulo": "Vale maximizar",
@@ -49721,7 +49721,7 @@
         }
       ],
       "observacoes": [
-        "Stunfisk de Unova (Terra/Elétrico) é filler; a forma de Galar (Terra/Aço) é outra forma e domina a Grande Liga."
+        "Stunfisk de Unova (Terrestre/Elétrico) é filler; a forma de Galar (Terrestre/Aço) é outra forma e domina a Grande Liga."
       ],
       "sinergias": [
         "Galarian Stunfisk",
@@ -50190,7 +50190,7 @@
         }
       ],
       "observacoes": [
-        "Base do Diggersby (Normal/Terra), um dos picks mais sólidos de Grande Liga.",
+        "Base do Diggersby (Normal/Terrestre), um dos picks mais sólidos de Grande Liga.",
         "Guarde bons IVs de PvP (ataque baixo costuma render mais) e farme XL."
       ],
       "sinergias": []
@@ -51770,7 +51770,7 @@
         }
       ],
       "observacoes": [
-        "Normal/Terra com Ataque Rápido + Terremoto/Soco de Fogo; um dos picks mais consistentes de Grande Liga.",
+        "Normal/Terrestre com Ataque Rápido + Terremoto/Soco de Fogo; um dos picks mais consistentes de Grande Liga.",
         "Baixo custo para construir e muito flexível na cobertura carregada."
       ],
       "sinergias": [
@@ -53252,7 +53252,7 @@
       ],
       "observacoes": [
         "Fantasma/Grama com Garra Sombria + Bomba de Sementes/Bola Sombria; pick consistente de Grande e Ultra Liga.",
-        "Boa pressão de Fantasma com STAB de Grama de cobertura contra Água e Terra."
+        "Boa pressão de Fantasma com STAB de Grama de cobertura contra Água e Terrestre."
       ],
       "sinergias": [
         "Aegislash",
@@ -53499,12 +53499,12 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Lendário de Terra/Dragão e peça de Liga Mestre — guarde-o (obtido por pesquisa especial)."
+          "motivo": "Lendário de Terrestre/Dragão e peça de Liga Mestre — guarde-o (obtido por pesquisa especial)."
         },
         {
           "titulo": "Vale maximizar",
           "status": "atencao",
-          "motivo": "Bom atacante de Terra/Dragão e peça de Liga Mestre; abaixo dos lendários de topo em raid."
+          "motivo": "Bom atacante de Terrestre/Dragão e peça de Liga Mestre; abaixo dos lendários de topo em raid."
         },
         {
           "titulo": "Vale Buddy",
@@ -53522,8 +53522,8 @@
         }
       ],
       "observacoes": [
-        "Zygarde na forma 50% (Dragão/Terra); obtido por pesquisa especial, com mecânica de Células/Núcleos.",
-        "Atacante versátil de Terra/Dragão e peça de Liga Mestre — confira a pesquisa atual para consegui-lo."
+        "Zygarde na forma 50% (Dragão/Terrestre); obtido por pesquisa especial, com mecânica de Células/Núcleos.",
+        "Atacante versátil de Terrestre/Dragão e peça de Liga Mestre — confira a pesquisa atual para consegui-lo."
       ],
       "sinergias": [
         "Garchomp",
@@ -54094,7 +54094,7 @@
         }
       ],
       "observacoes": [
-        "Base do Mudsdale (Terra), peça de nicho de Grande e Ultra Liga."
+        "Base do Mudsdale (Terrestre), peça de nicho de Grande e Ultra Liga."
       ],
       "sinergias": []
     },
@@ -54661,7 +54661,7 @@
         }
       ],
       "observacoes": [
-        "Base do Palossand (Fantasma/Terra), peça de nicho de Grande Liga."
+        "Base do Palossand (Fantasma/Terrestre), peça de nicho de Grande Liga."
       ],
       "sinergias": []
     },
@@ -55558,7 +55558,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "nao",
-          "motivo": "Fora do meta de raids de Terra de topo."
+          "motivo": "Fora do meta de raids de Terrestre de topo."
         },
         {
           "titulo": "Vale Buddy",
@@ -55577,7 +55577,7 @@
         }
       ],
       "observacoes": [
-        "Terra bulky com Tapa de Lama + Pancada Corporal/Terremoto; peça de nicho de Grande e Ultra Liga."
+        "Terrestre bulky com Tapa de Lama + Pancada Corporal/Terremoto; peça de nicho de Grande e Ultra Liga."
       ],
       "sinergias": [
         "Gastrodon",
@@ -56314,7 +56314,7 @@
         }
       ],
       "observacoes": [
-        "Fantasma/Terra com Choque/Abismar + Bola Sombria/Poder da Terra; peça de nicho de Grande Liga."
+        "Fantasma/Terrestre com Choque/Abismar + Bola Sombria/Poder da Terra; peça de nicho de Grande Liga."
       ],
       "sinergias": [
         "Palossand",
@@ -58148,7 +58148,7 @@
         }
       ],
       "observacoes": [
-        "Base do Sandaconda (Terra), peça bulky de nicho de Grande Liga."
+        "Base do Sandaconda (Terrestre), peça bulky de nicho de Grande Liga."
       ],
       "sinergias": []
     },
@@ -59562,7 +59562,7 @@
         {
           "titulo": "Vale maximizar",
           "status": "nao",
-          "motivo": "Fora do meta de raids de Terra."
+          "motivo": "Fora do meta de raids de Terrestre."
         },
         {
           "titulo": "Vale Buddy",
@@ -59581,7 +59581,7 @@
         }
       ],
       "observacoes": [
-        "Terra com Tapa de Lama + Terremoto/Ataque de Areia; peça bulky de nicho de Grande Liga."
+        "Terrestre com Tapa de Lama + Terremoto/Ataque de Areia; peça bulky de nicho de Grande Liga."
       ],
       "sinergias": [
         "Mudsdale",
@@ -60318,7 +60318,7 @@
         }
       ],
       "observacoes": [
-        "Terra/Fantasma (evolui do Yamask de Galar) com Garra Sombria + Bola Sombria/Fosso de Areia; peça bulky de nicho de Grande Liga."
+        "Terrestre/Fantasma (evolui do Yamask de Galar) com Garra Sombria + Bola Sombria/Fosso de Areia; peça bulky de nicho de Grande Liga."
       ],
       "sinergias": [
         "Trevenant",
@@ -61439,12 +61439,12 @@
         {
           "titulo": "Vale guardar",
           "status": "sim",
-          "motivo": "Bom atacante de Terra — guarde bons IVs."
+          "motivo": "Bom atacante de Terrestre — guarde bons IVs."
         },
         {
           "titulo": "Vale maximizar",
           "status": "sim",
-          "motivo": "Vale como atacante de Terra de custo baixo, com ataque alto."
+          "motivo": "Vale como atacante de Terrestre de custo baixo, com ataque alto."
         },
         {
           "titulo": "Vale Buddy",
@@ -61463,7 +61463,7 @@
         }
       ],
       "observacoes": [
-        "Terra/Normal (evolui do Ursaring) com ataque alto; bom atacante de Terra acessível.",
+        "Terrestre/Normal (evolui do Ursaring) com ataque alto; bom atacante de Terrestre acessível.",
         "A evolução Ursaring→Ursaluna tem requisito especial — confira o método atual."
       ],
       "sinergias": [
@@ -62618,7 +62618,7 @@
         }
       ],
       "observacoes": [
-        "Base do Toedscruel (Terra/Grama), peça de nicho de PvP."
+        "Base do Toedscruel (Terrestre/Grama), peça de nicho de PvP."
       ],
       "sinergias": []
     },
@@ -64182,7 +64182,7 @@
         }
       ],
       "observacoes": [
-        "Terra/Grama com Tapa de Lama + Terremoto/Bomba de Sementes; peça de nicho de Grande Liga."
+        "Terrestre/Grama com Tapa de Lama + Terremoto/Bomba de Sementes; peça de nicho de Grande Liga."
       ],
       "sinergias": [
         "Gastrodon",
@@ -65256,7 +65256,7 @@
         }
       ],
       "observacoes": [
-        "Veneno/Terra extremamente bulky (evolui do Wooper de Paldea); um dos melhores muros de Grande e Ultra Liga.",
+        "Veneno/Terrestre extremamente bulky (evolui do Wooper de Paldea); um dos melhores muros de Grande e Ultra Liga.",
         "Tapa de Lama + Terremoto/Onda de Lama com bulk altíssimo o mantém relevante em várias metas."
       ],
       "sinergias": [
@@ -65736,7 +65736,7 @@
         }
       ],
       "observacoes": [
-        "Paradoxo Elétrico/Terra (versão antiga do Magneton); bom atacante de Elétrico com cobertura de Terra.",
+        "Paradoxo Elétrico/Terrestre (versão antiga do Magneton); bom atacante de Elétrico com cobertura de Terrestre.",
         "Pokémon Paradoxo de meta recente no GO — confira o tier, os golpes e a disponibilidade atual."
       ],
       "sinergias": [
@@ -65805,7 +65805,7 @@
         }
       ],
       "observacoes": [
-        "Paradoxo Terra/Aço (versão futura do Donphan); bom atacante de Terra com bulk.",
+        "Paradoxo Terrestre/Aço (versão futura do Donphan); bom atacante de Terrestre com bulk.",
         "Pokémon Paradoxo de meta recente no GO — confira o tier, os golpes e a disponibilidade atual."
       ],
       "sinergias": [
@@ -66358,7 +66358,7 @@
         }
       ],
       "observacoes": [
-        "Lendário Sombrio/Terra (Tesouro da Ruína) extremamente bulky; peça de topo de Liga Mestre.",
+        "Lendário Sombrio/Terrestre (Tesouro da Ruína) extremamente bulky; peça de topo de Liga Mestre.",
         "Lendário/mítico de meta recente no GO — confira o tier e a disponibilidade atual."
       ],
       "sinergias": [

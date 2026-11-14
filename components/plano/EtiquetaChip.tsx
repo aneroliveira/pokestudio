@@ -7,8 +7,8 @@ type EtiquetaChipProps = {
 
 /**
  * A etiqueta é literalmente o texto digitado na lupa do Pokémon GO, então
- * é renderizada em monoespaçada e sem tradução — inclusive quando diverge
- * do rótulo do app (RAID-TERRESTRE vs. "Terra", em TIPO_LABEL).
+ * é renderizada em monoespaçada e sem tradução, mesmo quando o rótulo do
+ * app (TIPO_LABEL) é escrito de outro jeito.
  */
 export function EtiquetaChip({ etiqueta, className }: EtiquetaChipProps) {
   return (

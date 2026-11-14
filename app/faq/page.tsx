@@ -259,7 +259,7 @@ const TOPICOS: Topico[] = [
         </ul>
         <p>
           Detalhe do GO: no Pokémon GO <strong>não existe imunidade</strong>.
-          Onde a série principal zeraria o dano (ex.: Elétrico em Terra), o GO
+          Onde a série principal zeraria o dano (ex.: Elétrico em Terrestre), o GO
           aplica uma <strong>resistência dupla</strong> (leva ~39% do dano) —
           por isso esses tipos aparecem dentro de <strong>Resiste a</strong>, e
           não numa lista de &ldquo;imune&rdquo;.
